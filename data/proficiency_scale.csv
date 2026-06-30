@@ -1,0 +1,7 @@
+level,name,dreyfus_analog,definition
+P1,Assisted,Novice,Entry-level professional; well-defined tasks; work reviewed; knows when to ask.
+P2,Independent,Advanced beginner,Performs standard work on their own with normal review; handles routine variation.
+P3,Proficient,Competent,Fully autonomous; handles ambiguity and hard cases; sets the local standard; the go-to.
+P4,Expert,Proficient,Defines the approach others adopt; solves problems others can't; teaches the proficient.
+P5,Authority,Expert,Recognized authority across the org; sets the standard/strategy; anticipates direction.
+P6,Pioneer,Master,Defines the discipline; externally credible; shapes wider industry practice.
