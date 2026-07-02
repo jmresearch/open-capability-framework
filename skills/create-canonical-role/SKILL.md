@@ -33,7 +33,10 @@ and find the entry for this configuration:
 
 - **Entry exists and `canon_capable: true`** — use its `recommended_runs` as N and its
   `tokens_per_run_median` in the cost warning below. Tell the user which benchmark backs the
-  numbers.
+  numbers. **Hybrid default:** when the environment can spawn agents on a different model/effort,
+  run the N breadth generations on the cheapest canon-capable config in the table and keep
+  consolidation + verification on the frontier config — same union coverage, ~40% cheaper (see
+  `references/model-efficiency-study.md`). Surface the config choice in the cost warning.
 - **Entry exists and `canon_capable: false`** — say so, name the observed failure mode from the
   entry, and recommend switching to a capable configuration from the table for the minting run
   (their current model may still be fine for a personal, non-canonical ladder).
@@ -62,7 +65,9 @@ is empty. If the user declines, offer the single-run ladder instead.
 
 ## Step 3 — N independent generations
 
-Run the `career-ladder` skill N times, in parallel, each run BLIND: no framework fetch (the role
+Run the `career-ladder` skill N times, in parallel, on the config chosen in Step 1 (hybrid:
+cheap canon-capable config for breadth; the consolidation and verification stages stay on the
+frontier config). Each run BLIND: no framework fetch (the role
 has no record — simulate greenfield), no reading of sibling runs or prior ladders. Each run writes
 `runs/<slug>-runK.md` + `.csv` and must pass `skills/career-ladder/scripts/validate_csv.py`
 (with `--manager` for manager-variant roles) before it counts. A failed run is regenerated, not
@@ -112,5 +117,7 @@ ends the matter.
 
 - `references/saturation-study.md` — the Engineering Manager 8-run study behind the N=5 default
   and the cost numbers.
+- `references/model-efficiency-study.md` — the cross-model study behind the hybrid strategy and
+  the canon-capable verdicts (fable/low and opus/high capable; haiku not).
 - `../../benchmarks/README.md` and `../../benchmarks/model-efficiency.yaml` — per-model/effort
   quality bar, recommended run counts, and how untested configurations contribute entries.

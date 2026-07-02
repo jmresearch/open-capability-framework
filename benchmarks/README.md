@@ -14,9 +14,10 @@ A configuration is **canon-capable** when its blind runs typically show:
 2. **Register discipline** — every cell carries labeled Depth:/Scope: clauses in present-tense
    observable behavior; bold lead clauses present; no competency-library paraphrase.
 3. **Real anchors** — every competency's theory anchor is a real, citable work (spot-check ≥5).
-4. **Territory coverage ≥ 55% of the role's reference canon per run** — comparable to the
-   frontier baseline (60%); a config that samples much thinner needs disproportionately many runs
-   and usually fails 1–3 anyway.
+4. **Territory coverage ≥ 50% of the role's reference canon per run.** The frontier baseline
+   samples ~60%; configs at 50–57% are viable (the run count compensates for thinner sampling —
+   that's what `recommended_runs` encodes), but coverage in the low 40s (haiku territory) fails:
+   it pairs with the gap and register failures below rather than substituting for them.
 5. **Core recall** — the reference canon's high-frequency core (concepts present in ≥6/8 baseline
    runs) should be mostly hit by any 2 runs combined (≥ 85%).
 6. **No systematic gaps** — a per-concept comparison against the frontier baseline. Aggregate
@@ -25,7 +26,9 @@ A configuration is **canon-capable** when its blind runs typically show:
    (≥6/8 runs) that a config misses in ALL its observed runs is a **systematic gap**; more than
    two systematic gaps, or any gap covering a whole key area, fails the bar regardless of the
    coverage number. Entries list their gaps in `systematic_gaps` so users see exactly what a
-   single run on that config would be blind to.
+   single run on that config would be blind to. Small-sample caveat: at 3 observed runs, 1–2
+   apparent gaps are within chance for a ~55%-coverage config — treat ≤2 as noise to re-test,
+   3+ as signal.
 
 Configs that miss the bar aren't banned — they're marked `canon_capable: false` with the observed
 failure mode, and the skill steers users to a capable model for minting (a cheap model may still
