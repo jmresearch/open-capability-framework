@@ -25,7 +25,27 @@ already exists, STOP — tell the user, and offer either an ADAPT-mode ladder (c
 or an *extension* pass (one generation diffed against the record, gate the additions). Never mint
 a duplicate canon.
 
-## Step 1 — The token-cost warning (mandatory, before any generation)
+## Step 1 — Look up the benchmark for the session's configuration
+
+Identify the model you are running as (your own model id) and, if determinable, the effort
+setting. Fetch `benchmarks/model-efficiency.yaml` from the framework (live, same raw-URL pattern)
+and find the entry for this configuration:
+
+- **Entry exists and `canon_capable: true`** — use its `recommended_runs` as N and its
+  `tokens_per_run_median` in the cost warning below. Tell the user which benchmark backs the
+  numbers.
+- **Entry exists and `canon_capable: false`** — say so, name the observed failure mode from the
+  entry, and recommend switching to a capable configuration from the table for the minting run
+  (their current model may still be fine for a personal, non-canonical ladder).
+- **No entry (untested configuration)** — use the frontier default (N=5) as a starting estimate,
+  and tell the user their runs can double as a new benchmark: if they give permission, the run
+  telemetry (per-run competency counts, coverage scored against the role's reference canon or —
+  for a new role — against the consolidated union, validator results, token usage) is compiled
+  into a `benchmarks/model-efficiency.yaml` entry and included in the same gated PR as their
+  canonical role. Quality bar and entry schema: `benchmarks/README.md`. This is optional and
+  changes nothing about their local deliverables if declined.
+
+## Step 2 — The token-cost warning (mandatory, before any generation)
 
 Tell the user plainly what this costs and get an explicit go-ahead:
 
@@ -40,7 +60,7 @@ this); use 4 as a floor when the user is cost-sensitive, 6–8 only when the use
 exhaustive coverage for a broad or unusual role. Never run more than 8 — the study shows the tail
 is empty. If the user declines, offer the single-run ladder instead.
 
-## Step 2 — N independent generations
+## Step 3 — N independent generations
 
 Run the `career-ladder` skill N times, in parallel, each run BLIND: no framework fetch (the role
 has no record — simulate greenfield), no reading of sibling runs or prior ladders. Each run writes
@@ -48,7 +68,7 @@ has no record — simulate greenfield), no reading of sibling runs or prior ladd
 (with `--manager` for manager-variant roles) before it counts. A failed run is regenerated, not
 patched.
 
-## Step 3 — Union consolidation (nothing voted out)
+## Step 4 — Union consolidation (nothing voted out)
 
 Merge the N runs — plus any trusted existing artifact the user supplies (a hand-built ladder, an
 old matrix; genericize org-specific content) — into one canonical ladder:
@@ -67,17 +87,17 @@ old matrix; genericize org-specific content) — into one canonical ladder:
 - Write a consolidation report: the merge map, and the agreement histogram (how many competencies
   appeared in all runs / most / one) — this is the evidence the canon is holistic.
 
-## Step 4 — Verification (must be exact)
+## Step 5 — Verification (must be exact)
 
 Run one fresh ADAPT-mode generation against the draft role record. It must reproduce the structure
 **exactly** — every (key_area, key_attribute, theme) triple, in order. Anything less means the
 record is ambiguous; fix it and re-verify. Prose wording may differ; structure may not.
 
-## Step 5 — The contribution gate
+## Step 6 — The contribution gate
 
 Per `skills/career-ladder/references/capability-framework.md`: show the user exactly what would be
-contributed (role record, canonical ladder, capability proposals — all scrubbed of org-specific
-content), state that it becomes a public PR under CC BY 4.0, and **ask permission**. Only an
+contributed (role record, canonical ladder, capability proposals, any amendment proposals, and —
+if offered and accepted in Step 1 — the benchmark entry; all scrubbed of org-specific content), state that it becomes a public PR under CC BY 4.0, and **ask permission**. Only an
 explicit yes in this conversation authorizes the PR. Declining delivers everything locally and
 ends the matter.
 
@@ -92,3 +112,5 @@ ends the matter.
 
 - `references/saturation-study.md` — the Engineering Manager 8-run study behind the N=5 default
   and the cost numbers.
+- `../../benchmarks/README.md` and `../../benchmarks/model-efficiency.yaml` — per-model/effort
+  quality bar, recommended run counts, and how untested configurations contribute entries.

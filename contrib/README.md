@@ -27,6 +27,31 @@ proposal in. Role records may reference a pending proposal via `capability: prop
 - **P6 (Pioneer):** ...
 ```
 
+## Amendment format (`contrib/<yyyy-mm>-amend-<capability-id>.md`)
+
+Proposals may also MODIFY an existing capability — refine a description, recalibrate a P-profile,
+or split a capability whose description spans two assessable things:
+
+```markdown
+# Amend <ID>: <capability name>
+
+- **Type:** description | profile | split | merge
+- **Why:** <what surfaced the problem — name the role record or ladder run>
+- **Current:** <the field(s) as they stand>
+- **Proposed:** <the field(s) as they should read; for a split, the two full replacement rows
+  with proposed ids and P1–P6 profiles>
+- **Affected role records:** <roles/<slug> entries referencing this id, and how they change>
+```
+
+## Maintainer acceptance checklist
+
+On accepting any proposal: assign/confirm the final id; apply the row change to
+`data/capabilities.csv` AND `data/capabilities.json`; update the workbook
+(`Open_Capability_Framework.xlsx`) or queue it for the next workbook regeneration; update every
+role record that referenced the proposal (`capability: proposed` → the real id, or re-pointed ids
+for a split); update `data/domains.csv` counts if the capability count changed; delete the
+proposal file. Reject with a short note in the PR rather than silently closing.
+
 Requirements: technology-agnostic ("relational data modeling", never "PostgreSQL"); described by
 the competence needed, not a tool; six genuinely distinct proficiency bars in the catalog's
 observable register; no organization-specific content. On acceptance, a maintainer assigns the
