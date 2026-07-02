@@ -13,6 +13,11 @@ order is fixed:
 type, key_area, key_attribute, theme, L1, L2, L3, … (one level column per level)
 ```
 
+> **Note — framework role CSVs:** the role records under `roles/` in the
+> open-capability-framework repo carry an extra `capability` column (OCF catalog id) between
+> `theme` and the level columns. The importer does not accept it — strip that column before
+> import. The bundled validator (`scripts/validate_csv.py`) auto-detects and accepts both forms.
+
 Rows, in order:
 
 | type               | what it carries                                                                    |

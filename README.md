@@ -34,11 +34,16 @@ Three segments group the 36 domains:
 |---|---|
 | `data/capabilities.csv` | All 429 capabilities: id, segment, domain, focus area, capability, type (Behavioral/Technical), description, and the six P1–P6 behavioral profiles. |
 | `data/capabilities.json` | Same data, nested (`levels.P1`…`levels.P6`). |
+| `data/capabilities.md` | Human-readable render of the full catalog, one anchored section per capability (`#<id-lowercase>`), each proficiency line linked to the scale. Generated — do not hand-edit. |
 | `data/domains.csv` | Domain index: segment, prefix, focus-area count, capability count. |
 | `data/proficiency_scale.csv` | The universal P1–P6 rubric. |
+| `data/proficiency_scale.md` | Rendered P1–P6 rubric with stable anchors (`#p1`…`#p6`). Generated. |
 | `data/scope_levels.csv` | The S1–S6 role-scope axis, mapped to SFIA / Google-Meta levels. |
+| `data/scope_levels.md` | Rendered S1–S6 scope axis with stable anchors (`#s1`…`#s6`). Generated. |
+| `data/capabilities.xlsx` | The catalog + scale + scope + domain index as a formatted workbook. Generated. |
 | `Open_Capability_Framework.xlsx` | The full workbook (catalog + Org Capability Map + Role Builder/Audit + methodology). |
-| `roles/` | Role records: canonical career ladders as capability references with per-level proficiency targets (see `roles/README.md`). |
+| `roles/` | Role records: canonical career ladders as capability references with per-level proficiency targets (see `roles/README.md`). Each `roles/<slug>/` dir also ships a generated `ladder.xlsx` (overview, competency matrix, rating template, sources). |
+| `scripts/` | Render tooling: `render_catalog.py` (data/*.md + capabilities.xlsx), `render_role_links.py` (hyperlinks the OCF references in role ladders), `render_role_xlsx.py` (roles/<slug>/ladder.xlsx). All re-runnable. |
 | `skills/` | Claude Code skills: `career-ladder` (ladder + hiring JDs for any role) and `create-canonical-role` (mint a stable role record via multi-run consolidation). |
 | `PROMPT.md` | Copy-paste prompt for using the ladder methodology in any Claude chat. |
 | `contrib/` | Staging for proposed new capabilities awaiting catalog acceptance (see `contrib/README.md`). |
@@ -75,6 +80,7 @@ Apparent cross-domain overlaps (e.g. "accessibility" in build vs. design vs. tes
   the ladder), rather than generating from a title.
 - TODO: Source canonical role ladders into the skill-matrix app
   (skillmatrix.bubtaylor.com) as importable starter templates.
+- Consolidate the generated markdown renders (`data/*.md`) under a `docs/` tree — future effort.
 
 ## License
 
