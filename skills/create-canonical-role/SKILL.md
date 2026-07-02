@@ -32,8 +32,8 @@ Tell the user plainly what this costs and get an explicit go-ahead:
 > Minting a canonical role runs the full generation **N times** plus a consolidation pass and a
 > verification run. At roughly 100k tokens per generation and ~250k for consolidation, the default
 > N=5 costs on the order of **~1M tokens** — versus ~100k for a single non-canonical ladder. The
-> extra runs exist only to capture coverage a single run misses (~half the territory); if you just
-> need a ladder for your own org today, the single run is the right buy.
+> extra runs exist only to capture coverage a single run misses (~40% of the territory); if you
+> just need a ladder for your own org today, the single run is the right buy.
 
 Scale N to the ask: **5 is the default** (the saturation study found diminishing returns beyond
 this); use 4 as a floor when the user is cost-sensitive, 6–8 only when the user explicitly wants
