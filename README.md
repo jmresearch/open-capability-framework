@@ -39,7 +39,25 @@ Three segments group the 36 domains:
 | `data/scope_levels.csv` | The S1–S6 role-scope axis, mapped to SFIA / Google-Meta levels. |
 | `Open_Capability_Framework.xlsx` | The full workbook (catalog + Org Capability Map + Role Builder/Audit + methodology). |
 | `roles/` | Role records: canonical career ladders as capability references with per-level proficiency targets (see `roles/README.md`). |
+| `skills/` | Claude Code skills: `career-ladder` (ladder + hiring JDs for any role) and `create-canonical-role` (mint a stable role record via multi-run consolidation). |
+| `PROMPT.md` | Copy-paste prompt for using the ladder methodology in any Claude chat. |
 | `contrib/` | Staging for proposed new capabilities awaiting catalog acceptance (see `contrib/README.md`). |
+
+## Using it: generate ladders and canonical roles
+
+This repo doubles as a Claude Code plugin:
+
+```
+/plugin marketplace add jmresearch/open-capability-framework
+/plugin install career-skills@open-capability-framework
+```
+
+Then ask for a career ladder for any role (`career-ladder` skill — fetches this framework live,
+so ladders use canonical capability names, and roles with a record under `roles/` reproduce
+identically), or ask to "make <role> canonical" (`create-canonical-role` skill — runs the
+generation N times, consolidates the union, verifies exact reproduction, and opens a gated PR
+here). Contributions are always gated on the user's explicit permission. No Claude Code? Use
+`PROMPT.md` in any Claude chat.
 
 ## Methodology (brief)
 
@@ -52,6 +70,11 @@ Apparent cross-domain overlaps (e.g. "accessibility" in build vs. design vs. tes
 - Technology registry layer (technologies mapped to the capabilities they satisfy).
 - ~~First-class Role records~~ — started: see `roles/`. A hosted role/ladder builder is still planned.
 - Compensation-band modeling over the capability/scope vectors.
+- TODO: "Build your own role" from canonical skills — search and mix-and-match catalog
+  capabilities into a role record (choose capabilities, set per-level proficiency targets, emit
+  the ladder), rather than generating from a title.
+- TODO: Source canonical role ladders into the skill-matrix app
+  (skillmatrix.bubtaylor.com) as importable starter templates.
 
 ## License
 

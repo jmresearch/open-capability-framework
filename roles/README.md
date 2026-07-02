@@ -51,8 +51,8 @@ Rules:
 ## Contributing
 
 Role records arrive as PRs — typically opened (with the contributor's explicit permission) by
-tools that generate ladders from this framework, such as
-[jmresearch-career-skills](https://github.com/jmresearch/jmresearch-career-skills). Contributions
+tools that generate ladders from this framework — the bundled `career-ladder` and
+`create-canonical-role` skills under `skills/` in this repo. Contributions
 must be **generic**: no organization names, internal systems, org-specific compliance regimes, or
 headcounts. Updates to an existing record (new competencies, refined proficiency targets) are
 welcome as focused diffs — the more ladders flow through, the more canonical the records get.
