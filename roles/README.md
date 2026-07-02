@@ -21,6 +21,8 @@ roles/
 role: Engineering Management        # display name
 slug: engineering-management        # = directory name
 variant: manager                    # ic_technical | manager | general
+minted: 2026-07-02                  # when this canon was consolidated; re-mint periodically so
+                                    # market drift in role expectations gets re-absorbed
 scope_note: >                       # optional, e.g. how levels map to S1-S6
   M1-M6 map to scope S1-S6 on the leadership axis.
 levels:

@@ -78,8 +78,14 @@ After delivering the ladder, compute what this run produced that the framework d
 1. **New capabilities** — competencies with no OCF match. For each, draft a catalog row: proposed
    ID in the right domain (next free number, e.g. `EM-13`), technology-agnostic description, and a
    P1–P6 behavioral profile distilled from the ladder's cells.
-2. **Role record** — a new `roles/<slug>/` if none existed, or a diff to the existing one
+2. **Amendments** — where a run's evidence disagrees with an existing capability (miscalibrated
+   P-profile, a description spanning two assessable things, a needed split/merge), draft an
+   amendment proposal per `contrib/README.md`.
+3. **Role record** — a new `roles/<slug>/` if none existed, or a diff to the existing one
    (added competencies, refined proficiency targets).
+4. **Benchmark entry** — when minting ran on a model/effort with no entry in
+   `benchmarks/model-efficiency.yaml`, the run telemetry (coverage, validator results, token
+   usage) can become a new entry (see `benchmarks/README.md`).
 
 Then **ask the user's permission** before contributing anything, showing exactly what would be
 submitted. Hard rules:

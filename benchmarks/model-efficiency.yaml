@@ -1,0 +1,105 @@
+# Model/effort benchmark entries for canonical-role minting.
+# Fetched live by skills/create-canonical-role. Schema and quality bar: benchmarks/README.md.
+
+reference_canons:
+  engineering-management:
+    concepts: 46
+    stable: 43
+    core: 19
+    source: skills/create-canonical-role/references/saturation-study.md
+
+configs:
+  - model: claude-fable-5
+    effort: xhigh
+    runs_observed: 8
+    role_tested: engineering-management
+    validator_pass_rate: 1.0
+    mean_competencies_per_run: 27.8
+    mean_canon_coverage_per_run: 0.60
+    core_recall_2runs: 0.99
+    systematic_gaps: []
+    register_notes: >-
+      Baseline. Depth/Scope discipline in all cells; anchors real on spot-checks; several runs
+      self-caught structural errors (1:1 foci) and fixed them before delivering.
+    tokens_per_run_median: 85000
+    canon_capable: true
+    recommended_runs: 5
+    date: 2026-07-02
+    source: skills/create-canonical-role/references/saturation-study.md
+
+  - model: claude-fable-5
+    effort: low
+    runs_observed: 3
+    role_tested: engineering-management
+    validator_pass_rate: 1.0
+    mean_competencies_per_run: 26.0
+    mean_canon_coverage_per_run: 0.55
+    core_recall_2runs: 0.91
+    systematic_gaps: [Technical strategy & platform investment]
+    register_notes: >-
+      Small sample (3 runs). Cleanest cheap config: zero fix iterations, full Depth/Scope
+      discipline, real anchors. The single apparent gap is within chance at this sample size.
+    tokens_per_run_median: 39492
+    canon_capable: true
+    recommended_runs: 5
+    date: 2026-07-02
+    source: skills/create-canonical-role/references/model-efficiency-study.md
+
+  - model: claude-opus-4-8
+    effort: high
+    runs_observed: 3
+    role_tested: engineering-management
+    validator_pass_rate: 1.0
+    mean_competencies_per_run: 25.0
+    mean_canon_coverage_per_run: 0.51
+    core_recall_2runs: 0.88
+    systematic_gaps: [Goal setting & measurement, Succession & developing leaders]
+    register_notes: >-
+      Small sample (3 runs). Cheapest and most token-efficient (80 concepts/100k). One run needed
+      a fix iteration (position-locked phrase + three 1:1 foci) — validator caught and fixed.
+      Two apparent gaps are at the noise/signal boundary; re-test before relying on gap-freeness.
+    tokens_per_run_median: 29498
+    canon_capable: true
+    recommended_runs: 5
+    date: 2026-07-02
+    source: skills/create-canonical-role/references/model-efficiency-study.md
+
+  - model: claude-sonnet-5
+    effort: high
+    runs_observed: 3
+    role_tested: engineering-management
+    validator_pass_rate: 1.0
+    mean_competencies_per_run: 27.0
+    mean_canon_coverage_per_run: 0.54
+    core_recall_2runs: 0.90
+    systematic_gaps: [Goal setting & measurement]
+    register_notes: >-
+      Small sample (3 runs). Solid register; two of three runs needed a fix iteration for a leaked
+      position-locked phrase (validator caught both). Most expensive of the capable cheap configs.
+    tokens_per_run_median: 48851
+    canon_capable: true
+    recommended_runs: 5
+    date: 2026-07-02
+    source: skills/create-canonical-role/references/model-efficiency-study.md
+
+  - model: claude-haiku-4-5
+    effort: high
+    runs_observed: 2
+    role_tested: engineering-management
+    validator_pass_rate: 1.0
+    mean_competencies_per_run: 21.0
+    mean_canon_coverage_per_run: 0.41
+    core_recall_2runs: 0.68
+    systematic_gaps: [Budget & resource stewardship, Conflict resolution & navigation,
+      Executive & upward communication, Performance management & calibration,
+      Prioritization & trade-offs, Succession & developing leaders]
+    register_notes: >-
+      FAILS the bar on three counts: 41% coverage, six systematic gaps in load-bearing management
+      territory, and one of two runs abandoned the Depth/Scope register entirely (0/138 cells)
+      while still passing the CSV validator. Also costs MORE per run (58k) than opus-high.
+      Fine for drafts; not for canon.
+    tokens_per_run_median: 58339
+    canon_capable: false
+    recommended_runs: null
+    date: 2026-07-02
+    source: skills/create-canonical-role/references/model-efficiency-study.md
