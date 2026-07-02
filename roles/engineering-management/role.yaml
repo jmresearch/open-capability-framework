@@ -1,6 +1,7 @@
 role: Engineering Management
 slug: engineering-management
 variant: manager
+minted: 2026-07-02
 scope_note: >
   M1-M6 map to the leadership scope axis: one team (S1) -> a complex/critical team (S2) ->
   a domain, cross-team (S3) -> a sub-org (S4) -> a function (S5) -> org-wide (S6).

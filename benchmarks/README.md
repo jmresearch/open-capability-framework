@@ -19,6 +19,13 @@ A configuration is **canon-capable** when its blind runs typically show:
    and usually fails 1–3 anyway.
 5. **Core recall** — the reference canon's high-frequency core (concepts present in ≥6/8 baseline
    runs) should be mostly hit by any 2 runs combined (≥ 85%).
+6. **No systematic gaps** — a per-concept comparison against the frontier baseline. Aggregate
+   coverage can hide a config that reliably misses whole territories (all runs drop security, or
+   business fluency, or the self/personal tier). Any concept the baseline produces reliably
+   (≥6/8 runs) that a config misses in ALL its observed runs is a **systematic gap**; more than
+   two systematic gaps, or any gap covering a whole key area, fails the bar regardless of the
+   coverage number. Entries list their gaps in `systematic_gaps` so users see exactly what a
+   single run on that config would be blind to.
 
 Configs that miss the bar aren't banned — they're marked `canon_capable: false` with the observed
 failure mode, and the skill steers users to a capable model for minting (a cheap model may still
@@ -41,10 +48,12 @@ configs:
     mean_competencies_per_run: <float>
     mean_canon_coverage_per_run: <0-1>   # fraction of reference concepts hit by one run
     core_recall_2runs: <0-1>             # fraction of core hit by any 2 runs (mean over pairs)
+    systematic_gaps: [<concepts missed in ALL observed runs that baseline hits reliably>]
     register_notes: <short free text>
     tokens_per_run_median: <int>
     canon_capable: <true|false>
     recommended_runs: <int|null>  # N for ~95% expected stable-canon coverage, null if not capable
+    date: <yyyy-mm-dd>            # when measured — entries go stale as models and market move
     source: <study file or PR link>
 ```
 
@@ -61,3 +70,11 @@ results, token usage — as a new benchmark entry, PR'd together with their cano
 contribution. **Only with their explicit permission**, like every other contribution. The entry
 must contain no org-specific content (it's numbers and register notes). More entries → better
 recommendations for the next user; that's the same network effect as the catalog itself.
+
+## Staleness and periodic re-runs
+
+Role expectations drift with the market and model behavior drifts with releases, so entries and
+role records are dated and every benchmark/minting PR **names the job role in its title**. To
+refresh: re-run the same study (or re-mint the role) and submit a superseding entry — the old one
+stays in git history. Treat entries older than ~a year, or measured on a retired model version,
+as advisory only.

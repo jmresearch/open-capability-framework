@@ -10,19 +10,21 @@ reference_canons:
 
 configs:
   - model: claude-fable-5
-    effort: session-default
+    effort: xhigh
     runs_observed: 8
     role_tested: engineering-management
     validator_pass_rate: 1.0
     mean_competencies_per_run: 27.8
     mean_canon_coverage_per_run: 0.60
     core_recall_2runs: 0.99
+    systematic_gaps: []
     register_notes: >-
       Baseline. Depth/Scope discipline in all cells; anchors real on spot-checks; several runs
       self-caught structural errors (1:1 foci) and fixed them before delivering.
     tokens_per_run_median: 85000
     canon_capable: true
     recommended_runs: 5
+    date: 2026-07-02
     source: skills/create-canonical-role/references/saturation-study.md
 
   # Entries below are populated by the 2026-07 model-efficiency study
