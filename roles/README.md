@@ -12,7 +12,22 @@ roles/
 └── <role-slug>/            # kebab-case, e.g. engineering-management
     ├── role.yaml           # the record (required)
     ├── ladder.md           # canonical rendering with full per-level prose (optional)
-    └── ladder.csv          # skill-matrix-importable rendering (optional)
+    ├── ladder.csv          # skill-matrix-importable rendering (optional)
+    └── ladder.xlsx         # generated workbook: overview, competency matrix,
+                            # rating template, sources (scripts/render_role_xlsx.py)
+```
+
+### The `capability` CSV column
+
+`ladder.csv` carries an extra `capability` column between `theme` and the level columns —
+the OCF catalog id for each skill row (or `proposed:<proposal-basename>` for pending
+additions, e.g. `proposed:type-system-domain-modeling`). The bundled validator
+(`skills/career-ladder/scripts/validate_csv.py`) auto-detects and accepts both forms, but
+the skill-matrix app's importer does **not** know this column yet — drop it before import:
+
+```
+python -c "import pandas as pd; pd.read_csv('ladder.csv').drop(columns=['capability']).to_csv('import.csv', index=False)"
+# or:  cut -d, -f1-4,6- ladder.csv > import.csv   (only if no cell contains a comma)
 ```
 
 ## `role.yaml` schema

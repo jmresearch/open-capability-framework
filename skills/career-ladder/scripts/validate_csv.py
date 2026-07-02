@@ -27,7 +27,11 @@ def validate(path: str, manager: bool = False, allow_single_theme: bool = False)
     header = rows[0]
     if [c.strip() for c in header[:4]] != ["type", "key_area", "key_attribute", "theme"]:
         errors.append(f"header must start with type,key_area,key_attribute,theme — got {header[:4]}")
-    levels = [c.strip() for c in header[4:]]
+    # Optional 5th column: OCF `capability` reference (framework role records carry it;
+    # the skill-matrix importer does not — strip it before import). Auto-detected.
+    has_capability = len(header) > 4 and header[4].strip() == "capability"
+    first_level = 5 if has_capability else 4
+    levels = [c.strip() for c in header[first_level:]]
     if not 1 <= len(levels) <= MAX_LEVELS:
         errors.append(f"{len(levels)} level columns — the importer accepts 1-{MAX_LEVELS}")
     if len(set(levels)) != len(levels):
@@ -58,7 +62,7 @@ def validate(path: str, manager: bool = False, allow_single_theme: bool = False)
     if len(titles) != 1:
         errors.append(f"need exactly one level_title row, found {len(titles)}")
     else:
-        vals = (titles[0][1][4:] + [""] * len(levels))[: len(levels)]
+        vals = (titles[0][1][first_level:] + [""] * len(levels))[: len(levels)]
         if any(not v.strip() for v in vals):
             errors.append("level_title must have a non-empty title in every level column")
     for opt in ("level_scope", "level_focus"):
@@ -86,7 +90,9 @@ def validate(path: str, manager: bool = False, allow_single_theme: bool = False)
             errors.append(f"row {i}: duplicate triple {key} (first at row {triples[key]})")
         triples[key] = i
         foci.setdefault((area, focus), set()).add(theme)
-        cells = (row[4:] + [""] * len(levels))[: len(levels)]
+        if has_capability and (len(row) < 5 or not row[4].strip()):
+            errors.append(f"row {i} ('{theme}'): capability column present but empty on a skill row")
+        cells = (row[first_level:] + [""] * len(levels))[: len(levels)]
         empty = [levels[j] for j, c in enumerate(cells) if not c.strip()]
         if empty:
             warnings.append(f"row {i} ('{theme}'): empty cell(s) at {','.join(empty)} (allowed, but a complete ladder fills them)")
