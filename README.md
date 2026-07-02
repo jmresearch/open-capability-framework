@@ -38,6 +38,8 @@ Three segments group the 36 domains:
 | `data/proficiency_scale.csv` | The universal P1–P6 rubric. |
 | `data/scope_levels.csv` | The S1–S6 role-scope axis, mapped to SFIA / Google-Meta levels. |
 | `Open_Capability_Framework.xlsx` | The full workbook (catalog + Org Capability Map + Role Builder/Audit + methodology). |
+| `roles/` | Role records: canonical career ladders as capability references with per-level proficiency targets (see `roles/README.md`). |
+| `contrib/` | Staging for proposed new capabilities awaiting catalog acceptance (see `contrib/README.md`). |
 
 ## Methodology (brief)
 
@@ -48,7 +50,7 @@ Apparent cross-domain overlaps (e.g. "accessibility" in build vs. design vs. tes
 ## Roadmap
 
 - Technology registry layer (technologies mapped to the capabilities they satisfy).
-- First-class Role records and a role/ladder builder.
+- ~~First-class Role records~~ — started: see `roles/`. A hosted role/ladder builder is still planned.
 - Compensation-band modeling over the capability/scope vectors.
 
 ## License
