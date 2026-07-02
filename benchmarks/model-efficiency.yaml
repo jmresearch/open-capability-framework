@@ -2,6 +2,11 @@
 # Fetched live by skills/create-canonical-role. Schema and quality bar: benchmarks/README.md.
 
 reference_canons:
+  full-stack-typescript:
+    concepts: 47
+    stable: 36
+    core: 25
+    source: roles/full-stack-typescript (5-run consolidation report)
   engineering-management:
     concepts: 46
     stable: 43
@@ -103,3 +108,23 @@ configs:
     recommended_runs: null
     date: 2026-07-02
     source: skills/create-canonical-role/references/model-efficiency-study.md
+
+  - model: claude-fable-5
+    effort: low
+    runs_observed: 5
+    role_tested: full-stack-typescript
+    validator_pass_rate: 1.0
+    mean_competencies_per_run: 31.6
+    mean_canon_coverage_per_run: 0.67
+    core_recall_2runs: 1.0
+    systematic_gaps: []
+    register_notes: >-
+      Cross-role check of the fable/low EM entry: ic_technical territory is far more consensual
+      than management (67% coverage/run vs 55%, zero gaps, perfect 2-run core recall). Formula
+      says N=3 suffices for this role class; recommending 4 until a second IC role corroborates.
+      Per-run tokens scale with ladder size (~30+ competencies here vs 26 on EM).
+    tokens_per_run_median: 84167
+    canon_capable: true
+    recommended_runs: 4
+    date: 2026-07-02
+    source: benchmarks PR [full-stack-typescript] mint telemetry
