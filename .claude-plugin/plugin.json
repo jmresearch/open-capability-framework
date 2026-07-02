@@ -1,0 +1,21 @@
+{
+  "name": "career-skills",
+  "version": "2.0.0",
+  "description": "Career ladders, hiring job descriptions, and canonical role records built on the Open Capability Framework — generate a ladder for any role, or mint a stable canonical role others can reuse.",
+  "author": {
+    "name": "JM Research",
+    "url": "https://github.com/jmresearch"
+  },
+  "homepage": "https://github.com/jmresearch/open-capability-framework",
+  "repository": "https://github.com/jmresearch/open-capability-framework",
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "career-ladder",
+    "competency-matrix",
+    "capability-framework",
+    "job-descriptions",
+    "hiring",
+    "leveling",
+    "canonical-roles"
+  ]
+}
