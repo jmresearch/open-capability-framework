@@ -1,0 +1,315 @@
+role: Full Stack TypeScript Engineer
+slug: full-stack-typescript
+variant: ic_technical
+minted: 2026-07-02
+scope_note: >
+  E1-E6 map to scope bands task -> component -> capability/domain -> multiple teams ->
+  organization -> company (approximately S1-S6 on the IC axis). E3 / Senior is the terminal
+  level: sustained excellence at capability scope is a complete career; E4+ is a different
+  job defined by multi-team leverage. Consolidated 2026-07 by union from five independent
+  blind generations (158 source competencies -> 47 canonical); proficiency targets follow
+  the IC guide E1:P1, E2:P2, E3:P3, E4:P4, E5:P5, E6:P6 - per-competency review found the
+  source cells consistently written to those bars, so no deviations were warranted.
+levels:
+  - {code: E1, title: Associate Full Stack Engineer, scope: task, focus: ships well-defined tasks across the stack with guidance and learns the stack}
+  - {code: E2, title: Full Stack Engineer, scope: component, focus: "independently delivers complete features spanning UI, API, and data layers"}
+  - {code: E3, title: Senior Full Stack Engineer, scope: capability / domain (terminal level), focus: owns a product capability across the stack and sets the local bar}
+  - {code: E4, title: Staff Full Stack Engineer, scope: multiple teams, focus: drives technical outcomes across multiple teams and multiplies other engineers}
+  - {code: E5, title: Senior Staff Full Stack Engineer, scope: organization, focus: sets technical direction and standards for the organization}
+  - {code: E6, title: Principal Full Stack Engineer, scope: company, focus: shapes company-level technical strategy and represents engineering externally}
+competencies:
+  # ---- Frontend Engineering ----
+  - theme: Component design & composition
+    capability: FE-01
+    key_area: Frontend Engineering
+    key_attribute: UI Implementation
+    anchor: "React documentation, Thinking in React (react.dev)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Styling & responsive layout
+    capability: FE-09
+    key_area: Frontend Engineering
+    key_attribute: UI Implementation
+    anchor: "MDN Web Docs, CSS layout guides (Mozilla)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Client state management & data flow
+    capability: FE-05
+    key_area: Frontend Engineering
+    key_attribute: State & Data Flow
+    anchor: "Redux documentation, Three Principles (redux.js.org)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Data fetching & caching
+    capability: FE-06
+    key_area: Frontend Engineering
+    key_attribute: State & Data Flow
+    anchor: "TanStack Query documentation (Tanner Linsley and maintainers)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Accessibility
+    capability: FE-12
+    key_area: Frontend Engineering
+    key_attribute: Frontend Quality
+    anchor: "W3C WCAG 2.2 and WAI-ARIA Authoring Practices"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Web performance
+    capability: FE-13
+    key_area: Frontend Engineering
+    key_attribute: Frontend Quality
+    anchor: "Google web.dev Core Web Vitals (LCP, INP, CLS)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- Backend & API Engineering ----
+  - theme: Service design & boundaries
+    capability: ARC-02
+    key_area: Backend & API Engineering
+    key_attribute: Services & Runtime
+    anchor: "Newman, Building Microservices, 2nd ed. (2021)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Runtime & async correctness
+    capability: CS-04
+    key_area: Backend & API Engineering
+    key_attribute: Services & Runtime
+    anchor: "Node.js official guide, Don't Block the Event Loop"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: API contract design
+    capability: SWE-07
+    key_area: Backend & API Engineering
+    key_attribute: API Contracts
+    anchor: "Fielding (2000) and the OpenAPI Specification"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Compatibility & versioning
+    capability: BE-13
+    key_area: Backend & API Engineering
+    key_attribute: API Contracts
+    anchor: "Hyrum's Law (Winters et al., 2020); Preston-Werner, Semantic Versioning"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Data modeling
+    capability: BE-01
+    key_area: Backend & API Engineering
+    key_attribute: Data & Persistence
+    anchor: "Kleppmann, Designing Data-Intensive Applications (2017)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Query performance & safe migrations
+    capability: BE-04
+    key_area: Backend & API Engineering
+    key_attribute: Data & Persistence
+    anchor: "Winand, SQL Performance Explained; Sadalage & Fowler, Evolutionary Database Design"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Asynchronous processing & messaging
+    capability: BE-09
+    key_area: Backend & API Engineering
+    key_attribute: Integration & Resilience
+    anchor: "Hohpe & Woolf, Enterprise Integration Patterns (2003)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Third-party & cross-service resilience
+    capability: BE-18
+    key_area: Backend & API Engineering
+    key_attribute: Integration & Resilience
+    anchor: "Nygard, Release It!, 2nd ed. (2018)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- TypeScript & Software Design ----
+  - theme: Type-driven domain modeling
+    capability: proposed
+    proposal_ref: contrib/2026-07-type-system-domain-modeling.md
+    key_area: TypeScript & Software Design
+    key_attribute: Type System as a Design Tool
+    anchor: "Vanderkam, Effective TypeScript, 2nd ed. (2024); Wlaschin, Domain Modeling Made Functional (2018)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Type safety at boundaries
+    capability: proposed
+    proposal_ref: contrib/2026-07-boundary-validation-type-integrity.md
+    key_area: TypeScript & Software Design
+    key_attribute: Type System as a Design Tool
+    anchor: "King, Parse, Don't Validate (2019)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Advanced types & inference
+    capability: SWE-01
+    key_area: TypeScript & Software Design
+    key_attribute: Type System as a Design Tool
+    anchor: "The TypeScript Handbook (Microsoft TypeScript team)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Software design & architecture
+    capability: SWE-05
+    key_area: TypeScript & Software Design
+    key_attribute: Architecture & Code Health
+    anchor: "Ousterhout, A Philosophy of Software Design (2018); Parnas (1972)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Readable, maintainable code
+    capability: SWE-02
+    key_area: TypeScript & Software Design
+    key_attribute: Architecture & Code Health
+    anchor: "Fowler, Refactoring, 2nd ed. (2018)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Refactoring & technical debt
+    capability: proposed
+    proposal_ref: contrib/2026-07-technical-debt-stewardship.md
+    key_area: TypeScript & Software Design
+    key_attribute: Architecture & Code Health
+    anchor: "Fowler, Refactoring, 2nd ed. (2018); Cunningham's debt metaphor (OOPSLA 1992)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Code review practice
+    capability: SWE-04
+    key_area: TypeScript & Software Design
+    key_attribute: Architecture & Code Health
+    anchor: "Winters, Manshreck & Wright, Software Engineering at Google (2020), code-review chapters"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- Quality & Testing ----
+  - theme: Test strategy & the pyramid
+    capability: QA-01
+    key_area: Quality & Testing
+    key_attribute: Testing Across the Stack
+    anchor: "Cohn (2009) as refined by Vocke, The Practical Test Pyramid (2018)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Test authoring & implementation quality
+    capability: SWE-03
+    key_area: Quality & Testing
+    key_attribute: Testing Across the Stack
+    anchor: "Dodds, Testing Library guiding principles; Meszaros, xUnit Test Patterns (2007)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Integration & end-to-end confidence
+    capability: QA-06
+    key_area: Quality & Testing
+    key_attribute: Testing Across the Stack
+    anchor: "Fowler, ContractTest / consumer-driven contracts (Pact)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Debugging & root-cause analysis
+    capability: SWE-06
+    key_area: Quality & Testing
+    key_attribute: Defect Response & Prevention
+    anchor: "Zeller, Why Programs Fail (2009)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Quality ownership & prevention
+    capability: QA-14
+    key_area: Quality & Testing
+    key_attribute: Defect Response & Prevention
+    anchor: "Forsgren, Humble & Kim, Accelerate (2018) / DORA"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- Delivery & Operations ----
+  - theme: Build & CI pipelines
+    capability: OPS-02
+    key_area: Delivery & Operations
+    key_attribute: Delivery Pipeline
+    anchor: "Forsgren, Humble & Kim, Accelerate (2018) / DORA"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Release & deployment practices
+    capability: proposed
+    proposal_ref: contrib/2026-07-progressive-delivery-release-safety.md
+    key_area: Delivery & Operations
+    key_attribute: Delivery Pipeline
+    anchor: "Humble & Farley, Continuous Delivery (2010)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Developer tooling & environment
+    capability: OPS-27
+    key_area: Delivery & Operations
+    key_attribute: Delivery Pipeline
+    anchor: "Winters, Manshreck & Wright, Software Engineering at Google (2020)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Observability & monitoring
+    capability: OPS-05
+    key_area: Delivery & Operations
+    key_attribute: Production Operations
+    anchor: "Beyer et al., Site Reliability Engineering (Google, 2016); Majors et al., Observability Engineering (2022)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Incident response & postmortems
+    capability: OPS-06
+    key_area: Delivery & Operations
+    key_attribute: Production Operations
+    anchor: "Beyer et al., Site Reliability Engineering (Google, 2016); Allspaw, blameless postmortems (2012)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- Security ----
+  - theme: Secure coding & vulnerability prevention
+    capability: OPS-08
+    key_area: Security
+    key_attribute: Application Security
+    anchor: "OWASP Top 10 (2021) and the OWASP Cheat Sheet Series"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Authentication, authorization & data protection
+    capability: BE-15
+    key_area: Security
+    key_attribute: Application Security
+    anchor: "OWASP ASVS 4.0 and NIST SP 800-63"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Threat modeling & security review
+    capability: SEC-05
+    key_area: Security
+    key_attribute: Application Security
+    anchor: "Shostack, Threat Modeling: Designing for Security (2014)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Dependency & supply-chain hygiene
+    capability: SEC-09
+    key_area: Security
+    key_attribute: Supply Chain & Data Protection
+    anchor: "OpenSSF SLSA framework; OWASP Top 10 A06"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Data protection & privacy
+    capability: OPS-09
+    key_area: Security
+    key_attribute: Supply Chain & Data Protection
+    anchor: "GDPR Art. 25; Cavoukian, Privacy by Design (2009)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- Collaboration & Communication ----
+  - theme: Technical writing & documentation
+    capability: CC-02
+    key_area: Collaboration & Communication
+    key_attribute: Communication
+    anchor: "Winters, Manshreck & Wright, Software Engineering at Google (2020); Procida, Diataxis"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Stakeholder communication
+    capability: CC-01
+    key_area: Collaboration & Communication
+    key_attribute: Communication
+    anchor: "Larson, Staff Engineer (2021)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Technical discussion & decision-making
+    capability: CC-05
+    key_area: Collaboration & Communication
+    key_attribute: Communication
+    anchor: "Nygard, Documenting Architecture Decisions (2011)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Feedback & candor
+    capability: CC-04
+    key_area: Collaboration & Communication
+    key_attribute: Teamwork
+    anchor: "Scott, Radical Candor (2017); Edmondson, The Fearless Organization (2018)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Cross-functional collaboration
+    capability: CC-03
+    key_area: Collaboration & Communication
+    key_attribute: Teamwork
+    anchor: "Cagan, Inspired, 2nd ed. (2018); Skelton & Pais, Team Topologies (2019)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- Leadership & Business Impact ----
+  - theme: Mentoring & growing engineers
+    capability: LI-01
+    key_area: Leadership & Business Impact
+    key_attribute: Growing People & Direction
+    anchor: "Larson, StaffEng (2021); Fournier, The Manager's Path (2017)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Technical direction & influence
+    capability: LI-03
+    key_area: Leadership & Business Impact
+    key_attribute: Growing People & Direction
+    anchor: "Larson, Staff Engineer: Leadership Beyond the Management Track (2021)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Product thinking
+    capability: PD-06
+    key_area: Leadership & Business Impact
+    key_attribute: Product & Business Impact
+    anchor: "Cagan, Inspired, 2nd ed. (2018)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Scoping, prioritization & estimation
+    capability: PD-02
+    key_area: Leadership & Business Impact
+    key_attribute: Product & Business Impact
+    anchor: "McConnell, Software Estimation (2006); Reinertsen, Product Development Flow (2009)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Strategic & commercial awareness
+    capability: proposed
+    proposal_ref: contrib/2026-07-strategic-commercial-awareness.md
+    key_area: Leadership & Business Impact
+    key_attribute: Product & Business Impact
+    anchor: "Rumelt, Good Strategy Bad Strategy (2011)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Ownership & follow-through
+    capability: PD-05
+    key_area: Leadership & Business Impact
+    key_attribute: Product & Business Impact
+    anchor: "Amazon Leadership Principles - Ownership"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
