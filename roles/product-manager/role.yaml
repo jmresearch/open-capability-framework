@@ -1,0 +1,279 @@
+role: Product Manager
+slug: product-manager
+variant: ic_technical
+minted: 2026-07-02
+scope_note: >
+  Level codes P1-P6 are the ladder's own columns (Associate PM -> Distinguished PM) and map
+  to scope bands one feature/epic -> a product area -> a product/capability -> multiple
+  product areas -> product organization -> company portfolio (approximately S1-S6 on the IC
+  axis); they are distinct from the catalog's P1-P6 proficiency scale used in the
+  proficiency maps below. P3 / Senior Product Manager is the terminal level: sustained
+  excellence at product scope is a complete career; P4+ is a different job defined by
+  multi-area craft leverage, never headcount. Consolidated 2026-07 by union from five
+  independent sources (four blind same-methodology runs plus the trusted Muller PM matrix,
+  different lineage; 152 source rows -> 40 canonical). Proficiency targets follow the IC
+  guide P1:P1 ... P6:P6 except Technical & design fluency (LI-06), capped at P4 from level
+  P4 up: a PM's upper-level leverage flows through product craft rather than deeper
+  technical authority, and the source cells plateau accordingly.
+levels:
+  - {code: P1, title: Associate Product Manager, scope: "one feature/epic", focus: "Learns the craft; ships well-defined slices with guidance"}
+  - {code: P2, title: Product Manager, scope: "a product area", focus: "Runs discovery-to-delivery independently for an area"}
+  - {code: P3, title: Senior Product Manager, scope: "a product/capability (terminal level)", focus: "Owns outcomes for a product; sets the bar others copy"}
+  - {code: P4, title: Staff/Group Product Manager, scope: "multiple product areas", focus: "Aligns strategy and craft across several product teams"}
+  - {code: P5, title: Principal Product Manager, scope: "product organization", focus: "Sets product direction and practice the org builds against"}
+  - {code: P6, title: Distinguished PM / Head of Product Craft, scope: "company portfolio", focus: "Shapes portfolio bets and the company's product craft"}
+competencies:
+  # ---- Product Discovery & User Research ----
+  - theme: Customer interviewing
+    capability: PM-01
+    key_area: Product Discovery & User Research
+    key_attribute: Continuous Discovery
+    anchor: "Torres, *Continuous Discovery Habits* (2021); Portigal, *Interviewing Users* (2013)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Discovery cadence & habits
+    capability: PM-01
+    key_area: Product Discovery & User Research
+    key_attribute: Continuous Discovery
+    anchor: "Torres, *Continuous Discovery Habits* (2021); Cagan, *Inspired* (2nd ed., 2018)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Opportunity mapping
+    capability: proposed
+    proposal_ref: contrib/2026-07-opportunity-mapping-framing.md
+    key_area: Product Discovery & User Research
+    key_attribute: Synthesis & Customer Modeling
+    anchor: "Torres, *Continuous Discovery Habits* (2021)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Research synthesis & insight
+    capability: PM-01
+    key_area: Product Discovery & User Research
+    key_attribute: Synthesis & Customer Modeling
+    anchor: "Olsen, *The Lean Product Playbook* (2015)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Customer segmentation & personas
+    capability: PM-02
+    key_area: Product Discovery & User Research
+    key_attribute: Synthesis & Customer Modeling
+    anchor: "Cooper, *The Inmates Are Running the Asylum* (1999)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  # ---- Problem Definition & Validation ----
+  - theme: Problem statements & outcome framing
+    capability: proposed
+    proposal_ref: contrib/2026-07-problem-framing-outcome-definition.md
+    key_area: Problem Definition & Validation
+    key_attribute: Problem Framing
+    anchor: "Perri, *Escaping the Build Trap* (2018)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Jobs-to-be-done framing
+    capability: proposed
+    proposal_ref: contrib/2026-07-jobs-to-be-done-analysis.md
+    key_area: Problem Definition & Validation
+    key_attribute: Problem Framing
+    anchor: "Christensen, Hall, Dillon & Duncan, *Competing Against Luck* (2016)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Assumption mapping & risk framing
+    capability: proposed
+    proposal_ref: contrib/2026-07-assumption-mapping-discovery-testing.md
+    key_area: Problem Definition & Validation
+    key_attribute: Assumption Testing & Validation
+    anchor: "Bland & Osterwalder, *Testing Business Ideas* (2019); Cagan, *Inspired* (2nd ed., 2018)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Assumption testing & experiments
+    capability: proposed
+    proposal_ref: contrib/2026-07-assumption-mapping-discovery-testing.md
+    key_area: Problem Definition & Validation
+    key_attribute: Assumption Testing & Validation
+    anchor: "Ries, *The Lean Startup* (2011); Torres, *Continuous Discovery Habits* (2021)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Prototype & solution testing
+    capability: proposed
+    proposal_ref: contrib/2026-07-assumption-mapping-discovery-testing.md
+    key_area: Problem Definition & Validation
+    key_attribute: Assumption Testing & Validation
+    anchor: "Olsen, *The Lean Product Playbook* (2015)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  # ---- Product Strategy & Vision ----
+  - theme: Product strategy formulation
+    capability: PM-04
+    key_area: Product Strategy & Vision
+    key_attribute: Strategy & Positioning
+    anchor: "Rumelt, *Good Strategy Bad Strategy* (2011)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Positioning & differentiation
+    capability: PM-04
+    key_area: Product Strategy & Vision
+    key_attribute: Strategy & Positioning
+    anchor: "Dunford, *Obviously Awesome* (2019); Moore, *Crossing the Chasm* (3rd ed., 2014)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Product vision narrative
+    capability: PM-06
+    key_area: Product Strategy & Vision
+    key_attribute: Vision, Roadmaps & Goals
+    anchor: "Cagan, *Inspired* (2nd ed., 2018)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Outcome-based roadmapping
+    capability: PM-05
+    key_area: Product Strategy & Vision
+    key_attribute: Vision, Roadmaps & Goals
+    anchor: "Perri, *Escaping the Build Trap* (2018); Lombardo, McCarthy, Ryan & Connors, *Product Roadmaps Relaunched* (2017)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Goal setting & OKRs
+    capability: PM-06
+    key_area: Product Strategy & Vision
+    key_attribute: Vision, Roadmaps & Goals
+    anchor: "Doerr, *Measure What Matters* (2018)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  # ---- Data & Analytics ----
+  - theme: Success metrics & KPI design
+    capability: PM-10
+    key_area: Data & Analytics
+    key_attribute: Metrics & Behavioral Analysis
+    anchor: "Croll & Yoskovitz, *Lean Analytics* (2013)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Funnel & behavioral analysis
+    capability: PM-10
+    key_area: Data & Analytics
+    key_attribute: Metrics & Behavioral Analysis
+    anchor: "McClure, \"Startup Metrics for Pirates\" (AARRR, 2007); Croll & Yoskovitz, *Lean Analytics* (2013)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: A/B test design & analysis
+    capability: PM-11
+    key_area: Data & Analytics
+    key_attribute: Experimentation & Decision Quality
+    anchor: "Kohavi, Tang & Xu, *Trustworthy Online Controlled Experiments* (2020)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Decision quality under uncertainty
+    capability: LI-04
+    key_area: Data & Analytics
+    key_attribute: Experimentation & Decision Quality
+    anchor: "Duke, *Thinking in Bets* (2018)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  # ---- Execution & Delivery ----
+  - theme: Prioritization & sequencing
+    capability: PD-02
+    key_area: Execution & Delivery
+    key_attribute: Prioritization & Trade-offs
+    anchor: "Reinertsen, *The Principles of Product Development Flow* (2009)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Scope-cutting & trade-offs
+    capability: PD-01
+    key_area: Execution & Delivery
+    key_attribute: Prioritization & Trade-offs
+    anchor: "Cagan, *Inspired* (2nd ed., 2018)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Product trio partnership
+    capability: CC-03
+    key_area: Execution & Delivery
+    key_attribute: Building with the Team
+    anchor: "Cagan, *Empowered* (2020)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Requirements, specs & acceptance criteria
+    capability: PM-07
+    key_area: Execution & Delivery
+    key_attribute: Building with the Team
+    anchor: "Bryar & Carr, *Working Backwards* (2021)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Backlog & delivery flow
+    capability: PM-08
+    key_area: Execution & Delivery
+    key_attribute: Building with the Team
+    anchor: "Patton, *User Story Mapping* (2014); Reinertsen, *The Principles of Product Development Flow* (2009)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Technical & design fluency
+    capability: LI-06
+    key_area: Execution & Delivery
+    key_attribute: Building with the Team
+    anchor: "Cagan, *Inspired* (2nd ed., 2018)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P3, P5: P4, P6: P4}
+  - theme: Launch management & readiness
+    capability: PM-09
+    key_area: Execution & Delivery
+    key_attribute: Launch & Iteration
+    anchor: "Cagan, *Inspired* (2nd ed., 2018)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Post-launch iteration & lifecycle
+    capability: PM-10
+    key_area: Execution & Delivery
+    key_attribute: Launch & Iteration
+    anchor: "Olsen, *The Lean Product Playbook* (2015)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  # ---- Business, Market & Go-to-Market ----
+  - theme: Business model & unit economics
+    capability: PD-07
+    key_area: Business, Market & Go-to-Market
+    key_attribute: Business Fluency
+    anchor: "Osterwalder & Pigneur, *Business Model Generation* (2010)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Pricing & packaging
+    capability: PM-12
+    key_area: Business, Market & Go-to-Market
+    key_attribute: Business Fluency
+    anchor: "Ramanujam & Tacke, *Monetizing Innovation* (2016)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Competitive & market analysis
+    capability: PM-03
+    key_area: Business, Market & Go-to-Market
+    key_attribute: Market & Domain Insight
+    anchor: "Moore, *Crossing the Chasm* (3rd ed., 2014)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Domain & industry fluency
+    capability: proposed
+    proposal_ref: contrib/2026-07-domain-industry-fluency.md
+    key_area: Business, Market & Go-to-Market
+    key_attribute: Market & Domain Insight
+    anchor: "Cagan, *Inspired* (2nd ed., 2018)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: GTM planning & partnership
+    capability: PM-09
+    key_area: Business, Market & Go-to-Market
+    key_attribute: Go-to-Market Partnership
+    anchor: "Moore, *Crossing the Chasm* (3rd ed., 2014)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Field feedback & enablement
+    capability: PM-14
+    key_area: Business, Market & Go-to-Market
+    key_attribute: Go-to-Market Partnership
+    anchor: "Cagan, *Inspired* (2nd ed., 2018)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  # ---- Communication, Influence & Craft Leadership ----
+  - theme: Product narratives & written communication
+    capability: CC-01
+    key_area: Communication, Influence & Craft Leadership
+    key_attribute: Communication
+    anchor: "Bryar & Carr, *Working Backwards* (2021)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Executive communication
+    capability: CC-06
+    key_area: Communication, Influence & Craft Leadership
+    key_attribute: Communication
+    anchor: "Minto, *The Pyramid Principle* (1987)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Stakeholder alignment & expectations
+    capability: PM-13
+    key_area: Communication, Influence & Craft Leadership
+    key_attribute: Stakeholder Influence
+    anchor: "Cagan, *Empowered* (2020)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Saying no & negotiation
+    capability: CC-05
+    key_area: Communication, Influence & Craft Leadership
+    key_attribute: Stakeholder Influence
+    anchor: "Perri, *Escaping the Build Trap* (2018)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Mentoring & coaching PMs
+    capability: LI-01
+    key_area: Communication, Influence & Craft Leadership
+    key_attribute: Product Craft Leadership
+    anchor: "Cagan, *Empowered* (2020)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Raising the craft bar
+    capability: LI-03
+    key_area: Communication, Influence & Craft Leadership
+    key_attribute: Product Craft Leadership
+    anchor: "Cagan, *Empowered* (2020); Larson, *Staff Engineer* (2021)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+  - theme: Hiring & interviewing PMs
+    capability: LI-02
+    key_area: Communication, Influence & Craft Leadership
+    key_attribute: Product Craft Leadership
+    anchor: "Cagan, *Empowered* (2020)"
+    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
