@@ -25,7 +25,7 @@ import sys
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ROLES = ("engineering-management", "full-stack-typescript")
+ROLES = ("engineering-management", "full-stack-typescript", "platform-engineering")
 
 MD_LINK = re.compile(r"\[([^\]]*)\]\([^)]*\)")
 CAT_ID = re.compile(r"^([A-Z]+-\d+)\s*(?:—\s*(.*?))?\s*$")
