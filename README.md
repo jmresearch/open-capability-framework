@@ -2,7 +2,7 @@
 
 An open, **technology-agnostic** library of workforce capabilities — a community alternative to SFIA — for building career ladders and planning organizational capability across an entire enterprise.
 
-> **Status:** v0.7 seed. 429 capabilities across 36 domains, each leveled with a six-point behavioral profile (P1–P6). Published as data first; a hosted builder is planned.
+> **Status:** v0.7 seed. 445 capabilities across 36 domains, each leveled with a six-point behavioral profile (P1–P6). Published as data first; a hosted builder is planned.
 
 ## What this is
 
@@ -23,16 +23,16 @@ Three segments group the 36 domains:
 
 | Segment | Domains | Capabilities |
 |---|---|---|
-| Engineering & Technology | 13 | 194 |
-| Product, Design & Cross-functional | 7 | 61 |
+| Engineering & Technology | 13 | 197 |
+| Product, Design & Cross-functional | 7 | 74 |
 | Business & Corporate Functions | 16 | 174 |
-| **Total** | **36** | **429** |
+| **Total** | **36** | **445** |
 
 ## Files
 
 | Path | Contents |
 |---|---|
-| `data/capabilities.csv` | All 429 capabilities: id, segment, domain, focus area, capability, type (Behavioral/Technical), description, and the six P1–P6 behavioral profiles. |
+| `data/capabilities.csv` | All 445 capabilities: id, segment, domain, focus area, capability, type (Behavioral/Technical), description, and the six P1–P6 behavioral profiles. |
 | `data/capabilities.json` | Same data, nested (`levels.P1`…`levels.P6`). |
 | `data/capabilities.md` | Human-readable render of the full catalog, one anchored section per capability (`#<id-lowercase>`), each proficiency line linked to the scale. Generated — do not hand-edit. |
 | `data/domains.csv` | Domain index: segment, prefix, focus-area count, capability count. |

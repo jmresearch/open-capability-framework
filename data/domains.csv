@@ -1,5 +1,5 @@
 domain,segment,prefix,focus_areas,capabilities
-Software Engineering,Engineering & Technology,SWE,2,7
+Software Engineering,Engineering & Technology,SWE,2,9
 Frontend & Client Engineering,Engineering & Technology,FE,5,17
 Backend & Distributed Services,Engineering & Technology,BE,5,19
 Architecture & System Design,Engineering & Technology,ARC,3,10
@@ -7,18 +7,18 @@ Computer Science Foundations,Engineering & Technology,CS,3,9
 Mobile Engineering,Engineering & Technology,MOB,4,12
 Data Engineering & Analytics,Engineering & Technology,DATA,5,20
 AI & ML Engineering,Engineering & Technology,AI,6,20
-"Systems, Infrastructure & Operations",Engineering & Technology,OPS,8,29
+"Systems, Infrastructure & Operations",Engineering & Technology,OPS,8,30
 Security Engineering,Engineering & Technology,SEC,4,17
 Quality Engineering & Test,Engineering & Technology,QA,4,14
 Game Development,Engineering & Technology,GAME,4,12
 Blockchain & Web3,Engineering & Technology,WEB3,3,8
 UX & Product Design,"Product, Design & Cross-functional",UX,3,9
 Product Management,"Product, Design & Cross-functional",PM,5,14
-Engineering Management,"Product, Design & Cross-functional",EM,4,12
+Engineering Management,"Product, Design & Cross-functional",EM,5,17
 Developer Relations & Technical Communication,"Product, Design & Cross-functional",DR,3,10
-Product & Delivery,"Product, Design & Cross-functional",PD,2,6
-Communication & Collaboration,"Product, Design & Cross-functional",CC,2,5
-Leadership & Influence,"Product, Design & Cross-functional",LI,2,5
+Product & Delivery,"Product, Design & Cross-functional",PD,2,7
+Communication & Collaboration,"Product, Design & Cross-functional",CC,2,6
+Leadership & Influence,"Product, Design & Cross-functional",LI,4,11
 Marketing & Communications,Business & Corporate Functions,MKT,4,13
 Sales,Business & Corporate Functions,SAL,4,11
 Partnerships & Business Development,Business & Corporate Functions,BD,3,6

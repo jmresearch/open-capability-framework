@@ -5,9 +5,9 @@
 - **Variant:** manager (people-management track). The role is engineering leadership; every level is a leadership job, leveled on demonstrable leadership behavior.
 - **Consolidation:** this is a **four-source consolidation** — three independently generated ensemble runs of the career-ladder methodology plus a hand-built engineering-leadership workbook (28 competencies each, ~112 source rows), merged by **union, not intersection**: every genuinely distinct competency from any source survives; nothing was voted out for appearing in only one source. The merge map, agreement statistics, and judgment calls are documented in `runs/consolidation-report.md`.
 - **Levels:** six — M1 Engineering Manager (one team) → M2 Senior Engineering Manager (a complex / critical team) → M3 Director (a domain, cross-team) → M4 Senior Director (a sub-org) → M5 VP (a function) → M6 SVP / Org Lead (org-wide). No terminal level in the IC sense: each level is a distinct scope of leadership, not "more of" the level below. Scope widens by adoption breadth and leverage, not headcount.
-- **Framework mapping:** every competency carries an `OCF:` reference to the Open Capability Framework catalog (429 capabilities, 36 domains). 32 competencies map to existing capabilities; 11 are proposed additions with contribution drafts under `contrib/`.
+- **Framework mapping:** every competency carries an `OCF:` reference to the Open Capability Framework catalog (445 capabilities, 36 domains). All 43 competencies map to existing capabilities; the 11 that began as contribution drafts were accepted into the catalog in 2026-07.
 - **Counts:** 6 key areas · 18 focus areas · 43 competencies · one citable theory anchor per competency (deduplicated in Sources); every focus area spans at least two competencies.
-- **Judgment calls (abridged):** (1) Workbook-derived content is genericized — org-specific calibration and named compliance regimes are generalized to "regulated-industry constraints" where the substance matters. (2) Psychological Safety and Motivation, Engagement & Retention both reference OCF `EM-03`, whose description spans both; a future catalog split is flagged in the report. (3) Build-vs-buy content is folded into Technical Strategy & Investment rather than kept as a separate row. (4) Union preservation puts the competency count slightly above the typical 28–32 for a single-source ladder; the three-tier grouping keeps it ratable.
+- **Judgment calls (abridged):** (1) Workbook-derived content is genericized — org-specific calibration and named compliance regimes are generalized to "regulated-industry constraints" where the substance matters. (2) Psychological Safety and Motivation, Engagement & Retention originally both referenced OCF `EM-03`, whose description spanned both; the catalog split was accepted in 2026-07 — Psychological Safety keeps `EM-03` (Psychological safety & team health) and Motivation, Engagement & Retention now maps to `EM-17` (Motivation & engagement). (3) Build-vs-buy content is folded into Technical Strategy & Investment rather than kept as a separate row. (4) Union preservation puts the competency count slightly above the typical 28–32 for a single-source ladder; the three-tier grouping keeps it ratable.
 
 ### Two Dimensions: Competency vs. Scope
 
@@ -115,7 +115,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-situational-adaptive-leadership.md) (LI-08 candidate) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [LI-08](../../data/capabilities.md#li-08) — Situational & Adaptive Leadership | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **M1** — Depth: **Matches direction and support to each person's readiness on each task — directing, coaching, supporting, or delegating deliberately** — and tells technical problems from adaptive ones before choosing a fix. Scope: one team's range of people and situations.
 - **M2** — Depth: **Flexes skillfully across a wider range of people and harder situations without losing a grounded center**; refuses to force technical fixes onto adaptive challenges and names the difference in the room. Scope: a critical team under conflicting demands.
@@ -309,7 +309,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-onboarding-team-formation.md) (EM-13 candidate) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [EM-13](../../data/capabilities.md#em-13) — Onboarding & team formation | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **M1** — Depth: **Runs a 30/60/90 onboarding with named buddies and early wins**; new hires ship in their first weeks and say so in check-ins. Scope: one team's ramp.
 - **M2** — Depth: **Reads a team's formation stage and intervenes on it — resets norms after a merge, names storming in the room instead of managing it by email.** Scope: a critical team through churn and growth.
@@ -405,7 +405,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [EM-03](../../data/capabilities.md#em-03) — Team health & engagement | [P3](../../data/proficiency_scale.md#p3) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [EM-03](../../data/capabilities.md#em-03) — Psychological safety & team health | [P3](../../data/proficiency_scale.md#p3) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **M1** — Depth: **Responds to bad news by thanking the messenger and models fallibility — says "I was wrong" in front of the team**; the quietest person speaks in their meetings, and interruption and ridicule get shut down on the spot. Scope: one team's meetings and channels.
 - **M2** — Depth: **Rebuilds safety where it is damaged — post-incident, post-layoff, post-conflict — measurably**; dissent shows up in decision records again, and dissenters are visibly protected from consequences. Scope: a critical team under pressure.
@@ -420,7 +420,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [EM-03](../../data/capabilities.md#em-03) — Team health & engagement | [P3](../../data/proficiency_scale.md#p3) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [EM-17](../../data/capabilities.md#em-17) — Motivation & engagement | [P3](../../data/proficiency_scale.md#p3) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **M1** — Depth: **Knows what motivates each person and matches work to it — removing dissatisfiers and feeding autonomy, mastery, and purpose**; catches disengagement in work patterns before the survey does, and regrettable attrition is rare and predicted. Scope: one team.
 - **M2** — Depth: **Keeps a critical team engaged through grind — long migrations, incident sieges — by restoring autonomy and purpose where they have eroded**; re-recruits key people proactively, before the resignation letter. Scope: a high-pressure team.
@@ -454,7 +454,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-technical-credibility.md) (LI-06 candidate) | [P3](../../data/proficiency_scale.md#p3) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P5](../../data/proficiency_scale.md#p5) |
+| [LI-06](../../data/capabilities.md#li-06) — Technical Credibility | [P3](../../data/proficiency_scale.md#p3) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P5](../../data/proficiency_scale.md#p5) |
 
 - **M1** — Depth: **Understands the team's systems well enough to review designs, probe trade-offs, and triage incidents** — earns technical respect without taking the keyboard. Scope: one team's systems.
 - **M2** — Depth: **Maintains depth across a critical system's stack and hardest problems — a credible thought-partner to staff engineers**, pairing them with the business context they need to choose well. Scope: a critical system and its senior ICs.
@@ -531,7 +531,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-technical-debt-stewardship.md) (EM-15 candidate) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [EM-15](../../data/capabilities.md#em-15) — Technical debt & risk stewardship | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **M1** — Depth: **Keeps a visible debt register with the cost of carry noted and retires items on a cadence**, defending a steady paydown allocation in planning rather than begging quarter by quarter. Scope: one team's codebases.
 - **M2** — Depth: **Distinguishes debt worth carrying from debt that will detonate and sequences remediation by risk**, pricing debt in incident and velocity terms stakeholders accept; lands a major consolidation without stopping the roadmap. Scope: a critical system.
@@ -565,7 +565,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-executive-communication.md) (CC-06 candidate) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [CC-06](../../data/capabilities.md#cc-06) — Executive Communication | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **M1** — Depth: **Reports upward with the headline and the ask first — never burying the slip in paragraph four**; no surprise reaches their leadership from someone else. Scope: their management chain and immediate stakeholders.
 - **M2** — Depth: **Briefs senior leaders under fire — facts, impact, options, and a recommendation inside the first two minutes**; their one-pagers get forwarded unedited. Scope: executive-facing moments for a critical program.
@@ -597,7 +597,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-influence-without-authority.md) (LI-07 candidate) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [LI-07](../../data/capabilities.md#li-07) — Influence without Authority | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **M1** — Depth: **Wins cooperation from adjacent teams by trading in their currencies — timing help, review effort, shared credit — rather than escalating.** Scope: one team's dependencies.
 - **M2** — Depth: **Secures priority from other teams for a critical program with no borrowed authority** — builds the case in the other team's terms and repays visibly. Scope: a program's dependency network.
@@ -631,7 +631,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-managerial-leverage-focus.md) (EM-16 candidate) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [EM-16](../../data/capabilities.md#em-16) — Managerial leverage & focus | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **M1** — Depth: **Runs a deliberate calendar that matches stated priorities — one-on-ones, deep work, and team time protected; low-leverage meetings declined with alternatives** — and ends each week with the highest-leverage actions done. Scope: their own week and one team's operating rhythm.
 - **M2** — Depth: **Prunes their own involvement ruthlessly as complexity grows — automates, delegates, or kills recurring work every quarter** — and models a sustainable pace through crunch; peers copy the operating cadence. Scope: a complex team's demands on one person.
@@ -646,7 +646,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-delegation-empowerment.md) (EM-14 candidate) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [EM-14](../../data/capabilities.md#em-14) — Delegation & empowerment | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **M1** — Depth: **Delegates whole outcomes with context and check-in contracts matched to each person's readiness — not tasks with instructions** — and resists snatching work back when it wobbles. Scope: work within one team.
 - **M2** — Depth: **Hands ownership of a critical, visible workstream to someone not yet proven and scaffolds them to success — letting them keep the credit publicly**; the team runs a week without them and nothing stalls. Scope: a complex team's critical path.
@@ -663,7 +663,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-self-awareness-learning-agility.md) (LI-09 candidate) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [LI-09](../../data/capabilities.md#li-09) — Self-Awareness & Learning Agility | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **M1** — Depth: **Asks for feedback on their own management and changes visibly in response — "you said X, I changed Y"** — and approaches first-time situations as learnable, keeping a running list of their own failure patterns. Scope: their own practice, witnessed by one team.
 - **M2** — Depth: **Knows their failure modes under pressure and manages them in the moment — staffs deliberately against known weaknesses**, seeking disconfirming input on their hardest calls before deciding. Scope: a critical team's exposure to their blind spots.
@@ -678,7 +678,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-resilience-sustainable-pace.md) (LI-10 candidate) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [LI-10](../../data/capabilities.md#li-10) — Resilience & Sustainable Pace | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **M1** — Depth: **Stays effective and steady under pressure — recovers from setbacks, manages their own energy, and models a sustainable pace** the team learns from watching, not from posters. Scope: one team's pace-setting example.
 - **M2** — Depth: **Holds up through prolonged pressure — incident sieges, crunch, org turbulence — and helps the team stay resilient**, refusing burnout-driven decisions and naming them when they appear. Scope: a critical team under sustained load.
@@ -710,7 +710,7 @@ This ladder separates two things that org charts blur. **Competency** is what a 
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-integrity-trust.md) (LI-11 candidate) | [P3](../../data/proficiency_scale.md#p3) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [LI-11](../../data/capabilities.md#li-11) — Integrity & Trust | [P3](../../data/proficiency_scale.md#p3) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **M1** — Depth: **Keeps commitments or renegotiates them before the deadline, never after — says the same thing in the room and out of it**, owns mistakes unprompted, and tells stakeholders the true state of the project when the truth is unwelcome. Scope: one team's trust in its manager.
 - **M2** — Depth: **Holds the quality or safety line on a critical system under senior pressure — makes the unpopular-but-right call and absorbs the cost personally**, protecting the engineer who raised the flag; handles sensitive information impeccably. Scope: a critical system's integrity.

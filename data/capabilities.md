@@ -1,6 +1,6 @@
 # Capability Catalog
 
-The full Open Capability Framework catalog — 429 capabilities across 36 domains, grouped Segment → Domain → Focus Area. Each capability carries a six-point behavioral profile on the capability-side [P1–P6 proficiency scale](proficiency_scale.md). Note the two-axis split: proficiency (P1–P6) is intrinsic to the capability and measures *how well*; scope ([S1–S6](scope_levels.md)) is a property of the **role** and measures *how broad*. Role records under `roles/` combine the two.
+The full Open Capability Framework catalog — 445 capabilities across 36 domains, grouped Segment → Domain → Focus Area. Each capability carries a six-point behavioral profile on the capability-side [P1–P6 proficiency scale](proficiency_scale.md). Note the two-axis split: proficiency (P1–P6) is intrinsic to the capability and measures *how well*; scope ([S1–S6](scope_levels.md)) is a property of the **role** and measures *how broad*. Role records under `roles/` combine the two.
 
 Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) so role ladders can deep-link here.
 
@@ -95,6 +95,30 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P4 — Expert](proficiency_scale.md#p4):** Expert in platform/service design (multi-tenancy, capacity, shared services).
 - **[P5 — Authority](proficiency_scale.md#p5):** Sets interface standards used across the org.
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Defines company-wide API approach; trusted with irreversible interface bets.
+
+<a id="swe-08"></a>
+##### SWE-08 — Type-System Domain Modeling
+
+*Type:* Technical — Uses a static type system as a design medium — encoding domain rules and invariants in types so invalid states are unrepresentable and whole defect classes are eliminated at compile time.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Writes correctly typed code without escape hatches (`any`-equivalents), uses the codebase's existing types and generics correctly, and reads compiler errors to the actual cause with guidance.
+- **[P2 — Independent](proficiency_scale.md#p2):** Models feature domains so invalid states fail to compile — sum types / discriminated unions over boolean flags, narrowing over assertions — preferring type-level constraints where the compiler can carry the load.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Designs the shared domain types a capability is built on, keeping inference ergonomic for consumers; judges when type-level sophistication pays and when it obscures, and unwinds accumulated type erosion in others' code.
+- **[P4 — Expert](proficiency_scale.md#p4):** Sets type-design conventions multiple teams adopt — strictness policy, shared type libraries, branded identifiers, result types — and leads migrations that raise strictness without halting delivery.
+- **[P5 — Authority](proficiency_scale.md#p5):** Owns an organization's type-system posture — compiler baselines, monorepo type architecture, upgrade cadence — measured by defect and velocity outcomes.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Makes company-level language and type-platform bets and represents the practice externally (talks, upstream contributions, published patterns).
+
+<a id="swe-09"></a>
+##### SWE-09 — Boundary Validation & End-to-End Type Integrity
+
+*Type:* Technical — Validates untrusted data into precise types once at every system boundary (network, storage, configuration, third parties) and propagates a single source of type truth across client, server, and wire so contracts cannot silently drift.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Uses the codebase's shared contract types and schema validators at boundaries rather than hand-casting external data, and can point to where a type is checked at runtime.
+- **[P2 — Independent](proficiency_scale.md#p2):** Puts runtime validation at every I/O boundary they touch — requests, messages, configuration — deriving static types from the runtime schemas so compile-time and runtime cannot drift.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Designs end-to-end type integrity for a capability — schema-first contracts, generated clients, contract drift caught in continuous integration — and blocks unsound casts and unvalidated edges in review.
+- **[P4 — Expert](proficiency_scale.md#p4):** Builds the code-generation and contract-typing infrastructure multiple teams inherit, making boundary safety the default rather than a discipline, and resolves cross-team type drift at its source.
+- **[P5 — Authority](proficiency_scale.md#p5):** Sets the organization's boundary-safety standard and the platform tooling that enforces it, with incident evidence showing the failure classes it removed.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Owns contract-integrity strategy across products and external interfaces where a broken contract is a business event, and advances the state of practice publicly.
 
 ### Frontend & Client Engineering (FE)
 
@@ -1822,6 +1846,20 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P5 — Authority](proficiency_scale.md#p5):** Sets organization-wide approaches to systems reasoning, anticipating where complex-failure analysis is heading.
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Defines what rigorous systems thinking means for the discipline, externally credible in shaping the practice.
 
+#### Operations
+
+<a id="ops-30"></a>
+##### OPS-30 — Progressive Delivery & Release Safety
+
+*Type:* Technical — Manages how change reaches production safely — decoupling deploy from release with feature flags, staged and canary rollouts, rollback readiness, and migration sequencing that bounds the blast radius of every change.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Follows the release process exactly — flags, staged rollout steps, verification checklists — verifies their change in production, and rolls back with guidance.
+- **[P2 — Independent](proficiency_scale.md#p2):** Ships behind flags with a rollback plan by default, monitors rollouts and reverts on their own judgment when signals degrade, and writes changes that tolerate both versions running during rollout.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Designs the rollout for risky changes — canary criteria, migration sequencing, flag lifecycle, kill switches — and reviews others' rollout plans for blast radius; the person teams ask how to ship something safely.
+- **[P4 — Expert](proficiency_scale.md#p4):** Builds progressive-delivery machinery multiple teams release through (flag platforms, automated canary analysis, automated rollback), retiring deploy patterns that cause repeat incidents and measurably raising deploy frequency.
+- **[P5 — Authority](proficiency_scale.md#p5):** Owns release policy for an organization and its delivery metrics — rollout standards, freeze rules, environment strategy — dismantling ceremony that adds no safety.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Sets how an entire company's software reaches customers — the risk posture products ship under — and defends it to executives, auditors, and regulators.
+
 ### Security Engineering (SEC)
 
 #### Identity & Access
@@ -2799,16 +2837,16 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Defines exemplary career sponsorship for the discipline and is externally recognized for it.
 
 <a id="em-03"></a>
-##### EM-03 — Team health & engagement
+##### EM-03 — Psychological safety & team health
 
-*Type:* Behavioral — Cultivating motivation, psychological safety, and retention within the team.
+*Type:* Behavioral — Creates the conditions where people raise problems, dissent, and admit mistakes without penalty; reads and repairs team-health signals (conflict, burnout risk, on-call load).
 
-- **[P1 — Assisted](proficiency_scale.md#p1):** Notices and reports team-health signals under guidance.
-- **[P2 — Independent](proficiency_scale.md#p2):** Maintains a healthy, engaged team day-to-day with normal review.
-- **[P3 — Proficient](proficiency_scale.md#p3):** Independently diagnoses morale issues and restores engagement in struggling teams.
-- **[P4 — Expert](proficiency_scale.md#p4):** Defines team-health practices others adopt and turns around the most dysfunctional teams.
-- **[P5 — Authority](proficiency_scale.md#p5):** Sets the org's engagement strategy and anticipates burnout and culture risks early.
-- **[P6 — Pioneer](proficiency_scale.md#p6):** Defines what healthy engineering teams look like and shapes the field's practice.
+- **[P1 — Assisted](proficiency_scale.md#p1):** With guidance, runs meetings where quieter members are heard; escalates team-health concerns they notice.
+- **[P2 — Independent](proficiency_scale.md#p2):** Creates safety on their own team — models fallibility, protects dissent, surfaces and resolves conflict early; monitors basic health signals.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Sustains safety through pressure (incidents, deadlines, change); repairs damaged trust; the team measurably speaks up (postmortems name real causes).
+- **[P4 — Expert](proficiency_scale.md#p4):** Diagnoses and fixes systemic safety failures across teams; other leaders seek their help on entrenched conflict and burnout patterns.
+- **[P5 — Authority](proficiency_scale.md#p5):** Sets the org's team-health bar and mechanisms; safety practices they designed are adopted org-wide.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Shapes how the industry thinks about team health; published practices others implement.
 
 #### Organizational Design
 
@@ -2923,6 +2961,74 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P4 — Expert](proficiency_scale.md#p4):** Defines change approaches others adopt and rescues stalled transformations.
 - **[P5 — Authority](proficiency_scale.md#p5):** Sets the org's transformation strategy and anticipates where change is needed next.
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Defines effective engineering transformation for the discipline and shapes external practice.
+
+#### People Management
+
+<a id="em-13"></a>
+##### EM-13 — Onboarding & team formation
+
+*Type:* Behavioral — Ramps new people to productivity fast and leads teams through formation stages — launches, merges, and resets — deliberately rather than enduring them.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Follows an existing onboarding checklist for new hires; escalates ramp problems.
+- **[P2 — Independent](proficiency_scale.md#p2):** Runs a 30/60/90 onboarding with named buddies and early wins; new hires ship in their first weeks and say so in check-ins.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Reads a team's formation stage and intervenes on it — resets norms after a merge, names storming in the room instead of managing it by email.
+- **[P4 — Expert](proficiency_scale.md#p4):** Builds the onboarding and team-launch playbook multiple teams use; teams start faster because of materials and rituals they created, and stands up whole new teams repeatedly.
+- **[P5 — Authority](proficiency_scale.md#p5):** Designs how an organization absorbs step-change growth — acquisitions, new sites, doubled headcount — without culture dilution; integration plans carry named cultural mechanisms.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Makes team formation an organization-wide capability — new groups spin up predictably without heroics — and audits that the machinery still works.
+
+<a id="em-14"></a>
+##### EM-14 — Delegation & empowerment
+
+*Type:* Behavioral — Hands over whole outcomes with context and calibrated support, pushes decision rights to where the information lives, and builds organizations that run on intent rather than presence.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Assigns tasks with instructions and checks completion; keeps consequential work for themselves.
+- **[P2 — Independent](proficiency_scale.md#p2):** Delegates whole outcomes with context and check-in contracts matched to each person's readiness — and resists snatching work back when it wobbles.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Hands ownership of critical, visible work to someone not yet proven and scaffolds them to success, letting them keep the credit; the team runs a week without them and nothing stalls.
+- **[P4 — Expert](proficiency_scale.md#p4):** Pushes decisions down across multiple teams — publishes decision rights so teams stop escalating what they can decide themselves; involvement is exception-based, and everyone knows which is which.
+- **[P5 — Authority](proficiency_scale.md#p5):** Builds organizations that run on mechanisms rather than presence — delegated authorities with audit trails, pre-declared tripwires — and grants leaders consequential authority held to outcomes, not methods.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Runs an organization on intent — direction and guardrails clear enough that leaders act correctly without asking — and treats every upward escalation as a design flaw to fix.
+
+#### Execution & Operations
+
+<a id="em-15"></a>
+##### EM-15 — Technical debt & risk stewardship
+
+*Type:* Behavioral — Surfaces, prices, and manages technical debt and technical risk as an economic portfolio — funding paydown structurally and setting the speed-versus-soundness posture explicitly.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Records known shortcuts and defects when directed; raises debt concerns in planning.
+- **[P2 — Independent](proficiency_scale.md#p2):** Keeps a visible debt register with the cost of carry noted and defends a steady paydown allocation in planning rather than begging quarter by quarter.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Distinguishes debt worth carrying from debt that will detonate, sequences remediation by risk, and prices debt in incident and velocity terms stakeholders accept.
+- **[P4 — Expert](proficiency_scale.md#p4):** Makes debt legible across multiple teams — shared taxonomy, reporting rhythm — and gets cross-team risk (the shared library nobody owns, the half-finished migration) owned and funded.
+- **[P5 — Authority](proficiency_scale.md#p5):** Carries technical risk onto the executive risk register — top exposures known, sized, owned, trending — and lands multi-quarter remediation programs against feature pressure.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Sets an organization's speed-versus-soundness posture explicitly — where debt is accepted for velocity and where it never is — and holds it under growth pressure.
+
+#### Personal Effectiveness
+
+<a id="em-16"></a>
+##### EM-16 — Managerial leverage & focus
+
+*Type:* Behavioral — Spends leadership time where it multiplies — deliberate calendar design, high-leverage intervention choice, and systematic abandonment of low-value work.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Keeps commitments manageable with help; recognizes when their calendar no longer matches priorities.
+- **[P2 — Independent](proficiency_scale.md#p2):** Runs a deliberate calendar that matches stated priorities — protected one-on-ones, deep work, and team time; declines low-leverage meetings with alternatives offered.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Prunes their own involvement ruthlessly as complexity grows — automates, delegates, or kills recurring work every quarter — and models sustainable pace through crunch.
+- **[P4 — Expert](proficiency_scale.md#p4):** Chooses interventions by multiplier across many teams — the review that shapes ten decisions, the document that aligns three roadmaps — declining the rest by policy; audits their time and publishes the changes.
+- **[P5 — Authority](proficiency_scale.md#p5):** Allocates attention like a portfolio at organizational scale — deep on the few places they are the unique unlock, delegated on the rest — and says which is which out loud.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Spends presence deliberately as an organizational signal — where they show up moves priorities — and guards the organization's focus by limiting concurrent top priorities and abandoning stale initiatives by name.
+
+#### People Management
+
+<a id="em-17"></a>
+##### EM-17 — Motivation & engagement
+
+*Type:* Behavioral — Builds durable intrinsic motivation: removes dissatisfiers, feeds autonomy/mastery/purpose, recognizes well.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Recognizes teammates' good work; flags demotivating friction to their manager.
+- **[P2 — Independent](proficiency_scale.md#p2):** Knows what drives each person on their team; removes hygiene friction and matches work to intrinsic drivers; recognition is specific and timely.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Sustains engagement through hard stretches; diagnoses systemic motivation problems (not just individuals) and fixes the conditions.
+- **[P4 — Expert](proficiency_scale.md#p4):** Builds engagement mechanisms other teams adopt; reverses disengagement trends beyond their own span.
+- **[P5 — Authority](proficiency_scale.md#p5):** Owns the engagement strategy for a function; conditions they designed show up in retention and survey trends.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Advances the practice of engagement in the field; frameworks others cite and use.
 
 ### Developer Relations & Technical Communication (DR)
 
@@ -3130,6 +3236,18 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P5 — Authority](proficiency_scale.md#p5):** Sets product direction for an org's technical surface.
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Shapes how the company creates value through technical products.
 
+<a id="pd-07"></a>
+##### PD-07 — Strategic & Commercial Awareness
+
+*Type:* Behavioral — Frames technical decisions in economic and business terms — cost, revenue risk, cost of delay, unit economics — and answers for whether the work actually moved its business outcome.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** States what business outcome their current task serves — and asks when they can't — treating infrastructure and license costs as real money.
+- **[P2 — Independent](proficiency_scale.md#p2):** Checks whether shipped work actually moved its metric and says so plainly when it didn't; weighs cost and maintenance burden in the technical choices they own.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Frames a domain's technical decisions in business terms — cost of delay, revenue risk, support load — pushes back on work with weak business rationale, and redirects effort when the numbers say the plan is wrong.
+- **[P4 — Expert](proficiency_scale.md#p4):** Builds the business case for the cross-team technical investments with the largest return and is trusted by leadership to have done the math.
+- **[P5 — Authority](proficiency_scale.md#p5):** Aligns an organization's technical strategy with its economics — cost curves, velocity, risk — owning trade-offs measured in staff-years and reporting them in the business's own terms.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Advises company leadership on where technology changes the business model and is accountable for company-level technology bets paying off.
+
 ### Communication & Collaboration (CC)
 
 #### Communication
@@ -3196,6 +3314,20 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P5 — Authority](proficiency_scale.md#p5):** Designs the decision processes the org uses to resolve conflict.
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Sets the company norm for principled disagreement.
 
+#### Communication
+
+<a id="cc-06"></a>
+##### CC-06 — Executive Communication
+
+*Type:* Behavioral — Communicates upward and to executive audiences — answer-first briefings, decision-ready framing, and composure under hostile questioning.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Prepares status updates for leadership with guidance; leads with the headline when coached to.
+- **[P2 — Independent](proficiency_scale.md#p2):** Reports upward answer-first with a specific ask; escalates early with options attached, so no surprise reaches leadership from someone else.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Briefs senior leaders under pressure — facts, impact, options, and a recommendation inside the first two minutes; one-pagers get forwarded unedited.
+- **[P4 — Expert](proficiency_scale.md#p4):** Builds and lands investment cases with executive audiences — pre-wired with skeptics, sized in business terms, honest about risk; coaches others for executive rooms and runs the operating reviews an organization communicates through.
+- **[P5 — Authority](proficiency_scale.md#p5):** Operates the executive room as a peer — advances positions, absorbs hostile questioning without defensiveness, and changes the room's decision more often than not.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Speaks for an organization's technical reality to boards, investors, and press; trusted with the messages that cannot be delegated, and organizational credibility survives the appearances.
+
 ### Leadership & Influence (LI)
 
 #### Growing People
@@ -3261,6 +3393,82 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P4 — Expert](proficiency_scale.md#p4):** Aligns multiple teams and leadership behind a direction.
 - **[P5 — Authority](proficiency_scale.md#p5):** Creates forums/narratives through which the org aligns.
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Aligns the company behind direction; externally persuasive.
+
+<a id="li-06"></a>
+##### LI-06 — Technical Credibility
+
+*Type:* Behavioral — Retains enough hands-on technical depth to earn engineers' trust, ask the questions that change designs, and judge technical work without doing it.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Follows the team's technical discussions and asks clarifying questions; relies on others to evaluate design quality.
+- **[P2 — Independent](proficiency_scale.md#p2):** Understands the systems in scope well enough to review designs, probe trade-offs, and triage incidents — earns technical respect without taking the keyboard.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Maintains depth across a complex system's stack and hardest problems; a credible thought-partner to the most senior engineers, pairing them with the context they need.
+- **[P4 — Expert](proficiency_scale.md#p4):** Retains broad credibility across a multi-team domain — credible on its hardest cross-cutting technical questions, current enough to ask the question that changes a design.
+- **[P5 — Authority](proficiency_scale.md#p5):** Sustains the credibility to guide an organization's technology direction; translates architectural risk into business terms without distortion, and senior technologists accept the judgment.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Sustains credibility across an entire technology landscape; their technical judgment is trusted at every altitude because it survives contact with detail.
+
+#### Organizational Influence
+
+<a id="li-07"></a>
+##### LI-07 — Influence without Authority
+
+*Type:* Behavioral — Wins outcomes across organizational seams with no formal mandate — exchange in others' currencies, coalition-building, and earned credibility.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Builds working relationships with adjacent teams; asks for help through the right people with guidance.
+- **[P2 — Independent](proficiency_scale.md#p2):** Wins cooperation from adjacent teams by trading in their currencies — timing help, review effort, shared credit — rather than escalating.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Secures priority from other teams for an initiative with no borrowed authority; builds the case in the other party's terms and repays visibly.
+- **[P4 — Expert](proficiency_scale.md#p4):** Moves a multi-team domain to a shared position with no mandate — assembles the coalition, converts the best-argued skeptic — and the position holds after they stop pushing.
+- **[P5 — Authority](proficiency_scale.md#p5):** Shifts organization-level outcomes through people several seams away who advocate the position as their own; lands decisions while holding a minority of the formal power in the room.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Shapes industry and market context in the organization's favor — standards bodies, open ecosystems, talent narratives — so external forces push where the organization wants to go.
+
+#### Personal Leadership
+
+<a id="li-08"></a>
+##### LI-08 — Situational & Adaptive Leadership
+
+*Type:* Behavioral — Reads what the person, team, and moment need and flexes leadership approach — directing, coaching, supporting, delegating — from a grounded, authentic center; distinguishes technical from adaptive challenges.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Recognizes that different people need different support; adjusts approach when prompted by feedback.
+- **[P2 — Independent](proficiency_scale.md#p2):** Matches direction and support to each person's readiness per task — directing, coaching, supporting, or delegating deliberately — and tells technical problems from adaptive ones.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Flexes skillfully across a wide range of people and hard situations without losing a grounded center; refuses to force technical fixes onto adaptive challenges and names the difference.
+- **[P4 — Expert](proficiency_scale.md#p4):** Coaches other leaders to read what a person, team, or moment needs; adapts across diverse teams while staying recognizably consistent in values.
+- **[P5 — Authority](proficiency_scale.md#p5):** Develops adaptive leadership as an organizational discipline — leaders diagnose technical-versus-adaptive at scale, and the leadership style changes when the situation does.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Shapes an adaptive, grounded leadership culture across an organization — style stays plastic to conditions while values stay fixed; the approach is emulated beyond the organization.
+
+<a id="li-09"></a>
+##### LI-09 — Self-Awareness & Learning Agility
+
+*Type:* Behavioral — Seeks external feedback on their own behavior, knows their failure patterns, and extracts lessons from first-time situations fast enough to lead credibly in them.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Accepts feedback about their own behavior without defensiveness; acts on it when the change is spelled out.
+- **[P2 — Independent](proficiency_scale.md#p2):** Asks for feedback on their own practice and changes visibly in response — "you said X, I changed Y" — keeping a running list of their own failure patterns.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Knows their failure modes under pressure and manages them in the moment; staffs deliberately against known weaknesses and seeks disconfirming input before hard calls.
+- **[P4 — Expert](proficiency_scale.md#p4):** Runs structured input on themselves — 360s, skip-level themes — and closes the loop publicly on what changed; retools openly for first-time challenges so others copy the learning method.
+- **[P5 — Authority](proficiency_scale.md#p5):** Compensates deliberately for the seniority feedback vacuum — cultivates truth-tellers, rewards bearers of unwelcome news about themselves, and retires their own outdated playbook when the organization outgrows it.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Institutionalizes challenge to their own judgment — red teams, protected dissent — and manages how their moods and offhand comments get amplified across an organization.
+
+<a id="li-10"></a>
+##### LI-10 — Resilience & Sustainable Pace
+
+*Type:* Behavioral — Sustains effectiveness under prolonged pressure, recovers from setbacks, and designs sustainable pace into how teams operate rather than modeling heroics.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Maintains composure through normal setbacks; recognizes their own overload and asks for help.
+- **[P2 — Independent](proficiency_scale.md#p2):** Stays effective and steady under pressure — recovers from setbacks, manages their own energy, and models a sustainable pace others learn from watching.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Holds up through prolonged pressure — incident sieges, crunch, organizational turbulence — helping the team stay resilient and refusing burnout-driven decisions.
+- **[P4 — Expert](proficiency_scale.md#p4):** Builds resilience into how multiple teams operate — on-call health, recovery after pushes, load balancing — and repairs burnout risk at scale.
+- **[P5 — Authority](proficiency_scale.md#p5):** Stewards organizational resilience — capacity buffers, crisis rotation, energy management for senior leaders — and holds the line when business pressure argues for permanent crunch.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Shapes a resilient, sustainable culture across an organization; the organization absorbs shocks without breaking people, and the practice is referenced beyond it.
+
+<a id="li-11"></a>
+##### LI-11 — Integrity & Trust
+
+*Type:* Behavioral — Earns and keeps trust through consistency and courage — keeping commitments, telling unwelcome truths, and holding the ethical line when it is costly.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Keeps commitments with reminders; is honest when asked directly; escalates ethical concerns to others.
+- **[P2 — Independent](proficiency_scale.md#p2):** Keeps commitments or renegotiates before the deadline, never after; says the same thing in the room and out of it, owns mistakes unprompted, and reports true status when the truth is unwelcome.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Makes the unpopular-but-right call under pressure and absorbs the cost personally; protects the person who raised the flag and handles sensitive information impeccably.
+- **[P4 — Expert](proficiency_scale.md#p4):** Serves as the honest broker across teams — disputing parties accept their account of the facts — and carries uncomfortable systemic truths to the room that can fix them.
+- **[P5 — Authority](proficiency_scale.md#p5):** Builds mechanisms that make integrity cheap at scale — ethics review in design, safe escalation with follow-through, fairness systems whose losers affirm the process — and stops launches on ethical grounds with the business case for trust.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Holds an organization's line when the profitable path and the right path diverge — the hard disclosure, the walked-away revenue — and those moments become the story the culture tells about itself.
 
 ## Business & Corporate Functions
 
