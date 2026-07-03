@@ -2,6 +2,11 @@
 # Fetched live by skills/create-canonical-role. Schema and quality bar: benchmarks/README.md.
 
 reference_canons:
+  product-manager:
+    concepts: 40
+    stable: 36
+    core: 24
+    source: roles/product-manager (5-source consolidation report)
   ai-engineer:
     concepts: 43
     stable: 34
@@ -178,3 +183,23 @@ configs:
     recommended_runs: 5
     date: 2026-07-02
     source: benchmarks PR [ai-engineer] mint telemetry
+
+  - model: claude-fable-5
+    effort: low
+    runs_observed: 4
+    role_tested: product-manager
+    validator_pass_rate: 1.0
+    mean_competencies_per_run: 31.5
+    mean_canon_coverage_per_run: 0.79
+    core_recall_2runs: 1.0
+    systematic_gaps: []
+    register_notes: >-
+      First product-track (non-engineering IC) data point: 79% coverage/run, zero gaps, perfect
+      2-run core recall - saturation behaves like consensual IC engineering roles, not like the
+      management variant. Two runs self-caught structural violations pre-validator.
+      recommended_runs 4 pending a second product-track role.
+    tokens_per_run_median: 67000
+    canon_capable: true
+    recommended_runs: 4
+    date: 2026-07-02
+    source: benchmarks PR [product-manager] mint telemetry
