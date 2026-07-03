@@ -1,0 +1,287 @@
+role: AI Engineer
+slug: ai-engineer
+variant: ic_technical
+minted: 2026-07-02
+scope_note: >
+  E1-E6 map to scope bands task -> component -> capability/domain -> multiple teams ->
+  organization -> company (approximately S1-S6 on the IC axis). E3 / Senior is the terminal
+  level: sustained excellence at capability scope is a complete career; E4+ is a different
+  job defined by multi-team leverage. Consolidated 2026-07 by union from six independent
+  same-methodology sources (180 source competencies -> 43 canonical); proficiency targets
+  follow the IC guide E1:P1 ... E6:P6 - per-competency review found the source cells
+  consistently written to those bars, so no deviations were warranted.
+levels:
+  - {code: E1, title: Associate AI Engineer, scope: "task", focus: "Learns the AI stack and ships well-scoped tasks with guidance"}
+  - {code: E2, title: AI Engineer, scope: "component", focus: "Owns model-backed components end to end, independently"}
+  - {code: E3, title: Senior AI Engineer, scope: "capability / domain (terminal level)", focus: "Owns an AI capability; the quality bar for a domain; terminal level"}
+  - {code: E4, title: Staff AI Engineer, scope: "multiple teams", focus: "Sets patterns and standards multiple teams build against"}
+  - {code: E5, title: Senior Staff AI Engineer, scope: "organization", focus: "Drives org-wide AI engineering strategy"}
+  - {code: E6, title: Principal AI Engineer, scope: "company", focus: "Sets company-level technical direction for AI"}
+competencies:
+  # ---- Software Engineering Craft ----
+  - theme: System design & architecture
+    capability: SWE-05
+    key_area: Software Engineering Craft
+    key_attribute: Design & Architecture
+    anchor: "Kleppmann, *Designing Data-Intensive Applications* (2017)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: API & service design
+    capability: SWE-07
+    key_area: Software Engineering Craft
+    key_attribute: Design & Architecture
+    anchor: "Bloch, \"How to Design a Good API and Why It Matters\" (2006)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Coding & implementation
+    capability: SWE-01
+    key_area: Software Engineering Craft
+    key_attribute: Code Craft & Implementation
+    anchor: "McConnell, *Code Complete* (2nd ed., 2004)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Code quality & review
+    capability: SWE-02
+    key_area: Software Engineering Craft
+    key_attribute: Code Craft & Implementation
+    anchor: "Winters, Manshreck & Wright, *Software Engineering at Google* (2020)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Debugging & systems diagnosis
+    capability: SWE-06
+    key_area: Software Engineering Craft
+    key_attribute: Code Craft & Implementation
+    anchor: "Agans, *Debugging: The 9 Indispensable Rules* (2002)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Deterministic tests vs evals
+    capability: SWE-03
+    key_area: Software Engineering Craft
+    key_attribute: Testing & AI-Assisted Development
+    anchor: "Vocke, \"The Practical Test Pyramid\" (martinfowler.com, 2018); Husain, \"Your AI Product Needs Evals\" (2024)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: AI-augmented development judgment
+    capability: proposed
+    proposal_ref: contrib/2026-07-ai-augmented-development.md
+    key_area: Software Engineering Craft
+    key_attribute: Testing & AI-Assisted Development
+    anchor: "DORA, *Accelerate State of DevOps Report* (2024), AI adoption findings"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- LLM Integration & Context Engineering ----
+  - theme: Prompt design & iteration
+    capability: AI-01
+    key_area: LLM Integration & Context Engineering
+    key_attribute: Model Integration & Prompting
+    anchor: "Anthropic and OpenAI prompt-engineering guides (2023-2025)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Model selection & integration
+    capability: AI-01
+    key_area: LLM Integration & Context Engineering
+    key_attribute: Model Integration & Prompting
+    anchor: "Huyen, *AI Engineering* (2025)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Structured output & schema design
+    capability: SWE-09
+    key_area: LLM Integration & Context Engineering
+    key_attribute: Model Integration & Prompting
+    anchor: "Schick et al., \"Toolformer: Language Models Can Teach Themselves to Use Tools\" (2023)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Retrieval & grounding pipelines
+    capability: AI-02
+    key_area: LLM Integration & Context Engineering
+    key_attribute: Retrieval & Context
+    anchor: "Lewis et al., \"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks\" (NeurIPS 2020)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Embeddings & semantic search
+    capability: AI-02
+    key_area: LLM Integration & Context Engineering
+    key_attribute: Retrieval & Context
+    anchor: "Reimers & Gurevych, \"Sentence-BERT\" (EMNLP 2019)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Context budget & memory management
+    capability: AI-02
+    key_area: LLM Integration & Context Engineering
+    key_attribute: Retrieval & Context
+    anchor: "Liu et al., \"Lost in the Middle: How Language Models Use Long Contexts\" (TACL 2024)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- Agentic Systems ----
+  - theme: Agent architecture & orchestration
+    capability: AI-03
+    key_area: Agentic Systems
+    key_attribute: Agent Design & Orchestration
+    anchor: "Anthropic, \"Building Effective Agents\" (2024)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Tool & function design for agents
+    capability: AI-03
+    key_area: Agentic Systems
+    key_attribute: Agent Design & Orchestration
+    anchor: "Anthropic, \"Writing Effective Tools for Agents\" (2025)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Human oversight & autonomy boundaries
+    capability: AI-05
+    key_area: Agentic Systems
+    key_attribute: Autonomy, State & Recovery
+    anchor: "NIST AI Risk Management Framework 1.0 (2023)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Agent state & failure recovery
+    capability: BE-11
+    key_area: Agentic Systems
+    key_attribute: Autonomy, State & Recovery
+    anchor: "Kapoor et al., \"AI Agents That Matter\" (2024)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Agent containment & blast-radius control
+    capability: AI-03
+    key_area: Agentic Systems
+    key_attribute: Autonomy, State & Recovery
+    anchor: "Nygard, *Release It!* (2nd ed., 2018), bulkheads"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- Evaluation & Observability ----
+  - theme: Eval sets & golden data
+    capability: AI-07
+    key_area: Evaluation & Observability
+    key_attribute: Evaluation Engineering
+    anchor: "Husain, \"Your AI Product Needs Evals\" (2024)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Eval metrics & judge design
+    capability: AI-04
+    key_area: Evaluation & Observability
+    key_attribute: Evaluation Engineering
+    anchor: "Zheng et al., \"Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena\" (NeurIPS 2023); Shankar et al., \"Who Validates the Validators?\" (2024)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Measurement-gated shipping
+    capability: QA-08
+    key_area: Evaluation & Observability
+    key_attribute: Evaluation Engineering
+    anchor: "Sculley et al., \"Hidden Technical Debt in Machine Learning Systems\" (NeurIPS 2015)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Tracing & instrumentation of AI systems
+    capability: OPS-05
+    key_area: Evaluation & Observability
+    key_attribute: Observability & Production Feedback
+    anchor: "OpenTelemetry Generative AI semantic conventions (CNCF, 2024-2025)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Production monitoring & drift detection
+    capability: AI-17
+    key_area: Evaluation & Observability
+    key_attribute: Observability & Production Feedback
+    anchor: "Breck et al., \"The ML Test Score\" (2017)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- Reliability, Cost & Performance ----
+  - theme: Fallbacks & graceful degradation
+    capability: OPS-04
+    key_area: Reliability, Cost & Performance
+    key_attribute: Production Reliability
+    anchor: "Nygard, *Release It!* (2nd ed., 2018)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Incident response for AI systems
+    capability: OPS-06
+    key_area: Reliability, Cost & Performance
+    key_attribute: Production Reliability
+    anchor: "Beyer et al., *Site Reliability Engineering* (2016)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Provider & capacity management
+    capability: BE-19
+    key_area: Reliability, Cost & Performance
+    key_attribute: Production Reliability
+    anchor: "Beyer et al., *Site Reliability Engineering* (2016), capacity planning"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Token economics & cost optimization
+    capability: OPS-07
+    key_area: Reliability, Cost & Performance
+    key_attribute: Cost & Performance
+    anchor: "Chen et al., \"FrugalGPT\" (2023)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Latency & model right-sizing
+    capability: AI-19
+    key_area: Reliability, Cost & Performance
+    key_attribute: Cost & Performance
+    anchor: "Huyen, *AI Engineering* (2025), inference-optimization chapters"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- Safety, Security & Responsible AI ----
+  - theme: Prompt injection & untrusted model I/O
+    capability: OPS-08
+    key_area: Safety, Security & Responsible AI
+    key_attribute: AI Security & Privacy
+    anchor: "OWASP Top 10 for LLM Applications (2025) - LLM01 Prompt Injection"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Data privacy & PII handling
+    capability: OPS-09
+    key_area: Safety, Security & Responsible AI
+    key_attribute: AI Security & Privacy
+    anchor: "NIST Privacy Framework (2020)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Guardrails & output safety
+    capability: AI-05
+    key_area: Safety, Security & Responsible AI
+    key_attribute: Responsible AI & Governance
+    anchor: "Bai et al., \"Constitutional AI: Harmlessness from AI Feedback\" (2022)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Harm mitigation & safety behavior
+    capability: AI-15
+    key_area: Safety, Security & Responsible AI
+    key_attribute: Responsible AI & Governance
+    anchor: "Weidinger et al., \"Taxonomy of Risks Posed by Language Models\" (FAccT 2022)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: AI risk assessment & governance
+    capability: proposed
+    proposal_ref: contrib/2026-07-ai-risk-governance.md
+    key_area: Safety, Security & Responsible AI
+    key_attribute: Responsible AI & Governance
+    anchor: "NIST AI Risk Management Framework 1.0 (2023); EU AI Act (2024)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  # ---- Delivery, Impact & Leadership ----
+  - theme: Problem framing & solution fit
+    capability: AI-20
+    key_area: Delivery, Impact & Leadership
+    key_attribute: Product & Business Impact
+    anchor: "Zinkevich, \"Rules of Machine Learning\" (Google), Rule #1"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Outcome measurement & business value
+    capability: PD-06
+    key_area: Delivery, Impact & Leadership
+    key_attribute: Product & Business Impact
+    anchor: "Forsgren, Humble & Kim, *Accelerate* (2018)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Planning under model uncertainty
+    capability: PD-04
+    key_area: Delivery, Impact & Leadership
+    key_attribute: Delivery Under Uncertainty
+    anchor: "Yan et al., \"What We Learned from a Year of Building with LLMs\" (O'Reilly, 2024)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Incremental delivery & de-risking
+    capability: OPS-30
+    key_area: Delivery, Impact & Leadership
+    key_attribute: Delivery Under Uncertainty
+    anchor: "Humble & Farley, *Continuous Delivery* (2010)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Ownership & delivery accountability
+    capability: PD-05
+    key_area: Delivery, Impact & Leadership
+    key_attribute: Delivery Under Uncertainty
+    anchor: "CircleCI Engineering Competency Matrix (progression.fyi/f/circle-ci)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Technical communication & writing
+    capability: CC-01
+    key_area: Delivery, Impact & Leadership
+    key_attribute: Communication & Collaboration
+    anchor: "Larson, *Staff Engineer* (2021)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Cross-functional collaboration
+    capability: CC-03
+    key_area: Delivery, Impact & Leadership
+    key_attribute: Communication & Collaboration
+    anchor: "Skelton & Pais, *Team Topologies* (2019)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Documentation & knowledge sharing
+    capability: CC-02
+    key_area: Delivery, Impact & Leadership
+    key_attribute: Communication & Collaboration
+    anchor: "Mitchell et al., \"Model Cards for Model Reporting\" (FAT* 2019)"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Mentoring & knowledge sharing
+    capability: LI-01
+    key_area: Delivery, Impact & Leadership
+    key_attribute: Mentoring & Technical Leadership
+    anchor: "Fournier, *The Manager's Path* (2017), mentoring chapters"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+  - theme: Technical leadership & direction setting
+    capability: LI-03
+    key_area: Delivery, Impact & Leadership
+    key_attribute: Mentoring & Technical Leadership
+    anchor: "Larson, *Staff Engineer* (2021) and StaffEng archetypes"
+    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
