@@ -25,7 +25,12 @@ import sys
 import yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ROLES = ("engineering-management", "full-stack-typescript", "platform-engineering")
+def _discover_roles():
+    _base = os.path.join(ROOT, "roles")
+    return tuple(sorted(d for d in os.listdir(_base)
+                        if os.path.isfile(os.path.join(_base, d, "role.yaml"))))
+
+ROLES = _discover_roles()
 
 MD_LINK = re.compile(r"\[([^\]]*)\]\([^)]*\)")
 CAT_ID = re.compile(r"^([A-Z]+-\d+)\s*(?:—\s*(.*?))?\s*$")
