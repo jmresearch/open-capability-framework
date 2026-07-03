@@ -32,8 +32,7 @@ competencies:
     anchor: "Forsgren, Humble & Kim, *Accelerate* (2018)"
     proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
   - theme: Thinnest viable platform
-    capability: proposed
-    proposal_ref: contrib/2026-07-thinnest-viable-platform.md
+    capability: OPS-31
     key_area: Platform as a Product
     key_attribute: Platform Strategy & Scope
     anchor: "Skelton & Pais, *Team Topologies* (2019)"
@@ -51,8 +50,7 @@ competencies:
     anchor: "Spotify Engineering, \"How We Use Golden Paths to Solve Fragmentation in Our Software Ecosystem\" (2020)"
     proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
   - theme: Cognitive load reduction
-    capability: proposed
-    proposal_ref: contrib/2026-07-cognitive-load-management.md
+    capability: OPS-32
     key_area: Platform as a Product
     key_attribute: Developer Experience
     anchor: "Skelton & Pais, *Team Topologies* (2019), applying Sweller's cognitive load theory (1988)"
@@ -170,8 +168,7 @@ competencies:
     proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
   # ---- Security & Compliance ----
   - theme: Guardrails & policy as code
-    capability: proposed
-    proposal_ref: contrib/2026-07-guardrails-policy-as-code.md
+    capability: SEC-18
     key_area: Security & Compliance
     key_attribute: Secure by Default
     anchor: "OWASP, *Application Security Verification Standard* (v4, 2019)"

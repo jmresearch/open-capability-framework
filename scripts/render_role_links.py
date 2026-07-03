@@ -14,7 +14,9 @@ to their contrib proposal file instead.
 
 No other prose is altered. Idempotent across formats: it converts both the raw
 `*OCF:* <ID> ...` reference lines and the older inline-link format, and leaves
-already-tabled blocks unchanged, so re-runs are safe.
+already-tabled blocks unchanged — except that a tabled block whose cell still
+links to a contrib proposal is rewritten to the real catalog link once role.yaml
+carries the accepted id — so re-runs are safe.
 Run with:  uv run --with pyyaml python scripts/render_role_links.py
 """
 
@@ -102,9 +104,18 @@ def process(slug):
         if line.startswith("| OCF |"):  # already a table — leave unchanged
             if idx >= len(comps):
                 raise SystemExit(f"{slug}: more OCF references than role.yaml competencies")
-            if i + 2 >= len(lines) or not block_matches(comps[idx], lines[i + 2]):
+            comp = comps[idx]
+            data_row = lines[i + 2] if i + 2 < len(lines) else ""
+            if comp.get("capability") != "proposed" and "](../../contrib/" in data_row:
+                # graduated proposal: rewrite the proposed cell as a catalog link
+                out.extend(table_block(comp, level_codes, None, None))
+                i += 3
+                idx += 1
+                converted += 1
+                continue
+            if i + 2 >= len(lines) or not block_matches(comp, data_row):
                 raise SystemExit(f"{slug}: table at line {i + 1} does not match "
-                                 f"competency '{comps[idx]['theme']}'")
+                                 f"competency '{comp['theme']}'")
             out.extend(lines[i:i + 3])
             i += 3
             idx += 1
