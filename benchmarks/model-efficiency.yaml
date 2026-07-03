@@ -2,6 +2,11 @@
 # Fetched live by skills/create-canonical-role. Schema and quality bar: benchmarks/README.md.
 
 reference_canons:
+  platform-engineering:
+    concepts: 37
+    stable: 34
+    core: 31
+    source: roles/platform-engineering (5-source consolidation report)
   full-stack-typescript:
     concepts: 47
     stable: 36
@@ -128,3 +133,22 @@ configs:
     recommended_runs: 4
     date: 2026-07-02
     source: benchmarks PR [full-stack-typescript] mint telemetry
+
+  - model: claude-fable-5
+    effort: low
+    runs_observed: 4
+    role_tested: platform-engineering
+    validator_pass_rate: 1.0
+    mean_competencies_per_run: 32.3
+    mean_canon_coverage_per_run: 0.87
+    core_recall_2runs: 1.0
+    systematic_gaps: []
+    register_notes: >-
+      Third IC data point, strongest yet: 87% coverage/run, 94% of stable canon per run, zero
+      gaps, perfect 2-run core recall (29/37 concepts unanimous across all five sources).
+      Corroborates fast IC saturation; formula says N=3 suffices for consensual IC roles.
+    tokens_per_run_median: 74287
+    canon_capable: true
+    recommended_runs: 3
+    date: 2026-07-02
+    source: benchmarks PR [platform-engineering] mint telemetry
