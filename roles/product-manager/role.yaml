@@ -37,8 +37,7 @@ competencies:
     anchor: "Torres, *Continuous Discovery Habits* (2021); Cagan, *Inspired* (2nd ed., 2018)"
     proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
   - theme: Opportunity mapping
-    capability: proposed
-    proposal_ref: contrib/2026-07-opportunity-mapping-framing.md
+    capability: PM-15
     key_area: Product Discovery & User Research
     key_attribute: Synthesis & Customer Modeling
     anchor: "Torres, *Continuous Discovery Habits* (2021)"
@@ -57,36 +56,31 @@ competencies:
     proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
   # ---- Problem Definition & Validation ----
   - theme: Problem statements & outcome framing
-    capability: proposed
-    proposal_ref: contrib/2026-07-problem-framing-outcome-definition.md
+    capability: PM-16
     key_area: Problem Definition & Validation
     key_attribute: Problem Framing
     anchor: "Perri, *Escaping the Build Trap* (2018)"
     proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
   - theme: Jobs-to-be-done framing
-    capability: proposed
-    proposal_ref: contrib/2026-07-jobs-to-be-done-analysis.md
+    capability: PM-17
     key_area: Problem Definition & Validation
     key_attribute: Problem Framing
     anchor: "Christensen, Hall, Dillon & Duncan, *Competing Against Luck* (2016)"
     proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
   - theme: Assumption mapping & risk framing
-    capability: proposed
-    proposal_ref: contrib/2026-07-assumption-mapping-discovery-testing.md
+    capability: PM-18
     key_area: Problem Definition & Validation
     key_attribute: Assumption Testing & Validation
     anchor: "Bland & Osterwalder, *Testing Business Ideas* (2019); Cagan, *Inspired* (2nd ed., 2018)"
     proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
   - theme: Assumption testing & experiments
-    capability: proposed
-    proposal_ref: contrib/2026-07-assumption-mapping-discovery-testing.md
+    capability: PM-18
     key_area: Problem Definition & Validation
     key_attribute: Assumption Testing & Validation
     anchor: "Ries, *The Lean Startup* (2011); Torres, *Continuous Discovery Habits* (2021)"
     proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
   - theme: Prototype & solution testing
-    capability: proposed
-    proposal_ref: contrib/2026-07-assumption-mapping-discovery-testing.md
+    capability: PM-18
     key_area: Problem Definition & Validation
     key_attribute: Assumption Testing & Validation
     anchor: "Olsen, *The Lean Product Playbook* (2015)"
@@ -216,8 +210,7 @@ competencies:
     anchor: "Moore, *Crossing the Chasm* (3rd ed., 2014)"
     proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
   - theme: Domain & industry fluency
-    capability: proposed
-    proposal_ref: contrib/2026-07-domain-industry-fluency.md
+    capability: PM-19
     key_area: Business, Market & Go-to-Market
     key_attribute: Market & Domain Insight
     anchor: "Cagan, *Inspired* (2nd ed., 2018)"

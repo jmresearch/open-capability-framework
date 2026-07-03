@@ -56,8 +56,7 @@ competencies:
     anchor: "Vocke, \"The Practical Test Pyramid\" (martinfowler.com, 2018); Husain, \"Your AI Product Needs Evals\" (2024)"
     proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
   - theme: AI-augmented development judgment
-    capability: proposed
-    proposal_ref: contrib/2026-07-ai-augmented-development.md
+    capability: SWE-10
     key_area: Software Engineering Craft
     key_attribute: Testing & AI-Assisted Development
     anchor: "DORA, *Accelerate State of DevOps Report* (2024), AI adoption findings"
@@ -218,8 +217,7 @@ competencies:
     anchor: "Weidinger et al., \"Taxonomy of Risks Posed by Language Models\" (FAccT 2022)"
     proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
   - theme: AI risk assessment & governance
-    capability: proposed
-    proposal_ref: contrib/2026-07-ai-risk-governance.md
+    capability: AI-21
     key_area: Safety, Security & Responsible AI
     key_attribute: Responsible AI & Governance
     anchor: "NIST AI Risk Management Framework 1.0 (2023); EU AI Act (2024)"

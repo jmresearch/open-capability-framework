@@ -9,7 +9,7 @@
 - **Terminal level: P3 / Senior Product Manager.** All five sources agree in structure: a strong PM can remain at P3 indefinitely without being behind. P4+ is not "more of P3" - it is a different job defined by multi-area scope and craft leverage across PMs the person does not manage.
 - **Register:** CircleCI-style present-tense observable behaviors; Depth and Scope separated in every cell; upper levels written as influence/adoption behaviors demonstrable before holding the title.
 - **Shape:** 7 key areas, 17 focus areas, 40 competencies; every focus area spans 2+ competencies; theme labels are under 60 characters and organization-agnostic.
-- **OCF mapping:** every competency carries an Open Capability Framework reference - 33 map to existing catalog capabilities (all 14 PM-domain capabilities are used, plus PD, CC, LI ids, including the newly minted CC-06 executive communication and PD-07 strategic & commercial awareness) and 7 rows ride on 5 proposed additions (PM-15 ... PM-19 candidates) staged under contrib/. PM-01 (three rows), PM-10 (three rows), PM-04, PM-06, PM-09 (two rows each) and the PM-18 candidate (three rows) are flagged as future split candidates rather than forcing weaker distinct mappings.
+- **OCF mapping:** every competency carries an Open Capability Framework reference - all 40 map to existing catalog capabilities (all 19 PM-domain capabilities are used, plus PD, CC, LI ids, including the newly minted CC-06 executive communication and PD-07 strategic & commercial awareness and the newly accepted PM-15 opportunity mapping & framing, PM-16 problem framing & outcome definition, PM-17 jobs-to-be-done analysis, PM-18 assumption mapping & discovery testing, and PM-19 domain & industry fluency; 7 rows ride on the 5 new ids). PM-01 (three rows), PM-10 (three rows), PM-04, PM-06, PM-09 (two rows each) and PM-18 (three rows) are flagged as future split candidates rather than forcing weaker distinct mappings.
 - **Consolidation judgment calls:** (1) Blended source rows were assigned to the concept their cell content leans toward: r1's "Opportunity mapping & synthesis" to Opportunity mapping; r1's and r3's "Product vision and strategy" to Product strategy formulation; r3's "Problem statements and JTBD framing" to Problem statements & outcome framing; r2's "Launch & post-launch iteration" to Launch management & readiness; r2's "Business model & pricing awareness" to Business model & unit economics; r1's "Alignment, expectations & saying no" and r3's "Stakeholder alignment and saying no" to Stakeholder alignment & expectations; Muller's "Strategy definition and goal setting" to Product strategy formulation and "Direct people management & recruiting" to Hiring & interviewing PMs (its mentoring half is fully covered by the four-run Mentoring cluster). (2) r3's "Validation decisions: persevere, pivot, kill" merged into Post-launch iteration & lifecycle, whose cells carry the persevere/pivot/kill bar at P3. (3) r1's split of demand-side assumption testing from prototype/solution testing survives under the union rule: Assumption testing & experiments and Prototype & solution testing are separate rows; the other runs' blended rows were assigned to Assumption testing & experiments. (4) Muller-only territory survives as four competencies with fresh cells written to the register: Customer segmentation & personas (PM-02), Technical & design fluency (LI-06), Hiring & interviewing PMs (LI-02), and Muller's agile/backlog rows folded into Backlog & delivery flow. (5) Single-source competencies (Prototype & solution testing from r1; Customer segmentation & personas, Technical & design fluency, Hiring & interviewing PMs from Muller) all survive per the union rule - singleton rate 4/40 = 10%, under the 15% flag threshold. (6) Proficiency targets follow the IC guide P1:P1 ... P6:P6 for every row except Technical & design fluency (LI-06), capped at {P4: P3, P5: P4, P6: P4}: a PM's leverage at P4+ comes through product craft, not deeper technical authority, and the source cells plateau accordingly.
 
 ## Level overview
@@ -76,7 +76,7 @@ Each cell separates **Depth** (mastery of the skill) from **Scope** (how far the
 
 | OCF | P1 | P2 | P3 | P4 | P5 | P6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-opportunity-mapping-framing.md) (PM-15 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [PM-15](../../data/capabilities.md#pm-15) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **P1** - Depth: **Sorts interview evidence into needs, pain points, and desires on an existing opportunity map**, distinguishing an opportunity from a solution when asked to label one. Scope: contributes nodes to a map their lead owns.
 - **P2** - Depth: **Builds and maintains the opportunity solution tree for their area**, sizing branches with evidence counts and pruning opportunities no interview supports. Scope: their product area; the tree is the artifact planning meetings open with.
@@ -128,7 +128,7 @@ Each cell separates **Depth** (mastery of the skill) from **Scope** (how far the
 
 | OCF | P1 | P2 | P3 | P4 | P5 | P6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-problem-framing-outcome-definition.md) (PM-16 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [PM-16](../../data/capabilities.md#pm-16) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **P1** - Depth: **Writes a one-page problem statement naming the user, the struggle, and the evidence** - and separates the problem from the requested feature when a stakeholder hands them a solution. Scope: one epic.
 - **P2** - Depth: **Frames work as outcomes the team can move** ("reduce time-to-first-value") rather than outputs to ship, and rewrites incoming feature requests into the underlying problem before triage. Scope: their product area's backlog.
@@ -144,7 +144,7 @@ Each cell separates **Depth** (mastery of the skill) from **Scope** (how far the
 
 | OCF | P1 | P2 | P3 | P4 | P5 | P6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-jobs-to-be-done-analysis.md) (PM-17 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [PM-17](../../data/capabilities.md#pm-17) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **P1** - Depth: **Restates a feature request as the job the customer is hiring it for**, including the circumstance and the progress sought, with coaching on the functional/emotional/social split. Scope: individual requests on one feature.
 - **P2** - Depth: **Maps the main jobs in their area from interview evidence**, identifying what customers currently hire (including non-consumption and workarounds) and where those hires fail. Scope: their product area.
@@ -162,7 +162,7 @@ Each cell separates **Depth** (mastery of the skill) from **Scope** (how far the
 
 | OCF | P1 | P2 | P3 | P4 | P5 | P6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-assumption-mapping-discovery-testing.md) (PM-18 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [PM-18](../../data/capabilities.md#pm-18) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **P1** - Depth: **Lists the assumptions behind their epic and sorts them by importance and evidence**, using the four-risks lens with coaching. Scope: one epic's risk map.
 - **P2** - Depth: **Identifies the riskiest assumption before any build starts and says so in planning**, choosing what to test first rather than testing what is easiest. Scope: their area's bets.
@@ -178,7 +178,7 @@ Each cell separates **Depth** (mastery of the skill) from **Scope** (how far the
 
 | OCF | P1 | P2 | P3 | P4 | P5 | P6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-assumption-mapping-discovery-testing.md) (PM-18 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [PM-18](../../data/capabilities.md#pm-18) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **P1** - Depth: **Builds simple tests - fake-door links, clickable prototypes, concierge runs - from a design someone else specified**, and logs what was learned. Scope: one assumption at a time.
 - **P2** - Depth: **Chooses the test type that matches the assumption** - prototype for usability, painted door for demand, Wizard of Oz for feasibility - and defines pass/fail before launching it. Scope: their area's assumption tests.
@@ -194,7 +194,7 @@ Each cell separates **Depth** (mastery of the skill) from **Scope** (how far the
 
 | OCF | P1 | P2 | P3 | P4 | P5 | P6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-assumption-mapping-discovery-testing.md) (PM-18 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [PM-18](../../data/capabilities.md#pm-18) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **P1** - Depth: **Runs moderated tests of an existing prototype from a task script**, noting where users struggle without explaining the design to them. Scope: usability of one feature.
 - **P2** - Depth: **Pairs with design to build the right-fidelity prototype for the question at hand** and iterates it between test rounds, reporting what changed and why. Scope: solution tests across their product area.
@@ -556,7 +556,7 @@ Each cell separates **Depth** (mastery of the skill) from **Scope** (how far the
 
 | OCF | P1 | P2 | P3 | P4 | P5 | P6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-domain-industry-fluency.md) (PM-19 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [PM-19](../../data/capabilities.md#pm-19) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **P1** - Depth: **Learns the domain deliberately** - shadows customers, reads the industry sources, asks engineers how the system actually works - and stops needing the glossary. Scope: their epic's domain slice.
 - **P2** - Depth: **Answers most domain questions in refinement without deferring**, corrects domain errors in specs and designs, and understands the operational challenges of the products they run. Scope: their product area's domain.

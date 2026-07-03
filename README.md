@@ -2,7 +2,7 @@
 
 An open, **technology-agnostic** library of workforce capabilities — a community alternative to SFIA — for building career ladders and planning organizational capability across an entire enterprise.
 
-> **Status:** v0.7 seed. 445 capabilities across 36 domains, each leveled with a six-point behavioral profile (P1–P6). Published as data first; a hosted builder is planned.
+> **Status:** v0.7 seed. 455 capabilities across 36 domains, each leveled with a six-point behavioral profile (P1–P6). Published as data first; a hosted builder is planned.
 
 ## What this is
 
@@ -23,16 +23,16 @@ Three segments group the 36 domains:
 
 | Segment | Domains | Capabilities |
 |---|---|---|
-| Engineering & Technology | 13 | 197 |
-| Product, Design & Cross-functional | 7 | 74 |
+| Engineering & Technology | 13 | 202 |
+| Product, Design & Cross-functional | 7 | 79 |
 | Business & Corporate Functions | 16 | 174 |
-| **Total** | **36** | **445** |
+| **Total** | **36** | **455** |
 
 ## Files
 
 | Path | Contents |
 |---|---|
-| `data/capabilities.csv` | All 445 capabilities: id, segment, domain, focus area, capability, type (Behavioral/Technical), description, and the six P1–P6 behavioral profiles. |
+| `data/capabilities.csv` | All 455 capabilities: id, segment, domain, focus area, capability, type (Behavioral/Technical), description, and the six P1–P6 behavioral profiles. |
 | `data/capabilities.json` | Same data, nested (`levels.P1`…`levels.P6`). |
 | `data/capabilities.md` | Human-readable render of the full catalog, one anchored section per capability (`#<id-lowercase>`), each proficiency line linked to the scale. Generated — do not hand-edit. |
 | `data/domains.csv` | Domain index: segment, prefix, focus-area count, capability count. |
@@ -41,7 +41,7 @@ Three segments group the 36 domains:
 | `data/scope_levels.csv` | The S1–S6 role-scope axis, mapped to SFIA / Google-Meta levels. |
 | `data/scope_levels.md` | Rendered S1–S6 scope axis with stable anchors (`#s1`…`#s6`). Generated. |
 | `data/capabilities.xlsx` | The catalog + scale + scope + domain index as a formatted workbook. Generated. |
-| `Open_Capability_Framework.xlsx` | The full workbook (catalog + Org Capability Map + Role Builder/Audit + methodology). |
+| `Open_Capability_Framework.xlsx` | The full workbook (catalog + Org Capability Map + Role Builder/Audit + methodology). Hand-maintained — lags the catalog (its Capability Library predates recent acceptances, including the 2026-07 batch: SWE-10, AI-21, OPS-31, OPS-32, SEC-18, PM-15–PM-19); queued for the next workbook regeneration. |
 | `roles/` | Role records: canonical career ladders as capability references with per-level proficiency targets (see `roles/README.md`). Each `roles/<slug>/` dir also ships a generated `ladder.xlsx` (overview, competency matrix, rating template, sources). |
 | `scripts/` | Render tooling: `render_catalog.py` (data/*.md + capabilities.xlsx), `render_role_links.py` (hyperlinks the OCF references in role ladders), `render_role_xlsx.py` (roles/<slug>/ladder.xlsx). All re-runnable. |
 | `skills/` | Claude Code skills: `career-ladder` (ladder + hiring JDs for any role) and `create-canonical-role` (mint a stable role record via multi-run consolidation). |

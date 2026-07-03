@@ -1,6 +1,6 @@
 # Capability Catalog
 
-The full Open Capability Framework catalog — 445 capabilities across 36 domains, grouped Segment → Domain → Focus Area. Each capability carries a six-point behavioral profile on the capability-side [P1–P6 proficiency scale](proficiency_scale.md). Note the two-axis split: proficiency (P1–P6) is intrinsic to the capability and measures *how well*; scope ([S1–S6](scope_levels.md)) is a property of the **role** and measures *how broad*. Role records under `roles/` combine the two.
+The full Open Capability Framework catalog — 455 capabilities across 36 domains, grouped Segment → Domain → Focus Area. Each capability carries a six-point behavioral profile on the capability-side [P1–P6 proficiency scale](proficiency_scale.md). Note the two-axis split: proficiency (P1–P6) is intrinsic to the capability and measures *how well*; scope ([S1–S6](scope_levels.md)) is a property of the **role** and measures *how broad*. Role records under `roles/` combine the two.
 
 Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) so role ladders can deep-link here.
 
@@ -119,6 +119,20 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P4 — Expert](proficiency_scale.md#p4):** Builds the code-generation and contract-typing infrastructure multiple teams inherit, making boundary safety the default rather than a discipline, and resolves cross-team type drift at its source.
 - **[P5 — Authority](proficiency_scale.md#p5):** Sets the organization's boundary-safety standard and the platform tooling that enforces it, with incident evidence showing the failure classes it removed.
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Owns contract-integrity strategy across products and external interfaces where a broken contract is a business event, and advances the state of practice publicly.
+
+#### Code & Quality
+
+<a id="swe-10"></a>
+##### SWE-10 — AI-augmented development
+
+*Type:* Behavioral — Works effectively with AI coding tools and agents while remaining accountable for the output - calibrating what to delegate and what to hand-write, verifying generated changes with the same rigor as hand-written ones, and setting the review and provenance practices that keep quality intact.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Uses AI coding tools with the output treated as a draft - reads every generated line, tests it, and can explain any part of the diff when asked.
+- **[P2 — Independent](proficiency_scale.md#p2):** Calibrates when generation helps and when it misleads for the work at hand; catches plausible-but-wrong generated code before review, and their AI-assisted changes pass review at the same rate as hand-written ones.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Sets the norms for AI-assisted work in a domain - what may be delegated to agents, what verification it requires, how provenance is noted in review - and coaches others out of over-trust and under-use.
+- **[P4 — Expert](proficiency_scale.md#p4):** Defines AI-assisted engineering practice across teams - where agents run in the delivery lifecycle, what gates their output - justified by throughput and defect data rather than vendor claims.
+- **[P5 — Authority](proficiency_scale.md#p5):** Drives an organization's AI-augmented engineering strategy - tooling selection, workflow redesign, skill expectations - and adjusts policy from measured delivery outcomes.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Shapes how software engineering itself changes with AI at company and industry level; a credible public voice on what changes and what doesn't.
 
 ### Frontend & Client Engineering (FE)
 
@@ -1480,6 +1494,20 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P5 — Authority](proficiency_scale.md#p5):** Sets ML solution strategy and anticipates where applicable techniques are heading.
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Defines best practice for ML problem framing across the discipline and is externally recognized.
 
+#### AI Quality & Safety
+
+<a id="ai-21"></a>
+##### AI-21 — AI risk governance
+
+*Type:* Behavioral — Assesses and governs the risk of AI systems through their lifecycle - classifying systems against recognized risk frameworks, converting findings into engineering requirements with owners, and keeping the evidence trail (evals, controls, incidents) audit-ready as systems and regulation change.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Completes the risk checklist for their change accurately - identifying who is affected if the model is wrong - and escalates anything the checklist doesn't cover.
+- **[P2 — Independent](proficiency_scale.md#p2):** Assesses a feature's failure impact before build (misuse, error harm, disparate performance across user groups) and documents mitigations and residual risk unprompted.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Classifies a domain against the applicable risk framework, keeps its evidence pack (evals, controls, incidents) audit-ready, converts findings into engineering requirements with owners, and flags when a product change alters the risk class.
+- **[P4 — Expert](proficiency_scale.md#p4):** Operates a cross-team AI risk-review process - fast enough that teams use it honestly, rigorous enough to catch real issues - and builds governance tooling that makes compliance a byproduct of normal engineering.
+- **[P5 — Authority](proficiency_scale.md#p5):** Owns an organization's AI governance program jointly with legal and risk functions, translating regulation into engineering requirements without freezing delivery.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Positions a company ahead of AI regulation; accountable to executives, boards, and regulators for where the risk lines are drawn.
+
 ### Systems, Infrastructure & Operations (OPS)
 
 #### Infrastructure
@@ -1860,6 +1888,32 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P5 — Authority](proficiency_scale.md#p5):** Owns release policy for an organization and its delivery metrics — rollout standards, freeze rules, environment strategy — dismantling ceremony that adds no safety.
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Sets how an entire company's software reaches customers — the risk posture products ship under — and defends it to executives, auditors, and regulators.
 
+#### Operating Mindset
+
+<a id="ops-31"></a>
+##### OPS-31 — Thinnest viable platform scoping
+
+*Type:* Behavioral — Scopes an internal platform to the smallest set of APIs, tools, docs, and services that accelerates its consumers - making explicit build-buy-adopt decisions and retiring surface area that no longer earns its maintenance cost.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Checks for an existing tool, service, or open-source option before writing new code and raises what they find; asks whether a proposed task serves a real user need.
+- **[P2 — Independent](proficiency_scale.md#p2):** Proposes wrapping or configuring an existing service instead of building new when it meets the need, writing the comparison down and defending removal of unused features in their own component.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Keeps a whole capability at its thinnest viable size - makes explicit, documented build-buy-adopt decisions, ships the thinnest version that serves proven demand, and retires surface area whose maintenance cost exceeds its value.
+- **[P4 — Expert](proficiency_scale.md#p4):** Arbitrates overlap and sprawl across teams - merges duplicate offerings, cuts under-used surface, and sets the bar for what deserves to be shared platform at all.
+- **[P5 — Authority](proficiency_scale.md#p5):** Shapes the organization's platform boundary - what the platform owns versus product teams versus vendors - and drives the organization to shed what it should not own.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Sets the build-buy-adopt principles an entire company references, keeping company-scale platform investment proportional to the delivery it unlocks.
+
+<a id="ops-32"></a>
+##### OPS-32 — Cognitive-load management & abstraction design
+
+*Type:* Behavioral — Designs tooling, interfaces, and abstractions to minimize the extraneous cognitive load imposed on the teams that consume them - deciding deliberately what consumers must and must not need to know, and measuring the load imposed.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Names the exact docs, errors, and setup steps that forced them to understand internals a consumer should not need, and files concrete simplification issues.
+- **[P2 — Independent](proficiency_scale.md#p2):** Reduces the concepts and steps a consumer must hold to use their component - collapsing configuration, defaulting decisions, rewriting errors to say what to do next - and shows the before/after.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Designs a capability's abstractions around what consumers must not have to know, so a first-time user succeeds without reading internals; measures load with time-to-first-success and support-ticket themes and treats regressions as defects.
+- **[P4 — Expert](proficiency_scale.md#p4):** Audits cognitive load across team boundaries - quantifying onboarding time, concepts-to-learn, and ticket themes - and drives the cross-boundary simplifications no single team could make.
+- **[P5 — Authority](proficiency_scale.md#p5):** Makes cognitive load a first-class organizational measure with explicit load budgets, vetoing designs that externalize complexity onto consuming teams.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Shapes company-level technology and team-boundary choices explicitly around team cognitive load, arguing for fewer, deeper abstractions over sprawling optionality.
+
 ### Security Engineering (SEC)
 
 #### Identity & Access
@@ -2073,6 +2127,20 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P4 — Expert](proficiency_scale.md#p4):** Defines awareness and shift-left programs other teams adopt.
 - **[P5 — Authority](proficiency_scale.md#p5):** Sets the organization's security-culture strategy and anticipates shifts in developer behavior.
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Defines what effective security culture means for the field and influences how it is fostered.
+
+#### Defensive Security
+
+<a id="sec-18"></a>
+##### SEC-18 — Guardrails & policy as code
+
+*Type:* Technical — Encodes preventive controls as versioned, tested, automatically enforced policy - admission checks, pipeline gates, configuration rules - with actionable violation messages and governed exception paths, so the safe way is the default way.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Works within existing guardrails, reads a policy violation to its cause instead of requesting an exception, and explains what each guardrail protects against.
+- **[P2 — Independent](proficiency_scale.md#p2):** Writes and tests policy rules for a component - admission checks, pipeline gates - with low false-positive rates and violation messages that tell the user how to comply.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Designs the guardrail architecture for a capability - what is blocked, warned, or audited, with documented threat reasoning - tuned so the safe path is the fast path, and runs an audited exception workflow without becoming the bottleneck.
+- **[P4 — Expert](proficiency_scale.md#p4):** Harmonizes policy across teams into a coherent, versioned policy library with a governed exception process, and adjudicates escalated safety-versus-velocity disputes.
+- **[P5 — Authority](proficiency_scale.md#p5):** Owns an organization's preventive-control strategy with security partners - the control catalog, its coverage, and the evidence it works - moving enforcement from review-time to platform-time.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Sets an organization-defining balance of enablement and control, accountable for guardrails that hold under audit and attack without throttling delivery.
 
 ### Quality Engineering & Test (QA)
 
@@ -2807,6 +2875,70 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P4 — Expert](proficiency_scale.md#p4):** Defines relationship-management practices others adopt and salvages strained partnerships.
 - **[P5 — Authority](proficiency_scale.md#p5):** Sets relationship strategy across the portfolio and anticipates partner-ecosystem shifts.
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Defines what excellent partner relationship management means and shapes external practice.
+
+#### Discovery & Research
+
+<a id="pm-15"></a>
+##### PM-15 — Opportunity mapping & framing
+
+*Type:* Behavioral — Structures discovered customer needs into an explicit opportunity space — mapped, sized, and compared — so solution choices trace to the most valuable problem rather than the first idea.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Places research findings onto an existing opportunity map correctly, distinguishing opportunities from solutions with coaching.
+- **[P2 — Independent](proficiency_scale.md#p2):** Builds and maintains the opportunity map for their area, sizing and pruning branches against evidence without prompting.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Structures messy, contested problem spaces into maps that make trade-offs explicit, and defends why one opportunity is pursued over its siblings.
+- **[P4 — Expert](proficiency_scale.md#p4):** Reconciles overlapping opportunity maps across teams, exposing duplicate bets and orphaned opportunities no single team could see.
+- **[P5 — Authority](proficiency_scale.md#p5):** Makes opportunity mapping an organization's default synthesis method; investment reviews open from the mapped opportunity space.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Shapes how organizations represent customer opportunity at portfolio level; their framing methods are cited and reused beyond their own organization.
+
+<a id="pm-16"></a>
+##### PM-16 — Problem framing & outcome definition
+
+*Type:* Behavioral — Frames incoming requests and observations as customer problems tied to measurable outcomes — separating the problem from the proposed solution before work is committed.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Writes a one-page problem statement naming the user, the struggle, and the evidence, with review; separates problem from requested feature when prompted.
+- **[P2 — Independent](proficiency_scale.md#p2):** Frames work as outcomes the team can move rather than outputs to ship, and rewrites incoming feature requests into the underlying problem before triage.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Sets the outcome a product is accountable for and keeps the team pointed at it, publicly re-framing efforts that drift into output-counting.
+- **[P4 — Expert](proficiency_scale.md#p4):** Arbitrates problem framing across teams — spotting duplicated or conflicting framings — and re-cuts problem boundaries drawn along org lines instead of customer lines.
+- **[P5 — Authority](proficiency_scale.md#p5):** Defines an organization's outcome architecture — how team-level outcomes ladder to organizational results — and retires vanity outcomes.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Frames an organization's hardest, ownerless problems into tractable outcome statements executives fund; their framing practice shapes the discipline externally.
+
+<a id="pm-17"></a>
+##### PM-17 — Jobs-to-be-done analysis
+
+*Type:* Behavioral — Models what customers hire products to accomplish — the circumstance, the progress sought, and the competing alternatives (including workarounds and non-consumption) — to predict adoption and define product boundaries.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Restates a feature request as the job the customer is hiring it for — circumstance and progress sought — with coaching.
+- **[P2 — Independent](proficiency_scale.md#p2):** Maps the main jobs in their area from interview evidence, identifying what customers currently hire and where those hires fail.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Anchors a product's definition and boundaries in its core job, using the job to rule scope in or out and to identify non-obvious competitors.
+- **[P4 — Expert](proficiency_scale.md#p4):** Aligns job maps across teams into one view of customer progress, exposing where customers must stitch products together to finish one job.
+- **[P5 — Authority](proficiency_scale.md#p5):** Uses jobs analysis to shape organization-level portfolio choices — which jobs are served end-to-end, which are exited.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Frames markets and strategy in jobs terms that reveal disruption threats early; their jobs analyses influence practice beyond their organization.
+
+<a id="pm-18"></a>
+##### PM-18 — Assumption mapping & discovery testing
+
+*Type:* Behavioral — Names and ranks the assumptions behind a product bet — desirability, viability, feasibility, usability — and designs the cheapest decisive pre-build tests (prototypes, fake doors, concierge runs) to validate or kill them.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Lists the assumptions behind a proposed feature, sorts them by risk with coaching, and runs a prescribed simple test, logging what was learned.
+- **[P2 — Independent](proficiency_scale.md#p2):** Identifies the riskiest assumption before build and matches the test type to it — prototype, painted door, concierge — with pass/fail defined in advance.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Surfaces assumptions others treat as facts, designs test sequences that retire the most risk per unit effort, and kills initiatives whose load-bearing assumptions fail.
+- **[P4 — Expert](proficiency_scale.md#p4):** Standardizes how multiple teams express and rank risk, and rejects validation theater — tests that can only confirm, never falsify — before major commitments.
+- **[P5 — Authority](proficiency_scale.md#p5):** Builds discovery-testing capability into an organization's investment process — funding follows tested assumptions, and the cost of a first test drops to hours.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Structures bets too big to A/B as staged, falsifiable commitments; their validation doctrine is cited and adopted beyond their organization.
+
+#### Strategy & Planning
+
+<a id="pm-19"></a>
+##### PM-19 — Domain & industry fluency
+
+*Type:* Behavioral — Builds and maintains deep working knowledge of the product's domain — its industry structure, customer workflows, constraints, and trajectory — deeply enough to be a credible reference for customers and colleagues.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Learns the domain deliberately — shadows customers, reads industry sources, asks how the system actually works — and uses domain vocabulary correctly.
+- **[P2 — Independent](proficiency_scale.md#p2):** Answers most domain questions without deferring and corrects domain errors in specs and designs.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Is the recognized domain reference for a product — customers, field teams, and engineers check facts with them — and spots domain-driven risks others miss.
+- **[P4 — Expert](proficiency_scale.md#p4):** Connects domain knowledge across teams, catching where one roadmap violates another domain's constraints (regulatory, workflow, ecosystem).
+- **[P5 — Authority](proficiency_scale.md#p5):** Represents an organization's domain understanding externally — industry forums, advisory boards, analyst briefings.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Anticipates domain evolution — where the industry's workflows and rules are heading — and positions portfolios for it before consensus forms.
 
 ### Engineering Management (EM)
 

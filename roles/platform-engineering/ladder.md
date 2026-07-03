@@ -9,7 +9,7 @@
 - **Terminal level: E3 / Senior.** All five sources agree: a strong platform engineer can remain at E3 indefinitely without being behind. E4+ is not "more of E3" - it is a different job defined by multi-team scope, standard-setting, and organizational leverage.
 - **Register:** CircleCI Engineering Competency Matrix - present-tense observable behaviors; Depth and Scope separated in every cell. Adoption is leveled as **voluntary use by internal customers**, never mandated compliance.
 - **Shape:** 7 key areas, 17 focus areas, 37 competencies; every focus area spans 2+ competencies; theme labels are under 60 characters and technology-agnostic.
-- **OCF mapping:** every competency carries an Open Capability Framework reference - 34 map to existing catalog capabilities (including the newly minted OPS-30 progressive delivery & release safety, carried by Deprecation & migration management) and 3 are proposed additions (thinnest viable platform, cognitive load reduction, guardrails & policy as code) staged under contrib/.
+- **OCF mapping:** every competency carries an Open Capability Framework reference - all 37 map to existing catalog capabilities, including the newly minted OPS-30 progressive delivery & release safety (carried by Deprecation & migration management) and the newly accepted OPS-31 thinnest viable platform scoping, OPS-32 cognitive-load management & abstraction design, and SEC-18 guardrails & policy as code.
 - **Consolidation judgment calls:** (1) Platform as a Product is the first key area - user research, adoption metrics, thinnest-viable scoping, golden paths, and cognitive-load reduction are ratable engineering competencies, which is what distinguishes platform engineering from rebranded ops. (2) The trusted source's splits survive under the union rule: coding vs. code review, incident response vs. learning from incidents, and a product-discipline roadmap competency distinct from execution-side prioritization. (3) Blended source rows ("Thinnest viable platform & roadmap", "Code quality & review", "Incident response & learning", "Feedback & review culture") were assigned to the concept their cell content leans toward. (4) Single-source competencies (platform roadmap & prioritization, networking & compute foundations, learning from incidents) all survive as distinct rows. (5) Release engineering merges into deprecation & migration management (its E2 carries versioned releases, flags, and rollback), and progressive delivery lives inside the CI/CD competency at E3. (6) Capacity, performance, and cost consolidate into one competency - every source ties them together through unit economics. (7) Golden paths and self-service provisioning both map to OPS-27 and incident response / learning from incidents both map to OPS-06 - each catalog capability's description spans both rows; flagged as future split candidates rather than forcing a weaker distinct mapping.
 
 ## Level overview
@@ -76,7 +76,7 @@ Each cell separates **Depth** (mastery of the skill) from **Scope** (how far the
 
 | OCF | E1 | E2 | E3 | E4 | E5 | E6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-thinnest-viable-platform.md) (OPS-31 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [OPS-31](../../data/capabilities.md#ops-31) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **E1** - Depth: **Checks for an existing tool, service, or open-source option before writing new code** and asks whether a proposed task is needed by a real user, citing the request that motivates it. Scope: their own task queue.
 - **E2** - Depth: **Proposes wrapping or configuring an existing service instead of building new when it meets the need**, writing the comparison down and defending the removal of unused features. Scope: build-versus-reuse choices in one component.
@@ -126,7 +126,7 @@ Each cell separates **Depth** (mastery of the skill) from **Scope** (how far the
 
 | OCF | E1 | E2 | E3 | E4 | E5 | E6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-cognitive-load-management.md) (OPS-32 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [OPS-32](../../data/capabilities.md#ops-32) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **E1** - Depth: **Names the exact docs, errors, and setup steps that forced them to understand internals a user should not need**, and files concrete simplification issues. Scope: workflows they personally execute.
 - **E2** - Depth: **Reduces the concepts and steps a user must hold to use their component** - collapsing configuration, defaulting decisions, rewriting errors to say what to do next - and shows the before/after. Scope: one component's user-facing surface.
@@ -464,7 +464,7 @@ Each cell separates **Depth** (mastery of the skill) from **Scope** (how far the
 
 | OCF | E1 | E2 | E3 | E4 | E5 | E6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-guardrails-policy-as-code.md) (SEC-18 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [SEC-18](../../data/capabilities.md#sec-18) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **E1** - Depth: **Works within existing guardrails and reads policy failures to their cause** instead of asking for exemptions, and explains what each guardrail protects against. Scope: their own changes.
 - **E2** - Depth: **Writes and tests policy rules for their component** - admission checks, pipeline gates - with low false-positive rates and violation messages that say how to fix the problem. Scope: one component's policy surface.
