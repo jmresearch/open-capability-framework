@@ -4,7 +4,7 @@
 Writes (all under data/):
     proficiency_scale.md   — the P1-P6 rubric with stable anchors (#p1..#p6)
     scope_levels.md        — the S1-S6 role-scope axis with anchors (#s1..#s6)
-    capabilities.md        — the full 429-capability catalog, one section per
+    capabilities.md        — the full capability catalog, one section per
                              capability with a stable anchor (#<id-lowercase>)
                              and all six proficiency profiles linked to the scale
     capabilities.xlsx      — the same data as a formatted workbook

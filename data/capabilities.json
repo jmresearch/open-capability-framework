@@ -119,6 +119,40 @@
     }
   },
   {
+    "id": "SWE-08",
+    "segment": "Engineering & Technology",
+    "domain": "Software Engineering",
+    "focus_area": "Design & Architecture",
+    "capability": "Type-System Domain Modeling",
+    "type": "Technical",
+    "description": "Uses a static type system as a design medium \u2014 encoding domain rules and invariants in types so invalid states are unrepresentable and whole defect classes are eliminated at compile time.",
+    "levels": {
+      "P1": "Writes correctly typed code without escape hatches (`any`-equivalents), uses the codebase's existing types and generics correctly, and reads compiler errors to the actual cause with guidance.",
+      "P2": "Models feature domains so invalid states fail to compile \u2014 sum types / discriminated unions over boolean flags, narrowing over assertions \u2014 preferring type-level constraints where the compiler can carry the load.",
+      "P3": "Designs the shared domain types a capability is built on, keeping inference ergonomic for consumers; judges when type-level sophistication pays and when it obscures, and unwinds accumulated type erosion in others' code.",
+      "P4": "Sets type-design conventions multiple teams adopt \u2014 strictness policy, shared type libraries, branded identifiers, result types \u2014 and leads migrations that raise strictness without halting delivery.",
+      "P5": "Owns an organization's type-system posture \u2014 compiler baselines, monorepo type architecture, upgrade cadence \u2014 measured by defect and velocity outcomes.",
+      "P6": "Makes company-level language and type-platform bets and represents the practice externally (talks, upstream contributions, published patterns)."
+    }
+  },
+  {
+    "id": "SWE-09",
+    "segment": "Engineering & Technology",
+    "domain": "Software Engineering",
+    "focus_area": "Design & Architecture",
+    "capability": "Boundary Validation & End-to-End Type Integrity",
+    "type": "Technical",
+    "description": "Validates untrusted data into precise types once at every system boundary (network, storage, configuration, third parties) and propagates a single source of type truth across client, server, and wire so contracts cannot silently drift.",
+    "levels": {
+      "P1": "Uses the codebase's shared contract types and schema validators at boundaries rather than hand-casting external data, and can point to where a type is checked at runtime.",
+      "P2": "Puts runtime validation at every I/O boundary they touch \u2014 requests, messages, configuration \u2014 deriving static types from the runtime schemas so compile-time and runtime cannot drift.",
+      "P3": "Designs end-to-end type integrity for a capability \u2014 schema-first contracts, generated clients, contract drift caught in continuous integration \u2014 and blocks unsound casts and unvalidated edges in review.",
+      "P4": "Builds the code-generation and contract-typing infrastructure multiple teams inherit, making boundary safety the default rather than a discipline, and resolves cross-team type drift at its source.",
+      "P5": "Sets the organization's boundary-safety standard and the platform tooling that enforces it, with incident evidence showing the failure classes it removed.",
+      "P6": "Owns contract-integrity strategy across products and external interfaces where a broken contract is a business event, and advances the state of practice publicly."
+    }
+  },
+  {
     "id": "FE-01",
     "segment": "Engineering & Technology",
     "domain": "Frontend & Client Engineering",
@@ -2431,6 +2465,23 @@
     }
   },
   {
+    "id": "OPS-30",
+    "segment": "Engineering & Technology",
+    "domain": "Systems, Infrastructure & Operations",
+    "focus_area": "Operations",
+    "capability": "Progressive Delivery & Release Safety",
+    "type": "Technical",
+    "description": "Manages how change reaches production safely \u2014 decoupling deploy from release with feature flags, staged and canary rollouts, rollback readiness, and migration sequencing that bounds the blast radius of every change.",
+    "levels": {
+      "P1": "Follows the release process exactly \u2014 flags, staged rollout steps, verification checklists \u2014 verifies their change in production, and rolls back with guidance.",
+      "P2": "Ships behind flags with a rollback plan by default, monitors rollouts and reverts on their own judgment when signals degrade, and writes changes that tolerate both versions running during rollout.",
+      "P3": "Designs the rollout for risky changes \u2014 canary criteria, migration sequencing, flag lifecycle, kill switches \u2014 and reviews others' rollout plans for blast radius; the person teams ask how to ship something safely.",
+      "P4": "Builds progressive-delivery machinery multiple teams release through (flag platforms, automated canary analysis, automated rollback), retiring deploy patterns that cause repeat incidents and measurably raising deploy frequency.",
+      "P5": "Owns release policy for an organization and its delivery metrics \u2014 rollout standards, freeze rules, environment strategy \u2014 dismantling ceremony that adds no safety.",
+      "P6": "Sets how an entire company's software reaches customers \u2014 the risk posture products ship under \u2014 and defends it to executives, auditors, and regulators."
+    }
+  },
+  {
     "id": "SEC-01",
     "segment": "Engineering & Technology",
     "domain": "Security Engineering",
@@ -3727,16 +3778,16 @@
     "segment": "Product, Design & Cross-functional",
     "domain": "Engineering Management",
     "focus_area": "People Management",
-    "capability": "Team health & engagement",
+    "capability": "Psychological safety & team health",
     "type": "Behavioral",
-    "description": "Cultivating motivation, psychological safety, and retention within the team.",
+    "description": "Creates the conditions where people raise problems, dissent, and admit mistakes without penalty; reads and repairs team-health signals (conflict, burnout risk, on-call load).",
     "levels": {
-      "P1": "Notices and reports team-health signals under guidance.",
-      "P2": "Maintains a healthy, engaged team day-to-day with normal review.",
-      "P3": "Independently diagnoses morale issues and restores engagement in struggling teams.",
-      "P4": "Defines team-health practices others adopt and turns around the most dysfunctional teams.",
-      "P5": "Sets the org's engagement strategy and anticipates burnout and culture risks early.",
-      "P6": "Defines what healthy engineering teams look like and shapes the field's practice."
+      "P1": "With guidance, runs meetings where quieter members are heard; escalates team-health concerns they notice.",
+      "P2": "Creates safety on their own team \u2014 models fallibility, protects dissent, surfaces and resolves conflict early; monitors basic health signals.",
+      "P3": "Sustains safety through pressure (incidents, deadlines, change); repairs damaged trust; the team measurably speaks up (postmortems name real causes).",
+      "P4": "Diagnoses and fixes systemic safety failures across teams; other leaders seek their help on entrenched conflict and burnout patterns.",
+      "P5": "Sets the org's team-health bar and mechanisms; safety practices they designed are adopted org-wide.",
+      "P6": "Shapes how the industry thinks about team health; published practices others implement."
     }
   },
   {
@@ -3890,6 +3941,91 @@
       "P4": "Defines change approaches others adopt and rescues stalled transformations.",
       "P5": "Sets the org's transformation strategy and anticipates where change is needed next.",
       "P6": "Defines effective engineering transformation for the discipline and shapes external practice."
+    }
+  },
+  {
+    "id": "EM-13",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Engineering Management",
+    "focus_area": "People Management",
+    "capability": "Onboarding & team formation",
+    "type": "Behavioral",
+    "description": "Ramps new people to productivity fast and leads teams through formation stages \u2014 launches, merges, and resets \u2014 deliberately rather than enduring them.",
+    "levels": {
+      "P1": "Follows an existing onboarding checklist for new hires; escalates ramp problems.",
+      "P2": "Runs a 30/60/90 onboarding with named buddies and early wins; new hires ship in their first weeks and say so in check-ins.",
+      "P3": "Reads a team's formation stage and intervenes on it \u2014 resets norms after a merge, names storming in the room instead of managing it by email.",
+      "P4": "Builds the onboarding and team-launch playbook multiple teams use; teams start faster because of materials and rituals they created, and stands up whole new teams repeatedly.",
+      "P5": "Designs how an organization absorbs step-change growth \u2014 acquisitions, new sites, doubled headcount \u2014 without culture dilution; integration plans carry named cultural mechanisms.",
+      "P6": "Makes team formation an organization-wide capability \u2014 new groups spin up predictably without heroics \u2014 and audits that the machinery still works."
+    }
+  },
+  {
+    "id": "EM-14",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Engineering Management",
+    "focus_area": "People Management",
+    "capability": "Delegation & empowerment",
+    "type": "Behavioral",
+    "description": "Hands over whole outcomes with context and calibrated support, pushes decision rights to where the information lives, and builds organizations that run on intent rather than presence.",
+    "levels": {
+      "P1": "Assigns tasks with instructions and checks completion; keeps consequential work for themselves.",
+      "P2": "Delegates whole outcomes with context and check-in contracts matched to each person's readiness \u2014 and resists snatching work back when it wobbles.",
+      "P3": "Hands ownership of critical, visible work to someone not yet proven and scaffolds them to success, letting them keep the credit; the team runs a week without them and nothing stalls.",
+      "P4": "Pushes decisions down across multiple teams \u2014 publishes decision rights so teams stop escalating what they can decide themselves; involvement is exception-based, and everyone knows which is which.",
+      "P5": "Builds organizations that run on mechanisms rather than presence \u2014 delegated authorities with audit trails, pre-declared tripwires \u2014 and grants leaders consequential authority held to outcomes, not methods.",
+      "P6": "Runs an organization on intent \u2014 direction and guardrails clear enough that leaders act correctly without asking \u2014 and treats every upward escalation as a design flaw to fix."
+    }
+  },
+  {
+    "id": "EM-15",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Engineering Management",
+    "focus_area": "Execution & Operations",
+    "capability": "Technical debt & risk stewardship",
+    "type": "Behavioral",
+    "description": "Surfaces, prices, and manages technical debt and technical risk as an economic portfolio \u2014 funding paydown structurally and setting the speed-versus-soundness posture explicitly.",
+    "levels": {
+      "P1": "Records known shortcuts and defects when directed; raises debt concerns in planning.",
+      "P2": "Keeps a visible debt register with the cost of carry noted and defends a steady paydown allocation in planning rather than begging quarter by quarter.",
+      "P3": "Distinguishes debt worth carrying from debt that will detonate, sequences remediation by risk, and prices debt in incident and velocity terms stakeholders accept.",
+      "P4": "Makes debt legible across multiple teams \u2014 shared taxonomy, reporting rhythm \u2014 and gets cross-team risk (the shared library nobody owns, the half-finished migration) owned and funded.",
+      "P5": "Carries technical risk onto the executive risk register \u2014 top exposures known, sized, owned, trending \u2014 and lands multi-quarter remediation programs against feature pressure.",
+      "P6": "Sets an organization's speed-versus-soundness posture explicitly \u2014 where debt is accepted for velocity and where it never is \u2014 and holds it under growth pressure."
+    }
+  },
+  {
+    "id": "EM-16",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Engineering Management",
+    "focus_area": "Personal Effectiveness",
+    "capability": "Managerial leverage & focus",
+    "type": "Behavioral",
+    "description": "Spends leadership time where it multiplies \u2014 deliberate calendar design, high-leverage intervention choice, and systematic abandonment of low-value work.",
+    "levels": {
+      "P1": "Keeps commitments manageable with help; recognizes when their calendar no longer matches priorities.",
+      "P2": "Runs a deliberate calendar that matches stated priorities \u2014 protected one-on-ones, deep work, and team time; declines low-leverage meetings with alternatives offered.",
+      "P3": "Prunes their own involvement ruthlessly as complexity grows \u2014 automates, delegates, or kills recurring work every quarter \u2014 and models sustainable pace through crunch.",
+      "P4": "Chooses interventions by multiplier across many teams \u2014 the review that shapes ten decisions, the document that aligns three roadmaps \u2014 declining the rest by policy; audits their time and publishes the changes.",
+      "P5": "Allocates attention like a portfolio at organizational scale \u2014 deep on the few places they are the unique unlock, delegated on the rest \u2014 and says which is which out loud.",
+      "P6": "Spends presence deliberately as an organizational signal \u2014 where they show up moves priorities \u2014 and guards the organization's focus by limiting concurrent top priorities and abandoning stale initiatives by name."
+    }
+  },
+  {
+    "id": "EM-17",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Engineering Management",
+    "focus_area": "People Management",
+    "capability": "Motivation & engagement",
+    "type": "Behavioral",
+    "description": "Builds durable intrinsic motivation: removes dissatisfiers, feeds autonomy/mastery/purpose, recognizes well.",
+    "levels": {
+      "P1": "Recognizes teammates' good work; flags demotivating friction to their manager.",
+      "P2": "Knows what drives each person on their team; removes hygiene friction and matches work to intrinsic drivers; recognition is specific and timely.",
+      "P3": "Sustains engagement through hard stretches; diagnoses systemic motivation problems (not just individuals) and fixes the conditions.",
+      "P4": "Builds engagement mechanisms other teams adopt; reverses disengagement trends beyond their own span.",
+      "P5": "Owns the engagement strategy for a function; conditions they designed show up in retention and survey trends.",
+      "P6": "Advances the practice of engagement in the field; frameworks others cite and use."
     }
   },
   {
@@ -4165,6 +4301,23 @@
     }
   },
   {
+    "id": "PD-07",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Product & Delivery",
+    "focus_area": "Execution",
+    "capability": "Strategic & Commercial Awareness",
+    "type": "Behavioral",
+    "description": "Frames technical decisions in economic and business terms \u2014 cost, revenue risk, cost of delay, unit economics \u2014 and answers for whether the work actually moved its business outcome.",
+    "levels": {
+      "P1": "States what business outcome their current task serves \u2014 and asks when they can't \u2014 treating infrastructure and license costs as real money.",
+      "P2": "Checks whether shipped work actually moved its metric and says so plainly when it didn't; weighs cost and maintenance burden in the technical choices they own.",
+      "P3": "Frames a domain's technical decisions in business terms \u2014 cost of delay, revenue risk, support load \u2014 pushes back on work with weak business rationale, and redirects effort when the numbers say the plan is wrong.",
+      "P4": "Builds the business case for the cross-team technical investments with the largest return and is trusted by leadership to have done the math.",
+      "P5": "Aligns an organization's technical strategy with its economics \u2014 cost curves, velocity, risk \u2014 owning trade-offs measured in staff-years and reporting them in the business's own terms.",
+      "P6": "Advises company leadership on where technology changes the business model and is accountable for company-level technology bets paying off."
+    }
+  },
+  {
     "id": "CC-01",
     "segment": "Product, Design & Cross-functional",
     "domain": "Communication & Collaboration",
@@ -4250,6 +4403,23 @@
     }
   },
   {
+    "id": "CC-06",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Communication & Collaboration",
+    "focus_area": "Communication",
+    "capability": "Executive Communication",
+    "type": "Behavioral",
+    "description": "Communicates upward and to executive audiences \u2014 answer-first briefings, decision-ready framing, and composure under hostile questioning.",
+    "levels": {
+      "P1": "Prepares status updates for leadership with guidance; leads with the headline when coached to.",
+      "P2": "Reports upward answer-first with a specific ask; escalates early with options attached, so no surprise reaches leadership from someone else.",
+      "P3": "Briefs senior leaders under pressure \u2014 facts, impact, options, and a recommendation inside the first two minutes; one-pagers get forwarded unedited.",
+      "P4": "Builds and lands investment cases with executive audiences \u2014 pre-wired with skeptics, sized in business terms, honest about risk; coaches others for executive rooms and runs the operating reviews an organization communicates through.",
+      "P5": "Operates the executive room as a peer \u2014 advances positions, absorbs hostile questioning without defensiveness, and changes the room's decision more often than not.",
+      "P6": "Speaks for an organization's technical reality to boards, investors, and press; trusted with the messages that cannot be delegated, and organizational credibility survives the appearances."
+    }
+  },
+  {
     "id": "LI-01",
     "segment": "Product, Design & Cross-functional",
     "domain": "Leadership & Influence",
@@ -4332,6 +4502,108 @@
       "P4": "Aligns multiple teams and leadership behind a direction.",
       "P5": "Creates forums/narratives through which the org aligns.",
       "P6": "Aligns the company behind direction; externally persuasive."
+    }
+  },
+  {
+    "id": "LI-06",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Leadership & Influence",
+    "focus_area": "Technical Leadership",
+    "capability": "Technical Credibility",
+    "type": "Behavioral",
+    "description": "Retains enough hands-on technical depth to earn engineers' trust, ask the questions that change designs, and judge technical work without doing it.",
+    "levels": {
+      "P1": "Follows the team's technical discussions and asks clarifying questions; relies on others to evaluate design quality.",
+      "P2": "Understands the systems in scope well enough to review designs, probe trade-offs, and triage incidents \u2014 earns technical respect without taking the keyboard.",
+      "P3": "Maintains depth across a complex system's stack and hardest problems; a credible thought-partner to the most senior engineers, pairing them with the context they need.",
+      "P4": "Retains broad credibility across a multi-team domain \u2014 credible on its hardest cross-cutting technical questions, current enough to ask the question that changes a design.",
+      "P5": "Sustains the credibility to guide an organization's technology direction; translates architectural risk into business terms without distortion, and senior technologists accept the judgment.",
+      "P6": "Sustains credibility across an entire technology landscape; their technical judgment is trusted at every altitude because it survives contact with detail."
+    }
+  },
+  {
+    "id": "LI-07",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Leadership & Influence",
+    "focus_area": "Organizational Influence",
+    "capability": "Influence without Authority",
+    "type": "Behavioral",
+    "description": "Wins outcomes across organizational seams with no formal mandate \u2014 exchange in others' currencies, coalition-building, and earned credibility.",
+    "levels": {
+      "P1": "Builds working relationships with adjacent teams; asks for help through the right people with guidance.",
+      "P2": "Wins cooperation from adjacent teams by trading in their currencies \u2014 timing help, review effort, shared credit \u2014 rather than escalating.",
+      "P3": "Secures priority from other teams for an initiative with no borrowed authority; builds the case in the other party's terms and repays visibly.",
+      "P4": "Moves a multi-team domain to a shared position with no mandate \u2014 assembles the coalition, converts the best-argued skeptic \u2014 and the position holds after they stop pushing.",
+      "P5": "Shifts organization-level outcomes through people several seams away who advocate the position as their own; lands decisions while holding a minority of the formal power in the room.",
+      "P6": "Shapes industry and market context in the organization's favor \u2014 standards bodies, open ecosystems, talent narratives \u2014 so external forces push where the organization wants to go."
+    }
+  },
+  {
+    "id": "LI-08",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Leadership & Influence",
+    "focus_area": "Personal Leadership",
+    "capability": "Situational & Adaptive Leadership",
+    "type": "Behavioral",
+    "description": "Reads what the person, team, and moment need and flexes leadership approach \u2014 directing, coaching, supporting, delegating \u2014 from a grounded, authentic center; distinguishes technical from adaptive challenges.",
+    "levels": {
+      "P1": "Recognizes that different people need different support; adjusts approach when prompted by feedback.",
+      "P2": "Matches direction and support to each person's readiness per task \u2014 directing, coaching, supporting, or delegating deliberately \u2014 and tells technical problems from adaptive ones.",
+      "P3": "Flexes skillfully across a wide range of people and hard situations without losing a grounded center; refuses to force technical fixes onto adaptive challenges and names the difference.",
+      "P4": "Coaches other leaders to read what a person, team, or moment needs; adapts across diverse teams while staying recognizably consistent in values.",
+      "P5": "Develops adaptive leadership as an organizational discipline \u2014 leaders diagnose technical-versus-adaptive at scale, and the leadership style changes when the situation does.",
+      "P6": "Shapes an adaptive, grounded leadership culture across an organization \u2014 style stays plastic to conditions while values stay fixed; the approach is emulated beyond the organization."
+    }
+  },
+  {
+    "id": "LI-09",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Leadership & Influence",
+    "focus_area": "Personal Leadership",
+    "capability": "Self-Awareness & Learning Agility",
+    "type": "Behavioral",
+    "description": "Seeks external feedback on their own behavior, knows their failure patterns, and extracts lessons from first-time situations fast enough to lead credibly in them.",
+    "levels": {
+      "P1": "Accepts feedback about their own behavior without defensiveness; acts on it when the change is spelled out.",
+      "P2": "Asks for feedback on their own practice and changes visibly in response \u2014 \"you said X, I changed Y\" \u2014 keeping a running list of their own failure patterns.",
+      "P3": "Knows their failure modes under pressure and manages them in the moment; staffs deliberately against known weaknesses and seeks disconfirming input before hard calls.",
+      "P4": "Runs structured input on themselves \u2014 360s, skip-level themes \u2014 and closes the loop publicly on what changed; retools openly for first-time challenges so others copy the learning method.",
+      "P5": "Compensates deliberately for the seniority feedback vacuum \u2014 cultivates truth-tellers, rewards bearers of unwelcome news about themselves, and retires their own outdated playbook when the organization outgrows it.",
+      "P6": "Institutionalizes challenge to their own judgment \u2014 red teams, protected dissent \u2014 and manages how their moods and offhand comments get amplified across an organization."
+    }
+  },
+  {
+    "id": "LI-10",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Leadership & Influence",
+    "focus_area": "Personal Leadership",
+    "capability": "Resilience & Sustainable Pace",
+    "type": "Behavioral",
+    "description": "Sustains effectiveness under prolonged pressure, recovers from setbacks, and designs sustainable pace into how teams operate rather than modeling heroics.",
+    "levels": {
+      "P1": "Maintains composure through normal setbacks; recognizes their own overload and asks for help.",
+      "P2": "Stays effective and steady under pressure \u2014 recovers from setbacks, manages their own energy, and models a sustainable pace others learn from watching.",
+      "P3": "Holds up through prolonged pressure \u2014 incident sieges, crunch, organizational turbulence \u2014 helping the team stay resilient and refusing burnout-driven decisions.",
+      "P4": "Builds resilience into how multiple teams operate \u2014 on-call health, recovery after pushes, load balancing \u2014 and repairs burnout risk at scale.",
+      "P5": "Stewards organizational resilience \u2014 capacity buffers, crisis rotation, energy management for senior leaders \u2014 and holds the line when business pressure argues for permanent crunch.",
+      "P6": "Shapes a resilient, sustainable culture across an organization; the organization absorbs shocks without breaking people, and the practice is referenced beyond it."
+    }
+  },
+  {
+    "id": "LI-11",
+    "segment": "Product, Design & Cross-functional",
+    "domain": "Leadership & Influence",
+    "focus_area": "Personal Leadership",
+    "capability": "Integrity & Trust",
+    "type": "Behavioral",
+    "description": "Earns and keeps trust through consistency and courage \u2014 keeping commitments, telling unwelcome truths, and holding the ethical line when it is costly.",
+    "levels": {
+      "P1": "Keeps commitments with reminders; is honest when asked directly; escalates ethical concerns to others.",
+      "P2": "Keeps commitments or renegotiates before the deadline, never after; says the same thing in the room and out of it, owns mistakes unprompted, and reports true status when the truth is unwelcome.",
+      "P3": "Makes the unpopular-but-right call under pressure and absorbs the cost personally; protects the person who raised the flag and handles sensitive information impeccably.",
+      "P4": "Serves as the honest broker across teams \u2014 disputing parties accept their account of the facts \u2014 and carries uncomfortable systemic truths to the room that can fix them.",
+      "P5": "Builds mechanisms that make integrity cheap at scale \u2014 ethics review in design, safe escalation with follow-through, fairness systems whose losers affirm the process \u2014 and stops launches on ethical grounds with the business case for trust.",
+      "P6": "Holds an organization's line when the profitable path and the right path diverge \u2014 the hard disclosure, the walked-away revenue \u2014 and those moments become the story the culture tells about itself."
     }
   },
   {

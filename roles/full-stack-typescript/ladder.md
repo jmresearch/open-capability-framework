@@ -9,7 +9,7 @@
 - **Terminal level: E3 / Senior.** All five runs agree: a strong full stack engineer can remain at E3 indefinitely without being "behind." E4+ is not "more of E3" — it is a different job defined by multi-team scope, influence without authority, and organizational leverage.
 - **Register:** CircleCI Engineering Competency Matrix — present-tense observable behaviors; Depth and Scope separated in every cell.
 - **Shape:** 8 key areas, 19 focus areas, 47 competencies; every focus area spans 2+ competencies; theme labels are under 60 characters and technology-agnostic where reasonable (TypeScript specifics live in the cell prose).
-- **OCF mapping:** every competency carries an Open Capability Framework id on its `OCF:` line — 42 map to existing catalog capabilities; 5 are `proposed` (SWE-08 type-system domain modeling, SWE-09 boundary validation & type integrity, OPS-30 progressive delivery & release safety, PD-07 strategic & commercial awareness, and the pre-existing pending EM-15 technical debt & risk stewardship).
+- **OCF mapping:** every competency carries an Open Capability Framework id on its `OCF:` line — all 47 map to existing catalog capabilities (SWE-08 type-system domain modeling, SWE-09 boundary validation & end-to-end type integrity, OPS-30 progressive delivery & release safety, PD-07 strategic & commercial awareness, and EM-15 technical debt & risk stewardship were accepted into the catalog in 2026-07).
 - **Consolidation judgment calls:** (1) The type system keeps first-class treatment (3 competencies) — all five runs independently gave it its own focus area. (2) Frontend and backend stay symmetric key areas; "full stack" is leveled as genuine competence on both sides plus the contracts between them. (3) Run-3's split of compatibility/versioning from API design survives (union rule) — full stack engineers own both sides of the client-server deploy-order problem. (4) Single-run competencies (styling, data fetching, messaging, runtime correctness, advanced types, threat modeling, quality ownership, decision-making, stakeholder communication, ownership, business outcomes) all survive as distinct rows. (5) Code review clusters with code health (a design-quality mechanism); interpersonal feedback clusters with teamwork. (6) Blended source rows (e.g. r4's "Code review & feedback", r3's "Continuous integration & release") were assigned to the concept their cell content leans toward.
 
 ## Level overview
@@ -265,7 +265,7 @@
 
 | OCF | E1 | E2 | E3 | E4 | E5 | E6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-type-system-domain-modeling.md) (SWE-08 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [SWE-08](../../data/capabilities.md#swe-08) — Type-System Domain Modeling | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **E1:** Depth: **Writes correctly typed code without resorting to `any`**, using the codebase's interfaces, unions, and generics correctly and reading compiler errors to the actual cause. Scope: their own tasks compile clean under strict mode.
 - **E2:** Depth: **Models feature domains so invalid states don't type-check** — discriminated unions over boolean flags, literal types over strings, narrowing over assertions. Scope: the types of components they own.
@@ -280,7 +280,7 @@
 
 | OCF | E1 | E2 | E3 | E4 | E5 | E6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-boundary-validation-type-integrity.md) (SWE-09 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [SWE-09](../../data/capabilities.md#swe-09) — Boundary Validation & End-to-End Type Integrity | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **E1:** Depth: **Uses the codebase's shared API types and schema validators at boundaries** rather than hand-casting responses, and explains why an `as` cast is a smell. Scope: the boundaries their task crosses.
 - **E2:** Depth: **Puts runtime validation at every I/O boundary they touch** — requests, webhooks, queue messages, env config — deriving static types from the schemas so runtime and compile time can't drift. Scope: their features' edges.
@@ -342,7 +342,7 @@
 
 | OCF | E1 | E2 | E3 | E4 | E5 | E6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-technical-debt-stewardship.md) (EM-15 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [EM-15](../../data/capabilities.md#em-15) — Technical debt & risk stewardship | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **E1:** Depth: **Leaves touched code cleaner than found within the task's footprint** — naming, dead code, small extractions under existing tests — and flags debt they notice rather than working around it silently. Scope: their own diffs.
 - **E2:** Depth: **Refactors opportunistically within features and structures larger changes as reviewable, behavior-preserving steps**, recording debt they take on with the reason and the exit path. Scope: the health of their component.
@@ -472,7 +472,7 @@
 
 | OCF | E1 | E2 | E3 | E4 | E5 | E6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-progressive-delivery-release-safety.md) (OPS-30 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [OPS-30](../../data/capabilities.md#ops-30) — Progressive Delivery & Release Safety | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **E1:** Depth: **Follows the release process exactly** — feature flags, staged rollout steps, verification checklists — and watches their change land in production, rolling back with guidance when needed. Scope: their own deploys.
 - **E2:** Depth: **Ships behind feature flags with a rollback plan by default**, monitors the rollout dashboards, rolls back on their own judgment when signals degrade, and writes migrations that tolerate both code versions running. Scope: releases of their component.
@@ -762,7 +762,7 @@
 
 | OCF | E1 | E2 | E3 | E4 | E5 | E6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-strategic-commercial-awareness.md) (PD-07 candidate) | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [PD-07](../../data/capabilities.md#pd-07) — Strategic & Commercial Awareness | [P1](../../data/proficiency_scale.md#p1) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 - **E1:** Depth: **Can state what business outcome their current task serves** — and how their team's work makes or saves money — asking when they can't; treats cloud and license costs as real. Scope: awareness of their team's context.
 - **E2:** Depth: **Checks whether shipped work actually moved its metric and says so plainly when it didn't**, weighing cost — infra spend, build-vs-buy for small tools, maintenance burden — in the technical choices they own. Scope: outcomes of their features.

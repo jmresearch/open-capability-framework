@@ -106,15 +106,13 @@ competencies:
     proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
   # ---- TypeScript & Software Design ----
   - theme: Type-driven domain modeling
-    capability: proposed
-    proposal_ref: contrib/2026-07-type-system-domain-modeling.md
+    capability: SWE-08
     key_area: TypeScript & Software Design
     key_attribute: Type System as a Design Tool
     anchor: "Vanderkam, Effective TypeScript, 2nd ed. (2024); Wlaschin, Domain Modeling Made Functional (2018)"
     proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
   - theme: Type safety at boundaries
-    capability: proposed
-    proposal_ref: contrib/2026-07-boundary-validation-type-integrity.md
+    capability: SWE-09
     key_area: TypeScript & Software Design
     key_attribute: Type System as a Design Tool
     anchor: "King, Parse, Don't Validate (2019)"
@@ -138,8 +136,7 @@ competencies:
     anchor: "Fowler, Refactoring, 2nd ed. (2018)"
     proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
   - theme: Refactoring & technical debt
-    capability: proposed
-    proposal_ref: contrib/2026-07-technical-debt-stewardship.md
+    capability: EM-15
     key_area: TypeScript & Software Design
     key_attribute: Architecture & Code Health
     anchor: "Fowler, Refactoring, 2nd ed. (2018); Cunningham's debt metaphor (OOPSLA 1992)"
@@ -189,8 +186,7 @@ competencies:
     anchor: "Forsgren, Humble & Kim, Accelerate (2018) / DORA"
     proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
   - theme: Release & deployment practices
-    capability: proposed
-    proposal_ref: contrib/2026-07-progressive-delivery-release-safety.md
+    capability: OPS-30
     key_area: Delivery & Operations
     key_attribute: Delivery Pipeline
     anchor: "Humble & Farley, Continuous Delivery (2010)"
@@ -301,8 +297,7 @@ competencies:
     anchor: "McConnell, Software Estimation (2006); Reinertsen, Product Development Flow (2009)"
     proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
   - theme: Strategic & commercial awareness
-    capability: proposed
-    proposal_ref: contrib/2026-07-strategic-commercial-awareness.md
+    capability: PD-07
     key_area: Leadership & Business Impact
     key_attribute: Product & Business Impact
     anchor: "Rumelt, Good Strategy Bad Strategy (2011)"

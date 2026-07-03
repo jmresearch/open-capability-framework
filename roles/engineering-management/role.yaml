@@ -49,8 +49,7 @@ competencies:
     anchor: "Bungay, The Art of Action (2011)"
     proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   - theme: Situational & Adaptive Leadership
-    capability: proposed
-    proposal_ref: contrib/2026-07-situational-adaptive-leadership.md
+    capability: LI-08
     key_area: Leadership & Direction
     key_attribute: Alignment & Adaptive Leadership
     anchor: "Hersey & Blanchard (1969); Heifetz (1994)"
@@ -124,8 +123,7 @@ competencies:
     anchor: "Schmidt & Hunter, selection-methods meta-analysis (1998)"
     proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   - theme: Onboarding & Team Formation
-    capability: proposed
-    proposal_ref: contrib/2026-07-onboarding-team-formation.md
+    capability: EM-13
     key_area: People & Talent
     key_attribute: Hiring & Team Formation
     anchor: "Tuckman, Developmental Sequence in Small Groups (1965)"
@@ -167,7 +165,7 @@ competencies:
     anchor: "Edmondson, The Fearless Organization (2018); Project Aristotle"
     proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   - theme: Motivation, Engagement & Retention
-    capability: EM-03
+    capability: EM-17
     key_area: People & Talent
     key_attribute: Team Health & Culture
     anchor: "Deci & Ryan, Self-Determination Theory (2000); Herzberg (1968)"
@@ -180,8 +178,7 @@ competencies:
     proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   # ---- Technical Stewardship ----
   - theme: Technical Credibility
-    capability: proposed
-    proposal_ref: contrib/2026-07-technical-credibility.md
+    capability: LI-06
     key_area: Technical Stewardship
     key_attribute: Technical Judgment & Direction
     anchor: "Majors, The Engineer/Manager Pendulum (2017); Fournier (2017)"
@@ -211,8 +208,7 @@ competencies:
     anchor: "Humble & Farley, Continuous Delivery (2010)"
     proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   - theme: Technical Debt & Risk Stewardship
-    capability: proposed
-    proposal_ref: contrib/2026-07-technical-debt-stewardship.md
+    capability: EM-15
     key_area: Technical Stewardship
     key_attribute: Architecture, Quality & Debt
     anchor: "Cunningham, The WyCash Portfolio Management System (1992)"
@@ -225,8 +221,7 @@ competencies:
     anchor: "Minto, The Pyramid Principle (1987)"
     proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   - theme: Executive & Upward Communication
-    capability: proposed
-    proposal_ref: contrib/2026-07-executive-communication.md
+    capability: CC-06
     key_area: Communication & Influence
     key_attribute: Communication
     anchor: "Duarte, HBR Guide to Persuasive Presentations (2012)"
@@ -238,8 +233,7 @@ competencies:
     anchor: "Freeman, Strategic Management: A Stakeholder Approach (1984)"
     proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   - theme: Influence Without Authority
-    capability: proposed
-    proposal_ref: contrib/2026-07-influence-without-authority.md
+    capability: LI-07
     key_area: Communication & Influence
     key_attribute: Influence & Partnership
     anchor: "Cohen & Bradford, Influence Without Authority (1989)"
@@ -252,29 +246,25 @@ competencies:
     proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   # ---- Self & Personal Effectiveness ----
   - theme: Managerial Leverage & Focus
-    capability: proposed
-    proposal_ref: contrib/2026-07-managerial-leverage-focus.md
+    capability: EM-16
     key_area: Self & Personal Effectiveness
     key_attribute: Leverage & Delegation
     anchor: "Grove, High Output Management (1983); Drucker (1967)"
     proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   - theme: Delegation & Empowerment
-    capability: proposed
-    proposal_ref: contrib/2026-07-delegation-empowerment.md
+    capability: EM-14
     key_area: Self & Personal Effectiveness
     key_attribute: Leverage & Delegation
     anchor: "Marquet, Turn the Ship Around! (2012)"
     proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   - theme: Self-Awareness & Learning Agility
-    capability: proposed
-    proposal_ref: contrib/2026-07-self-awareness-learning-agility.md
+    capability: LI-09
     key_area: Self & Personal Effectiveness
     key_attribute: Growth & Resilience
     anchor: "Eurich, Insight (2017); Lombardo & Eichinger (2000)"
     proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   - theme: Resilience & Sustainable Pace
-    capability: proposed
-    proposal_ref: contrib/2026-07-resilience-sustainable-pace.md
+    capability: LI-10
     key_area: Self & Personal Effectiveness
     key_attribute: Growth & Resilience
     anchor: "Loehr & Schwartz, The Power of Full Engagement (2003)"
@@ -286,8 +276,7 @@ competencies:
     anchor: "Kahneman, Thinking, Fast and Slow (2011)"
     proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   - theme: Ethics, Integrity & Trust
-    capability: proposed
-    proposal_ref: contrib/2026-07-integrity-trust.md
+    capability: LI-11
     key_area: Self & Personal Effectiveness
     key_attribute: Judgment & Integrity
     anchor: "Mayer, Davis & Schoorman (1995); ACM Code of Ethics (2018)"
