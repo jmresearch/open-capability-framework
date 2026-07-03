@@ -2,6 +2,11 @@
 # Fetched live by skills/create-canonical-role. Schema and quality bar: benchmarks/README.md.
 
 reference_canons:
+  ai-engineer:
+    concepts: 43
+    stable: 34
+    core: 25
+    source: roles/ai-engineer (6-source consolidation report)
   platform-engineering:
     concepts: 37
     stable: 34
@@ -152,3 +157,24 @@ configs:
     recommended_runs: 3
     date: 2026-07-02
     source: benchmarks PR [platform-engineering] mint telemetry
+
+  - model: claude-fable-5
+    effort: low
+    runs_observed: 5
+    role_tested: ai-engineer
+    validator_pass_rate: 1.0
+    mean_competencies_per_run: 31.4
+    mean_canon_coverage_per_run: 0.73
+    core_recall_2runs: 1.0
+    systematic_gaps: []
+    register_notes: >-
+      Emerging-domain data point: zero gaps and perfect 2-run core recall, but a fat singleton
+      tail (20.9% after a supplementary run; the supplement corroborated one singleton and
+      discovered four new competencies with exact catalog homes). AI engineering saturates
+      slower than platform/full-stack - recommend 5 runs for emerging-domain roles and expect
+      the under-sampling flag to reflect domain immaturity rather than sampling failure.
+    tokens_per_run_median: 62000
+    canon_capable: true
+    recommended_runs: 5
+    date: 2026-07-02
+    source: benchmarks PR [ai-engineer] mint telemetry
