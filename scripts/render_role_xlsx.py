@@ -19,7 +19,12 @@ from openpyxl.styles import Alignment, Font
 from openpyxl.utils import get_column_letter
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DEFAULT_ROLES = ("engineering-management", "full-stack-typescript")
+def _discover_roles():
+    _base = os.path.join(ROOT, "roles")
+    return tuple(sorted(d for d in os.listdir(_base)
+                        if os.path.isfile(os.path.join(_base, d, "role.yaml"))))
+
+DEFAULT_ROLES = _discover_roles()
 REPO = "https://github.com/jmresearch/open-capability-framework"
 
 FONT = "Arial"
