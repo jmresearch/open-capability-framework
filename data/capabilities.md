@@ -1,6 +1,6 @@
 # Capability Catalog
 
-The full Open Capability Framework catalog — 455 capabilities across 36 domains, grouped Segment → Domain → Focus Area. Each capability carries a six-point behavioral profile on the capability-side [P1–P6 proficiency scale](proficiency_scale.md). Note the two-axis split: proficiency (P1–P6) is intrinsic to the capability and measures *how well*; scope ([S1–S6](scope_levels.md)) is a property of the **role** and measures *how broad*. Role records under `roles/` combine the two.
+The full Open Capability Framework catalog — 456 capabilities across 36 domains, grouped Segment → Domain → Focus Area. Each capability carries a six-point behavioral profile on the capability-side [P1–P6 proficiency scale](proficiency_scale.md). Note the two-axis split: proficiency (P1–P6) is intrinsic to the capability and measures *how well*; scope ([S1–S6](scope_levels.md)) is a property of the **role** and measures *how broad*. Role records under `roles/` combine the two.
 
 Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) so role ladders can deep-link here.
 
@@ -1913,6 +1913,18 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 - **[P4 — Expert](proficiency_scale.md#p4):** Audits cognitive load across team boundaries - quantifying onboarding time, concepts-to-learn, and ticket themes - and drives the cross-boundary simplifications no single team could make.
 - **[P5 — Authority](proficiency_scale.md#p5):** Makes cognitive load a first-class organizational measure with explicit load budgets, vetoing designs that externalize complexity onto consuming teams.
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Shapes company-level technology and team-boundary choices explicitly around team cognitive load, arguing for fewer, deeper abstractions over sprawling optionality.
+
+<a id="ops-33"></a>
+##### OPS-33 — Platform adoption & deprecation management
+
+*Type:* Behavioral — Drives internal adoption of platform capabilities and manages the full lifecycle of platform surfaces - migration onto paved roads, long-tail burndown, and safe deprecation and sunsetting of what they replace.
+
+- **[P1 — Assisted](proficiency_scale.md#p1):** Executes assigned migration steps on a defined checklist; updates tracking as users move; escalates blockers surfaced during a rollout.
+- **[P2 — Independent](proficiency_scale.md#p2):** Runs the adoption of a single capability end to end - communicates the change, provides migration tooling or docs, and clears the common blockers without help.
+- **[P3 — Proficient](proficiency_scale.md#p3):** Owns a capability's adoption and deprecation as a program: sets migration tooling (codemods, automated rewrites), burns down the long tail, and enforces a deprecation policy with published timelines and support commitments.
+- **[P4 — Expert](proficiency_scale.md#p4):** Designs the migration operating model a domain reuses - adoption instrumentation, incentives, and deprecation guarantees - so multiple teams retire and replace surfaces predictably.
+- **[P5 — Authority](proficiency_scale.md#p5):** Sets the organization's adoption and deprecation standards: the sunset principles, the guarantee bar, and the mechanisms that keep the platform's surface area from sprawling as it grows.
+- **[P6 — Pioneer](proficiency_scale.md#p6):** Establishes adoption-and-lifecycle practice others in the field adopt; makes deprecation a trusted, low-friction default rather than a feared event across the industry.
 
 ### Security Engineering (SEC)
 

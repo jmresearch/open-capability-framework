@@ -2550,6 +2550,23 @@
     }
   },
   {
+    "id": "OPS-33",
+    "segment": "Engineering & Technology",
+    "domain": "Systems, Infrastructure & Operations",
+    "focus_area": "Operating Mindset",
+    "capability": "Platform adoption & deprecation management",
+    "type": "Behavioral",
+    "description": "Drives internal adoption of platform capabilities and manages the full lifecycle of platform surfaces - migration onto paved roads, long-tail burndown, and safe deprecation and sunsetting of what they replace.",
+    "levels": {
+      "P1": "Executes assigned migration steps on a defined checklist; updates tracking as users move; escalates blockers surfaced during a rollout.",
+      "P2": "Runs the adoption of a single capability end to end - communicates the change, provides migration tooling or docs, and clears the common blockers without help.",
+      "P3": "Owns a capability's adoption and deprecation as a program: sets migration tooling (codemods, automated rewrites), burns down the long tail, and enforces a deprecation policy with published timelines and support commitments.",
+      "P4": "Designs the migration operating model a domain reuses - adoption instrumentation, incentives, and deprecation guarantees - so multiple teams retire and replace surfaces predictably.",
+      "P5": "Sets the organization's adoption and deprecation standards: the sunset principles, the guarantee bar, and the mechanisms that keep the platform's surface area from sprawling as it grows.",
+      "P6": "Establishes adoption-and-lifecycle practice others in the field adopt; makes deprecation a trusted, low-friction default rather than a feared event across the industry."
+    }
+  },
+  {
     "id": "SEC-01",
     "segment": "Engineering & Technology",
     "domain": "Security Engineering",

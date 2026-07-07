@@ -12,7 +12,7 @@ This is the **people-leadership track** for internal developer-platform, DevEx, 
 
 **Upper levels are written to stay demonstrable.** M3–M6 are phrased as **indirect-leverage behaviors** a person can show now — outcomes reached through leaders they develop and influence, mechanisms and standards other teams adopt, and decisions shaped across teams they do not manage — rather than position-locked "owns it because they hold the seat" language. **Honest in-seat caveat:** some accountability at the top of this ladder — budget of record, formal headcount authority, board exposure — is only *fully* exercised once the seat is held. The cells show readiness through proxy demonstrations; they do not claim the person already holds structure they have not been granted.
 
-**Proficiency targets** ride the manager curve (P1 novice → P6 pioneer/sets-direction), calibrated per competency against the Engineering Management and Platform Engineering canonical records; every shared capability id carries the same M1–M6 curve as the Engineering Management record. Every cell's bar is set to that competency's target at that level; the per-competency **OCF** table carries the M1–M6 targets so a rater can check the calibration. One competency, **Adoption & migration strategy**, references a pending catalog proposal — **OPS-33** (`contrib/2026-07-platform-adoption-and-deprecation-management.md`) — because no existing capability covers internal-platform adoption, migration, and deprecation; it is shown as a `proposed` reference to OPS-33 until the proposal is accepted.
+**Proficiency targets** ride the manager curve (P1 novice → P6 pioneer/sets-direction), calibrated per competency against the Engineering Management and Platform Engineering canonical records; every shared capability id carries the same M1–M6 curve as the Engineering Management record. Every cell's bar is set to that competency's target at that level; the per-competency **OCF** table carries the M1–M6 targets so a rater can check the calibration. One competency, **Adoption & migration strategy**, maps to **OPS-33** (Platform adoption & deprecation management), a capability accepted into the catalog with this record because no prior capability covered internal-platform adoption, migration, and deprecation.
 
 ## Level overview
 
@@ -254,7 +254,7 @@ Grouped **key area → focus area → competency**, in canonical order. Each com
 
 | OCF | M1 | M2 | M3 | M4 | M5 | M6 |
 |---|---|---|---|---|---|---|
-| [proposed](../../contrib/2026-07-platform-adoption-and-deprecation-management.md) (OPS-33 candidate) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
+| [OPS-33](../../data/capabilities.md#ops-33) | [P2](../../data/proficiency_scale.md#p2) | [P3](../../data/proficiency_scale.md#p3) | [P4](../../data/proficiency_scale.md#p4) | [P4](../../data/proficiency_scale.md#p4) | [P5](../../data/proficiency_scale.md#p5) | [P6](../../data/proficiency_scale.md#p6) |
 
 
 - **M1** — Depth: Drives adoption of a platform capability by making migration easy with codemods, docs, and hands-on help. **Moves the first cohort of teams onto a new platform version.** Scope: adoption on one platform team's surface.

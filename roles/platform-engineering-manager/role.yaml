@@ -21,10 +21,10 @@ scope_note: >
   under-produced but which is not platform-contingent. Every focus area spans 2+ competencies.
   Proficiency targets follow the manager curve, calibrated per competency against the Engineering
   Management and Platform Engineering canonical records for cross-ladder consistency (every shared
-  capability id carries the same M1-M6 curve as the Engineering Management record). One competency,
-  "Adoption & migration strategy," references a pending catalog proposal (OPS-33,
-  contrib/2026-07-platform-adoption-and-deprecation-management.md) because no existing capability
-  covers internal-platform adoption / migration / deprecation.
+  capability id carries the same M1-M6 curve as the Engineering Management record). The competency
+  "Adoption & migration strategy" maps to OPS-33 (Platform adoption & deprecation management),
+  accepted into the catalog with this record because no prior capability covered internal-platform
+  adoption / migration / deprecation.
 levels:
   - {code: M1, title: Platform Engineering Manager, scope: one platform team, focus: builds one healthy platform team and the platform-as-a-product fundamentals}
   - {code: M2, title: Senior Platform Engineering Manager, scope: a complex / critical platform team, focus: runs a high-stakes platform team and its reliability and DevEx outcomes}
@@ -108,8 +108,7 @@ competencies:
     anchor: "Bottcher, What I Talk About When I Talk About Platforms (martinfowler.com, 2018)"
     proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
   - theme: Adoption & migration strategy
-    capability: proposed
-    proposal_ref: contrib/2026-07-platform-adoption-and-deprecation-management.md
+    capability: OPS-33
     key_area: Platform as a Product
     key_attribute: Developer Experience & Adoption
     anchor: "Winters, Manshreck & Wright, Software Engineering at Google (2020) - deprecation chapter"
