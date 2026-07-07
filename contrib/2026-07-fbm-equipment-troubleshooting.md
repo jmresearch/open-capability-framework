@@ -1,0 +1,16 @@
+# Equipment troubleshooting & breakdown recovery
+
+- **Proposed id:** FBM-22
+- **Domain / focus area:** Food & Beverage Manufacturing / Reliability
+- **Type:** Technical
+- **Description:** Diagnosing faults and recovering process equipment from breakdown to restore production quickly and hygienically, and preventing the fault from recurring.
+- **Why it's missing:** When a separator, homogenizer, filler, pump, valve cluster, or control loop fails mid-run, the dairy-plant role must diagnose it, decide whether in-process product is at risk, recover the line hygienically, and stop it happening again — under a food-safety and production clock. The genuine nearest neighbor is SCM-09 (Asset & maintenance management): it is physical-asset maintenance, and its P4 bar — "autonomously diagnoses ambiguous failures and optimizes maintenance strategy for critical assets" — squarely overlaps the diagnostic core of this capability, so the delta is not fault-finding as such. What SCM-09 does not carry is the food-plant recovery frame: getting a line back up against a food-safety/production clock, the hygienic restart and re-sanitation a food-contact system needs once a repair has opened it, and the product-disposition decision on the in-process product the failure exposed. (SCM-07 Manufacturing & production operations covers running production, not breakdown recovery.) That food-safety-coupled recovery competence is the gap this proposal fills.
+
+## P1–P6 behavioral profile
+
+- **P1 (Assisted):** Recognizes when a machine is running abnormally and isolates and locks it out under direction; when it fails mid-run, holds the affected in-process product and confirms the opened food-contact surfaces are re-sanitized before the line is restarted.
+- **P2 (Independent):** Recovers the common breakdowns on their line within the food-safety window — sequences the repair, re-sanitizes the food-contact path the repair opened, and returns the line to production hygienically — and decides when the fault has put in-process product at risk and it must be held rather than run on.
+- **P3 (Proficient):** Runs the breakdown recovery on the hard faults against the production and food-safety clock — sets the re-sanitation and hygienic-restart path once a food-contact system has been opened, makes the product-disposition call on the batch the failure exposed, and coaches operators on recovering a line without compromising the food safety of what restarts.
+- **P4 (Expert):** Sets the breakdown-recovery-under-food-safety practice others follow — the hygienic-restart and re-sanitation-after-repair steps, the product-disposition rules for a breakdown, and the recovery targets against the production clock — and is the person called when a critical machine is down and product is at risk.
+- **P5 (Authority):** Governs breakdown-recovery practice across the plant where it couples to food safety — the standard for hygienic restart, re-sanitation-after-repair, and product disposition on a breakdown — and drives mean-time-to-restore against the food-safety and production clock across areas.
+- **P6 (Pioneer):** Sets food-plant rapid-recovery practice beyond the site — the hygienic-restart, re-sanitation, and breakdown-disposition standards, and the design-for-hygienic-recoverability methods other food plants and the industry adopt.
