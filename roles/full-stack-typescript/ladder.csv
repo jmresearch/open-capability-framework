@@ -5,50 +5,1178 @@ meta_description,"Canonical six-level IC ladder for engineers who own features e
 level_title,,,,,Associate Full Stack Engineer,Full Stack Engineer,Senior Full Stack Engineer,Staff Full Stack Engineer,Senior Staff Full Stack Engineer,Principal Full Stack Engineer
 level_scope,,,,,task,component,capability / domain (terminal level),multiple teams,organization,company
 level_focus,,,,,ships well-defined tasks across the stack with guidance and learns the stack,independently delivers complete features spanning UI,owns a product capability across the stack and sets the local bar,drives technical outcomes across multiple teams and multiplies other engineers,sets technical direction and standards for the organization,shapes company-level technical strategy and represents engineering externally
-skill,Frontend Engineering,UI Implementation,Component design & composition,FE-01,"Depth: Builds simple components from existing patterns; relies on review to validate boundaries and props. Evidenced by: Builds components from an existing design system to spec, following the patterns in neighboring code and asking when a mockup is ambiguous. Scope: task.","Depth: Composes reusable components independently, handling standard prop, state, and event wiring with normal review. Evidenced by: Decomposes a feature into a sensible component hierarchy without being handed the breakdown, choosing props vs. composition deliberately and reusing shared components rather than forking them. Scope: component.","Depth: Designs component hierarchies and clear interfaces autonomously; resolves tricky composition and reuse trade-offs. Evidenced by: Designs the component APIs a capability's UI is built from, catching prop-drilling, leaky abstractions, and reuse-hostile boundaries in review before they ship, and extends the design system with primitives that get reused. Scope: capability / domain (terminal level).","Depth: Defines the component architecture and conventions teams adopt; untangles deeply coupled or overgrown trees. Evidenced by: Establishes the shared component and design-system patterns several teams build against, deprecating divergent one-offs with migration paths. Scope: multiple teams.","Depth: Sets organization-wide component design strategy; anticipates how composition models should evolve. Evidenced by: Sets the organization's frontend architecture direction — design-system governance, framework and rendering-model choices — and removes the systemic obstacles blocking it. Scope: organization.","Depth: Defines what good component architecture means industrywide; shapes practice through widely adopted patterns. Evidenced by: Makes the company-level frontend bets (platform, framework generation, build-vs-buy for the design system) and is the named authority when they're contested. Scope: company."
-skill,Frontend Engineering,UI Implementation,Styling & responsive layout,FE-09,Depth: Applies existing styles and tokens to components under review. Evidenced by: Implements designs to match mockups at standard breakpoints using the project's styling approach; fixes visual bugs with guidance on cascade and specificity issues. Scope: task.,"Depth: Implements styling independently following design systems for standard components. Evidenced by: Builds layouts that hold up across viewports and content lengths without per-case hacks, choosing flexbox and grid appropriately and using design tokens consistently. Scope: component.","Depth: Designs scalable styling systems autonomously; resolves specificity, theming, and reuse issues. Evidenced by: Untangles specificity and layout problems others are stuck on and establishes styling conventions (tokens, layering, theming) that keep the capability's CSS predictable. Scope: capability / domain (terminal level).","Depth: Defines styling architecture and conventions others adopt; untangles fragile, sprawling styles. Evidenced by: Consolidates styling approaches across teams into one system, retiring duplicated patterns and writing the migration guide teams actually follow. Scope: multiple teams.","Depth: Sets styling-system strategy across the organization; anticipates evolving presentation approaches. Evidenced by: Owns the org's theming and visual-consistency strategy, deciding tooling and token architecture and measuring adoption. Scope: organization.","Depth: Defines what good styling architecture means industrywide; shapes widely adopted systems. Evidenced by: Directs company-level presentation-layer strategy, including brand-scale theming, white-labeling, or multi-product visual platforms. Scope: company."
-skill,Frontend Engineering,State & Data Flow,Client state management & data flow,FE-05,Depth: Reads and updates simple shared state following established patterns under review. Evidenced by: Uses the codebase's existing state patterns correctly — local state vs. shared store vs. server cache — and traces where a given piece of state lives and why. Scope: task.,"Depth: Manages component and shared state independently for standard flows with normal review. Evidenced by: Chooses the right home for each piece of state (local, lifted, global, URL, server-cache) and keeps derived state computed rather than duplicated, with loading, error, and stale states honest in the UI. Scope: component.","Depth: Designs state architecture autonomously; resolves complex synchronization and ownership issues. Evidenced by: Designs the state architecture for a capability — cache invalidation, optimistic updates, real-time sync — and spots stale-data, race-condition, and re-render-prone flows in others' code before they ship. Scope: capability / domain (terminal level).","Depth: Defines state-management patterns others adopt; untangles tangled global and derived state. Evidenced by: Converges divergent state approaches across teams into shared patterns, writing the decision record and unwinding the worst legacy state tangles personally. Scope: multiple teams.","Depth: Sets state-management strategy across the organization; anticipates evolving paradigms. Evidenced by: Sets the org's client-data architecture (caching strategy, offline posture, real-time sync) and arbitrates when teams' needs conflict. Scope: organization.",Depth: Defines what good client state management means; shapes industry patterns and practice. Evidenced by: Owns the long-horizon client-data strategy — the model the company's products converge on — and sponsors the platform work to get there. Scope: company.
-skill,Frontend Engineering,State & Data Flow,Data fetching & caching,FE-06,Depth: Fetches and displays data for simple endpoints under review. Evidenced by: Fetches data through the codebase's established client and hooks and renders loading and error states; reproduces a stale-data bug with guidance. Scope: task.,"Depth: Implements fetching with loading and error states independently for standard cases. Evidenced by: Implements fetching with correct cache keys, invalidation, and race handling, and handles pagination and optimistic updates using established patterns. Scope: component.","Depth: Designs fetching and caching strategies autonomously; handles invalidation and race conditions. Evidenced by: Designs the fetching and caching strategy for a capability — what is cached, for how long, and what invalidates it — and spots request waterfalls and N+1 patterns in review. Scope: capability / domain (terminal level).","Depth: Defines fetching and caching patterns teams adopt; solves hard staleness and consistency problems. Evidenced by: Standardizes data-access patterns across teams, building or selecting the shared data layer and deprecating ad-hoc fetching. Scope: multiple teams.","Depth: Sets strategy for client data access and caching; anticipates evolving data-sync models. Evidenced by: Owns the org's client-server data strategy, including SSR and streaming trade-offs and cache coherence across products. Scope: organization.","Depth: Shapes industry practice for client data fetching and caching; pioneers influential approaches. Evidenced by: Sets company-level direction for how clients consume data at scale, shaping platform investments and vendor-versus-build decisions. Scope: company."
-skill,Frontend Engineering,Frontend Quality,Accessibility,FE-12,"Depth: Applies basic accessibility fixes following checklists under review. Evidenced by: Uses semantic HTML and design-system components rather than div soup, and runs the team's accessibility checks before requesting review. Scope: task.","Depth: Implements accessible components independently meeting standard requirements. Evidenced by: Builds keyboard-navigable, screen-reader-usable features — focus management, labels, ARIA only where semantics fall short — verifying with assistive tech before merge. Scope: component.","Depth: Designs accessible experiences autonomously; resolves complex assistive-technology and interaction cases. Evidenced by: Catches accessibility regressions in review that automated tools miss (focus traps, reading order, announced state changes) and teaches the patterns that prevent them. Scope: capability / domain (terminal level).","Depth: Defines accessibility approaches teams adopt; solves the hardest inclusive-design problems. Evidenced by: Builds accessibility into shared components and CI gates so teams inherit conformance by default, and drives remediation across surfaces no one team owns. Scope: multiple teams.","Depth: Sets accessibility strategy across the organization; anticipates evolving standards and needs. Evidenced by: Owns the org's accessibility standard and audit posture, reporting conformance to leadership and prioritizing systemic fixes. Scope: organization.","Depth: Shapes industry accessibility practice; influences standards and widely referenced guidance. Evidenced by: Sets company accessibility policy and represents it externally (compliance commitments, procurement, public conformance statements). Scope: company."
-skill,Frontend Engineering,Frontend Quality,Web performance,FE-13,"Depth: Applies known performance fixes to simple cases under guidance. Evidenced by: Reads a Lighthouse or devtools performance report and fixes the flagged issues in their task — oversized images, blocking scripts, unnecessary re-renders — with guidance on trade-offs. Scope: task.","Depth: Profiles and improves standard performance issues independently. Evidenced by: Keeps the features they ship within the team's performance budget, profiling render and bundle cost before merge and lazy-loading what the critical path doesn't need. Scope: component.","Depth: Diagnoses and optimizes performance autonomously across rendering, loading, and runtime. Evidenced by: Owns Core Web Vitals for a capability, diagnosing field regressions from RUM data to root cause — hydration cost, main-thread contention, layout shift — and rejecting designs that can't hit budget. Scope: capability / domain (terminal level).","Depth: Defines performance approaches teams adopt; solves the most stubborn bottlenecks. Evidenced by: Builds the performance budgets, CI gates, and monitoring several teams run on, and leads the cross-team efforts that move p75 metrics. Scope: multiple teams.","Depth: Sets frontend performance strategy and budgets; anticipates emerging performance concerns. Evidenced by: Sets org-wide performance targets and the platform investments to hit them — rendering architecture, edge/CDN posture — tied to business metrics leadership acts on. Scope: organization.",Depth: Defines what good frontend performance means industrywide; pioneers influential techniques. Evidenced by: Makes the company-level performance-architecture bets and is accountable for user-experience speed as a competitive property of the product. Scope: company.
-skill,Backend & API Engineering,Services & Runtime,Service design & boundaries,ARC-02,"Depth: Splits a service along boundaries already defined, with decomposition reviewed. Evidenced by: Adds endpoints and handlers to an existing Node/TypeScript service following its layering, error-handling, and config conventions; explains the request path through the service in their own words. Scope: task.","Depth: Decomposes routine systems into services using established boundary heuristics independently. Evidenced by: Designs and ships a well-factored module or small service independently, separating transport, domain logic, and persistence, and handling errors, timeouts, and idempotency deliberately. Scope: component.","Depth: Designs boundaries for complex domains, resolving overlap and ownership ambiguity autonomously. Evidenced by: Draws service boundaries by trade-off in design docs that name the alternatives considered, designing for failure (retries, idempotency, backpressure) and catching coupling and hidden-dependency problems in others' designs before build. Scope: capability / domain (terminal level).","Depth: Defines decomposition methods and boundary heuristics teams reuse across products. Evidenced by: Restructures the service landscape across teams — splitting, merging, or extracting services with migration plans that ship incrementally — without stopping delivery. Scope: multiple teams.","Depth: Sets enterprise-wide boundary and ownership strategy, anticipating decomposition pressures. Evidenced by: Sets the org's service architecture direction (runtime choices, communication patterns, platform primitives) and retires the patterns that no longer serve it. Scope: organization.",Depth: Shapes how the industry reasons about service boundaries and decomposition. Evidenced by: Makes company-level backend platform bets and is the tie-breaking authority on architecture decisions with decade-scale consequences. Scope: company.
-skill,Backend & API Engineering,Services & Runtime,Runtime & async correctness,CS-04,"Depth: Writes concurrent code using given primitives under review. Evidenced by: Uses async/await correctly — awaits promises, handles rejections, avoids sequential awaits where work is parallel — with review catching the misses. Scope: task.","Depth: Implements standard concurrent patterns independently for routine workloads. Evidenced by: Keeps the event loop healthy in code they own, moving CPU-heavy work off the hot path, bounding concurrency, and adding timeouts and cancellation to outbound calls. Scope: component.","Depth: Designs correct, efficient concurrency for complex shared-state problems autonomously. Evidenced by: Diagnoses production event-loop stalls, memory leaks, and race conditions from traces and heap snapshots, and designs backpressure and retry behavior for a capability's services. Scope: capability / domain (terminal level).","Depth: Defines concurrency patterns and reasoning others adopt to avoid subtle defects. Evidenced by: Sets the concurrency, timeout, and resilience defaults multiple teams inherit through shared libraries and service templates. Scope: multiple teams.","Depth: Sets concurrency strategy organization-wide, anticipating parallelism challenges. Evidenced by: Drives org-wide runtime strategy — Node versions, worker models, resource limits — from fleet-level performance data. Scope: organization.",Depth: Shapes industry understanding of concurrency and parallelism. Evidenced by: Owns company-level runtime and platform bets and is the escalation point for the hardest production mysteries. Scope: company.
-skill,Backend & API Engineering,API Contracts,API contract design,SWE-07,"Depth: Understands HTTP/REST and the deploy pipeline; makes guided changes. Evidenced by: Implements endpoints against a specified contract, returning correct status codes and error shapes, and updates the OpenAPI or schema definition alongside the code. Scope: task.","Depth: Designs clean APIs; understands rate limits, retries, timeouts, idempotency. Evidenced by: Designs consistent, versionable endpoints for their feature — naming, pagination, error envelopes — and shares typed clients or generated types so frontend and backend agree by construction. Scope: component.","Depth: Designs services for scale and cost; understands distributed failure modes. Evidenced by: Owns the API contract for a capability, writing the schema first, folding consumers' integration pain back into the design, and rejecting designs in review that leak internals or paint consumers into corners. Scope: capability / domain (terminal level).","Depth: Expert in platform/service design (multi-tenancy, capacity, shared services). Evidenced by: Sets the API conventions multiple teams follow (style guide, error taxonomy, schema registry, review gates) and arbitrates contract disputes between producing and consuming teams. Scope: multiple teams.","Depth: Sets interface standards used across the org. Evidenced by: Owns the org's API strategy — REST/GraphQL/RPC posture, gateway, contract-testing infrastructure — and its governance mechanisms. Scope: organization.","Depth: Defines company-wide API approach; trusted with irreversible interface bets. Evidenced by: Shapes the company's external API as a product, making the compatibility promises the business sells against. Scope: company."
-skill,Backend & API Engineering,API Contracts,Compatibility & versioning,BE-13,"Depth: Implements endpoints against existing contracts under review. Evidenced by: Asks before changing a response shape or shared type, and explains why deployed clients constrain the server. Scope: task.","Depth: Designs standard API contracts independently with consistent conventions. Evidenced by: Ships additive, backward-compatible changes by default, coordinating deploy order between client and server and gating risky changes behind flags. Scope: component.","Depth: Designs API contracts and versioning autonomously; manages compatibility and evolution. Evidenced by: Designs the deprecation and migration paths for a capability's contracts — versioning scheme, sunset timelines, consumer comms — and catches silent breaking changes in review. Scope: capability / domain (terminal level).","Depth: Defines API-design approaches teams adopt; solves hard versioning and compatibility problems. Evidenced by: Runs breaking-change processes across teams, with contract tests and migration tooling that make deprecations routine rather than heroic. Scope: multiple teams.",Depth: Sets API contract and versioning strategy across the organization; anticipates evolving needs. Evidenced by: Sets the org's compatibility policy and the tooling that enforces it automatically. Scope: organization.,"Depth: Defines authoritative practice for API design; shapes industry standards and conventions. Evidenced by: Owns compatibility strategy for company-critical and external surfaces, where mistakes are front-page incidents. Scope: company."
-skill,Backend & API Engineering,Data & Persistence,Data modeling,BE-01,"Depth: Writes simple queries and follows existing schemas under review. Evidenced by: Writes correct queries and simple schema changes against an existing model, explaining the main entities and their relationships in their own words. Scope: task.","Depth: Models standard entities and writes correct queries independently with normal review. Evidenced by: Designs sound schemas for their features — keys, constraints, indexes, normalization judged by access pattern — encoding invariants in the database rather than in application hope, with reversible migrations. Scope: component.","Depth: Designs normalized schemas autonomously; writes complex queries and resolves modeling trade-offs. Evidenced by: Models a capability's domain so that invalid states are hard to represent, choosing consistency and transaction boundaries deliberately, designing for schema evolution, and catching modeling errors in others' designs before they calcify. Scope: capability / domain (terminal level).","Depth: Defines data-modeling approaches teams adopt; solves the hardest schema and query problems. Evidenced by: Untangles data models entangled across teams — ownership of shared entities, duplication vs. reference, event contracts — and lands the migrations. Scope: multiple teams.","Depth: Sets relational modeling strategy across systems; anticipates evolving data and access needs. Evidenced by: Sets the org's data architecture (store selection, consistency posture, canonical sources of truth) and kills duplicate sources of truth. Scope: organization.","Depth: Defines best practice for relational modeling industrywide; shapes widely adopted approaches. Evidenced by: Owns company-level data strategy bets — the storage and consistency platform products build on for years, including regulatory and multi-region posture. Scope: company."
-skill,Backend & API Engineering,Data & Persistence,Query performance & safe migrations,BE-04,"Depth: Adds suggested indexes and reads query plans under guidance. Evidenced by: Reads a query plan with help and fixes flagged N+1s, running schema changes only through the migration tooling with review. Scope: task.","Depth: Identifies and resolves standard slow queries independently. Evidenced by: Reads execution plans unprompted and designs indexes for the access patterns of features they own, checking query cost against realistic data volumes and rehearsing the rollback before deploying. Scope: component.","Depth: Designs indexing strategies autonomously; tunes complex queries and execution plans. Evidenced by: Diagnoses production database performance to root cause — plans, locks, connection pools — and designs zero-downtime migrations (expand/contract, backfill strategy, dual-write windows), reviewing others' migrations for lock and rollback risk. Scope: capability / domain (terminal level).","Depth: Defines query-optimization approaches teams adopt; solves the most stubborn performance problems. Evidenced by: Leads the multi-team data moves — resharding, datastore swaps, hot-table decomposition — with staged rollout plans others execute against, and builds the guardrails preventing recurrence. Scope: multiple teams.","Depth: Sets indexing and optimization strategy across systems; anticipates evolving workload patterns. Evidenced by: Owns org-level capacity and scaling strategy for persistence, deciding when to shard, replicate, or re-platform, with cost explicitly in the trade-off. Scope: organization.",Depth: Shapes industry practice for query optimization; pioneers widely referenced techniques. Evidenced by: Makes the company's long-horizon storage bets and is the final technical voice on the migrations where failure is existential. Scope: company.
-skill,Backend & API Engineering,Integration & Resilience,Asynchronous processing & messaging,BE-09,Depth: Produces and consumes messages for simple flows under review. Evidenced by: Adds jobs or event handlers to an existing queue and worker setup following team patterns; explains at-least-once delivery and why handlers must tolerate retries. Scope: task.,Depth: Implements standard event-driven flows independently with normal review. Evidenced by: Builds idempotent async workflows with dead-letter handling and visibility into failures; chooses sync-versus-async deliberately for their feature. Scope: component.,"Depth: Designs event-driven architectures autonomously; resolves ordering, delivery, and coupling concerns. Evidenced by: Designs the event and job architecture for a capability, reasoning explicitly about ordering, exactly-once illusions, and poison messages, and catches these gaps in others' designs. Scope: capability / domain (terminal level).","Depth: Defines event-driven approaches teams adopt; solves the hardest decoupling and flow problems. Evidenced by: Standardizes messaging patterns across teams, owning shared schemas and topics and the contract between producers and consumers. Scope: multiple teams.","Depth: Sets event-driven architecture strategy across systems; anticipates evolving messaging models. Evidenced by: Sets the org's async and eventing strategy, including platform selection and the delivery-guarantee posture teams inherit. Scope: organization.","Depth: Defines authoritative practice for event-driven architecture; shapes industry understanding. Evidenced by: Directs company-scale event architecture, making the platform bets that determine how the company's systems compose. Scope: company."
-skill,Backend & API Engineering,Integration & Resilience,Third-party & cross-service resilience,BE-18,"Depth: Applies provided resilience patterns to simple services under review. Evidenced by: Sets timeouts and handles error paths in their changes as the team's patterns prescribe, and explains what happens to their code when a dependency is down. Scope: task.","Depth: Implements standard fault-tolerance and isolation measures independently. Evidenced by: Wraps every external dependency with timeouts, retries with backoff, and failure fallbacks — graceful degradation in the UI when the API stutters — and writes the runbook entry for when the dependency degrades. Scope: component.","Depth: Designs resilient systems autonomously; resolves cascading-failure and degradation concerns. Evidenced by: Designs the resilience posture for a capability — circuit breakers, bulkheads, dependency criticality tiers, load-testing before launches and sizing for projected growth — and rejects designs in review that fail closed on non-critical dependencies. Scope: capability / domain (terminal level).","Depth: Defines fault-tolerance approaches teams adopt; solves the hardest isolation and recovery problems. Evidenced by: Hardens the seams between teams' systems — shared dependencies, cascading-failure paths — running failure-injection and game-day exercises and fixing the systemic weak points they expose. Scope: multiple teams.","Depth: Sets resilience strategy across systems; anticipates emerging failure modes and risks. Evidenced by: Sets org resilience standards and capacity strategy, including vendor criticality tiers, exit strategies, and disaster-recovery posture. Scope: organization.","Depth: Defines best practice for fault tolerance industrywide; shapes widely adopted approaches. Evidenced by: Accountable for company-level systemic resilience, shaping architecture and vendor strategy so no single dependency can take the business down. Scope: company."
-skill,TypeScript & Software Design,Type System as a Design Tool,Type-driven domain modeling,SWE-08,"Depth: Writes correctly typed code without escape hatches (`any`-equivalents), uses the codebase's existing types and generics correctly, and reads compiler errors to the actual cause with guidance. Evidenced by: Gets a compiler error on a discriminated-union narrowing case they haven't seen before, reads the message past the top line to find the actual mismatched member, and fixes the type rather than reaching for `as`. Scope: task.","Depth: Models feature domains so invalid states fail to compile — sum types / discriminated unions over boolean flags, narrowing over assertions — preferring type-level constraints where the compiler can carry the load. Evidenced by: Turns a boolean-flag-soup form state (`isLoading`/`isError`/`hasData` that can all be true at once) into a discriminated union so the impossible combinations don't compile, without being told to. Scope: component.","Depth: Designs the shared domain types a capability is built on, keeping inference ergonomic for consumers; judges when type-level sophistication pays and when it obscures, and unwinds accumulated type erosion in others' code. Evidenced by: Reviews a teammate's PR that adds a fourth optional field to an already-sprawling props type, and instead proposes (and lands) the discriminated-union refactor that makes the three valid variants explicit and the invalid ones uncompilable. Scope: capability / domain (terminal level).","Depth: Sets type-design conventions multiple teams adopt — strictness policy, shared type libraries, branded identifiers, result types — and leads migrations that raise strictness without halting delivery. Evidenced by: Publishes the branded-ID and Result-type conventions as the team's internal type-utilities package, with a codemod that migrated three existing services onto it without a delivery freeze. Scope: multiple teams.","Depth: Owns an organization's type-system posture — compiler baselines, monorepo type architecture, upgrade cadence — measured by defect and velocity outcomes. Evidenced by: Sets the org's `strict`-mode and `noUncheckedIndexedAccess` baseline for all new repos, tracked against a quarterly defect-rate dashboard leadership reviews. Scope: organization.","Depth: Makes company-level language and type-platform bets and represents the practice externally (talks, upstream contributions, published patterns). Evidenced by: Is the internal reviewer of record when the company adopts a new TypeScript major version, and publishes the migration's lessons as a conference talk that other companies cite. Scope: company."
-skill,TypeScript & Software Design,Type System as a Design Tool,Type safety at boundaries,SWE-09,"Depth: Uses the codebase's shared contract types and schema validators at boundaries rather than hand-casting external data, and can point to where a type is checked at runtime. Evidenced by: Wraps a third-party webhook payload with the team's existing Zod schema before touching its fields, and when asked why, points to the exact line where the shape is checked at runtime. Scope: task.","Depth: Puts runtime validation at every I/O boundary they touch — requests, messages, configuration — deriving static types from the runtime schemas so compile-time and runtime cannot drift. Evidenced by: Adds request validation to a new internal endpoint using the same schema that generates its TypeScript types, so a malformed body 400s before it ever reaches the handler's typed logic. Scope: component.","Depth: Designs end-to-end type integrity for a capability — schema-first contracts, generated clients, contract drift caught in continuous integration — and blocks unsound casts and unvalidated edges in review. Evidenced by: Wires a capability's client and server to share one schema-derived contract type checked in CI, so that changing a field name on the server fails the client's typecheck in the same pull request instead of failing in production. Scope: capability / domain (terminal level).","Depth: Builds the code-generation and contract-typing infrastructure multiple teams inherit, making boundary safety the default rather than a discipline, and resolves cross-team type drift at its source. Evidenced by: Builds the internal codegen pipeline that turns each service's OpenAPI schema into a typed client automatically, adopted by four other teams who stopped hand-writing fetch wrappers. Scope: multiple teams.","Depth: Sets the organization's boundary-safety standard and the platform tooling that enforces it, with incident evidence showing the failure classes it removed. Evidenced by: Ships an org-wide boundary-validation lint rule after tracing three consecutive quarters' worst production incidents back to unvalidated third-party responses, and reports the incident-rate drop to engineering leadership. Scope: organization.","Depth: Owns contract-integrity strategy across products and external interfaces where a broken contract is a business event, and advances the state of practice publicly. Evidenced by: Owns the contract-integrity review for the company's public partner API, where a silently-dropped field would break a paying customer's integration, and writes up the safeguards at an external engineering conference. Scope: company."
-skill,TypeScript & Software Design,Type System as a Design Tool,Advanced types & inference,SWE-01,"Depth: Writes working, readable code in the team's language; debugs own changes. Evidenced by: Uses generic functions and utility types (Pick, Omit, Partial) correctly in everyday code; asks for help when inference surprises them. Scope: task.","Depth: Proficient in the primary language/ecosystem; handles errors, async and concurrency basics correctly. Evidenced by: Writes their own generic functions and constraints that infer cleanly at call sites, and debugs inference failures by reading the types rather than adding casts. Scope: component.","Depth: Code is a reference others learn from; debugs the hard problems (races, memory, nondeterminism). Evidenced by: Builds the typed utilities and library boundaries others rely on — mapped and conditional types where they pay for themselves — and pushes back in review on cleverness that hurts readability or compile times. Scope: capability / domain (terminal level).","Depth: Mastery across multiple stacks/paradigms; solves problems others can't; sets implementation patterns. Evidenced by: Owns the hardest type-level infrastructure across teams (codegen, typed clients, framework glue) and teaches the patterns so they don't bottleneck on one person. Scope: multiple teams.","Depth: Sets implementation standards adopted across the org; anticipates where code breaks at scale. Evidenced by: Sets the org's bar for type-level engineering, balancing expressiveness against build performance and onboarding cost. Scope: organization.","Depth: Industry-level depth; authors foundational primitives and idioms others build on. Evidenced by: Influences the practice beyond the company — upstream contributions, published patterns — and directs internal investment accordingly. Scope: company."
-skill,TypeScript & Software Design,Architecture & Code Health,Software design & architecture,SWE-05,"Depth: Implements designs specified by others; asks why, not just how. Evidenced by: Explains the system's architecture in their own words and navigates its diagrams to find where a change belongs, implementing designs specified by others. Scope: task.","Depth: Designs sound components; understands coupling, cohesion, interface design. Evidenced by: Designs their features within the existing architecture with clear module boundaries and hidden internals, writing a short design note for anything non-obvious and naming at least one alternative. Scope: component.","Depth: Designs systems for evolution: clean seams, versioned interfaces, replaceable parts. Evidenced by: Selects patterns by trade-off in design docs that name the alternatives considered, designs for evolution, and catches coupling and scaling problems in others' designs before build. Scope: capability / domain (terminal level).","Depth: Mastery of architecture for complex systems; sets patterns and prevents drift. Evidenced by: Produces the designs that resolve problems spanning multiple teams, and gets them adopted through review and persuasion rather than mandate. Scope: multiple teams.",Depth: Sets multi-year architecture direction across the org. Evidenced by: Sets the architectural direction multiple teams build against and removes the systemic obstacles that block it. Scope: organization.,Depth: Authoritative and externally credible; defines architectural approach others follow. Evidenced by: Owns the company's technical architecture narrative — where the platform is going and why — making the irreversible calls and being publicly accountable for them. Scope: company.
-skill,TypeScript & Software Design,Architecture & Code Health,"Readable, maintainable code",SWE-02,"Depth: Writes functional, readable code; uses version control correctly; responds well to review. Evidenced by: Writes small, clearly named functions that match the codebase's conventions, and incorporates review feedback without repeating the same class of issue. Scope: task.","Depth: Writes clean, documented, modular code; gives useful review feedback. Evidenced by: Leaves code simpler than found as a matter of course — refactors as part of feature work, keeps modules cohesive, writes comments that explain why, not what; review comments on their PRs trend toward design, not cleanup. Scope: component.","Depth: Designs for maintainability; leads refactors of problem areas; review feedback teaches. Evidenced by: Sets the maintainability bar for a capability through review — names the smell and the refactoring, suggests the simplification rather than the workaround, and articulates why a design is too complicated, not just that it is. Scope: capability / domain (terminal level).","Depth: Expert in code health at scale (shared libraries, deprecations, large migrations). Evidenced by: Drives code-health initiatives across teams — dead-code deletion, module restructuring, convention alignment — with before/after evidence. Scope: multiple teams.","Depth: Shapes org-wide engineering standards for long-lived codebases. Evidenced by: Owns org-level code-health strategy, making maintainability a funded, tracked property rather than a virtue, legible to leadership as risk and velocity. Scope: organization.",Depth: Defines what good engineering looks like company-wide; externally recognized. Evidenced by: Sets company engineering-quality standards and models them in the code they still write. Scope: company.
-skill,TypeScript & Software Design,Architecture & Code Health,Refactoring & technical debt,EM-15,"Depth: Records known shortcuts and defects when directed; raises debt concerns in planning. Evidenced by: Adds a `// TODO(debt): hardcoded 30-day window, revisit before Q3 launch` comment on a shortcut they took, and brings it up unprompted when their tech lead asks what got cut in the sprint. Scope: task.","Depth: Keeps a visible debt register with the cost of carry noted and defends a steady paydown allocation in planning rather than begging quarter by quarter. Evidenced by: Keeps a running doc of the debt their component has taken on this quarter — what, why, and the exit condition — and defends a fixed 15% paydown slice in planning instead of re-arguing for it every sprint. Scope: component.","Depth: Distinguishes debt worth carrying from debt that will detonate, sequences remediation by risk, and prices debt in incident and velocity terms stakeholders accept. Evidenced by: Tells the roadmap owner that the auth-service's dual-write shim is debt that will detonate at their next 2x traffic milestone, not debt that can sit, and gets a two-sprint remediation slotted in with the incident-cost math that made the case. Scope: capability / domain (terminal level).","Depth: Makes debt legible across multiple teams — shared taxonomy, reporting rhythm — and gets cross-team risk (the shared library nobody owns, the half-finished migration) owned and funded. Evidenced by: Builds the shared debt taxonomy (security/perf/velocity/correctness) three teams now tag their tickets with, and gets the shared auth library nobody owned assigned a team and a paydown budget. Scope: multiple teams.","Depth: Carries technical risk onto the executive risk register — top exposures known, sized, owned, trending — and lands multi-quarter remediation programs against feature pressure. Evidenced by: Presents the org's top five debt exposures — sized in incident-dollars and velocity-days — on the quarterly executive risk register, and gets two multi-quarter remediation programs funded against competing feature asks. Scope: organization.","Depth: Sets an organization's speed-versus-soundness posture explicitly — where debt is accepted for velocity and where it never is — and holds it under growth pressure. Evidenced by: Sets the explicit rule that new-market launches may carry data-model debt for one quarter but never carry auth debt past code review, and holds that line when a VP pushes to ship a launch with an auth shortcut. Scope: company."
-skill,TypeScript & Software Design,Architecture & Code Health,Code review practice,SWE-04,"Depth: Navigates the codebase and understands code shown; reviews small changes. Evidenced by: Responds to review feedback promptly and without defensiveness, applies it beyond the flagged line, and reviews small changes for readability and test presence. Scope: task.","Depth: Independently understands unfamiliar code; gives timely, specific review feedback. Evidenced by: Gives reviews that catch real defects, not just style — edge cases, type holes, missing tests — distinguishing blocking issues from preferences and phrasing comments about the code, not the coder. Scope: component.","Depth: Quickly grasps complex/legacy systems; reviews raise the bar across a domain. Evidenced by: Reviews for design, failure modes, and long-term cost — and teaches through review comments others save and share. Turns recurring review comments into lint rules or docs, and calibrates comment severity so authors know what blocks. Scope: capability / domain (terminal level).","Depth: Expert at reviewing high-risk changes; review standards spread across teams. Evidenced by: Calibrates review standards across teams so the bar is consistent, reviewing the cross-cutting changes nobody else can judge and coaching senior engineers on how they review. Scope: multiple teams.","Depth: Authority on review practice org-wide. Evidenced by: Designs the org's review system itself — ownership rules, required checks, review SLAs, automation — measured by defect escape and flow metrics. Scope: organization.","Depth: Defines what good review looks like; shapes industry-facing practice. Evidenced by: Sets the company's engineering-rigor expectations, personally reviewing the changes with company-level blast radius. Scope: company."
-skill,Quality & Testing,Testing Across the Stack,Test strategy & the pyramid,QA-01,"Depth: Drafts test plans from templates for defined features, reviewed before execution. Evidenced by: Writes unit tests for every change following the team's patterns, and explains what each layer of the pyramid is for in their own words. Scope: task.","Depth: Produces complete test strategies for standard projects independently, scoping coverage and risk. Evidenced by: Chooses the right test layer per risk — unit for logic, integration for seams, few end-to-end — covering the frontend, API, and data layers rather than just the easiest one. Scope: component.","Depth: Devises test strategies for ambiguous, high-risk programs balancing coverage, time, and cost. Evidenced by: Owns the test strategy for a capability and kills tests that cost more than they catch, rebalancing an inverted pyramid, deciding coverage targets by risk, and defining which user journeys warrant end-to-end coverage — with the data to justify it. Scope: capability / domain (terminal level).","Depth: Defines the test-strategy approach and planning patterns other teams adopt. Evidenced by: Aligns test strategy across teams that share seams — contract tests where E2E suites were the crutch, shared fixtures, flake budgets — so cross-team changes are safe to make. Scope: multiple teams.","Depth: Sets organizational quality strategy and anticipates how testing must evolve with delivery. Evidenced by: Sets the organization's testing standards and investment level, backed by data on escape rates and suite cost. Scope: organization.","Depth: Defines what effective test strategy means for the discipline and influences its practice. Evidenced by: Owns the company's release-confidence posture, deciding the quality bar that ships and answering for it when it fails. Scope: company."
-skill,Quality & Testing,Testing Across the Stack,Test authoring & implementation quality,SWE-03,"Depth: Writes unit tests with guidance; tests own changes before merging. Evidenced by: Writes readable arrange-act-assert tests that assert behavior, not implementation, using the team's harnesses correctly and fixing a failing test by understanding it rather than snapshot-updating past it. Scope: task.","Depth: Applies the testing pyramid; everything shipped arrives tested; mocks dependencies sensibly. Evidenced by: Writes tests that survive refactoring — queries UI the way a user would, isolates external systems with typed fakes at the right boundary, covers error paths and keeps tests deterministic. Scope: component.","Depth: Designs testable systems (contract, property-based, replay from prod); owns a test strategy. Evidenced by: Builds the test infrastructure others write tests with — factories, fixtures, network mocking — making good tests the path of least resistance, and diagnoses the deep flake causes (async races, shared state, clock) to root cause. Scope: capability / domain (terminal level).","Depth: Expert in test strategy at scale (test data, environments, deployment safety). Evidenced by: Fixes the systemic testing problems across teams — flake sources, slow suites, mock sprawl — providing shared harnesses and coaching teams out of brittle-test patterns. Scope: multiple teams.","Depth: Sets testing/verification discipline across the org. Evidenced by: Sets org-wide test-authoring standards and the tooling that enforces them, keeping suite runtime and reliability inside explicit budgets. Scope: organization.","Depth: Shapes the company-wide quality culture; advances verification practice. Evidenced by: Directs company-level test-infrastructure investment as a productivity multiplier, with authored practice visible in the highest-stakes systems. Scope: company."
-skill,Quality & Testing,Testing Across the Stack,Integration & end-to-end confidence,QA-06,"Depth: Automates defined UI flows using existing patterns, with scripts reviewed for reliability. Evidenced by: Runs the end-to-end suite locally and reads its failures to the failing step, updating existing journey tests when their change breaks one, with guidance. Scope: task.","Depth: Builds and maintains stable end-to-end UI tests independently for standard journeys. Evidenced by: Writes stable integration and end-to-end tests for their features' critical paths — user-facing selectors, controlled test data, no arbitrary sleeps — and quarantines flake rather than retrying it blind. Scope: component.","Depth: Stabilizes flaky, complex end-to-end flows and designs resilient locator and wait strategies. Evidenced by: Decides what a capability verifies at which layer — contract tests at API seams, a thin E2E set for revenue paths — keeping the suite's runtime and flake rate inside budget. Scope: capability / domain (terminal level).","Depth: Defines UI and end-to-end automation patterns others adopt for reliability at scale. Evidenced by: Establishes contract-testing and integration infrastructure across team boundaries — environments, seeded data, contract-test governance — so teams deploy independently without integration freezes. Scope: multiple teams.","Depth: Sets end-to-end automation strategy and anticipates challenges from evolving interfaces. Evidenced by: Owns the org's pre-production confidence strategy, deciding the environment topology and what may only be verified in production behind flags. Scope: organization.","Depth: Defines authoritative end-to-end automation practice that shapes the discipline. Evidenced by: Accountable for company-level release-confidence architecture, including the economics of environments versus production-testing investment. Scope: company."
-skill,Quality & Testing,Defect Response & Prevention,Debugging & root-cause analysis,SWE-06,"Depth: Debugs issues in own code with support; uses basic tooling. Evidenced by: Reproduces a bug reliably before changing code, isolating with logs, breakpoints, and browser devtools in either runtime, and asks for help with a written summary of what's ruled out. Scope: task.",Depth: Independently diagnoses defects in own area systematically. Evidenced by: Traces defects across the stack unaided — UI symptom to network to service to query — stating a hypothesis before each experiment and using profilers to find hot paths instead of guessing. Scope: component.,"Depth: Leads diagnosis of hard, cross-cutting failures; root cause not symptoms. Evidenced by: Is the debugger of last resort for a capability, cracking the intermittent, race-condition, and heisenbug class from heap snapshots, CPU profiles, and traces, and turns each root cause into a regression test and a prevention. Scope: capability / domain (terminal level).","Depth: Expert at the rare/systemic failures; builds tooling that makes them visible. Evidenced by: Leads cross-team investigations where no single team can see the whole failure, building or standardizing the diagnostic tooling that shortens everyone's time-to-cause, and teaches the method while doing it. Scope: multiple teams.","Depth: The person called for the worst failures; sets diagnostic practice org-wide. Evidenced by: Raises the organization's debugging capability — runbooks, tooling, teaching — so hard problems stop requiring them personally. Scope: organization.",Depth: Authority on diagnosis; advances the discipline. Evidenced by: Handles the company-critical unknowns — the defects with existential stakes — and grows the org's capacity to handle the next one without them. Scope: company.
-skill,Quality & Testing,Defect Response & Prevention,Quality ownership & prevention,QA-14,"Depth: Compiles defined quality metrics into standard reports under review. Evidenced by: Verifies their own work before review — runs it, tests the unhappy paths, checks the acceptance criteria — rather than relying on reviewers to catch problems. Scope: task.","Depth: Produces meaningful quality reports independently, selecting relevant metrics for routine needs. Evidenced by: Monitors their changes after deploy and fixes what they broke without being asked, tracking their defects to closure. Scope: component.","Depth: Designs metrics that reveal real quality signals in ambiguous, contested contexts. Evidenced by: Owns a capability's quality metrics — escaped defects, change failure rate — and changes the process, not just the code, when they slip. Scope: capability / domain (terminal level).","Depth: Defines the quality-metrics framework and reporting patterns others adopt. Evidenced by: Builds the quality gates and review standards several teams operate, and intervenes with data when a team's failure rate drifts. Scope: multiple teams.","Depth: Sets quality-measurement strategy and anticipates which signals will matter as delivery evolves. Evidenced by: Owns org-level quality outcomes, reporting DORA-style metrics to leadership and directing the practice changes they imply. Scope: organization.",Depth: Defines what meaningful quality measurement means for the field and influences its practice. Evidenced by: Sets the company's quality-vs-speed posture and is answerable for it in front of customers. Scope: company.
-skill,Delivery & Operations,Delivery Pipeline,Build & CI pipelines,OPS-02,"Depth: Uses and makes guided fixes to existing pipelines. Evidenced by: Keeps their branch green — reads CI failures to the root cause, reproduces them locally, and fixes them before asking for review; never merges on red. Scope: task.","Depth: Independently builds and improves pipelines for their area. Evidenced by: Integrates small and often and fixes pipeline config for their area — adds checks, caches dependencies, parallelizes slow stages — treating a broken main build as their interrupt. Scope: component.","Depth: Designs deployment safety (progressive delivery, rollback) for a domain. Evidenced by: Owns pipeline health for a capability and keeps it fast — build times within budget, flakes quarantined with follow-through, gating on the checks that matter (types, lint, tests, bundle size) — treating a slow pipeline as an incident, not a fact of life. Scope: capability / domain (terminal level).","Depth: Expert in delivery engineering at scale; sets standards across teams. Evidenced by: Builds or overhauls the shared build platform (monorepo task graphs, remote caching, merge queues, affected-only builds) that keeps CI fast for many teams at once, measurably improving their lead time. Scope: multiple teams.","Depth: Defines the org's delivery/release philosophy. Evidenced by: Owns the org's delivery metrics and pipeline strategy, reporting DORA-style measures to leadership and directing investment at the biggest bottleneck. Scope: organization.","Depth: Advances release engineering practice company-wide. Evidenced by: Sets company delivery strategy — build-vs-buy on CI, engineering-productivity investment — with the business case attached. Scope: company."
-skill,Delivery & Operations,Delivery Pipeline,Release & deployment practices,OPS-30,"Depth: Follows the release process exactly — flags, staged rollout steps, verification checklists — verifies their change in production, and rolls back with guidance. Evidenced by: Runs their first production deploy behind a feature flag exactly as the release runbook specifies, watches the rollout dashboard until it's clean, and asks their buddy to confirm before closing out the checklist. Scope: task.","Depth: Ships behind flags with a rollback plan by default, monitors rollouts and reverts on their own judgment when signals degrade, and writes changes that tolerate both versions running during rollout. Evidenced by: Ships a pricing-page change behind a flag, notices the conversion-rate panel dip 20 minutes into a 10% rollout, and rolls it back themselves without waiting for anyone's sign-off — then writes the one-line rollback note in the channel. Scope: component.","Depth: Designs the rollout for risky changes — canary criteria, migration sequencing, flag lifecycle, kill switches — and reviews others' rollout plans for blast radius; the person teams ask how to ship something safely. Evidenced by: Writes the rollout plan for a payments-schema migration — canary percentage, the exact metric that triggers an automatic halt, and a kill switch that reverts to the old code path in under a minute — and is the reviewer three other engineers send their own risky rollout plans to before shipping. Scope: capability / domain (terminal level).","Depth: Builds progressive-delivery machinery multiple teams release through (flag platforms, automated canary analysis, automated rollback), retiring deploy patterns that cause repeat incidents and measurably raising deploy frequency. Evidenced by: Builds the automated-canary-analysis service that now gates every deploy across four teams, replacing the ad hoc 'watch the dashboard for ten minutes' ritual that had caused two repeat incidents that quarter. Scope: multiple teams.","Depth: Owns release policy for an organization and its delivery metrics — rollout standards, freeze rules, environment strategy — dismantling ceremony that adds no safety. Evidenced by: Sets the org-wide rule that no service may deploy without an automated rollback path, retires the manual change-approval-board process that added a day of ceremony without catching a single bad deploy in a year, and reports both changes' effect on deploy frequency to leadership. Scope: organization.","Depth: Sets how an entire company's software reaches customers — the risk posture products ship under — and defends it to executives, auditors, and regulators. Evidenced by: Defends the company's canary-rollout policy to a regulator during an audit after a customer-facing incident, and is the one who signs off on the policy staying as-is rather than reverting to slower, more ceremonial releases. Scope: company."
-skill,Delivery & Operations,Delivery Pipeline,Developer tooling & environment,OPS-27,"Depth: Maintains existing self-service platform components under review, addressing documented user requests. Evidenced by: Sets up and operates the local dev environment from the docs, fixing their own environment problems before escalating and filing reproducible reports when tooling breaks. Scope: task.","Depth: Independently builds and supports standard platform capabilities and templates for routine developer needs with review. Evidenced by: Improves the tooling friction they personally hit — a slow build, a missing lint rule, a stale README, a tsconfig fix — and upstreams the fix instead of working around it, upgrading dependencies safely with changelogs read before major bumps. Scope: component.","Depth: Designs self-service workflows for ambiguous needs, reducing friction and resolving hard abstraction and adoption issues. Evidenced by: Owns the developer experience of a capability's codebase — TS project references, bundler config, CI caching, lint/format automation, upgrade cadence — measuring dev-loop time before and after changes; new engineers ship in days because of it. Scope: capability / domain (terminal level).","Depth: Defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems. Evidenced by: Designs the monorepo and shared-tooling layer multiple teams work inside, landing the risky upgrades (TypeScript majors, bundler swaps) with codemods and migration docs, and measures adoption rather than assuming it. Scope: multiple teams.","Depth: Sets organization-wide platform strategy, anticipating how developer-experience engineering should evolve. Evidenced by: Drives org developer-productivity strategy with survey and telemetry data, owning the platform roadmap and its DX metrics. Scope: organization.","Depth: Defines what excellent platform engineering means for the field, shaping industry developer-experience practice. Evidenced by: Makes the company's foundational tooling bets (build systems, repo topology, language and runtime upgrades, AI-assisted development posture). Scope: company."
-skill,Delivery & Operations,Production Operations,Observability & monitoring,OPS-05,"Depth: Understands logs/metrics/traces; reads existing dashboards. Evidenced by: Finds their change's logs, metrics, traces, and browser error reports in the standard dashboards, and adds structured log lines with useful context per team conventions. Scope: task.","Depth: Instruments their services; builds dashboards; tunes alerts to limit noise. Evidenced by: Instruments their features across the stack before shipping — structured logs, metrics, trace spans that cross the client/server boundary — and answers ""is it working?"" from telemetry, not vibes. Scope: component.","Depth: Designs observability for complex systems (end-to-end traces, quality signals, cost attribution). Evidenced by: Defines the SLIs/SLOs for a capability and builds alerts on symptoms, not causes — dashboards on-call actually uses — deleting noisy alerts as deliberately as adding signal, and rejects unobservable designs in review. Scope: capability / domain (terminal level).","Depth: Expert in instrumentation trade-offs at scale, incl. privacy-safe logging. Evidenced by: Standardizes observability across teams — shared instrumentation libraries, trace propagation, log schema, alert-quality reviews — so cross-team incidents are traceable end to end, with measured pager-load reductions. Scope: multiple teams.","Depth: Defines org observability strategy. Evidenced by: Owns the org's observability strategy and SLO program, including its cost curve, making reliability legible to leadership. Scope: organization.","Depth: Shapes company-wide operational visibility; advances practice. Evidenced by: Sets company reliability-measurement standards and the external commitments (SLAs) grounded in them, answering for the telemetry bill and its value. Scope: company."
-skill,Delivery & Operations,Production Operations,Incident response & postmortems,OPS-06,"Depth: Responds to alerts with support; follows runbooks; escalates appropriately. Evidenced by: Follows the runbook during incidents, escalates early with a clear symptom report, and narrates what they see in the incident channel rather than debugging silently; contributes accurate timelines to postmortems while shadowing on-call. Scope: task.","Depth: Triages and resolves routine incidents; clear notes; takes on-call. Evidenced by: Takes on-call for their component and mitigates common failures unaided, prioritizing user impact over root cause in the moment, communicating status on the expected cadence, and writing postmortems that name contributing causes, not culprits. Scope: component.","Depth: Leads response to complex failures; blameless postmortems; same failure never recurs. Evidenced by: Runs incident command for a capability's severe incidents — coordinates responders, makes the mitigate-vs-diagnose call under pressure, communicates to stakeholders in their language — and drives postmortem actions to actual completion, not just filed. Scope: capability / domain (terminal level).","Depth: Expert in incident-management design (rotations, severity, escalation). Evidenced by: Commands incidents that cross team boundaries and fixes the systemic reliability problems recurring across teams' postmortems, coaching new incident commanders and upgrading the practice itself (severity taxonomy, review quality, on-call health). Scope: multiple teams.","Depth: Commands the highest-severity incidents; sets incident process org-wide. Evidenced by: Owns the org's incident program and learning loop — readiness, postmortem culture, error-budget policy — reviewing severity trends with leadership and directing reliability investment. Scope: organization.","Depth: Sets the company's incident philosophy; calm authority in the worst moments. Evidenced by: Is accountable for company-level major-incident handling, including executive and customer communication and the credibility of the postmortem process after the worst days. Scope: company."
-skill,Security,Application Security,Secure coding & vulnerability prevention,OPS-08,"Depth: Understands core appsec; follows practices and flags concerns. Evidenced by: Uses the framework's safe defaults and never bypasses them — parameterized queries, escaping-by-default templates, no unreviewed `dangerouslySetInnerHTML`, no secrets in code, logs, or client bundles — and names the OWASP Top 10 risks their change touches. Scope: task.","Depth: Applies least privilege; validates/sanitizes inputs; knows common attacks. Evidenced by: Prevents the common vulnerability classes by construction — XSS, injection, CSRF, SSRF — validating input at trust boundaries with schemas, handling tokens and cookies correctly (HttpOnly/SameSite), and fixing scanner findings without being chased. Scope: component.","Depth: Designs defense in depth; thinks in abuse cases; owns a domain's posture. Evidenced by: Catches vulnerabilities in review that scanners miss — authz gaps, unsafe deserialization, SSRF paths, XSS-shaped patterns — turning each finding into a guardrail (lint rule, safe wrapper, doc), and owns the capability's browser-side posture (CSP, third-party script trust, session architecture). Scope: capability / domain (terminal level).","Depth: Expert in securing systems at scale; leads red-teaming and remediation. Evidenced by: Builds secure-by-default platform pieces multiple teams inherit (auth libraries, CSP baselines, input-validation layers, paved-path middleware) and drives remediation campaigns across codebases when pentests find systemic issues. Scope: multiple teams.","Depth: Defines security strategy for the org's surface area. Evidenced by: Sets the org's secure-development standard with the security function — standards, training, tooling, review gates — reporting measurable risk posture to leadership. Scope: organization.","Depth: Company-level accountability; authority on the field. Evidenced by: Owns company product-security strategy from the engineering side, accountable in audits, incidents, and board-level risk conversations. Scope: company."
-skill,Security,Application Security,"Authentication, authorization & data protection",BE-15,"Depth: Applies existing auth mechanisms to simple endpoints under review. Evidenced by: Uses the existing auth middleware and permission checks correctly, never rolling their own crypto or token handling, and checks authorization on the server, never only in the UI. Scope: task.","Depth: Implements standard authentication and authorization flows independently. Evidenced by: Implements authorization server-side on every path the UI hides — object-level, not just route-level — tests the negative cases (wrong user, expired session, escalation attempts), and handles tokens, sessions, secrets, and PII per policy without reminders. Scope: component.","Depth: Designs auth models autonomously; resolves complex identity, token, and permission cases. Evidenced by: Designs the access-control model for a capability — roles, resource ownership, tenant isolation, audit trails — documents it, and probes designs for privilege-escalation and data-exposure paths before build; others bring their authorization edge cases to this person. Scope: capability / domain (terminal level).","Depth: Defines auth approaches teams adopt; solves the hardest access-control and trust problems. Evidenced by: Owns shared identity and authorization infrastructure multiple teams build on (session services, permission frameworks, SSO integration) and leads migrations off legacy schemes without lockouts. Scope: multiple teams.","Depth: Sets authentication and authorization strategy across systems; anticipates evolving threats. Evidenced by: Sets the org's identity, access, and data-protection architecture, treating compliance regimes as engineering requirements and verifying enforcement holds in practice. Scope: organization.","Depth: Defines authoritative practice for auth; shapes industry standards and security understanding. Evidenced by: Makes company-level trust-architecture bets (identity platform, encryption posture, data-residency design) and stands behind them with regulators and enterprise customers. Scope: company."
-skill,Security,Application Security,Threat modeling & security review,SEC-05,"Depth: Documents assets, entry points, and obvious threats for a component using a guided method, reviewed by others. Evidenced by: Answers ""what could go wrong here?"" about their change when asked, and flags anything touching auth, money, or PII for extra review. Scope: task.","Depth: Produces complete threat models for standard systems independently, identifying realistic threats and mitigations. Evidenced by: Raises abuse cases in design discussions unprompted — enumeration, replay, object-level access mistakes — for features they own. Scope: component.","Depth: Models complex, ambiguous architectures and prioritizes subtle, chained threats others miss. Evidenced by: Runs lightweight threat models for a capability's significant designs, records the accepted risks, and makes security review a standing part of its design process. Scope: capability / domain (terminal level).","Depth: Defines the threat-modeling methodology and reusable patterns others adopt across teams. Evidenced by: Facilitates threat modeling across teams and trains engineers to run their own, focusing effort on the highest-value targets. Scope: multiple teams.","Depth: Sets threat-modeling strategy and anticipates classes of threats before they become prevalent. Evidenced by: Owns the org's security-review program and risk register, deciding where scrutiny concentrates. Scope: organization.",Depth: Defines authoritative threat-modeling practice that shapes how the discipline reasons about risk. Evidenced by: Shapes company security posture with threat-informed strategy presented at the executive level. Scope: company.
-skill,Security,Supply Chain & Data Protection,Dependency & supply-chain hygiene,SEC-09,"Depth: Verifies artifact provenance and signatures following documented checks, escalating anomalies for review. Evidenced by: Adds dependencies only through the team's vetting process, keeps lockfiles committed and clean, and acts on automated vulnerability alerts for their changes. Scope: task.","Depth: Configures signing, dependency scanning, and provenance controls independently for standard pipelines. Evidenced by: Evaluates a package before adopting it — maintenance health, size, license, transitive surface, alternatives including writing it themselves — and keeps the components they own patched without being chased. Scope: component.","Depth: Designs artifact-integrity and dependency-trust controls for complex, ambiguous supply chains. Evidenced by: Owns the dependency posture of a capability — upgrade cadence, pinning strategy, CVE triage by real exploitability, pruning abandoned packages before they bite — and leads its major framework and runtime upgrades. Scope: capability / domain (terminal level).","Depth: Defines the supply-chain security architecture and verification patterns others adopt. Evidenced by: Builds supply-chain tooling and policy multiple teams follow (allowlists, automated updates, provenance checks, internal registries) and coordinates response when a shared dependency is compromised. Scope: multiple teams.","Depth: Sets supply-chain assurance strategy and anticipates emerging artifact and dependency threats. Evidenced by: Sets org supply-chain security posture — SBOM practice, artifact signing, build integrity, vendor risk — with compliance and security functions, reporting exposure to leadership. Scope: organization.",Depth: Defines authoritative supply-chain security practice that shapes industry expectations. Evidenced by: Owns company software supply-chain strategy and represents it to customers and auditors. Scope: company.
-skill,Security,Supply Chain & Data Protection,Data protection & privacy,OPS-09,"Depth: Knows data handling has privacy implications; follows rules. Evidenced by: Handles personal data per the team's rules — no PII in logs, URLs, or analytics, no secrets in code or client bundles — and asks before adding any new data collection. Scope: task.","Depth: Applies PII handling, redaction, residency and retention correctly. Evidenced by: Applies minimization by default in their features — collects only what's needed, encrypts what the standard requires, keeps PII out of client caches and telemetry, applies retention rules without prompting. Scope: component.","Depth: Designs for compliance (consent, audit trails, regional rules); owns readiness for a domain. Evidenced by: Owns the data-protection design of a capability — classification, encryption expectations, retention, deletion paths that actually delete — and catches privacy problems in design review before legal has to. Scope: capability / domain (terminal level).","Depth: Expert at translating regulation into controls; represents engineering in audits. Evidenced by: Builds privacy-preserving infrastructure multiple teams rely on (deletion pipelines, consent propagation, PII-safe logging libraries) and remediates cross-team data-handling gaps. Scope: multiple teams.","Depth: Sets org compliance strategy; anticipates regulation. Evidenced by: Owns the org's privacy engineering program with legal and security, translating regulation into platform defaults teams can follow. Scope: organization.","Depth: Authoritative on the landscape; trusted interface to regulators. Evidenced by: Shapes company data strategy where product value and privacy obligations trade off, and answers for it to regulators and customers. Scope: company."
-skill,Collaboration & Communication,Communication,Technical writing & documentation,CC-02,"Depth: Shares what they learn; keeps their docs accurate. Evidenced by: Writes PR descriptions, bug reports, and status updates a reviewer can act on without asking questions, and updates the docs their change makes stale. Scope: task.","Depth: Documents their area well; proactively shares techniques with the team. Evidenced by: Documents their features so the next engineer needs no meeting — READMEs, runbooks, ADR-style decision notes stating problem, options, and choice — matched to the reader, not the writer. Scope: component.","Depth: Creates documentation and forums that raise a whole domain's understanding. Evidenced by: Writes design docs that anchor a capability's decisions — conclusion first, alternatives named, trade-offs argued, open questions explicit — that get cited months later, and edits others' docs to sharpen the argument, not the grammar. Scope: capability / domain (terminal level).","Depth: Builds knowledge-sharing systems adopted across teams. Evidenced by: Writes the RFCs and strategy docs that align multiple teams on contested decisions, framing trade-offs so disagreement is about substance, not confusion, structured so busy readers reach the decision point fast. Scope: multiple teams.","Depth: Defines how the org captures and spreads knowledge. Evidenced by: Writes the strategy and standards documents the organization executes against, legible to both engineers and executives, and raises the org's documentation bar by example. Scope: organization.","Depth: Shapes industry-facing knowledge practice. Evidenced by: Writes the company-defining technical narratives — public engineering posts, architecture visions, board-level briefs — that survive scrutiny from the board, customers, and the industry. Scope: company."
-skill,Collaboration & Communication,Communication,Stakeholder communication,CC-01,"Depth: Communicates status clearly; documentation is accurate. Evidenced by: Gives accurate, honest status in standups and tickets — says what's blocked and what's at risk instead of ""almost done."" Scope: task.","Depth: Writes clear design notes, runbooks and PRs; explains trade-offs without overselling. Evidenced by: Explains their technical work to non-engineers in outcome terms and warns stakeholders of slips as soon as they know, with a revised plan attached. Scope: component.","Depth: Writes design docs that drive decisions; translates technical risk for non-technical stakeholders. Evidenced by: Translates a capability's technical state for any audience — risk for product, cost for finance-minded leaders, options for executives — and runs the meetings where those audiences decide. Scope: capability / domain (terminal level).","Depth: Expert at making complex capability/risk legible to executives without dumbing it down; RFCs align orgs. Evidenced by: Keeps multiple teams' stakeholders aligned through change — reorganizations, migrations, slipped bets — with communication others cite as the reason it went smoothly. Scope: multiple teams.","Depth: Strategy memos leadership acts on; org-wide and external reach. Evidenced by: Represents engineering reality to org leadership in planning and crisis alike, and is trusted to do so unfiltered. Scope: organization.","Depth: A clarifying voice at company scale; externally recognized. Evidenced by: Represents the company's technology externally — customers, partners, boards — without overclaiming. Scope: company."
-skill,Collaboration & Communication,Communication,Technical discussion & decision-making,CC-05,"Depth: Voices disagreement respectfully; disagrees-and-commits. Evidenced by: Asks questions in design discussions that clarify rather than derail, and states their own view with its reasoning when asked. Scope: task.","Depth: Works through disagreement to a decision without damaging relationships. Evidenced by: Argues positions from evidence and drops them gracefully when out-argued, committing visibly to decisions they disagreed with. Scope: component.","Depth: Mediates technical disputes in their domain; finds the path that holds up. Evidenced by: Facilitates decisions rather than winning them — surfacing the quiet dissent, timeboxing the debate, recording the outcome and its rationale where the next person will find it. Scope: capability / domain (terminal level).","Depth: Resolves high-stakes disagreements between senior stakeholders across orgs. Evidenced by: Brokers technical decisions between teams with conflicting interests, finding the option that unblocks both and getting explicit commitment from each. Scope: multiple teams.","Depth: Designs the decision processes the org uses to resolve conflict. Evidenced by: Designs the org's technical decision-making mechanisms (review boards, RFC processes) so decisions are fast, owned, and durable. Scope: organization.","Depth: Sets the company norm for principled disagreement. Evidenced by: Carries the company's hardest technical calls to conclusion, aligning executives and engineering when they disagree. Scope: company."
-skill,Collaboration & Communication,Teamwork,Feedback & candor,CC-04,"Depth: Accepts feedback non-defensively; acts on it. Evidenced by: Receives feedback without defensiveness and acts on it visibly; thanks reviewers for hard comments, asks clarifying questions instead of relitigating, and says so when something seems wrong rather than staying silent. Scope: task.","Depth: Gives timely, specific, kind feedback to peers. Evidenced by: Gives peers direct, kind, specific feedback near the moment — in review, retros, and one-on-ones — following up on whether it landed, and raises team-process problems with a proposed fix. Scope: component.","Depth: Gives growth-oriented feedback that changes behavior; coaches through feedback. Evidenced by: Names the uncomfortable thing in the room — a slipping standard, a struggling teammate, a design being talked around — early and in a way people can hear, and models receiving hard feedback publicly. Scope: capability / domain (terminal level).","Depth: Builds feedback norms that raise the bar across teams. Evidenced by: Gives feedback across team and level boundaries, including upward to leaders whose decisions are not working and to senior engineers nobody else will, repairing cross-team frictions before they become escalations. Scope: multiple teams.","Depth: Sets the org's culture of candor and growth. Evidenced by: Builds feedback culture deliberately across the org — coaching senior engineers on candor, intervening where silence has become the norm, and challenging org-level decisions on the record so others can too. Scope: organization.","Depth: Models and defines feedback culture company-wide. Evidenced by: Tells company leadership the truths no one else will, with the evidence, standing, and framing to change the outcome. Scope: company."
-skill,Collaboration & Communication,Teamwork,Cross-functional collaboration,CC-03,"Depth: Responsive to feedback; pairs willingly; asks for help appropriately. Evidenced by: Asks clarifying questions about acceptance criteria before building, flags when a mock is ambiguous or technically awkward rather than guessing, and raises blockers the day they appear. Scope: task.","Depth: Collaborates smoothly with adjacent functions; handles disagreement constructively. Evidenced by: Engages design and product early, working from problem statements rather than just tickets — flags technical constraints while alternatives are still cheap and translates engineering trade-offs into terms partners can decide on. Scope: component.","Depth: Builds strong cross-team relationships; resolves friction directly. Evidenced by: Operates as the engineering counterpart to product and design for a capability — negotiates scope with data, shapes the roadmap with technical possibility rather than feasibility vetoes, and disagrees-and-commits visibly. Scope: capability / domain (terminal level).","Depth: Expert at aligning teams with competing priorities; mediates disputes between senior people. Evidenced by: Untangles cross-team dependency knots, clarifying interaction modes and ownership so teams stop blocking each other, keeping decisions made in one room honored in the others. Scope: multiple teams.","Depth: Creates the forums and processes through which collaboration happens. Evidenced by: Designs the org's team boundaries and interaction patterns with leadership, applying cognitive-load reasoning to reorganizations and partnering with product leadership on the roadmap. Scope: organization.","Depth: Builds coalitions at company scale and externally. Evidenced by: Aligns engineering with company strategy across functions, trusted by product, design, and executive peers as a co-owner of outcomes. Scope: company."
-skill,Leadership & Business Impact,Growing People & Direction,Mentoring & growing engineers,LI-01,"Depth: Receptive to mentoring; shares what they learn. Evidenced by: Asks questions in public channels so the answers help others, improves the onboarding docs as they onboard, and helps the next new person with what they just learned. Scope: task.","Depth: Helps onboard teammates; informally mentors juniors. Evidenced by: Onboards new teammates and unblocks juniors day to day — pairing generously, explaining the why behind conventions rather than just the rules — without doing the work for them. Scope: component.","Depth: Coaches engineers with growth-oriented feedback; measurably improves a team's skill. Evidenced by: Mentors engineers deliberately toward independence — stretch tasks with a safety net, growth-oriented review comments, career conversations, questions rather than answers — with mentees whose progression is visible to others. Scope: capability / domain (terminal level).","Depth: Develops future leads across teams; shapes hiring and onboarding. Evidenced by: Grows senior engineers into capability owners — sponsoring them into visible problems, coaching their design judgment through rather than taking over — and creates the structures (guilds, review rotations, design shadowing) where mentoring happens without them. Scope: multiple teams.","Depth: Develops senior engineers and leaders; builds culture deliberately. Evidenced by: Builds the org's talent-growth machinery — mentoring programs, promotion-calibration input, technical curricula, the hiring bar — and grows the next staff engineers, sponsoring rather than just advising. Scope: organization.",Depth: Develops the next generation of top talent; legacy outlasts tenure. Evidenced by: Develops the company's senior technical bench — shaping who its next principals are and what excellence means here — and is the mentor its top engineers seek out. Scope: company.
-skill,Leadership & Business Impact,Growing People & Direction,Technical direction & influence,LI-03,"Depth: Contributes informed opinions in technical discussions. Evidenced by: Drives their own tasks to done — chases reviews, resolves ambiguity by asking, raises risks early, and proposes next steps rather than waiting for assignment. Scope: task.","Depth: Influences component-level decisions through credibility. Evidenced by: Leads small efforts they're part of and drives small technical decisions to conclusion — proposes, gathers input, decides or escalates — rather than letting them drift. Scope: component.","Depth: Sets technical direction for a domain; others align to their calls. Evidenced by: Sets technical direction for a capability others follow voluntarily — a vision people can repeat, work broken down and sequenced risk-first, the team unblocked, contested decisions landed by argument rather than seniority. This is the terminal-level bar: sustained excellence here is a complete career. Scope: capability / domain (terminal level).","Depth: Shapes how multiple teams approach problems; trusted tiebreaker. Evidenced by: Aligns multiple teams on a technical direction none of them owns alone — builds the coalition, does the 1:1 persuasion and the written case, absorbs the disagreement, and stays accountable through delivery. Scope: multiple teams.","Depth: Influences org-wide technical strategy. Evidenced by: Sets technical direction an organization executes against — picks the few bets that matter, kills zombie projects, chooses what not to do as visibly as what to do — and gets it resourced. Scope: organization.","Depth: Influences company strategic direction through insight. Evidenced by: Sets company technical direction with the executive team — the bets, the narrative, and the accountability for them — carried credibly to boards, customers, and the industry. Scope: company."
-skill,Leadership & Business Impact,Product & Business Impact,Product thinking,PD-06,"Depth: Understands the capability they're building and who uses it. Evidenced by: Explains who uses the feature they're building and why it matters in their own words, tries their own change as a user before calling it done, and flags when a spec seems to contradict the user's goal. Scope: task.","Depth: Frames own work in user/business outcomes, not just tasks. Evidenced by: Uses product analytics and user feedback on features they ship — checks whether the thing worked, not just whether it deployed — and proposes simpler versions that deliver the same outcome. Scope: component.","Depth: Treats their area as a product; uses metrics to decide what to build for a domain. Evidenced by: Contributes to discovery, not just delivery — prototypes to de-risk, brings usage data and user pain to planning, challenges requirements with evidence, and kills their own pet solutions when the data says so. Scope: capability / domain (terminal level).","Depth: Expert at aligning technical bets with product strategy across teams. Evidenced by: Spots the product opportunities and risks that only cross-team technical vantage reveals, killing or redirecting initiatives early with evidence rather than late with delivery pain. Scope: multiple teams.",Depth: Sets product direction for an org's technical surface. Evidenced by: Influences org product strategy with technical possibility — opening options product didn't know were cheap and closing ones that look cheap but aren't — as a peer to product leadership. Scope: organization.,"Depth: Shapes how the company creates value through technical products. Evidenced by: Shapes company product direction through technology bets, spotting the platform shifts that change the business. Scope: company."
-skill,Leadership & Business Impact,Product & Business Impact,"Scoping, prioritization & estimation",PD-02,"Depth: Works highest-priority-first when told the priorities. Evidenced by: Breaks their tasks into day-sized pieces, flags slips the day they're known, and finishes what they start — working the agreed priority order rather than the interesting order. Scope: task.","Depth: Makes sound priority calls within scope; time-boxes uncertain work. Evidenced by: Slices features into thin vertical increments that ship value early — decomposing across frontend, backend, and migration work — estimates with stated assumptions, distinguishes must-have from nice-to-have, and says no to scope creep with a reason. Scope: component.","Depth: Balances cost/value/risk across a domain; resists hype; decisions hold up over months. Evidenced by: Sequences a capability's work by expected impact, risk, and cost of delay — hardest unknowns first, states what they're deliberately not doing — and is trusted to trade quality, scope, and time inside the capability without escalation; their estimates are the ones planning trusts. Scope: capability / domain (terminal level).","Depth: Expert at portfolio-level trade-offs; surfaces hidden assumptions; trusted tiebreaker. Evidenced by: De-risks and rebalances multi-team programs — finds the critical path across teams, keeps every team's slice independently shippable, and cancels or shrinks initiatives with sunk costs when the math says to. Scope: multiple teams.","Depth: Sets decision frameworks for the org. Evidenced by: Shapes org-level investment allocation — product vs. platform vs. paydown, honest capacity math, the mechanisms that keep commitments credible — with the economic case written down. Scope: organization.","Depth: Influences company strategic direction through judgment. Evidenced by: Answers for the company's biggest technical commitments — to the board, to customers — re-planning publicly when reality changes; their read on feasibility is treated as load-bearing. Scope: company."
-skill,Leadership & Business Impact,Product & Business Impact,Strategic & commercial awareness,PD-07,"Depth: States what business outcome their current task serves — and asks when they can't — treating infrastructure and license costs as real money. Evidenced by: Can say, when their tech lead asks, that the ticket they're working means fewer support escalations for a specific customer complaint — and asks what the actual dollar impact is when they genuinely don't know. Scope: task.","Depth: Checks whether shipped work actually moved its metric and says so plainly when it didn't; weighs cost and maintenance burden in the technical choices they own. Evidenced by: Checks the analytics dashboard two weeks after their checkout-flow change ships, finds conversion unchanged, and says so in the team retro instead of letting the ticket quietly close as 'done'. Scope: component.","Depth: Frames a domain's technical decisions in business terms — cost of delay, revenue risk, support load — pushes back on work with weak business rationale, and redirects effort when the numbers say the plan is wrong. Evidenced by: Tells the roadmap owner that a requested real-time-sync feature isn't worth the infra spend for the traffic it would see, backs it with the hosting-cost delta and the support-ticket volume it would actually resolve, and gets the plan changed to a cheaper polling approach. Scope: capability / domain (terminal level).","Depth: Builds the business case for the cross-team technical investments with the largest return and is trusted by leadership to have done the math. Evidenced by: Builds the cost-benefit case for consolidating three teams' duplicate notification services into one shared platform, with the infra-savings and engineering-hours numbers a director signs off on without re-deriving them. Scope: multiple teams.","Depth: Aligns an organization's technical strategy with its economics — cost curves, velocity, risk — owning trade-offs measured in staff-years and reporting them in the business's own terms. Evidenced by: Reports the org's infrastructure cost curve against velocity to leadership every quarter, and uses it to kill a popular but uneconomical microservices-per-team pattern that was inflating both cloud spend and cross-team coordination cost. Scope: organization.","Depth: Advises company leadership on where technology changes the business model and is accountable for company-level technology bets paying off. Evidenced by: Tells the executive team which of three competing platform bets actually changes the unit economics of the core product, and is the person whose read on that question the CEO uses to decide. Scope: company."
-skill,Leadership & Business Impact,Product & Business Impact,Ownership & follow-through,PD-05,"Depth: Takes ownership of assigned tasks; honest about progress and blockers. Evidenced by: Sees assigned tasks through to verified-in-production, not just merged, and reports status honestly including the bad news. Scope: task.","Depth: Owns components end-to-end; delivers committed work reliably. Evidenced by: Owns features from ambiguity to adoption — chases the dependency, fixes the post-launch bug, closes the loop with the requester. Scope: component.","Depth: Owns a domain; lands multi-week efforts without surprises; pushes back on unrealistic scope with reasons. Evidenced by: Answers for a capability's outcomes — quality, reliability, user impact — and picks up the critical work that has no owner rather than letting it drop. Scope: capability / domain (terminal level).","Depth: Owns cross-team initiatives; unblocks teams; kills failing approaches early. Evidenced by: Takes ownership of cross-team outcomes nobody else can carry, staying accountable through delivery even where they hold no authority. Scope: multiple teams.","Depth: Owns an org-level portfolio of bets; sets direction others follow. Evidenced by: Answers for org-level technical outcomes to leadership, including the failures. Scope: organization.","Depth: The go-to when something company-critical must land. Evidenced by: Is the name leadership puts on the incident channel when a company-critical migration is failing hours before a contractual deadline, and stays personally accountable for the outcome until it lands. Scope: company."
+skill,Frontend Engineering,UI Implementation,Component design & composition,FE-01,"Depth: Builds simple components from existing patterns; relies on review to validate boundaries and props.
+
+Evidenced by: Builds components from an existing design system to spec, following the patterns in neighboring code and asking when a mockup is ambiguous.
+
+Scope: task.","Depth: Composes reusable components independently, handling standard prop, state, and event wiring with normal review.
+
+Evidenced by: Decomposes a feature into a sensible component hierarchy without being handed the breakdown, choosing props vs. composition deliberately and reusing shared components rather than forking them.
+
+Scope: component.","Depth: Designs component hierarchies and clear interfaces autonomously; resolves tricky composition and reuse trade-offs.
+
+Evidenced by: Designs the component APIs a capability's UI is built from, catching prop-drilling, leaky abstractions, and reuse-hostile boundaries in review before they ship, and extends the design system with primitives that get reused.
+
+Scope: capability / domain (terminal level).","Depth: Defines the component architecture and conventions teams adopt; untangles deeply coupled or overgrown trees.
+
+Evidenced by: Establishes the shared component and design-system patterns several teams build against, deprecating divergent one-offs with migration paths.
+
+Scope: multiple teams.","Depth: Sets organization-wide component design strategy; anticipates how composition models should evolve.
+
+Evidenced by: Sets the organization's frontend architecture direction — design-system governance, framework and rendering-model choices — and removes the systemic obstacles blocking it.
+
+Scope: organization.","Depth: Defines what good component architecture means industrywide; shapes practice through widely adopted patterns.
+
+Evidenced by: Makes the company-level frontend bets (platform, framework generation, build-vs-buy for the design system) and is the named authority when they're contested.
+
+Scope: company."
+skill,Frontend Engineering,UI Implementation,Styling & responsive layout,FE-09,"Depth: Applies existing styles and tokens to components under review.
+
+Evidenced by: Implements designs to match mockups at standard breakpoints using the project's styling approach; fixes visual bugs with guidance on cascade and specificity issues.
+
+Scope: task.","Depth: Implements styling independently following design systems for standard components.
+
+Evidenced by: Builds layouts that hold up across viewports and content lengths without per-case hacks, choosing flexbox and grid appropriately and using design tokens consistently.
+
+Scope: component.","Depth: Designs scalable styling systems autonomously; resolves specificity, theming, and reuse issues.
+
+Evidenced by: Untangles specificity and layout problems others are stuck on and establishes styling conventions (tokens, layering, theming) that keep the capability's CSS predictable.
+
+Scope: capability / domain (terminal level).","Depth: Defines styling architecture and conventions others adopt; untangles fragile, sprawling styles.
+
+Evidenced by: Consolidates styling approaches across teams into one system, retiring duplicated patterns and writing the migration guide teams actually follow.
+
+Scope: multiple teams.","Depth: Sets styling-system strategy across the organization; anticipates evolving presentation approaches.
+
+Evidenced by: Owns the org's theming and visual-consistency strategy, deciding tooling and token architecture and measuring adoption.
+
+Scope: organization.","Depth: Defines what good styling architecture means industrywide; shapes widely adopted systems.
+
+Evidenced by: Directs company-level presentation-layer strategy, including brand-scale theming, white-labeling, or multi-product visual platforms.
+
+Scope: company."
+skill,Frontend Engineering,State & Data Flow,Client state management & data flow,FE-05,"Depth: Reads and updates simple shared state following established patterns under review.
+
+Evidenced by: Uses the codebase's existing state patterns correctly — local state vs. shared store vs. server cache — and traces where a given piece of state lives and why.
+
+Scope: task.","Depth: Manages component and shared state independently for standard flows with normal review.
+
+Evidenced by: Chooses the right home for each piece of state (local, lifted, global, URL, server-cache) and keeps derived state computed rather than duplicated, with loading, error, and stale states honest in the UI.
+
+Scope: component.","Depth: Designs state architecture autonomously; resolves complex synchronization and ownership issues.
+
+Evidenced by: Designs the state architecture for a capability — cache invalidation, optimistic updates, real-time sync — and spots stale-data, race-condition, and re-render-prone flows in others' code before they ship.
+
+Scope: capability / domain (terminal level).","Depth: Defines state-management patterns others adopt; untangles tangled global and derived state.
+
+Evidenced by: Converges divergent state approaches across teams into shared patterns, writing the decision record and unwinding the worst legacy state tangles personally.
+
+Scope: multiple teams.","Depth: Sets state-management strategy across the organization; anticipates evolving paradigms.
+
+Evidenced by: Sets the org's client-data architecture (caching strategy, offline posture, real-time sync) and arbitrates when teams' needs conflict.
+
+Scope: organization.","Depth: Defines what good client state management means; shapes industry patterns and practice.
+
+Evidenced by: Owns the long-horizon client-data strategy — the model the company's products converge on — and sponsors the platform work to get there.
+
+Scope: company."
+skill,Frontend Engineering,State & Data Flow,Data fetching & caching,FE-06,"Depth: Fetches and displays data for simple endpoints under review.
+
+Evidenced by: Fetches data through the codebase's established client and hooks and renders loading and error states; reproduces a stale-data bug with guidance.
+
+Scope: task.","Depth: Implements fetching with loading and error states independently for standard cases.
+
+Evidenced by: Implements fetching with correct cache keys, invalidation, and race handling, and handles pagination and optimistic updates using established patterns.
+
+Scope: component.","Depth: Designs fetching and caching strategies autonomously; handles invalidation and race conditions.
+
+Evidenced by: Designs the fetching and caching strategy for a capability — what is cached, for how long, and what invalidates it — and spots request waterfalls and N+1 patterns in review.
+
+Scope: capability / domain (terminal level).","Depth: Defines fetching and caching patterns teams adopt; solves hard staleness and consistency problems.
+
+Evidenced by: Standardizes data-access patterns across teams, building or selecting the shared data layer and deprecating ad-hoc fetching.
+
+Scope: multiple teams.","Depth: Sets strategy for client data access and caching; anticipates evolving data-sync models.
+
+Evidenced by: Owns the org's client-server data strategy, including SSR and streaming trade-offs and cache coherence across products.
+
+Scope: organization.","Depth: Shapes industry practice for client data fetching and caching; pioneers influential approaches.
+
+Evidenced by: Sets company-level direction for how clients consume data at scale, shaping platform investments and vendor-versus-build decisions.
+
+Scope: company."
+skill,Frontend Engineering,Frontend Quality,Accessibility,FE-12,"Depth: Applies basic accessibility fixes following checklists under review.
+
+Evidenced by: Uses semantic HTML and design-system components rather than div soup, and runs the team's accessibility checks before requesting review.
+
+Scope: task.","Depth: Implements accessible components independently meeting standard requirements.
+
+Evidenced by: Builds keyboard-navigable, screen-reader-usable features — focus management, labels, ARIA only where semantics fall short — verifying with assistive tech before merge.
+
+Scope: component.","Depth: Designs accessible experiences autonomously; resolves complex assistive-technology and interaction cases.
+
+Evidenced by: Catches accessibility regressions in review that automated tools miss (focus traps, reading order, announced state changes) and teaches the patterns that prevent them.
+
+Scope: capability / domain (terminal level).","Depth: Defines accessibility approaches teams adopt; solves the hardest inclusive-design problems.
+
+Evidenced by: Builds accessibility into shared components and CI gates so teams inherit conformance by default, and drives remediation across surfaces no one team owns.
+
+Scope: multiple teams.","Depth: Sets accessibility strategy across the organization; anticipates evolving standards and needs.
+
+Evidenced by: Owns the org's accessibility standard and audit posture, reporting conformance to leadership and prioritizing systemic fixes.
+
+Scope: organization.","Depth: Shapes industry accessibility practice; influences standards and widely referenced guidance.
+
+Evidenced by: Sets company accessibility policy and represents it externally (compliance commitments, procurement, public conformance statements).
+
+Scope: company."
+skill,Frontend Engineering,Frontend Quality,Web performance,FE-13,"Depth: Applies known performance fixes to simple cases under guidance.
+
+Evidenced by: Reads a Lighthouse or devtools performance report and fixes the flagged issues in their task — oversized images, blocking scripts, unnecessary re-renders — with guidance on trade-offs.
+
+Scope: task.","Depth: Profiles and improves standard performance issues independently.
+
+Evidenced by: Keeps the features they ship within the team's performance budget, profiling render and bundle cost before merge and lazy-loading what the critical path doesn't need.
+
+Scope: component.","Depth: Diagnoses and optimizes performance autonomously across rendering, loading, and runtime.
+
+Evidenced by: Owns Core Web Vitals for a capability, diagnosing field regressions from RUM data to root cause — hydration cost, main-thread contention, layout shift — and rejecting designs that can't hit budget.
+
+Scope: capability / domain (terminal level).","Depth: Defines performance approaches teams adopt; solves the most stubborn bottlenecks.
+
+Evidenced by: Builds the performance budgets, CI gates, and monitoring several teams run on, and leads the cross-team efforts that move p75 metrics.
+
+Scope: multiple teams.","Depth: Sets frontend performance strategy and budgets; anticipates emerging performance concerns.
+
+Evidenced by: Sets org-wide performance targets and the platform investments to hit them — rendering architecture, edge/CDN posture — tied to business metrics leadership acts on.
+
+Scope: organization.","Depth: Defines what good frontend performance means industrywide; pioneers influential techniques.
+
+Evidenced by: Makes the company-level performance-architecture bets and is accountable for user-experience speed as a competitive property of the product.
+
+Scope: company."
+skill,Backend & API Engineering,Services & Runtime,Service design & boundaries,ARC-02,"Depth: Splits a service along boundaries already defined, with decomposition reviewed.
+
+Evidenced by: Adds endpoints and handlers to an existing Node/TypeScript service following its layering, error-handling, and config conventions; explains the request path through the service in their own words.
+
+Scope: task.","Depth: Decomposes routine systems into services using established boundary heuristics independently.
+
+Evidenced by: Designs and ships a well-factored module or small service independently, separating transport, domain logic, and persistence, and handling errors, timeouts, and idempotency deliberately.
+
+Scope: component.","Depth: Designs boundaries for complex domains, resolving overlap and ownership ambiguity autonomously.
+
+Evidenced by: Draws service boundaries by trade-off in design docs that name the alternatives considered, designing for failure (retries, idempotency, backpressure) and catching coupling and hidden-dependency problems in others' designs before build.
+
+Scope: capability / domain (terminal level).","Depth: Defines decomposition methods and boundary heuristics teams reuse across products.
+
+Evidenced by: Restructures the service landscape across teams — splitting, merging, or extracting services with migration plans that ship incrementally — without stopping delivery.
+
+Scope: multiple teams.","Depth: Sets enterprise-wide boundary and ownership strategy, anticipating decomposition pressures.
+
+Evidenced by: Sets the org's service architecture direction (runtime choices, communication patterns, platform primitives) and retires the patterns that no longer serve it.
+
+Scope: organization.","Depth: Shapes how the industry reasons about service boundaries and decomposition.
+
+Evidenced by: Makes company-level backend platform bets and is the tie-breaking authority on architecture decisions with decade-scale consequences.
+
+Scope: company."
+skill,Backend & API Engineering,Services & Runtime,Runtime & async correctness,CS-04,"Depth: Writes concurrent code using given primitives under review.
+
+Evidenced by: Uses async/await correctly — awaits promises, handles rejections, avoids sequential awaits where work is parallel — with review catching the misses.
+
+Scope: task.","Depth: Implements standard concurrent patterns independently for routine workloads.
+
+Evidenced by: Keeps the event loop healthy in code they own, moving CPU-heavy work off the hot path, bounding concurrency, and adding timeouts and cancellation to outbound calls.
+
+Scope: component.","Depth: Designs correct, efficient concurrency for complex shared-state problems autonomously.
+
+Evidenced by: Diagnoses production event-loop stalls, memory leaks, and race conditions from traces and heap snapshots, and designs backpressure and retry behavior for a capability's services.
+
+Scope: capability / domain (terminal level).","Depth: Defines concurrency patterns and reasoning others adopt to avoid subtle defects.
+
+Evidenced by: Sets the concurrency, timeout, and resilience defaults multiple teams inherit through shared libraries and service templates.
+
+Scope: multiple teams.","Depth: Sets concurrency strategy organization-wide, anticipating parallelism challenges.
+
+Evidenced by: Drives org-wide runtime strategy — Node versions, worker models, resource limits — from fleet-level performance data.
+
+Scope: organization.","Depth: Shapes industry understanding of concurrency and parallelism.
+
+Evidenced by: Owns company-level runtime and platform bets and is the escalation point for the hardest production mysteries.
+
+Scope: company."
+skill,Backend & API Engineering,API Contracts,API contract design,SWE-07,"Depth: Understands HTTP/REST and the deploy pipeline; makes guided changes.
+
+Evidenced by: Implements endpoints against a specified contract, returning correct status codes and error shapes, and updates the OpenAPI or schema definition alongside the code.
+
+Scope: task.","Depth: Designs clean APIs; understands rate limits, retries, timeouts, idempotency.
+
+Evidenced by: Designs consistent, versionable endpoints for their feature — naming, pagination, error envelopes — and shares typed clients or generated types so frontend and backend agree by construction.
+
+Scope: component.","Depth: Designs services for scale and cost; understands distributed failure modes.
+
+Evidenced by: Owns the API contract for a capability, writing the schema first, folding consumers' integration pain back into the design, and rejecting designs in review that leak internals or paint consumers into corners.
+
+Scope: capability / domain (terminal level).","Depth: Expert in platform/service design (multi-tenancy, capacity, shared services).
+
+Evidenced by: Sets the API conventions multiple teams follow (style guide, error taxonomy, schema registry, review gates) and arbitrates contract disputes between producing and consuming teams.
+
+Scope: multiple teams.","Depth: Sets interface standards used across the org.
+
+Evidenced by: Owns the org's API strategy — REST/GraphQL/RPC posture, gateway, contract-testing infrastructure — and its governance mechanisms.
+
+Scope: organization.","Depth: Defines company-wide API approach; trusted with irreversible interface bets.
+
+Evidenced by: Shapes the company's external API as a product, making the compatibility promises the business sells against.
+
+Scope: company."
+skill,Backend & API Engineering,API Contracts,Compatibility & versioning,BE-13,"Depth: Implements endpoints against existing contracts under review.
+
+Evidenced by: Asks before changing a response shape or shared type, and explains why deployed clients constrain the server.
+
+Scope: task.","Depth: Designs standard API contracts independently with consistent conventions.
+
+Evidenced by: Ships additive, backward-compatible changes by default, coordinating deploy order between client and server and gating risky changes behind flags.
+
+Scope: component.","Depth: Designs API contracts and versioning autonomously; manages compatibility and evolution.
+
+Evidenced by: Designs the deprecation and migration paths for a capability's contracts — versioning scheme, sunset timelines, consumer comms — and catches silent breaking changes in review.
+
+Scope: capability / domain (terminal level).","Depth: Defines API-design approaches teams adopt; solves hard versioning and compatibility problems.
+
+Evidenced by: Runs breaking-change processes across teams, with contract tests and migration tooling that make deprecations routine rather than heroic.
+
+Scope: multiple teams.","Depth: Sets API contract and versioning strategy across the organization; anticipates evolving needs.
+
+Evidenced by: Sets the org's compatibility policy and the tooling that enforces it automatically.
+
+Scope: organization.","Depth: Defines authoritative practice for API design; shapes industry standards and conventions.
+
+Evidenced by: Owns compatibility strategy for company-critical and external surfaces, where mistakes are front-page incidents.
+
+Scope: company."
+skill,Backend & API Engineering,Data & Persistence,Data modeling,BE-01,"Depth: Writes simple queries and follows existing schemas under review.
+
+Evidenced by: Writes correct queries and simple schema changes against an existing model, explaining the main entities and their relationships in their own words.
+
+Scope: task.","Depth: Models standard entities and writes correct queries independently with normal review.
+
+Evidenced by: Designs sound schemas for their features — keys, constraints, indexes, normalization judged by access pattern — encoding invariants in the database rather than in application hope, with reversible migrations.
+
+Scope: component.","Depth: Designs normalized schemas autonomously; writes complex queries and resolves modeling trade-offs.
+
+Evidenced by: Models a capability's domain so that invalid states are hard to represent, choosing consistency and transaction boundaries deliberately, designing for schema evolution, and catching modeling errors in others' designs before they calcify.
+
+Scope: capability / domain (terminal level).","Depth: Defines data-modeling approaches teams adopt; solves the hardest schema and query problems.
+
+Evidenced by: Untangles data models entangled across teams — ownership of shared entities, duplication vs. reference, event contracts — and lands the migrations.
+
+Scope: multiple teams.","Depth: Sets relational modeling strategy across systems; anticipates evolving data and access needs.
+
+Evidenced by: Sets the org's data architecture (store selection, consistency posture, canonical sources of truth) and kills duplicate sources of truth.
+
+Scope: organization.","Depth: Defines best practice for relational modeling industrywide; shapes widely adopted approaches.
+
+Evidenced by: Owns company-level data strategy bets — the storage and consistency platform products build on for years, including regulatory and multi-region posture.
+
+Scope: company."
+skill,Backend & API Engineering,Data & Persistence,Query performance & safe migrations,BE-04,"Depth: Adds suggested indexes and reads query plans under guidance.
+
+Evidenced by: Reads a query plan with help and fixes flagged N+1s, running schema changes only through the migration tooling with review.
+
+Scope: task.","Depth: Identifies and resolves standard slow queries independently.
+
+Evidenced by: Reads execution plans unprompted and designs indexes for the access patterns of features they own, checking query cost against realistic data volumes and rehearsing the rollback before deploying.
+
+Scope: component.","Depth: Designs indexing strategies autonomously; tunes complex queries and execution plans.
+
+Evidenced by: Diagnoses production database performance to root cause — plans, locks, connection pools — and designs zero-downtime migrations (expand/contract, backfill strategy, dual-write windows), reviewing others' migrations for lock and rollback risk.
+
+Scope: capability / domain (terminal level).","Depth: Defines query-optimization approaches teams adopt; solves the most stubborn performance problems.
+
+Evidenced by: Leads the multi-team data moves — resharding, datastore swaps, hot-table decomposition — with staged rollout plans others execute against, and builds the guardrails preventing recurrence.
+
+Scope: multiple teams.","Depth: Sets indexing and optimization strategy across systems; anticipates evolving workload patterns.
+
+Evidenced by: Owns org-level capacity and scaling strategy for persistence, deciding when to shard, replicate, or re-platform, with cost explicitly in the trade-off.
+
+Scope: organization.","Depth: Shapes industry practice for query optimization; pioneers widely referenced techniques.
+
+Evidenced by: Makes the company's long-horizon storage bets and is the final technical voice on the migrations where failure is existential.
+
+Scope: company."
+skill,Backend & API Engineering,Integration & Resilience,Asynchronous processing & messaging,BE-09,"Depth: Produces and consumes messages for simple flows under review.
+
+Evidenced by: Adds jobs or event handlers to an existing queue and worker setup following team patterns; explains at-least-once delivery and why handlers must tolerate retries.
+
+Scope: task.","Depth: Implements standard event-driven flows independently with normal review.
+
+Evidenced by: Builds idempotent async workflows with dead-letter handling and visibility into failures; chooses sync-versus-async deliberately for their feature.
+
+Scope: component.","Depth: Designs event-driven architectures autonomously; resolves ordering, delivery, and coupling concerns.
+
+Evidenced by: Designs the event and job architecture for a capability, reasoning explicitly about ordering, exactly-once illusions, and poison messages, and catches these gaps in others' designs.
+
+Scope: capability / domain (terminal level).","Depth: Defines event-driven approaches teams adopt; solves the hardest decoupling and flow problems.
+
+Evidenced by: Standardizes messaging patterns across teams, owning shared schemas and topics and the contract between producers and consumers.
+
+Scope: multiple teams.","Depth: Sets event-driven architecture strategy across systems; anticipates evolving messaging models.
+
+Evidenced by: Sets the org's async and eventing strategy, including platform selection and the delivery-guarantee posture teams inherit.
+
+Scope: organization.","Depth: Defines authoritative practice for event-driven architecture; shapes industry understanding.
+
+Evidenced by: Directs company-scale event architecture, making the platform bets that determine how the company's systems compose.
+
+Scope: company."
+skill,Backend & API Engineering,Integration & Resilience,Third-party & cross-service resilience,BE-18,"Depth: Applies provided resilience patterns to simple services under review.
+
+Evidenced by: Sets timeouts and handles error paths in their changes as the team's patterns prescribe, and explains what happens to their code when a dependency is down.
+
+Scope: task.","Depth: Implements standard fault-tolerance and isolation measures independently.
+
+Evidenced by: Wraps every external dependency with timeouts, retries with backoff, and failure fallbacks — graceful degradation in the UI when the API stutters — and writes the runbook entry for when the dependency degrades.
+
+Scope: component.","Depth: Designs resilient systems autonomously; resolves cascading-failure and degradation concerns.
+
+Evidenced by: Designs the resilience posture for a capability — circuit breakers, bulkheads, dependency criticality tiers, load-testing before launches and sizing for projected growth — and rejects designs in review that fail closed on non-critical dependencies.
+
+Scope: capability / domain (terminal level).","Depth: Defines fault-tolerance approaches teams adopt; solves the hardest isolation and recovery problems.
+
+Evidenced by: Hardens the seams between teams' systems — shared dependencies, cascading-failure paths — running failure-injection and game-day exercises and fixing the systemic weak points they expose.
+
+Scope: multiple teams.","Depth: Sets resilience strategy across systems; anticipates emerging failure modes and risks.
+
+Evidenced by: Sets org resilience standards and capacity strategy, including vendor criticality tiers, exit strategies, and disaster-recovery posture.
+
+Scope: organization.","Depth: Defines best practice for fault tolerance industrywide; shapes widely adopted approaches.
+
+Evidenced by: Accountable for company-level systemic resilience, shaping architecture and vendor strategy so no single dependency can take the business down.
+
+Scope: company."
+skill,TypeScript & Software Design,Type System as a Design Tool,Type-driven domain modeling,SWE-08,"Depth: Writes correctly typed code without escape hatches (`any`-equivalents), uses the codebase's existing types and generics correctly, and reads compiler errors to the actual cause with guidance.
+
+Evidenced by: Gets a compiler error on a discriminated-union narrowing case they haven't seen before, reads the message past the top line to find the actual mismatched member, and fixes the type rather than reaching for `as`.
+
+Scope: task.","Depth: Models feature domains so invalid states fail to compile — sum types / discriminated unions over boolean flags, narrowing over assertions — preferring type-level constraints where the compiler can carry the load.
+
+Evidenced by: Turns a boolean-flag-soup form state (`isLoading`/`isError`/`hasData` that can all be true at once) into a discriminated union so the impossible combinations don't compile, without being told to.
+
+Scope: component.","Depth: Designs the shared domain types a capability is built on, keeping inference ergonomic for consumers; judges when type-level sophistication pays and when it obscures, and unwinds accumulated type erosion in others' code.
+
+Evidenced by: Reviews a teammate's PR that adds a fourth optional field to an already-sprawling props type, and instead proposes (and lands) the discriminated-union refactor that makes the three valid variants explicit and the invalid ones uncompilable.
+
+Scope: capability / domain (terminal level).","Depth: Sets type-design conventions multiple teams adopt — strictness policy, shared type libraries, branded identifiers, result types — and leads migrations that raise strictness without halting delivery.
+
+Evidenced by: Publishes the branded-ID and Result-type conventions as the team's internal type-utilities package, with a codemod that migrated three existing services onto it without a delivery freeze.
+
+Scope: multiple teams.","Depth: Owns an organization's type-system posture — compiler baselines, monorepo type architecture, upgrade cadence — measured by defect and velocity outcomes.
+
+Evidenced by: Sets the org's `strict`-mode and `noUncheckedIndexedAccess` baseline for all new repos, tracked against a quarterly defect-rate dashboard leadership reviews.
+
+Scope: organization.","Depth: Makes company-level language and type-platform bets and represents the practice externally (talks, upstream contributions, published patterns).
+
+Evidenced by: Is the internal reviewer of record when the company adopts a new TypeScript major version, and publishes the migration's lessons as a conference talk that other companies cite.
+
+Scope: company."
+skill,TypeScript & Software Design,Type System as a Design Tool,Type safety at boundaries,SWE-09,"Depth: Uses the codebase's shared contract types and schema validators at boundaries rather than hand-casting external data, and can point to where a type is checked at runtime.
+
+Evidenced by: Wraps a third-party webhook payload with the team's existing Zod schema before touching its fields, and when asked why, points to the exact line where the shape is checked at runtime.
+
+Scope: task.","Depth: Puts runtime validation at every I/O boundary they touch — requests, messages, configuration — deriving static types from the runtime schemas so compile-time and runtime cannot drift.
+
+Evidenced by: Adds request validation to a new internal endpoint using the same schema that generates its TypeScript types, so a malformed body 400s before it ever reaches the handler's typed logic.
+
+Scope: component.","Depth: Designs end-to-end type integrity for a capability — schema-first contracts, generated clients, contract drift caught in continuous integration — and blocks unsound casts and unvalidated edges in review.
+
+Evidenced by: Wires a capability's client and server to share one schema-derived contract type checked in CI, so that changing a field name on the server fails the client's typecheck in the same pull request instead of failing in production.
+
+Scope: capability / domain (terminal level).","Depth: Builds the code-generation and contract-typing infrastructure multiple teams inherit, making boundary safety the default rather than a discipline, and resolves cross-team type drift at its source.
+
+Evidenced by: Builds the internal codegen pipeline that turns each service's OpenAPI schema into a typed client automatically, adopted by four other teams who stopped hand-writing fetch wrappers.
+
+Scope: multiple teams.","Depth: Sets the organization's boundary-safety standard and the platform tooling that enforces it, with incident evidence showing the failure classes it removed.
+
+Evidenced by: Ships an org-wide boundary-validation lint rule after tracing three consecutive quarters' worst production incidents back to unvalidated third-party responses, and reports the incident-rate drop to engineering leadership.
+
+Scope: organization.","Depth: Owns contract-integrity strategy across products and external interfaces where a broken contract is a business event, and advances the state of practice publicly.
+
+Evidenced by: Owns the contract-integrity review for the company's public partner API, where a silently-dropped field would break a paying customer's integration, and writes up the safeguards at an external engineering conference.
+
+Scope: company."
+skill,TypeScript & Software Design,Type System as a Design Tool,Advanced types & inference,SWE-01,"Depth: Writes working, readable code in the team's language; debugs own changes.
+
+Evidenced by: Uses generic functions and utility types (Pick, Omit, Partial) correctly in everyday code; asks for help when inference surprises them.
+
+Scope: task.","Depth: Proficient in the primary language/ecosystem; handles errors, async and concurrency basics correctly.
+
+Evidenced by: Writes their own generic functions and constraints that infer cleanly at call sites, and debugs inference failures by reading the types rather than adding casts.
+
+Scope: component.","Depth: Code is a reference others learn from; debugs the hard problems (races, memory, nondeterminism).
+
+Evidenced by: Builds the typed utilities and library boundaries others rely on — mapped and conditional types where they pay for themselves — and pushes back in review on cleverness that hurts readability or compile times.
+
+Scope: capability / domain (terminal level).","Depth: Mastery across multiple stacks/paradigms; solves problems others can't; sets implementation patterns.
+
+Evidenced by: Owns the hardest type-level infrastructure across teams (codegen, typed clients, framework glue) and teaches the patterns so they don't bottleneck on one person.
+
+Scope: multiple teams.","Depth: Sets implementation standards adopted across the org; anticipates where code breaks at scale.
+
+Evidenced by: Sets the org's bar for type-level engineering, balancing expressiveness against build performance and onboarding cost.
+
+Scope: organization.","Depth: Industry-level depth; authors foundational primitives and idioms others build on.
+
+Evidenced by: Influences the practice beyond the company — upstream contributions, published patterns — and directs internal investment accordingly.
+
+Scope: company."
+skill,TypeScript & Software Design,Architecture & Code Health,Software design & architecture,SWE-05,"Depth: Implements designs specified by others; asks why, not just how.
+
+Evidenced by: Explains the system's architecture in their own words and navigates its diagrams to find where a change belongs, implementing designs specified by others.
+
+Scope: task.","Depth: Designs sound components; understands coupling, cohesion, interface design.
+
+Evidenced by: Designs their features within the existing architecture with clear module boundaries and hidden internals, writing a short design note for anything non-obvious and naming at least one alternative.
+
+Scope: component.","Depth: Designs systems for evolution: clean seams, versioned interfaces, replaceable parts.
+
+Evidenced by: Selects patterns by trade-off in design docs that name the alternatives considered, designs for evolution, and catches coupling and scaling problems in others' designs before build.
+
+Scope: capability / domain (terminal level).","Depth: Mastery of architecture for complex systems; sets patterns and prevents drift.
+
+Evidenced by: Produces the designs that resolve problems spanning multiple teams, and gets them adopted through review and persuasion rather than mandate.
+
+Scope: multiple teams.","Depth: Sets multi-year architecture direction across the org.
+
+Evidenced by: Sets the architectural direction multiple teams build against and removes the systemic obstacles that block it.
+
+Scope: organization.","Depth: Authoritative and externally credible; defines architectural approach others follow.
+
+Evidenced by: Owns the company's technical architecture narrative — where the platform is going and why — making the irreversible calls and being publicly accountable for them.
+
+Scope: company."
+skill,TypeScript & Software Design,Architecture & Code Health,"Readable, maintainable code",SWE-02,"Depth: Writes functional, readable code; uses version control correctly; responds well to review.
+
+Evidenced by: Writes small, clearly named functions that match the codebase's conventions, and incorporates review feedback without repeating the same class of issue.
+
+Scope: task.","Depth: Writes clean, documented, modular code; gives useful review feedback.
+
+Evidenced by: Leaves code simpler than found as a matter of course — refactors as part of feature work, keeps modules cohesive, writes comments that explain why, not what; review comments on their PRs trend toward design, not cleanup.
+
+Scope: component.","Depth: Designs for maintainability; leads refactors of problem areas; review feedback teaches.
+
+Evidenced by: Sets the maintainability bar for a capability through review — names the smell and the refactoring, suggests the simplification rather than the workaround, and articulates why a design is too complicated, not just that it is.
+
+Scope: capability / domain (terminal level).","Depth: Expert in code health at scale (shared libraries, deprecations, large migrations).
+
+Evidenced by: Drives code-health initiatives across teams — dead-code deletion, module restructuring, convention alignment — with before/after evidence.
+
+Scope: multiple teams.","Depth: Shapes org-wide engineering standards for long-lived codebases.
+
+Evidenced by: Owns org-level code-health strategy, making maintainability a funded, tracked property rather than a virtue, legible to leadership as risk and velocity.
+
+Scope: organization.","Depth: Defines what good engineering looks like company-wide; externally recognized.
+
+Evidenced by: Sets company engineering-quality standards and models them in the code they still write.
+
+Scope: company."
+skill,TypeScript & Software Design,Architecture & Code Health,Refactoring & technical debt,EM-15,"Depth: Records known shortcuts and defects when directed; raises debt concerns in planning.
+
+Evidenced by: Adds a `// TODO(debt): hardcoded 30-day window, revisit before Q3 launch` comment on a shortcut they took, and brings it up unprompted when their tech lead asks what got cut in the sprint.
+
+Scope: task.","Depth: Keeps a visible debt register with the cost of carry noted and defends a steady paydown allocation in planning rather than begging quarter by quarter.
+
+Evidenced by: Keeps a running doc of the debt their component has taken on this quarter — what, why, and the exit condition — and defends a fixed 15% paydown slice in planning instead of re-arguing for it every sprint.
+
+Scope: component.","Depth: Distinguishes debt worth carrying from debt that will detonate, sequences remediation by risk, and prices debt in incident and velocity terms stakeholders accept.
+
+Evidenced by: Tells the roadmap owner that the auth-service's dual-write shim is debt that will detonate at their next 2x traffic milestone, not debt that can sit, and gets a two-sprint remediation slotted in with the incident-cost math that made the case.
+
+Scope: capability / domain (terminal level).","Depth: Makes debt legible across multiple teams — shared taxonomy, reporting rhythm — and gets cross-team risk (the shared library nobody owns, the half-finished migration) owned and funded.
+
+Evidenced by: Builds the shared debt taxonomy (security/perf/velocity/correctness) three teams now tag their tickets with, and gets the shared auth library nobody owned assigned a team and a paydown budget.
+
+Scope: multiple teams.","Depth: Carries technical risk onto the executive risk register — top exposures known, sized, owned, trending — and lands multi-quarter remediation programs against feature pressure.
+
+Evidenced by: Presents the org's top five debt exposures — sized in incident-dollars and velocity-days — on the quarterly executive risk register, and gets two multi-quarter remediation programs funded against competing feature asks.
+
+Scope: organization.","Depth: Sets an organization's speed-versus-soundness posture explicitly — where debt is accepted for velocity and where it never is — and holds it under growth pressure.
+
+Evidenced by: Sets the explicit rule that new-market launches may carry data-model debt for one quarter but never carry auth debt past code review, and holds that line when a VP pushes to ship a launch with an auth shortcut.
+
+Scope: company."
+skill,TypeScript & Software Design,Architecture & Code Health,Code review practice,SWE-04,"Depth: Navigates the codebase and understands code shown; reviews small changes.
+
+Evidenced by: Responds to review feedback promptly and without defensiveness, applies it beyond the flagged line, and reviews small changes for readability and test presence.
+
+Scope: task.","Depth: Independently understands unfamiliar code; gives timely, specific review feedback.
+
+Evidenced by: Gives reviews that catch real defects, not just style — edge cases, type holes, missing tests — distinguishing blocking issues from preferences and phrasing comments about the code, not the coder.
+
+Scope: component.","Depth: Quickly grasps complex/legacy systems; reviews raise the bar across a domain.
+
+Evidenced by: Reviews for design, failure modes, and long-term cost — and teaches through review comments others save and share. Turns recurring review comments into lint rules or docs, and calibrates comment severity so authors know what blocks.
+
+Scope: capability / domain (terminal level).","Depth: Expert at reviewing high-risk changes; review standards spread across teams.
+
+Evidenced by: Calibrates review standards across teams so the bar is consistent, reviewing the cross-cutting changes nobody else can judge and coaching senior engineers on how they review.
+
+Scope: multiple teams.","Depth: Authority on review practice org-wide.
+
+Evidenced by: Designs the org's review system itself — ownership rules, required checks, review SLAs, automation — measured by defect escape and flow metrics.
+
+Scope: organization.","Depth: Defines what good review looks like; shapes industry-facing practice.
+
+Evidenced by: Sets the company's engineering-rigor expectations, personally reviewing the changes with company-level blast radius.
+
+Scope: company."
+skill,Quality & Testing,Testing Across the Stack,Test strategy & the pyramid,QA-01,"Depth: Drafts test plans from templates for defined features, reviewed before execution.
+
+Evidenced by: Writes unit tests for every change following the team's patterns, and explains what each layer of the pyramid is for in their own words.
+
+Scope: task.","Depth: Produces complete test strategies for standard projects independently, scoping coverage and risk.
+
+Evidenced by: Chooses the right test layer per risk — unit for logic, integration for seams, few end-to-end — covering the frontend, API, and data layers rather than just the easiest one.
+
+Scope: component.","Depth: Devises test strategies for ambiguous, high-risk programs balancing coverage, time, and cost.
+
+Evidenced by: Owns the test strategy for a capability and kills tests that cost more than they catch, rebalancing an inverted pyramid, deciding coverage targets by risk, and defining which user journeys warrant end-to-end coverage — with the data to justify it.
+
+Scope: capability / domain (terminal level).","Depth: Defines the test-strategy approach and planning patterns other teams adopt.
+
+Evidenced by: Aligns test strategy across teams that share seams — contract tests where E2E suites were the crutch, shared fixtures, flake budgets — so cross-team changes are safe to make.
+
+Scope: multiple teams.","Depth: Sets organizational quality strategy and anticipates how testing must evolve with delivery.
+
+Evidenced by: Sets the organization's testing standards and investment level, backed by data on escape rates and suite cost.
+
+Scope: organization.","Depth: Defines what effective test strategy means for the discipline and influences its practice.
+
+Evidenced by: Owns the company's release-confidence posture, deciding the quality bar that ships and answering for it when it fails.
+
+Scope: company."
+skill,Quality & Testing,Testing Across the Stack,Test authoring & implementation quality,SWE-03,"Depth: Writes unit tests with guidance; tests own changes before merging.
+
+Evidenced by: Writes readable arrange-act-assert tests that assert behavior, not implementation, using the team's harnesses correctly and fixing a failing test by understanding it rather than snapshot-updating past it.
+
+Scope: task.","Depth: Applies the testing pyramid; everything shipped arrives tested; mocks dependencies sensibly.
+
+Evidenced by: Writes tests that survive refactoring — queries UI the way a user would, isolates external systems with typed fakes at the right boundary, covers error paths and keeps tests deterministic.
+
+Scope: component.","Depth: Designs testable systems (contract, property-based, replay from prod); owns a test strategy.
+
+Evidenced by: Builds the test infrastructure others write tests with — factories, fixtures, network mocking — making good tests the path of least resistance, and diagnoses the deep flake causes (async races, shared state, clock) to root cause.
+
+Scope: capability / domain (terminal level).","Depth: Expert in test strategy at scale (test data, environments, deployment safety).
+
+Evidenced by: Fixes the systemic testing problems across teams — flake sources, slow suites, mock sprawl — providing shared harnesses and coaching teams out of brittle-test patterns.
+
+Scope: multiple teams.","Depth: Sets testing/verification discipline across the org.
+
+Evidenced by: Sets org-wide test-authoring standards and the tooling that enforces them, keeping suite runtime and reliability inside explicit budgets.
+
+Scope: organization.","Depth: Shapes the company-wide quality culture; advances verification practice.
+
+Evidenced by: Directs company-level test-infrastructure investment as a productivity multiplier, with authored practice visible in the highest-stakes systems.
+
+Scope: company."
+skill,Quality & Testing,Testing Across the Stack,Integration & end-to-end confidence,QA-06,"Depth: Automates defined UI flows using existing patterns, with scripts reviewed for reliability.
+
+Evidenced by: Runs the end-to-end suite locally and reads its failures to the failing step, updating existing journey tests when their change breaks one, with guidance.
+
+Scope: task.","Depth: Builds and maintains stable end-to-end UI tests independently for standard journeys.
+
+Evidenced by: Writes stable integration and end-to-end tests for their features' critical paths — user-facing selectors, controlled test data, no arbitrary sleeps — and quarantines flake rather than retrying it blind.
+
+Scope: component.","Depth: Stabilizes flaky, complex end-to-end flows and designs resilient locator and wait strategies.
+
+Evidenced by: Decides what a capability verifies at which layer — contract tests at API seams, a thin E2E set for revenue paths — keeping the suite's runtime and flake rate inside budget.
+
+Scope: capability / domain (terminal level).","Depth: Defines UI and end-to-end automation patterns others adopt for reliability at scale.
+
+Evidenced by: Establishes contract-testing and integration infrastructure across team boundaries — environments, seeded data, contract-test governance — so teams deploy independently without integration freezes.
+
+Scope: multiple teams.","Depth: Sets end-to-end automation strategy and anticipates challenges from evolving interfaces.
+
+Evidenced by: Owns the org's pre-production confidence strategy, deciding the environment topology and what may only be verified in production behind flags.
+
+Scope: organization.","Depth: Defines authoritative end-to-end automation practice that shapes the discipline.
+
+Evidenced by: Accountable for company-level release-confidence architecture, including the economics of environments versus production-testing investment.
+
+Scope: company."
+skill,Quality & Testing,Defect Response & Prevention,Debugging & root-cause analysis,SWE-06,"Depth: Debugs issues in own code with support; uses basic tooling.
+
+Evidenced by: Reproduces a bug reliably before changing code, isolating with logs, breakpoints, and browser devtools in either runtime, and asks for help with a written summary of what's ruled out.
+
+Scope: task.","Depth: Independently diagnoses defects in own area systematically.
+
+Evidenced by: Traces defects across the stack unaided — UI symptom to network to service to query — stating a hypothesis before each experiment and using profilers to find hot paths instead of guessing.
+
+Scope: component.","Depth: Leads diagnosis of hard, cross-cutting failures; root cause not symptoms.
+
+Evidenced by: Is the debugger of last resort for a capability, cracking the intermittent, race-condition, and heisenbug class from heap snapshots, CPU profiles, and traces, and turns each root cause into a regression test and a prevention.
+
+Scope: capability / domain (terminal level).","Depth: Expert at the rare/systemic failures; builds tooling that makes them visible.
+
+Evidenced by: Leads cross-team investigations where no single team can see the whole failure, building or standardizing the diagnostic tooling that shortens everyone's time-to-cause, and teaches the method while doing it.
+
+Scope: multiple teams.","Depth: The person called for the worst failures; sets diagnostic practice org-wide.
+
+Evidenced by: Raises the organization's debugging capability — runbooks, tooling, teaching — so hard problems stop requiring them personally.
+
+Scope: organization.","Depth: Authority on diagnosis; advances the discipline.
+
+Evidenced by: Handles the company-critical unknowns — the defects with existential stakes — and grows the org's capacity to handle the next one without them.
+
+Scope: company."
+skill,Quality & Testing,Defect Response & Prevention,Quality ownership & prevention,QA-14,"Depth: Compiles defined quality metrics into standard reports under review.
+
+Evidenced by: Verifies their own work before review — runs it, tests the unhappy paths, checks the acceptance criteria — rather than relying on reviewers to catch problems.
+
+Scope: task.","Depth: Produces meaningful quality reports independently, selecting relevant metrics for routine needs.
+
+Evidenced by: Monitors their changes after deploy and fixes what they broke without being asked, tracking their defects to closure.
+
+Scope: component.","Depth: Designs metrics that reveal real quality signals in ambiguous, contested contexts.
+
+Evidenced by: Owns a capability's quality metrics — escaped defects, change failure rate — and changes the process, not just the code, when they slip.
+
+Scope: capability / domain (terminal level).","Depth: Defines the quality-metrics framework and reporting patterns others adopt.
+
+Evidenced by: Builds the quality gates and review standards several teams operate, and intervenes with data when a team's failure rate drifts.
+
+Scope: multiple teams.","Depth: Sets quality-measurement strategy and anticipates which signals will matter as delivery evolves.
+
+Evidenced by: Owns org-level quality outcomes, reporting DORA-style metrics to leadership and directing the practice changes they imply.
+
+Scope: organization.","Depth: Defines what meaningful quality measurement means for the field and influences its practice.
+
+Evidenced by: Sets the company's quality-vs-speed posture and is answerable for it in front of customers.
+
+Scope: company."
+skill,Delivery & Operations,Delivery Pipeline,Build & CI pipelines,OPS-02,"Depth: Uses and makes guided fixes to existing pipelines.
+
+Evidenced by: Keeps their branch green — reads CI failures to the root cause, reproduces them locally, and fixes them before asking for review; never merges on red.
+
+Scope: task.","Depth: Independently builds and improves pipelines for their area.
+
+Evidenced by: Integrates small and often and fixes pipeline config for their area — adds checks, caches dependencies, parallelizes slow stages — treating a broken main build as their interrupt.
+
+Scope: component.","Depth: Designs deployment safety (progressive delivery, rollback) for a domain.
+
+Evidenced by: Owns pipeline health for a capability and keeps it fast — build times within budget, flakes quarantined with follow-through, gating on the checks that matter (types, lint, tests, bundle size) — treating a slow pipeline as an incident, not a fact of life.
+
+Scope: capability / domain (terminal level).","Depth: Expert in delivery engineering at scale; sets standards across teams.
+
+Evidenced by: Builds or overhauls the shared build platform (monorepo task graphs, remote caching, merge queues, affected-only builds) that keeps CI fast for many teams at once, measurably improving their lead time.
+
+Scope: multiple teams.","Depth: Defines the org's delivery/release philosophy.
+
+Evidenced by: Owns the org's delivery metrics and pipeline strategy, reporting DORA-style measures to leadership and directing investment at the biggest bottleneck.
+
+Scope: organization.","Depth: Advances release engineering practice company-wide.
+
+Evidenced by: Sets company delivery strategy — build-vs-buy on CI, engineering-productivity investment — with the business case attached.
+
+Scope: company."
+skill,Delivery & Operations,Delivery Pipeline,Release & deployment practices,OPS-30,"Depth: Follows the release process exactly — flags, staged rollout steps, verification checklists — verifies their change in production, and rolls back with guidance.
+
+Evidenced by: Runs their first production deploy behind a feature flag exactly as the release runbook specifies, watches the rollout dashboard until it's clean, and asks their buddy to confirm before closing out the checklist.
+
+Scope: task.","Depth: Ships behind flags with a rollback plan by default, monitors rollouts and reverts on their own judgment when signals degrade, and writes changes that tolerate both versions running during rollout.
+
+Evidenced by: Ships a pricing-page change behind a flag, notices the conversion-rate panel dip 20 minutes into a 10% rollout, and rolls it back themselves without waiting for anyone's sign-off — then writes the one-line rollback note in the channel.
+
+Scope: component.","Depth: Designs the rollout for risky changes — canary criteria, migration sequencing, flag lifecycle, kill switches — and reviews others' rollout plans for blast radius; the person teams ask how to ship something safely.
+
+Evidenced by: Writes the rollout plan for a payments-schema migration — canary percentage, the exact metric that triggers an automatic halt, and a kill switch that reverts to the old code path in under a minute — and is the reviewer three other engineers send their own risky rollout plans to before shipping.
+
+Scope: capability / domain (terminal level).","Depth: Builds progressive-delivery machinery multiple teams release through (flag platforms, automated canary analysis, automated rollback), retiring deploy patterns that cause repeat incidents and measurably raising deploy frequency.
+
+Evidenced by: Builds the automated-canary-analysis service that now gates every deploy across four teams, replacing the ad hoc 'watch the dashboard for ten minutes' ritual that had caused two repeat incidents that quarter.
+
+Scope: multiple teams.","Depth: Owns release policy for an organization and its delivery metrics — rollout standards, freeze rules, environment strategy — dismantling ceremony that adds no safety.
+
+Evidenced by: Sets the org-wide rule that no service may deploy without an automated rollback path, retires the manual change-approval-board process that added a day of ceremony without catching a single bad deploy in a year, and reports both changes' effect on deploy frequency to leadership.
+
+Scope: organization.","Depth: Sets how an entire company's software reaches customers — the risk posture products ship under — and defends it to executives, auditors, and regulators.
+
+Evidenced by: Defends the company's canary-rollout policy to a regulator during an audit after a customer-facing incident, and is the one who signs off on the policy staying as-is rather than reverting to slower, more ceremonial releases.
+
+Scope: company."
+skill,Delivery & Operations,Delivery Pipeline,Developer tooling & environment,OPS-27,"Depth: Maintains existing self-service platform components under review, addressing documented user requests.
+
+Evidenced by: Sets up and operates the local dev environment from the docs, fixing their own environment problems before escalating and filing reproducible reports when tooling breaks.
+
+Scope: task.","Depth: Independently builds and supports standard platform capabilities and templates for routine developer needs with review.
+
+Evidenced by: Improves the tooling friction they personally hit — a slow build, a missing lint rule, a stale README, a tsconfig fix — and upstreams the fix instead of working around it, upgrading dependencies safely with changelogs read before major bumps.
+
+Scope: component.","Depth: Designs self-service workflows for ambiguous needs, reducing friction and resolving hard abstraction and adoption issues.
+
+Evidenced by: Owns the developer experience of a capability's codebase — TS project references, bundler config, CI caching, lint/format automation, upgrade cadence — measuring dev-loop time before and after changes; new engineers ship in days because of it.
+
+Scope: capability / domain (terminal level).","Depth: Defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems.
+
+Evidenced by: Designs the monorepo and shared-tooling layer multiple teams work inside, landing the risky upgrades (TypeScript majors, bundler swaps) with codemods and migration docs, and measures adoption rather than assuming it.
+
+Scope: multiple teams.","Depth: Sets organization-wide platform strategy, anticipating how developer-experience engineering should evolve.
+
+Evidenced by: Drives org developer-productivity strategy with survey and telemetry data, owning the platform roadmap and its DX metrics.
+
+Scope: organization.","Depth: Defines what excellent platform engineering means for the field, shaping industry developer-experience practice.
+
+Evidenced by: Makes the company's foundational tooling bets (build systems, repo topology, language and runtime upgrades, AI-assisted development posture).
+
+Scope: company."
+skill,Delivery & Operations,Production Operations,Observability & monitoring,OPS-05,"Depth: Understands logs/metrics/traces; reads existing dashboards.
+
+Evidenced by: Finds their change's logs, metrics, traces, and browser error reports in the standard dashboards, and adds structured log lines with useful context per team conventions.
+
+Scope: task.","Depth: Instruments their services; builds dashboards; tunes alerts to limit noise.
+
+Evidenced by: Instruments their features across the stack before shipping — structured logs, metrics, trace spans that cross the client/server boundary — and answers ""is it working?"" from telemetry, not vibes.
+
+Scope: component.","Depth: Designs observability for complex systems (end-to-end traces, quality signals, cost attribution).
+
+Evidenced by: Defines the SLIs/SLOs for a capability and builds alerts on symptoms, not causes — dashboards on-call actually uses — deleting noisy alerts as deliberately as adding signal, and rejects unobservable designs in review.
+
+Scope: capability / domain (terminal level).","Depth: Expert in instrumentation trade-offs at scale, incl. privacy-safe logging.
+
+Evidenced by: Standardizes observability across teams — shared instrumentation libraries, trace propagation, log schema, alert-quality reviews — so cross-team incidents are traceable end to end, with measured pager-load reductions.
+
+Scope: multiple teams.","Depth: Defines org observability strategy.
+
+Evidenced by: Owns the org's observability strategy and SLO program, including its cost curve, making reliability legible to leadership.
+
+Scope: organization.","Depth: Shapes company-wide operational visibility; advances practice.
+
+Evidenced by: Sets company reliability-measurement standards and the external commitments (SLAs) grounded in them, answering for the telemetry bill and its value.
+
+Scope: company."
+skill,Delivery & Operations,Production Operations,Incident response & postmortems,OPS-06,"Depth: Responds to alerts with support; follows runbooks; escalates appropriately.
+
+Evidenced by: Follows the runbook during incidents, escalates early with a clear symptom report, and narrates what they see in the incident channel rather than debugging silently; contributes accurate timelines to postmortems while shadowing on-call.
+
+Scope: task.","Depth: Triages and resolves routine incidents; clear notes; takes on-call.
+
+Evidenced by: Takes on-call for their component and mitigates common failures unaided, prioritizing user impact over root cause in the moment, communicating status on the expected cadence, and writing postmortems that name contributing causes, not culprits.
+
+Scope: component.","Depth: Leads response to complex failures; blameless postmortems; same failure never recurs.
+
+Evidenced by: Runs incident command for a capability's severe incidents — coordinates responders, makes the mitigate-vs-diagnose call under pressure, communicates to stakeholders in their language — and drives postmortem actions to actual completion, not just filed.
+
+Scope: capability / domain (terminal level).","Depth: Expert in incident-management design (rotations, severity, escalation).
+
+Evidenced by: Commands incidents that cross team boundaries and fixes the systemic reliability problems recurring across teams' postmortems, coaching new incident commanders and upgrading the practice itself (severity taxonomy, review quality, on-call health).
+
+Scope: multiple teams.","Depth: Commands the highest-severity incidents; sets incident process org-wide.
+
+Evidenced by: Owns the org's incident program and learning loop — readiness, postmortem culture, error-budget policy — reviewing severity trends with leadership and directing reliability investment.
+
+Scope: organization.","Depth: Sets the company's incident philosophy; calm authority in the worst moments.
+
+Evidenced by: Is accountable for company-level major-incident handling, including executive and customer communication and the credibility of the postmortem process after the worst days.
+
+Scope: company."
+skill,Security,Application Security,Secure coding & vulnerability prevention,OPS-08,"Depth: Understands core appsec; follows practices and flags concerns.
+
+Evidenced by: Uses the framework's safe defaults and never bypasses them — parameterized queries, escaping-by-default templates, no unreviewed `dangerouslySetInnerHTML`, no secrets in code, logs, or client bundles — and names the OWASP Top 10 risks their change touches.
+
+Scope: task.","Depth: Applies least privilege; validates/sanitizes inputs; knows common attacks.
+
+Evidenced by: Prevents the common vulnerability classes by construction — XSS, injection, CSRF, SSRF — validating input at trust boundaries with schemas, handling tokens and cookies correctly (HttpOnly/SameSite), and fixing scanner findings without being chased.
+
+Scope: component.","Depth: Designs defense in depth; thinks in abuse cases; owns a domain's posture.
+
+Evidenced by: Catches vulnerabilities in review that scanners miss — authz gaps, unsafe deserialization, SSRF paths, XSS-shaped patterns — turning each finding into a guardrail (lint rule, safe wrapper, doc), and owns the capability's browser-side posture (CSP, third-party script trust, session architecture).
+
+Scope: capability / domain (terminal level).","Depth: Expert in securing systems at scale; leads red-teaming and remediation.
+
+Evidenced by: Builds secure-by-default platform pieces multiple teams inherit (auth libraries, CSP baselines, input-validation layers, paved-path middleware) and drives remediation campaigns across codebases when pentests find systemic issues.
+
+Scope: multiple teams.","Depth: Defines security strategy for the org's surface area.
+
+Evidenced by: Sets the org's secure-development standard with the security function — standards, training, tooling, review gates — reporting measurable risk posture to leadership.
+
+Scope: organization.","Depth: Company-level accountability; authority on the field.
+
+Evidenced by: Owns company product-security strategy from the engineering side, accountable in audits, incidents, and board-level risk conversations.
+
+Scope: company."
+skill,Security,Application Security,"Authentication, authorization & data protection",BE-15,"Depth: Applies existing auth mechanisms to simple endpoints under review.
+
+Evidenced by: Uses the existing auth middleware and permission checks correctly, never rolling their own crypto or token handling, and checks authorization on the server, never only in the UI.
+
+Scope: task.","Depth: Implements standard authentication and authorization flows independently.
+
+Evidenced by: Implements authorization server-side on every path the UI hides — object-level, not just route-level — tests the negative cases (wrong user, expired session, escalation attempts), and handles tokens, sessions, secrets, and PII per policy without reminders.
+
+Scope: component.","Depth: Designs auth models autonomously; resolves complex identity, token, and permission cases.
+
+Evidenced by: Designs the access-control model for a capability — roles, resource ownership, tenant isolation, audit trails — documents it, and probes designs for privilege-escalation and data-exposure paths before build; others bring their authorization edge cases to this person.
+
+Scope: capability / domain (terminal level).","Depth: Defines auth approaches teams adopt; solves the hardest access-control and trust problems.
+
+Evidenced by: Owns shared identity and authorization infrastructure multiple teams build on (session services, permission frameworks, SSO integration) and leads migrations off legacy schemes without lockouts.
+
+Scope: multiple teams.","Depth: Sets authentication and authorization strategy across systems; anticipates evolving threats.
+
+Evidenced by: Sets the org's identity, access, and data-protection architecture, treating compliance regimes as engineering requirements and verifying enforcement holds in practice.
+
+Scope: organization.","Depth: Defines authoritative practice for auth; shapes industry standards and security understanding.
+
+Evidenced by: Makes company-level trust-architecture bets (identity platform, encryption posture, data-residency design) and stands behind them with regulators and enterprise customers.
+
+Scope: company."
+skill,Security,Application Security,Threat modeling & security review,SEC-05,"Depth: Documents assets, entry points, and obvious threats for a component using a guided method, reviewed by others.
+
+Evidenced by: Answers ""what could go wrong here?"" about their change when asked, and flags anything touching auth, money, or PII for extra review.
+
+Scope: task.","Depth: Produces complete threat models for standard systems independently, identifying realistic threats and mitigations.
+
+Evidenced by: Raises abuse cases in design discussions unprompted — enumeration, replay, object-level access mistakes — for features they own.
+
+Scope: component.","Depth: Models complex, ambiguous architectures and prioritizes subtle, chained threats others miss.
+
+Evidenced by: Runs lightweight threat models for a capability's significant designs, records the accepted risks, and makes security review a standing part of its design process.
+
+Scope: capability / domain (terminal level).","Depth: Defines the threat-modeling methodology and reusable patterns others adopt across teams.
+
+Evidenced by: Facilitates threat modeling across teams and trains engineers to run their own, focusing effort on the highest-value targets.
+
+Scope: multiple teams.","Depth: Sets threat-modeling strategy and anticipates classes of threats before they become prevalent.
+
+Evidenced by: Owns the org's security-review program and risk register, deciding where scrutiny concentrates.
+
+Scope: organization.","Depth: Defines authoritative threat-modeling practice that shapes how the discipline reasons about risk.
+
+Evidenced by: Shapes company security posture with threat-informed strategy presented at the executive level.
+
+Scope: company."
+skill,Security,Supply Chain & Data Protection,Dependency & supply-chain hygiene,SEC-09,"Depth: Verifies artifact provenance and signatures following documented checks, escalating anomalies for review.
+
+Evidenced by: Adds dependencies only through the team's vetting process, keeps lockfiles committed and clean, and acts on automated vulnerability alerts for their changes.
+
+Scope: task.","Depth: Configures signing, dependency scanning, and provenance controls independently for standard pipelines.
+
+Evidenced by: Evaluates a package before adopting it — maintenance health, size, license, transitive surface, alternatives including writing it themselves — and keeps the components they own patched without being chased.
+
+Scope: component.","Depth: Designs artifact-integrity and dependency-trust controls for complex, ambiguous supply chains.
+
+Evidenced by: Owns the dependency posture of a capability — upgrade cadence, pinning strategy, CVE triage by real exploitability, pruning abandoned packages before they bite — and leads its major framework and runtime upgrades.
+
+Scope: capability / domain (terminal level).","Depth: Defines the supply-chain security architecture and verification patterns others adopt.
+
+Evidenced by: Builds supply-chain tooling and policy multiple teams follow (allowlists, automated updates, provenance checks, internal registries) and coordinates response when a shared dependency is compromised.
+
+Scope: multiple teams.","Depth: Sets supply-chain assurance strategy and anticipates emerging artifact and dependency threats.
+
+Evidenced by: Sets org supply-chain security posture — SBOM practice, artifact signing, build integrity, vendor risk — with compliance and security functions, reporting exposure to leadership.
+
+Scope: organization.","Depth: Defines authoritative supply-chain security practice that shapes industry expectations.
+
+Evidenced by: Owns company software supply-chain strategy and represents it to customers and auditors.
+
+Scope: company."
+skill,Security,Supply Chain & Data Protection,Data protection & privacy,OPS-09,"Depth: Knows data handling has privacy implications; follows rules.
+
+Evidenced by: Handles personal data per the team's rules — no PII in logs, URLs, or analytics, no secrets in code or client bundles — and asks before adding any new data collection.
+
+Scope: task.","Depth: Applies PII handling, redaction, residency and retention correctly.
+
+Evidenced by: Applies minimization by default in their features — collects only what's needed, encrypts what the standard requires, keeps PII out of client caches and telemetry, applies retention rules without prompting.
+
+Scope: component.","Depth: Designs for compliance (consent, audit trails, regional rules); owns readiness for a domain.
+
+Evidenced by: Owns the data-protection design of a capability — classification, encryption expectations, retention, deletion paths that actually delete — and catches privacy problems in design review before legal has to.
+
+Scope: capability / domain (terminal level).","Depth: Expert at translating regulation into controls; represents engineering in audits.
+
+Evidenced by: Builds privacy-preserving infrastructure multiple teams rely on (deletion pipelines, consent propagation, PII-safe logging libraries) and remediates cross-team data-handling gaps.
+
+Scope: multiple teams.","Depth: Sets org compliance strategy; anticipates regulation.
+
+Evidenced by: Owns the org's privacy engineering program with legal and security, translating regulation into platform defaults teams can follow.
+
+Scope: organization.","Depth: Authoritative on the landscape; trusted interface to regulators.
+
+Evidenced by: Shapes company data strategy where product value and privacy obligations trade off, and answers for it to regulators and customers.
+
+Scope: company."
+skill,Collaboration & Communication,Communication,Technical writing & documentation,CC-02,"Depth: Shares what they learn; keeps their docs accurate.
+
+Evidenced by: Writes PR descriptions, bug reports, and status updates a reviewer can act on without asking questions, and updates the docs their change makes stale.
+
+Scope: task.","Depth: Documents their area well; proactively shares techniques with the team.
+
+Evidenced by: Documents their features so the next engineer needs no meeting — READMEs, runbooks, ADR-style decision notes stating problem, options, and choice — matched to the reader, not the writer.
+
+Scope: component.","Depth: Creates documentation and forums that raise a whole domain's understanding.
+
+Evidenced by: Writes design docs that anchor a capability's decisions — conclusion first, alternatives named, trade-offs argued, open questions explicit — that get cited months later, and edits others' docs to sharpen the argument, not the grammar.
+
+Scope: capability / domain (terminal level).","Depth: Builds knowledge-sharing systems adopted across teams.
+
+Evidenced by: Writes the RFCs and strategy docs that align multiple teams on contested decisions, framing trade-offs so disagreement is about substance, not confusion, structured so busy readers reach the decision point fast.
+
+Scope: multiple teams.","Depth: Defines how the org captures and spreads knowledge.
+
+Evidenced by: Writes the strategy and standards documents the organization executes against, legible to both engineers and executives, and raises the org's documentation bar by example.
+
+Scope: organization.","Depth: Shapes industry-facing knowledge practice.
+
+Evidenced by: Writes the company-defining technical narratives — public engineering posts, architecture visions, board-level briefs — that survive scrutiny from the board, customers, and the industry.
+
+Scope: company."
+skill,Collaboration & Communication,Communication,Stakeholder communication,CC-01,"Depth: Communicates status clearly; documentation is accurate.
+
+Evidenced by: Gives accurate, honest status in standups and tickets — says what's blocked and what's at risk instead of ""almost done.""
+
+Scope: task.","Depth: Writes clear design notes, runbooks and PRs; explains trade-offs without overselling.
+
+Evidenced by: Explains their technical work to non-engineers in outcome terms and warns stakeholders of slips as soon as they know, with a revised plan attached.
+
+Scope: component.","Depth: Writes design docs that drive decisions; translates technical risk for non-technical stakeholders.
+
+Evidenced by: Translates a capability's technical state for any audience — risk for product, cost for finance-minded leaders, options for executives — and runs the meetings where those audiences decide.
+
+Scope: capability / domain (terminal level).","Depth: Expert at making complex capability/risk legible to executives without dumbing it down; RFCs align orgs.
+
+Evidenced by: Keeps multiple teams' stakeholders aligned through change — reorganizations, migrations, slipped bets — with communication others cite as the reason it went smoothly.
+
+Scope: multiple teams.","Depth: Strategy memos leadership acts on; org-wide and external reach.
+
+Evidenced by: Represents engineering reality to org leadership in planning and crisis alike, and is trusted to do so unfiltered.
+
+Scope: organization.","Depth: A clarifying voice at company scale; externally recognized.
+
+Evidenced by: Represents the company's technology externally — customers, partners, boards — without overclaiming.
+
+Scope: company."
+skill,Collaboration & Communication,Communication,Technical discussion & decision-making,CC-05,"Depth: Voices disagreement respectfully; disagrees-and-commits.
+
+Evidenced by: Asks questions in design discussions that clarify rather than derail, and states their own view with its reasoning when asked.
+
+Scope: task.","Depth: Works through disagreement to a decision without damaging relationships.
+
+Evidenced by: Argues positions from evidence and drops them gracefully when out-argued, committing visibly to decisions they disagreed with.
+
+Scope: component.","Depth: Mediates technical disputes in their domain; finds the path that holds up.
+
+Evidenced by: Facilitates decisions rather than winning them — surfacing the quiet dissent, timeboxing the debate, recording the outcome and its rationale where the next person will find it.
+
+Scope: capability / domain (terminal level).","Depth: Resolves high-stakes disagreements between senior stakeholders across orgs.
+
+Evidenced by: Brokers technical decisions between teams with conflicting interests, finding the option that unblocks both and getting explicit commitment from each.
+
+Scope: multiple teams.","Depth: Designs the decision processes the org uses to resolve conflict.
+
+Evidenced by: Designs the org's technical decision-making mechanisms (review boards, RFC processes) so decisions are fast, owned, and durable.
+
+Scope: organization.","Depth: Sets the company norm for principled disagreement.
+
+Evidenced by: Carries the company's hardest technical calls to conclusion, aligning executives and engineering when they disagree.
+
+Scope: company."
+skill,Collaboration & Communication,Teamwork,Feedback & candor,CC-04,"Depth: Accepts feedback non-defensively; acts on it.
+
+Evidenced by: Receives feedback without defensiveness and acts on it visibly; thanks reviewers for hard comments, asks clarifying questions instead of relitigating, and says so when something seems wrong rather than staying silent.
+
+Scope: task.","Depth: Gives timely, specific, kind feedback to peers.
+
+Evidenced by: Gives peers direct, kind, specific feedback near the moment — in review, retros, and one-on-ones — following up on whether it landed, and raises team-process problems with a proposed fix.
+
+Scope: component.","Depth: Gives growth-oriented feedback that changes behavior; coaches through feedback.
+
+Evidenced by: Names the uncomfortable thing in the room — a slipping standard, a struggling teammate, a design being talked around — early and in a way people can hear, and models receiving hard feedback publicly.
+
+Scope: capability / domain (terminal level).","Depth: Builds feedback norms that raise the bar across teams.
+
+Evidenced by: Gives feedback across team and level boundaries, including upward to leaders whose decisions are not working and to senior engineers nobody else will, repairing cross-team frictions before they become escalations.
+
+Scope: multiple teams.","Depth: Sets the org's culture of candor and growth.
+
+Evidenced by: Builds feedback culture deliberately across the org — coaching senior engineers on candor, intervening where silence has become the norm, and challenging org-level decisions on the record so others can too.
+
+Scope: organization.","Depth: Models and defines feedback culture company-wide.
+
+Evidenced by: Tells company leadership the truths no one else will, with the evidence, standing, and framing to change the outcome.
+
+Scope: company."
+skill,Collaboration & Communication,Teamwork,Cross-functional collaboration,CC-03,"Depth: Responsive to feedback; pairs willingly; asks for help appropriately.
+
+Evidenced by: Asks clarifying questions about acceptance criteria before building, flags when a mock is ambiguous or technically awkward rather than guessing, and raises blockers the day they appear.
+
+Scope: task.","Depth: Collaborates smoothly with adjacent functions; handles disagreement constructively.
+
+Evidenced by: Engages design and product early, working from problem statements rather than just tickets — flags technical constraints while alternatives are still cheap and translates engineering trade-offs into terms partners can decide on.
+
+Scope: component.","Depth: Builds strong cross-team relationships; resolves friction directly.
+
+Evidenced by: Operates as the engineering counterpart to product and design for a capability — negotiates scope with data, shapes the roadmap with technical possibility rather than feasibility vetoes, and disagrees-and-commits visibly.
+
+Scope: capability / domain (terminal level).","Depth: Expert at aligning teams with competing priorities; mediates disputes between senior people.
+
+Evidenced by: Untangles cross-team dependency knots, clarifying interaction modes and ownership so teams stop blocking each other, keeping decisions made in one room honored in the others.
+
+Scope: multiple teams.","Depth: Creates the forums and processes through which collaboration happens.
+
+Evidenced by: Designs the org's team boundaries and interaction patterns with leadership, applying cognitive-load reasoning to reorganizations and partnering with product leadership on the roadmap.
+
+Scope: organization.","Depth: Builds coalitions at company scale and externally.
+
+Evidenced by: Aligns engineering with company strategy across functions, trusted by product, design, and executive peers as a co-owner of outcomes.
+
+Scope: company."
+skill,Leadership & Business Impact,Growing People & Direction,Mentoring & growing engineers,LI-01,"Depth: Receptive to mentoring; shares what they learn.
+
+Evidenced by: Asks questions in public channels so the answers help others, improves the onboarding docs as they onboard, and helps the next new person with what they just learned.
+
+Scope: task.","Depth: Helps onboard teammates; informally mentors juniors.
+
+Evidenced by: Onboards new teammates and unblocks juniors day to day — pairing generously, explaining the why behind conventions rather than just the rules — without doing the work for them.
+
+Scope: component.","Depth: Coaches engineers with growth-oriented feedback; measurably improves a team's skill.
+
+Evidenced by: Mentors engineers deliberately toward independence — stretch tasks with a safety net, growth-oriented review comments, career conversations, questions rather than answers — with mentees whose progression is visible to others.
+
+Scope: capability / domain (terminal level).","Depth: Develops future leads across teams; shapes hiring and onboarding.
+
+Evidenced by: Grows senior engineers into capability owners — sponsoring them into visible problems, coaching their design judgment through rather than taking over — and creates the structures (guilds, review rotations, design shadowing) where mentoring happens without them.
+
+Scope: multiple teams.","Depth: Develops senior engineers and leaders; builds culture deliberately.
+
+Evidenced by: Builds the org's talent-growth machinery — mentoring programs, promotion-calibration input, technical curricula, the hiring bar — and grows the next staff engineers, sponsoring rather than just advising.
+
+Scope: organization.","Depth: Develops the next generation of top talent; legacy outlasts tenure.
+
+Evidenced by: Develops the company's senior technical bench — shaping who its next principals are and what excellence means here — and is the mentor its top engineers seek out.
+
+Scope: company."
+skill,Leadership & Business Impact,Growing People & Direction,Technical direction & influence,LI-03,"Depth: Contributes informed opinions in technical discussions.
+
+Evidenced by: Drives their own tasks to done — chases reviews, resolves ambiguity by asking, raises risks early, and proposes next steps rather than waiting for assignment.
+
+Scope: task.","Depth: Influences component-level decisions through credibility.
+
+Evidenced by: Leads small efforts they're part of and drives small technical decisions to conclusion — proposes, gathers input, decides or escalates — rather than letting them drift.
+
+Scope: component.","Depth: Sets technical direction for a domain; others align to their calls.
+
+Evidenced by: Sets technical direction for a capability others follow voluntarily — a vision people can repeat, work broken down and sequenced risk-first, the team unblocked, contested decisions landed by argument rather than seniority. This is the terminal-level bar: sustained excellence here is a complete career.
+
+Scope: capability / domain (terminal level).","Depth: Shapes how multiple teams approach problems; trusted tiebreaker.
+
+Evidenced by: Aligns multiple teams on a technical direction none of them owns alone — builds the coalition, does the 1:1 persuasion and the written case, absorbs the disagreement, and stays accountable through delivery.
+
+Scope: multiple teams.","Depth: Influences org-wide technical strategy.
+
+Evidenced by: Sets technical direction an organization executes against — picks the few bets that matter, kills zombie projects, chooses what not to do as visibly as what to do — and gets it resourced.
+
+Scope: organization.","Depth: Influences company strategic direction through insight.
+
+Evidenced by: Sets company technical direction with the executive team — the bets, the narrative, and the accountability for them — carried credibly to boards, customers, and the industry.
+
+Scope: company."
+skill,Leadership & Business Impact,Product & Business Impact,Product thinking,PD-06,"Depth: Understands the capability they're building and who uses it.
+
+Evidenced by: Explains who uses the feature they're building and why it matters in their own words, tries their own change as a user before calling it done, and flags when a spec seems to contradict the user's goal.
+
+Scope: task.","Depth: Frames own work in user/business outcomes, not just tasks.
+
+Evidenced by: Uses product analytics and user feedback on features they ship — checks whether the thing worked, not just whether it deployed — and proposes simpler versions that deliver the same outcome.
+
+Scope: component.","Depth: Treats their area as a product; uses metrics to decide what to build for a domain.
+
+Evidenced by: Contributes to discovery, not just delivery — prototypes to de-risk, brings usage data and user pain to planning, challenges requirements with evidence, and kills their own pet solutions when the data says so.
+
+Scope: capability / domain (terminal level).","Depth: Expert at aligning technical bets with product strategy across teams.
+
+Evidenced by: Spots the product opportunities and risks that only cross-team technical vantage reveals, killing or redirecting initiatives early with evidence rather than late with delivery pain.
+
+Scope: multiple teams.","Depth: Sets product direction for an org's technical surface.
+
+Evidenced by: Influences org product strategy with technical possibility — opening options product didn't know were cheap and closing ones that look cheap but aren't — as a peer to product leadership.
+
+Scope: organization.","Depth: Shapes how the company creates value through technical products.
+
+Evidenced by: Shapes company product direction through technology bets, spotting the platform shifts that change the business.
+
+Scope: company."
+skill,Leadership & Business Impact,Product & Business Impact,"Scoping, prioritization & estimation",PD-02,"Depth: Works highest-priority-first when told the priorities.
+
+Evidenced by: Breaks their tasks into day-sized pieces, flags slips the day they're known, and finishes what they start — working the agreed priority order rather than the interesting order.
+
+Scope: task.","Depth: Makes sound priority calls within scope; time-boxes uncertain work.
+
+Evidenced by: Slices features into thin vertical increments that ship value early — decomposing across frontend, backend, and migration work — estimates with stated assumptions, distinguishes must-have from nice-to-have, and says no to scope creep with a reason.
+
+Scope: component.","Depth: Balances cost/value/risk across a domain; resists hype; decisions hold up over months.
+
+Evidenced by: Sequences a capability's work by expected impact, risk, and cost of delay — hardest unknowns first, states what they're deliberately not doing — and is trusted to trade quality, scope, and time inside the capability without escalation; their estimates are the ones planning trusts.
+
+Scope: capability / domain (terminal level).","Depth: Expert at portfolio-level trade-offs; surfaces hidden assumptions; trusted tiebreaker.
+
+Evidenced by: De-risks and rebalances multi-team programs — finds the critical path across teams, keeps every team's slice independently shippable, and cancels or shrinks initiatives with sunk costs when the math says to.
+
+Scope: multiple teams.","Depth: Sets decision frameworks for the org.
+
+Evidenced by: Shapes org-level investment allocation — product vs. platform vs. paydown, honest capacity math, the mechanisms that keep commitments credible — with the economic case written down.
+
+Scope: organization.","Depth: Influences company strategic direction through judgment.
+
+Evidenced by: Answers for the company's biggest technical commitments — to the board, to customers — re-planning publicly when reality changes; their read on feasibility is treated as load-bearing.
+
+Scope: company."
+skill,Leadership & Business Impact,Product & Business Impact,Strategic & commercial awareness,PD-07,"Depth: States what business outcome their current task serves — and asks when they can't — treating infrastructure and license costs as real money.
+
+Evidenced by: Can say, when their tech lead asks, that the ticket they're working means fewer support escalations for a specific customer complaint — and asks what the actual dollar impact is when they genuinely don't know.
+
+Scope: task.","Depth: Checks whether shipped work actually moved its metric and says so plainly when it didn't; weighs cost and maintenance burden in the technical choices they own.
+
+Evidenced by: Checks the analytics dashboard two weeks after their checkout-flow change ships, finds conversion unchanged, and says so in the team retro instead of letting the ticket quietly close as 'done'.
+
+Scope: component.","Depth: Frames a domain's technical decisions in business terms — cost of delay, revenue risk, support load — pushes back on work with weak business rationale, and redirects effort when the numbers say the plan is wrong.
+
+Evidenced by: Tells the roadmap owner that a requested real-time-sync feature isn't worth the infra spend for the traffic it would see, backs it with the hosting-cost delta and the support-ticket volume it would actually resolve, and gets the plan changed to a cheaper polling approach.
+
+Scope: capability / domain (terminal level).","Depth: Builds the business case for the cross-team technical investments with the largest return and is trusted by leadership to have done the math.
+
+Evidenced by: Builds the cost-benefit case for consolidating three teams' duplicate notification services into one shared platform, with the infra-savings and engineering-hours numbers a director signs off on without re-deriving them.
+
+Scope: multiple teams.","Depth: Aligns an organization's technical strategy with its economics — cost curves, velocity, risk — owning trade-offs measured in staff-years and reporting them in the business's own terms.
+
+Evidenced by: Reports the org's infrastructure cost curve against velocity to leadership every quarter, and uses it to kill a popular but uneconomical microservices-per-team pattern that was inflating both cloud spend and cross-team coordination cost.
+
+Scope: organization.","Depth: Advises company leadership on where technology changes the business model and is accountable for company-level technology bets paying off.
+
+Evidenced by: Tells the executive team which of three competing platform bets actually changes the unit economics of the core product, and is the person whose read on that question the CEO uses to decide.
+
+Scope: company."
+skill,Leadership & Business Impact,Product & Business Impact,Ownership & follow-through,PD-05,"Depth: Takes ownership of assigned tasks; honest about progress and blockers.
+
+Evidenced by: Sees assigned tasks through to verified-in-production, not just merged, and reports status honestly including the bad news.
+
+Scope: task.","Depth: Owns components end-to-end; delivers committed work reliably.
+
+Evidenced by: Owns features from ambiguity to adoption — chases the dependency, fixes the post-launch bug, closes the loop with the requester.
+
+Scope: component.","Depth: Owns a domain; lands multi-week efforts without surprises; pushes back on unrealistic scope with reasons.
+
+Evidenced by: Answers for a capability's outcomes — quality, reliability, user impact — and picks up the critical work that has no owner rather than letting it drop.
+
+Scope: capability / domain (terminal level).","Depth: Owns cross-team initiatives; unblocks teams; kills failing approaches early.
+
+Evidenced by: Takes ownership of cross-team outcomes nobody else can carry, staying accountable through delivery even where they hold no authority.
+
+Scope: multiple teams.","Depth: Owns an org-level portfolio of bets; sets direction others follow.
+
+Evidenced by: Answers for org-level technical outcomes to leadership, including the failures.
+
+Scope: organization.","Depth: The go-to when something company-critical must land.
+
+Evidenced by: Is the name leadership puts on the incident channel when a company-critical migration is failing hours before a contractual deadline, and stays personally accountable for the outcome until it lands.
+
+Scope: company."

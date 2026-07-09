@@ -46,7 +46,7 @@ def assemble_cell(bar, evidence, scope):
     if evidence:
         parts.append(f"Evidenced by: {evidence}")
     parts.append(f"Scope: {scope}.")
-    return " ".join(parts)
+    return "\n\n".join(parts)
 
 
 def _cite(bib, key):

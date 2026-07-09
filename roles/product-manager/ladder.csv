@@ -5,43 +5,1003 @@ meta_description,"Canonical six-level IC ladder for product managers who own dis
 level_title,,,,,Associate Product Manager,Product Manager,Senior Product Manager,Staff/Group Product Manager,Principal Product Manager,Distinguished PM / Head of Product Craft
 level_scope,,,,,one feature/epic,a product area,a product/capability (terminal level),multiple product areas,product organization,company portfolio
 level_focus,,,,,Learns the craft; ships well-defined slices with guidance,Runs discovery-to-delivery independently for an area,Owns outcomes for a product; sets the bar others copy,Aligns strategy and craft across several product teams,Sets product direction and practice the org builds against,Shapes portfolio bets and the company's product craft
-skill,Product Discovery & User Research,Continuous Discovery,Customer interviewing,PM-01,"Depth: Runs scripted customer interviews and notes findings under a senior researcher's guidance. Evidenced by: Runs a scripted interview from a lead's guide, avoids the leading-question traps the Mom Test warns about, and writes up verbatim notes for the lead to review. Scope: one feature/epic.","Depth: Plans and conducts standard discovery for a feature, synthesizing themes with normal review. Evidenced by: Keeps a weekly interview cadence going without being reminded, writes their own discussion guides, and turns each session into a snapshot teammates actually read. Scope: a product area.","Depth: Independently frames ambiguous problems, selects fitting methods, and separates signal from noise. Evidenced by: Builds the recruiting pipeline for their product, brings engineers and designers into sessions, and redirects an interview that drifts into feature-request collection back to behavior. Scope: a product/capability (terminal level).","Depth: Designs the team's discovery approach and untangles findings others find contradictory. Evidenced by: Reviews other PMs' discussion guides and sits in on their sessions, and the snapshot format spreading across teams traces back to their template. Scope: multiple product areas.","Depth: Sets the org's research strategy and anticipates emerging customer needs before they surface. Evidenced by: Stands up the org's recruiting panel, consent process, and interview-snapshot repository, and audits whether a team's customer contact is real or theater. Scope: product organization.",Depth: Defines what rigorous product discovery means and shapes the discipline's practice externally. Evidenced by: Sets the company's public standard for what counts as real customer contact and defends it in talks or writing that other practitioners cite. Scope: company portfolio.
-skill,Product Discovery & User Research,Continuous Discovery,Discovery cadence & habits,PM-01,"Depth: Runs scripted customer interviews and notes findings under a senior researcher's guidance. Evidenced by: Keeps their epic's discovery tasks visible on the team board — interviews scheduled, assumptions listed, findings logged — following the cadence the team already set. Scope: one feature/epic.","Depth: Plans and conducts standard discovery for a feature, synthesizing themes with normal review. Evidenced by: Runs discovery and delivery in parallel without stalling either, so standups show both a weekly ship and a weekly customer conversation moving. Scope: a product area.","Depth: Independently frames ambiguous problems, selects fitting methods, and separates signal from noise. Evidenced by: Keeps the discovery habit alive through a deadline crunch by visibly renegotiating scope instead of quietly skipping customer contact, and new teams are pointed at their cadence as the example. Scope: a product/capability (terminal level).","Depth: Designs the team's discovery approach and untangles findings others find contradictory. Evidenced by: Audits discovery health across several teams from calendars and artifacts, names which team has quietly stopped learning, and gets the habit restarted. Scope: multiple product areas.",Depth: Sets the org's research strategy and anticipates emerging customer needs before they surface. Evidenced by: Designs the planning rituals and funding rules that make continuous discovery the org's default rather than a practice some teams opt out of under pressure. Scope: product organization.,"Depth: Defines what rigorous product discovery means and shapes the discipline's practice externally. Evidenced by: Challenges a major company investment in an executive review for lacking recent customer evidence, and that challenge becomes the norm other reviews are held to. Scope: company portfolio."
-skill,Product Discovery & User Research,Synthesis & Customer Modeling,Opportunity mapping,PM-15,"Depth: Places research findings onto an existing opportunity map correctly, distinguishing opportunities from solutions with coaching. Evidenced by: Adds a newly-interviewed customer's pain point to their lead's opportunity tree in the right branch, asking when unsure whether it names a need or a disguised feature request. Scope: one feature/epic.","Depth: Builds and maintains the opportunity map for their area, sizing and pruning branches against evidence without prompting. Evidenced by: Keeps their product area's opportunity tree current between planning cycles, retiring branches no interview has touched in months and adding new ones as evidence accumulates. Scope: a product area.","Depth: Structures messy, contested problem spaces into maps that make trade-offs explicit, and defends why one opportunity is pursued over its siblings. Evidenced by: Walks a skeptical stakeholder through why the team is pursuing one opportunity over three plausible siblings, pointing at the specific interview evidence behind the call. Scope: a product/capability (terminal level).","Depth: Reconciles overlapping opportunity maps across teams, exposing duplicate bets and orphaned opportunities no single team could see. Evidenced by: Merges two teams' opportunity trees ahead of a joint planning cycle and surfaces a customer need both teams were separately half-solving without knowing about the other's work. Scope: multiple product areas.","Depth: Makes opportunity mapping an organization's default synthesis method; investment reviews open from the mapped opportunity space. Evidenced by: Gets a quarterly investment review to open with the mapped opportunity space instead of a list of proposed features, and rejects a funding request that skips the map. Scope: product organization.",Depth: Shapes how organizations represent customer opportunity at portfolio level; their framing methods are cited and reused beyond their own organization. Evidenced by: Publishes the opportunity-mapping method used across the company's product lines and fields questions about it from PMs at other companies trying to adopt it. Scope: company portfolio.
-skill,Product Discovery & User Research,Synthesis & Customer Modeling,Research synthesis & insight,PM-01,Depth: Runs scripted customer interviews and notes findings under a senior researcher's guidance. Evidenced by: Tags a batch of interview transcripts into the team's existing theme categories and can point to the exact quote behind each tag when a lead asks. Scope: one feature/epic.,"Depth: Plans and conducts standard discovery for a feature, synthesizing themes with normal review. Evidenced by: Turns three weeks of interviews and support tickets into a ranked list of underserved needs, with the evidence attached, and presents it without overclaiming. Scope: a product area.","Depth: Independently frames ambiguous problems, selects fitting methods, and separates signal from noise. Evidenced by: Writes an insight document that changes the team's next quarter's plan, and a skeptical peer checking the chain from quote to claim finds it intact. Scope: a product/capability (terminal level).",Depth: Designs the team's discovery approach and untangles findings others find contradictory. Evidenced by: Notices two teams' research write-ups draw opposite conclusions about the same customer segment and runs the joint review that reconciles them into one shared picture. Scope: multiple product areas.,Depth: Sets the org's research strategy and anticipates emerging customer needs before they surface. Evidenced by: Stands up the org's tagging conventions and insight repository so a finding from one team's research is discoverable and reusable by another team a year later. Scope: product organization.,"Depth: Defines what rigorous product discovery means and shapes the discipline's practice externally. Evidenced by: Distills a year of company-wide customer research into the handful of insights the executive team actually reasons from, and retires a piece of long-standing but unsupported folklore. Scope: company portfolio."
-skill,Product Discovery & User Research,Synthesis & Customer Modeling,Customer segmentation & personas,PM-02,"Depth: Documents personas and journey steps from supplied data under direction. Evidenced by: Names which persona a new user story serves when writing it, and flags a proposed feature in review as serving no defined segment. Scope: one feature/epic.","Depth: Builds usable personas and maps journeys for a product area with normal review. Evidenced by: Refreshes their product area's personas from a quarter of new interview and usage data, splitting one persona into two once their behavior clearly diverges. Scope: a product area.","Depth: Independently models complex multi-actor journeys and resolves conflicting user signals. Evidenced by: Names, in a strategy review, exactly who the product is not building for this year, and backs the target-segment choice with sizing data the team can defend. Scope: a product/capability (terminal level).","Depth: Defines modeling standards others adopt and reconciles personas across overlapping segments. Evidenced by: Reconciles two product areas' persona sets that had quietly drifted into describing the same underlying user two different ways, and gets both teams onto one shared map. Scope: multiple product areas.",Depth: Sets persona and journey strategy across the portfolio and predicts shifting behavior patterns. Evidenced by: Owns the org's customer segmentation model and flags a product whose recent roadmap has drifted from the segment it was originally built for. Scope: product organization.,Depth: Establishes industry-recognized methods for journey modeling and teaches them widely. Evidenced by: Updates the company's customer segment map ahead of a market shift that board materials and company strategy then get built around. Scope: company portfolio.
-skill,Problem Definition & Validation,Problem Framing,Problem statements & outcome framing,PM-16,"Depth: Writes a one-page problem statement naming the user, the struggle, and the evidence, with review; separates problem from requested feature when prompted. Evidenced by: Writes a one-page problem statement naming the user, the struggle, and the evidence for their epic, and a reviewer catches where it still smuggles in a feature. Scope: one feature/epic.","Depth: Frames work as outcomes the team can move rather than outputs to ship, and rewrites incoming feature requests into the underlying problem before triage. Evidenced by: Rewrites an incoming stakeholder feature request into the underlying problem before it reaches triage, framing the goal as a movable number rather than a shipped artifact. Scope: a product area.","Depth: Sets the outcome a product is accountable for and keeps the team pointed at it, publicly re-framing efforts that drift into output-counting. Evidenced by: Names, in a planning review, that the team has drifted into counting shipped tickets instead of moving the outcome it owns, and resets the conversation to the number that matters. Scope: a product/capability (terminal level).",Depth: Arbitrates problem framing across teams — spotting duplicated or conflicting framings — and re-cuts problem boundaries drawn along org lines instead of customer lines. Evidenced by: Notices two product areas have quietly defined the same customer problem two incompatible ways and gets both teams working from one reconciled framing. Scope: multiple product areas.,"Depth: Defines an organization's outcome architecture — how team-level outcomes ladder to organizational results — and retires vanity outcomes. Evidenced by: Publishes how team-level outcomes ladder up to the product org's results, and retires a long-tracked metric that turned out to be a vanity number nobody could act on. Scope: product organization.","Depth: Frames an organization's hardest, ownerless problems into tractable outcome statements executives fund; their framing practice shapes the discipline externally. Evidenced by: Takes a company-level problem with no clear owner — churn nobody's roadmap addresses — and frames it into an outcome statement executives fund and a team is staffed against. Scope: company portfolio."
-skill,Problem Definition & Validation,Problem Framing,Jobs-to-be-done framing,PM-17,Depth: Restates a feature request as the job the customer is hiring it for — circumstance and progress sought — with coaching. Evidenced by: Restates a stakeholder's feature request as the job the customer is hiring it for — the circumstance and the progress sought — after a lead points out the request was solution-shaped. Scope: one feature/epic.,"Depth: Maps the main jobs in their area from interview evidence, identifying what customers currently hire and where those hires fail. Evidenced by: Maps the three or four jobs customers hire their product area for from a batch of interviews, and names where a current job is being served badly enough that customers work around it. Scope: a product area.","Depth: Anchors a product's definition and boundaries in its core job, using the job to rule scope in or out and to identify non-obvious competitors. Evidenced by: Rules a proposed feature out of scope because it does not advance the product's core job, and names a competitor outside the product's category that serves the same job better. Scope: a product/capability (terminal level).","Depth: Aligns job maps across teams into one view of customer progress, exposing where customers must stitch products together to finish one job. Evidenced by: Aligns two teams' separate job maps into one view and shows where customers currently stitch both teams' products together to finish a single job neither owns end to end. Scope: multiple product areas.","Depth: Uses jobs analysis to shape organization-level portfolio choices — which jobs are served end-to-end, which are exited. Evidenced by: Uses a jobs-based view of the portfolio to recommend exiting a product line that serves a job the company can no longer serve better than the alternatives customers already use. Scope: product organization.","Depth: Frames markets and strategy in jobs terms that reveal disruption threats early; their jobs analyses influence practice beyond their organization. Evidenced by: Frames an emerging market shift in jobs terms that flags a disruption threat before competitors name it, and the analysis gets cited by other companies watching the same market. Scope: company portfolio."
-skill,Problem Definition & Validation,Assumption Testing & Validation,Assumption mapping & risk framing,PM-18,"Depth: Lists the assumptions behind a proposed feature, sorts them by risk with coaching, and runs a prescribed simple test, logging what was learned. Evidenced by: Lists the desirability, viability, feasibility, and usability assumptions behind a proposed feature with a lead's coaching, and runs the one prescribed prototype test the lead assigned. Scope: one feature/epic.","Depth: Identifies the riskiest assumption before build and matches the test type to it — prototype, painted door, concierge — with pass/fail defined in advance. Evidenced by: Names the riskiest assumption in a proposed bet before any build starts, picks a painted-door test to match it, and writes down the pass/fail bar before launching it. Scope: a product area.","Depth: Surfaces assumptions others treat as facts, designs test sequences that retire the most risk per unit effort, and kills initiatives whose load-bearing assumptions fail. Evidenced by: Kills an initiative in flight after a pre-mortem surfaces a load-bearing assumption the team had been quietly treating as a fact, naming the evidence and the trade-off in the write-up. Scope: a product/capability (terminal level).","Depth: Standardizes how multiple teams express and rank risk, and rejects validation theater — tests that can only confirm, never falsify — before major commitments. Evidenced by: Standardizes how three teams express and compare risk on their bets and rejects a test design that could only ever confirm the team's existing plan. Scope: multiple product areas.","Depth: Builds discovery-testing capability into an organization's investment process — funding follows tested assumptions, and the cost of a first test drops to hours. Evidenced by: Gets the org's investment process to require a tested-assumption map before funding a major bet, dropping the cost of a first test from weeks to hours. Scope: product organization.","Depth: Structures bets too big to A/B as staged, falsifiable commitments; their validation doctrine is cited and adopted beyond their organization. Evidenced by: Structures a bet too large to A/B — a new pricing model — as a sequence of staged, falsifiable commitments, and other companies cite the approach when facing similar bets. Scope: company portfolio."
-skill,Problem Definition & Validation,Assumption Testing & Validation,Assumption testing & experiments,PM-18,"Depth: Lists the assumptions behind a proposed feature, sorts them by risk with coaching, and runs a prescribed simple test, logging what was learned. Evidenced by: Builds a fake-door test from a design a senior PM already specified, launches it exactly as instructed, and logs what the click-through data showed. Scope: one feature/epic.","Depth: Identifies the riskiest assumption before build and matches the test type to it — prototype, painted door, concierge — with pass/fail defined in advance. Evidenced by: Picks a painted-door test to check demand for a proposed feature, defines the click-through rate that counts as a pass before launching it, and reports the result honestly when it fails. Scope: a product area.","Depth: Surfaces assumptions others treat as facts, designs test sequences that retire the most risk per unit effort, and kills initiatives whose load-bearing assumptions fail. Evidenced by: Designs a sequence of three cheap tests that retires the two riskiest assumptions behind a bet in a week, and cancels a fourth test whose result couldn't have changed the team's decision either way. Scope: a product/capability (terminal level).","Depth: Standardizes how multiple teams express and rank risk, and rejects validation theater — tests that can only confirm, never falsify — before major commitments. Evidenced by: Redesigns another team's third inconclusive prototype test — the problem was the test, not the users — instead of letting them rerun the same test at larger scale. Scope: multiple product areas.","Depth: Builds discovery-testing capability into an organization's investment process — funding follows tested assumptions, and the cost of a first test drops to hours. Evidenced by: Builds a shared prototype-testing panel and painted-door toolkit that drops the org's cost of a first test from a two-week build to an afternoon. Scope: product organization.","Depth: Structures bets too big to A/B as staged, falsifiable commitments; their validation doctrine is cited and adopted beyond their organization. Evidenced by: Designs a staged, falsifiable validation plan for a bet on an entirely new pricing model too large to A/B, with milestones the company can kill the bet against. Scope: company portfolio."
-skill,Problem Definition & Validation,Assumption Testing & Validation,Prototype & solution testing,PM-18,"Depth: Lists the assumptions behind a proposed feature, sorts them by risk with coaching, and runs a prescribed simple test, logging what was learned. Evidenced by: Runs a moderated usability test of an existing clickable prototype from a task script a designer wrote, noting where the participant stalls without explaining the design to them. Scope: one feature/epic.","Depth: Identifies the riskiest assumption before build and matches the test type to it — prototype, painted door, concierge — with pass/fail defined in advance. Evidenced by: Pairs with design to build a low-fidelity prototype that matches the question at hand, tests it with five users, and reports what changed between rounds and why. Scope: a product area.","Depth: Surfaces assumptions others treat as facts, designs test sequences that retire the most risk per unit effort, and kills initiatives whose load-bearing assumptions fail. Evidenced by: Chooses live-data testing over a prototype for a bet where the real signal only shows up under real usage, and the team commits to build once the evidence is sufficient by a bar set in advance. Scope: a product/capability (terminal level).","Depth: Standardizes how multiple teams express and rank risk, and rejects validation theater — tests that can only confirm, never falsify — before major commitments. Evidenced by: Reviews another team's solution test ahead of a major commitment and catches that the test, as designed, could only ever confirm the team already wanted to build it. Scope: multiple product areas.","Depth: Builds discovery-testing capability into an organization's investment process — funding follows tested assumptions, and the cost of a first test drops to hours. Evidenced by: Builds the org's shared prototyping panel and fidelity norms so every team's default is to test a solution cheaply before committing engineering time to it. Scope: product organization.","Depth: Structures bets too big to A/B as staged, falsifiable commitments; their validation doctrine is cited and adopted beyond their organization. Evidenced by: Represents test-before-build as company doctrine in front of executives pushing for a committed roadmap without evidence, and the practice holds. Scope: company portfolio."
-skill,Product Strategy & Vision,Strategy & Positioning,Product strategy formulation,PM-04,"Depth: Drafts positioning statements from a given strategy under direction. Evidenced by: Drafts the positioning statement for their epic from the strategy their lead already set, and revises it twice on review before it holds up. Scope: one feature/epic.",Depth: Articulates strategy and positioning for one product with normal review. Evidenced by: Writes down their product area's priorities as explicit choices — what they are doing and what they are deliberately not — and flags a request that doesn't serve the stated strategy. Scope: a product area.,"Depth: Independently sets coherent strategy amid ambiguity and defends hard trade-offs. Evidenced by: Writes the diagnosis, guiding policy, and coherent bets for their product's strategy, and defends the resulting kill-list to the stakeholders who proposed the killed work. Scope: a product/capability (terminal level).","Depth: Defines the strategy framework teams adopt and resolves conflicting strategic bets. Evidenced by: Writes a strategy framework that two other product teams adopt as the frame for their own areas, and reviews a peer's area strategy for a diagnosis that doesn't match its stated bets. Scope: multiple product areas.","Depth: Owns portfolio-level strategy and anticipates where the market is heading. Evidenced by: Shapes where the product org concentrates investment and where it deliberately starves a line, in a document leadership funds against. Scope: product organization.","Depth: Defines what good product strategy means for the discipline and influences practice externally. Evidenced by: Co-authors the company's strategy from the product side, and the shape of the portfolio a year later reflects arguments made in that document. Scope: company portfolio."
-skill,Product Strategy & Vision,Strategy & Positioning,Positioning & differentiation,PM-04,"Depth: Drafts positioning statements from a given strategy under direction. Evidenced by: States who a new feature is for, what it replaces, and why it wins in two sentences that match the team's existing positioning canvas. Scope: one feature/epic.","Depth: Articulates strategy and positioning for one product with normal review. Evidenced by: Flags in review that a proposed feature would blur their area's positioning against a named competitive alternative, and gets the scope adjusted before it ships. Scope: a product area.","Depth: Independently sets coherent strategy amid ambiguity and defends hard trade-offs. Evidenced by: Repositions a product after a competitor's launch shifts the market, running the alternatives analysis in writing, and marketing builds the next campaign from that document. Scope: a product/capability (terminal level).","Depth: Defines the strategy framework teams adopt and resolves conflicting strategic bets. Evidenced by: Resolves a case where two products in the same family were quietly undercutting each other's positioning in sales conversations, and issues one coherent family positioning doc. Scope: multiple product areas.","Depth: Owns portfolio-level strategy and anticipates where the market is heading. Evidenced by: Sets which capabilities the org will be known for this year and which it will deliberately not compete on, and holds two roadmaps to that line when they drift. Scope: product organization.",Depth: Defines what good product strategy means for the discipline and influences practice externally. Evidenced by: Makes the category-redefinition argument that gets picked up by industry analysts covering the company's market. Scope: company portfolio.
-skill,Product Strategy & Vision,"Vision, Roadmaps & Goals",Product vision narrative,PM-06,"Depth: Translates a stated vision into concrete goals under direction. Evidenced by: Explains to a new teammate why their epic matters by retelling the product vision accurately, without needing the lead to translate it. Scope: one feature/epic.","Depth: Sets clear, measurable goals for a product area with normal review. Evidenced by: Points out in a planning review that a proposed feature leads the roadmap away from the stated vision, and gets the team realigned before committing the sprint. Scope: a product area.",Depth: Independently crafts a compelling vision and cascades aligned goals through ambiguity. Evidenced by: Writes a press-release-style vision doc that an engineer cites unprompted three months later to justify a local design decision. Scope: a product/capability (terminal level).,Depth: Defines goal-setting frameworks others adopt and aligns competing visions. Evidenced by: Writes a vision artifact that resolves a contradiction between two product areas' separate visions before either team ships something the other would have to walk back. Scope: multiple product areas.,Depth: Sets enduring vision across the portfolio and anticipates long-horizon shifts. Evidenced by: Owns the product org's north-star narrative and visibly retires it in favor of a new one once the underlying diagnosis has changed. Scope: product organization.,Depth: Shapes how the discipline frames product vision and is externally credible on it. Evidenced by: Writes the product future narrative used in the company's fundraising deck and cited in board discussions of where the company is headed. Scope: company portfolio.
-skill,Product Strategy & Vision,"Vision, Roadmaps & Goals",Outcome-based roadmapping,PM-05,"Depth: Maintains roadmap items and updates status under guidance. Evidenced by: Keeps their epic's roadmap entry current — status, confidence, what was learned — and explains to a stakeholder why it shows a quarter, not a date. Scope: one feature/epic.",Depth: Builds and sequences a credible roadmap for one product with normal review. Evidenced by: Builds their product area's now/next/later roadmap around outcomes and holds the line when a stakeholder pushes to convert 'later' into a committed date. Scope: a product area.,"Depth: Independently balances competing priorities and replans confidently under shifting constraints. Evidenced by: Trades scope for outcome with a VP in a roadmap review and shows, in the same meeting, exactly which discovery evidence justifies the change from last quarter's plan. Scope: a product/capability (terminal level).",Depth: Designs the planning approach others use and resolves cross-team portfolio conflicts. Evidenced by: Surfaces a dependency between two areas' roadmaps that would have collided mid-quarter and re-sequences both before either team commits the conflicting work. Scope: multiple product areas.,"Depth: Sets portfolio planning strategy and foresees where investment should shift next. Evidenced by: Owns the cadence and confidence-language format every product team's roadmap uses, and defends the now/next/later structure when an executive asks for firm dates the evidence can't support. Scope: product organization.","Depth: Defines portfolio-planning best practice for the field and is recognized for it. Evidenced by: Presents the company's portfolio roadmap to the board as a strategy narrative, and sets the company-wide norm for what a roadmap does and doesn't promise. Scope: company portfolio."
-skill,Product Strategy & Vision,"Vision, Roadmaps & Goals",Goal setting & OKRs,PM-06,"Depth: Translates a stated vision into concrete goals under direction. Evidenced by: Writes a measurable key result for their epic that names a user or business change rather than a shipped artifact, with a lead's review catching the first draft's vanity metric. Scope: one feature/epic.","Depth: Sets clear, measurable goals for a product area with normal review. Evidenced by: Sets their product area's quarterly OKRs, and at quarter end grades honestly that a key result was hit but the underlying goal wasn't actually moved. Scope: a product area.","Depth: Independently crafts a compelling vision and cascades aligned goals through ambiguity. Evidenced by: Pushes back on a cascaded target the team's own evidence doesn't support, and re-scopes a key result mid-quarter once new data shows the original one was set wrong. Scope: a product/capability (terminal level).","Depth: Defines goal-setting frameworks others adopt and aligns competing visions. Evidenced by: Reviews a peer's team's OKRs, catches a key result that's really an output count in disguise, and coaches the rewrite into something the team can actually be judged against. Scope: multiple product areas.","Depth: Sets enduring vision across the portfolio and anticipates long-horizon shifts. Evidenced by: Designs how product-team OKRs ladder to company-level results without becoming a chain of restated numbers, and runs the calibration session where two teams' conflicting goals get resolved. Scope: product organization.","Depth: Shapes how the discipline frames product vision and is externally credible on it. Evidenced by: Holds the line on measurable, outcome-based objectives at the executive table when a leader proposes a vague, unmeasurable company goal for the year. Scope: company portfolio."
-skill,Data & Analytics,Metrics & Behavioral Analysis,Success metrics & KPI design,PM-10,"Depth: Pulls and reports defined product metrics under direction. Evidenced by: Pulls and reports the metrics their lead already defined for a launched feature, distinguishing a vanity count from an actionable rate with guidance when asked. Scope: one feature/epic.","Depth: Builds and interprets metric dashboards for a product with normal review. Evidenced by: Builds and owns the dashboard for their product area's metrics tree, retiring a metric that had been moving without anyone able to say why it mattered. Scope: a product area.","Depth: Independently designs metric frameworks and draws sound conclusions from messy data. Evidenced by: Designs the single metric their product is judged by and defends, to a leadership team wanting a friendlier number, why the current one is the honest one despite the bad quarter it's showing. Scope: a product/capability (terminal level).","Depth: Defines the measurement model teams adopt and diagnoses misleading metrics others trust. Evidenced by: Reconciles three teams' different definitions of 'activation' into one shared definition, and catches a proposed new metric that would reward a perverse shortcut before it ships. Scope: multiple product areas.","Depth: Sets product-analytics strategy across the org and anticipates which signals will matter. Evidenced by: Sets the org's north-star metric framework and guardrail policy, and audits a team's dashboard that turns out not to reflect what's actually happening with users. Scope: product organization.",Depth: Defines rigorous product measurement for the discipline and is cited externally on it. Evidenced by: Defines how the company connects product metrics to financial outcomes in a model the finance team uses directly in board reporting. Scope: company portfolio.
-skill,Data & Analytics,Metrics & Behavioral Analysis,Funnel & behavioral analysis,PM-10,Depth: Pulls and reports defined product metrics under direction. Evidenced by: Pulls their feature's funnel numbers from the analytics stack and reports the drop-off honestly without guessing at a cause the data doesn't show. Scope: one feature/epic.,"Depth: Builds and interprets metric dashboards for a product with normal review. Evidenced by: Runs a cohort analysis that locates exactly which step of their area's funnel is leaking value, then pairs it with a handful of interviews to explain why before proposing a fix. Scope: a product area.","Depth: Independently designs metric frameworks and draws sound conclusions from messy data. Evidenced by: Catches that a colleague's promising-looking retention chart is a seasonality artifact, not a real improvement, before it gets presented as a win. Scope: a product/capability (terminal level).","Depth: Defines the measurement model teams adopt and diagnoses misleading metrics others trust. Evidenced by: Traces a customer journey that crosses two products' boundaries and quantifies friction — a re-login, a re-entered form — that neither team's own dashboard was built to show. Scope: multiple product areas.",Depth: Sets product-analytics strategy across the org and anticipates which signals will matter. Evidenced by: Builds the org's self-serve analytics tooling so teams can answer their own funnel questions correctly without waiting on a data-science queue. Scope: product organization.,"Depth: Defines rigorous product measurement for the discipline and is cited externally on it. Evidenced by: Spots an early portfolio-level usage shift that presages churn in a major segment months before it shows up in revenue, and gets the company to act on it. Scope: company portfolio."
-skill,Data & Analytics,Experimentation & Decision Quality,A/B test design & analysis,PM-11,"Depth: Runs predefined experiments and records results under supervision. Evidenced by: Runs an A/B test exactly as an analyst designed it, records the results without touching the analysis method, and waits for the pre-agreed end date. Scope: one feature/epic.","Depth: Designs and analyzes a standard A/B test with normal review. Evidenced by: Designs and ships an A/B test for their own feature — power calculation, guardrail metrics, no peeking — and writes up a null result honestly instead of quietly shelving it. Scope: a product area.","Depth: Independently designs valid experiments and interprets ambiguous or conflicting results. Evidenced by: Catches a sample-ratio mismatch in a colleague's experiment before its result gets used to justify a launch, and is the person their own product's other PMs ask to sanity-check a test design before it ships. Scope: a product/capability (terminal level).","Depth: Defines experimentation standards others adopt and rescues flawed test designs. Evidenced by: Audits experiment practice across three teams, catches a pattern of rerunning tests until they hit significance, and gets one shared readout format adopted everywhere. Scope: multiple product areas.",Depth: Sets the org's experimentation strategy and anticipates where testing should expand. Evidenced by: Builds the org's experimentation platform requirements and a repository of past results so a new test doesn't reinvent an intervention that's already been tried and failed. Scope: product organization.,"Depth: Defines experimentation rigor for the discipline and influences external practice. Evidenced by: Sets company policy on where A/B testing is mandatory before a launch and where judgment rightly overrides it, and the policy holds under executive pressure to skip it. Scope: company portfolio."
-skill,Data & Analytics,Experimentation & Decision Quality,Decision quality under uncertainty,LI-04,"Depth: Makes well-defined decisions; asks good questions when blocked. Evidenced by: Writes down the options considered and the reasoning before a decision on their epic, and separates a bad outcome from a bad decision in the retro when a lead prompts them to. Scope: one feature/epic.","Depth: Decides independently within their components; evaluates alternatives honestly. Evidenced by: States their confidence level and whether a call is reversible before deciding, moving fast on the two-way doors and slowing down on the one-way ones, and keeps a decision log the team consults. Scope: a product area.","Depth: Makes architectural choices for a domain that hold up over months. Evidenced by: Names the strongest disconfirming evidence against their own plan before a stakeholder can raise it, and changes course publicly once new data proves the original call wrong. Scope: a product/capability (terminal level).","Depth: Foresees second-order consequences; sets decision frameworks for teams. Evidenced by: Reviews another PM's high-stakes decision before it's committed, catches a sunk-cost pattern in the reasoning, and the decision-record format spreads to two other teams. Scope: multiple product areas.","Depth: Sets decision-making frameworks for the org. Evidenced by: Designs the org's decision mechanism — who decides what, at what evidence bar, with what escalation path — and runs a pre-mortem on the year's biggest bet. Scope: product organization.","Depth: Visionary judgment; sees structural causes others miss. Evidenced by: Gets pulled into a company-level decision precisely because their reasoning record is public and audited, and their judgment settles a call nobody else could resolve. Scope: company portfolio."
-skill,Execution & Delivery,Prioritization & Trade-offs,Prioritization & sequencing,PD-02,"Depth: Works highest-priority-first when told the priorities. Evidenced by: Orders their epic's backlog with stated reasoning — value, urgency, dependency — and re-orders it without protest when a lead points out a fact has changed. Scope: one feature/epic.",Depth: Makes sound priority calls within scope; time-boxes uncertain work. Evidenced by: Prioritizes their product area's backlog using an explicit cost-of-delay estimate and shows the math when a stakeholder challenges the order. Scope: a product area.,"Depth: Balances cost/value/risk across a domain; resists hype; decisions hold up over months. Evidenced by: Sequences a quarter's work across debt, features, and a compliance deadline with written trade-off reasoning stakeholders accept even when their request loses. Scope: a product/capability (terminal level).","Depth: Expert at portfolio-level trade-offs; surfaces hidden assumptions; trusted tiebreaker. Evidenced by: Moves a chunk of scope from one team to another when the portfolio-level cost-of-delay math demands it, with the displaced team's agreement documented. Scope: multiple product areas.","Depth: Sets decision frameworks for the org. Evidenced by: Builds the explicit framework the org uses to split investment across run, grow, and transform work, and defends it through a planning cycle that tries to override it. Scope: product organization.","Depth: Influences company strategic direction through judgment. Evidenced by: Makes the economic case that gets a product line harvested rather than continuing to be funded, using cost-of-delay reasoning the leadership team accepts. Scope: company portfolio."
-skill,Execution & Delivery,Prioritization & Trade-offs,Scope-cutting & trade-offs,PD-01,"Depth: Breaks own tasks into reviewable pieces with guidance. Evidenced by: Breaks their feature into reviewable pieces with a lead's guidance, and writes down what's lost if the last piece has to be cut. Scope: one feature/epic.","Depth: Independently decomposes a feature into shippable slices. Evidenced by: Cuts a feature's scope decisively when the sprint slips, protects the outcome-critical path, and tells the affected stakeholder before they notice on their own. Scope: a product area.","Depth: Plans complex multi-phase work (prototype-then-commit under uncertainty); sequences safely. Evidenced by: Negotiates a scope-versus-quality trade-off with engineering as a peer, distinguishing an MVP that genuinely tests the hypothesis from a demo that only fakes it. Scope: a product/capability (terminal level).","Depth: Expert at structuring large initiatives to de-risk early; anticipates bottlenecks. Evidenced by: Sets the shared definition of 'minimum' for a launch that spans three teams, untangling a scope disagreement that would otherwise have broken one team's release. Scope: multiple product areas.","Depth: Shapes how the org plans and sequences major change. Evidenced by: Sets the org's quality floor and cut-decision authority, and personally intervenes when a flagship initiative is bloating toward a death march. Scope: product organization.","Depth: Defines the company-wide approach to delivering value incrementally. Evidenced by: Makes the company-level call to ship the narrow wedge instead of the full platform play, and the rest of the portfolio sequences its bets around that decision. Scope: company portfolio."
-skill,Execution & Delivery,Building with the Team,Product trio partnership,CC-03,"Depth: Responsive to feedback; pairs willingly; asks for help appropriately. Evidenced by: Takes feedback from an engineer's pushback on a spec without defensiveness, and asks the designer for help scoping a problem instead of guessing alone. Scope: one feature/epic.","Depth: Collaborates smoothly with adjacent functions; handles disagreement constructively. Evidenced by: Runs a working trio where the engineer joins discovery calls and the designer sees the strategy context, so a technical constraint reshapes the plan in the room instead of becoming a later escalation. Scope: a product area.","Depth: Builds strong cross-team relationships; resolves friction directly. Evidenced by: Builds a team that engineers ask to be assigned to, sharing full business context and visibly deferring to the best idea in a decision record regardless of whose it was. Scope: a product/capability (terminal level).","Depth: Expert at aligning teams with competing priorities; mediates disputes between senior people. Evidenced by: Diagnoses that a struggling team's dysfunction is context-starvation rather than a trust problem, and coaches the PM through fixing it. Scope: multiple product areas.","Depth: Creates the forums and processes through which collaboration happens. Evidenced by: Shapes the org's team model — how trios form, how tech-debt time gets protected — in norms engineering and design leadership both sign off on. Scope: product organization.","Depth: Builds coalitions at company scale and externally. Evidenced by: Argues the empowered-team model at the executive level when delivery pressure is pushing the org toward feature factories, and the model holds. Scope: company portfolio."
-skill,Execution & Delivery,Building with the Team,"Requirements, specs & acceptance criteria",PM-07,"Depth: Writes requirements from supplied input and refines them under review. Evidenced by: Writes user stories with acceptance criteria from a lead's outline, and updates the spec twice as review catches gaps in the edge cases. Scope: one feature/epic.","Depth: Authors complete, testable specs for standard features with normal review. Evidenced by: Writes a one-pager that leads with the customer problem and success measure for a standard feature, and the build raises design questions rather than intent questions. Scope: a product area.","Depth: Independently specifies ambiguous, cross-cutting features and resolves edge cases cleanly. Evidenced by: Specifies a cross-cutting feature touching three systems, resolving edge cases the initial ask never anticipated, and a reviewer's comments on the spec prevent a rework two weeks later. Scope: a product/capability (terminal level).","Depth: Defines specification standards others adopt and untangles the hardest requirement conflicts. Evidenced by: Sets the definition-of-ready standard two other teams adopt, and catches an interface gap between two teams' specs that would have silently conflicted at integration. Scope: multiple product areas.","Depth: Sets specification strategy across teams and anticipates downstream definition needs. Evidenced by: Owns what 'ready to build' means across the product org, and their document review is the quality gate a major initiative has to pass before engineering starts. Scope: product organization.","Depth: Defines what excellent product specification means and influences the practice externally. Evidenced by: Writes the founding narrative document for a new portfolio bet, with a hit rate on greenlit narratives the company has come to trust. Scope: company portfolio."
-skill,Execution & Delivery,Building with the Team,Backlog & delivery flow,PM-08,"Depth: Updates and grooms backlog items under direction. Evidenced by: Keeps their epic's stories small, ordered, and ready two sprints ahead, and can answer 'what's next and why' without opening the tracking tool. Scope: one feature/epic.","Depth: Prioritizes and maintains a healthy backlog for one team with normal review. Evidenced by: Maintains a story map that shows their area's release strategy at a glance, and watches WIP and cycle time with the team without waiting for someone else to flag a problem. Scope: a product area.","Depth: Independently sequences contested work and keeps the backlog coherent under churn. Evidenced by: Diagnoses that a team's slipping deadlines are a queue-buildup problem, not a motivation problem, and fixes the batch size rather than pushing the team to work harder. Scope: a product/capability (terminal level).",Depth: Defines backlog practices others follow and resolves cross-team prioritization disputes. Evidenced by: Resolves a cross-team prioritization dispute using a shared backlog-sequencing standard other PMs have adopted from their earlier work. Scope: multiple product areas.,"Depth: Sets backlog-management strategy across products and anticipates capacity tensions. Evidenced by: Improves the org's idea-to-live lead time by changing planning and handoff mechanics, with before-and-after numbers to show it. Scope: product organization.",Depth: Defines backlog-management best practice for the discipline and is recognized for it. Evidenced by: Removes a company-scale delivery bottleneck — a shared review gate every team was queuing behind — with executive backing they built the case for. Scope: company portfolio.
-skill,Execution & Delivery,Building with the Team,Technical & design fluency,LI-06,"Depth: Follows the team's technical discussions and asks clarifying questions; relies on others to evaluate design quality. Evidenced by: Follows the team's architecture discussion and asks a clarifying question that shows they did the reading, deferring to the engineers on which design is better. Scope: one feature/epic.","Depth: Understands the systems in scope well enough to review designs, probe trade-offs, and triage incidents — earns technical respect without taking the keyboard. Evidenced by: Reviews a proposed design well enough to raise a scalability question before an engineer has to, and triages a live incident credibly without touching the code. Scope: a product area.","Depth: Maintains depth across a complex system's stack and hardest problems; a credible thought-partner to the most senior engineers, pairing them with the context they need. Evidenced by: Holds their own in an architecture trade-off discussion, spotting that a proposed solution fights the existing system before the team commits to it, and engineers bring them options early because the conversation is worth it. Scope: a product/capability (terminal level).","Depth: Maintains depth across a complex system's stack and hardest problems; a credible thought-partner to the most senior engineers, pairing them with the context they need. Evidenced by: Bridges a technical constraint between two teams' roadmaps that neither team's own engineers had connected, translating the platform trade-off into terms the other PM can act on. Scope: multiple product areas.","Depth: Retains broad credibility across a multi-team domain — credible on its hardest cross-cutting technical questions, current enough to ask the question that changes a design. Evidenced by: Keeps the product org's planning technically honest by representing platform realities in a strategy review, deferring the deepest technical call to the engineering leader in the room. Scope: product organization.","Depth: Retains broad credibility across a multi-team domain — credible on its hardest cross-cutting technical questions, current enough to ask the question that changes a design. Evidenced by: Frames a company-level build-versus-buy technology inflection in product terms clearly enough that executives act on the translation, while the technical authority for the decision itself stays with engineering leadership. Scope: company portfolio."
-skill,Execution & Delivery,Launch & Iteration,Launch management & readiness,PM-09,"Depth: Executes assigned launch tasks and tracks checklist items under guidance. Evidenced by: Runs the launch checklist for their feature — flags, docs, support notes — and staffs first-day triage, escalating what they can't resolve to their lead. Scope: one feature/epic.","Depth: Coordinates a standard product launch across functions with normal review. Evidenced by: Plans a standard launch end to end: rollout stages and rollback criteria decided in advance, every dependent function briefed before go-live. Scope: a product area.","Depth: Independently orchestrates complex launches and recovers when plans go sideways. Evidenced by: Makes the go/no-go call on a ramping launch under pressure using criteria set the week before, not in the moment, and runs the post-launch review that feeds the next iteration. Scope: a product/capability (terminal level).","Depth: Defines the go-to-market playbook others adopt and rescues high-stakes launches. Evidenced by: Owns the integrated go/no-go for a launch spanning three teams' products, sequencing each team's dependency so no single team's slip silently blocks the others. Scope: multiple product areas.","Depth: Sets go-to-market strategy across the portfolio and anticipates market-timing risks. Evidenced by: Sets the org's ramp-policy and readiness standards, and is the escalation point when a launch with company-level blast radius needs a call above any one team. Scope: product organization.","Depth: Defines what great go-to-market means for the field and shapes external practice. Evidenced by: Owns the go/no-go for a launch with company-wide stakes as a high-integrity commitment the whole company is briefed on, not just engineering. Scope: company portfolio."
-skill,Execution & Delivery,Launch & Iteration,Post-launch iteration & lifecycle,PM-10,"Depth: Pulls and reports defined product metrics under direction. Evidenced by: Reports their feature's week-one usage numbers exactly as their lead asked, without yet proposing what the team should do differently. Scope: one feature/epic.",Depth: Builds and interprets metric dashboards for a product with normal review. Evidenced by: Reads a newly-launched feature's numbers against the product's current lifecycle stage and proposes the next iteration to try before the next planning cycle. Scope: a product area.,"Depth: Independently designs metric frameworks and draws sound conclusions from messy data. Evidenced by: Makes the persevere-pivot-kill call on a six-month-old feature using its own metric framework, and the recommendation holds up under a skeptical leadership review. Scope: a product/capability (terminal level).","Depth: Defines the measurement model teams adopt and diagnoses misleading metrics others trust. Evidenced by: Diagnoses that a metric two other teams trust as a success signal is actually misleading at this lifecycle stage, and gets both teams onto a corrected measurement model. Scope: multiple product areas.","Depth: Sets product-analytics strategy across the org and anticipates which signals will matter. Evidenced by: Sets the analytics strategy for what 'iterating well post-launch' means across the whole product org, anticipating which signals will matter before a product reaches that stage. Scope: product organization.",Depth: Defines rigorous product measurement for the discipline and is cited externally on it. Evidenced by: Defines a measurement discipline for post-launch iteration that gets cited by other companies as a rigorous approach to persevere/pivot/kill decisions. Scope: company portfolio.
-skill,"Business, Market & Go-to-Market",Business Fluency,Business model & unit economics,PD-07,"Depth: States what business outcome their current task serves — and asks when they can't — treating infrastructure and license costs as real money. Evidenced by: States which business outcome their current task serves when a lead asks, and flags that a chosen third-party tool carries a real per-seat license cost, not just an engineering cost. Scope: one feature/epic.","Depth: Checks whether shipped work actually moved its metric and says so plainly when it didn't; weighs cost and maintenance burden in the technical choices they own. Evidenced by: Checks whether a feature shipped last quarter actually moved its target metric, and says plainly in the retro that it didn't, rather than letting the shipped-it framing stand. Scope: a product area.","Depth: Frames a domain's technical decisions in business terms — cost of delay, revenue risk, support load — pushes back on work with weak business rationale, and redirects effort when the numbers say the plan is wrong. Evidenced by: Redirects a team's roadmap away from a planned initiative once cost-of-delay and support-load numbers show a cheaper, faster path serves the same outcome. Scope: a product/capability (terminal level).","Depth: Builds the business case for the cross-team technical investments with the largest return and is trusted by leadership to have done the math. Evidenced by: Builds the business case for a cross-team platform investment with the largest expected return, and leadership funds it on the strength of the math. Scope: multiple product areas.","Depth: Aligns an organization's technical strategy with its economics — cost curves, velocity, risk — owning trade-offs measured in staff-years and reporting them in the business's own terms. Evidenced by: Aligns the org's technical investment strategy with its cost curve and velocity trends, owning a trade-off measured in staff-years that leadership signs off on. Scope: product organization.","Depth: Advises company leadership on where technology changes the business model and is accountable for company-level technology bets paying off. Evidenced by: Advises company leadership on where a technology shift changes the business model itself, and is held accountable for whether the resulting company-level bet pays off. Scope: company portfolio."
-skill,"Business, Market & Go-to-Market",Business Fluency,Pricing & packaging,PM-12,"Depth: Populates pricing models with supplied assumptions under direction. Evidenced by: Fills in a pricing model with the cost and margin assumptions a lead supplied, and asks when an input looks wrong rather than silently accepting it. Scope: one feature/epic.","Depth: Builds a sound business model for one product with normal review. Evidenced by: Builds the revenue-stream section of a new feature's business model using the team's standard canvas, and it holds up under normal review. Scope: a product area.","Depth: Independently structures pricing under uncertainty and defends margin trade-offs. Evidenced by: Defends a value-based price increase to a skeptical sales leader with a margin trade-off argument, instead of defaulting to a cost-plus number that's easier to justify. Scope: a product/capability (terminal level).","Depth: Defines the modeling approach others adopt and untangles complex monetization questions. Evidenced by: Defines the pricing-modeling approach two other product teams adopt, and untangles a monetization question — a bundling decision with conflicting margin implications — no single team's model could resolve. Scope: multiple product areas.","Depth: Sets pricing strategy across the portfolio and anticipates market and cost shifts. Evidenced by: Sets the portfolio's pricing strategy for the year, anticipating a cost shift in a key input before it forces a reactive repricing. Scope: product organization.","Depth: Defines pricing and business-modeling best practice for the field and is recognized for it. Evidenced by: Defines a pricing and business-modeling practice recognized in the field, with other companies' pricing teams citing the approach. Scope: company portfolio."
-skill,"Business, Market & Go-to-Market",Market & Domain Insight,Competitive & market analysis,PM-03,"Depth: Gathers competitor facts and populates comparison grids under guidance. Evidenced by: Populates a competitive comparison grid with facts a lead asked them to gather, and gets it corrected twice on review before it's accurate. Scope: one feature/epic.","Depth: Produces a sound competitive analysis for a product with normal review. Evidenced by: Produces a competitive analysis for their product using the team's standard framework, and it holds up without a rewrite in the next planning cycle. Scope: a product area.","Depth: Independently reads ambiguous markets and frames defensible positioning implications. Evidenced by: Reads an ambiguous, fragmenting market correctly enough to argue the product hasn't crossed the chasm yet, and rewrites their product's positioning to match before the next release. Scope: a product/capability (terminal level).","Depth: Defines the analytical approach others follow and decodes confusing competitive dynamics. Evidenced by: Defines the competitive-analysis method two other product teams adopt, and decodes a confusing competitive move — a rival's pricing change that looked irrational — that had stumped both teams. Scope: multiple product areas.","Depth: Sets market-analysis strategy and anticipates structural shifts before competitors react. Evidenced by: Anticipates a structural market shift a full product cycle before competitors react to it, and repositions the portfolio's investment ahead of the shift. Scope: product organization.","Depth: Shapes how the field interprets product-market fit and is cited externally on it. Evidenced by: Shapes how the field talks about product-market fit in this category, cited by analysts and competitors alike. Scope: company portfolio."
-skill,"Business, Market & Go-to-Market",Market & Domain Insight,Domain & industry fluency,PM-19,"Depth: Learns the domain deliberately — shadows customers, reads industry sources, asks how the system actually works — and uses domain vocabulary correctly. Evidenced by: Shadows a customer support call and reads the industry's standard reference material, and uses the domain's own vocabulary correctly in their first spec review. Scope: one feature/epic.","Depth: Answers most domain questions without deferring and corrects domain errors in specs and designs. Evidenced by: Answers a stakeholder's domain question about a regulatory constraint without deferring to a subject-matter expert, and corrects a domain error in an engineer's design before it ships. Scope: a product area.","Depth: Is the recognized domain reference for a product — customers, field teams, and engineers check facts with them — and spots domain-driven risks others miss. Evidenced by: Becomes the person the field team calls to fact-check a claim about how the industry's workflow actually works, and spots a domain-driven risk in a proposed feature nobody else caught. Scope: a product/capability (terminal level).","Depth: Connects domain knowledge across teams, catching where one roadmap violates another domain's constraints (regulatory, workflow, ecosystem). Evidenced by: Catches that one team's roadmap assumes a regulatory workflow another team's domain constraints actually forbid, before either team ships something that has to be walked back. Scope: multiple product areas.","Depth: Represents an organization's domain understanding externally — industry forums, advisory boards, analyst briefings. Evidenced by: Represents the org's domain understanding on an industry advisory board, bringing back a signal the org's roadmap hadn't accounted for. Scope: product organization.",Depth: Anticipates domain evolution — where the industry's workflows and rules are heading — and positions portfolios for it before consensus forms. Evidenced by: Positions the portfolio ahead of a domain shift — a regulatory change on the horizon — before industry consensus has formed that it's coming. Scope: company portfolio.
-skill,"Business, Market & Go-to-Market",Go-to-Market Partnership,GTM planning & partnership,PM-09,Depth: Executes assigned launch tasks and tracks checklist items under guidance. Evidenced by: Executes their assigned launch-day tasks from the GTM checklist and escalates a customer-support question they can't answer to the person who can. Scope: one feature/epic.,"Depth: Coordinates a standard product launch across functions with normal review. Evidenced by: Coordinates a standard launch across sales, marketing, and support using the team's established playbook, with every function briefed before go-live. Scope: a product area.",Depth: Independently orchestrates complex launches and recovers when plans go sideways. Evidenced by: Recovers a launch that isn't landing in its intended beachhead segment by re-targeting mid-rollout instead of pushing harder on a segment that isn't buying. Scope: a product/capability (terminal level).,"Depth: Defines the go-to-market playbook others adopt and rescues high-stakes launches. Evidenced by: Defines the go-to-market playbook two other product teams now use, and personally rescues a launch that had gone sideways days before its public date. Scope: multiple product areas.","Depth: Sets go-to-market strategy across the portfolio and anticipates market-timing risks. Evidenced by: Sets go-to-market strategy across the portfolio, timing two products' launches to avoid cannibalizing each other's market attention. Scope: product organization.","Depth: Defines what great go-to-market means for the field and shapes external practice. Evidenced by: Shapes what great go-to-market means for the field, with the launch approach cited by practitioners outside the company. Scope: company portfolio."
-skill,"Business, Market & Go-to-Market",Go-to-Market Partnership,Field feedback & enablement,PM-14,Depth: Logs interactions and handles routine customer requests under guidance. Evidenced by: Logs a field team's escalated customer request in the team's tracker and hands off routine ones using the process a lead set up. Scope: one feature/epic.,"Depth: Manages standard customer and partner relationships with normal review. Evidenced by: Runs the monthly loop that turns field-team feedback into a prioritized list their product area actually acts on, with normal review from a lead. Scope: a product area.","Depth: Independently nurtures key accounts and resolves difficult relationship conflicts. Evidenced by: Personally rescues a strained relationship with a key account after a rocky launch, and the account renews where the field team had expected a churn. Scope: a product/capability (terminal level).","Depth: Defines relationship-management practices others adopt and salvages strained partnerships. Evidenced by: Defines the field-enablement practice two other teams now use to close their own feedback loops, and salvages a partnership another team's process had let go stale. Scope: multiple product areas.","Depth: Sets relationship strategy across the portfolio and anticipates partner-ecosystem shifts. Evidenced by: Sets partner-ecosystem strategy across the portfolio, anticipating a shift in a key partner's priorities before it disrupts a live integration. Scope: product organization.","Depth: Defines what excellent partner relationship management means and shapes external practice. Evidenced by: Defines what excellent partner relationship management looks like for the discipline, in practice other companies' product teams point to. Scope: company portfolio."
-skill,"Communication, Influence & Craft Leadership",Communication,Product narratives & written communication,CC-01,"Depth: Communicates status clearly; documentation is accurate. Evidenced by: Writes a status update for their epic that says plainly what happened and what's next, without burying the headline in caveats. Scope: one feature/epic.","Depth: Writes clear design notes, runbooks and PRs; explains trade-offs without overselling. Evidenced by: Writes a PRD for a standard feature that explains a trade-off honestly rather than overselling it, and engineers don't need to re-ask the intent. Scope: a product area.",Depth: Writes design docs that drive decisions; translates technical risk for non-technical stakeholders. Evidenced by: Writes a design doc that leads with the decision it's asking for and translates a technical risk into terms a non-technical stakeholder acts on correctly. Scope: a product/capability (terminal level).,"Depth: Expert at making complex capability/risk legible to executives without dumbing it down; RFCs align orgs. Evidenced by: Writes an RFC that aligns three teams' engineering leads on a shared approach, pre-wired against the objections a skeptic would raise. Scope: multiple product areas.","Depth: Strategy memos leadership acts on; org-wide and external reach. Evidenced by: Writes a strategy memo that leadership funds a quarter's roadmap against, with reach beyond their own product organization. Scope: product organization.","Depth: A clarifying voice at company scale; externally recognized. Evidenced by: Is the clarifying voice the company turns to for its hardest external communications, recognized outside the company for writing that cuts through noise. Scope: company portfolio."
-skill,"Communication, Influence & Craft Leadership",Communication,Executive communication,CC-06,Depth: Prepares status updates for leadership with guidance; leads with the headline when coached to. Evidenced by: Prepares a status update for a leadership review with a lead's coaching to lead with the headline instead of the chronology. Scope: one feature/epic.,"Depth: Reports upward answer-first with a specific ask; escalates early with options attached, so no surprise reaches leadership from someone else. Evidenced by: Reports upward with the ask stated first and two options attached, so no surprise reaches their VP from someone else first. Scope: a product area.","Depth: Briefs senior leaders under pressure — facts, impact, options, and a recommendation inside the first two minutes; one-pagers get forwarded unedited. Evidenced by: Briefs a room of senior leaders under time pressure with facts, impact, options, and a recommendation inside the first two minutes, and the one-pager gets forwarded unedited. Scope: a product/capability (terminal level).","Depth: Builds and lands investment cases with executive audiences — pre-wired with skeptics, sized in business terms, honest about risk; coaches others for executive rooms and runs the operating reviews an organization communicates through. Evidenced by: Builds an investment case pre-wired against a known skeptic's objections, sized in business terms, and coaches a junior PM through their first executive review. Scope: multiple product areas.","Depth: Operates the executive room as a peer — advances positions, absorbs hostile questioning without defensiveness, and changes the room's decision more often than not. Evidenced by: Operates an executive review as a peer, absorbs hostile questioning without getting defensive, and changes the room's decision. Scope: product organization.","Depth: Speaks for an organization's technical reality to boards, investors, and press; trusted with the messages that cannot be delegated, and organizational credibility survives the appearances. Evidenced by: Speaks for the company's technical reality to the board and press on a message that can't be delegated, and the company's credibility survives the appearance. Scope: company portfolio."
-skill,"Communication, Influence & Craft Leadership",Stakeholder Influence,Stakeholder alignment & expectations,PM-13,Depth: Prepares updates and gathers input for stakeholders under direction. Evidenced by: Gathers input from three stakeholders ahead of a review and drafts the update summary a lead then finalizes. Scope: one feature/epic.,"Depth: Manages routine stakeholder relationships and communications with normal review. Evidenced by: Manages a routine monthly stakeholder update on their own, fielding questions without needing a lead to step in. Scope: a product area.","Depth: Independently aligns conflicting stakeholders and navigates tense executive conversations. Evidenced by: Navigates a tense conversation between two stakeholders with conflicting asks to a decision both accept, without damaging either relationship. Scope: a product/capability (terminal level).","Depth: Defines stakeholder-engagement approaches others adopt and brokers the hardest alignment. Evidenced by: Defines the stakeholder-engagement approach two other PMs now follow, and brokers an alignment between two VPs that had stalled for a quarter. Scope: multiple product areas.",Depth: Sets executive-engagement strategy and anticipates leadership concerns before they arise. Evidenced by: Sets executive-engagement strategy for the product org and raises a leadership concern in a briefing before the leader had to ask about it. Scope: product organization.,"Depth: Defines exemplary stakeholder management for the discipline and is externally credible on it. Evidenced by: Is the reference other product leaders point to for exemplary stakeholder management, credible on it outside the company. Scope: company portfolio."
-skill,"Communication, Influence & Craft Leadership",Stakeholder Influence,Saying no & negotiation,CC-05,"Depth: Voices disagreement respectfully; disagrees-and-commits. Evidenced by: Disagrees with a stakeholder's proposed scope respectfully in a planning meeting, and commits fully to the team's final call once it's made. Scope: one feature/epic.","Depth: Works through disagreement to a decision without damaging relationships. Evidenced by: Works a disagreement over priority with a peer PM through to a decision both can live with, without either relationship taking damage. Scope: a product area.","Depth: Mediates technical disputes in their domain; finds the path that holds up. Evidenced by: Mediates a technical dispute between two senior engineers over an approach, and the path the team ends up on holds up three months later. Scope: a product/capability (terminal level).","Depth: Resolves high-stakes disagreements between senior stakeholders across orgs. Evidenced by: Resolves a high-stakes disagreement between two VPs from different orgs over a shared roadmap, where the stakes and organizational distance had stalled prior attempts. Scope: multiple product areas.","Depth: Designs the decision processes the org uses to resolve conflict. Evidenced by: Designs the decision process the org now uses to resolve cross-team prioritization conflicts, replacing a pattern of escalations that used to land on one exec's desk. Scope: product organization.","Depth: Sets the company norm for principled disagreement. Evidenced by: Sets the company norm for how principled disagreement gets resolved, cited when new leaders are onboarded into how the company makes contested calls. Scope: company portfolio."
-skill,"Communication, Influence & Craft Leadership",Product Craft Leadership,Mentoring & coaching PMs,LI-01,Depth: Receptive to mentoring; shares what they learn. Evidenced by: Takes a senior PM's feedback on a spec without defensiveness and passes the lesson along to a newer teammate a week later. Scope: one feature/epic.,"Depth: Helps onboard teammates; informally mentors juniors. Evidenced by: Helps a new PM get their first feature shipped by walking them through the team's discovery cadence, without being formally assigned as their mentor. Scope: a product area.","Depth: Coaches engineers with growth-oriented feedback; measurably improves a team's skill. Evidenced by: Coaches a struggling PM through three consecutive cycles of feedback that visibly improves their spec-writing, measured in fewer clarifying questions from engineering. Scope: a product/capability (terminal level).",Depth: Develops future leads across teams; shapes hiring and onboarding. Evidenced by: Develops two ICs into leads across different teams and shapes the interview loop new PM hires now go through. Scope: multiple product areas.,Depth: Develops senior engineers and leaders; builds culture deliberately. Evidenced by: Builds a coaching culture across the product org that other leads' own coaching practice gets measured against. Scope: product organization.,"Depth: Develops the next generation of top talent; legacy outlasts tenure. Evidenced by: Develops PMs who go on to lead product organizations elsewhere, and the practice they carry with them traces back to this person's coaching. Scope: company portfolio."
-skill,"Communication, Influence & Craft Leadership",Product Craft Leadership,Raising the craft bar,LI-03,"Depth: Contributes informed opinions in technical discussions. Evidenced by: Offers an informed opinion in a spec review that a more senior PM ultimately weighs alongside their own, without yet being the person others default to. Scope: one feature/epic.","Depth: Influences component-level decisions through credibility. Evidenced by: Earns their product area's default trust on discovery-method calls through consistently sound judgment, not because of a title. Scope: a product area.","Depth: Sets technical direction for a domain; others align to their calls. Evidenced by: Sets the discovery and spec-writing bar their product's team aligns to without being told, handling the hardest ambiguous calls unsupervised. Scope: a product/capability (terminal level).","Depth: Shapes how multiple teams approach problems; trusted tiebreaker. Evidenced by: Becomes the trusted tiebreaker on a craft question that spans three teams' approaches, and the resolution shapes how all three now work. Scope: multiple product areas.","Depth: Influences org-wide technical strategy. Evidenced by: Advises the product org's leadership on craft strategy at organizational scale, influencing standards no single cross-team problem could reach. Scope: product organization.",Depth: Influences company strategic direction through insight. Evidenced by: Shapes the company's strategic direction through craft insight that gets adopted well beyond the product organization. Scope: company portfolio.
-skill,"Communication, Influence & Craft Leadership",Product Craft Leadership,Hiring & interviewing PMs,LI-02,"Depth: Participates in interviews; gives clear, evidence-based feedback. Evidenced by: Gives evidence-based interview feedback using the team's existing scorecard, citing the specific answer that drove their rating. Scope: one feature/epic.",Depth: Runs interviews well; calibrates against a consistent bar. Evidenced by: Runs a PM candidate interview independently and calibrates their rating against the team's existing bar without a debrief coach in the room. Scope: a product area.,"Depth: Shapes hiring for a team; designs loops; makes sound staffing calls. Evidenced by: Designs a new interview loop stage that catches a judgment gap the old loop was missing, and makes the staffing call on a contested hire. Scope: a product/capability (terminal level).","Depth: Drives hiring strategy across teams; builds the interviewing bar. Evidenced by: Builds the PM interviewing bar three other teams now hire against, driving hiring strategy across the group. Scope: multiple product areas.","Depth: Sets the org's talent strategy. Evidenced by: Sets the product org's talent strategy — leveling, sourcing priorities, workforce plan — for the year. Scope: product organization.",Depth: Shapes company-wide talent philosophy. Evidenced by: Shapes the company's talent philosophy for product roles in a way that outlasts their own tenure in the org. Scope: company portfolio.
+skill,Product Discovery & User Research,Continuous Discovery,Customer interviewing,PM-01,"Depth: Runs scripted customer interviews and notes findings under a senior researcher's guidance.
+
+Evidenced by: Runs a scripted interview from a lead's guide, avoids the leading-question traps the Mom Test warns about, and writes up verbatim notes for the lead to review.
+
+Scope: one feature/epic.","Depth: Plans and conducts standard discovery for a feature, synthesizing themes with normal review.
+
+Evidenced by: Keeps a weekly interview cadence going without being reminded, writes their own discussion guides, and turns each session into a snapshot teammates actually read.
+
+Scope: a product area.","Depth: Independently frames ambiguous problems, selects fitting methods, and separates signal from noise.
+
+Evidenced by: Builds the recruiting pipeline for their product, brings engineers and designers into sessions, and redirects an interview that drifts into feature-request collection back to behavior.
+
+Scope: a product/capability (terminal level).","Depth: Designs the team's discovery approach and untangles findings others find contradictory.
+
+Evidenced by: Reviews other PMs' discussion guides and sits in on their sessions, and the snapshot format spreading across teams traces back to their template.
+
+Scope: multiple product areas.","Depth: Sets the org's research strategy and anticipates emerging customer needs before they surface.
+
+Evidenced by: Stands up the org's recruiting panel, consent process, and interview-snapshot repository, and audits whether a team's customer contact is real or theater.
+
+Scope: product organization.","Depth: Defines what rigorous product discovery means and shapes the discipline's practice externally.
+
+Evidenced by: Sets the company's public standard for what counts as real customer contact and defends it in talks or writing that other practitioners cite.
+
+Scope: company portfolio."
+skill,Product Discovery & User Research,Continuous Discovery,Discovery cadence & habits,PM-01,"Depth: Runs scripted customer interviews and notes findings under a senior researcher's guidance.
+
+Evidenced by: Keeps their epic's discovery tasks visible on the team board — interviews scheduled, assumptions listed, findings logged — following the cadence the team already set.
+
+Scope: one feature/epic.","Depth: Plans and conducts standard discovery for a feature, synthesizing themes with normal review.
+
+Evidenced by: Runs discovery and delivery in parallel without stalling either, so standups show both a weekly ship and a weekly customer conversation moving.
+
+Scope: a product area.","Depth: Independently frames ambiguous problems, selects fitting methods, and separates signal from noise.
+
+Evidenced by: Keeps the discovery habit alive through a deadline crunch by visibly renegotiating scope instead of quietly skipping customer contact, and new teams are pointed at their cadence as the example.
+
+Scope: a product/capability (terminal level).","Depth: Designs the team's discovery approach and untangles findings others find contradictory.
+
+Evidenced by: Audits discovery health across several teams from calendars and artifacts, names which team has quietly stopped learning, and gets the habit restarted.
+
+Scope: multiple product areas.","Depth: Sets the org's research strategy and anticipates emerging customer needs before they surface.
+
+Evidenced by: Designs the planning rituals and funding rules that make continuous discovery the org's default rather than a practice some teams opt out of under pressure.
+
+Scope: product organization.","Depth: Defines what rigorous product discovery means and shapes the discipline's practice externally.
+
+Evidenced by: Challenges a major company investment in an executive review for lacking recent customer evidence, and that challenge becomes the norm other reviews are held to.
+
+Scope: company portfolio."
+skill,Product Discovery & User Research,Synthesis & Customer Modeling,Opportunity mapping,PM-15,"Depth: Places research findings onto an existing opportunity map correctly, distinguishing opportunities from solutions with coaching.
+
+Evidenced by: Adds a newly-interviewed customer's pain point to their lead's opportunity tree in the right branch, asking when unsure whether it names a need or a disguised feature request.
+
+Scope: one feature/epic.","Depth: Builds and maintains the opportunity map for their area, sizing and pruning branches against evidence without prompting.
+
+Evidenced by: Keeps their product area's opportunity tree current between planning cycles, retiring branches no interview has touched in months and adding new ones as evidence accumulates.
+
+Scope: a product area.","Depth: Structures messy, contested problem spaces into maps that make trade-offs explicit, and defends why one opportunity is pursued over its siblings.
+
+Evidenced by: Walks a skeptical stakeholder through why the team is pursuing one opportunity over three plausible siblings, pointing at the specific interview evidence behind the call.
+
+Scope: a product/capability (terminal level).","Depth: Reconciles overlapping opportunity maps across teams, exposing duplicate bets and orphaned opportunities no single team could see.
+
+Evidenced by: Merges two teams' opportunity trees ahead of a joint planning cycle and surfaces a customer need both teams were separately half-solving without knowing about the other's work.
+
+Scope: multiple product areas.","Depth: Makes opportunity mapping an organization's default synthesis method; investment reviews open from the mapped opportunity space.
+
+Evidenced by: Gets a quarterly investment review to open with the mapped opportunity space instead of a list of proposed features, and rejects a funding request that skips the map.
+
+Scope: product organization.","Depth: Shapes how organizations represent customer opportunity at portfolio level; their framing methods are cited and reused beyond their own organization.
+
+Evidenced by: Publishes the opportunity-mapping method used across the company's product lines and fields questions about it from PMs at other companies trying to adopt it.
+
+Scope: company portfolio."
+skill,Product Discovery & User Research,Synthesis & Customer Modeling,Research synthesis & insight,PM-01,"Depth: Runs scripted customer interviews and notes findings under a senior researcher's guidance.
+
+Evidenced by: Tags a batch of interview transcripts into the team's existing theme categories and can point to the exact quote behind each tag when a lead asks.
+
+Scope: one feature/epic.","Depth: Plans and conducts standard discovery for a feature, synthesizing themes with normal review.
+
+Evidenced by: Turns three weeks of interviews and support tickets into a ranked list of underserved needs, with the evidence attached, and presents it without overclaiming.
+
+Scope: a product area.","Depth: Independently frames ambiguous problems, selects fitting methods, and separates signal from noise.
+
+Evidenced by: Writes an insight document that changes the team's next quarter's plan, and a skeptical peer checking the chain from quote to claim finds it intact.
+
+Scope: a product/capability (terminal level).","Depth: Designs the team's discovery approach and untangles findings others find contradictory.
+
+Evidenced by: Notices two teams' research write-ups draw opposite conclusions about the same customer segment and runs the joint review that reconciles them into one shared picture.
+
+Scope: multiple product areas.","Depth: Sets the org's research strategy and anticipates emerging customer needs before they surface.
+
+Evidenced by: Stands up the org's tagging conventions and insight repository so a finding from one team's research is discoverable and reusable by another team a year later.
+
+Scope: product organization.","Depth: Defines what rigorous product discovery means and shapes the discipline's practice externally.
+
+Evidenced by: Distills a year of company-wide customer research into the handful of insights the executive team actually reasons from, and retires a piece of long-standing but unsupported folklore.
+
+Scope: company portfolio."
+skill,Product Discovery & User Research,Synthesis & Customer Modeling,Customer segmentation & personas,PM-02,"Depth: Documents personas and journey steps from supplied data under direction.
+
+Evidenced by: Names which persona a new user story serves when writing it, and flags a proposed feature in review as serving no defined segment.
+
+Scope: one feature/epic.","Depth: Builds usable personas and maps journeys for a product area with normal review.
+
+Evidenced by: Refreshes their product area's personas from a quarter of new interview and usage data, splitting one persona into two once their behavior clearly diverges.
+
+Scope: a product area.","Depth: Independently models complex multi-actor journeys and resolves conflicting user signals.
+
+Evidenced by: Names, in a strategy review, exactly who the product is not building for this year, and backs the target-segment choice with sizing data the team can defend.
+
+Scope: a product/capability (terminal level).","Depth: Defines modeling standards others adopt and reconciles personas across overlapping segments.
+
+Evidenced by: Reconciles two product areas' persona sets that had quietly drifted into describing the same underlying user two different ways, and gets both teams onto one shared map.
+
+Scope: multiple product areas.","Depth: Sets persona and journey strategy across the portfolio and predicts shifting behavior patterns.
+
+Evidenced by: Owns the org's customer segmentation model and flags a product whose recent roadmap has drifted from the segment it was originally built for.
+
+Scope: product organization.","Depth: Establishes industry-recognized methods for journey modeling and teaches them widely.
+
+Evidenced by: Updates the company's customer segment map ahead of a market shift that board materials and company strategy then get built around.
+
+Scope: company portfolio."
+skill,Problem Definition & Validation,Problem Framing,Problem statements & outcome framing,PM-16,"Depth: Writes a one-page problem statement naming the user, the struggle, and the evidence, with review; separates problem from requested feature when prompted.
+
+Evidenced by: Writes a one-page problem statement naming the user, the struggle, and the evidence for their epic, and a reviewer catches where it still smuggles in a feature.
+
+Scope: one feature/epic.","Depth: Frames work as outcomes the team can move rather than outputs to ship, and rewrites incoming feature requests into the underlying problem before triage.
+
+Evidenced by: Rewrites an incoming stakeholder feature request into the underlying problem before it reaches triage, framing the goal as a movable number rather than a shipped artifact.
+
+Scope: a product area.","Depth: Sets the outcome a product is accountable for and keeps the team pointed at it, publicly re-framing efforts that drift into output-counting.
+
+Evidenced by: Names, in a planning review, that the team has drifted into counting shipped tickets instead of moving the outcome it owns, and resets the conversation to the number that matters.
+
+Scope: a product/capability (terminal level).","Depth: Arbitrates problem framing across teams — spotting duplicated or conflicting framings — and re-cuts problem boundaries drawn along org lines instead of customer lines.
+
+Evidenced by: Notices two product areas have quietly defined the same customer problem two incompatible ways and gets both teams working from one reconciled framing.
+
+Scope: multiple product areas.","Depth: Defines an organization's outcome architecture — how team-level outcomes ladder to organizational results — and retires vanity outcomes.
+
+Evidenced by: Publishes how team-level outcomes ladder up to the product org's results, and retires a long-tracked metric that turned out to be a vanity number nobody could act on.
+
+Scope: product organization.","Depth: Frames an organization's hardest, ownerless problems into tractable outcome statements executives fund; their framing practice shapes the discipline externally.
+
+Evidenced by: Takes a company-level problem with no clear owner — churn nobody's roadmap addresses — and frames it into an outcome statement executives fund and a team is staffed against.
+
+Scope: company portfolio."
+skill,Problem Definition & Validation,Problem Framing,Jobs-to-be-done framing,PM-17,"Depth: Restates a feature request as the job the customer is hiring it for — circumstance and progress sought — with coaching.
+
+Evidenced by: Restates a stakeholder's feature request as the job the customer is hiring it for — the circumstance and the progress sought — after a lead points out the request was solution-shaped.
+
+Scope: one feature/epic.","Depth: Maps the main jobs in their area from interview evidence, identifying what customers currently hire and where those hires fail.
+
+Evidenced by: Maps the three or four jobs customers hire their product area for from a batch of interviews, and names where a current job is being served badly enough that customers work around it.
+
+Scope: a product area.","Depth: Anchors a product's definition and boundaries in its core job, using the job to rule scope in or out and to identify non-obvious competitors.
+
+Evidenced by: Rules a proposed feature out of scope because it does not advance the product's core job, and names a competitor outside the product's category that serves the same job better.
+
+Scope: a product/capability (terminal level).","Depth: Aligns job maps across teams into one view of customer progress, exposing where customers must stitch products together to finish one job.
+
+Evidenced by: Aligns two teams' separate job maps into one view and shows where customers currently stitch both teams' products together to finish a single job neither owns end to end.
+
+Scope: multiple product areas.","Depth: Uses jobs analysis to shape organization-level portfolio choices — which jobs are served end-to-end, which are exited.
+
+Evidenced by: Uses a jobs-based view of the portfolio to recommend exiting a product line that serves a job the company can no longer serve better than the alternatives customers already use.
+
+Scope: product organization.","Depth: Frames markets and strategy in jobs terms that reveal disruption threats early; their jobs analyses influence practice beyond their organization.
+
+Evidenced by: Frames an emerging market shift in jobs terms that flags a disruption threat before competitors name it, and the analysis gets cited by other companies watching the same market.
+
+Scope: company portfolio."
+skill,Problem Definition & Validation,Assumption Testing & Validation,Assumption mapping & risk framing,PM-18,"Depth: Lists the assumptions behind a proposed feature, sorts them by risk with coaching, and runs a prescribed simple test, logging what was learned.
+
+Evidenced by: Lists the desirability, viability, feasibility, and usability assumptions behind a proposed feature with a lead's coaching, and runs the one prescribed prototype test the lead assigned.
+
+Scope: one feature/epic.","Depth: Identifies the riskiest assumption before build and matches the test type to it — prototype, painted door, concierge — with pass/fail defined in advance.
+
+Evidenced by: Names the riskiest assumption in a proposed bet before any build starts, picks a painted-door test to match it, and writes down the pass/fail bar before launching it.
+
+Scope: a product area.","Depth: Surfaces assumptions others treat as facts, designs test sequences that retire the most risk per unit effort, and kills initiatives whose load-bearing assumptions fail.
+
+Evidenced by: Kills an initiative in flight after a pre-mortem surfaces a load-bearing assumption the team had been quietly treating as a fact, naming the evidence and the trade-off in the write-up.
+
+Scope: a product/capability (terminal level).","Depth: Standardizes how multiple teams express and rank risk, and rejects validation theater — tests that can only confirm, never falsify — before major commitments.
+
+Evidenced by: Standardizes how three teams express and compare risk on their bets and rejects a test design that could only ever confirm the team's existing plan.
+
+Scope: multiple product areas.","Depth: Builds discovery-testing capability into an organization's investment process — funding follows tested assumptions, and the cost of a first test drops to hours.
+
+Evidenced by: Gets the org's investment process to require a tested-assumption map before funding a major bet, dropping the cost of a first test from weeks to hours.
+
+Scope: product organization.","Depth: Structures bets too big to A/B as staged, falsifiable commitments; their validation doctrine is cited and adopted beyond their organization.
+
+Evidenced by: Structures a bet too large to A/B — a new pricing model — as a sequence of staged, falsifiable commitments, and other companies cite the approach when facing similar bets.
+
+Scope: company portfolio."
+skill,Problem Definition & Validation,Assumption Testing & Validation,Assumption testing & experiments,PM-18,"Depth: Lists the assumptions behind a proposed feature, sorts them by risk with coaching, and runs a prescribed simple test, logging what was learned.
+
+Evidenced by: Builds a fake-door test from a design a senior PM already specified, launches it exactly as instructed, and logs what the click-through data showed.
+
+Scope: one feature/epic.","Depth: Identifies the riskiest assumption before build and matches the test type to it — prototype, painted door, concierge — with pass/fail defined in advance.
+
+Evidenced by: Picks a painted-door test to check demand for a proposed feature, defines the click-through rate that counts as a pass before launching it, and reports the result honestly when it fails.
+
+Scope: a product area.","Depth: Surfaces assumptions others treat as facts, designs test sequences that retire the most risk per unit effort, and kills initiatives whose load-bearing assumptions fail.
+
+Evidenced by: Designs a sequence of three cheap tests that retires the two riskiest assumptions behind a bet in a week, and cancels a fourth test whose result couldn't have changed the team's decision either way.
+
+Scope: a product/capability (terminal level).","Depth: Standardizes how multiple teams express and rank risk, and rejects validation theater — tests that can only confirm, never falsify — before major commitments.
+
+Evidenced by: Redesigns another team's third inconclusive prototype test — the problem was the test, not the users — instead of letting them rerun the same test at larger scale.
+
+Scope: multiple product areas.","Depth: Builds discovery-testing capability into an organization's investment process — funding follows tested assumptions, and the cost of a first test drops to hours.
+
+Evidenced by: Builds a shared prototype-testing panel and painted-door toolkit that drops the org's cost of a first test from a two-week build to an afternoon.
+
+Scope: product organization.","Depth: Structures bets too big to A/B as staged, falsifiable commitments; their validation doctrine is cited and adopted beyond their organization.
+
+Evidenced by: Designs a staged, falsifiable validation plan for a bet on an entirely new pricing model too large to A/B, with milestones the company can kill the bet against.
+
+Scope: company portfolio."
+skill,Problem Definition & Validation,Assumption Testing & Validation,Prototype & solution testing,PM-18,"Depth: Lists the assumptions behind a proposed feature, sorts them by risk with coaching, and runs a prescribed simple test, logging what was learned.
+
+Evidenced by: Runs a moderated usability test of an existing clickable prototype from a task script a designer wrote, noting where the participant stalls without explaining the design to them.
+
+Scope: one feature/epic.","Depth: Identifies the riskiest assumption before build and matches the test type to it — prototype, painted door, concierge — with pass/fail defined in advance.
+
+Evidenced by: Pairs with design to build a low-fidelity prototype that matches the question at hand, tests it with five users, and reports what changed between rounds and why.
+
+Scope: a product area.","Depth: Surfaces assumptions others treat as facts, designs test sequences that retire the most risk per unit effort, and kills initiatives whose load-bearing assumptions fail.
+
+Evidenced by: Chooses live-data testing over a prototype for a bet where the real signal only shows up under real usage, and the team commits to build once the evidence is sufficient by a bar set in advance.
+
+Scope: a product/capability (terminal level).","Depth: Standardizes how multiple teams express and rank risk, and rejects validation theater — tests that can only confirm, never falsify — before major commitments.
+
+Evidenced by: Reviews another team's solution test ahead of a major commitment and catches that the test, as designed, could only ever confirm the team already wanted to build it.
+
+Scope: multiple product areas.","Depth: Builds discovery-testing capability into an organization's investment process — funding follows tested assumptions, and the cost of a first test drops to hours.
+
+Evidenced by: Builds the org's shared prototyping panel and fidelity norms so every team's default is to test a solution cheaply before committing engineering time to it.
+
+Scope: product organization.","Depth: Structures bets too big to A/B as staged, falsifiable commitments; their validation doctrine is cited and adopted beyond their organization.
+
+Evidenced by: Represents test-before-build as company doctrine in front of executives pushing for a committed roadmap without evidence, and the practice holds.
+
+Scope: company portfolio."
+skill,Product Strategy & Vision,Strategy & Positioning,Product strategy formulation,PM-04,"Depth: Drafts positioning statements from a given strategy under direction.
+
+Evidenced by: Drafts the positioning statement for their epic from the strategy their lead already set, and revises it twice on review before it holds up.
+
+Scope: one feature/epic.","Depth: Articulates strategy and positioning for one product with normal review.
+
+Evidenced by: Writes down their product area's priorities as explicit choices — what they are doing and what they are deliberately not — and flags a request that doesn't serve the stated strategy.
+
+Scope: a product area.","Depth: Independently sets coherent strategy amid ambiguity and defends hard trade-offs.
+
+Evidenced by: Writes the diagnosis, guiding policy, and coherent bets for their product's strategy, and defends the resulting kill-list to the stakeholders who proposed the killed work.
+
+Scope: a product/capability (terminal level).","Depth: Defines the strategy framework teams adopt and resolves conflicting strategic bets.
+
+Evidenced by: Writes a strategy framework that two other product teams adopt as the frame for their own areas, and reviews a peer's area strategy for a diagnosis that doesn't match its stated bets.
+
+Scope: multiple product areas.","Depth: Owns portfolio-level strategy and anticipates where the market is heading.
+
+Evidenced by: Shapes where the product org concentrates investment and where it deliberately starves a line, in a document leadership funds against.
+
+Scope: product organization.","Depth: Defines what good product strategy means for the discipline and influences practice externally.
+
+Evidenced by: Co-authors the company's strategy from the product side, and the shape of the portfolio a year later reflects arguments made in that document.
+
+Scope: company portfolio."
+skill,Product Strategy & Vision,Strategy & Positioning,Positioning & differentiation,PM-04,"Depth: Drafts positioning statements from a given strategy under direction.
+
+Evidenced by: States who a new feature is for, what it replaces, and why it wins in two sentences that match the team's existing positioning canvas.
+
+Scope: one feature/epic.","Depth: Articulates strategy and positioning for one product with normal review.
+
+Evidenced by: Flags in review that a proposed feature would blur their area's positioning against a named competitive alternative, and gets the scope adjusted before it ships.
+
+Scope: a product area.","Depth: Independently sets coherent strategy amid ambiguity and defends hard trade-offs.
+
+Evidenced by: Repositions a product after a competitor's launch shifts the market, running the alternatives analysis in writing, and marketing builds the next campaign from that document.
+
+Scope: a product/capability (terminal level).","Depth: Defines the strategy framework teams adopt and resolves conflicting strategic bets.
+
+Evidenced by: Resolves a case where two products in the same family were quietly undercutting each other's positioning in sales conversations, and issues one coherent family positioning doc.
+
+Scope: multiple product areas.","Depth: Owns portfolio-level strategy and anticipates where the market is heading.
+
+Evidenced by: Sets which capabilities the org will be known for this year and which it will deliberately not compete on, and holds two roadmaps to that line when they drift.
+
+Scope: product organization.","Depth: Defines what good product strategy means for the discipline and influences practice externally.
+
+Evidenced by: Makes the category-redefinition argument that gets picked up by industry analysts covering the company's market.
+
+Scope: company portfolio."
+skill,Product Strategy & Vision,"Vision, Roadmaps & Goals",Product vision narrative,PM-06,"Depth: Translates a stated vision into concrete goals under direction.
+
+Evidenced by: Explains to a new teammate why their epic matters by retelling the product vision accurately, without needing the lead to translate it.
+
+Scope: one feature/epic.","Depth: Sets clear, measurable goals for a product area with normal review.
+
+Evidenced by: Points out in a planning review that a proposed feature leads the roadmap away from the stated vision, and gets the team realigned before committing the sprint.
+
+Scope: a product area.","Depth: Independently crafts a compelling vision and cascades aligned goals through ambiguity.
+
+Evidenced by: Writes a press-release-style vision doc that an engineer cites unprompted three months later to justify a local design decision.
+
+Scope: a product/capability (terminal level).","Depth: Defines goal-setting frameworks others adopt and aligns competing visions.
+
+Evidenced by: Writes a vision artifact that resolves a contradiction between two product areas' separate visions before either team ships something the other would have to walk back.
+
+Scope: multiple product areas.","Depth: Sets enduring vision across the portfolio and anticipates long-horizon shifts.
+
+Evidenced by: Owns the product org's north-star narrative and visibly retires it in favor of a new one once the underlying diagnosis has changed.
+
+Scope: product organization.","Depth: Shapes how the discipline frames product vision and is externally credible on it.
+
+Evidenced by: Writes the product future narrative used in the company's fundraising deck and cited in board discussions of where the company is headed.
+
+Scope: company portfolio."
+skill,Product Strategy & Vision,"Vision, Roadmaps & Goals",Outcome-based roadmapping,PM-05,"Depth: Maintains roadmap items and updates status under guidance.
+
+Evidenced by: Keeps their epic's roadmap entry current — status, confidence, what was learned — and explains to a stakeholder why it shows a quarter, not a date.
+
+Scope: one feature/epic.","Depth: Builds and sequences a credible roadmap for one product with normal review.
+
+Evidenced by: Builds their product area's now/next/later roadmap around outcomes and holds the line when a stakeholder pushes to convert 'later' into a committed date.
+
+Scope: a product area.","Depth: Independently balances competing priorities and replans confidently under shifting constraints.
+
+Evidenced by: Trades scope for outcome with a VP in a roadmap review and shows, in the same meeting, exactly which discovery evidence justifies the change from last quarter's plan.
+
+Scope: a product/capability (terminal level).","Depth: Designs the planning approach others use and resolves cross-team portfolio conflicts.
+
+Evidenced by: Surfaces a dependency between two areas' roadmaps that would have collided mid-quarter and re-sequences both before either team commits the conflicting work.
+
+Scope: multiple product areas.","Depth: Sets portfolio planning strategy and foresees where investment should shift next.
+
+Evidenced by: Owns the cadence and confidence-language format every product team's roadmap uses, and defends the now/next/later structure when an executive asks for firm dates the evidence can't support.
+
+Scope: product organization.","Depth: Defines portfolio-planning best practice for the field and is recognized for it.
+
+Evidenced by: Presents the company's portfolio roadmap to the board as a strategy narrative, and sets the company-wide norm for what a roadmap does and doesn't promise.
+
+Scope: company portfolio."
+skill,Product Strategy & Vision,"Vision, Roadmaps & Goals",Goal setting & OKRs,PM-06,"Depth: Translates a stated vision into concrete goals under direction.
+
+Evidenced by: Writes a measurable key result for their epic that names a user or business change rather than a shipped artifact, with a lead's review catching the first draft's vanity metric.
+
+Scope: one feature/epic.","Depth: Sets clear, measurable goals for a product area with normal review.
+
+Evidenced by: Sets their product area's quarterly OKRs, and at quarter end grades honestly that a key result was hit but the underlying goal wasn't actually moved.
+
+Scope: a product area.","Depth: Independently crafts a compelling vision and cascades aligned goals through ambiguity.
+
+Evidenced by: Pushes back on a cascaded target the team's own evidence doesn't support, and re-scopes a key result mid-quarter once new data shows the original one was set wrong.
+
+Scope: a product/capability (terminal level).","Depth: Defines goal-setting frameworks others adopt and aligns competing visions.
+
+Evidenced by: Reviews a peer's team's OKRs, catches a key result that's really an output count in disguise, and coaches the rewrite into something the team can actually be judged against.
+
+Scope: multiple product areas.","Depth: Sets enduring vision across the portfolio and anticipates long-horizon shifts.
+
+Evidenced by: Designs how product-team OKRs ladder to company-level results without becoming a chain of restated numbers, and runs the calibration session where two teams' conflicting goals get resolved.
+
+Scope: product organization.","Depth: Shapes how the discipline frames product vision and is externally credible on it.
+
+Evidenced by: Holds the line on measurable, outcome-based objectives at the executive table when a leader proposes a vague, unmeasurable company goal for the year.
+
+Scope: company portfolio."
+skill,Data & Analytics,Metrics & Behavioral Analysis,Success metrics & KPI design,PM-10,"Depth: Pulls and reports defined product metrics under direction.
+
+Evidenced by: Pulls and reports the metrics their lead already defined for a launched feature, distinguishing a vanity count from an actionable rate with guidance when asked.
+
+Scope: one feature/epic.","Depth: Builds and interprets metric dashboards for a product with normal review.
+
+Evidenced by: Builds and owns the dashboard for their product area's metrics tree, retiring a metric that had been moving without anyone able to say why it mattered.
+
+Scope: a product area.","Depth: Independently designs metric frameworks and draws sound conclusions from messy data.
+
+Evidenced by: Designs the single metric their product is judged by and defends, to a leadership team wanting a friendlier number, why the current one is the honest one despite the bad quarter it's showing.
+
+Scope: a product/capability (terminal level).","Depth: Defines the measurement model teams adopt and diagnoses misleading metrics others trust.
+
+Evidenced by: Reconciles three teams' different definitions of 'activation' into one shared definition, and catches a proposed new metric that would reward a perverse shortcut before it ships.
+
+Scope: multiple product areas.","Depth: Sets product-analytics strategy across the org and anticipates which signals will matter.
+
+Evidenced by: Sets the org's north-star metric framework and guardrail policy, and audits a team's dashboard that turns out not to reflect what's actually happening with users.
+
+Scope: product organization.","Depth: Defines rigorous product measurement for the discipline and is cited externally on it.
+
+Evidenced by: Defines how the company connects product metrics to financial outcomes in a model the finance team uses directly in board reporting.
+
+Scope: company portfolio."
+skill,Data & Analytics,Metrics & Behavioral Analysis,Funnel & behavioral analysis,PM-10,"Depth: Pulls and reports defined product metrics under direction.
+
+Evidenced by: Pulls their feature's funnel numbers from the analytics stack and reports the drop-off honestly without guessing at a cause the data doesn't show.
+
+Scope: one feature/epic.","Depth: Builds and interprets metric dashboards for a product with normal review.
+
+Evidenced by: Runs a cohort analysis that locates exactly which step of their area's funnel is leaking value, then pairs it with a handful of interviews to explain why before proposing a fix.
+
+Scope: a product area.","Depth: Independently designs metric frameworks and draws sound conclusions from messy data.
+
+Evidenced by: Catches that a colleague's promising-looking retention chart is a seasonality artifact, not a real improvement, before it gets presented as a win.
+
+Scope: a product/capability (terminal level).","Depth: Defines the measurement model teams adopt and diagnoses misleading metrics others trust.
+
+Evidenced by: Traces a customer journey that crosses two products' boundaries and quantifies friction — a re-login, a re-entered form — that neither team's own dashboard was built to show.
+
+Scope: multiple product areas.","Depth: Sets product-analytics strategy across the org and anticipates which signals will matter.
+
+Evidenced by: Builds the org's self-serve analytics tooling so teams can answer their own funnel questions correctly without waiting on a data-science queue.
+
+Scope: product organization.","Depth: Defines rigorous product measurement for the discipline and is cited externally on it.
+
+Evidenced by: Spots an early portfolio-level usage shift that presages churn in a major segment months before it shows up in revenue, and gets the company to act on it.
+
+Scope: company portfolio."
+skill,Data & Analytics,Experimentation & Decision Quality,A/B test design & analysis,PM-11,"Depth: Runs predefined experiments and records results under supervision.
+
+Evidenced by: Runs an A/B test exactly as an analyst designed it, records the results without touching the analysis method, and waits for the pre-agreed end date.
+
+Scope: one feature/epic.","Depth: Designs and analyzes a standard A/B test with normal review.
+
+Evidenced by: Designs and ships an A/B test for their own feature — power calculation, guardrail metrics, no peeking — and writes up a null result honestly instead of quietly shelving it.
+
+Scope: a product area.","Depth: Independently designs valid experiments and interprets ambiguous or conflicting results.
+
+Evidenced by: Catches a sample-ratio mismatch in a colleague's experiment before its result gets used to justify a launch, and is the person their own product's other PMs ask to sanity-check a test design before it ships.
+
+Scope: a product/capability (terminal level).","Depth: Defines experimentation standards others adopt and rescues flawed test designs.
+
+Evidenced by: Audits experiment practice across three teams, catches a pattern of rerunning tests until they hit significance, and gets one shared readout format adopted everywhere.
+
+Scope: multiple product areas.","Depth: Sets the org's experimentation strategy and anticipates where testing should expand.
+
+Evidenced by: Builds the org's experimentation platform requirements and a repository of past results so a new test doesn't reinvent an intervention that's already been tried and failed.
+
+Scope: product organization.","Depth: Defines experimentation rigor for the discipline and influences external practice.
+
+Evidenced by: Sets company policy on where A/B testing is mandatory before a launch and where judgment rightly overrides it, and the policy holds under executive pressure to skip it.
+
+Scope: company portfolio."
+skill,Data & Analytics,Experimentation & Decision Quality,Decision quality under uncertainty,LI-04,"Depth: Makes well-defined decisions; asks good questions when blocked.
+
+Evidenced by: Writes down the options considered and the reasoning before a decision on their epic, and separates a bad outcome from a bad decision in the retro when a lead prompts them to.
+
+Scope: one feature/epic.","Depth: Decides independently within their components; evaluates alternatives honestly.
+
+Evidenced by: States their confidence level and whether a call is reversible before deciding, moving fast on the two-way doors and slowing down on the one-way ones, and keeps a decision log the team consults.
+
+Scope: a product area.","Depth: Makes architectural choices for a domain that hold up over months.
+
+Evidenced by: Names the strongest disconfirming evidence against their own plan before a stakeholder can raise it, and changes course publicly once new data proves the original call wrong.
+
+Scope: a product/capability (terminal level).","Depth: Foresees second-order consequences; sets decision frameworks for teams.
+
+Evidenced by: Reviews another PM's high-stakes decision before it's committed, catches a sunk-cost pattern in the reasoning, and the decision-record format spreads to two other teams.
+
+Scope: multiple product areas.","Depth: Sets decision-making frameworks for the org.
+
+Evidenced by: Designs the org's decision mechanism — who decides what, at what evidence bar, with what escalation path — and runs a pre-mortem on the year's biggest bet.
+
+Scope: product organization.","Depth: Visionary judgment; sees structural causes others miss.
+
+Evidenced by: Gets pulled into a company-level decision precisely because their reasoning record is public and audited, and their judgment settles a call nobody else could resolve.
+
+Scope: company portfolio."
+skill,Execution & Delivery,Prioritization & Trade-offs,Prioritization & sequencing,PD-02,"Depth: Works highest-priority-first when told the priorities.
+
+Evidenced by: Orders their epic's backlog with stated reasoning — value, urgency, dependency — and re-orders it without protest when a lead points out a fact has changed.
+
+Scope: one feature/epic.","Depth: Makes sound priority calls within scope; time-boxes uncertain work.
+
+Evidenced by: Prioritizes their product area's backlog using an explicit cost-of-delay estimate and shows the math when a stakeholder challenges the order.
+
+Scope: a product area.","Depth: Balances cost/value/risk across a domain; resists hype; decisions hold up over months.
+
+Evidenced by: Sequences a quarter's work across debt, features, and a compliance deadline with written trade-off reasoning stakeholders accept even when their request loses.
+
+Scope: a product/capability (terminal level).","Depth: Expert at portfolio-level trade-offs; surfaces hidden assumptions; trusted tiebreaker.
+
+Evidenced by: Moves a chunk of scope from one team to another when the portfolio-level cost-of-delay math demands it, with the displaced team's agreement documented.
+
+Scope: multiple product areas.","Depth: Sets decision frameworks for the org.
+
+Evidenced by: Builds the explicit framework the org uses to split investment across run, grow, and transform work, and defends it through a planning cycle that tries to override it.
+
+Scope: product organization.","Depth: Influences company strategic direction through judgment.
+
+Evidenced by: Makes the economic case that gets a product line harvested rather than continuing to be funded, using cost-of-delay reasoning the leadership team accepts.
+
+Scope: company portfolio."
+skill,Execution & Delivery,Prioritization & Trade-offs,Scope-cutting & trade-offs,PD-01,"Depth: Breaks own tasks into reviewable pieces with guidance.
+
+Evidenced by: Breaks their feature into reviewable pieces with a lead's guidance, and writes down what's lost if the last piece has to be cut.
+
+Scope: one feature/epic.","Depth: Independently decomposes a feature into shippable slices.
+
+Evidenced by: Cuts a feature's scope decisively when the sprint slips, protects the outcome-critical path, and tells the affected stakeholder before they notice on their own.
+
+Scope: a product area.","Depth: Plans complex multi-phase work (prototype-then-commit under uncertainty); sequences safely.
+
+Evidenced by: Negotiates a scope-versus-quality trade-off with engineering as a peer, distinguishing an MVP that genuinely tests the hypothesis from a demo that only fakes it.
+
+Scope: a product/capability (terminal level).","Depth: Expert at structuring large initiatives to de-risk early; anticipates bottlenecks.
+
+Evidenced by: Sets the shared definition of 'minimum' for a launch that spans three teams, untangling a scope disagreement that would otherwise have broken one team's release.
+
+Scope: multiple product areas.","Depth: Shapes how the org plans and sequences major change.
+
+Evidenced by: Sets the org's quality floor and cut-decision authority, and personally intervenes when a flagship initiative is bloating toward a death march.
+
+Scope: product organization.","Depth: Defines the company-wide approach to delivering value incrementally.
+
+Evidenced by: Makes the company-level call to ship the narrow wedge instead of the full platform play, and the rest of the portfolio sequences its bets around that decision.
+
+Scope: company portfolio."
+skill,Execution & Delivery,Building with the Team,Product trio partnership,CC-03,"Depth: Responsive to feedback; pairs willingly; asks for help appropriately.
+
+Evidenced by: Takes feedback from an engineer's pushback on a spec without defensiveness, and asks the designer for help scoping a problem instead of guessing alone.
+
+Scope: one feature/epic.","Depth: Collaborates smoothly with adjacent functions; handles disagreement constructively.
+
+Evidenced by: Runs a working trio where the engineer joins discovery calls and the designer sees the strategy context, so a technical constraint reshapes the plan in the room instead of becoming a later escalation.
+
+Scope: a product area.","Depth: Builds strong cross-team relationships; resolves friction directly.
+
+Evidenced by: Builds a team that engineers ask to be assigned to, sharing full business context and visibly deferring to the best idea in a decision record regardless of whose it was.
+
+Scope: a product/capability (terminal level).","Depth: Expert at aligning teams with competing priorities; mediates disputes between senior people.
+
+Evidenced by: Diagnoses that a struggling team's dysfunction is context-starvation rather than a trust problem, and coaches the PM through fixing it.
+
+Scope: multiple product areas.","Depth: Creates the forums and processes through which collaboration happens.
+
+Evidenced by: Shapes the org's team model — how trios form, how tech-debt time gets protected — in norms engineering and design leadership both sign off on.
+
+Scope: product organization.","Depth: Builds coalitions at company scale and externally.
+
+Evidenced by: Argues the empowered-team model at the executive level when delivery pressure is pushing the org toward feature factories, and the model holds.
+
+Scope: company portfolio."
+skill,Execution & Delivery,Building with the Team,"Requirements, specs & acceptance criteria",PM-07,"Depth: Writes requirements from supplied input and refines them under review.
+
+Evidenced by: Writes user stories with acceptance criteria from a lead's outline, and updates the spec twice as review catches gaps in the edge cases.
+
+Scope: one feature/epic.","Depth: Authors complete, testable specs for standard features with normal review.
+
+Evidenced by: Writes a one-pager that leads with the customer problem and success measure for a standard feature, and the build raises design questions rather than intent questions.
+
+Scope: a product area.","Depth: Independently specifies ambiguous, cross-cutting features and resolves edge cases cleanly.
+
+Evidenced by: Specifies a cross-cutting feature touching three systems, resolving edge cases the initial ask never anticipated, and a reviewer's comments on the spec prevent a rework two weeks later.
+
+Scope: a product/capability (terminal level).","Depth: Defines specification standards others adopt and untangles the hardest requirement conflicts.
+
+Evidenced by: Sets the definition-of-ready standard two other teams adopt, and catches an interface gap between two teams' specs that would have silently conflicted at integration.
+
+Scope: multiple product areas.","Depth: Sets specification strategy across teams and anticipates downstream definition needs.
+
+Evidenced by: Owns what 'ready to build' means across the product org, and their document review is the quality gate a major initiative has to pass before engineering starts.
+
+Scope: product organization.","Depth: Defines what excellent product specification means and influences the practice externally.
+
+Evidenced by: Writes the founding narrative document for a new portfolio bet, with a hit rate on greenlit narratives the company has come to trust.
+
+Scope: company portfolio."
+skill,Execution & Delivery,Building with the Team,Backlog & delivery flow,PM-08,"Depth: Updates and grooms backlog items under direction.
+
+Evidenced by: Keeps their epic's stories small, ordered, and ready two sprints ahead, and can answer 'what's next and why' without opening the tracking tool.
+
+Scope: one feature/epic.","Depth: Prioritizes and maintains a healthy backlog for one team with normal review.
+
+Evidenced by: Maintains a story map that shows their area's release strategy at a glance, and watches WIP and cycle time with the team without waiting for someone else to flag a problem.
+
+Scope: a product area.","Depth: Independently sequences contested work and keeps the backlog coherent under churn.
+
+Evidenced by: Diagnoses that a team's slipping deadlines are a queue-buildup problem, not a motivation problem, and fixes the batch size rather than pushing the team to work harder.
+
+Scope: a product/capability (terminal level).","Depth: Defines backlog practices others follow and resolves cross-team prioritization disputes.
+
+Evidenced by: Resolves a cross-team prioritization dispute using a shared backlog-sequencing standard other PMs have adopted from their earlier work.
+
+Scope: multiple product areas.","Depth: Sets backlog-management strategy across products and anticipates capacity tensions.
+
+Evidenced by: Improves the org's idea-to-live lead time by changing planning and handoff mechanics, with before-and-after numbers to show it.
+
+Scope: product organization.","Depth: Defines backlog-management best practice for the discipline and is recognized for it.
+
+Evidenced by: Removes a company-scale delivery bottleneck — a shared review gate every team was queuing behind — with executive backing they built the case for.
+
+Scope: company portfolio."
+skill,Execution & Delivery,Building with the Team,Technical & design fluency,LI-06,"Depth: Follows the team's technical discussions and asks clarifying questions; relies on others to evaluate design quality.
+
+Evidenced by: Follows the team's architecture discussion and asks a clarifying question that shows they did the reading, deferring to the engineers on which design is better.
+
+Scope: one feature/epic.","Depth: Understands the systems in scope well enough to review designs, probe trade-offs, and triage incidents — earns technical respect without taking the keyboard.
+
+Evidenced by: Reviews a proposed design well enough to raise a scalability question before an engineer has to, and triages a live incident credibly without touching the code.
+
+Scope: a product area.","Depth: Maintains depth across a complex system's stack and hardest problems; a credible thought-partner to the most senior engineers, pairing them with the context they need.
+
+Evidenced by: Holds their own in an architecture trade-off discussion, spotting that a proposed solution fights the existing system before the team commits to it, and engineers bring them options early because the conversation is worth it.
+
+Scope: a product/capability (terminal level).","Depth: Maintains depth across a complex system's stack and hardest problems; a credible thought-partner to the most senior engineers, pairing them with the context they need.
+
+Evidenced by: Bridges a technical constraint between two teams' roadmaps that neither team's own engineers had connected, translating the platform trade-off into terms the other PM can act on.
+
+Scope: multiple product areas.","Depth: Retains broad credibility across a multi-team domain — credible on its hardest cross-cutting technical questions, current enough to ask the question that changes a design.
+
+Evidenced by: Keeps the product org's planning technically honest by representing platform realities in a strategy review, deferring the deepest technical call to the engineering leader in the room.
+
+Scope: product organization.","Depth: Retains broad credibility across a multi-team domain — credible on its hardest cross-cutting technical questions, current enough to ask the question that changes a design.
+
+Evidenced by: Frames a company-level build-versus-buy technology inflection in product terms clearly enough that executives act on the translation, while the technical authority for the decision itself stays with engineering leadership.
+
+Scope: company portfolio."
+skill,Execution & Delivery,Launch & Iteration,Launch management & readiness,PM-09,"Depth: Executes assigned launch tasks and tracks checklist items under guidance.
+
+Evidenced by: Runs the launch checklist for their feature — flags, docs, support notes — and staffs first-day triage, escalating what they can't resolve to their lead.
+
+Scope: one feature/epic.","Depth: Coordinates a standard product launch across functions with normal review.
+
+Evidenced by: Plans a standard launch end to end: rollout stages and rollback criteria decided in advance, every dependent function briefed before go-live.
+
+Scope: a product area.","Depth: Independently orchestrates complex launches and recovers when plans go sideways.
+
+Evidenced by: Makes the go/no-go call on a ramping launch under pressure using criteria set the week before, not in the moment, and runs the post-launch review that feeds the next iteration.
+
+Scope: a product/capability (terminal level).","Depth: Defines the go-to-market playbook others adopt and rescues high-stakes launches.
+
+Evidenced by: Owns the integrated go/no-go for a launch spanning three teams' products, sequencing each team's dependency so no single team's slip silently blocks the others.
+
+Scope: multiple product areas.","Depth: Sets go-to-market strategy across the portfolio and anticipates market-timing risks.
+
+Evidenced by: Sets the org's ramp-policy and readiness standards, and is the escalation point when a launch with company-level blast radius needs a call above any one team.
+
+Scope: product organization.","Depth: Defines what great go-to-market means for the field and shapes external practice.
+
+Evidenced by: Owns the go/no-go for a launch with company-wide stakes as a high-integrity commitment the whole company is briefed on, not just engineering.
+
+Scope: company portfolio."
+skill,Execution & Delivery,Launch & Iteration,Post-launch iteration & lifecycle,PM-10,"Depth: Pulls and reports defined product metrics under direction.
+
+Evidenced by: Reports their feature's week-one usage numbers exactly as their lead asked, without yet proposing what the team should do differently.
+
+Scope: one feature/epic.","Depth: Builds and interprets metric dashboards for a product with normal review.
+
+Evidenced by: Reads a newly-launched feature's numbers against the product's current lifecycle stage and proposes the next iteration to try before the next planning cycle.
+
+Scope: a product area.","Depth: Independently designs metric frameworks and draws sound conclusions from messy data.
+
+Evidenced by: Makes the persevere-pivot-kill call on a six-month-old feature using its own metric framework, and the recommendation holds up under a skeptical leadership review.
+
+Scope: a product/capability (terminal level).","Depth: Defines the measurement model teams adopt and diagnoses misleading metrics others trust.
+
+Evidenced by: Diagnoses that a metric two other teams trust as a success signal is actually misleading at this lifecycle stage, and gets both teams onto a corrected measurement model.
+
+Scope: multiple product areas.","Depth: Sets product-analytics strategy across the org and anticipates which signals will matter.
+
+Evidenced by: Sets the analytics strategy for what 'iterating well post-launch' means across the whole product org, anticipating which signals will matter before a product reaches that stage.
+
+Scope: product organization.","Depth: Defines rigorous product measurement for the discipline and is cited externally on it.
+
+Evidenced by: Defines a measurement discipline for post-launch iteration that gets cited by other companies as a rigorous approach to persevere/pivot/kill decisions.
+
+Scope: company portfolio."
+skill,"Business, Market & Go-to-Market",Business Fluency,Business model & unit economics,PD-07,"Depth: States what business outcome their current task serves — and asks when they can't — treating infrastructure and license costs as real money.
+
+Evidenced by: States which business outcome their current task serves when a lead asks, and flags that a chosen third-party tool carries a real per-seat license cost, not just an engineering cost.
+
+Scope: one feature/epic.","Depth: Checks whether shipped work actually moved its metric and says so plainly when it didn't; weighs cost and maintenance burden in the technical choices they own.
+
+Evidenced by: Checks whether a feature shipped last quarter actually moved its target metric, and says plainly in the retro that it didn't, rather than letting the shipped-it framing stand.
+
+Scope: a product area.","Depth: Frames a domain's technical decisions in business terms — cost of delay, revenue risk, support load — pushes back on work with weak business rationale, and redirects effort when the numbers say the plan is wrong.
+
+Evidenced by: Redirects a team's roadmap away from a planned initiative once cost-of-delay and support-load numbers show a cheaper, faster path serves the same outcome.
+
+Scope: a product/capability (terminal level).","Depth: Builds the business case for the cross-team technical investments with the largest return and is trusted by leadership to have done the math.
+
+Evidenced by: Builds the business case for a cross-team platform investment with the largest expected return, and leadership funds it on the strength of the math.
+
+Scope: multiple product areas.","Depth: Aligns an organization's technical strategy with its economics — cost curves, velocity, risk — owning trade-offs measured in staff-years and reporting them in the business's own terms.
+
+Evidenced by: Aligns the org's technical investment strategy with its cost curve and velocity trends, owning a trade-off measured in staff-years that leadership signs off on.
+
+Scope: product organization.","Depth: Advises company leadership on where technology changes the business model and is accountable for company-level technology bets paying off.
+
+Evidenced by: Advises company leadership on where a technology shift changes the business model itself, and is held accountable for whether the resulting company-level bet pays off.
+
+Scope: company portfolio."
+skill,"Business, Market & Go-to-Market",Business Fluency,Pricing & packaging,PM-12,"Depth: Populates pricing models with supplied assumptions under direction.
+
+Evidenced by: Fills in a pricing model with the cost and margin assumptions a lead supplied, and asks when an input looks wrong rather than silently accepting it.
+
+Scope: one feature/epic.","Depth: Builds a sound business model for one product with normal review.
+
+Evidenced by: Builds the revenue-stream section of a new feature's business model using the team's standard canvas, and it holds up under normal review.
+
+Scope: a product area.","Depth: Independently structures pricing under uncertainty and defends margin trade-offs.
+
+Evidenced by: Defends a value-based price increase to a skeptical sales leader with a margin trade-off argument, instead of defaulting to a cost-plus number that's easier to justify.
+
+Scope: a product/capability (terminal level).","Depth: Defines the modeling approach others adopt and untangles complex monetization questions.
+
+Evidenced by: Defines the pricing-modeling approach two other product teams adopt, and untangles a monetization question — a bundling decision with conflicting margin implications — no single team's model could resolve.
+
+Scope: multiple product areas.","Depth: Sets pricing strategy across the portfolio and anticipates market and cost shifts.
+
+Evidenced by: Sets the portfolio's pricing strategy for the year, anticipating a cost shift in a key input before it forces a reactive repricing.
+
+Scope: product organization.","Depth: Defines pricing and business-modeling best practice for the field and is recognized for it.
+
+Evidenced by: Defines a pricing and business-modeling practice recognized in the field, with other companies' pricing teams citing the approach.
+
+Scope: company portfolio."
+skill,"Business, Market & Go-to-Market",Market & Domain Insight,Competitive & market analysis,PM-03,"Depth: Gathers competitor facts and populates comparison grids under guidance.
+
+Evidenced by: Populates a competitive comparison grid with facts a lead asked them to gather, and gets it corrected twice on review before it's accurate.
+
+Scope: one feature/epic.","Depth: Produces a sound competitive analysis for a product with normal review.
+
+Evidenced by: Produces a competitive analysis for their product using the team's standard framework, and it holds up without a rewrite in the next planning cycle.
+
+Scope: a product area.","Depth: Independently reads ambiguous markets and frames defensible positioning implications.
+
+Evidenced by: Reads an ambiguous, fragmenting market correctly enough to argue the product hasn't crossed the chasm yet, and rewrites their product's positioning to match before the next release.
+
+Scope: a product/capability (terminal level).","Depth: Defines the analytical approach others follow and decodes confusing competitive dynamics.
+
+Evidenced by: Defines the competitive-analysis method two other product teams adopt, and decodes a confusing competitive move — a rival's pricing change that looked irrational — that had stumped both teams.
+
+Scope: multiple product areas.","Depth: Sets market-analysis strategy and anticipates structural shifts before competitors react.
+
+Evidenced by: Anticipates a structural market shift a full product cycle before competitors react to it, and repositions the portfolio's investment ahead of the shift.
+
+Scope: product organization.","Depth: Shapes how the field interprets product-market fit and is cited externally on it.
+
+Evidenced by: Shapes how the field talks about product-market fit in this category, cited by analysts and competitors alike.
+
+Scope: company portfolio."
+skill,"Business, Market & Go-to-Market",Market & Domain Insight,Domain & industry fluency,PM-19,"Depth: Learns the domain deliberately — shadows customers, reads industry sources, asks how the system actually works — and uses domain vocabulary correctly.
+
+Evidenced by: Shadows a customer support call and reads the industry's standard reference material, and uses the domain's own vocabulary correctly in their first spec review.
+
+Scope: one feature/epic.","Depth: Answers most domain questions without deferring and corrects domain errors in specs and designs.
+
+Evidenced by: Answers a stakeholder's domain question about a regulatory constraint without deferring to a subject-matter expert, and corrects a domain error in an engineer's design before it ships.
+
+Scope: a product area.","Depth: Is the recognized domain reference for a product — customers, field teams, and engineers check facts with them — and spots domain-driven risks others miss.
+
+Evidenced by: Becomes the person the field team calls to fact-check a claim about how the industry's workflow actually works, and spots a domain-driven risk in a proposed feature nobody else caught.
+
+Scope: a product/capability (terminal level).","Depth: Connects domain knowledge across teams, catching where one roadmap violates another domain's constraints (regulatory, workflow, ecosystem).
+
+Evidenced by: Catches that one team's roadmap assumes a regulatory workflow another team's domain constraints actually forbid, before either team ships something that has to be walked back.
+
+Scope: multiple product areas.","Depth: Represents an organization's domain understanding externally — industry forums, advisory boards, analyst briefings.
+
+Evidenced by: Represents the org's domain understanding on an industry advisory board, bringing back a signal the org's roadmap hadn't accounted for.
+
+Scope: product organization.","Depth: Anticipates domain evolution — where the industry's workflows and rules are heading — and positions portfolios for it before consensus forms.
+
+Evidenced by: Positions the portfolio ahead of a domain shift — a regulatory change on the horizon — before industry consensus has formed that it's coming.
+
+Scope: company portfolio."
+skill,"Business, Market & Go-to-Market",Go-to-Market Partnership,GTM planning & partnership,PM-09,"Depth: Executes assigned launch tasks and tracks checklist items under guidance.
+
+Evidenced by: Executes their assigned launch-day tasks from the GTM checklist and escalates a customer-support question they can't answer to the person who can.
+
+Scope: one feature/epic.","Depth: Coordinates a standard product launch across functions with normal review.
+
+Evidenced by: Coordinates a standard launch across sales, marketing, and support using the team's established playbook, with every function briefed before go-live.
+
+Scope: a product area.","Depth: Independently orchestrates complex launches and recovers when plans go sideways.
+
+Evidenced by: Recovers a launch that isn't landing in its intended beachhead segment by re-targeting mid-rollout instead of pushing harder on a segment that isn't buying.
+
+Scope: a product/capability (terminal level).","Depth: Defines the go-to-market playbook others adopt and rescues high-stakes launches.
+
+Evidenced by: Defines the go-to-market playbook two other product teams now use, and personally rescues a launch that had gone sideways days before its public date.
+
+Scope: multiple product areas.","Depth: Sets go-to-market strategy across the portfolio and anticipates market-timing risks.
+
+Evidenced by: Sets go-to-market strategy across the portfolio, timing two products' launches to avoid cannibalizing each other's market attention.
+
+Scope: product organization.","Depth: Defines what great go-to-market means for the field and shapes external practice.
+
+Evidenced by: Shapes what great go-to-market means for the field, with the launch approach cited by practitioners outside the company.
+
+Scope: company portfolio."
+skill,"Business, Market & Go-to-Market",Go-to-Market Partnership,Field feedback & enablement,PM-14,"Depth: Logs interactions and handles routine customer requests under guidance.
+
+Evidenced by: Logs a field team's escalated customer request in the team's tracker and hands off routine ones using the process a lead set up.
+
+Scope: one feature/epic.","Depth: Manages standard customer and partner relationships with normal review.
+
+Evidenced by: Runs the monthly loop that turns field-team feedback into a prioritized list their product area actually acts on, with normal review from a lead.
+
+Scope: a product area.","Depth: Independently nurtures key accounts and resolves difficult relationship conflicts.
+
+Evidenced by: Personally rescues a strained relationship with a key account after a rocky launch, and the account renews where the field team had expected a churn.
+
+Scope: a product/capability (terminal level).","Depth: Defines relationship-management practices others adopt and salvages strained partnerships.
+
+Evidenced by: Defines the field-enablement practice two other teams now use to close their own feedback loops, and salvages a partnership another team's process had let go stale.
+
+Scope: multiple product areas.","Depth: Sets relationship strategy across the portfolio and anticipates partner-ecosystem shifts.
+
+Evidenced by: Sets partner-ecosystem strategy across the portfolio, anticipating a shift in a key partner's priorities before it disrupts a live integration.
+
+Scope: product organization.","Depth: Defines what excellent partner relationship management means and shapes external practice.
+
+Evidenced by: Defines what excellent partner relationship management looks like for the discipline, in practice other companies' product teams point to.
+
+Scope: company portfolio."
+skill,"Communication, Influence & Craft Leadership",Communication,Product narratives & written communication,CC-01,"Depth: Communicates status clearly; documentation is accurate.
+
+Evidenced by: Writes a status update for their epic that says plainly what happened and what's next, without burying the headline in caveats.
+
+Scope: one feature/epic.","Depth: Writes clear design notes, runbooks and PRs; explains trade-offs without overselling.
+
+Evidenced by: Writes a PRD for a standard feature that explains a trade-off honestly rather than overselling it, and engineers don't need to re-ask the intent.
+
+Scope: a product area.","Depth: Writes design docs that drive decisions; translates technical risk for non-technical stakeholders.
+
+Evidenced by: Writes a design doc that leads with the decision it's asking for and translates a technical risk into terms a non-technical stakeholder acts on correctly.
+
+Scope: a product/capability (terminal level).","Depth: Expert at making complex capability/risk legible to executives without dumbing it down; RFCs align orgs.
+
+Evidenced by: Writes an RFC that aligns three teams' engineering leads on a shared approach, pre-wired against the objections a skeptic would raise.
+
+Scope: multiple product areas.","Depth: Strategy memos leadership acts on; org-wide and external reach.
+
+Evidenced by: Writes a strategy memo that leadership funds a quarter's roadmap against, with reach beyond their own product organization.
+
+Scope: product organization.","Depth: A clarifying voice at company scale; externally recognized.
+
+Evidenced by: Is the clarifying voice the company turns to for its hardest external communications, recognized outside the company for writing that cuts through noise.
+
+Scope: company portfolio."
+skill,"Communication, Influence & Craft Leadership",Communication,Executive communication,CC-06,"Depth: Prepares status updates for leadership with guidance; leads with the headline when coached to.
+
+Evidenced by: Prepares a status update for a leadership review with a lead's coaching to lead with the headline instead of the chronology.
+
+Scope: one feature/epic.","Depth: Reports upward answer-first with a specific ask; escalates early with options attached, so no surprise reaches leadership from someone else.
+
+Evidenced by: Reports upward with the ask stated first and two options attached, so no surprise reaches their VP from someone else first.
+
+Scope: a product area.","Depth: Briefs senior leaders under pressure — facts, impact, options, and a recommendation inside the first two minutes; one-pagers get forwarded unedited.
+
+Evidenced by: Briefs a room of senior leaders under time pressure with facts, impact, options, and a recommendation inside the first two minutes, and the one-pager gets forwarded unedited.
+
+Scope: a product/capability (terminal level).","Depth: Builds and lands investment cases with executive audiences — pre-wired with skeptics, sized in business terms, honest about risk; coaches others for executive rooms and runs the operating reviews an organization communicates through.
+
+Evidenced by: Builds an investment case pre-wired against a known skeptic's objections, sized in business terms, and coaches a junior PM through their first executive review.
+
+Scope: multiple product areas.","Depth: Operates the executive room as a peer — advances positions, absorbs hostile questioning without defensiveness, and changes the room's decision more often than not.
+
+Evidenced by: Operates an executive review as a peer, absorbs hostile questioning without getting defensive, and changes the room's decision.
+
+Scope: product organization.","Depth: Speaks for an organization's technical reality to boards, investors, and press; trusted with the messages that cannot be delegated, and organizational credibility survives the appearances.
+
+Evidenced by: Speaks for the company's technical reality to the board and press on a message that can't be delegated, and the company's credibility survives the appearance.
+
+Scope: company portfolio."
+skill,"Communication, Influence & Craft Leadership",Stakeholder Influence,Stakeholder alignment & expectations,PM-13,"Depth: Prepares updates and gathers input for stakeholders under direction.
+
+Evidenced by: Gathers input from three stakeholders ahead of a review and drafts the update summary a lead then finalizes.
+
+Scope: one feature/epic.","Depth: Manages routine stakeholder relationships and communications with normal review.
+
+Evidenced by: Manages a routine monthly stakeholder update on their own, fielding questions without needing a lead to step in.
+
+Scope: a product area.","Depth: Independently aligns conflicting stakeholders and navigates tense executive conversations.
+
+Evidenced by: Navigates a tense conversation between two stakeholders with conflicting asks to a decision both accept, without damaging either relationship.
+
+Scope: a product/capability (terminal level).","Depth: Defines stakeholder-engagement approaches others adopt and brokers the hardest alignment.
+
+Evidenced by: Defines the stakeholder-engagement approach two other PMs now follow, and brokers an alignment between two VPs that had stalled for a quarter.
+
+Scope: multiple product areas.","Depth: Sets executive-engagement strategy and anticipates leadership concerns before they arise.
+
+Evidenced by: Sets executive-engagement strategy for the product org and raises a leadership concern in a briefing before the leader had to ask about it.
+
+Scope: product organization.","Depth: Defines exemplary stakeholder management for the discipline and is externally credible on it.
+
+Evidenced by: Is the reference other product leaders point to for exemplary stakeholder management, credible on it outside the company.
+
+Scope: company portfolio."
+skill,"Communication, Influence & Craft Leadership",Stakeholder Influence,Saying no & negotiation,CC-05,"Depth: Voices disagreement respectfully; disagrees-and-commits.
+
+Evidenced by: Disagrees with a stakeholder's proposed scope respectfully in a planning meeting, and commits fully to the team's final call once it's made.
+
+Scope: one feature/epic.","Depth: Works through disagreement to a decision without damaging relationships.
+
+Evidenced by: Works a disagreement over priority with a peer PM through to a decision both can live with, without either relationship taking damage.
+
+Scope: a product area.","Depth: Mediates technical disputes in their domain; finds the path that holds up.
+
+Evidenced by: Mediates a technical dispute between two senior engineers over an approach, and the path the team ends up on holds up three months later.
+
+Scope: a product/capability (terminal level).","Depth: Resolves high-stakes disagreements between senior stakeholders across orgs.
+
+Evidenced by: Resolves a high-stakes disagreement between two VPs from different orgs over a shared roadmap, where the stakes and organizational distance had stalled prior attempts.
+
+Scope: multiple product areas.","Depth: Designs the decision processes the org uses to resolve conflict.
+
+Evidenced by: Designs the decision process the org now uses to resolve cross-team prioritization conflicts, replacing a pattern of escalations that used to land on one exec's desk.
+
+Scope: product organization.","Depth: Sets the company norm for principled disagreement.
+
+Evidenced by: Sets the company norm for how principled disagreement gets resolved, cited when new leaders are onboarded into how the company makes contested calls.
+
+Scope: company portfolio."
+skill,"Communication, Influence & Craft Leadership",Product Craft Leadership,Mentoring & coaching PMs,LI-01,"Depth: Receptive to mentoring; shares what they learn.
+
+Evidenced by: Takes a senior PM's feedback on a spec without defensiveness and passes the lesson along to a newer teammate a week later.
+
+Scope: one feature/epic.","Depth: Helps onboard teammates; informally mentors juniors.
+
+Evidenced by: Helps a new PM get their first feature shipped by walking them through the team's discovery cadence, without being formally assigned as their mentor.
+
+Scope: a product area.","Depth: Coaches engineers with growth-oriented feedback; measurably improves a team's skill.
+
+Evidenced by: Coaches a struggling PM through three consecutive cycles of feedback that visibly improves their spec-writing, measured in fewer clarifying questions from engineering.
+
+Scope: a product/capability (terminal level).","Depth: Develops future leads across teams; shapes hiring and onboarding.
+
+Evidenced by: Develops two ICs into leads across different teams and shapes the interview loop new PM hires now go through.
+
+Scope: multiple product areas.","Depth: Develops senior engineers and leaders; builds culture deliberately.
+
+Evidenced by: Builds a coaching culture across the product org that other leads' own coaching practice gets measured against.
+
+Scope: product organization.","Depth: Develops the next generation of top talent; legacy outlasts tenure.
+
+Evidenced by: Develops PMs who go on to lead product organizations elsewhere, and the practice they carry with them traces back to this person's coaching.
+
+Scope: company portfolio."
+skill,"Communication, Influence & Craft Leadership",Product Craft Leadership,Raising the craft bar,LI-03,"Depth: Contributes informed opinions in technical discussions.
+
+Evidenced by: Offers an informed opinion in a spec review that a more senior PM ultimately weighs alongside their own, without yet being the person others default to.
+
+Scope: one feature/epic.","Depth: Influences component-level decisions through credibility.
+
+Evidenced by: Earns their product area's default trust on discovery-method calls through consistently sound judgment, not because of a title.
+
+Scope: a product area.","Depth: Sets technical direction for a domain; others align to their calls.
+
+Evidenced by: Sets the discovery and spec-writing bar their product's team aligns to without being told, handling the hardest ambiguous calls unsupervised.
+
+Scope: a product/capability (terminal level).","Depth: Shapes how multiple teams approach problems; trusted tiebreaker.
+
+Evidenced by: Becomes the trusted tiebreaker on a craft question that spans three teams' approaches, and the resolution shapes how all three now work.
+
+Scope: multiple product areas.","Depth: Influences org-wide technical strategy.
+
+Evidenced by: Advises the product org's leadership on craft strategy at organizational scale, influencing standards no single cross-team problem could reach.
+
+Scope: product organization.","Depth: Influences company strategic direction through insight.
+
+Evidenced by: Shapes the company's strategic direction through craft insight that gets adopted well beyond the product organization.
+
+Scope: company portfolio."
+skill,"Communication, Influence & Craft Leadership",Product Craft Leadership,Hiring & interviewing PMs,LI-02,"Depth: Participates in interviews; gives clear, evidence-based feedback.
+
+Evidenced by: Gives evidence-based interview feedback using the team's existing scorecard, citing the specific answer that drove their rating.
+
+Scope: one feature/epic.","Depth: Runs interviews well; calibrates against a consistent bar.
+
+Evidenced by: Runs a PM candidate interview independently and calibrates their rating against the team's existing bar without a debrief coach in the room.
+
+Scope: a product area.","Depth: Shapes hiring for a team; designs loops; makes sound staffing calls.
+
+Evidenced by: Designs a new interview loop stage that catches a judgment gap the old loop was missing, and makes the staffing call on a contested hire.
+
+Scope: a product/capability (terminal level).","Depth: Drives hiring strategy across teams; builds the interviewing bar.
+
+Evidenced by: Builds the PM interviewing bar three other teams now hire against, driving hiring strategy across the group.
+
+Scope: multiple product areas.","Depth: Sets the org's talent strategy.
+
+Evidenced by: Sets the product org's talent strategy — leveling, sourcing priorities, workforce plan — for the year.
+
+Scope: product organization.","Depth: Shapes company-wide talent philosophy.
+
+Evidenced by: Shapes the company's talent philosophy for product roles in a way that outlasts their own tenure in the org.
+
+Scope: company portfolio."

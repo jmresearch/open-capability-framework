@@ -5,47 +5,1103 @@ meta_description,"People-leadership ladder (M1-M6) for internal developer-platfo
 level_title,,,,,Platform Engineering Manager,Senior Platform Engineering Manager,Director of Platform Engineering,Senior Director of Platform Engineering,VP of Platform Engineering,SVP / Head of Platform
 level_scope,,,,,one platform team,a complex / critical platform team,a platform domain (cross-team),a platform sub-org,the platform function,org-wide platform
 level_focus,,,,,builds one healthy platform team and the platform-as-a-product fundamentals,runs a high-stakes platform team and its reliability and DevEx outcomes,sets strategy and paved-road standards for a cross-team platform domain,builds the operating system and architecture a platform sub-org runs on,sets platform-function direction and represents developer productivity to the business,"sets org-wide platform vision, operating model, and the company-level infrastructure bets"
-skill,People Leadership & Team Health,Hiring & Team Formation,Hiring & selection,LI-02,Depth: Shapes hiring for a team; designs loops; makes sound staffing calls. Evidenced by: Defends every hire/no-hire in debrief with recorded signal evidence rather than gut feel. Scope: one platform team.,Depth: Shapes hiring for a team; designs loops; makes sound staffing calls. Evidenced by: Rebuilds a loop that is letting weak candidates through by tightening the signals it actually tests. Scope: a complex / critical platform team.,Depth: Drives hiring strategy across teams; builds the interviewing bar. Evidenced by: Publishes the rubric and calibration cadence several teams' loops now run on. Scope: a platform domain (cross-team).,Depth: Drives hiring strategy across teams; builds the interviewing bar. Evidenced by: Certifies interviewers and installs a bar-raiser mechanism that measurably lifts quality-of-hire. Scope: a platform sub-org.,Depth: Sets the org's talent strategy. Evidenced by: Shapes leveling and headcount decisions across the function from pipeline and labor-market data. Scope: the platform function.,"Depth: Shapes company-wide talent philosophy. Evidenced by: Pioneers selection practice, like work-sample design for platform work, that other organizations copy. Scope: org-wide platform."
-skill,People Leadership & Team Health,Hiring & Team Formation,Onboarding & team formation,EM-13,Depth: Runs a 30/60/90 onboarding with named buddies and early wins; new hires ship in their first weeks and say so in check-ins. Evidenced by: Gets a new platform hire shipping a real change within their first sprint. Scope: one platform team.,"Depth: Reads a team's formation stage and intervenes on it — resets norms after a merge, names storming in the room instead of managing it by email. Evidenced by: Reads where a forming team is stuck in storming and intervenes to move it to performing. Scope: a complex / critical platform team.","Depth: Builds the onboarding and team-launch playbook multiple teams use; teams start faster because of materials and rituals they created, and stands up whole new teams repeatedly. Evidenced by: Ships a reusable ramp template and 30/60/90 model that cuts time-to-first-contribution across the domain. Scope: a platform domain (cross-team).","Depth: Builds the onboarding and team-launch playbook multiple teams use; teams start faster because of materials and rituals they created, and stands up whole new teams repeatedly. Evidenced by: Stands up a new platform team from scratch to productive without a delivery trough. Scope: a platform sub-org.","Depth: Designs how an organization absorbs step-change growth — acquisitions, new sites, doubled headcount — without culture dilution; integration plans carry named cultural mechanisms. Evidenced by: Sets the norms that keep newly formed platform teams productive through function-wide scaling. Scope: the platform function.",Depth: Makes team formation an organization-wide capability — new groups spin up predictably without heroics — and audits that the machinery still works. Evidenced by: Pioneers the team-formation playbook other engineering functions reuse. Scope: org-wide platform.
-skill,People Leadership & Team Health,Coaching & Performance,Coaching & development,LI-01,Depth: Coaches engineers with growth-oriented feedback; measurably improves a team's skill. Evidenced by: Turns a specific platform-engineer weakness into a visible skill gain within a quarter. Scope: one platform team.,Depth: Coaches engineers with growth-oriented feedback; measurably improves a team's skill. Evidenced by: Develops a report into a tech lead who now runs a workstream unaided. Scope: a complex / critical platform team.,Depth: Develops future leads across teams; shapes hiring and onboarding. Evidenced by: Runs coaching-the-coach sessions that lift how platform leads across the domain develop their own people. Scope: a platform domain (cross-team).,Depth: Develops future leads across teams; shapes hiring and onboarding. Evidenced by: Produces leaders others actively recruit onto their teams. Scope: a platform sub-org.,Depth: Develops senior engineers and leaders; builds culture deliberately. Evidenced by: Sets development standards leaders across the function coach against. Scope: the platform function.,Depth: Develops the next generation of top talent; legacy outlasts tenure. Evidenced by: Pioneers a development model peer functions adopt. Scope: org-wide platform.
-skill,People Leadership & Team Health,Coaching & Performance,Career development & sponsorship,EM-02,Depth: Coaches direct reports on standard career growth with normal review. Evidenced by: Puts a report's name forward for a visible platform project that stretches them. Scope: one platform team.,Depth: Independently sponsors people into stretch roles and navigates complex growth paths. Evidenced by: Gets a deserving platform engineer promoted through a defensible packet. Scope: a complex / critical platform team.,"Depth: Defines career-development practices others adopt and unblocks the toughest growth cases. Evidenced by: Advocates for talent in cross-team calibration rooms they do not own, moving outcomes for people who are not theirs. Scope: a platform domain (cross-team).",Depth: Defines career-development practices others adopt and unblocks the toughest growth cases. Evidenced by: Spends visible capital to place emerging platform leaders into scope. Scope: a platform sub-org.,Depth: Sets the org's talent-development strategy and anticipates future capability needs. Evidenced by: Sets the sponsorship expectations leaders across the function are held to. Scope: the platform function.,Depth: Defines exemplary career sponsorship for the discipline and is externally recognized for it. Evidenced by: Pioneers a sponsorship model that measurably widens the platform leadership pipeline. Scope: org-wide platform.
-skill,People Leadership & Team Health,Coaching & Performance,Performance management,EM-01,Depth: Independently manages underperformance and difficult cases through to clear resolution. Evidenced by: Addresses an underperforming platform engineer directly with a documented plan rather than letting it drift. Scope: one platform team.,Depth: Independently manages underperformance and difficult cases through to clear resolution. Evidenced by: Runs a difficult exit cleanly and defensibly. Scope: a complex / critical platform team.,"Depth: Defines accountability practices other managers adopt and coaches them through hard cases. Evidenced by: Runs cross-team calibration that holds a fair, comparable bar across the domain. Scope: a platform domain (cross-team).",Depth: Defines accountability practices other managers adopt and coaches them through hard cases. Evidenced by: Corrects rating drift between teams so the bar means the same everywhere. Scope: a platform sub-org.,Depth: Sets the org's performance philosophy and anticipates systemic accountability gaps. Evidenced by: Sets the standard leaders across the function calibrate to. Scope: the platform function.,"Depth: Defines what fair, effective performance management means and influences the field externally. Evidenced by: Pioneers a performance model peer functions adopt. Scope: org-wide platform."
-skill,People Leadership & Team Health,Team Health & Culture,Psychological safety & team health,EM-03,"Depth: Sustains safety through pressure (incidents, deadlines, change); repairs damaged trust; the team measurably speaks up (postmortems name real causes). Evidenced by: Keeps a tense incident retro blameless under real pressure so the team names the actual contributing cause instead of a scapegoat. Scope: one platform team.","Depth: Sustains safety through pressure (incidents, deadlines, change); repairs damaged trust; the team measurably speaks up (postmortems name real causes). Evidenced by: Keeps a severe-outage review blameless so the real contributing causes come out. Scope: a complex / critical platform team.",Depth: Diagnoses and fixes systemic safety failures across teams; other leaders seek their help on entrenched conflict and burnout patterns. Evidenced by: Instruments team-health signals across the domain and acts on a declining one before it becomes attrition. Scope: a platform domain (cross-team).,Depth: Diagnoses and fixes systemic safety failures across teams; other leaders seek their help on entrenched conflict and burnout patterns. Evidenced by: Turns around an unhealthy team's culture through the leader running it. Scope: a platform sub-org.,Depth: Sets the org's team-health bar and mechanisms; safety practices they designed are adopted org-wide. Evidenced by: Sets the health norms leaders across the function are measured against. Scope: the platform function.,Depth: Shapes how the industry thinks about team health; published practices others implement. Evidenced by: Pioneers a culture model other engineering functions copy. Scope: org-wide platform.
-skill,People Leadership & Team Health,Team Health & Culture,"Motivation, engagement & retention",EM-17,"Depth: Sustains engagement through hard stretches; diagnoses systemic motivation problems (not just individuals) and fixes the conditions. Evidenced by: Reads a dip across the whole platform team's morale during a demanding on-call stretch -- not just one person's -- and fixes the driving condition (load, visibility, toil) instead of one-off pep talks. Scope: one platform team.",Depth: Sustains engagement through hard stretches; diagnoses systemic motivation problems (not just individuals) and fixes the conditions. Evidenced by: Keeps regrettable attrition low on a critical platform team through a demanding period. Scope: a complex / critical platform team.,"Depth: Builds engagement mechanisms other teams adopt; reverses disengagement trends beyond their own span. Evidenced by: Reads engagement signals across the domain and fixes a systemic driver of attrition, not just symptoms. Scope: a platform domain (cross-team).",Depth: Builds engagement mechanisms other teams adopt; reverses disengagement trends beyond their own span. Evidenced by: Shifts a sub-org's engagement trend through the leaders who own each team. Scope: a platform sub-org.,Depth: Owns the engagement strategy for a function; conditions they designed show up in retention and survey trends. Evidenced by: Sets the expectations leaders across the function own for engagement. Scope: the platform function.,Depth: Advances the practice of engagement in the field; frameworks others cite and use. Evidenced by: Pioneers retention practice for infrastructure talent that peers adopt. Scope: org-wide platform.
-skill,Platform as a Product,Product Strategy & Discovery,Platform vision & roadmap,PM-05,Depth: Builds and sequences a credible roadmap for one product with normal review. Evidenced by: States the problem each platform capability solves and for whom. Scope: one platform team.,"Depth: Independently balances competing priorities and replans confidently under shifting constraints. Evidenced by: Kills or defers a low-value platform build others wanted, with the outcome argument to back it. Scope: a complex / critical platform team.",Depth: Designs the planning approach others use and resolves cross-team portfolio conflicts. Evidenced by: Publishes a domain platform strategy that redirects several teams' build priorities. Scope: a platform domain (cross-team).,Depth: Designs the planning approach others use and resolves cross-team portfolio conflicts. Evidenced by: Frames the platform-as-a-product operating model the sub-org plans within. Scope: a platform sub-org.,Depth: Sets portfolio planning strategy and foresees where investment should shift next. Evidenced by: Sets the platform bets the function organizes around and defends them at the exec table. Scope: the platform function.,Depth: Defines portfolio-planning best practice for the field and is recognized for it. Evidenced by: Pioneers a platform strategy the industry recognizes. Scope: org-wide platform.
-skill,Platform as a Product,Product Strategy & Discovery,Internal user research & discovery,PM-01,"Depth: Plans and conducts standard discovery for a feature, synthesizing themes with normal review. Evidenced by: Turns an observed developer pain point into a prioritized platform fix. Scope: one platform team.","Depth: Independently frames ambiguous problems, selects fitting methods, and separates signal from noise. Evidenced by: Quantifies a cognitive-load or feedback-loop problem the team then designs against. Scope: a complex / critical platform team.",Depth: Designs the team's discovery approach and untangles findings others find contradictory. Evidenced by: Stands up a developer-experience measurement combining surveys and system signals that several teams now steer by. Scope: a platform domain (cross-team).,Depth: Designs the team's discovery approach and untangles findings others find contradictory. Evidenced by: Makes DevEx evidence the default input to roadmap decisions across the sub-org. Scope: a platform sub-org.,Depth: Sets the org's research strategy and anticipates emerging customer needs before they surface. Evidenced by: Sets the DevEx metrics the function commits to and reports upward. Scope: the platform function.,Depth: Defines what rigorous product discovery means and shapes the discipline's practice externally. Evidenced by: Pioneers a DevEx research program other companies reference. Scope: org-wide platform.
-skill,Platform as a Product,Product Strategy & Discovery,Platform value & business case,PD-06,"Depth: Frames own work in user/business outcomes, not just tasks. Evidenced by: Ties a platform initiative to a concrete productivity or cost outcome. Scope: one platform team.",Depth: Treats their area as a product; uses metrics to decide what to build for a domain. Evidenced by: Wins funding for a platform bet with a defensible value model. Scope: a complex / critical platform team.,Depth: Expert at aligning technical bets with product strategy across teams. Evidenced by: Publishes a value and ROI framework several teams justify platform work with. Scope: a platform domain (cross-team).,Depth: Expert at aligning technical bets with product strategy across teams. Evidenced by: Reframes platform from cost center to leverage multiplier for the sub-org's stakeholders. Scope: a platform sub-org.,Depth: Sets product direction for an org's technical surface. Evidenced by: Sets the value narrative and metrics the function is funded against. Scope: the platform function.,Depth: Shapes how the company creates value through technical products. Evidenced by: Pioneers a platform-value model the business plans capital around. Scope: org-wide platform.
-skill,Platform as a Product,Developer Experience & Adoption,Golden paths & paved roads,OPS-27,Depth: Independently builds and supports standard platform capabilities and templates for routine developer needs with review. Evidenced by: Gets the team's users onto the paved road for one high-frequency task. Scope: one platform team.,"Depth: Designs self-service workflows for ambiguous needs, reducing friction and resolving hard abstraction and adoption issues. Evidenced by: Retires a fragmented set of bespoke setups onto a single supported golden path. Scope: a complex / critical platform team.","Depth: Defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems. Evidenced by: Defines what paved means across the domain, from support SLA to versioning and deprecation, and gets teams to build to it. Scope: a platform domain (cross-team).","Depth: Defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems. Evidenced by: Makes the golden path the default choice across the sub-org, not the exception. Scope: a platform sub-org.","Depth: Sets organization-wide platform strategy, anticipating how developer-experience engineering should evolve. Evidenced by: Sets the paved-road principles the whole function designs to. Scope: the platform function.","Depth: Defines what excellent platform engineering means for the field, shaping industry developer-experience practice. Evidenced by: Pioneers a golden-path model other engineering orgs adopt. Scope: org-wide platform."
-skill,Platform as a Product,Developer Experience & Adoption,Self-service & platform interfaces,OPS-27,Depth: Independently builds and supports standard platform capabilities and templates for routine developer needs with review. Evidenced by: Eliminates a manual request path by making it self-serve. Scope: one platform team.,"Depth: Designs self-service workflows for ambiguous needs, reducing friction and resolving hard abstraction and adoption issues. Evidenced by: Removes the team as a human bottleneck from a high-volume workflow. Scope: a complex / critical platform team.","Depth: Defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems. Evidenced by: Defines the interface-contract pattern, whether API, portal, or paved road, that several platform teams now expose. Scope: a platform domain (cross-team).","Depth: Defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems. Evidenced by: Shifts the sub-org's platforms from ticket-driven to self-service by default. Scope: a platform sub-org.","Depth: Sets organization-wide platform strategy, anticipating how developer-experience engineering should evolve. Evidenced by: Sets the target that platform work is consumed without human intervention across the function. Scope: the platform function.","Depth: Defines what excellent platform engineering means for the field, shaping industry developer-experience practice. Evidenced by: Pioneers an internal-platform interface model the industry references. Scope: org-wide platform."
-skill,Platform as a Product,Developer Experience & Adoption,Adoption & migration strategy,OPS-33,"Depth: Runs the adoption of a single capability end to end - communicates the change, provides migration tooling or docs, and clears the common blockers without help. Evidenced by: Moves the first cohort of teams onto a new platform version. Scope: one platform team.","Depth: Owns a capability's adoption and deprecation as a program: sets migration tooling (codemods, automated rewrites), burns down the long tail, and enforces a deprecation policy with published timelines and support commitments. Evidenced by: Completes a migration including the last stubborn holdouts rather than stalling at eighty percent. Scope: a complex / critical platform team.","Depth: Designs the migration operating model a domain reuses - adoption instrumentation, incentives, and deprecation guarantees - so multiple teams retire and replace surfaces predictably. Evidenced by: Defines the deprecation policy and migration-support standard several teams' rollouts now run on. Scope: a platform domain (cross-team).","Depth: Designs the migration operating model a domain reuses - adoption instrumentation, incentives, and deprecation guarantees - so multiple teams retire and replace surfaces predictably. Evidenced by: Drives a sub-org-wide migration to completion through the teams that own each service. Scope: a platform sub-org.","Depth: Sets the organization's adoption and deprecation standards: the sunset principles, the guarantee bar, and the mechanisms that keep the platform's surface area from sprawling as it grows. Evidenced by: Sets the adoption and sunsetting principles the function commits to. Scope: the platform function.","Depth: Establishes adoption-and-lifecycle practice others in the field adopt; makes deprecation a trusted, low-friction default rather than a feared event across the industry. Evidenced by: Pioneers a migration model that keeps the org off long-lived forks. Scope: org-wide platform."
-skill,Platform as a Product,Developer Experience & Adoption,Platform advocacy & enablement,DR-01,Depth: Grows and supports a developer community segment with normal review. Evidenced by: Turns a confused user base into a competent one for one capability through documentation and support. Scope: one platform team.,Depth: Independently builds thriving communities and defuses tense community conflicts. Evidenced by: Grows an internal champion network that advocates the platform without the team present. Scope: a complex / critical platform team.,Depth: Defines community-building practices others adopt and revives flagging communities. Evidenced by: Stands up a platform-community and docs practice several teams run their enablement through. Scope: a platform domain (cross-team).,Depth: Defines community-building practices others adopt and revives flagging communities. Evidenced by: Makes platform enablement a repeatable function rather than heroics across the sub-org. Scope: a platform sub-org.,Depth: Sets the org's community strategy and anticipates where developer interest is shifting. Evidenced by: Sets the enablement and advocacy strategy the function invests in. Scope: the platform function.,Depth: Defines what great developer advocacy means and is externally recognized for it. Evidenced by: Pioneers an internal developer-relations model peer functions and other orgs copy. Scope: org-wide platform.
-skill,Reliability & Operations,Reliability Engineering,"Reliability, SLOs & error budgets",OPS-04,"Depth: Builds retries, timeouts and fallbacks; understands blast radius. Evidenced by: Adds a retry-with-backoff and a fallback path to a flaky downstream call so that dependency's failure doesn't cascade into the team's own service. Scope: one platform team.",Depth: Designs for graceful degradation; defines SLOs; accountable for a domain's reliability. Evidenced by: Negotiates and enforces an error-budget policy that pauses feature work when reliability slips. Scope: a complex / critical platform team.,Depth: Expert in resilience and capacity planning at scale; drives down incidents systemically. Evidenced by: Defines the reliability-target framework several teams now run their services against. Scope: a platform domain (cross-team).,Depth: Expert in resilience and capacity planning at scale; drives down incidents systemically. Evidenced by: Makes error-budget policy the mechanism the sub-org's prioritization respects. Scope: a platform sub-org.,Depth: Owns org-level reliability; fixes risk in process and org design. Evidenced by: Sets the reliability commitments the function makes to the business. Scope: the platform function.,Depth: Sets the company's reliability philosophy. Evidenced by: Pioneers a reliability model other orgs adopt. Scope: org-wide platform.
-skill,Reliability & Operations,Reliability Engineering,Incident & operational-risk leadership,EM-10,Depth: Manages standard incidents and routine operational risk with normal review. Evidenced by: Turns a postmortem's action items into shipped fixes rather than a filed document. Scope: one platform team.,Depth: Independently leads severe incidents and drives durable remediation of risk. Evidenced by: Runs a major-incident review whose systemic fixes prevent the class of failure from recurring. Scope: a complex / critical platform team.,Depth: Defines incident and risk practices others adopt and commands the worst crises calmly. Evidenced by: Defines the incident-command and postmortem practice several teams now run. Scope: a platform domain (cross-team).,Depth: Defines incident and risk practices others adopt and commands the worst crises calmly. Evidenced by: Drives a measurable drop in MTTR or repeat incidents across the sub-org through the leaders who own each service. Scope: a platform sub-org.,Depth: Sets the org's operational-risk strategy and anticipates systemic failure modes. Evidenced by: Sets the incident and reliability standard the function is accountable to. Scope: the platform function.,Depth: Defines what excellent operational risk management means and shapes external practice. Evidenced by: Pioneers an operational-excellence practice other orgs reference. Scope: org-wide platform.
-skill,Reliability & Operations,Reliability Engineering,Observability & health signals,OPS-05,Depth: Instruments their services; builds dashboards; tunes alerts to limit noise. Evidenced by: Replaces a noisy or blind alert with a signal that maps to real user pain. Scope: one platform team.,"Depth: Designs observability for complex systems (end-to-end traces, quality signals, cost attribution). Evidenced by: Makes a previously opaque failure mode diagnosable in minutes. Scope: a complex / critical platform team.","Depth: Expert in instrumentation trade-offs at scale, incl. privacy-safe logging. Evidenced by: Defines the instrumentation and alerting baseline several teams now build to. Scope: a platform domain (cross-team).","Depth: Expert in instrumentation trade-offs at scale, incl. privacy-safe logging. Evidenced by: Makes health signals consistent and comparable across the sub-org's services. Scope: a platform sub-org.",Depth: Defines org observability strategy. Evidenced by: Sets the observability standard the function commits to. Scope: the platform function.,Depth: Shapes company-wide operational visibility; advances practice. Evidenced by: Pioneers an approach to health signals other orgs adopt. Scope: org-wide platform.
-skill,Reliability & Operations,Operational Leverage,Toil reduction & automation,OPS-28,Depth: Independently automates routine operational tasks and integrates them into standard workflows with normal review. Evidenced by: Converts a recurring manual operational task into an automated one. Scope: one platform team.,"Depth: Designs automation for ambiguous, error-prone toil and resolves hard reliability and orchestration issues in pipelines. Evidenced by: Cuts on-call and operational load enough to visibly change the team's toil ratio. Scope: a complex / critical platform team.","Depth: Defines automation patterns and toil-elimination practices others adopt, solving deep workflow and safety problems. Evidenced by: Defines the toil-budget practice several teams now manage their operational load with. Scope: a platform domain (cross-team).","Depth: Defines automation patterns and toil-elimination practices others adopt, solving deep workflow and safety problems. Evidenced by: Drives a sub-org-wide reduction in toil through the platforms that eliminate it. Scope: a platform sub-org.","Depth: Sets organization-wide automation strategy, anticipating where automation-first operations should head. Evidenced by: Sets the toil and automation targets the function commits to. Scope: the platform function.","Depth: Defines what automation-first operations means for the discipline, externally credible in shaping the practice. Evidenced by: Pioneers an operational-leverage model other orgs adopt. Scope: org-wide platform."
-skill,Reliability & Operations,Operational Leverage,"Capacity, performance & cost",OPS-07,Depth: Applies standard optimizations; stays within cost/latency budgets. Evidenced by: Right-sizes a resource or fixes a performance regression to cut cost without hurting reliability. Scope: one platform team.,Depth: Designs cost-aware architectures; defines and tracks unit economics for a domain. Evidenced by: Lands a material infrastructure-cost reduction while holding SLOs. Scope: a complex / critical platform team.,"Depth: Expert in economics at scale (fleet optimization, build-vs-buy). Evidenced by: Defines the FinOps and performance practice several teams now manage spend with. Scope: a platform domain (cross-team).","Depth: Expert in economics at scale (fleet optimization, build-vs-buy). Evidenced by: Makes infrastructure unit cost a managed, trending metric across the sub-org. Scope: a platform sub-org.",Depth: Owns org-level spend strategy; cost decisions change margins. Evidenced by: Sets the unit-economics and capacity commitments the function owns. Scope: the platform function.,Depth: Shapes the company economics of the products. Evidenced by: Pioneers a FinOps model the business plans spend around. Scope: org-wide platform.
-skill,Technical Direction & Architecture,Architecture & Standards,Platform architecture stewardship,ARC-10,Depth: Evaluates standard trade-offs independently for routine architectural choices. Evidenced by: Catches an architectural drift or coupling problem in review before it ships. Scope: one platform team.,"Depth: Structures and defends trade-off decisions for ambiguous, high-stakes designs autonomously. Evidenced by: Redesigns a component boundary so team and system seams line up. Scope: a complex / critical platform team.",Depth: Defines trade-off analysis methods and decision frameworks others adopt. Evidenced by: Defines the reference architecture and decision-record practice several teams now build within. Scope: a platform domain (cross-team).,Depth: Defines trade-off analysis methods and decision frameworks others adopt. Evidenced by: Shapes a sub-org's team topology to fit the platform architecture it needs. Scope: a platform sub-org.,"Depth: Sets how the organization makes architectural trade-offs, anticipating future tensions. Evidenced by: Sets the architecture principles the function builds against. Scope: the platform function.",Depth: Advances trade-off-analysis practice recognized across the industry. Evidenced by: Pioneers an architecture other orgs study. Scope: org-wide platform.
-skill,Technical Direction & Architecture,Architecture & Standards,Engineering standards & quality,SWE-02,"Depth: Writes clean, documented, modular code; gives useful review feedback. Evidenced by: Raises a slipping quality practice such as test coverage or review rigor on the team. Scope: one platform team.",Depth: Designs for maintainability; leads refactors of problem areas; review feedback teaches. Evidenced by: Installs a delivery-safety practice that measurably cuts change-failure rate. Scope: a complex / critical platform team.,"Depth: Expert in code health at scale (shared libraries, deprecations, large migrations). Evidenced by: Defines the CI/CD and quality standard several teams now build to. Scope: a platform domain (cross-team).","Depth: Expert in code health at scale (shared libraries, deprecations, large migrations). Evidenced by: Makes high-quality delivery the default path across the sub-org. Scope: a platform sub-org.",Depth: Shapes org-wide engineering standards for long-lived codebases. Evidenced by: Sets the quality standard the function commits to. Scope: the platform function.,Depth: Defines what good engineering looks like company-wide; externally recognized. Evidenced by: Pioneers a standards model other functions adopt. Scope: org-wide platform.
-skill,Technical Direction & Architecture,Architecture & Standards,Technical debt & modernization,EM-15,Depth: Keeps a visible debt register with the cost of carry noted and defends a steady paydown allocation in planning rather than begging quarter by quarter. Evidenced by: Makes a debt trade-off explicit in planning rather than letting it accrue silently. Scope: one platform team.,"Depth: Distinguishes debt worth carrying from debt that will detonate, sequences remediation by risk, and prices debt in incident and velocity terms stakeholders accept. Evidenced by: Funds and lands a modernization that removes a systemic drag on the team. Scope: a complex / critical platform team.","Depth: Makes debt legible across multiple teams — shared taxonomy, reporting rhythm — and gets cross-team risk (the shared library nobody owns, the half-finished migration) owned and funded. Evidenced by: Defines the debt-accounting and modernization practice several teams now prioritize with. Scope: a platform domain (cross-team).","Depth: Makes debt legible across multiple teams — shared taxonomy, reporting rhythm — and gets cross-team risk (the shared library nobody owns, the half-finished migration) owned and funded. Evidenced by: Wins sustained investment for a sub-org-wide modernization others deprioritized. Scope: a platform sub-org.","Depth: Carries technical risk onto the executive risk register — top exposures known, sized, owned, trending — and lands multi-quarter remediation programs against feature pressure. Evidenced by: Sets the debt and modernization commitments the function makes. Scope: the platform function.",Depth: Sets an organization's speed-versus-soundness posture explicitly — where debt is accepted for velocity and where it never is — and holds it under growth pressure. Evidenced by: Pioneers a debt-management model the business funds against. Scope: org-wide platform.
-skill,Technical Direction & Architecture,Technical Strategy & Risk,Technical strategy & investment,LI-03,"Depth: Influences component-level decisions through credibility. Evidenced by: Frames a build decision as a bet with a stated rationale, not an ad-hoc pick. Scope: one platform team.",Depth: Sets technical direction for a domain; others align to their calls. Evidenced by: Makes a hard technical-investment call such as rebuild versus extend and defends it with evidence. Scope: a complex / critical platform team.,Depth: Shapes how multiple teams approach problems; trusted tiebreaker. Evidenced by: Publishes a domain technical strategy or Wardley map that redirects where several teams invest. Scope: a platform domain (cross-team).,Depth: Shapes how multiple teams approach problems; trusted tiebreaker. Evidenced by: Frames the small set of bets the sub-org organizes its roadmap around. Scope: a platform sub-org.,Depth: Influences org-wide technical strategy. Evidenced by: Sets the technology bets the function commits capital and headcount to. Scope: the platform function.,Depth: Influences company strategic direction through insight. Evidenced by: Pioneers a technical strategy the company's product strategy depends on. Scope: org-wide platform.
-skill,Technical Direction & Architecture,Technical Strategy & Risk,Vendor & build/buy/adopt strategy,EM-06,Depth: Manages a team budget and standard vendor relationships with normal review. Evidenced by: Avoids building something a supported off-the-shelf option already solves. Scope: one platform team.,Depth: Independently controls budgets under pressure and negotiates difficult vendor terms. Evidenced by: Negotiates or selects a platform vendor on a defensible total-cost basis. Scope: a complex / critical platform team.,Depth: Defines budget and vendor practices others adopt and rescues failing vendor relationships. Evidenced by: Defines the evaluation and vendor-selection framework several teams now decide with. Scope: a platform domain (cross-team).,Depth: Defines budget and vendor practices others adopt and rescues failing vendor relationships. Evidenced by: Drives a sub-org-wide build-versus-buy decision with material budget impact. Scope: a platform sub-org.,Depth: Sets org-wide budget and vendor strategy and anticipates cost and supplier risks. Evidenced by: Sets the sourcing principles and major vendor relationships the function commits to. Scope: the platform function.,Depth: Defines exemplary budget and vendor management for the field and influences practice. Evidenced by: Pioneers a sourcing strategy the business plans capital around. Scope: org-wide platform.
-skill,Technical Direction & Architecture,Technical Strategy & Risk,Secure-by-default platform & guardrails,SEC-18,"Depth: Writes and tests policy rules for a component - admission checks, pipeline gates - with low false-positive rates and violation messages that tell the user how to comply. Evidenced by: Bakes a security control into the platform so users get it by default rather than bolting it on. Scope: one platform team.","Depth: Designs the guardrail architecture for a capability - what is blocked, warned, or audited, with documented threat reasoning - tuned so the safe path is the fast path, and runs an audited exception workflow without becoming the bottleneck. Evidenced by: Closes a systemic vulnerability class through a platform control rather than one-off fixes. Scope: a complex / critical platform team.","Depth: Harmonizes policy across teams into a coherent, versioned policy library with a governed exception process, and adjudicates escalated safety-versus-velocity disputes. Evidenced by: Defines the paved-road security controls several teams now inherit by default. Scope: a platform domain (cross-team).","Depth: Harmonizes policy across teams into a coherent, versioned policy library with a governed exception process, and adjudicates escalated safety-versus-velocity disputes. Evidenced by: Makes secure-by-default the path of least resistance across the sub-org. Scope: a platform sub-org.","Depth: Owns an organization's preventive-control strategy with security partners - the control catalog, its coverage, and the evidence it works - moving enforcement from review-time to platform-time. Evidenced by: Sets the risk commitments and compliance guarantees the function owns. Scope: the platform function.","Depth: Sets an organization-defining balance of enablement and control, accountable for guardrails that hold under audit and attack without throttling delivery. Evidenced by: Pioneers a secure-platform model auditors and peers reference. Scope: org-wide platform."
-skill,Delivery & Execution,Planning & Prioritization,Planning & estimation,PD-04,Depth: Estimates scoped work realistically; plans own 1-3 week projects. Evidenced by: Surfaces a schedule risk early instead of discovering the slip at the deadline. Scope: one platform team.,"Depth: Plans quarter-scale, multi-workstream efforts including dependencies. Evidenced by: Replans a high-stakes platform delivery mid-flight without losing the commitment. Scope: a complex / critical platform team.",Depth: Expert at planning large programs; anticipates risk early. Evidenced by: Defines the forecasting practice several teams now plan with. Scope: a platform domain (cross-team).,Depth: Expert at planning large programs; anticipates risk early. Evidenced by: Makes sub-org delivery forecasts credible to stakeholders. Scope: a platform sub-org.,Depth: Plans org-level programs across quarters/years. Evidenced by: Sets the planning discipline the function commits to. Scope: the platform function.,Depth: Shapes how the company plans major technical change. Evidenced by: Pioneers a forecasting practice other functions adopt. Scope: org-wide platform.
-skill,Delivery & Execution,Planning & Prioritization,Prioritization & trade-offs,PD-02,Depth: Makes sound priority calls within scope; time-boxes uncertain work. Evidenced by: Says no to a low-value request with a clear rationale rather than absorbing everything. Scope: one platform team.,Depth: Balances cost/value/risk across a domain; resists hype; decisions hold up over months. Evidenced by: Defends a contested platform trade-off between competing stakeholder demands. Scope: a complex / critical platform team.,Depth: Expert at portfolio-level trade-offs; surfaces hidden assumptions; trusted tiebreaker. Evidenced by: Installs a cost-of-delay or WSJF practice several teams now sequence with. Scope: a platform domain (cross-team).,Depth: Expert at portfolio-level trade-offs; surfaces hidden assumptions; trusted tiebreaker. Evidenced by: Arbitrates a sub-org-wide trade-off that reallocates investment. Scope: a platform sub-org.,Depth: Sets decision frameworks for the org. Evidenced by: Sets the prioritization principles the function commits capacity against. Scope: the platform function.,Depth: Influences company strategic direction through judgment. Evidenced by: Pioneers a portfolio-prioritization model other functions adopt. Scope: org-wide platform.
-skill,Delivery & Execution,Planning & Prioritization,Capacity & resource allocation,EM-05,Depth: Builds a credible headcount plan for one team with normal review. Evidenced by: Protects focus time rather than fragmenting the team across too many fronts. Scope: one platform team.,Depth: Independently plans resourcing under uncertainty and defends staffing trade-offs. Evidenced by: Rebalances staffing to unblock a priority without wrecking sustainability. Scope: a complex / critical platform team.,Depth: Defines resource-planning practices others adopt and resolves cross-team allocation conflicts. Evidenced by: Defines the staffing and load-balancing model several teams now allocate with. Scope: a platform domain (cross-team).,Depth: Defines resource-planning practices others adopt and resolves cross-team allocation conflicts. Evidenced by: Reallocates capacity across a sub-org to match investment shifts. Scope: a platform sub-org.,Depth: Sets org-wide resourcing strategy and anticipates future capacity demand. Evidenced by: Sets the resourcing principles the function plans against. Scope: the platform function.,Depth: Defines headcount-planning best practice for the discipline and is recognized for it. Evidenced by: Pioneers a resourcing approach other functions adopt. Scope: org-wide platform.
-skill,Delivery & Execution,Delivery Management,Predictable delivery & flow,EM-07,"Depth: Drives delivery of a standard program with normal review. Evidenced by: Removes a recurring flow blocker such as a handoff, review lag, or big-batch release that stalls delivery. Scope: one platform team.",Depth: Independently runs complex multi-team programs and recovers slipping delivery. Evidenced by: Stabilizes a team's delivery so its commitments become trustworthy. Scope: a complex / critical platform team.,Depth: Defines delivery practices others adopt and rescues the most troubled programs. Evidenced by: Defines the flow and batch-size practice several teams now deliver with. Scope: a platform domain (cross-team).,Depth: Defines delivery practices others adopt and rescues the most troubled programs. Evidenced by: Makes a sub-org's delivery predictable through the leaders who run each team. Scope: a platform sub-org.,Depth: Sets the org's delivery strategy and anticipates systemic delivery risks. Evidenced by: Sets the flow and predictability standard the function commits to. Scope: the platform function.,Depth: Defines what excellent program delivery means and shapes external practice. Evidenced by: Pioneers a flow model other functions adopt. Scope: org-wide platform.
-skill,Delivery & Execution,Delivery Management,Engineering metrics & delivery health,EM-09,Depth: Interprets productivity metrics for one team with normal review. Evidenced by: Acts on a delivery-metric trend to fix an actual bottleneck. Scope: one platform team.,Depth: Independently designs metric systems and distinguishes real signal from vanity numbers. Evidenced by: Diagnoses a delivery-health problem from the four keys and fixes its root cause. Scope: a complex / critical platform team.,Depth: Defines the productivity-measurement model others adopt and debunks misleading metrics. Evidenced by: Defines the DORA and SPACE measurement several teams now steer by. Scope: a platform domain (cross-team).,Depth: Defines the productivity-measurement model others adopt and debunks misleading metrics. Evidenced by: Makes data-driven delivery improvement the norm across the sub-org. Scope: a platform sub-org.,Depth: Sets the org's engineering-metrics strategy and anticipates which signals will matter. Evidenced by: Sets the metrics the function commits to and defends against misuse. Scope: the platform function.,Depth: Defines rigorous engineering productivity measurement and influences the field externally. Evidenced by: Pioneers a measurement model other functions adopt. Scope: org-wide platform.
-skill,Delivery & Execution,Delivery Management,Process & continuous improvement,EM-08,Depth: Runs and tunes a team's operating cadence with normal review. Evidenced by: Removes a wasteful step from the team's process instead of adding ceremony. Scope: one platform team.,Depth: Independently designs processes that fit the work and removes friction others miss. Evidenced by: Lands a process change that measurably improves throughput or quality. Scope: a complex / critical platform team.,Depth: Defines operating-cadence patterns others adopt and fixes broken processes across teams. Evidenced by: Installs an improvement discipline several teams now run. Scope: a platform domain (cross-team).,"Depth: Defines operating-cadence patterns others adopt and fixes broken processes across teams. Evidenced by: Makes systematic improvement, not firefighting, the sub-org's default mode. Scope: a platform sub-org.",Depth: Sets the org's operating model and anticipates where cadence must evolve. Evidenced by: Sets the process standards the function runs on. Scope: the platform function.,Depth: Defines effective engineering operating cadence for the discipline and is recognized for it. Evidenced by: Pioneers a continuous-improvement practice other functions adopt. Scope: org-wide platform.
-skill,Delivery & Execution,Delivery Management,Dependency & risk management,RISK-01,Depth: Conducts standard risk assessments and updates registers independently with normal review. Evidenced by: Flags and mitigates a cross-team dependency before it blocks delivery. Scope: one platform team.,"Depth: Assesses complex, interconnected enterprise risks and sets local methodology autonomously. Evidenced by: Unblocks a delivery stalled on another team's dependency through negotiation, not escalation alone. Scope: a complex / critical platform team.",Depth: Designs the enterprise risk framework and appetite model others adopt; solves the hardest risk problems. Evidenced by: Defines the cross-team dependency and risk practice several teams now coordinate with. Scope: a platform domain (cross-team).,Depth: Designs the enterprise risk framework and appetite model others adopt; solves the hardest risk problems. Evidenced by: De-risks a sub-org-wide initiative with many moving dependencies. Scope: a platform sub-org.,Depth: Sets enterprise risk strategy and appetite at board level; anticipates emerging systemic risks. Evidenced by: Sets the risk-management standard the function is accountable to. Scope: the platform function.,Depth: Defines enterprise-risk practice recognized industry-wide; externally cited authority. Evidenced by: Pioneers a risk practice other functions adopt. Scope: org-wide platform.
-skill,"Strategy, Communication & Influence",Strategy & Change,Strategy formulation,STRAT-01,Depth: Develops components of strategy and standard analyses independently with normal review. Evidenced by: Names the core problem the team's strategy actually addresses rather than listing goals. Scope: one platform team.,"Depth: Frames ambiguous strategic problems and shapes coherent strategy autonomously; the go-to strategist. Evidenced by: Produces a platform strategy that says no to things, not just yes. Scope: a complex / critical platform team.",Depth: Defines strategy-formulation approaches others adopt; resolves the hardest strategic trade-offs. Evidenced by: Publishes a domain strategy several teams reorient their plans around. Scope: a platform domain (cross-team).,Depth: Defines strategy-formulation approaches others adopt; resolves the hardest strategic trade-offs. Evidenced by: Builds a sub-org strategy that survives exec scrutiny and reallocates real investment. Scope: a platform sub-org.,Depth: Sets the enterprise strategic direction; anticipates major shifts reshaping the competitive landscape. Evidenced by: Sets the strategic bets the function commits to and defends them at the top table. Scope: the platform function.,Depth: Defines corporate-strategy practice recognized industry-wide; externally cited thought leader. Evidenced by: Pioneers a strategic thesis the company's direction depends on. Scope: org-wide platform.
-skill,"Strategy, Communication & Influence",Strategy & Change,Leading change & transformation,EM-12,Depth: Leads a contained team change with normal review. Evidenced by: Gets a team through a tooling or process change without losing people or momentum. Scope: one platform team.,Depth: Independently drives significant change through resistance to durable adoption. Evidenced by: Builds the coalition that makes a hard platform migration or reorg stick. Scope: a complex / critical platform team.,Depth: Defines change approaches others adopt and rescues stalled transformations. Evidenced by: Drives a cross-team transformation through the leaders who own each team. Scope: a platform domain (cross-team).,Depth: Defines change approaches others adopt and rescues stalled transformations. Evidenced by: Lands a sub-org change that outlives the initial push. Scope: a platform sub-org.,Depth: Sets the org's transformation strategy and anticipates where change is needed next. Evidenced by: Sets the change the function leads and sustains. Scope: the platform function.,Depth: Defines effective engineering transformation for the discipline and shapes external practice. Evidenced by: Pioneers a change other functions model theirs on. Scope: org-wide platform.
-skill,"Strategy, Communication & Influence",Strategy & Change,Organizational & team design,EM-04,Depth: Designs a sound structure for one team with normal review. Evidenced by: Clarifies a fuzzy team boundary that was causing thrash. Scope: one platform team.,Depth: Independently restructures teams to fit changing work and resolves boundary conflicts. Evidenced by: Restructures a team so its boundary matches the platform it owns. Scope: a complex / critical platform team.,Depth: Defines org-design approaches others adopt and reshapes the most tangled structures. Evidenced by: Redesigns team boundaries across the domain to cut cross-team cognitive load. Scope: a platform domain (cross-team).,Depth: Defines org-design approaches others adopt and reshapes the most tangled structures. Evidenced by: Proposes and drives a sub-org reshape that improves flow. Scope: a platform sub-org.,Depth: Sets org-structuring strategy across the org and anticipates scaling inflection points. Evidenced by: Sets the operating structure the function runs on. Scope: the platform function.,Depth: Defines effective engineering-org design for the discipline and is cited externally on it. Evidenced by: Pioneers an operating model other functions adopt. Scope: org-wide platform.
-skill,"Strategy, Communication & Influence",Communication & Influence,Executive & stakeholder communication,CC-06,"Depth: Reports upward answer-first with a specific ask; escalates early with options attached, so no surprise reaches leadership from someone else. Evidenced by: Translates a technical platform issue into terms a non-engineer decision-maker acts on. Scope: one platform team.","Depth: Briefs senior leaders under pressure — facts, impact, options, and a recommendation inside the first two minutes; one-pagers get forwarded unedited. Evidenced by: Gets a skeptical stakeholder to a decision through a well-framed case. Scope: a complex / critical platform team.","Depth: Builds and lands investment cases with executive audiences — pre-wired with skeptics, sized in business terms, honest about risk; coaches others for executive rooms and runs the operating reviews an organization communicates through. Evidenced by: Crafts the platform narrative several teams reuse to align stakeholders. Scope: a platform domain (cross-team).","Depth: Operates the executive room as a peer — advances positions, absorbs hostile questioning without defensiveness, and changes the room's decision more often than not. Evidenced by: Turns a complex platform investment into an exec-level story that lands the budget. Scope: a platform sub-org.","Depth: Operates the executive room as a peer — advances positions, absorbs hostile questioning without defensiveness, and changes the room's decision more often than not. Evidenced by: Sets how the function tells its story to the board and business. Scope: the platform function.","Depth: Speaks for an organization's technical reality to boards, investors, and press; trusted with the messages that cannot be delegated, and organizational credibility survives the appearances. Evidenced by: Speaks for platform to the board and externally as a recognized voice. Scope: org-wide platform."
-skill,"Strategy, Communication & Influence",Communication & Influence,Stakeholder management & partnership,PM-13,Depth: Manages routine stakeholder relationships and communications with normal review. Evidenced by: Turns a frustrated internal customer into a collaborating partner. Scope: one platform team.,Depth: Independently aligns conflicting stakeholders and navigates tense executive conversations. Evidenced by: Brokers a durable agreement between platform and a demanding consumer team. Scope: a complex / critical platform team.,Depth: Defines stakeholder-engagement approaches others adopt and brokers the hardest alignment. Evidenced by: Builds the cross-team partnership model several teams manage relationships through. Scope: a platform domain (cross-team).,Depth: Defines stakeholder-engagement approaches others adopt and brokers the hardest alignment. Evidenced by: Realigns a strained sub-org-level partnership with a major consumer org. Scope: a platform sub-org.,Depth: Sets executive-engagement strategy and anticipates leadership concerns before they arise. Evidenced by: Sets the partnership approach the function relies on. Scope: the platform function.,Depth: Defines exemplary stakeholder management for the discipline and is externally credible on it. Evidenced by: Pioneers a stakeholder approach other functions adopt. Scope: org-wide platform.
-skill,"Strategy, Communication & Influence",Communication & Influence,Cross-org influence & alignment,LI-07,"Depth: Wins cooperation from adjacent teams by trading in their currencies — timing help, review effort, shared credit — rather than escalating. Evidenced by: Aligns another team to a shared platform goal without authority over them. Scope: one platform team.",Depth: Secures priority from other teams for an initiative with no borrowed authority; builds the case in the other party's terms and repays visibly. Evidenced by: Builds cross-team agreement on a contested platform standard. Scope: a complex / critical platform team.,"Depth: Moves a multi-team domain to a shared position with no mandate — assembles the coalition, converts the best-argued skeptic — and the position holds after they stop pushing. Evidenced by: Drives alignment across a domain by clear intent, commander's-intent style, rather than escalation. Scope: a platform domain (cross-team).","Depth: Moves a multi-team domain to a shared position with no mandate — assembles the coalition, converts the best-argued skeptic — and the position holds after they stop pushing. Evidenced by: Wins peer-org buy-in for a sub-org-wide platform initiative. Scope: a platform sub-org.",Depth: Shifts organization-level outcomes through people several seams away who advocate the position as their own; lands decisions while holding a minority of the formal power in the room. Evidenced by: Sets the alignment mechanisms the function relies on to move the wider org. Scope: the platform function.,"Depth: Shapes industry and market context in the organization's favor — standards bodies, open ecosystems, talent narratives — so external forces push where the organization wants to go. Evidenced by: Pioneers an influence model that aligns the whole company behind platform bets. Scope: org-wide platform."
-skill,Self & Personal Effectiveness,Leverage & Delegation,Managerial leverage & focus,EM-16,"Depth: Runs a deliberate calendar that matches stated priorities — protected one-on-ones, deep work, and team time; declines low-leverage meetings with alternatives offered. Evidenced by: Drops a low-leverage habit such as reviewing every change themselves once they see its cost. Scope: one platform team.","Depth: Prunes their own involvement ruthlessly as complexity grows — automates, delegates, or kills recurring work every quarter — and models sustainable pace through crunch. Evidenced by: Restructures how they spend time so a critical platform team stops waiting on them. Scope: a complex / critical platform team.","Depth: Chooses interventions by multiplier across many teams — the review that shapes ten decisions, the document that aligns three roadmaps — declining the rest by policy; audits their time and publishes the changes. Evidenced by: Publishes an operating cadence several leads adopt to reclaim their own high-leverage time. Scope: a platform domain (cross-team).","Depth: Chooses interventions by multiplier across many teams — the review that shapes ten decisions, the document that aligns three roadmaps — declining the rest by policy; audits their time and publishes the changes. Evidenced by: Removes themselves as a bottleneck across the sub-org by installing the mechanisms that decide without them. Scope: a platform sub-org.","Depth: Allocates attention like a portfolio at organizational scale — deep on the few places they are the unique unlock, delegated on the rest — and says which is which out loud. Evidenced by: Sets the focus and leverage norms leaders across the function organize their time around. Scope: the platform function.",Depth: Spends presence deliberately as an organizational signal — where they show up moves priorities — and guards the organization's focus by limiting concurrent top priorities and abandoning stale initiatives by name. Evidenced by: Pioneers a leverage model peer functions adopt. Scope: org-wide platform.
-skill,Self & Personal Effectiveness,Leverage & Delegation,Delegation & empowerment,EM-14,"Depth: Delegates whole outcomes with context and check-in contracts matched to each person's readiness — and resists snatching work back when it wobbles. Evidenced by: Hands a platform workstream to an engineer with the decision rights to run it, then holds back. Scope: one platform team.","Depth: Hands ownership of critical, visible work to someone not yet proven and scaffolds them to success, letting them keep the credit; the team runs a week without them and nothing stalls. Evidenced by: Grows a report into someone who runs a critical workstream end to end without checking in. Scope: a complex / critical platform team.","Depth: Pushes decisions down across multiple teams — publishes decision rights so teams stop escalating what they can decide themselves; involvement is exception-based, and everyone knows which is which. Evidenced by: Gets outcomes across a domain by stating clear intent and letting other leaders decide how. Scope: a platform domain (cross-team).","Depth: Pushes decisions down across multiple teams — publishes decision rights so teams stop escalating what they can decide themselves; involvement is exception-based, and everyone knows which is which. Evidenced by: Pushes a class of decisions down to team leaders across the sub-org and stops being consulted on them. Scope: a platform sub-org.","Depth: Builds organizations that run on mechanisms rather than presence — delegated authorities with audit trails, pre-declared tripwires — and grants leaders consequential authority held to outcomes, not methods. Evidenced by: Sets the empowerment norms leaders across the function lead by. Scope: the platform function.",Depth: Runs an organization on intent — direction and guardrails clear enough that leaders act correctly without asking — and treats every upward escalation as a design flaw to fix. Evidenced by: Pioneers a decision-rights model other functions adopt. Scope: org-wide platform.
-skill,Self & Personal Effectiveness,Growth & Resilience,Self-awareness & learning agility,LI-09,"Depth: Asks for feedback on their own practice and changes visibly in response — ""you said X, I changed Y"" — keeping a running list of their own failure patterns. Evidenced by: Changes a specific behavior after hearing it lands badly, rather than defending it. Scope: one platform team.","Depth: Knows their failure modes under pressure and manages them in the moment; staffs deliberately against known weaknesses and seeks disconfirming input before hard calls. Evidenced by: Names a blind spot and adjusts before it costs the team, using an outside read to check their own. Scope: a complex / critical platform team.","Depth: Runs structured input on themselves — 360s, skip-level themes — and closes the loop publicly on what changed; retools openly for first-time challenges so others copy the learning method. Evidenced by: Runs feedback mechanisms several leads adopt to see their own effect on others. Scope: a platform domain (cross-team).","Depth: Runs structured input on themselves — 360s, skip-level themes — and closes the loop publicly on what changed; retools openly for first-time challenges so others copy the learning method. Evidenced by: Turns a leader's blind spot around across the sub-org by making honest upward feedback safe and routine. Scope: a platform sub-org.","Depth: Compensates deliberately for the seniority feedback vacuum — cultivates truth-tellers, rewards bearers of unwelcome news about themselves, and retires their own outdated playbook when the organization outgrows it. Evidenced by: Sets the learning-agility expectations leaders across the function are developed against. Scope: the platform function.","Depth: Institutionalizes challenge to their own judgment — red teams, protected dissent — and manages how their moods and offhand comments get amplified across an organization. Evidenced by: Pioneers a leadership-development model peer functions adopt. Scope: org-wide platform."
-skill,Self & Personal Effectiveness,Growth & Resilience,Resilience & sustainable pace,LI-10,"Depth: Stays effective and steady under pressure — recovers from setbacks, manages their own energy, and models a sustainable pace others learn from watching. Evidenced by: Logs off after a brutal on-call week and says so openly instead of powering through, and the team notices and starts doing the same. Scope: one platform team.","Depth: Holds up through prolonged pressure — incident sieges, crunch, organizational turbulence — helping the team stay resilient and refusing burnout-driven decisions. Evidenced by: Absorbs the stress of a severe outage period and keeps the team functioning rather than fraying. Scope: a complex / critical platform team.","Depth: Builds resilience into how multiple teams operate — on-call health, recovery after pushes, load balancing — and repairs burnout risk at scale. Evidenced by: Acts on a burnout signal across the domain before it becomes attrition, changing the load rather than the people. Scope: a platform domain (cross-team).","Depth: Builds resilience into how multiple teams operate — on-call health, recovery after pushes, load balancing — and repairs burnout risk at scale. Evidenced by: Reshapes on-call and workload across the sub-org so resilience does not depend on individual heroics. Scope: a platform sub-org.","Depth: Stewards organizational resilience — capacity buffers, crisis rotation, energy management for senior leaders — and holds the line when business pressure argues for permanent crunch. Evidenced by: Sets the sustainable-pace expectations leaders across the function are held to. Scope: the platform function.","Depth: Shapes a resilient, sustainable culture across an organization; the organization absorbs shocks without breaking people, and the practice is referenced beyond it. Evidenced by: Pioneers a sustainable-operations model peer functions adopt. Scope: org-wide platform."
-skill,Self & Personal Effectiveness,Judgment & Integrity,Decision-making under uncertainty,LI-04,Depth: Decides independently within their components; evaluates alternatives honestly. Evidenced by: Makes a reversible platform decision quickly rather than stalling for certainty that will not come. Scope: one platform team.,Depth: Makes architectural choices for a domain that hold up over months. Evidenced by: Frames a one-way-door platform decision explicitly and gathers the evidence its weight warrants. Scope: a complex / critical platform team.,Depth: Foresees second-order consequences; sets decision frameworks for teams. Evidenced by: Installs a decision framework several teams now use to make calls under ambiguity. Scope: a platform domain (cross-team).,Depth: Foresees second-order consequences; sets decision frameworks for teams. Evidenced by: Raises the quality of consequential decisions across the sub-org by making the reasoning and the owner explicit. Scope: a platform sub-org.,Depth: Sets decision-making frameworks for the org. Evidenced by: Sets the decision standard leaders across the function are calibrated to. Scope: the platform function.,Depth: Visionary judgment; sees structural causes others miss. Evidenced by: Pioneers a decision model peer functions adopt. Scope: org-wide platform.
-skill,Self & Personal Effectiveness,Judgment & Integrity,"Ethics, integrity & trust",LI-11,Depth: Makes the unpopular-but-right call under pressure and absorbs the cost personally; protects the person who raised the flag and handles sensitive information impeccably. Evidenced by: Makes the honest call on a platform reliability or security risk even when it is inconvenient to admit. Scope: one platform team.,"Depth: Makes the unpopular-but-right call under pressure and absorbs the cost personally; protects the person who raised the flag and handles sensitive information impeccably. Evidenced by: Refuses a shortcut that would trade user trust or safety for speed, and says why. Scope: a complex / critical platform team.",Depth: Serves as the honest broker across teams — disputing parties accept their account of the facts — and carries uncomfortable systemic truths to the room that can fix them. Evidenced by: Establishes the do-the-right-thing expectations several teams now hold each other to. Scope: a platform domain (cross-team).,"Depth: Serves as the honest broker across teams — disputing parties accept their account of the facts — and carries uncomfortable systemic truths to the room that can fix them. Evidenced by: Makes candid, blameless honesty the norm across the sub-org even when the news is bad. Scope: a platform sub-org.","Depth: Builds mechanisms that make integrity cheap at scale — ethics review in design, safe escalation with follow-through, fairness systems whose losers affirm the process — and stops launches on ethical grounds with the business case for trust. Evidenced by: Sets the integrity standard leaders across the function are trusted to uphold. Scope: the platform function.","Depth: Holds an organization's line when the profitable path and the right path diverge — the hard disclosure, the walked-away revenue — and those moments become the story the culture tells about itself. Evidenced by: Pioneers an ethics model peer functions and the wider field reference. Scope: org-wide platform."
+skill,People Leadership & Team Health,Hiring & Team Formation,Hiring & selection,LI-02,"Depth: Shapes hiring for a team; designs loops; makes sound staffing calls.
+
+Evidenced by: Defends every hire/no-hire in debrief with recorded signal evidence rather than gut feel.
+
+Scope: one platform team.","Depth: Shapes hiring for a team; designs loops; makes sound staffing calls.
+
+Evidenced by: Rebuilds a loop that is letting weak candidates through by tightening the signals it actually tests.
+
+Scope: a complex / critical platform team.","Depth: Drives hiring strategy across teams; builds the interviewing bar.
+
+Evidenced by: Publishes the rubric and calibration cadence several teams' loops now run on.
+
+Scope: a platform domain (cross-team).","Depth: Drives hiring strategy across teams; builds the interviewing bar.
+
+Evidenced by: Certifies interviewers and installs a bar-raiser mechanism that measurably lifts quality-of-hire.
+
+Scope: a platform sub-org.","Depth: Sets the org's talent strategy.
+
+Evidenced by: Shapes leveling and headcount decisions across the function from pipeline and labor-market data.
+
+Scope: the platform function.","Depth: Shapes company-wide talent philosophy.
+
+Evidenced by: Pioneers selection practice, like work-sample design for platform work, that other organizations copy.
+
+Scope: org-wide platform."
+skill,People Leadership & Team Health,Hiring & Team Formation,Onboarding & team formation,EM-13,"Depth: Runs a 30/60/90 onboarding with named buddies and early wins; new hires ship in their first weeks and say so in check-ins.
+
+Evidenced by: Gets a new platform hire shipping a real change within their first sprint.
+
+Scope: one platform team.","Depth: Reads a team's formation stage and intervenes on it — resets norms after a merge, names storming in the room instead of managing it by email.
+
+Evidenced by: Reads where a forming team is stuck in storming and intervenes to move it to performing.
+
+Scope: a complex / critical platform team.","Depth: Builds the onboarding and team-launch playbook multiple teams use; teams start faster because of materials and rituals they created, and stands up whole new teams repeatedly.
+
+Evidenced by: Ships a reusable ramp template and 30/60/90 model that cuts time-to-first-contribution across the domain.
+
+Scope: a platform domain (cross-team).","Depth: Builds the onboarding and team-launch playbook multiple teams use; teams start faster because of materials and rituals they created, and stands up whole new teams repeatedly.
+
+Evidenced by: Stands up a new platform team from scratch to productive without a delivery trough.
+
+Scope: a platform sub-org.","Depth: Designs how an organization absorbs step-change growth — acquisitions, new sites, doubled headcount — without culture dilution; integration plans carry named cultural mechanisms.
+
+Evidenced by: Sets the norms that keep newly formed platform teams productive through function-wide scaling.
+
+Scope: the platform function.","Depth: Makes team formation an organization-wide capability — new groups spin up predictably without heroics — and audits that the machinery still works.
+
+Evidenced by: Pioneers the team-formation playbook other engineering functions reuse.
+
+Scope: org-wide platform."
+skill,People Leadership & Team Health,Coaching & Performance,Coaching & development,LI-01,"Depth: Coaches engineers with growth-oriented feedback; measurably improves a team's skill.
+
+Evidenced by: Turns a specific platform-engineer weakness into a visible skill gain within a quarter.
+
+Scope: one platform team.","Depth: Coaches engineers with growth-oriented feedback; measurably improves a team's skill.
+
+Evidenced by: Develops a report into a tech lead who now runs a workstream unaided.
+
+Scope: a complex / critical platform team.","Depth: Develops future leads across teams; shapes hiring and onboarding.
+
+Evidenced by: Runs coaching-the-coach sessions that lift how platform leads across the domain develop their own people.
+
+Scope: a platform domain (cross-team).","Depth: Develops future leads across teams; shapes hiring and onboarding.
+
+Evidenced by: Produces leaders others actively recruit onto their teams.
+
+Scope: a platform sub-org.","Depth: Develops senior engineers and leaders; builds culture deliberately.
+
+Evidenced by: Sets development standards leaders across the function coach against.
+
+Scope: the platform function.","Depth: Develops the next generation of top talent; legacy outlasts tenure.
+
+Evidenced by: Pioneers a development model peer functions adopt.
+
+Scope: org-wide platform."
+skill,People Leadership & Team Health,Coaching & Performance,Career development & sponsorship,EM-02,"Depth: Coaches direct reports on standard career growth with normal review.
+
+Evidenced by: Puts a report's name forward for a visible platform project that stretches them.
+
+Scope: one platform team.","Depth: Independently sponsors people into stretch roles and navigates complex growth paths.
+
+Evidenced by: Gets a deserving platform engineer promoted through a defensible packet.
+
+Scope: a complex / critical platform team.","Depth: Defines career-development practices others adopt and unblocks the toughest growth cases.
+
+Evidenced by: Advocates for talent in cross-team calibration rooms they do not own, moving outcomes for people who are not theirs.
+
+Scope: a platform domain (cross-team).","Depth: Defines career-development practices others adopt and unblocks the toughest growth cases.
+
+Evidenced by: Spends visible capital to place emerging platform leaders into scope.
+
+Scope: a platform sub-org.","Depth: Sets the org's talent-development strategy and anticipates future capability needs.
+
+Evidenced by: Sets the sponsorship expectations leaders across the function are held to.
+
+Scope: the platform function.","Depth: Defines exemplary career sponsorship for the discipline and is externally recognized for it.
+
+Evidenced by: Pioneers a sponsorship model that measurably widens the platform leadership pipeline.
+
+Scope: org-wide platform."
+skill,People Leadership & Team Health,Coaching & Performance,Performance management,EM-01,"Depth: Independently manages underperformance and difficult cases through to clear resolution.
+
+Evidenced by: Addresses an underperforming platform engineer directly with a documented plan rather than letting it drift.
+
+Scope: one platform team.","Depth: Independently manages underperformance and difficult cases through to clear resolution.
+
+Evidenced by: Runs a difficult exit cleanly and defensibly.
+
+Scope: a complex / critical platform team.","Depth: Defines accountability practices other managers adopt and coaches them through hard cases.
+
+Evidenced by: Runs cross-team calibration that holds a fair, comparable bar across the domain.
+
+Scope: a platform domain (cross-team).","Depth: Defines accountability practices other managers adopt and coaches them through hard cases.
+
+Evidenced by: Corrects rating drift between teams so the bar means the same everywhere.
+
+Scope: a platform sub-org.","Depth: Sets the org's performance philosophy and anticipates systemic accountability gaps.
+
+Evidenced by: Sets the standard leaders across the function calibrate to.
+
+Scope: the platform function.","Depth: Defines what fair, effective performance management means and influences the field externally.
+
+Evidenced by: Pioneers a performance model peer functions adopt.
+
+Scope: org-wide platform."
+skill,People Leadership & Team Health,Team Health & Culture,Psychological safety & team health,EM-03,"Depth: Sustains safety through pressure (incidents, deadlines, change); repairs damaged trust; the team measurably speaks up (postmortems name real causes).
+
+Evidenced by: Keeps a tense incident retro blameless under real pressure so the team names the actual contributing cause instead of a scapegoat.
+
+Scope: one platform team.","Depth: Sustains safety through pressure (incidents, deadlines, change); repairs damaged trust; the team measurably speaks up (postmortems name real causes).
+
+Evidenced by: Keeps a severe-outage review blameless so the real contributing causes come out.
+
+Scope: a complex / critical platform team.","Depth: Diagnoses and fixes systemic safety failures across teams; other leaders seek their help on entrenched conflict and burnout patterns.
+
+Evidenced by: Instruments team-health signals across the domain and acts on a declining one before it becomes attrition.
+
+Scope: a platform domain (cross-team).","Depth: Diagnoses and fixes systemic safety failures across teams; other leaders seek their help on entrenched conflict and burnout patterns.
+
+Evidenced by: Turns around an unhealthy team's culture through the leader running it.
+
+Scope: a platform sub-org.","Depth: Sets the org's team-health bar and mechanisms; safety practices they designed are adopted org-wide.
+
+Evidenced by: Sets the health norms leaders across the function are measured against.
+
+Scope: the platform function.","Depth: Shapes how the industry thinks about team health; published practices others implement.
+
+Evidenced by: Pioneers a culture model other engineering functions copy.
+
+Scope: org-wide platform."
+skill,People Leadership & Team Health,Team Health & Culture,"Motivation, engagement & retention",EM-17,"Depth: Sustains engagement through hard stretches; diagnoses systemic motivation problems (not just individuals) and fixes the conditions.
+
+Evidenced by: Reads a dip across the whole platform team's morale during a demanding on-call stretch -- not just one person's -- and fixes the driving condition (load, visibility, toil) instead of one-off pep talks.
+
+Scope: one platform team.","Depth: Sustains engagement through hard stretches; diagnoses systemic motivation problems (not just individuals) and fixes the conditions.
+
+Evidenced by: Keeps regrettable attrition low on a critical platform team through a demanding period.
+
+Scope: a complex / critical platform team.","Depth: Builds engagement mechanisms other teams adopt; reverses disengagement trends beyond their own span.
+
+Evidenced by: Reads engagement signals across the domain and fixes a systemic driver of attrition, not just symptoms.
+
+Scope: a platform domain (cross-team).","Depth: Builds engagement mechanisms other teams adopt; reverses disengagement trends beyond their own span.
+
+Evidenced by: Shifts a sub-org's engagement trend through the leaders who own each team.
+
+Scope: a platform sub-org.","Depth: Owns the engagement strategy for a function; conditions they designed show up in retention and survey trends.
+
+Evidenced by: Sets the expectations leaders across the function own for engagement.
+
+Scope: the platform function.","Depth: Advances the practice of engagement in the field; frameworks others cite and use.
+
+Evidenced by: Pioneers retention practice for infrastructure talent that peers adopt.
+
+Scope: org-wide platform."
+skill,Platform as a Product,Product Strategy & Discovery,Platform vision & roadmap,PM-05,"Depth: Builds and sequences a credible roadmap for one product with normal review.
+
+Evidenced by: States the problem each platform capability solves and for whom.
+
+Scope: one platform team.","Depth: Independently balances competing priorities and replans confidently under shifting constraints.
+
+Evidenced by: Kills or defers a low-value platform build others wanted, with the outcome argument to back it.
+
+Scope: a complex / critical platform team.","Depth: Designs the planning approach others use and resolves cross-team portfolio conflicts.
+
+Evidenced by: Publishes a domain platform strategy that redirects several teams' build priorities.
+
+Scope: a platform domain (cross-team).","Depth: Designs the planning approach others use and resolves cross-team portfolio conflicts.
+
+Evidenced by: Frames the platform-as-a-product operating model the sub-org plans within.
+
+Scope: a platform sub-org.","Depth: Sets portfolio planning strategy and foresees where investment should shift next.
+
+Evidenced by: Sets the platform bets the function organizes around and defends them at the exec table.
+
+Scope: the platform function.","Depth: Defines portfolio-planning best practice for the field and is recognized for it.
+
+Evidenced by: Pioneers a platform strategy the industry recognizes.
+
+Scope: org-wide platform."
+skill,Platform as a Product,Product Strategy & Discovery,Internal user research & discovery,PM-01,"Depth: Plans and conducts standard discovery for a feature, synthesizing themes with normal review.
+
+Evidenced by: Turns an observed developer pain point into a prioritized platform fix.
+
+Scope: one platform team.","Depth: Independently frames ambiguous problems, selects fitting methods, and separates signal from noise.
+
+Evidenced by: Quantifies a cognitive-load or feedback-loop problem the team then designs against.
+
+Scope: a complex / critical platform team.","Depth: Designs the team's discovery approach and untangles findings others find contradictory.
+
+Evidenced by: Stands up a developer-experience measurement combining surveys and system signals that several teams now steer by.
+
+Scope: a platform domain (cross-team).","Depth: Designs the team's discovery approach and untangles findings others find contradictory.
+
+Evidenced by: Makes DevEx evidence the default input to roadmap decisions across the sub-org.
+
+Scope: a platform sub-org.","Depth: Sets the org's research strategy and anticipates emerging customer needs before they surface.
+
+Evidenced by: Sets the DevEx metrics the function commits to and reports upward.
+
+Scope: the platform function.","Depth: Defines what rigorous product discovery means and shapes the discipline's practice externally.
+
+Evidenced by: Pioneers a DevEx research program other companies reference.
+
+Scope: org-wide platform."
+skill,Platform as a Product,Product Strategy & Discovery,Platform value & business case,PD-06,"Depth: Frames own work in user/business outcomes, not just tasks.
+
+Evidenced by: Ties a platform initiative to a concrete productivity or cost outcome.
+
+Scope: one platform team.","Depth: Treats their area as a product; uses metrics to decide what to build for a domain.
+
+Evidenced by: Wins funding for a platform bet with a defensible value model.
+
+Scope: a complex / critical platform team.","Depth: Expert at aligning technical bets with product strategy across teams.
+
+Evidenced by: Publishes a value and ROI framework several teams justify platform work with.
+
+Scope: a platform domain (cross-team).","Depth: Expert at aligning technical bets with product strategy across teams.
+
+Evidenced by: Reframes platform from cost center to leverage multiplier for the sub-org's stakeholders.
+
+Scope: a platform sub-org.","Depth: Sets product direction for an org's technical surface.
+
+Evidenced by: Sets the value narrative and metrics the function is funded against.
+
+Scope: the platform function.","Depth: Shapes how the company creates value through technical products.
+
+Evidenced by: Pioneers a platform-value model the business plans capital around.
+
+Scope: org-wide platform."
+skill,Platform as a Product,Developer Experience & Adoption,Golden paths & paved roads,OPS-27,"Depth: Independently builds and supports standard platform capabilities and templates for routine developer needs with review.
+
+Evidenced by: Gets the team's users onto the paved road for one high-frequency task.
+
+Scope: one platform team.","Depth: Designs self-service workflows for ambiguous needs, reducing friction and resolving hard abstraction and adoption issues.
+
+Evidenced by: Retires a fragmented set of bespoke setups onto a single supported golden path.
+
+Scope: a complex / critical platform team.","Depth: Defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems.
+
+Evidenced by: Defines what paved means across the domain, from support SLA to versioning and deprecation, and gets teams to build to it.
+
+Scope: a platform domain (cross-team).","Depth: Defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems.
+
+Evidenced by: Makes the golden path the default choice across the sub-org, not the exception.
+
+Scope: a platform sub-org.","Depth: Sets organization-wide platform strategy, anticipating how developer-experience engineering should evolve.
+
+Evidenced by: Sets the paved-road principles the whole function designs to.
+
+Scope: the platform function.","Depth: Defines what excellent platform engineering means for the field, shaping industry developer-experience practice.
+
+Evidenced by: Pioneers a golden-path model other engineering orgs adopt.
+
+Scope: org-wide platform."
+skill,Platform as a Product,Developer Experience & Adoption,Self-service & platform interfaces,OPS-27,"Depth: Independently builds and supports standard platform capabilities and templates for routine developer needs with review.
+
+Evidenced by: Eliminates a manual request path by making it self-serve.
+
+Scope: one platform team.","Depth: Designs self-service workflows for ambiguous needs, reducing friction and resolving hard abstraction and adoption issues.
+
+Evidenced by: Removes the team as a human bottleneck from a high-volume workflow.
+
+Scope: a complex / critical platform team.","Depth: Defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems.
+
+Evidenced by: Defines the interface-contract pattern, whether API, portal, or paved road, that several platform teams now expose.
+
+Scope: a platform domain (cross-team).","Depth: Defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems.
+
+Evidenced by: Shifts the sub-org's platforms from ticket-driven to self-service by default.
+
+Scope: a platform sub-org.","Depth: Sets organization-wide platform strategy, anticipating how developer-experience engineering should evolve.
+
+Evidenced by: Sets the target that platform work is consumed without human intervention across the function.
+
+Scope: the platform function.","Depth: Defines what excellent platform engineering means for the field, shaping industry developer-experience practice.
+
+Evidenced by: Pioneers an internal-platform interface model the industry references.
+
+Scope: org-wide platform."
+skill,Platform as a Product,Developer Experience & Adoption,Adoption & migration strategy,OPS-33,"Depth: Runs the adoption of a single capability end to end - communicates the change, provides migration tooling or docs, and clears the common blockers without help.
+
+Evidenced by: Moves the first cohort of teams onto a new platform version.
+
+Scope: one platform team.","Depth: Owns a capability's adoption and deprecation as a program: sets migration tooling (codemods, automated rewrites), burns down the long tail, and enforces a deprecation policy with published timelines and support commitments.
+
+Evidenced by: Completes a migration including the last stubborn holdouts rather than stalling at eighty percent.
+
+Scope: a complex / critical platform team.","Depth: Designs the migration operating model a domain reuses - adoption instrumentation, incentives, and deprecation guarantees - so multiple teams retire and replace surfaces predictably.
+
+Evidenced by: Defines the deprecation policy and migration-support standard several teams' rollouts now run on.
+
+Scope: a platform domain (cross-team).","Depth: Designs the migration operating model a domain reuses - adoption instrumentation, incentives, and deprecation guarantees - so multiple teams retire and replace surfaces predictably.
+
+Evidenced by: Drives a sub-org-wide migration to completion through the teams that own each service.
+
+Scope: a platform sub-org.","Depth: Sets the organization's adoption and deprecation standards: the sunset principles, the guarantee bar, and the mechanisms that keep the platform's surface area from sprawling as it grows.
+
+Evidenced by: Sets the adoption and sunsetting principles the function commits to.
+
+Scope: the platform function.","Depth: Establishes adoption-and-lifecycle practice others in the field adopt; makes deprecation a trusted, low-friction default rather than a feared event across the industry.
+
+Evidenced by: Pioneers a migration model that keeps the org off long-lived forks.
+
+Scope: org-wide platform."
+skill,Platform as a Product,Developer Experience & Adoption,Platform advocacy & enablement,DR-01,"Depth: Grows and supports a developer community segment with normal review.
+
+Evidenced by: Turns a confused user base into a competent one for one capability through documentation and support.
+
+Scope: one platform team.","Depth: Independently builds thriving communities and defuses tense community conflicts.
+
+Evidenced by: Grows an internal champion network that advocates the platform without the team present.
+
+Scope: a complex / critical platform team.","Depth: Defines community-building practices others adopt and revives flagging communities.
+
+Evidenced by: Stands up a platform-community and docs practice several teams run their enablement through.
+
+Scope: a platform domain (cross-team).","Depth: Defines community-building practices others adopt and revives flagging communities.
+
+Evidenced by: Makes platform enablement a repeatable function rather than heroics across the sub-org.
+
+Scope: a platform sub-org.","Depth: Sets the org's community strategy and anticipates where developer interest is shifting.
+
+Evidenced by: Sets the enablement and advocacy strategy the function invests in.
+
+Scope: the platform function.","Depth: Defines what great developer advocacy means and is externally recognized for it.
+
+Evidenced by: Pioneers an internal developer-relations model peer functions and other orgs copy.
+
+Scope: org-wide platform."
+skill,Reliability & Operations,Reliability Engineering,"Reliability, SLOs & error budgets",OPS-04,"Depth: Builds retries, timeouts and fallbacks; understands blast radius.
+
+Evidenced by: Adds a retry-with-backoff and a fallback path to a flaky downstream call so that dependency's failure doesn't cascade into the team's own service.
+
+Scope: one platform team.","Depth: Designs for graceful degradation; defines SLOs; accountable for a domain's reliability.
+
+Evidenced by: Negotiates and enforces an error-budget policy that pauses feature work when reliability slips.
+
+Scope: a complex / critical platform team.","Depth: Expert in resilience and capacity planning at scale; drives down incidents systemically.
+
+Evidenced by: Defines the reliability-target framework several teams now run their services against.
+
+Scope: a platform domain (cross-team).","Depth: Expert in resilience and capacity planning at scale; drives down incidents systemically.
+
+Evidenced by: Makes error-budget policy the mechanism the sub-org's prioritization respects.
+
+Scope: a platform sub-org.","Depth: Owns org-level reliability; fixes risk in process and org design.
+
+Evidenced by: Sets the reliability commitments the function makes to the business.
+
+Scope: the platform function.","Depth: Sets the company's reliability philosophy.
+
+Evidenced by: Pioneers a reliability model other orgs adopt.
+
+Scope: org-wide platform."
+skill,Reliability & Operations,Reliability Engineering,Incident & operational-risk leadership,EM-10,"Depth: Manages standard incidents and routine operational risk with normal review.
+
+Evidenced by: Turns a postmortem's action items into shipped fixes rather than a filed document.
+
+Scope: one platform team.","Depth: Independently leads severe incidents and drives durable remediation of risk.
+
+Evidenced by: Runs a major-incident review whose systemic fixes prevent the class of failure from recurring.
+
+Scope: a complex / critical platform team.","Depth: Defines incident and risk practices others adopt and commands the worst crises calmly.
+
+Evidenced by: Defines the incident-command and postmortem practice several teams now run.
+
+Scope: a platform domain (cross-team).","Depth: Defines incident and risk practices others adopt and commands the worst crises calmly.
+
+Evidenced by: Drives a measurable drop in MTTR or repeat incidents across the sub-org through the leaders who own each service.
+
+Scope: a platform sub-org.","Depth: Sets the org's operational-risk strategy and anticipates systemic failure modes.
+
+Evidenced by: Sets the incident and reliability standard the function is accountable to.
+
+Scope: the platform function.","Depth: Defines what excellent operational risk management means and shapes external practice.
+
+Evidenced by: Pioneers an operational-excellence practice other orgs reference.
+
+Scope: org-wide platform."
+skill,Reliability & Operations,Reliability Engineering,Observability & health signals,OPS-05,"Depth: Instruments their services; builds dashboards; tunes alerts to limit noise.
+
+Evidenced by: Replaces a noisy or blind alert with a signal that maps to real user pain.
+
+Scope: one platform team.","Depth: Designs observability for complex systems (end-to-end traces, quality signals, cost attribution).
+
+Evidenced by: Makes a previously opaque failure mode diagnosable in minutes.
+
+Scope: a complex / critical platform team.","Depth: Expert in instrumentation trade-offs at scale, incl. privacy-safe logging.
+
+Evidenced by: Defines the instrumentation and alerting baseline several teams now build to.
+
+Scope: a platform domain (cross-team).","Depth: Expert in instrumentation trade-offs at scale, incl. privacy-safe logging.
+
+Evidenced by: Makes health signals consistent and comparable across the sub-org's services.
+
+Scope: a platform sub-org.","Depth: Defines org observability strategy.
+
+Evidenced by: Sets the observability standard the function commits to.
+
+Scope: the platform function.","Depth: Shapes company-wide operational visibility; advances practice.
+
+Evidenced by: Pioneers an approach to health signals other orgs adopt.
+
+Scope: org-wide platform."
+skill,Reliability & Operations,Operational Leverage,Toil reduction & automation,OPS-28,"Depth: Independently automates routine operational tasks and integrates them into standard workflows with normal review.
+
+Evidenced by: Converts a recurring manual operational task into an automated one.
+
+Scope: one platform team.","Depth: Designs automation for ambiguous, error-prone toil and resolves hard reliability and orchestration issues in pipelines.
+
+Evidenced by: Cuts on-call and operational load enough to visibly change the team's toil ratio.
+
+Scope: a complex / critical platform team.","Depth: Defines automation patterns and toil-elimination practices others adopt, solving deep workflow and safety problems.
+
+Evidenced by: Defines the toil-budget practice several teams now manage their operational load with.
+
+Scope: a platform domain (cross-team).","Depth: Defines automation patterns and toil-elimination practices others adopt, solving deep workflow and safety problems.
+
+Evidenced by: Drives a sub-org-wide reduction in toil through the platforms that eliminate it.
+
+Scope: a platform sub-org.","Depth: Sets organization-wide automation strategy, anticipating where automation-first operations should head.
+
+Evidenced by: Sets the toil and automation targets the function commits to.
+
+Scope: the platform function.","Depth: Defines what automation-first operations means for the discipline, externally credible in shaping the practice.
+
+Evidenced by: Pioneers an operational-leverage model other orgs adopt.
+
+Scope: org-wide platform."
+skill,Reliability & Operations,Operational Leverage,"Capacity, performance & cost",OPS-07,"Depth: Applies standard optimizations; stays within cost/latency budgets.
+
+Evidenced by: Right-sizes a resource or fixes a performance regression to cut cost without hurting reliability.
+
+Scope: one platform team.","Depth: Designs cost-aware architectures; defines and tracks unit economics for a domain.
+
+Evidenced by: Lands a material infrastructure-cost reduction while holding SLOs.
+
+Scope: a complex / critical platform team.","Depth: Expert in economics at scale (fleet optimization, build-vs-buy).
+
+Evidenced by: Defines the FinOps and performance practice several teams now manage spend with.
+
+Scope: a platform domain (cross-team).","Depth: Expert in economics at scale (fleet optimization, build-vs-buy).
+
+Evidenced by: Makes infrastructure unit cost a managed, trending metric across the sub-org.
+
+Scope: a platform sub-org.","Depth: Owns org-level spend strategy; cost decisions change margins.
+
+Evidenced by: Sets the unit-economics and capacity commitments the function owns.
+
+Scope: the platform function.","Depth: Shapes the company economics of the products.
+
+Evidenced by: Pioneers a FinOps model the business plans spend around.
+
+Scope: org-wide platform."
+skill,Technical Direction & Architecture,Architecture & Standards,Platform architecture stewardship,ARC-10,"Depth: Evaluates standard trade-offs independently for routine architectural choices.
+
+Evidenced by: Catches an architectural drift or coupling problem in review before it ships.
+
+Scope: one platform team.","Depth: Structures and defends trade-off decisions for ambiguous, high-stakes designs autonomously.
+
+Evidenced by: Redesigns a component boundary so team and system seams line up.
+
+Scope: a complex / critical platform team.","Depth: Defines trade-off analysis methods and decision frameworks others adopt.
+
+Evidenced by: Defines the reference architecture and decision-record practice several teams now build within.
+
+Scope: a platform domain (cross-team).","Depth: Defines trade-off analysis methods and decision frameworks others adopt.
+
+Evidenced by: Shapes a sub-org's team topology to fit the platform architecture it needs.
+
+Scope: a platform sub-org.","Depth: Sets how the organization makes architectural trade-offs, anticipating future tensions.
+
+Evidenced by: Sets the architecture principles the function builds against.
+
+Scope: the platform function.","Depth: Advances trade-off-analysis practice recognized across the industry.
+
+Evidenced by: Pioneers an architecture other orgs study.
+
+Scope: org-wide platform."
+skill,Technical Direction & Architecture,Architecture & Standards,Engineering standards & quality,SWE-02,"Depth: Writes clean, documented, modular code; gives useful review feedback.
+
+Evidenced by: Raises a slipping quality practice such as test coverage or review rigor on the team.
+
+Scope: one platform team.","Depth: Designs for maintainability; leads refactors of problem areas; review feedback teaches.
+
+Evidenced by: Installs a delivery-safety practice that measurably cuts change-failure rate.
+
+Scope: a complex / critical platform team.","Depth: Expert in code health at scale (shared libraries, deprecations, large migrations).
+
+Evidenced by: Defines the CI/CD and quality standard several teams now build to.
+
+Scope: a platform domain (cross-team).","Depth: Expert in code health at scale (shared libraries, deprecations, large migrations).
+
+Evidenced by: Makes high-quality delivery the default path across the sub-org.
+
+Scope: a platform sub-org.","Depth: Shapes org-wide engineering standards for long-lived codebases.
+
+Evidenced by: Sets the quality standard the function commits to.
+
+Scope: the platform function.","Depth: Defines what good engineering looks like company-wide; externally recognized.
+
+Evidenced by: Pioneers a standards model other functions adopt.
+
+Scope: org-wide platform."
+skill,Technical Direction & Architecture,Architecture & Standards,Technical debt & modernization,EM-15,"Depth: Keeps a visible debt register with the cost of carry noted and defends a steady paydown allocation in planning rather than begging quarter by quarter.
+
+Evidenced by: Makes a debt trade-off explicit in planning rather than letting it accrue silently.
+
+Scope: one platform team.","Depth: Distinguishes debt worth carrying from debt that will detonate, sequences remediation by risk, and prices debt in incident and velocity terms stakeholders accept.
+
+Evidenced by: Funds and lands a modernization that removes a systemic drag on the team.
+
+Scope: a complex / critical platform team.","Depth: Makes debt legible across multiple teams — shared taxonomy, reporting rhythm — and gets cross-team risk (the shared library nobody owns, the half-finished migration) owned and funded.
+
+Evidenced by: Defines the debt-accounting and modernization practice several teams now prioritize with.
+
+Scope: a platform domain (cross-team).","Depth: Makes debt legible across multiple teams — shared taxonomy, reporting rhythm — and gets cross-team risk (the shared library nobody owns, the half-finished migration) owned and funded.
+
+Evidenced by: Wins sustained investment for a sub-org-wide modernization others deprioritized.
+
+Scope: a platform sub-org.","Depth: Carries technical risk onto the executive risk register — top exposures known, sized, owned, trending — and lands multi-quarter remediation programs against feature pressure.
+
+Evidenced by: Sets the debt and modernization commitments the function makes.
+
+Scope: the platform function.","Depth: Sets an organization's speed-versus-soundness posture explicitly — where debt is accepted for velocity and where it never is — and holds it under growth pressure.
+
+Evidenced by: Pioneers a debt-management model the business funds against.
+
+Scope: org-wide platform."
+skill,Technical Direction & Architecture,Technical Strategy & Risk,Technical strategy & investment,LI-03,"Depth: Influences component-level decisions through credibility.
+
+Evidenced by: Frames a build decision as a bet with a stated rationale, not an ad-hoc pick.
+
+Scope: one platform team.","Depth: Sets technical direction for a domain; others align to their calls.
+
+Evidenced by: Makes a hard technical-investment call such as rebuild versus extend and defends it with evidence.
+
+Scope: a complex / critical platform team.","Depth: Shapes how multiple teams approach problems; trusted tiebreaker.
+
+Evidenced by: Publishes a domain technical strategy or Wardley map that redirects where several teams invest.
+
+Scope: a platform domain (cross-team).","Depth: Shapes how multiple teams approach problems; trusted tiebreaker.
+
+Evidenced by: Frames the small set of bets the sub-org organizes its roadmap around.
+
+Scope: a platform sub-org.","Depth: Influences org-wide technical strategy.
+
+Evidenced by: Sets the technology bets the function commits capital and headcount to.
+
+Scope: the platform function.","Depth: Influences company strategic direction through insight.
+
+Evidenced by: Pioneers a technical strategy the company's product strategy depends on.
+
+Scope: org-wide platform."
+skill,Technical Direction & Architecture,Technical Strategy & Risk,Vendor & build/buy/adopt strategy,EM-06,"Depth: Manages a team budget and standard vendor relationships with normal review.
+
+Evidenced by: Avoids building something a supported off-the-shelf option already solves.
+
+Scope: one platform team.","Depth: Independently controls budgets under pressure and negotiates difficult vendor terms.
+
+Evidenced by: Negotiates or selects a platform vendor on a defensible total-cost basis.
+
+Scope: a complex / critical platform team.","Depth: Defines budget and vendor practices others adopt and rescues failing vendor relationships.
+
+Evidenced by: Defines the evaluation and vendor-selection framework several teams now decide with.
+
+Scope: a platform domain (cross-team).","Depth: Defines budget and vendor practices others adopt and rescues failing vendor relationships.
+
+Evidenced by: Drives a sub-org-wide build-versus-buy decision with material budget impact.
+
+Scope: a platform sub-org.","Depth: Sets org-wide budget and vendor strategy and anticipates cost and supplier risks.
+
+Evidenced by: Sets the sourcing principles and major vendor relationships the function commits to.
+
+Scope: the platform function.","Depth: Defines exemplary budget and vendor management for the field and influences practice.
+
+Evidenced by: Pioneers a sourcing strategy the business plans capital around.
+
+Scope: org-wide platform."
+skill,Technical Direction & Architecture,Technical Strategy & Risk,Secure-by-default platform & guardrails,SEC-18,"Depth: Writes and tests policy rules for a component - admission checks, pipeline gates - with low false-positive rates and violation messages that tell the user how to comply.
+
+Evidenced by: Bakes a security control into the platform so users get it by default rather than bolting it on.
+
+Scope: one platform team.","Depth: Designs the guardrail architecture for a capability - what is blocked, warned, or audited, with documented threat reasoning - tuned so the safe path is the fast path, and runs an audited exception workflow without becoming the bottleneck.
+
+Evidenced by: Closes a systemic vulnerability class through a platform control rather than one-off fixes.
+
+Scope: a complex / critical platform team.","Depth: Harmonizes policy across teams into a coherent, versioned policy library with a governed exception process, and adjudicates escalated safety-versus-velocity disputes.
+
+Evidenced by: Defines the paved-road security controls several teams now inherit by default.
+
+Scope: a platform domain (cross-team).","Depth: Harmonizes policy across teams into a coherent, versioned policy library with a governed exception process, and adjudicates escalated safety-versus-velocity disputes.
+
+Evidenced by: Makes secure-by-default the path of least resistance across the sub-org.
+
+Scope: a platform sub-org.","Depth: Owns an organization's preventive-control strategy with security partners - the control catalog, its coverage, and the evidence it works - moving enforcement from review-time to platform-time.
+
+Evidenced by: Sets the risk commitments and compliance guarantees the function owns.
+
+Scope: the platform function.","Depth: Sets an organization-defining balance of enablement and control, accountable for guardrails that hold under audit and attack without throttling delivery.
+
+Evidenced by: Pioneers a secure-platform model auditors and peers reference.
+
+Scope: org-wide platform."
+skill,Delivery & Execution,Planning & Prioritization,Planning & estimation,PD-04,"Depth: Estimates scoped work realistically; plans own 1-3 week projects.
+
+Evidenced by: Surfaces a schedule risk early instead of discovering the slip at the deadline.
+
+Scope: one platform team.","Depth: Plans quarter-scale, multi-workstream efforts including dependencies.
+
+Evidenced by: Replans a high-stakes platform delivery mid-flight without losing the commitment.
+
+Scope: a complex / critical platform team.","Depth: Expert at planning large programs; anticipates risk early.
+
+Evidenced by: Defines the forecasting practice several teams now plan with.
+
+Scope: a platform domain (cross-team).","Depth: Expert at planning large programs; anticipates risk early.
+
+Evidenced by: Makes sub-org delivery forecasts credible to stakeholders.
+
+Scope: a platform sub-org.","Depth: Plans org-level programs across quarters/years.
+
+Evidenced by: Sets the planning discipline the function commits to.
+
+Scope: the platform function.","Depth: Shapes how the company plans major technical change.
+
+Evidenced by: Pioneers a forecasting practice other functions adopt.
+
+Scope: org-wide platform."
+skill,Delivery & Execution,Planning & Prioritization,Prioritization & trade-offs,PD-02,"Depth: Makes sound priority calls within scope; time-boxes uncertain work.
+
+Evidenced by: Says no to a low-value request with a clear rationale rather than absorbing everything.
+
+Scope: one platform team.","Depth: Balances cost/value/risk across a domain; resists hype; decisions hold up over months.
+
+Evidenced by: Defends a contested platform trade-off between competing stakeholder demands.
+
+Scope: a complex / critical platform team.","Depth: Expert at portfolio-level trade-offs; surfaces hidden assumptions; trusted tiebreaker.
+
+Evidenced by: Installs a cost-of-delay or WSJF practice several teams now sequence with.
+
+Scope: a platform domain (cross-team).","Depth: Expert at portfolio-level trade-offs; surfaces hidden assumptions; trusted tiebreaker.
+
+Evidenced by: Arbitrates a sub-org-wide trade-off that reallocates investment.
+
+Scope: a platform sub-org.","Depth: Sets decision frameworks for the org.
+
+Evidenced by: Sets the prioritization principles the function commits capacity against.
+
+Scope: the platform function.","Depth: Influences company strategic direction through judgment.
+
+Evidenced by: Pioneers a portfolio-prioritization model other functions adopt.
+
+Scope: org-wide platform."
+skill,Delivery & Execution,Planning & Prioritization,Capacity & resource allocation,EM-05,"Depth: Builds a credible headcount plan for one team with normal review.
+
+Evidenced by: Protects focus time rather than fragmenting the team across too many fronts.
+
+Scope: one platform team.","Depth: Independently plans resourcing under uncertainty and defends staffing trade-offs.
+
+Evidenced by: Rebalances staffing to unblock a priority without wrecking sustainability.
+
+Scope: a complex / critical platform team.","Depth: Defines resource-planning practices others adopt and resolves cross-team allocation conflicts.
+
+Evidenced by: Defines the staffing and load-balancing model several teams now allocate with.
+
+Scope: a platform domain (cross-team).","Depth: Defines resource-planning practices others adopt and resolves cross-team allocation conflicts.
+
+Evidenced by: Reallocates capacity across a sub-org to match investment shifts.
+
+Scope: a platform sub-org.","Depth: Sets org-wide resourcing strategy and anticipates future capacity demand.
+
+Evidenced by: Sets the resourcing principles the function plans against.
+
+Scope: the platform function.","Depth: Defines headcount-planning best practice for the discipline and is recognized for it.
+
+Evidenced by: Pioneers a resourcing approach other functions adopt.
+
+Scope: org-wide platform."
+skill,Delivery & Execution,Delivery Management,Predictable delivery & flow,EM-07,"Depth: Drives delivery of a standard program with normal review.
+
+Evidenced by: Removes a recurring flow blocker such as a handoff, review lag, or big-batch release that stalls delivery.
+
+Scope: one platform team.","Depth: Independently runs complex multi-team programs and recovers slipping delivery.
+
+Evidenced by: Stabilizes a team's delivery so its commitments become trustworthy.
+
+Scope: a complex / critical platform team.","Depth: Defines delivery practices others adopt and rescues the most troubled programs.
+
+Evidenced by: Defines the flow and batch-size practice several teams now deliver with.
+
+Scope: a platform domain (cross-team).","Depth: Defines delivery practices others adopt and rescues the most troubled programs.
+
+Evidenced by: Makes a sub-org's delivery predictable through the leaders who run each team.
+
+Scope: a platform sub-org.","Depth: Sets the org's delivery strategy and anticipates systemic delivery risks.
+
+Evidenced by: Sets the flow and predictability standard the function commits to.
+
+Scope: the platform function.","Depth: Defines what excellent program delivery means and shapes external practice.
+
+Evidenced by: Pioneers a flow model other functions adopt.
+
+Scope: org-wide platform."
+skill,Delivery & Execution,Delivery Management,Engineering metrics & delivery health,EM-09,"Depth: Interprets productivity metrics for one team with normal review.
+
+Evidenced by: Acts on a delivery-metric trend to fix an actual bottleneck.
+
+Scope: one platform team.","Depth: Independently designs metric systems and distinguishes real signal from vanity numbers.
+
+Evidenced by: Diagnoses a delivery-health problem from the four keys and fixes its root cause.
+
+Scope: a complex / critical platform team.","Depth: Defines the productivity-measurement model others adopt and debunks misleading metrics.
+
+Evidenced by: Defines the DORA and SPACE measurement several teams now steer by.
+
+Scope: a platform domain (cross-team).","Depth: Defines the productivity-measurement model others adopt and debunks misleading metrics.
+
+Evidenced by: Makes data-driven delivery improvement the norm across the sub-org.
+
+Scope: a platform sub-org.","Depth: Sets the org's engineering-metrics strategy and anticipates which signals will matter.
+
+Evidenced by: Sets the metrics the function commits to and defends against misuse.
+
+Scope: the platform function.","Depth: Defines rigorous engineering productivity measurement and influences the field externally.
+
+Evidenced by: Pioneers a measurement model other functions adopt.
+
+Scope: org-wide platform."
+skill,Delivery & Execution,Delivery Management,Process & continuous improvement,EM-08,"Depth: Runs and tunes a team's operating cadence with normal review.
+
+Evidenced by: Removes a wasteful step from the team's process instead of adding ceremony.
+
+Scope: one platform team.","Depth: Independently designs processes that fit the work and removes friction others miss.
+
+Evidenced by: Lands a process change that measurably improves throughput or quality.
+
+Scope: a complex / critical platform team.","Depth: Defines operating-cadence patterns others adopt and fixes broken processes across teams.
+
+Evidenced by: Installs an improvement discipline several teams now run.
+
+Scope: a platform domain (cross-team).","Depth: Defines operating-cadence patterns others adopt and fixes broken processes across teams.
+
+Evidenced by: Makes systematic improvement, not firefighting, the sub-org's default mode.
+
+Scope: a platform sub-org.","Depth: Sets the org's operating model and anticipates where cadence must evolve.
+
+Evidenced by: Sets the process standards the function runs on.
+
+Scope: the platform function.","Depth: Defines effective engineering operating cadence for the discipline and is recognized for it.
+
+Evidenced by: Pioneers a continuous-improvement practice other functions adopt.
+
+Scope: org-wide platform."
+skill,Delivery & Execution,Delivery Management,Dependency & risk management,RISK-01,"Depth: Conducts standard risk assessments and updates registers independently with normal review.
+
+Evidenced by: Flags and mitigates a cross-team dependency before it blocks delivery.
+
+Scope: one platform team.","Depth: Assesses complex, interconnected enterprise risks and sets local methodology autonomously.
+
+Evidenced by: Unblocks a delivery stalled on another team's dependency through negotiation, not escalation alone.
+
+Scope: a complex / critical platform team.","Depth: Designs the enterprise risk framework and appetite model others adopt; solves the hardest risk problems.
+
+Evidenced by: Defines the cross-team dependency and risk practice several teams now coordinate with.
+
+Scope: a platform domain (cross-team).","Depth: Designs the enterprise risk framework and appetite model others adopt; solves the hardest risk problems.
+
+Evidenced by: De-risks a sub-org-wide initiative with many moving dependencies.
+
+Scope: a platform sub-org.","Depth: Sets enterprise risk strategy and appetite at board level; anticipates emerging systemic risks.
+
+Evidenced by: Sets the risk-management standard the function is accountable to.
+
+Scope: the platform function.","Depth: Defines enterprise-risk practice recognized industry-wide; externally cited authority.
+
+Evidenced by: Pioneers a risk practice other functions adopt.
+
+Scope: org-wide platform."
+skill,"Strategy, Communication & Influence",Strategy & Change,Strategy formulation,STRAT-01,"Depth: Develops components of strategy and standard analyses independently with normal review.
+
+Evidenced by: Names the core problem the team's strategy actually addresses rather than listing goals.
+
+Scope: one platform team.","Depth: Frames ambiguous strategic problems and shapes coherent strategy autonomously; the go-to strategist.
+
+Evidenced by: Produces a platform strategy that says no to things, not just yes.
+
+Scope: a complex / critical platform team.","Depth: Defines strategy-formulation approaches others adopt; resolves the hardest strategic trade-offs.
+
+Evidenced by: Publishes a domain strategy several teams reorient their plans around.
+
+Scope: a platform domain (cross-team).","Depth: Defines strategy-formulation approaches others adopt; resolves the hardest strategic trade-offs.
+
+Evidenced by: Builds a sub-org strategy that survives exec scrutiny and reallocates real investment.
+
+Scope: a platform sub-org.","Depth: Sets the enterprise strategic direction; anticipates major shifts reshaping the competitive landscape.
+
+Evidenced by: Sets the strategic bets the function commits to and defends them at the top table.
+
+Scope: the platform function.","Depth: Defines corporate-strategy practice recognized industry-wide; externally cited thought leader.
+
+Evidenced by: Pioneers a strategic thesis the company's direction depends on.
+
+Scope: org-wide platform."
+skill,"Strategy, Communication & Influence",Strategy & Change,Leading change & transformation,EM-12,"Depth: Leads a contained team change with normal review.
+
+Evidenced by: Gets a team through a tooling or process change without losing people or momentum.
+
+Scope: one platform team.","Depth: Independently drives significant change through resistance to durable adoption.
+
+Evidenced by: Builds the coalition that makes a hard platform migration or reorg stick.
+
+Scope: a complex / critical platform team.","Depth: Defines change approaches others adopt and rescues stalled transformations.
+
+Evidenced by: Drives a cross-team transformation through the leaders who own each team.
+
+Scope: a platform domain (cross-team).","Depth: Defines change approaches others adopt and rescues stalled transformations.
+
+Evidenced by: Lands a sub-org change that outlives the initial push.
+
+Scope: a platform sub-org.","Depth: Sets the org's transformation strategy and anticipates where change is needed next.
+
+Evidenced by: Sets the change the function leads and sustains.
+
+Scope: the platform function.","Depth: Defines effective engineering transformation for the discipline and shapes external practice.
+
+Evidenced by: Pioneers a change other functions model theirs on.
+
+Scope: org-wide platform."
+skill,"Strategy, Communication & Influence",Strategy & Change,Organizational & team design,EM-04,"Depth: Designs a sound structure for one team with normal review.
+
+Evidenced by: Clarifies a fuzzy team boundary that was causing thrash.
+
+Scope: one platform team.","Depth: Independently restructures teams to fit changing work and resolves boundary conflicts.
+
+Evidenced by: Restructures a team so its boundary matches the platform it owns.
+
+Scope: a complex / critical platform team.","Depth: Defines org-design approaches others adopt and reshapes the most tangled structures.
+
+Evidenced by: Redesigns team boundaries across the domain to cut cross-team cognitive load.
+
+Scope: a platform domain (cross-team).","Depth: Defines org-design approaches others adopt and reshapes the most tangled structures.
+
+Evidenced by: Proposes and drives a sub-org reshape that improves flow.
+
+Scope: a platform sub-org.","Depth: Sets org-structuring strategy across the org and anticipates scaling inflection points.
+
+Evidenced by: Sets the operating structure the function runs on.
+
+Scope: the platform function.","Depth: Defines effective engineering-org design for the discipline and is cited externally on it.
+
+Evidenced by: Pioneers an operating model other functions adopt.
+
+Scope: org-wide platform."
+skill,"Strategy, Communication & Influence",Communication & Influence,Executive & stakeholder communication,CC-06,"Depth: Reports upward answer-first with a specific ask; escalates early with options attached, so no surprise reaches leadership from someone else.
+
+Evidenced by: Translates a technical platform issue into terms a non-engineer decision-maker acts on.
+
+Scope: one platform team.","Depth: Briefs senior leaders under pressure — facts, impact, options, and a recommendation inside the first two minutes; one-pagers get forwarded unedited.
+
+Evidenced by: Gets a skeptical stakeholder to a decision through a well-framed case.
+
+Scope: a complex / critical platform team.","Depth: Builds and lands investment cases with executive audiences — pre-wired with skeptics, sized in business terms, honest about risk; coaches others for executive rooms and runs the operating reviews an organization communicates through.
+
+Evidenced by: Crafts the platform narrative several teams reuse to align stakeholders.
+
+Scope: a platform domain (cross-team).","Depth: Operates the executive room as a peer — advances positions, absorbs hostile questioning without defensiveness, and changes the room's decision more often than not.
+
+Evidenced by: Turns a complex platform investment into an exec-level story that lands the budget.
+
+Scope: a platform sub-org.","Depth: Operates the executive room as a peer — advances positions, absorbs hostile questioning without defensiveness, and changes the room's decision more often than not.
+
+Evidenced by: Sets how the function tells its story to the board and business.
+
+Scope: the platform function.","Depth: Speaks for an organization's technical reality to boards, investors, and press; trusted with the messages that cannot be delegated, and organizational credibility survives the appearances.
+
+Evidenced by: Speaks for platform to the board and externally as a recognized voice.
+
+Scope: org-wide platform."
+skill,"Strategy, Communication & Influence",Communication & Influence,Stakeholder management & partnership,PM-13,"Depth: Manages routine stakeholder relationships and communications with normal review.
+
+Evidenced by: Turns a frustrated internal customer into a collaborating partner.
+
+Scope: one platform team.","Depth: Independently aligns conflicting stakeholders and navigates tense executive conversations.
+
+Evidenced by: Brokers a durable agreement between platform and a demanding consumer team.
+
+Scope: a complex / critical platform team.","Depth: Defines stakeholder-engagement approaches others adopt and brokers the hardest alignment.
+
+Evidenced by: Builds the cross-team partnership model several teams manage relationships through.
+
+Scope: a platform domain (cross-team).","Depth: Defines stakeholder-engagement approaches others adopt and brokers the hardest alignment.
+
+Evidenced by: Realigns a strained sub-org-level partnership with a major consumer org.
+
+Scope: a platform sub-org.","Depth: Sets executive-engagement strategy and anticipates leadership concerns before they arise.
+
+Evidenced by: Sets the partnership approach the function relies on.
+
+Scope: the platform function.","Depth: Defines exemplary stakeholder management for the discipline and is externally credible on it.
+
+Evidenced by: Pioneers a stakeholder approach other functions adopt.
+
+Scope: org-wide platform."
+skill,"Strategy, Communication & Influence",Communication & Influence,Cross-org influence & alignment,LI-07,"Depth: Wins cooperation from adjacent teams by trading in their currencies — timing help, review effort, shared credit — rather than escalating.
+
+Evidenced by: Aligns another team to a shared platform goal without authority over them.
+
+Scope: one platform team.","Depth: Secures priority from other teams for an initiative with no borrowed authority; builds the case in the other party's terms and repays visibly.
+
+Evidenced by: Builds cross-team agreement on a contested platform standard.
+
+Scope: a complex / critical platform team.","Depth: Moves a multi-team domain to a shared position with no mandate — assembles the coalition, converts the best-argued skeptic — and the position holds after they stop pushing.
+
+Evidenced by: Drives alignment across a domain by clear intent, commander's-intent style, rather than escalation.
+
+Scope: a platform domain (cross-team).","Depth: Moves a multi-team domain to a shared position with no mandate — assembles the coalition, converts the best-argued skeptic — and the position holds after they stop pushing.
+
+Evidenced by: Wins peer-org buy-in for a sub-org-wide platform initiative.
+
+Scope: a platform sub-org.","Depth: Shifts organization-level outcomes through people several seams away who advocate the position as their own; lands decisions while holding a minority of the formal power in the room.
+
+Evidenced by: Sets the alignment mechanisms the function relies on to move the wider org.
+
+Scope: the platform function.","Depth: Shapes industry and market context in the organization's favor — standards bodies, open ecosystems, talent narratives — so external forces push where the organization wants to go.
+
+Evidenced by: Pioneers an influence model that aligns the whole company behind platform bets.
+
+Scope: org-wide platform."
+skill,Self & Personal Effectiveness,Leverage & Delegation,Managerial leverage & focus,EM-16,"Depth: Runs a deliberate calendar that matches stated priorities — protected one-on-ones, deep work, and team time; declines low-leverage meetings with alternatives offered.
+
+Evidenced by: Drops a low-leverage habit such as reviewing every change themselves once they see its cost.
+
+Scope: one platform team.","Depth: Prunes their own involvement ruthlessly as complexity grows — automates, delegates, or kills recurring work every quarter — and models sustainable pace through crunch.
+
+Evidenced by: Restructures how they spend time so a critical platform team stops waiting on them.
+
+Scope: a complex / critical platform team.","Depth: Chooses interventions by multiplier across many teams — the review that shapes ten decisions, the document that aligns three roadmaps — declining the rest by policy; audits their time and publishes the changes.
+
+Evidenced by: Publishes an operating cadence several leads adopt to reclaim their own high-leverage time.
+
+Scope: a platform domain (cross-team).","Depth: Chooses interventions by multiplier across many teams — the review that shapes ten decisions, the document that aligns three roadmaps — declining the rest by policy; audits their time and publishes the changes.
+
+Evidenced by: Removes themselves as a bottleneck across the sub-org by installing the mechanisms that decide without them.
+
+Scope: a platform sub-org.","Depth: Allocates attention like a portfolio at organizational scale — deep on the few places they are the unique unlock, delegated on the rest — and says which is which out loud.
+
+Evidenced by: Sets the focus and leverage norms leaders across the function organize their time around.
+
+Scope: the platform function.","Depth: Spends presence deliberately as an organizational signal — where they show up moves priorities — and guards the organization's focus by limiting concurrent top priorities and abandoning stale initiatives by name.
+
+Evidenced by: Pioneers a leverage model peer functions adopt.
+
+Scope: org-wide platform."
+skill,Self & Personal Effectiveness,Leverage & Delegation,Delegation & empowerment,EM-14,"Depth: Delegates whole outcomes with context and check-in contracts matched to each person's readiness — and resists snatching work back when it wobbles.
+
+Evidenced by: Hands a platform workstream to an engineer with the decision rights to run it, then holds back.
+
+Scope: one platform team.","Depth: Hands ownership of critical, visible work to someone not yet proven and scaffolds them to success, letting them keep the credit; the team runs a week without them and nothing stalls.
+
+Evidenced by: Grows a report into someone who runs a critical workstream end to end without checking in.
+
+Scope: a complex / critical platform team.","Depth: Pushes decisions down across multiple teams — publishes decision rights so teams stop escalating what they can decide themselves; involvement is exception-based, and everyone knows which is which.
+
+Evidenced by: Gets outcomes across a domain by stating clear intent and letting other leaders decide how.
+
+Scope: a platform domain (cross-team).","Depth: Pushes decisions down across multiple teams — publishes decision rights so teams stop escalating what they can decide themselves; involvement is exception-based, and everyone knows which is which.
+
+Evidenced by: Pushes a class of decisions down to team leaders across the sub-org and stops being consulted on them.
+
+Scope: a platform sub-org.","Depth: Builds organizations that run on mechanisms rather than presence — delegated authorities with audit trails, pre-declared tripwires — and grants leaders consequential authority held to outcomes, not methods.
+
+Evidenced by: Sets the empowerment norms leaders across the function lead by.
+
+Scope: the platform function.","Depth: Runs an organization on intent — direction and guardrails clear enough that leaders act correctly without asking — and treats every upward escalation as a design flaw to fix.
+
+Evidenced by: Pioneers a decision-rights model other functions adopt.
+
+Scope: org-wide platform."
+skill,Self & Personal Effectiveness,Growth & Resilience,Self-awareness & learning agility,LI-09,"Depth: Asks for feedback on their own practice and changes visibly in response — ""you said X, I changed Y"" — keeping a running list of their own failure patterns.
+
+Evidenced by: Changes a specific behavior after hearing it lands badly, rather than defending it.
+
+Scope: one platform team.","Depth: Knows their failure modes under pressure and manages them in the moment; staffs deliberately against known weaknesses and seeks disconfirming input before hard calls.
+
+Evidenced by: Names a blind spot and adjusts before it costs the team, using an outside read to check their own.
+
+Scope: a complex / critical platform team.","Depth: Runs structured input on themselves — 360s, skip-level themes — and closes the loop publicly on what changed; retools openly for first-time challenges so others copy the learning method.
+
+Evidenced by: Runs feedback mechanisms several leads adopt to see their own effect on others.
+
+Scope: a platform domain (cross-team).","Depth: Runs structured input on themselves — 360s, skip-level themes — and closes the loop publicly on what changed; retools openly for first-time challenges so others copy the learning method.
+
+Evidenced by: Turns a leader's blind spot around across the sub-org by making honest upward feedback safe and routine.
+
+Scope: a platform sub-org.","Depth: Compensates deliberately for the seniority feedback vacuum — cultivates truth-tellers, rewards bearers of unwelcome news about themselves, and retires their own outdated playbook when the organization outgrows it.
+
+Evidenced by: Sets the learning-agility expectations leaders across the function are developed against.
+
+Scope: the platform function.","Depth: Institutionalizes challenge to their own judgment — red teams, protected dissent — and manages how their moods and offhand comments get amplified across an organization.
+
+Evidenced by: Pioneers a leadership-development model peer functions adopt.
+
+Scope: org-wide platform."
+skill,Self & Personal Effectiveness,Growth & Resilience,Resilience & sustainable pace,LI-10,"Depth: Stays effective and steady under pressure — recovers from setbacks, manages their own energy, and models a sustainable pace others learn from watching.
+
+Evidenced by: Logs off after a brutal on-call week and says so openly instead of powering through, and the team notices and starts doing the same.
+
+Scope: one platform team.","Depth: Holds up through prolonged pressure — incident sieges, crunch, organizational turbulence — helping the team stay resilient and refusing burnout-driven decisions.
+
+Evidenced by: Absorbs the stress of a severe outage period and keeps the team functioning rather than fraying.
+
+Scope: a complex / critical platform team.","Depth: Builds resilience into how multiple teams operate — on-call health, recovery after pushes, load balancing — and repairs burnout risk at scale.
+
+Evidenced by: Acts on a burnout signal across the domain before it becomes attrition, changing the load rather than the people.
+
+Scope: a platform domain (cross-team).","Depth: Builds resilience into how multiple teams operate — on-call health, recovery after pushes, load balancing — and repairs burnout risk at scale.
+
+Evidenced by: Reshapes on-call and workload across the sub-org so resilience does not depend on individual heroics.
+
+Scope: a platform sub-org.","Depth: Stewards organizational resilience — capacity buffers, crisis rotation, energy management for senior leaders — and holds the line when business pressure argues for permanent crunch.
+
+Evidenced by: Sets the sustainable-pace expectations leaders across the function are held to.
+
+Scope: the platform function.","Depth: Shapes a resilient, sustainable culture across an organization; the organization absorbs shocks without breaking people, and the practice is referenced beyond it.
+
+Evidenced by: Pioneers a sustainable-operations model peer functions adopt.
+
+Scope: org-wide platform."
+skill,Self & Personal Effectiveness,Judgment & Integrity,Decision-making under uncertainty,LI-04,"Depth: Decides independently within their components; evaluates alternatives honestly.
+
+Evidenced by: Makes a reversible platform decision quickly rather than stalling for certainty that will not come.
+
+Scope: one platform team.","Depth: Makes architectural choices for a domain that hold up over months.
+
+Evidenced by: Frames a one-way-door platform decision explicitly and gathers the evidence its weight warrants.
+
+Scope: a complex / critical platform team.","Depth: Foresees second-order consequences; sets decision frameworks for teams.
+
+Evidenced by: Installs a decision framework several teams now use to make calls under ambiguity.
+
+Scope: a platform domain (cross-team).","Depth: Foresees second-order consequences; sets decision frameworks for teams.
+
+Evidenced by: Raises the quality of consequential decisions across the sub-org by making the reasoning and the owner explicit.
+
+Scope: a platform sub-org.","Depth: Sets decision-making frameworks for the org.
+
+Evidenced by: Sets the decision standard leaders across the function are calibrated to.
+
+Scope: the platform function.","Depth: Visionary judgment; sees structural causes others miss.
+
+Evidenced by: Pioneers a decision model peer functions adopt.
+
+Scope: org-wide platform."
+skill,Self & Personal Effectiveness,Judgment & Integrity,"Ethics, integrity & trust",LI-11,"Depth: Makes the unpopular-but-right call under pressure and absorbs the cost personally; protects the person who raised the flag and handles sensitive information impeccably.
+
+Evidenced by: Makes the honest call on a platform reliability or security risk even when it is inconvenient to admit.
+
+Scope: one platform team.","Depth: Makes the unpopular-but-right call under pressure and absorbs the cost personally; protects the person who raised the flag and handles sensitive information impeccably.
+
+Evidenced by: Refuses a shortcut that would trade user trust or safety for speed, and says why.
+
+Scope: a complex / critical platform team.","Depth: Serves as the honest broker across teams — disputing parties accept their account of the facts — and carries uncomfortable systemic truths to the room that can fix them.
+
+Evidenced by: Establishes the do-the-right-thing expectations several teams now hold each other to.
+
+Scope: a platform domain (cross-team).","Depth: Serves as the honest broker across teams — disputing parties accept their account of the facts — and carries uncomfortable systemic truths to the room that can fix them.
+
+Evidenced by: Makes candid, blameless honesty the norm across the sub-org even when the news is bad.
+
+Scope: a platform sub-org.","Depth: Builds mechanisms that make integrity cheap at scale — ethics review in design, safe escalation with follow-through, fairness systems whose losers affirm the process — and stops launches on ethical grounds with the business case for trust.
+
+Evidenced by: Sets the integrity standard leaders across the function are trusted to uphold.
+
+Scope: the platform function.","Depth: Holds an organization's line when the profitable path and the right path diverge — the hard disclosure, the walked-away revenue — and those moments become the story the culture tells about itself.
+
+Evidenced by: Pioneers an ethics model peer functions and the wider field reference.
+
+Scope: org-wide platform."
