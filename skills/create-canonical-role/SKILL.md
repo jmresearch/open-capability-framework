@@ -93,8 +93,9 @@ old matrix; genericize org-specific content) — into one canonical ladder:
   sourced rows is part of the same change. Consolidation operates on capability IDs and per-level
   mappings, never on freshly written cell prose; ladder cells are rendered by
   `scripts/render_role_ladder.py`, not authored.
-- Build `roles/<slug>/role.yaml` (levels, competency references, per-level proficiency targets)
-  plus canonical `ladder.md`/`ladder.csv`, per `roles/README.md`.
+- Build `roles/<slug>/role.yaml` (levels, competency references, per-level `mappings` (proficiency
+  + sources + why, per the sourcing gate above)) plus canonical `ladder.md`/`ladder.csv`, per
+  `roles/README.md`.
 - Write a consolidation report: the merge map, and the agreement histogram (how many competencies
   appeared in all runs / most / one) — this is the evidence the canon is holistic.
 

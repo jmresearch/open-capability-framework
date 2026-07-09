@@ -25,10 +25,11 @@ calibration summary that the ladder was generated unanchored to the framework.
 ## 2. Three modes, by what the framework already knows
 
 - **Role record exists → ADAPT mode.** The role record *is* the canonical structure: use its key
-  areas, focus areas, competency names, capability IDs, anchors, and per-level proficiency targets
-  verbatim. Generate only what's role-instance-specific: the org-calibrated cell prose (and reuse
-  the bundled canonical cells outright when the user gave no org context). Do not re-derive the
-  structure — that would reintroduce the run-to-run variance this exists to kill.
+  areas, focus areas, competency names, capability IDs, anchors, and per-level `mappings`
+  (proficiency + sources + why) verbatim. Generate only what's role-instance-specific: the
+  org-calibrated cell prose (and reuse the bundled canonical cells outright when the user gave no
+  org context). Do not re-derive the structure — that would reintroduce the run-to-run variance
+  this exists to kill.
 - **No role record, but the catalog covers the role → COMPOSE mode.** Build the competency list
   *from* matching OCF capabilities: use their canonical names as themes (shorten to ≤60 chars if
   needed) and carry their IDs. Add role-specific competencies only where the catalog genuinely has
@@ -146,7 +147,7 @@ After delivering the ladder, compute what this run produced that the framework d
    P-profile, a description spanning two assessable things, a needed split/merge), draft an
    amendment proposal per `contrib/README.md`.
 3. **Role record** — a new `roles/<slug>/` if none existed, or a diff to the existing one
-   (added competencies, refined proficiency targets).
+   (added competencies, refined per-level `mappings`).
 4. **Benchmark entry** — when minting ran on a model/effort with no entry in
    `benchmarks/model-efficiency.yaml`, the run telemetry (coverage, validator results, token
    usage) can become a new entry (see `benchmarks/README.md`).
