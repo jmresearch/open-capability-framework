@@ -1,0 +1,575 @@
+role: Platform Engineering Management
+slug: platform-engineering-manager
+variant: manager
+minted: 2026-07-07
+scope_note: >
+  M1-M6 map to the leadership scope axis: one platform team (S1) -> a complex / critical platform
+  team (S2) -> a platform domain, cross-team (S3) -> a platform sub-org (S4) -> the platform
+  function (S5) -> org-wide platform (S6). This is the people-leadership track for internal
+  developer-platform / DevEx / infrastructure teams: it carries the full engineering-management
+  load (hiring, coaching, performance, delivery, org design, strategy, communication) AND the
+  platform-specific accountabilities that distinguish it from the generic Engineering Management
+  ladder - platform-as-a-product thinking, developer experience and adoption, paved-road strategy,
+  reliability and operational leverage, and self-service infrastructure. Upper-level cells are
+  written as indirect-leverage behaviors demonstrable before the seat is granted; some
+  accountability (budget of record, headcount authority, board exposure) is only fully exercised
+  in-seat. Consolidated 2026-07-07 by union from five independent same-methodology blind runs
+  (146 source competencies -> 38 from the ensemble union), then extended to 44 on a Fable
+  consistency review that added the Self & Personal Effectiveness key area (borrowed verbatim from
+  the Engineering Management canon: managerial leverage, delegation, self-awareness, resilience,
+  decision-making under uncertainty, ethics) - territory the blind PEM ensemble systematically
+  under-produced but which is not platform-contingent. Every focus area spans 2+ competencies.
+  Proficiency targets follow the manager curve, calibrated per competency against the Engineering
+  Management and Platform Engineering canonical records for cross-ladder consistency (every shared
+  capability id carries the same M1-M6 curve as the Engineering Management record). One competency,
+  "Adoption & migration strategy," references a pending catalog proposal (OPS-33,
+  contrib/2026-07-platform-adoption-and-deprecation-management.md) because no existing capability
+  covers internal-platform adoption / migration / deprecation.
+levels:
+  - {code: M1, title: Platform Engineering Manager, scope: one platform team, focus: builds one healthy platform team and the platform-as-a-product fundamentals}
+  - {code: M2, title: Senior Platform Engineering Manager, scope: a complex / critical platform team, focus: runs a high-stakes platform team and its reliability and DevEx outcomes}
+  - {code: M3, title: Director of Platform Engineering, scope: a platform domain (cross-team), focus: sets strategy and paved-road standards for a cross-team platform domain}
+  - {code: M4, title: Senior Director of Platform Engineering, scope: a platform sub-org, focus: builds the operating system and architecture a platform sub-org runs on}
+  - {code: M5, title: VP of Platform Engineering, scope: the platform function, focus: sets platform-function direction and represents developer productivity to the business}
+  - {code: M6, title: SVP / Head of Platform, scope: org-wide platform, focus: "sets org-wide platform vision, operating model, and the company-level infrastructure bets"}
+competencies:
+  # ---- People Leadership & Team Health ----
+  - theme: Hiring & selection
+    capability: LI-02
+    key_area: People Leadership & Team Health
+    key_attribute: Hiring & Team Formation
+    anchor: "Schmidt & Hunter, selection-methods meta-analysis (1998)"
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Onboarding & team formation
+    capability: EM-13
+    key_area: People Leadership & Team Health
+    key_attribute: Hiring & Team Formation
+    anchor: "Tuckman, Developmental Sequence in Small Groups (1965)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Coaching & development
+    capability: LI-01
+    key_area: People Leadership & Team Health
+    key_attribute: Coaching & Performance
+    anchor: "Whitmore, Coaching for Performance (1992); Google Project Oxygen"
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Career development & sponsorship
+    capability: EM-02
+    key_area: People Leadership & Team Health
+    key_attribute: Coaching & Performance
+    anchor: "Hewlett, Forget a Mentor, Find a Sponsor (2013)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Performance management
+    capability: EM-01
+    key_area: People Leadership & Team Health
+    key_attribute: Coaching & Performance
+    anchor: "Grove, High Output Management (1983)"
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Psychological safety & team health
+    capability: EM-03
+    key_area: People Leadership & Team Health
+    key_attribute: Team Health & Culture
+    anchor: "Edmondson, The Fearless Organization (2018); Project Aristotle"
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Motivation, engagement & retention
+    capability: EM-17
+    key_area: People Leadership & Team Health
+    key_attribute: Team Health & Culture
+    anchor: "Deci & Ryan, Self-Determination Theory (2000); Herzberg (1968)"
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  # ---- Platform as a Product ----
+  - theme: Platform vision & roadmap
+    capability: PM-05
+    key_area: Platform as a Product
+    key_attribute: Product Strategy & Discovery
+    anchor: "Perri, Escaping the Build Trap (2018); Skelton & Pais, Team Topologies (2019)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Internal user research & discovery
+    capability: PM-01
+    key_area: Platform as a Product
+    key_attribute: Product Strategy & Discovery
+    anchor: "Noda, Storey, Forsgren & Greiler, DevEx: What Actually Drives Productivity (ACM Queue, 2023)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Platform value & business case
+    capability: PD-06
+    key_area: Platform as a Product
+    key_attribute: Product Strategy & Discovery
+    anchor: "Cagan, Inspired (2008)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Golden paths & paved roads
+    capability: OPS-27
+    key_area: Platform as a Product
+    key_attribute: Developer Experience & Adoption
+    anchor: "Spotify Engineering, How We Use Golden Paths (2020)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Self-service & platform interfaces
+    capability: OPS-27
+    key_area: Platform as a Product
+    key_attribute: Developer Experience & Adoption
+    anchor: "Bottcher, What I Talk About When I Talk About Platforms (martinfowler.com, 2018)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Adoption & migration strategy
+    capability: proposed
+    proposal_ref: contrib/2026-07-platform-adoption-and-deprecation-management.md
+    key_area: Platform as a Product
+    key_attribute: Developer Experience & Adoption
+    anchor: "Winters, Manshreck & Wright, Software Engineering at Google (2020) - deprecation chapter"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Platform advocacy & enablement
+    capability: DR-01
+    key_area: Platform as a Product
+    key_attribute: Developer Experience & Adoption
+    anchor: "CNCF TAG App Delivery, Platform Engineering Maturity Model (2023)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  # ---- Reliability & Operations ----
+  - theme: Reliability, SLOs & error budgets
+    capability: OPS-04
+    key_area: Reliability & Operations
+    key_attribute: Reliability Engineering
+    anchor: "Beyer, Jones, Petoff & Murphy, Site Reliability Engineering (2016)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Incident & operational-risk leadership
+    capability: EM-10
+    key_area: Reliability & Operations
+    key_attribute: Reliability Engineering
+    anchor: "PagerDuty, Incident Response Guide (2017); Allspaw, Blameless PostMortems (2012)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Observability & health signals
+    capability: OPS-05
+    key_area: Reliability & Operations
+    key_attribute: Reliability Engineering
+    anchor: "Majors, Fong-Jones & Miranda, Observability Engineering (2022)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Toil reduction & automation
+    capability: OPS-28
+    key_area: Reliability & Operations
+    key_attribute: Operational Leverage
+    anchor: "Beyer, Jones, Petoff & Murphy, Site Reliability Engineering (2016) - toil chapter"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Capacity, performance & cost
+    capability: OPS-07
+    key_area: Reliability & Operations
+    key_attribute: Operational Leverage
+    anchor: "Gregg, Systems Performance (2nd ed., 2020)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  # ---- Technical Direction & Architecture ----
+  - theme: Platform architecture stewardship
+    capability: ARC-10
+    key_area: Technical Direction & Architecture
+    key_attribute: Architecture & Standards
+    anchor: "Conway (1968); Nygard, Documenting Architecture Decisions (2011)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Engineering standards & quality
+    capability: SWE-02
+    key_area: Technical Direction & Architecture
+    key_attribute: Architecture & Standards
+    anchor: "Humble & Farley, Continuous Delivery (2010)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Technical debt & modernization
+    capability: EM-15
+    key_area: Technical Direction & Architecture
+    key_attribute: Architecture & Standards
+    anchor: "Cunningham, The WyCash Portfolio Management System (1992)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Technical strategy & investment
+    capability: LI-03
+    key_area: Technical Direction & Architecture
+    key_attribute: Technical Strategy & Risk
+    anchor: "Larson, An Elegant Puzzle (2019); Wardley Maps (2016)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Vendor & build/buy/adopt strategy
+    capability: EM-06
+    key_area: Technical Direction & Architecture
+    key_attribute: Technical Strategy & Risk
+    anchor: "Korn Ferry Leadership Architect (2014) - Financial Acumen"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Secure-by-default platform & guardrails
+    capability: SEC-18
+    key_area: Technical Direction & Architecture
+    key_attribute: Technical Strategy & Risk
+    anchor: "OWASP, Application Security Verification Standard (v4, 2019)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  # ---- Delivery & Execution ----
+  - theme: Planning & estimation
+    capability: PD-04
+    key_area: Delivery & Execution
+    key_attribute: Planning & Prioritization
+    anchor: "McConnell, Software Estimation (2006)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Prioritization & trade-offs
+    capability: PD-02
+    key_area: Delivery & Execution
+    key_attribute: Planning & Prioritization
+    anchor: "Reinertsen, The Principles of Product Development Flow (2009)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Capacity & resource allocation
+    capability: EM-05
+    key_area: Delivery & Execution
+    key_attribute: Planning & Prioritization
+    anchor: "Brooks, The Mythical Man-Month (1975)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Predictable delivery & flow
+    capability: EM-07
+    key_area: Delivery & Execution
+    key_attribute: Delivery Management
+    anchor: "Forsgren, Humble & Kim, Accelerate (2018)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Engineering metrics & delivery health
+    capability: EM-09
+    key_area: Delivery & Execution
+    key_attribute: Delivery Management
+    anchor: "Forsgren, Humble & Kim, Accelerate (2018) - DORA four keys; SPACE (2021)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Process & continuous improvement
+    capability: EM-08
+    key_area: Delivery & Execution
+    key_attribute: Delivery Management
+    anchor: "Deming, Out of the Crisis (1986)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Dependency & risk management
+    capability: RISK-01
+    key_area: Delivery & Execution
+    key_attribute: Delivery Management
+    anchor: "NIST Cybersecurity Framework (2014); PMI PMBOK (2021)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  # ---- Strategy, Communication & Influence ----
+  - theme: Strategy formulation
+    capability: STRAT-01
+    key_area: Strategy, Communication & Influence
+    key_attribute: Strategy & Change
+    anchor: "Rumelt, Good Strategy Bad Strategy (2011)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P5, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Leading change & transformation
+    capability: EM-12
+    key_area: Strategy, Communication & Influence
+    key_attribute: Strategy & Change
+    anchor: "Kotter, Leading Change (1996)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Organizational & team design
+    capability: EM-04
+    key_area: Strategy, Communication & Influence
+    key_attribute: Strategy & Change
+    anchor: "Skelton & Pais, Team Topologies (2019); Conway (1968)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Executive & stakeholder communication
+    capability: CC-06
+    key_area: Strategy, Communication & Influence
+    key_attribute: Communication & Influence
+    anchor: "Duarte, HBR Guide to Persuasive Presentations (2012)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P5, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Stakeholder management & partnership
+    capability: PM-13
+    key_area: Strategy, Communication & Influence
+    key_attribute: Communication & Influence
+    anchor: "Freeman, Strategic Management: A Stakeholder Approach (1984)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Cross-org influence & alignment
+    capability: LI-07
+    key_area: Strategy, Communication & Influence
+    key_attribute: Communication & Influence
+    anchor: "Cohen & Bradford, Influence Without Authority (1989); Bungay, The Art of Action (2011)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  # ---- Self & Personal Effectiveness ----
+  # Borrowed verbatim from the Engineering Management canon (curves + anchors) per the 2026-07-07
+  # consistency review: this territory is not platform-contingent, and a canon adapted verbatim
+  # must not lack delegation, judgment, resilience, or an ethics row on the manager axis. The blind
+  # PEM ensemble under-produced it (see consolidation report); it is added for cross-ladder parity.
+  - theme: Managerial leverage & focus
+    capability: EM-16
+    key_area: Self & Personal Effectiveness
+    key_attribute: Leverage & Delegation
+    anchor: "Grove, High Output Management (1983); Drucker (1967)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Delegation & empowerment
+    capability: EM-14
+    key_area: Self & Personal Effectiveness
+    key_attribute: Leverage & Delegation
+    anchor: "Marquet, Turn the Ship Around! (2012)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Self-awareness & learning agility
+    capability: LI-09
+    key_area: Self & Personal Effectiveness
+    key_attribute: Growth & Resilience
+    anchor: "Eurich, Insight (2017); Lombardo & Eichinger (2000)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Resilience & sustainable pace
+    capability: LI-10
+    key_area: Self & Personal Effectiveness
+    key_attribute: Growth & Resilience
+    anchor: "Loehr & Schwartz, The Power of Full Engagement (2003)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Decision-making under uncertainty
+    capability: LI-04
+    key_area: Self & Personal Effectiveness
+    key_attribute: Judgment & Integrity
+    anchor: "Kahneman, Thinking, Fast and Slow (2011)"
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
+  - theme: Ethics, integrity & trust
+    capability: LI-11
+    key_area: Self & Personal Effectiveness
+    key_attribute: Judgment & Integrity
+    anchor: "Mayer, Davis & Schoorman (1995); ACM Code of Ethics (2018)"
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
