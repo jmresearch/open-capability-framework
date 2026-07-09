@@ -25,8 +25,10 @@ on:
   push:
     branches: [main]
     paths:
+      - 'data/bibliography.csv'
       - 'data/capabilities.csv'
       - 'data/capabilities.json'
+      - 'data/capability_levels.csv'
       - 'data/domains.csv'
       - 'data/proficiency_scale.csv'
       - 'data/scope_levels.csv'
@@ -54,8 +56,9 @@ jobs:
         run: |
           python scripts/render_catalog.py
           python scripts/render_role_links.py
-          if ! git diff --exit-code -- '*.md'; then
-            echo '::error::Markdown renders are stale. Run scripts/render_catalog.py and scripts/render_role_links.py and commit the result.'
+          python scripts/render_role_ladder.py
+          if ! git diff --exit-code -- '*.md' 'roles/*/ladder.csv'; then
+            echo '::error::Derived renders are stale. Run scripts/render_catalog.py, scripts/render_role_links.py and scripts/render_role_ladder.py, then commit the result.'
             exit 1
           fi
 
@@ -74,12 +77,13 @@ jobs:
         run: |
           python scripts/render_catalog.py
           python scripts/render_role_links.py
+          python scripts/render_role_ladder.py
           python scripts/render_role_xlsx.py
       - name: Commit regenerated renders
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/*.md data/capabilities.xlsx roles/*/ladder.md roles/*/ladder.xlsx
+          git add data/*.md data/capabilities.xlsx roles/*/ladder.md roles/*/ladder.csv roles/*/ladder.xlsx
           if ! git diff --cached --quiet; then
             git commit -m "ci: regenerate derived renders [skip ci]"
             git push
