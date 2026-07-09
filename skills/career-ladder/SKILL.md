@@ -77,10 +77,12 @@ demonstrability rule. Structure:
   a one-clause "why" (`references/calibration.md`). Anchors ground the competency; the cell prose
   stays observable-behavior register. Anchors appear in the markdown only, never in the CSV.
 
-**Cells are assembled, never authored.** Depth text is the catalog capability's profile at the
-mapped proficiency, verbatim; role flavor goes in a separate `Evidenced by` line; scope comes from
-the level's scope band. Every P-mapping and every catalog P-level carries a bibliography citation +
-a written why. Full rule: `references/capability-framework.md` § Cell derivation and mapping. Order
+**Cells are assembled, never authored.** A cell is two parts separated by a blank line: depth text
+that's the catalog capability's profile at the mapped proficiency, verbatim, and an optional role
+flavor line (`Evidenced by`). Scope is not repeated inside the cell — it comes from the level's
+scope band (`role.yaml` `levels[].scope` / the CSV `level_scope` row), stated once per level, not
+once per cell. Every P-mapping and every catalog P-level carries a bibliography citation + a
+written why. Full rule: `references/capability-framework.md` § Cell derivation and mapping. Order
 of operations is a hard gate: bibliography sources first, competencies second, mappings third —
 cell prose never.
 
@@ -120,7 +122,9 @@ changes nothing remotely and ends the matter for the session.
 - **Competency names ≤ 60 characters.** Short label only.
 - **Cells are present-tense observable behaviors** that peers, leaders, and reports can witness —
   not past-tense achievements, not internal states, not adjectives.
-- **Depth and scope appear separately in every cell.**
+- **Scope lives on the level, not the cell.** Cells hold depth (Bar + optional Evidenced by)
+  only; scope is stated once per level (`role.yaml` `levels[].scope` / CSV `level_scope`), never
+  repeated inside a cell.
 - **SFIA (and any competency library) is overlay-only.** Never let it shape the prose.
 - **Manager ladders stay demonstrable before the title** — influence/leverage behaviors, never
   position-locked language.
