@@ -4,307 +4,1014 @@ variant: ic_technical
 minted: 2026-07-02
 scope_note: >
   E1-E6 map to scope bands task -> component -> capability/domain -> multiple teams ->
-  organization -> company (approximately S1-S6 on the IC axis). E3 / Senior is the terminal
-  level: sustained excellence at capability scope is a complete career; E4+ is a different
-  job defined by multi-team leverage. Consolidated 2026-07 by union from five independent
-  blind generations (158 source competencies -> 47 canonical); proficiency targets follow
-  the IC guide E1:P1, E2:P2, E3:P3, E4:P4, E5:P5, E6:P6 - per-competency review found the
-  source cells consistently written to those bars, so no deviations were warranted.
+  organization -> company (approximately S1-S6 on the IC axis). E3 / Senior is the terminal level:
+  sustained excellence at capability scope is a complete career; E4+ is a different job defined by
+  multi-team leverage. Consolidated 2026-07 by union from five independent blind generations (158
+  source competencies -> 47 canonical); proficiency targets follow the IC guide E1:P1, E2:P2,
+  E3:P3, E4:P4, E5:P5, E6:P6. R3 sourced-derivation retrofit (2026-07-09): every mapping now
+  carries a bibliography source and a per-competency, per-level why grounded in that capability's
+  actual P1-P6 catalog text -- the earlier blanket claim ("per-competency review found the source
+  cells consistently written to those bars") is superseded by this per-cell sourcing. The diagonal
+  held for all 47 competencies on re-derivation: every capability's own P1-P6 profile
+  independently escalates task -> component -> domain/capability -> multiple-teams -> organization
+  -> company in step with E1-E6, so no mapping deviates from Ek:Pk -- see each competency's
+  mappings[].why for the per-level catalog citation. Role-leveling source convention (constant
+  across the ladder, not per-competency): E1-E3 pair the competency anchor with sfia9 (SFIA's
+  guided/independent/proficient responsibility tiers); E4-E6 pair it with larson2021-staffeng
+  (StaffEng's senior-IC archetypes for multi-team/org/company scope), except where the anchor
+  itself already is one of those two keys (e.g. Stakeholder communication, Technical direction &
+  influence), in which case the level's sources are not duplicated. Nine competencies carry a
+  second, always-on source because the original citation named two real, distinct works, both
+  genuine bibliography entries used together at the same catalog id in data/capability_levels.csv:
+  Observability & monitoring (sre2016 + majors2022-observability), Incident response & postmortems
+  (sre2016 + allspaw2012), Authentication/authorization & data protection (owasp-asvs +
+  nist80063), Technical writing & documentation (winters2020 + procida-diataxis), Feedback &
+  candor (scott2017-radicalcandor + edmondson2018-fearless-org), Cross-functional collaboration
+  (cagan2017-inspired + skelton-pais2019), Mentoring & growing engineers (larson2021-staffeng +
+  fournier2017), Scoping/prioritization & estimation (mcconnell2006-estimation +
+  reinertsen2009-flow). Self-sourcing circularity check (systemic bug hunted per the task brief):
+  five capabilities in this ladder -- SWE-08 (Type-System Domain Modeling), SWE-09 (Boundary
+  Validation & End-to-End Type Integrity), OPS-30 (Progressive Delivery & Release Safety), PD-07
+  (Strategic & Commercial Awareness), and EM-15 (Technical debt & risk stewardship) -- were minted
+  from this exact role's own 2026-07 consolidation and accepted into the catalog directly from its
+  prior ladder.md prose. Token-overlap triage (Jaccard over the mapped bar vs. the old ladder's
+  harvested evidence, all 6 levels, not just P1-P3) confirmed SWE-08, SWE-09, OPS-30 and PD-07 as
+  circular -- the catalog P-text is frequently a near-verbatim prefix of the old evidence clause
+  it was distilled from (scores 0.32-0.92 across 24 of 24 cells) -- so all 24 cells were rewritten
+  to genuinely distinct, concretely-instantiated scenarios rather than reused. EM-15 scored
+  near-zero (its catalog profile reads as a different, more abstract debt-portfolio register than
+  the old ladder's code-refactoring prose), so it was not circular by the token test, but its 6
+  cells were rewritten anyway for tighter behavior/autonomy match to the actual catalog P-text
+  (portfolio/register framing, not hands-on refactoring), since it shares the same self-sourced
+  provenance. One more cell failed the instance test for a different reason (paraphrase, not
+  circularity): PD-05 E6 restated its bar's own language with no concrete scenario and was
+  rewritten; PD-05 E1-E5 passed. Twenty of the 47 competency anchors resolve to a close
+  bibliography substitute rather than the original free-text citation, because that citation (a
+  web framework's docs, a language handbook, a blog post never added to the bibliography) has no
+  entry: in every case the substitute is a source the catalog's own capability_levels.csv already
+  cites for that exact capability id. Examples: Styling & responsive layout's MDN CSS guides ->
+  css-cascade5 (FE-09's own P3 anchor); Client state management's Redux docs -> facebook-flux2014
+  (FE-05's own P3/P4/P6 anchor, since Redux directly implements Flux); Data fetching & caching's
+  TanStack Query docs -> rfc9111 (FE-06's own anchor at every level -- the HTTP caching semantics
+  TanStack Query implements); Runtime & async correctness's Node.js event-loop guide ->
+  herlihy-shavit2008 (CS-04's own anchor); Query performance's Winand/Sadalage & Fowler ->
+  selinger1979 (BE-04's own anchor, the origin of cost-based query-plan literacy); Advanced types
+  & inference's TypeScript Handbook -> mcconnell2004 (SWE-01's own P1/P2 anchor); Integration &
+  end-to-end confidence's Fowler ContractTest post -> robinson2006-cdc (the exact named
+  Consumer-Driven Contracts pattern); Ownership & follow-through's Amazon Leadership Principles ->
+  willink-babin2015-extremeownership (PD-05's own anchor at every level, same Ownership doctrine);
+  full list and rationale in r3-fst-report.md.
 levels:
   - {code: E1, title: Associate Full Stack Engineer, scope: task, focus: ships well-defined tasks across the stack with guidance and learns the stack}
-  - {code: E2, title: Full Stack Engineer, scope: component, focus: "independently delivers complete features spanning UI, API, and data layers"}
+  - {code: E2, title: Full Stack Engineer, scope: component, focus: independently delivers complete features spanning UI, API, and data layers}
   - {code: E3, title: Senior Full Stack Engineer, scope: capability / domain (terminal level), focus: owns a product capability across the stack and sets the local bar}
   - {code: E4, title: Staff Full Stack Engineer, scope: multiple teams, focus: drives technical outcomes across multiple teams and multiplies other engineers}
   - {code: E5, title: Senior Staff Full Stack Engineer, scope: organization, focus: sets technical direction and standards for the organization}
   - {code: E6, title: Principal Full Stack Engineer, scope: company, focus: shapes company-level technical strategy and represents engineering externally}
+ladder_name: Full Stack TypeScript Engineer (IC Technical, E1-E6) - Canonical
+ladder_description: >
+  Canonical six-level IC ladder for engineers who own features end to end across UI, API, and data
+  layers in a TypeScript-centered stack, consolidated by union from five independent blind
+  generations; E3 Senior is the terminal level.
+derived: true
 competencies:
-  # ---- Frontend Engineering ----
-  - theme: Component design & composition
+  - theme: "Component design & composition"
     capability: FE-01
-    key_area: Frontend Engineering
-    key_attribute: UI Implementation
-    anchor: "React documentation, Thinking in React (react.dev)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Styling & responsive layout
+    key_area: "Frontend Engineering"
+    key_attribute: "UI Implementation"
+    anchor: react-thinking
+    anchor_why: "decomposing UI into a one-way data-flow component hierarchy is the canonical discipline for maintainable interfaces; component boundaries are where frontend complexity is either contained or leaks."
+    mappings:
+      E1: {p: P1, sources: [react-thinking, sfia9], why: "FE-01 P1 ('Builds simple components from existing patterns; relies on review to validate boundaries and props.') is the guided bar: an Associate builds from a design system others made, same register as 'existing patterns' plus review-validated boundaries."}
+      E2: {p: P2, sources: [react-thinking, sfia9], why: "FE-01 P2 ('Composes reusable components independently, handling standard prop, state, and event wiring with normal review.') matches independent feature-level decomposition without being handed the breakdown — the component-scope bar, not yet a capability's whole UI architecture."}
+      E3: {p: P3, sources: [react-thinking, sfia9], why: "FE-01 P3 ('Designs component hierarchies and clear interfaces autonomously; resolves tricky composition and reuse trade-offs.') is the capability-owning bar — designing the component APIs a capability's UI is built from is autonomous hierarchy design at domain scope. E3 is this ladder's terminal level."}
+      E4: {p: P4, sources: [react-thinking, larson2021-staffeng], why: "FE-01 P4 ('Defines the component architecture and conventions teams adopt; untangles deeply coupled or overgrown trees.') is Staff-scope: establishing shared component patterns several teams build against is exactly 'conventions teams adopt.'"}
+      E5: {p: P5, sources: [react-thinking, larson2021-staffeng], why: "FE-01 P5 ('Sets organization-wide component design strategy; anticipates how composition models should evolve.') matches Senior Staff's org-wide authority over frontend architecture direction."}
+      E6: {p: P6, sources: [react-thinking, larson2021-staffeng], why: "FE-01 P6 ('Defines what good component architecture means industrywide; shapes practice through widely adopted patterns.') is the company/industry-scope bar — making the company-level frontend bets that are publicly contested and cited is that external-authority register."}
+    evidence:
+      E1: "Builds components from an existing design system to spec, following the patterns in neighboring code and asking when a mockup is ambiguous."
+      E2: "Decomposes a feature into a sensible component hierarchy without being handed the breakdown, choosing props vs. composition deliberately and reusing shared components rather than forking them."
+      E3: "Designs the component APIs a capability's UI is built from, catching prop-drilling, leaky abstractions, and reuse-hostile boundaries in review before they ship, and extends the design system with primitives that get reused."
+      E4: "Establishes the shared component and design-system patterns several teams build against, deprecating divergent one-offs with migration paths."
+      E5: "Sets the organization's frontend architecture direction — design-system governance, framework and rendering-model choices — and removes the systemic obstacles blocking it."
+      E6: "Makes the company-level frontend bets (platform, framework generation, build-vs-buy for the design system) and is the named authority when they're contested."
+  - theme: "Styling & responsive layout"
     capability: FE-09
-    key_area: Frontend Engineering
-    key_attribute: UI Implementation
-    anchor: "MDN Web Docs, CSS layout guides (Mozilla)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Client state management & data flow
+    key_area: "Frontend Engineering"
+    key_attribute: "UI Implementation"
+    anchor: css-cascade5
+    anchor_why: "cascade and specificity mechanics are the standard reference for predictable layout, substituted for MDN's guides (no bibliography entry) since it is the catalog's own FE-09 P3 anchor; layout skill is the difference between UIs that match design at one width and UIs that hold up everywhere."
+    mappings:
+      E1: {p: P1, sources: [css-cascade5, sfia9], why: "FE-09 P1 ('Applies existing styles and tokens to components under review.') is the guided bar — implementing designs at standard breakpoints with review catching cascade/specificity misses is applying existing tokens under review."}
+      E2: {p: P2, sources: [css-cascade5, sfia9], why: "FE-09 P2 ('Implements styling independently following design systems for standard components.') matches independent layout work across viewports without per-case hacks — following the design system for standard components."}
+      E3: {p: P3, sources: [css-cascade5, sfia9], why: "FE-09 P3 ('Designs scalable styling systems autonomously; resolves specificity, theming, and reuse issues.') is the capability-owning bar: untangling specificity problems others are stuck on and establishing tokens/theming conventions is autonomous scalable-system design."}
+      E4: {p: P4, sources: [css-cascade5, larson2021-staffeng], why: "FE-09 P4 ('Defines styling architecture and conventions others adopt; untangles fragile, sprawling styles.') is Staff-scope: consolidating styling approaches across teams into one system with a followed migration guide is 'conventions others adopt.'"}
+      E5: {p: P5, sources: [css-cascade5, larson2021-staffeng], why: "FE-09 P5 ('Sets styling-system strategy across the organization; anticipates evolving presentation approaches.') matches owning the org's theming and visual-consistency strategy."}
+      E6: {p: P6, sources: [css-cascade5, larson2021-staffeng], why: "FE-09 P6 ('Defines what good styling architecture means industrywide; shapes widely adopted systems.') is company/industry scope — directing brand-scale, multi-product presentation-layer strategy is that external-authority register."}
+    evidence:
+      E1: "Implements designs to match mockups at standard breakpoints using the project's styling approach; fixes visual bugs with guidance on cascade and specificity issues."
+      E2: "Builds layouts that hold up across viewports and content lengths without per-case hacks, choosing flexbox and grid appropriately and using design tokens consistently."
+      E3: "Untangles specificity and layout problems others are stuck on and establishes styling conventions (tokens, layering, theming) that keep the capability's CSS predictable."
+      E4: "Consolidates styling approaches across teams into one system, retiring duplicated patterns and writing the migration guide teams actually follow."
+      E5: "Owns the org's theming and visual-consistency strategy, deciding tooling and token architecture and measuring adoption."
+      E6: "Directs company-level presentation-layer strategy, including brand-scale theming, white-labeling, or multi-product visual platforms."
+  - theme: "Client state management & data flow"
     capability: FE-05
-    key_area: Frontend Engineering
-    key_attribute: State & Data Flow
-    anchor: "Redux documentation, Three Principles (redux.js.org)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Data fetching & caching
+    key_area: "Frontend Engineering"
+    key_attribute: "State & Data Flow"
+    anchor: facebook-flux2014
+    anchor_why: "unidirectional data flow and single-ownership of state are the reference discipline for predictable UIs, substituted for Redux's own docs (no bibliography entry) since Redux directly implements Flux and it is the catalog's own FE-05 P3/P4/P6 anchor; most frontend defects are state-synchronization defects."
+    mappings:
+      E1: {p: P1, sources: [facebook-flux2014, sfia9], why: "FE-05 P1 ('Reads and updates simple shared state following established patterns under review.') is the guided bar — using the codebase's existing state patterns and tracing where state lives matches reading/updating shared state under review."}
+      E2: {p: P2, sources: [facebook-flux2014, sfia9], why: "FE-05 P2 ('Manages component and shared state independently for standard flows with normal review.') matches choosing the right home for each piece of state independently, for the standard flows of features they own."}
+      E3: {p: P3, sources: [facebook-flux2014, sfia9], why: "FE-05 P3 ('Designs state architecture autonomously; resolves complex synchronization and ownership issues.') is the capability-owning bar: designing cache invalidation, optimistic updates and real-time sync is autonomous complex-synchronization design."}
+      E4: {p: P4, sources: [facebook-flux2014, larson2021-staffeng], why: "FE-05 P4 ('Defines state-management patterns others adopt; untangles tangled global and derived state.') is Staff-scope — converging divergent state approaches across teams into shared patterns others adopt."}
+      E5: {p: P5, sources: [facebook-flux2014, larson2021-staffeng], why: "FE-05 P5 ('Sets state-management strategy across the organization; anticipates evolving paradigms.') matches setting the org's client-data architecture and arbitrating cross-team conflicts."}
+      E6: {p: P6, sources: [facebook-flux2014, larson2021-staffeng], why: "FE-05 P6 ('Defines what good client state management means; shapes industry patterns and practice.') is company/industry scope — owning the long-horizon client-data model the company's products converge on."}
+    evidence:
+      E1: "Uses the codebase's existing state patterns correctly — local state vs. shared store vs. server cache — and traces where a given piece of state lives and why."
+      E2: "Chooses the right home for each piece of state (local, lifted, global, URL, server-cache) and keeps derived state computed rather than duplicated, with loading, error, and stale states honest in the UI."
+      E3: "Designs the state architecture for a capability — cache invalidation, optimistic updates, real-time sync — and spots stale-data, race-condition, and re-render-prone flows in others' code before they ship."
+      E4: "Converges divergent state approaches across teams into shared patterns, writing the decision record and unwinding the worst legacy state tangles personally."
+      E5: "Sets the org's client-data architecture (caching strategy, offline posture, real-time sync) and arbitrates when teams' needs conflict."
+      E6: "Owns the long-horizon client-data strategy — the model the company's products converge on — and sponsors the platform work to get there."
+  - theme: "Data fetching & caching"
     capability: FE-06
-    key_area: Frontend Engineering
-    key_attribute: State & Data Flow
-    anchor: "TanStack Query documentation (Tanner Linsley and maintainers)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Accessibility
+    key_area: "Frontend Engineering"
+    key_attribute: "State & Data Flow"
+    anchor: rfc9111
+    anchor_why: "HTTP caching semantics (freshness, validation, invalidation) are the standard underlying what TanStack Query implements, substituted for its docs (no bibliography entry) since RFC 9111 is the catalog's own FE-06 anchor at every level; fetching discipline determines perceived speed, correctness under concurrency, and backend load."
+    mappings:
+      E1: {p: P1, sources: [rfc9111, sfia9], why: "FE-06 P1 ('Fetches and displays data for simple endpoints under review.') is the guided bar — fetching through the established client/hooks and rendering loading/error states for assigned screens."}
+      E2: {p: P2, sources: [rfc9111, sfia9], why: "FE-06 P2 ('Implements fetching with loading and error states independently for standard cases.') matches implementing correct cache keys, invalidation and race handling independently for owned features."}
+      E3: {p: P3, sources: [rfc9111, sfia9], why: "FE-06 P3 ('Designs fetching and caching strategies autonomously; handles invalidation and race conditions.') is the capability-owning bar: designing what is cached, for how long, and what invalidates it, catching waterfalls in review."}
+      E4: {p: P4, sources: [rfc9111, larson2021-staffeng], why: "FE-06 P4 ('Defines fetching and caching patterns teams adopt; solves hard staleness and consistency problems.') is Staff-scope — standardizing data-access patterns across teams and deprecating ad-hoc fetching."}
+      E5: {p: P5, sources: [rfc9111, larson2021-staffeng], why: "FE-06 P5 ('Sets strategy for client data access and caching; anticipates evolving data-sync models.') matches owning the org's client-server data strategy including SSR/streaming trade-offs."}
+      E6: {p: P6, sources: [rfc9111, larson2021-staffeng], why: "FE-06 P6 ('Shapes industry practice for client data fetching and caching; pioneers influential approaches.') is company/industry scope — setting company-level direction for how clients consume data at scale, shaping platform and vendor bets."}
+    evidence:
+      E1: "Fetches data through the codebase's established client and hooks and renders loading and error states; reproduces a stale-data bug with guidance."
+      E2: "Implements fetching with correct cache keys, invalidation, and race handling, and handles pagination and optimistic updates using established patterns."
+      E3: "Designs the fetching and caching strategy for a capability — what is cached, for how long, and what invalidates it — and spots request waterfalls and N+1 patterns in review."
+      E4: "Standardizes data-access patterns across teams, building or selecting the shared data layer and deprecating ad-hoc fetching."
+      E5: "Owns the org's client-server data strategy, including SSR and streaming trade-offs and cache coherence across products."
+      E6: "Sets company-level direction for how clients consume data at scale, shaping platform investments and vendor-versus-build decisions."
+  - theme: "Accessibility"
     capability: FE-12
-    key_area: Frontend Engineering
-    key_attribute: Frontend Quality
-    anchor: "W3C WCAG 2.2 and WAI-ARIA Authoring Practices"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Web performance
+    key_area: "Frontend Engineering"
+    key_attribute: "Frontend Quality"
+    anchor: wcag22
+    anchor_why: "the normative standard and pattern library for accessible web interfaces; accessibility is a legal and ethical floor that must be engineered in, not retrofitted."
+    mappings:
+      E1: {p: P1, sources: [wcag22, sfia9], why: "FE-12 P1 ('Applies basic accessibility fixes following checklists under review.') is the guided bar — using semantic HTML and running the team's accessibility checks before requesting review is checklist-following."}
+      E2: {p: P2, sources: [wcag22, sfia9], why: "FE-12 P2 ('Implements accessible components independently meeting standard requirements.') matches building keyboard-navigable, screen-reader-usable features independently, verified with assistive tech before merge."}
+      E3: {p: P3, sources: [wcag22, sfia9], why: "FE-12 P3 ('Designs accessible experiences autonomously; resolves complex assistive-technology and interaction cases.') is the capability-owning bar: catching regressions automated tools miss (focus traps, reading order) is resolving complex interaction cases."}
+      E4: {p: P4, sources: [wcag22, larson2021-staffeng], why: "FE-12 P4 ('Defines accessibility approaches teams adopt; solves the hardest inclusive-design problems.') is Staff-scope — building accessibility into shared components and CI gates so teams inherit conformance by default."}
+      E5: {p: P5, sources: [wcag22, larson2021-staffeng], why: "FE-12 P5 ('Sets accessibility strategy across the organization; anticipates evolving standards and needs.') matches owning the org's accessibility standard and audit posture, reported to leadership."}
+      E6: {p: P6, sources: [wcag22, larson2021-staffeng], why: "FE-12 P6 ('Shapes industry accessibility practice; influences standards and widely referenced guidance.') is company/industry scope — setting company accessibility policy and representing it externally (compliance commitments, procurement)."}
+    evidence:
+      E1: "Uses semantic HTML and design-system components rather than div soup, and runs the team's accessibility checks before requesting review."
+      E2: "Builds keyboard-navigable, screen-reader-usable features — focus management, labels, ARIA only where semantics fall short — verifying with assistive tech before merge."
+      E3: "Catches accessibility regressions in review that automated tools miss (focus traps, reading order, announced state changes) and teaches the patterns that prevent them."
+      E4: "Builds accessibility into shared components and CI gates so teams inherit conformance by default, and drives remediation across surfaces no one team owns."
+      E5: "Owns the org's accessibility standard and audit posture, reporting conformance to leadership and prioritizing systemic fixes."
+      E6: "Sets company accessibility policy and represents it externally (compliance commitments, procurement, public conformance statements)."
+  - theme: "Web performance"
     capability: FE-13
-    key_area: Frontend Engineering
-    key_attribute: Frontend Quality
-    anchor: "Google web.dev Core Web Vitals (LCP, INP, CLS)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  # ---- Backend & API Engineering ----
-  - theme: Service design & boundaries
+    key_area: "Frontend Engineering"
+    key_attribute: "Frontend Quality"
+    anchor: web-vitals
+    anchor_why: "the industry-standard user-centric performance metrics tied to real business outcomes; frontend performance is a measured product property with direct conversion and retention impact, not a polish pass."
+    mappings:
+      E1: {p: P1, sources: [web-vitals, sfia9], why: "FE-13 P1 ('Applies known performance fixes to simple cases under guidance.') is the guided bar — reading a Lighthouse report and fixing flagged issues (oversized images, blocking scripts) with guidance on trade-offs."}
+      E2: {p: P2, sources: [web-vitals, sfia9], why: "FE-13 P2 ('Profiles and improves standard performance issues independently.') matches keeping shipped features within budget, profiling render/bundle cost before merge independently."}
+      E3: {p: P3, sources: [web-vitals, sfia9], why: "FE-13 P3 ('Diagnoses and optimizes performance autonomously across rendering, loading, and runtime.') is the capability-owning bar: owning Core Web Vitals and diagnosing field regressions from RUM data to root cause is autonomous cross-layer diagnosis."}
+      E4: {p: P4, sources: [web-vitals, larson2021-staffeng], why: "FE-13 P4 ('Defines performance approaches teams adopt; solves the most stubborn bottlenecks.') is Staff-scope — building the performance budgets and CI gates several teams run on."}
+      E5: {p: P5, sources: [web-vitals, larson2021-staffeng], why: "FE-13 P5 ('Sets frontend performance strategy and budgets; anticipates emerging performance concerns.') matches setting org-wide performance targets tied to business metrics leadership acts on."}
+      E6: {p: P6, sources: [web-vitals, larson2021-staffeng], why: "FE-13 P6 ('Defines what good frontend performance means industrywide; pioneers influential techniques.') is company/industry scope — making company-level performance-architecture bets and being accountable for UX speed as a competitive property."}
+    evidence:
+      E1: "Reads a Lighthouse or devtools performance report and fixes the flagged issues in their task — oversized images, blocking scripts, unnecessary re-renders — with guidance on trade-offs."
+      E2: "Keeps the features they ship within the team's performance budget, profiling render and bundle cost before merge and lazy-loading what the critical path doesn't need."
+      E3: "Owns Core Web Vitals for a capability, diagnosing field regressions from RUM data to root cause — hydration cost, main-thread contention, layout shift — and rejecting designs that can't hit budget."
+      E4: "Builds the performance budgets, CI gates, and monitoring several teams run on, and leads the cross-team efforts that move p75 metrics."
+      E5: "Sets org-wide performance targets and the platform investments to hit them — rendering architecture, edge/CDN posture — tied to business metrics leadership acts on."
+      E6: "Makes the company-level performance-architecture bets and is accountable for user-experience speed as a competitive property of the product."
+  - theme: "Service design & boundaries"
     capability: ARC-02
-    key_area: Backend & API Engineering
-    key_attribute: Services & Runtime
-    anchor: "Newman, Building Microservices, 2nd ed. (2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Runtime & async correctness
+    key_area: "Backend & API Engineering"
+    key_attribute: "Services & Runtime"
+    anchor: newman2021-microservices
+    anchor_why: "service boundaries follow domain seams, and coupling/cohesion trade-offs dominate distributed-system cost; where the boundaries sit determines whether the backend evolves or ossifies."
+    mappings:
+      E1: {p: P1, sources: [newman2021-microservices, sfia9], why: "ARC-02 P1 ('Splits a service along boundaries already defined, with decomposition reviewed.') is the guided bar — adding endpoints/handlers to an existing service following its conventions is working within boundaries already defined."}
+      E2: {p: P2, sources: [newman2021-microservices, sfia9], why: "ARC-02 P2 ('Decomposes routine systems into services using established boundary heuristics independently.') matches designing and shipping a well-factored module or small service independently using established heuristics."}
+      E3: {p: P3, sources: [newman2021-microservices, sfia9], why: "ARC-02 P3 ('Designs boundaries for complex domains, resolving overlap and ownership ambiguity autonomously.') is the capability-owning bar: drawing service boundaries by trade-off in design docs and catching hidden-dependency problems is resolving ownership ambiguity autonomously."}
+      E4: {p: P4, sources: [newman2021-microservices, larson2021-staffeng], why: "ARC-02 P4 ('Defines decomposition methods and boundary heuristics teams reuse across products.') is Staff-scope — restructuring the service landscape across teams with migration plans others follow."}
+      E5: {p: P5, sources: [newman2021-microservices, larson2021-staffeng], why: "ARC-02 P5 ('Sets enterprise-wide boundary and ownership strategy, anticipating decomposition pressures.') matches setting the org's service architecture direction and retiring patterns that no longer serve it."}
+      E6: {p: P6, sources: [newman2021-microservices, larson2021-staffeng], why: "ARC-02 P6 ('Shapes how the industry reasons about service boundaries and decomposition.') is company/industry scope — making company-level backend platform bets with decade-scale consequences."}
+    evidence:
+      E1: "Adds endpoints and handlers to an existing Node/TypeScript service following its layering, error-handling, and config conventions; explains the request path through the service in their own words."
+      E2: "Designs and ships a well-factored module or small service independently, separating transport, domain logic, and persistence, and handling errors, timeouts, and idempotency deliberately."
+      E3: "Draws service boundaries by trade-off in design docs that name the alternatives considered, designing for failure (retries, idempotency, backpressure) and catching coupling and hidden-dependency problems in others' designs before build."
+      E4: "Restructures the service landscape across teams — splitting, merging, or extracting services with migration plans that ship incrementally — without stopping delivery."
+      E5: "Sets the org's service architecture direction (runtime choices, communication patterns, platform primitives) and retires the patterns that no longer serve it."
+      E6: "Makes company-level backend platform bets and is the tie-breaking authority on architecture decisions with decade-scale consequences."
+  - theme: "Runtime & async correctness"
     capability: CS-04
-    key_area: Backend & API Engineering
-    key_attribute: Services & Runtime
-    anchor: "Node.js official guide, Don't Block the Event Loop"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: API contract design
+    key_area: "Backend & API Engineering"
+    key_attribute: "Services & Runtime"
+    anchor: herlihy-shavit2008
+    anchor_why: "principled treatment of shared-state and synchronization correctness, substituted for Node's own event-loop guide (no bibliography entry) since it is the catalog's own CS-04 anchor at P3/P4/P6; full stack engineers ship Node services whose failure modes are concurrency failure modes."
+    mappings:
+      E1: {p: P1, sources: [herlihy-shavit2008, sfia9], why: "CS-04 P1 ('Writes concurrent code using given primitives under review.') is the guided bar — using async/await correctly with review catching the misses is writing concurrent code with given primitives, under review."}
+      E2: {p: P2, sources: [herlihy-shavit2008, sfia9], why: "CS-04 P2 ('Implements standard concurrent patterns independently for routine workloads.') matches keeping the event loop healthy in owned code, bounding concurrency and adding timeouts independently."}
+      E3: {p: P3, sources: [herlihy-shavit2008, sfia9], why: "CS-04 P3 ('Designs correct, efficient concurrency for complex shared-state problems autonomously.') is the capability-owning bar: diagnosing production event-loop stalls and race conditions from traces, and designing backpressure, is autonomous complex-concurrency design."}
+      E4: {p: P4, sources: [herlihy-shavit2008, larson2021-staffeng], why: "CS-04 P4 ('Defines concurrency patterns and reasoning others adopt to avoid subtle defects.') is Staff-scope — setting the concurrency, timeout, and resilience defaults multiple teams inherit through shared libraries."}
+      E5: {p: P5, sources: [herlihy-shavit2008, larson2021-staffeng], why: "CS-04 P5 ('Sets concurrency strategy organization-wide, anticipating parallelism challenges.') matches driving org-wide runtime strategy (Node versions, worker models) from fleet-level data."}
+      E6: {p: P6, sources: [herlihy-shavit2008, larson2021-staffeng], why: "CS-04 P6 ('Shapes industry understanding of concurrency and parallelism.') is company/industry scope — owning company-level runtime bets and being the escalation point for the hardest production mysteries."}
+    evidence:
+      E1: "Uses async/await correctly — awaits promises, handles rejections, avoids sequential awaits where work is parallel — with review catching the misses."
+      E2: "Keeps the event loop healthy in code they own, moving CPU-heavy work off the hot path, bounding concurrency, and adding timeouts and cancellation to outbound calls."
+      E3: "Diagnoses production event-loop stalls, memory leaks, and race conditions from traces and heap snapshots, and designs backpressure and retry behavior for a capability's services."
+      E4: "Sets the concurrency, timeout, and resilience defaults multiple teams inherit through shared libraries and service templates."
+      E5: "Drives org-wide runtime strategy — Node versions, worker models, resource limits — from fleet-level performance data."
+      E6: "Owns company-level runtime and platform bets and is the escalation point for the hardest production mysteries."
+  - theme: "API contract design"
     capability: SWE-07
-    key_area: Backend & API Engineering
-    key_attribute: API Contracts
-    anchor: "Fielding (2000) and the OpenAPI Specification"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Compatibility & versioning
+    key_area: "Backend & API Engineering"
+    key_attribute: "API Contracts"
+    anchor: fielding2000
+    anchor_why: "resource-oriented contracts with explicit, machine-readable schemas are the durable basis for evolvable APIs; the API contract is the seam where frontend and backend work meets, and a bad one taxes every consumer forever."
+    mappings:
+      E1: {p: P1, sources: [fielding2000, sfia9], why: "SWE-07 P1 ('Understands HTTP/REST and the deploy pipeline; makes guided changes.') is the guided bar — implementing endpoints against a specified contract, updating schema alongside code, is HTTP/REST literacy applied as guided changes."}
+      E2: {p: P2, sources: [fielding2000, sfia9], why: "SWE-07 P2 ('Designs clean APIs; understands rate limits, retries, timeouts, idempotency.') matches designing consistent, versionable endpoints for their feature independently."}
+      E3: {p: P3, sources: [fielding2000, sfia9], why: "SWE-07 P3 ('Designs services for scale and cost; understands distributed failure modes.') is the capability-owning bar: owning the API contract for a capability, writing schema-first and folding consumer pain back into design, is designing for scale at domain scope."}
+      E4: {p: P4, sources: [fielding2000, larson2021-staffeng], why: "SWE-07 P4 ('Expert in platform/service design (multi-tenancy, capacity, shared services).') is Staff-scope — setting the API conventions multiple teams follow and arbitrating contract disputes between teams."}
+      E5: {p: P5, sources: [fielding2000, larson2021-staffeng], why: "SWE-07 P5 ('Sets interface standards used across the org.') matches owning the org's API strategy (REST/GraphQL/RPC posture, gateway, contract-testing infrastructure)."}
+      E6: {p: P6, sources: [fielding2000, larson2021-staffeng], why: "SWE-07 P6 ('Defines company-wide API approach; trusted with irreversible interface bets.') is company/industry scope — shaping the company's external API as a product, making compatibility promises the business sells against."}
+    evidence:
+      E1: "Implements endpoints against a specified contract, returning correct status codes and error shapes, and updates the OpenAPI or schema definition alongside the code."
+      E2: "Designs consistent, versionable endpoints for their feature — naming, pagination, error envelopes — and shares typed clients or generated types so frontend and backend agree by construction."
+      E3: "Owns the API contract for a capability, writing the schema first, folding consumers' integration pain back into the design, and rejecting designs in review that leak internals or paint consumers into corners."
+      E4: "Sets the API conventions multiple teams follow (style guide, error taxonomy, schema registry, review gates) and arbitrates contract disputes between producing and consuming teams."
+      E5: "Owns the org's API strategy — REST/GraphQL/RPC posture, gateway, contract-testing infrastructure — and its governance mechanisms."
+      E6: "Shapes the company's external API as a product, making the compatibility promises the business sells against."
+  - theme: "Compatibility & versioning"
     capability: BE-13
-    key_area: Backend & API Engineering
-    key_attribute: API Contracts
-    anchor: "Hyrum's Law (Winters et al., 2020); Preston-Werner, Semantic Versioning"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Data modeling
+    key_area: "Backend & API Engineering"
+    key_attribute: "API Contracts"
+    anchor: winters2020
+    anchor_why: "every observable behavior becomes a dependency (Hyrum's Law); full stack changes break real clients unless compatibility is engineered deliberately, and this role owns the client-server deploy-order problem on both sides."
+    mappings:
+      E1: {p: P1, sources: [winters2020, sfia9], why: "BE-13 P1 ('Implements endpoints against existing contracts under review.') is the guided bar — asking before changing a response shape and explaining why deployed clients constrain the server is implementing against existing contracts, under review."}
+      E2: {p: P2, sources: [winters2020, sfia9], why: "BE-13 P2 ('Designs standard API contracts independently with consistent conventions.') matches shipping additive, backward-compatible changes by default and coordinating deploy order independently."}
+      E3: {p: P3, sources: [winters2020, sfia9], why: "BE-13 P3 ('Designs API contracts and versioning autonomously; manages compatibility and evolution.') is the capability-owning bar: designing the deprecation and migration paths for a capability's contracts is autonomous compatibility management."}
+      E4: {p: P4, sources: [winters2020, larson2021-staffeng], why: "BE-13 P4 ('Defines API-design approaches teams adopt; solves hard versioning and compatibility problems.') is Staff-scope — running breaking-change processes across teams with contract tests and migration tooling."}
+      E5: {p: P5, sources: [winters2020, larson2021-staffeng], why: "BE-13 P5 ('Sets API contract and versioning strategy across the organization; anticipates evolving needs.') matches setting the org's compatibility policy and the tooling that enforces it automatically."}
+      E6: {p: P6, sources: [winters2020, larson2021-staffeng], why: "BE-13 P6 ('Defines authoritative practice for API design; shapes industry standards and conventions.') is company/industry scope — owning compatibility strategy for company-critical and external surfaces where mistakes are front-page incidents."}
+    evidence:
+      E1: "Asks before changing a response shape or shared type, and explains why deployed clients constrain the server."
+      E2: "Ships additive, backward-compatible changes by default, coordinating deploy order between client and server and gating risky changes behind flags."
+      E3: "Designs the deprecation and migration paths for a capability's contracts — versioning scheme, sunset timelines, consumer comms — and catches silent breaking changes in review."
+      E4: "Runs breaking-change processes across teams, with contract tests and migration tooling that make deprecations routine rather than heroic."
+      E5: "Sets the org's compatibility policy and the tooling that enforces it automatically."
+      E6: "Owns compatibility strategy for company-critical and external surfaces, where mistakes are front-page incidents."
+  - theme: "Data modeling"
     capability: BE-01
-    key_area: Backend & API Engineering
-    key_attribute: Data & Persistence
-    anchor: "Kleppmann, Designing Data-Intensive Applications (2017)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Query performance & safe migrations
+    key_area: "Backend & API Engineering"
+    key_attribute: "Data & Persistence"
+    anchor: kleppmann2017-ddia
+    anchor_why: "schema design, consistency, and evolution determine what a system can ever safely do; the schema outlives the code, and modeling errors are the most expensive class of backend mistake."
+    mappings:
+      E1: {p: P1, sources: [kleppmann2017-ddia, sfia9], why: "BE-01 P1 ('Writes simple queries and follows existing schemas under review.') is the guided bar — writing correct queries and simple schema changes against an existing model, explaining entities in their own words, under review."}
+      E2: {p: P2, sources: [kleppmann2017-ddia, sfia9], why: "BE-01 P2 ('Models standard entities and writes correct queries independently with normal review.') matches designing sound schemas for their features independently — keys, constraints, indexes judged by access pattern."}
+      E3: {p: P3, sources: [kleppmann2017-ddia, sfia9], why: "BE-01 P3 ('Designs normalized schemas autonomously; writes complex queries and resolves modeling trade-offs.') is the capability-owning bar: modeling a capability's domain so invalid states are hard to represent is autonomous normalized-schema design at domain scope."}
+      E4: {p: P4, sources: [kleppmann2017-ddia, larson2021-staffeng], why: "BE-01 P4 ('Defines data-modeling approaches teams adopt; solves the hardest schema and query problems.') is Staff-scope — untangling data models entangled across teams and landing the migrations."}
+      E5: {p: P5, sources: [kleppmann2017-ddia, larson2021-staffeng], why: "BE-01 P5 ('Sets relational modeling strategy across systems; anticipates evolving data and access needs.') matches setting the org's data architecture and killing duplicate sources of truth."}
+      E6: {p: P6, sources: [kleppmann2017-ddia, larson2021-staffeng], why: "BE-01 P6 ('Defines best practice for relational modeling industrywide; shapes widely adopted approaches.') is company/industry scope — owning company-level data-strategy bets including regulatory and multi-region posture."}
+    evidence:
+      E1: "Writes correct queries and simple schema changes against an existing model, explaining the main entities and their relationships in their own words."
+      E2: "Designs sound schemas for their features — keys, constraints, indexes, normalization judged by access pattern — encoding invariants in the database rather than in application hope, with reversible migrations."
+      E3: "Models a capability's domain so that invalid states are hard to represent, choosing consistency and transaction boundaries deliberately, designing for schema evolution, and catching modeling errors in others' designs before they calcify."
+      E4: "Untangles data models entangled across teams — ownership of shared entities, duplication vs. reference, event contracts — and lands the migrations."
+      E5: "Sets the org's data architecture (store selection, consistency posture, canonical sources of truth) and kills duplicate sources of truth."
+      E6: "Owns company-level data strategy bets — the storage and consistency platform products build on for years, including regulatory and multi-region posture."
+  - theme: "Query performance & safe migrations"
     capability: BE-04
-    key_area: Backend & API Engineering
-    key_attribute: Data & Persistence
-    anchor: "Winand, SQL Performance Explained; Sadalage & Fowler, Evolutionary Database Design"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Asynchronous processing & messaging
+    key_area: "Backend & API Engineering"
+    key_attribute: "Data & Persistence"
+    anchor: selinger1979
+    anchor_why: "origin of cost-based query-plan literacy, substituted for Winand/Sadalage & Fowler (no bibliography entries) since it is the catalog's own BE-04 anchor at every level; most production database pain is query-shaped and preventable at review time."
+    mappings:
+      E1: {p: P1, sources: [selinger1979, sfia9], why: "BE-04 P1 ('Adds suggested indexes and reads query plans under guidance.') is the guided bar — reading a query plan with help and fixing flagged N+1s, running schema changes only through migration tooling with review."}
+      E2: {p: P2, sources: [selinger1979, sfia9], why: "BE-04 P2 ('Identifies and resolves standard slow queries independently.') matches reading execution plans unprompted and designing indexes for owned features' access patterns."}
+      E3: {p: P3, sources: [selinger1979, sfia9], why: "BE-04 P3 ('Designs indexing strategies autonomously; tunes complex queries and execution plans.') is the capability-owning bar: diagnosing production performance to root cause and designing zero-downtime migrations is autonomous strategy design at domain scope."}
+      E4: {p: P4, sources: [selinger1979, larson2021-staffeng], why: "BE-04 P4 ('Defines query-optimization approaches teams adopt; solves the most stubborn performance problems.') is Staff-scope — leading multi-team data moves (resharding, datastore swaps) with staged plans others execute against."}
+      E5: {p: P5, sources: [selinger1979, larson2021-staffeng], why: "BE-04 P5 ('Sets indexing and optimization strategy across systems; anticipates evolving workload patterns.') matches owning org-level capacity and scaling strategy for persistence."}
+      E6: {p: P6, sources: [selinger1979, larson2021-staffeng], why: "BE-04 P6 ('Shapes industry practice for query optimization; pioneers widely referenced techniques.') is company/industry scope — making the company's long-horizon storage bets and being the final voice on existential migrations."}
+    evidence:
+      E1: "Reads a query plan with help and fixes flagged N+1s, running schema changes only through the migration tooling with review."
+      E2: "Reads execution plans unprompted and designs indexes for the access patterns of features they own, checking query cost against realistic data volumes and rehearsing the rollback before deploying."
+      E3: "Diagnoses production database performance to root cause — plans, locks, connection pools — and designs zero-downtime migrations (expand/contract, backfill strategy, dual-write windows), reviewing others' migrations for lock and rollback risk."
+      E4: "Leads the multi-team data moves — resharding, datastore swaps, hot-table decomposition — with staged rollout plans others execute against, and builds the guardrails preventing recurrence."
+      E5: "Owns org-level capacity and scaling strategy for persistence, deciding when to shard, replicate, or re-platform, with cost explicitly in the trade-off."
+      E6: "Makes the company's long-horizon storage bets and is the final technical voice on the migrations where failure is existential."
+  - theme: "Asynchronous processing & messaging"
     capability: BE-09
-    key_area: Backend & API Engineering
-    key_attribute: Integration & Resilience
-    anchor: "Hohpe & Woolf, Enterprise Integration Patterns (2003)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Third-party & cross-service resilience
+    key_area: "Backend & API Engineering"
+    key_attribute: "Integration & Resilience"
+    anchor: hohpe2003
+    anchor_why: "the canonical pattern language for queues, events, and message reliability; async work is where correctness quietly breaks, and ordering, retries, and duplicates need designed answers."
+    mappings:
+      E1: {p: P1, sources: [hohpe2003, sfia9], why: "BE-09 P1 ('Produces and consumes messages for simple flows under review.') is the guided bar — adding jobs/handlers to an existing queue setup following team patterns, explaining at-least-once delivery, under review."}
+      E2: {p: P2, sources: [hohpe2003, sfia9], why: "BE-09 P2 ('Implements standard event-driven flows independently with normal review.') matches building idempotent async workflows with dead-letter handling independently."}
+      E3: {p: P3, sources: [hohpe2003, sfia9], why: "BE-09 P3 ('Designs event-driven architectures autonomously; resolves ordering, delivery, and coupling concerns.') is the capability-owning bar: designing the event/job architecture for a capability and reasoning explicitly about ordering is autonomous resolution of delivery concerns."}
+      E4: {p: P4, sources: [hohpe2003, larson2021-staffeng], why: "BE-09 P4 ('Defines event-driven approaches teams adopt; solves the hardest decoupling and flow problems.') is Staff-scope — standardizing messaging patterns across teams and owning shared schemas."}
+      E5: {p: P5, sources: [hohpe2003, larson2021-staffeng], why: "BE-09 P5 ('Sets event-driven architecture strategy across systems; anticipates evolving messaging models.') matches setting the org's async/eventing strategy including platform selection."}
+      E6: {p: P6, sources: [hohpe2003, larson2021-staffeng], why: "BE-09 P6 ('Defines authoritative practice for event-driven architecture; shapes industry understanding.') is company/industry scope — directing company-scale event architecture that determines how the company's systems compose."}
+    evidence:
+      E1: "Adds jobs or event handlers to an existing queue and worker setup following team patterns; explains at-least-once delivery and why handlers must tolerate retries."
+      E2: "Builds idempotent async workflows with dead-letter handling and visibility into failures; chooses sync-versus-async deliberately for their feature."
+      E3: "Designs the event and job architecture for a capability, reasoning explicitly about ordering, exactly-once illusions, and poison messages, and catches these gaps in others' designs."
+      E4: "Standardizes messaging patterns across teams, owning shared schemas and topics and the contract between producers and consumers."
+      E5: "Sets the org's async and eventing strategy, including platform selection and the delivery-guarantee posture teams inherit."
+      E6: "Directs company-scale event architecture, making the platform bets that determine how the company's systems compose."
+  - theme: "Third-party & cross-service resilience"
     capability: BE-18
-    key_area: Backend & API Engineering
-    key_attribute: Integration & Resilience
-    anchor: "Nygard, Release It!, 2nd ed. (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  # ---- TypeScript & Software Design ----
-  - theme: Type-driven domain modeling
+    key_area: "Backend & API Engineering"
+    key_attribute: "Integration & Resilience"
+    anchor: nygard2018
+    anchor_why: "timeouts, circuit breakers, and bulkheads are the stability patterns for systems that depend on other systems; resilience is designed in, observably, before the incident."
+    mappings:
+      E1: {p: P1, sources: [nygard2018, sfia9], why: "BE-18 P1 ('Applies provided resilience patterns to simple services under review.') is the guided bar — setting timeouts and handling error paths as the team's patterns prescribe, explaining dependency-down behavior, under review."}
+      E2: {p: P2, sources: [nygard2018, sfia9], why: "BE-18 P2 ('Implements standard fault-tolerance and isolation measures independently.') matches wrapping every external dependency with timeouts, retries and fallbacks independently."}
+      E3: {p: P3, sources: [nygard2018, sfia9], why: "BE-18 P3 ('Designs resilient systems autonomously; resolves cascading-failure and degradation concerns.') is the capability-owning bar: designing the resilience posture for a capability (circuit breakers, criticality tiers, load-testing) is autonomous cascading-failure design."}
+      E4: {p: P4, sources: [nygard2018, larson2021-staffeng], why: "BE-18 P4 ('Defines fault-tolerance approaches teams adopt; solves the hardest isolation and recovery problems.') is Staff-scope — hardening the seams between teams' systems via failure-injection and game-day exercises."}
+      E5: {p: P5, sources: [nygard2018, larson2021-staffeng], why: "BE-18 P5 ('Sets resilience strategy across systems; anticipates emerging failure modes and risks.') matches setting org resilience standards and capacity strategy, including vendor tiers and DR posture."}
+      E6: {p: P6, sources: [nygard2018, larson2021-staffeng], why: "BE-18 P6 ('Defines best practice for fault tolerance industrywide; shapes widely adopted approaches.') is company/industry scope — being accountable for company-level systemic resilience so no single dependency can take the business down."}
+    evidence:
+      E1: "Sets timeouts and handles error paths in their changes as the team's patterns prescribe, and explains what happens to their code when a dependency is down."
+      E2: "Wraps every external dependency with timeouts, retries with backoff, and failure fallbacks — graceful degradation in the UI when the API stutters — and writes the runbook entry for when the dependency degrades."
+      E3: "Designs the resilience posture for a capability — circuit breakers, bulkheads, dependency criticality tiers, load-testing before launches and sizing for projected growth — and rejects designs in review that fail closed on non-critical dependencies."
+      E4: "Hardens the seams between teams' systems — shared dependencies, cascading-failure paths — running failure-injection and game-day exercises and fixing the systemic weak points they expose."
+      E5: "Sets org resilience standards and capacity strategy, including vendor criticality tiers, exit strategies, and disaster-recovery posture."
+      E6: "Accountable for company-level systemic resilience, shaping architecture and vendor strategy so no single dependency can take the business down."
+  - theme: "Type-driven domain modeling"
     capability: SWE-08
-    key_area: TypeScript & Software Design
-    key_attribute: Type System as a Design Tool
-    anchor: "Vanderkam, Effective TypeScript, 2nd ed. (2024); Wlaschin, Domain Modeling Made Functional (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Type safety at boundaries
+    key_area: "TypeScript & Software Design"
+    key_attribute: "Type System as a Design Tool"
+    anchor: wlaschin2018
+    anchor_why: "making illegal states unrepresentable via types is the design discipline the type system exists to enforce; in a TypeScript-centered stack the type system is the cheapest place to delete whole defect classes before runtime."
+    mappings:
+      E1: {p: P1, sources: [wlaschin2018, sfia9], why: "SWE-08 P1 ('Writes correctly typed code without escape hatches (`any`-equivalents), uses the codebase's existing types and generics correctly, and reads compiler errors to the actual cause with guidance.') is the guided bar: the 'with guidance' clause is the Associate register — correct typed code within someone else's type design, escalated only when reading errors is not enough."}
+      E2: {p: P2, sources: [wlaschin2018, sfia9], why: "SWE-08 P2 ('Models feature domains so invalid states fail to compile ... preferring type-level constraints where the compiler can carry the load.') is the independent-component bar: modeling one feature's domain with discriminated unions, unaided, is independent practice at component scope, not yet a capability's shared type architecture."}
+      E3: {p: P3, sources: [wlaschin2018, sfia9], why: "SWE-08 P3 ('Designs the shared domain types a capability is built on ... judges when type-level sophistication pays and when it obscures, and unwinds accumulated type erosion in others' code.') is the capability-owning bar — shared domain types spanning a capability, plus cleaning up others' accumulated erosion, is domain-scope autonomous design, not one feature's models."}
+      E4: {p: P4, sources: [wlaschin2018, larson2021-staffeng], why: "SWE-08 P4 ('Sets type-design conventions multiple teams adopt ... and leads migrations that raise strictness without halting delivery.') is Staff-scope by its own text: conventions 'multiple teams adopt' and migrations led across teams are the multi-team register, not one capability's types."}
+      E5: {p: P5, sources: [wlaschin2018, larson2021-staffeng], why: "SWE-08 P5 ('Owns an organization's type-system posture ... measured by defect and velocity outcomes.') is the org-authority bar — 'an organization's' posture, measured in outcomes reported to leadership, is Senior Staff's org-wide accountability, not a shared-library owner's."}
+      E6: {p: P6, sources: [wlaschin2018, larson2021-staffeng], why: "SWE-08 P6 ('Makes company-level language and type-platform bets and represents the practice externally.') is the company/industry bar — betting on the company's language platform and representing it externally is the P6 pioneer register, distinct from P5's internal org ownership."}
+    evidence:
+      E1: "Gets a compiler error on a discriminated-union narrowing case they haven't seen before, reads the message past the top line to find the actual mismatched member, and fixes the type rather than reaching for `as`."
+      E2: "Turns a boolean-flag-soup form state (`isLoading`/`isError`/`hasData` that can all be true at once) into a discriminated union so the impossible combinations don't compile, without being told to."
+      E3: "Reviews a teammate's PR that adds a fourth optional field to an already-sprawling props type, and instead proposes (and lands) the discriminated-union refactor that makes the three valid variants explicit and the invalid ones uncompilable."
+      E4: "Publishes the branded-ID and Result-type conventions as the team's internal type-utilities package, with a codemod that migrated three existing services onto it without a delivery freeze."
+      E5: "Sets the org's `strict`-mode and `noUncheckedIndexedAccess` baseline for all new repos, tracked against a quarterly defect-rate dashboard leadership reviews."
+      E6: "Is the internal reviewer of record when the company adopts a new TypeScript major version, and publishes the migration's lessons as a conference talk that other companies cite."
+  - theme: "Type safety at boundaries"
     capability: SWE-09
-    key_area: TypeScript & Software Design
-    key_attribute: Type System as a Design Tool
-    anchor: "King, Parse, Don't Validate (2019)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Advanced types & inference
+    key_area: "TypeScript & Software Design"
+    key_attribute: "Type System as a Design Tool"
+    anchor: king2019
+    anchor_why: "validate untrusted data into precise types at the boundary once, then rely on the types; full stack TypeScript's distinctive promise — one type system spanning client, server, and wire — is only real if boundaries are actually validated."
+    mappings:
+      E1: {p: P1, sources: [king2019, sfia9], why: "SWE-09 P1 ('Uses the codebase's shared contract types and schema validators at boundaries rather than hand-casting external data, and can point to where a type is checked at runtime.') is the guided bar: using existing validators and being able to point to the runtime check is applying the codebase's own boundary discipline, not designing it."}
+      E2: {p: P2, sources: [king2019, sfia9], why: "SWE-09 P2 ('Puts runtime validation at every I/O boundary they touch ... deriving static types from the runtime schemas so compile-time and runtime cannot drift.') is the independent-component bar: validating every boundary they personally touch, unaided, is component-scope practice."}
+      E3: {p: P3, sources: [king2019, sfia9], why: "SWE-09 P3 ('Designs end-to-end type integrity for a capability ... and blocks unsound casts and unvalidated edges in review.') is the capability-owning bar — schema-first contracts and CI-caught drift 'for a capability' is domain-scope design, and blocking in review is the ownership signal E2 lacks."}
+      E4: {p: P4, sources: [king2019, larson2021-staffeng], why: "SWE-09 P4 ('Builds the code-generation and contract-typing infrastructure multiple teams inherit ... and resolves cross-team type drift at its source.') is Staff-scope by its own text — infrastructure 'multiple teams inherit' is the multi-team register."}
+      E5: {p: P5, sources: [king2019, larson2021-staffeng], why: "SWE-09 P5 ('Sets the organization's boundary-safety standard and the platform tooling that enforces it, with incident evidence showing the failure classes it removed.') is the org-authority bar: setting the standard for the organization, backed by incident data reported outward, is Senior Staff's accountability."}
+      E6: {p: P6, sources: [king2019, larson2021-staffeng], why: "SWE-09 P6 ('Owns contract-integrity strategy across products and external interfaces where a broken contract is a business event, and advances the state of practice publicly.') is company/industry scope — external interfaces as business events, argued publicly, is the P6 pioneer register."}
+    evidence:
+      E1: "Wraps a third-party webhook payload with the team's existing Zod schema before touching its fields, and when asked why, points to the exact line where the shape is checked at runtime."
+      E2: "Adds request validation to a new internal endpoint using the same schema that generates its TypeScript types, so a malformed body 400s before it ever reaches the handler's typed logic."
+      E3: "Wires a capability's client and server to share one schema-derived contract type checked in CI, so that changing a field name on the server fails the client's typecheck in the same pull request instead of failing in production."
+      E4: "Builds the internal codegen pipeline that turns each service's OpenAPI schema into a typed client automatically, adopted by four other teams who stopped hand-writing fetch wrappers."
+      E5: "Ships an org-wide boundary-validation lint rule after tracing three consecutive quarters' worst production incidents back to unvalidated third-party responses, and reports the incident-rate drop to engineering leadership."
+      E6: "Owns the contract-integrity review for the company's public partner API, where a silently-dropped field would break a paying customer's integration, and writes up the safeguards at an external engineering conference."
+  - theme: "Advanced types & inference"
     capability: SWE-01
-    key_area: TypeScript & Software Design
-    key_attribute: Type System as a Design Tool
-    anchor: "The TypeScript Handbook (Microsoft TypeScript team)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Software design & architecture
+    key_area: "TypeScript & Software Design"
+    key_attribute: "Type System as a Design Tool"
+    anchor: mcconnell2004
+    anchor_why: "construction-discipline reference for using a language's constructs correctly, substituted for the TypeScript Handbook (no bibliography entry) since it is the catalog's own SWE-01 P1/P2 anchor; advanced types are leverage — one well-typed utility eliminates whole classes of caller mistakes."
+    mappings:
+      E1: {p: P1, sources: [mcconnell2004, sfia9], why: "SWE-01 P1 ('Writes working, readable code in the team's language; debugs own changes.') is the guided bar — using generic functions and utility types correctly in everyday code, asking for help when inference surprises them, is writing working code in the language and debugging one's own confusion."}
+      E2: {p: P2, sources: [mcconnell2004, sfia9], why: "SWE-01 P2 ('Proficient in the primary language/ecosystem; handles errors, async and concurrency basics correctly.') matches writing their own generic functions and debugging inference failures by reading the types — proficiency applied unaided."}
+      E3: {p: P3, sources: [mcconnell2004, sfia9], why: "SWE-01 P3 ('Code is a reference others learn from; debugs the hard problems (races, memory, nondeterminism).') is the capability-owning bar: building the typed utilities and library boundaries others rely on is code that becomes a reference others learn from."}
+      E4: {p: P4, sources: [mcconnell2004, larson2021-staffeng], why: "SWE-01 P4 ('Mastery across multiple stacks/paradigms; solves problems others can't; sets implementation patterns.') is Staff-scope — owning the hardest type-level infrastructure across teams and teaching the patterns so they don't bottleneck on one person."}
+      E5: {p: P5, sources: [mcconnell2004, larson2021-staffeng], why: "SWE-01 P5 ('Sets implementation standards adopted across the org; anticipates where code breaks at scale.') matches setting the org's bar for type-level engineering, balancing expressiveness against build performance."}
+      E6: {p: P6, sources: [mcconnell2004, larson2021-staffeng], why: "SWE-01 P6 ('Industry-level depth; authors foundational primitives and idioms others build on.') is company/industry scope — influencing the practice beyond the company through upstream contributions and published patterns."}
+    evidence:
+      E1: "Uses generic functions and utility types (Pick, Omit, Partial) correctly in everyday code; asks for help when inference surprises them."
+      E2: "Writes their own generic functions and constraints that infer cleanly at call sites, and debugs inference failures by reading the types rather than adding casts."
+      E3: "Builds the typed utilities and library boundaries others rely on — mapped and conditional types where they pay for themselves — and pushes back in review on cleverness that hurts readability or compile times."
+      E4: "Owns the hardest type-level infrastructure across teams (codegen, typed clients, framework glue) and teaches the patterns so they don't bottleneck on one person."
+      E5: "Sets the org's bar for type-level engineering, balancing expressiveness against build performance and onboarding cost."
+      E6: "Influences the practice beyond the company — upstream contributions, published patterns — and directs internal investment accordingly."
+  - theme: "Software design & architecture"
     capability: SWE-05
-    key_area: TypeScript & Software Design
-    key_attribute: Architecture & Code Health
-    anchor: "Ousterhout, A Philosophy of Software Design (2018); Parnas (1972)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Readable, maintainable code
+    key_area: "TypeScript & Software Design"
+    key_attribute: "Architecture & Code Health"
+    anchor: parnas1972
+    anchor_why: "decomposing systems around what is likely to change, so modules hide their design decisions from each other, is the foundational discipline design quality is measured against; design quality determines the cost of every future change."
+    mappings:
+      E1: {p: P1, sources: [parnas1972, sfia9], why: "SWE-05 P1 ('Implements designs specified by others; asks why, not just how.') is the guided bar — explaining the system's architecture in their own words and implementing within a given design is literally the P1 text."}
+      E2: {p: P2, sources: [parnas1972, sfia9], why: "SWE-05 P2 ('Designs sound components; understands coupling, cohesion, interface design.') matches designing their features within the existing architecture with clear module boundaries, writing a short design note."}
+      E3: {p: P3, sources: [parnas1972, sfia9], why: "SWE-05 P3 ('Designs systems for evolution: clean seams, versioned interfaces, replaceable parts.') is the capability-owning bar: selecting patterns by trade-off in design docs and designing for evolution across a capability is domain-scope evolution design."}
+      E4: {p: P4, sources: [parnas1972, larson2021-staffeng], why: "SWE-05 P4 ('Mastery of architecture for complex systems; sets patterns and prevents drift.') is Staff-scope — producing the designs that resolve problems spanning multiple teams and getting them adopted through persuasion."}
+      E5: {p: P5, sources: [parnas1972, larson2021-staffeng], why: "SWE-05 P5 ('Sets multi-year architecture direction across the org.') matches setting the architectural direction multiple teams build against and removing systemic obstacles."}
+      E6: {p: P6, sources: [parnas1972, larson2021-staffeng], why: "SWE-05 P6 ('Authoritative and externally credible; defines architectural approach others follow.') is company/industry scope — owning the company's technical architecture narrative and being publicly accountable for irreversible calls."}
+    evidence:
+      E1: "Explains the system's architecture in their own words and navigates its diagrams to find where a change belongs, implementing designs specified by others."
+      E2: "Designs their features within the existing architecture with clear module boundaries and hidden internals, writing a short design note for anything non-obvious and naming at least one alternative."
+      E3: "Selects patterns by trade-off in design docs that name the alternatives considered, designs for evolution, and catches coupling and scaling problems in others' designs before build."
+      E4: "Produces the designs that resolve problems spanning multiple teams, and gets them adopted through review and persuasion rather than mandate."
+      E5: "Sets the architectural direction multiple teams build against and removes the systemic obstacles that block it."
+      E6: "Owns the company's technical architecture narrative — where the platform is going and why — making the irreversible calls and being publicly accountable for them."
+  - theme: "Readable, maintainable code"
     capability: SWE-02
-    key_area: TypeScript & Software Design
-    key_attribute: Architecture & Code Health
-    anchor: "Fowler, Refactoring, 2nd ed. (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Refactoring & technical debt
+    key_area: "TypeScript & Software Design"
+    key_attribute: "Architecture & Code Health"
+    anchor: fowler2018
+    anchor_why: "code smells and behavior-preserving transformation are the working definition of maintainability; code is read far more than written, and full stack code is read by people who don't live in that half of the stack."
+    mappings:
+      E1: {p: P1, sources: [fowler2018, sfia9], why: "SWE-02 P1 ('Writes functional, readable code; uses version control correctly; responds well to review.') is the guided bar — writing small, clearly named functions matching conventions, and incorporating review feedback without repeating issues, is literally that text."}
+      E2: {p: P2, sources: [fowler2018, sfia9], why: "SWE-02 P2 ('Writes clean, documented, modular code; gives useful review feedback.') matches leaving code simpler than found as a matter of course, writing comments that explain why, independently."}
+      E3: {p: P3, sources: [fowler2018, sfia9], why: "SWE-02 P3 ('Designs for maintainability; leads refactors of problem areas; review feedback teaches.') is the capability-owning bar: setting the maintainability bar for a capability through review — naming the smell, not just the fix — is review feedback that teaches."}
+      E4: {p: P4, sources: [fowler2018, larson2021-staffeng], why: "SWE-02 P4 ('Expert in code health at scale (shared libraries, deprecations, large migrations).') is Staff-scope — driving code-health initiatives across teams (dead-code deletion, restructuring) with before/after evidence."}
+      E5: {p: P5, sources: [fowler2018, larson2021-staffeng], why: "SWE-02 P5 ('Shapes org-wide engineering standards for long-lived codebases.') matches owning org-level code-health strategy, making maintainability a funded, tracked property legible to leadership."}
+      E6: {p: P6, sources: [fowler2018, larson2021-staffeng], why: "SWE-02 P6 ('Defines what good engineering looks like company-wide; externally recognized.') is company/industry scope — setting company engineering-quality standards and modeling them in code still personally written."}
+    evidence:
+      E1: "Writes small, clearly named functions that match the codebase's conventions, and incorporates review feedback without repeating the same class of issue."
+      E2: "Leaves code simpler than found as a matter of course — refactors as part of feature work, keeps modules cohesive, writes comments that explain why, not what; review comments on their PRs trend toward design, not cleanup."
+      E3: "Sets the maintainability bar for a capability through review — names the smell and the refactoring, suggests the simplification rather than the workaround, and articulates why a design is too complicated, not just that it is."
+      E4: "Drives code-health initiatives across teams — dead-code deletion, module restructuring, convention alignment — with before/after evidence."
+      E5: "Owns org-level code-health strategy, making maintainability a funded, tracked property rather than a virtue, legible to leadership as risk and velocity."
+      E6: "Sets company engineering-quality standards and models them in the code they still write."
+  - theme: "Refactoring & technical debt"
     capability: EM-15
-    key_area: TypeScript & Software Design
-    key_attribute: Architecture & Code Health
-    anchor: "Fowler, Refactoring, 2nd ed. (2018); Cunningham's debt metaphor (OOPSLA 1992)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Code review practice
+    key_area: "TypeScript & Software Design"
+    key_attribute: "Architecture & Code Health"
+    anchor: cunningham1992
+    anchor_why: "debt as a deliberate, tracked, economic trade-off rather than a moral failing is the origin framing this capability is built on; codebases rot by default, and pricing debt honestly is what keeps change cheap."
+    mappings:
+      E1: {p: P1, sources: [cunningham1992, sfia9], why: "EM-15 P1 ('Records known shortcuts and defects when directed; raises debt concerns in planning.') is the guided bar: recording debt when directed and raising it in planning is a passive, prompted register, not self-initiated tracking."}
+      E2: {p: P2, sources: [cunningham1992, sfia9], why: "EM-15 P2 ('Keeps a visible debt register with the cost of carry noted and defends a steady paydown allocation in planning rather than begging quarter by quarter.') matches independently structuring larger changes into reviewable steps and recording the debt taken on with its reason and exit path — a self-initiated register, unprompted."}
+      E3: {p: P3, sources: [cunningham1992, sfia9], why: "EM-15 P3 ('Distinguishes debt worth carrying from debt that will detonate, sequences remediation by risk, and prices debt in incident and velocity terms stakeholders accept.') is the capability-owning bar — pricing debt in terms stakeholders accept and sequencing remediation by risk across a capability is domain-scope portfolio judgment, not just tracking."}
+      E4: {p: P4, sources: [cunningham1992, larson2021-staffeng], why: "EM-15 P4 ('Makes debt legible across multiple teams — shared taxonomy, reporting rhythm — and gets cross-team risk ... owned and funded.') is Staff-scope by its own text — a shared taxonomy 'across multiple teams' and getting the orphaned shared library funded is the multi-team register."}
+      E5: {p: P5, sources: [cunningham1992, larson2021-staffeng], why: "EM-15 P5 ('Carries technical risk onto the executive risk register — top exposures known, sized, owned, trending — and lands multi-quarter remediation programs against feature pressure.') is the org-authority bar: an executive risk register and multi-quarter programs are Senior Staff's org-wide accountability."}
+      E6: {p: P6, sources: [cunningham1992, larson2021-staffeng], why: "EM-15 P6 ('Sets an organization's speed-versus-soundness posture explicitly ... and holds it under growth pressure.') is company/industry scope — the explicit, held-under-pressure posture for where debt is accepted at all is the P6 policy-setting register."}
+    evidence:
+      E1: "Adds a `// TODO(debt): hardcoded 30-day window, revisit before Q3 launch` comment on a shortcut they took, and brings it up unprompted when their tech lead asks what got cut in the sprint."
+      E2: "Keeps a running doc of the debt their component has taken on this quarter — what, why, and the exit condition — and defends a fixed 15% paydown slice in planning instead of re-arguing for it every sprint."
+      E3: "Tells the roadmap owner that the auth-service's dual-write shim is debt that will detonate at their next 2x traffic milestone, not debt that can sit, and gets a two-sprint remediation slotted in with the incident-cost math that made the case."
+      E4: "Builds the shared debt taxonomy (security/perf/velocity/correctness) three teams now tag their tickets with, and gets the shared auth library nobody owned assigned a team and a paydown budget."
+      E5: "Presents the org's top five debt exposures — sized in incident-dollars and velocity-days — on the quarterly executive risk register, and gets two multi-quarter remediation programs funded against competing feature asks."
+      E6: "Sets the explicit rule that new-market launches may carry data-model debt for one quarter but never carry auth debt past code review, and holds that line when a VP pushes to ship a launch with an auth shortcut."
+  - theme: "Code review practice"
     capability: SWE-04
-    key_area: TypeScript & Software Design
-    key_attribute: Architecture & Code Health
-    anchor: "Winters, Manshreck & Wright, Software Engineering at Google (2020), code-review chapters"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  # ---- Quality & Testing ----
-  - theme: Test strategy & the pyramid
+    key_area: "TypeScript & Software Design"
+    key_attribute: "Architecture & Code Health"
+    anchor: winters2020
+    anchor_why: "review as the primary mechanism for knowledge transfer and a shared quality bar; review is where a team's actual standards live, whatever the wiki says."
+    mappings:
+      E1: {p: P1, sources: [winters2020, sfia9], why: "SWE-04 P1 ('Navigates the codebase and understands code shown; reviews small changes.') is the guided bar — responding to feedback without defensiveness and reviewing small changes for readability/tests is literally that text."}
+      E2: {p: P2, sources: [winters2020, sfia9], why: "SWE-04 P2 ('Independently understands unfamiliar code; gives timely, specific review feedback.') matches giving reviews that catch real defects (edge cases, type holes) and distinguishing blocking issues from preferences, independently."}
+      E3: {p: P3, sources: [winters2020, sfia9], why: "SWE-04 P3 ('Quickly grasps complex/legacy systems; reviews raise the bar across a domain.') is the capability-owning bar: reviewing for design and long-term cost, and teaching through comments others save and share, is 'reviews raise the bar across a domain.'"}
+      E4: {p: P4, sources: [winters2020, larson2021-staffeng], why: "SWE-04 P4 ('Expert at reviewing high-risk changes; review standards spread across teams.') is Staff-scope by its own text — calibrating review standards across teams, personally reviewing the cross-cutting changes nobody else can judge, is that exact register."}
+      E5: {p: P5, sources: [winters2020, larson2021-staffeng], why: "SWE-04 P5 ('Authority on review practice org-wide.') matches designing the org's review system itself (ownership rules, SLAs, automation), measured by defect-escape metrics."}
+      E6: {p: P6, sources: [winters2020, larson2021-staffeng], why: "SWE-04 P6 ('Defines what good review looks like; shapes industry-facing practice.') is company/industry scope — setting the company's engineering-rigor expectations, personally reviewing company-blast-radius changes."}
+    evidence:
+      E1: "Responds to review feedback promptly and without defensiveness, applies it beyond the flagged line, and reviews small changes for readability and test presence."
+      E2: "Gives reviews that catch real defects, not just style — edge cases, type holes, missing tests — distinguishing blocking issues from preferences and phrasing comments about the code, not the coder."
+      E3: "Reviews for design, failure modes, and long-term cost — and teaches through review comments others save and share. Turns recurring review comments into lint rules or docs, and calibrates comment severity so authors know what blocks."
+      E4: "Calibrates review standards across teams so the bar is consistent, reviewing the cross-cutting changes nobody else can judge and coaching senior engineers on how they review."
+      E5: "Designs the org's review system itself — ownership rules, required checks, review SLAs, automation — measured by defect escape and flow metrics."
+      E6: "Sets the company's engineering-rigor expectations, personally reviewing the changes with company-level blast radius."
+  - theme: "Test strategy & the pyramid"
     capability: QA-01
-    key_area: Quality & Testing
-    key_attribute: Testing Across the Stack
-    anchor: "Cohn (2009) as refined by Vocke, The Practical Test Pyramid (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Test authoring & implementation quality
+    key_area: "Quality & Testing"
+    key_attribute: "Testing Across the Stack"
+    anchor: cohn2009
+    anchor_why: "the test pyramid — push tests to the cheapest layer that gives needed confidence — is the origin discipline test-suite shape is measured against; full stack code fails at the seams, and suite shape decides whether the suite is a safety net or a tax."
+    mappings:
+      E1: {p: P1, sources: [cohn2009, sfia9], why: "QA-01 P1 ('Drafts test plans from templates for defined features, reviewed before execution.') is the guided bar — writing unit tests following the team's patterns and explaining the pyramid's purpose in their own words is template-following, reviewed."}
+      E2: {p: P2, sources: [cohn2009, sfia9], why: "QA-01 P2 ('Produces complete test strategies for standard projects independently, scoping coverage and risk.') matches choosing the right test layer per risk across frontend, API, and data layers, independently."}
+      E3: {p: P3, sources: [cohn2009, sfia9], why: "QA-01 P3 ('Devises test strategies for ambiguous, high-risk programs balancing coverage, time, and cost.') is the capability-owning bar: owning the test strategy for a capability, killing tests that cost more than they catch, is devising strategy for ambiguous, high-risk scope."}
+      E4: {p: P4, sources: [cohn2009, larson2021-staffeng], why: "QA-01 P4 ('Defines the test-strategy approach and planning patterns other teams adopt.') is Staff-scope — aligning test strategy across teams that share seams (contract tests, shared fixtures, flake budgets)."}
+      E5: {p: P5, sources: [cohn2009, larson2021-staffeng], why: "QA-01 P5 ('Sets organizational quality strategy and anticipates how testing must evolve with delivery.') matches setting the organization's testing standards and investment level, backed by escape-rate data."}
+      E6: {p: P6, sources: [cohn2009, larson2021-staffeng], why: "QA-01 P6 ('Defines what effective test strategy means for the discipline and influences its practice.') is company/industry scope — owning the company's release-confidence posture and answering for it when it fails."}
+    evidence:
+      E1: "Writes unit tests for every change following the team's patterns, and explains what each layer of the pyramid is for in their own words."
+      E2: "Chooses the right test layer per risk — unit for logic, integration for seams, few end-to-end — covering the frontend, API, and data layers rather than just the easiest one."
+      E3: "Owns the test strategy for a capability and kills tests that cost more than they catch, rebalancing an inverted pyramid, deciding coverage targets by risk, and defining which user journeys warrant end-to-end coverage — with the data to justify it."
+      E4: "Aligns test strategy across teams that share seams — contract tests where E2E suites were the crutch, shared fixtures, flake budgets — so cross-team changes are safe to make."
+      E5: "Sets the organization's testing standards and investment level, backed by data on escape rates and suite cost."
+      E6: "Owns the company's release-confidence posture, deciding the quality bar that ships and answering for it when it fails."
+  - theme: "Test authoring & implementation quality"
     capability: SWE-03
-    key_area: Quality & Testing
-    key_attribute: Testing Across the Stack
-    anchor: "Dodds, Testing Library guiding principles; Meszaros, xUnit Test Patterns (2007)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Integration & end-to-end confidence
+    key_area: "Quality & Testing"
+    key_attribute: "Testing Across the Stack"
+    anchor: meszaros2007
+    anchor_why: "test code as designed code, tested through the interface the user sees rather than internals; tests coupled to implementation punish refactoring, tests coupled to behavior enable it."
+    mappings:
+      E1: {p: P1, sources: [meszaros2007, sfia9], why: "SWE-03 P1 ('Writes unit tests with guidance; tests own changes before merging.') is the guided bar — writing readable arrange-act-assert tests using the team's harnesses correctly is literally that text."}
+      E2: {p: P2, sources: [meszaros2007, sfia9], why: "SWE-03 P2 ('Applies the testing pyramid; everything shipped arrives tested; mocks dependencies sensibly.') matches writing tests that survive refactoring, isolating external systems with typed fakes at the right boundary."}
+      E3: {p: P3, sources: [meszaros2007, sfia9], why: "SWE-03 P3 ('Designs testable systems (contract, property-based, replay from prod); owns a test strategy.') is the capability-owning bar: building the test infrastructure others write tests with (factories, fixtures) and diagnosing deep flake causes is owning testability at domain scope."}
+      E4: {p: P4, sources: [meszaros2007, larson2021-staffeng], why: "SWE-03 P4 ('Expert in test strategy at scale (test data, environments, deployment safety).') is Staff-scope — fixing systemic testing problems across teams (flake sources, mock sprawl) with shared harnesses."}
+      E5: {p: P5, sources: [meszaros2007, larson2021-staffeng], why: "SWE-03 P5 ('Sets testing/verification discipline across the org.') matches setting org-wide test-authoring standards and keeping suite runtime/reliability inside explicit budgets."}
+      E6: {p: P6, sources: [meszaros2007, larson2021-staffeng], why: "SWE-03 P6 ('Shapes the company-wide quality culture; advances verification practice.') is company/industry scope — directing company-level test-infrastructure investment as a productivity multiplier."}
+    evidence:
+      E1: "Writes readable arrange-act-assert tests that assert behavior, not implementation, using the team's harnesses correctly and fixing a failing test by understanding it rather than snapshot-updating past it."
+      E2: "Writes tests that survive refactoring — queries UI the way a user would, isolates external systems with typed fakes at the right boundary, covers error paths and keeps tests deterministic."
+      E3: "Builds the test infrastructure others write tests with — factories, fixtures, network mocking — making good tests the path of least resistance, and diagnoses the deep flake causes (async races, shared state, clock) to root cause."
+      E4: "Fixes the systemic testing problems across teams — flake sources, slow suites, mock sprawl — providing shared harnesses and coaching teams out of brittle-test patterns."
+      E5: "Sets org-wide test-authoring standards and the tooling that enforces them, keeping suite runtime and reliability inside explicit budgets."
+      E6: "Directs company-level test-infrastructure investment as a productivity multiplier, with authored practice visible in the highest-stakes systems."
+  - theme: "Integration & end-to-end confidence"
     capability: QA-06
-    key_area: Quality & Testing
-    key_attribute: Testing Across the Stack
-    anchor: "Fowler, ContractTest / consumer-driven contracts (Pact)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Debugging & root-cause analysis
+    key_area: "Quality & Testing"
+    key_attribute: "Testing Across the Stack"
+    anchor: robinson2006-cdc
+    anchor_why: "consumer-driven contracts verify integrations at the contract and reserve end-to-end coverage for critical journeys, substituted for Fowler's ContractTest article (no direct bibliography entry) since it is the exact named pattern; the highest-value bugs live at the seams between frontend and backend."
+    mappings:
+      E1: {p: P1, sources: [robinson2006-cdc, sfia9], why: "QA-06 P1 ('Automates defined UI flows using existing patterns, with scripts reviewed for reliability.') is the guided bar — running the end-to-end suite locally and updating existing journey tests with guidance is using existing patterns, reviewed."}
+      E2: {p: P2, sources: [robinson2006-cdc, sfia9], why: "QA-06 P2 ('Builds and maintains stable end-to-end UI tests independently for standard journeys.') matches writing stable integration/end-to-end tests for their features' critical paths independently, with controlled test data and no arbitrary sleeps."}
+      E3: {p: P3, sources: [robinson2006-cdc, sfia9], why: "QA-06 P3 ('Stabilizes flaky, complex end-to-end flows and designs resilient locator and wait strategies.') is the capability-owning bar: deciding what a capability verifies at which layer (contract tests vs. a thin E2E set) and keeping runtime/flake rate in budget is designing the resilient strategy at domain scope."}
+      E4: {p: P4, sources: [robinson2006-cdc, larson2021-staffeng], why: "QA-06 P4 ('Defines UI and end-to-end automation patterns others adopt for reliability at scale.') is Staff-scope — establishing contract-testing infrastructure across team boundaries so teams deploy independently."}
+      E5: {p: P5, sources: [robinson2006-cdc, larson2021-staffeng], why: "QA-06 P5 ('Sets end-to-end automation strategy and anticipates challenges from evolving interfaces.') matches owning the org's pre-production confidence strategy, deciding environment topology."}
+      E6: {p: P6, sources: [robinson2006-cdc, larson2021-staffeng], why: "QA-06 P6 ('Defines authoritative end-to-end automation practice that shapes the discipline.') is company/industry scope — being accountable for company-level release-confidence architecture, including environment economics."}
+    evidence:
+      E1: "Runs the end-to-end suite locally and reads its failures to the failing step, updating existing journey tests when their change breaks one, with guidance."
+      E2: "Writes stable integration and end-to-end tests for their features' critical paths — user-facing selectors, controlled test data, no arbitrary sleeps — and quarantines flake rather than retrying it blind."
+      E3: "Decides what a capability verifies at which layer — contract tests at API seams, a thin E2E set for revenue paths — keeping the suite's runtime and flake rate inside budget."
+      E4: "Establishes contract-testing and integration infrastructure across team boundaries — environments, seeded data, contract-test governance — so teams deploy independently without integration freezes."
+      E5: "Owns the org's pre-production confidence strategy, deciding the environment topology and what may only be verified in production behind flags."
+      E6: "Accountable for company-level release-confidence architecture, including the economics of environments versus production-testing investment."
+  - theme: "Debugging & root-cause analysis"
     capability: SWE-06
-    key_area: Quality & Testing
-    key_attribute: Defect Response & Prevention
-    anchor: "Zeller, Why Programs Fail (2009)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Quality ownership & prevention
+    key_area: "Quality & Testing"
+    key_attribute: "Defect Response & Prevention"
+    anchor: zeller2009
+    anchor_why: "debugging as hypothesis-driven search, not guesswork; full stack defects cross two runtimes and every process boundary, and systematic isolation is what keeps them tractable."
+    mappings:
+      E1: {p: P1, sources: [zeller2009, sfia9], why: "SWE-06 P1 ('Debugs issues in own code with support; uses basic tooling.') is the guided bar — reproducing a bug reliably and asking for help with a written summary of what's ruled out is debugging with support."}
+      E2: {p: P2, sources: [zeller2009, sfia9], why: "SWE-06 P2 ('Independently diagnoses defects in own area systematically.') matches tracing defects across the stack unaided, stating a hypothesis before each experiment."}
+      E3: {p: P3, sources: [zeller2009, sfia9], why: "SWE-06 P3 ('Leads diagnosis of hard, cross-cutting failures; root cause not symptoms.') is the capability-owning bar: being the debugger of last resort for a capability's heisenbug class, from heap snapshots to root cause, is leading hard cross-cutting diagnosis at domain scope."}
+      E4: {p: P4, sources: [zeller2009, larson2021-staffeng], why: "SWE-06 P4 ('Expert at the rare/systemic failures; builds tooling that makes them visible.') is Staff-scope — leading cross-team investigations where no single team can see the whole failure, building diagnostic tooling."}
+      E5: {p: P5, sources: [zeller2009, larson2021-staffeng], why: "SWE-06 P5 ('The person called for the worst failures; sets diagnostic practice org-wide.') matches raising the organization's debugging capability (runbooks, tooling, teaching) so hard problems stop requiring them personally."}
+      E6: {p: P6, sources: [zeller2009, larson2021-staffeng], why: "SWE-06 P6 ('Authority on diagnosis; advances the discipline.') is company/industry scope — handling company-critical unknowns and growing the org's capacity to handle the next one without them."}
+    evidence:
+      E1: "Reproduces a bug reliably before changing code, isolating with logs, breakpoints, and browser devtools in either runtime, and asks for help with a written summary of what's ruled out."
+      E2: "Traces defects across the stack unaided — UI symptom to network to service to query — stating a hypothesis before each experiment and using profilers to find hot paths instead of guessing."
+      E3: "Is the debugger of last resort for a capability, cracking the intermittent, race-condition, and heisenbug class from heap snapshots, CPU profiles, and traces, and turns each root cause into a regression test and a prevention."
+      E4: "Leads cross-team investigations where no single team can see the whole failure, building or standardizing the diagnostic tooling that shortens everyone's time-to-cause, and teaches the method while doing it."
+      E5: "Raises the organization's debugging capability — runbooks, tooling, teaching — so hard problems stop requiring them personally."
+      E6: "Handles the company-critical unknowns — the defects with existential stakes — and grows the org's capacity to handle the next one without them."
+  - theme: "Quality ownership & prevention"
     capability: QA-14
-    key_area: Quality & Testing
-    key_attribute: Defect Response & Prevention
-    anchor: "Forsgren, Humble & Kim, Accelerate (2018) / DORA"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  # ---- Delivery & Operations ----
-  - theme: Build & CI pipelines
+    key_area: "Quality & Testing"
+    key_attribute: "Defect Response & Prevention"
+    anchor: forsgren2018
+    anchor_why: "change failure rate and MTTR are outcomes of engineering practice, not QA headcount; in a full stack team, quality is built in by the people who ship, or not at all."
+    mappings:
+      E1: {p: P1, sources: [forsgren2018, sfia9], why: "QA-14 P1 ('Compiles defined quality metrics into standard reports under review.') is the guided bar — verifying their own work before review (testing unhappy paths, checking acceptance criteria) is compiling against a defined checklist."}
+      E2: {p: P2, sources: [forsgren2018, sfia9], why: "QA-14 P2 ('Produces meaningful quality reports independently, selecting relevant metrics for routine needs.') matches monitoring their changes after deploy and fixing what they broke without being asked, independently."}
+      E3: {p: P3, sources: [forsgren2018, sfia9], why: "QA-14 P3 ('Designs metrics that reveal real quality signals in ambiguous, contested contexts.') is the capability-owning bar: owning a capability's quality metrics and changing the process, not just the code, when they slip is designing real signals at domain scope."}
+      E4: {p: P4, sources: [forsgren2018, larson2021-staffeng], why: "QA-14 P4 ('Defines the quality-metrics framework and reporting patterns others adopt.') is Staff-scope — building the quality gates several teams operate and intervening with data when a team's failure rate drifts."}
+      E5: {p: P5, sources: [forsgren2018, larson2021-staffeng], why: "QA-14 P5 ('Sets quality-measurement strategy and anticipates which signals will matter as delivery evolves.') matches owning org-level quality outcomes, reporting DORA-style metrics to leadership."}
+      E6: {p: P6, sources: [forsgren2018, larson2021-staffeng], why: "QA-14 P6 ('Defines what meaningful quality measurement means for the field and influences its practice.') is company/industry scope — setting the company's quality-vs-speed posture, answerable to customers."}
+    evidence:
+      E1: "Verifies their own work before review — runs it, tests the unhappy paths, checks the acceptance criteria — rather than relying on reviewers to catch problems."
+      E2: "Monitors their changes after deploy and fixes what they broke without being asked, tracking their defects to closure."
+      E3: "Owns a capability's quality metrics — escaped defects, change failure rate — and changes the process, not just the code, when they slip."
+      E4: "Builds the quality gates and review standards several teams operate, and intervenes with data when a team's failure rate drifts."
+      E5: "Owns org-level quality outcomes, reporting DORA-style metrics to leadership and directing the practice changes they imply."
+      E6: "Sets the company's quality-vs-speed posture and is answerable for it in front of customers."
+  - theme: "Build & CI pipelines"
     capability: OPS-02
-    key_area: Delivery & Operations
-    key_attribute: Delivery Pipeline
-    anchor: "Forsgren, Humble & Kim, Accelerate (2018) / DORA"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Release & deployment practices
+    key_area: "Delivery & Operations"
+    key_attribute: "Delivery Pipeline"
+    anchor: forsgren2018
+    anchor_why: "continuous integration and trunk-based practices predict both throughput and stability; the pipeline is the rate limiter on everything else an engineering team does."
+    mappings:
+      E1: {p: P1, sources: [forsgren2018, sfia9], why: "OPS-02 P1 ('Uses and makes guided fixes to existing pipelines.') is the guided bar — keeping their branch green, reading CI failures to root cause before asking for review, is a guided fix to an existing pipeline."}
+      E2: {p: P2, sources: [forsgren2018, sfia9], why: "OPS-02 P2 ('Independently builds and improves pipelines for their area.') matches integrating small and often and fixing pipeline config for their area independently."}
+      E3: {p: P3, sources: [forsgren2018, sfia9], why: "OPS-02 P3 ('Designs deployment safety (progressive delivery, rollback) for a domain.') is the capability-owning bar: owning pipeline health for a capability, gating on the checks that matter, is designing deployment safety at domain scope."}
+      E4: {p: P4, sources: [forsgren2018, larson2021-staffeng], why: "OPS-02 P4 ('Expert in delivery engineering at scale; sets standards across teams.') is Staff-scope — building the shared build platform (remote caching, merge queues) that keeps CI fast for many teams at once."}
+      E5: {p: P5, sources: [forsgren2018, larson2021-staffeng], why: "OPS-02 P5 ('Defines the org's delivery/release philosophy.') matches owning the org's delivery metrics and pipeline strategy, directing investment at the biggest bottleneck."}
+      E6: {p: P6, sources: [forsgren2018, larson2021-staffeng], why: "OPS-02 P6 ('Advances release engineering practice company-wide.') is company/industry scope — setting company delivery strategy (build-vs-buy on CI) with the business case attached."}
+    evidence:
+      E1: "Keeps their branch green — reads CI failures to the root cause, reproduces them locally, and fixes them before asking for review; never merges on red."
+      E2: "Integrates small and often and fixes pipeline config for their area — adds checks, caches dependencies, parallelizes slow stages — treating a broken main build as their interrupt."
+      E3: "Owns pipeline health for a capability and keeps it fast — build times within budget, flakes quarantined with follow-through, gating on the checks that matter (types, lint, tests, bundle size) — treating a slow pipeline as an incident, not a fact of life."
+      E4: "Builds or overhauls the shared build platform (monorepo task graphs, remote caching, merge queues, affected-only builds) that keeps CI fast for many teams at once, measurably improving their lead time."
+      E5: "Owns the org's delivery metrics and pipeline strategy, reporting DORA-style measures to leadership and directing investment at the biggest bottleneck."
+      E6: "Sets company delivery strategy — build-vs-buy on CI, engineering-productivity investment — with the business case attached."
+  - theme: "Release & deployment practices"
     capability: OPS-30
-    key_area: Delivery & Operations
-    key_attribute: Delivery Pipeline
-    anchor: "Humble & Farley, Continuous Delivery (2010)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Developer tooling & environment
+    key_area: "Delivery & Operations"
+    key_attribute: "Delivery Pipeline"
+    anchor: humble-farley2010
+    anchor_why: "small, frequent, automated, reversible releases, decoupling deploy from release; how software reaches production determines the blast radius of every mistake."
+    mappings:
+      E1: {p: P1, sources: [humble-farley2010, sfia9], why: "OPS-30 P1 ('Follows the release process exactly — flags, staged rollout steps, verification checklists — verifies their change in production, and rolls back with guidance.') is the guided bar by its own text: following the process exactly and rolling back 'with guidance' is the Associate register."}
+      E2: {p: P2, sources: [humble-farley2010, sfia9], why: "OPS-30 P2 ('Ships behind flags with a rollback plan by default, monitors rollouts and reverts on their own judgment when signals degrade ...') is the independent-component bar: 'on their own judgment' is independent decision-making at component scope, one step past following a checklist."}
+      E3: {p: P3, sources: [humble-farley2010, sfia9], why: "OPS-30 P3 ('Designs the rollout for risky changes — canary criteria, migration sequencing, flag lifecycle, kill switches — and reviews others' rollout plans for blast radius; the person teams ask how to ship something safely.') is the capability-owning bar: designing rollout criteria and being the person teams consult is domain-scope authorship, not just executing one's own rollout."}
+      E4: {p: P4, sources: [humble-farley2010, larson2021-staffeng], why: "OPS-30 P4 ('Builds progressive-delivery machinery multiple teams release through ... retiring deploy patterns that cause repeat incidents and measurably raising deploy frequency.') is Staff-scope by its own text — machinery 'multiple teams release through' is the multi-team register."}
+      E5: {p: P5, sources: [humble-farley2010, larson2021-staffeng], why: "OPS-30 P5 ('Owns release policy for an organization and its delivery metrics — rollout standards, freeze rules, environment strategy — dismantling ceremony that adds no safety.') is the org-authority bar: owning policy 'for an organization' and its metrics is Senior Staff's org-wide accountability."}
+      E6: {p: P6, sources: [humble-farley2010, larson2021-staffeng], why: "OPS-30 P6 ('Sets how an entire company's software reaches customers ... and defends it to executives, auditors, and regulators.') is company/industry scope — defending the risk posture to executives and regulators is the P6 external-accountability register."}
+    evidence:
+      E1: "Runs their first production deploy behind a feature flag exactly as the release runbook specifies, watches the rollout dashboard until it's clean, and asks their buddy to confirm before closing out the checklist."
+      E2: "Ships a pricing-page change behind a flag, notices the conversion-rate panel dip 20 minutes into a 10% rollout, and rolls it back themselves without waiting for anyone's sign-off — then writes the one-line rollback note in the channel."
+      E3: "Writes the rollout plan for a payments-schema migration — canary percentage, the exact metric that triggers an automatic halt, and a kill switch that reverts to the old code path in under a minute — and is the reviewer three other engineers send their own risky rollout plans to before shipping."
+      E4: "Builds the automated-canary-analysis service that now gates every deploy across four teams, replacing the ad hoc 'watch the dashboard for ten minutes' ritual that had caused two repeat incidents that quarter."
+      E5: "Sets the org-wide rule that no service may deploy without an automated rollback path, retires the manual change-approval-board process that added a day of ceremony without catching a single bad deploy in a year, and reports both changes' effect on deploy frequency to leadership."
+      E6: "Defends the company's canary-rollout policy to a regulator during an audit after a customer-facing incident, and is the one who signs off on the policy staying as-is rather than reverting to slower, more ceremonial releases."
+  - theme: "Developer tooling & environment"
     capability: OPS-27
-    key_area: Delivery & Operations
-    key_attribute: Delivery Pipeline
-    anchor: "Winters, Manshreck & Wright, Software Engineering at Google (2020)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Observability & monitoring
+    key_area: "Delivery & Operations"
+    key_attribute: "Delivery Pipeline"
+    anchor: winters2020
+    anchor_why: "engineering productivity is an engineered system; tooling and fast feedback loops compound. On a TypeScript monorepo/stack, build config, typecheck times, and dependency drift silently tax every engineer daily."
+    mappings:
+      E1: {p: P1, sources: [winters2020, sfia9], why: "OPS-27 P1 ('Maintains existing self-service platform components under review, addressing documented user requests.') is the guided bar — setting up the local dev environment from docs and filing reproducible reports when tooling breaks is addressing documented issues, under review."}
+      E2: {p: P2, sources: [winters2020, sfia9], why: "OPS-27 P2 ('Independently builds and supports standard platform capabilities and templates for routine developer needs with review.') matches fixing tooling friction they personally hit and upstreaming the fix instead of working around it, independently."}
+      E3: {p: P3, sources: [winters2020, sfia9], why: "OPS-27 P3 ('Designs self-service workflows for ambiguous needs, reducing friction and resolving hard abstraction and adoption issues.') is the capability-owning bar: owning the developer experience of a capability's codebase, measuring dev-loop time, is resolving ambiguous adoption issues at domain scope."}
+      E4: {p: P4, sources: [winters2020, larson2021-staffeng], why: "OPS-27 P4 ('Defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems.') is Staff-scope — designing the monorepo/shared-tooling layer multiple teams work inside, landing risky upgrades with codemods."}
+      E5: {p: P5, sources: [winters2020, larson2021-staffeng], why: "OPS-27 P5 ('Sets organization-wide platform strategy, anticipating how developer-experience engineering should evolve.') matches driving org developer-productivity strategy with survey and telemetry data."}
+      E6: {p: P6, sources: [winters2020, larson2021-staffeng], why: "OPS-27 P6 ('Defines what excellent platform engineering means for the field, shaping industry developer-experience practice.') is company/industry scope — making the company's foundational tooling bets (build systems, language upgrades, AI-assisted dev posture)."}
+    evidence:
+      E1: "Sets up and operates the local dev environment from the docs, fixing their own environment problems before escalating and filing reproducible reports when tooling breaks."
+      E2: "Improves the tooling friction they personally hit — a slow build, a missing lint rule, a stale README, a tsconfig fix — and upstreams the fix instead of working around it, upgrading dependencies safely with changelogs read before major bumps."
+      E3: "Owns the developer experience of a capability's codebase — TS project references, bundler config, CI caching, lint/format automation, upgrade cadence — measuring dev-loop time before and after changes; new engineers ship in days because of it."
+      E4: "Designs the monorepo and shared-tooling layer multiple teams work inside, landing the risky upgrades (TypeScript majors, bundler swaps) with codemods and migration docs, and measures adoption rather than assuming it."
+      E5: "Drives org developer-productivity strategy with survey and telemetry data, owning the platform roadmap and its DX metrics."
+      E6: "Makes the company's foundational tooling bets (build systems, repo topology, language and runtime upgrades, AI-assisted development posture)."
+  - theme: "Observability & monitoring"
     capability: OPS-05
-    key_area: Delivery & Operations
-    key_attribute: Production Operations
-    anchor: "Beyer et al., Site Reliability Engineering (Google, 2016); Majors et al., Observability Engineering (2022)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Incident response & postmortems
+    key_area: "Delivery & Operations"
+    key_attribute: "Production Operations"
+    anchor: sre2016
+    anchor_why: "golden signals and SLO-based, symptom-driven alerting, with Majors et al.'s high-cardinality tracing as the modern extension; you can only operate what you can see, across browser and server alike, and the instrumentation is written by the engineers who ship the code."
+    mappings:
+      E1: {p: P1, sources: [sre2016, majors2022-observability, sfia9], why: "OPS-05 P1 ('Understands logs/metrics/traces; reads existing dashboards.') is the guided bar — finding their change's logs and traces in the standard dashboards, and adding structured log lines per team conventions, is literally that text."}
+      E2: {p: P2, sources: [sre2016, majors2022-observability, sfia9], why: "OPS-05 P2 ('Instruments their services; builds dashboards; tunes alerts to limit noise.') matches instrumenting their features across the stack before shipping and answering 'is it working?' from telemetry, independently."}
+      E3: {p: P3, sources: [sre2016, majors2022-observability, sfia9], why: "OPS-05 P3 ('Designs observability for complex systems (end-to-end traces, quality signals, cost attribution).') is the capability-owning bar: defining SLIs/SLOs for a capability and building alerts on symptoms not causes is designing observability at domain scope."}
+      E4: {p: P4, sources: [sre2016, majors2022-observability, larson2021-staffeng], why: "OPS-05 P4 ('Expert in instrumentation trade-offs at scale, incl. privacy-safe logging.') is Staff-scope — standardizing observability across teams (shared instrumentation libraries, trace propagation) with measured pager-load reductions."}
+      E5: {p: P5, sources: [sre2016, majors2022-observability, larson2021-staffeng], why: "OPS-05 P5 ('Defines org observability strategy.') matches owning the org's observability strategy and SLO program, including its cost curve, legible to leadership."}
+      E6: {p: P6, sources: [sre2016, majors2022-observability, larson2021-staffeng], why: "OPS-05 P6 ('Shapes company-wide operational visibility; advances practice.') is company/industry scope — setting company reliability-measurement standards and the external SLA commitments grounded in them."}
+    evidence:
+      E1: "Finds their change's logs, metrics, traces, and browser error reports in the standard dashboards, and adds structured log lines with useful context per team conventions."
+      E2: "Instruments their features across the stack before shipping — structured logs, metrics, trace spans that cross the client/server boundary — and answers \"is it working?\" from telemetry, not vibes."
+      E3: "Defines the SLIs/SLOs for a capability and builds alerts on symptoms, not causes — dashboards on-call actually uses — deleting noisy alerts as deliberately as adding signal, and rejects unobservable designs in review."
+      E4: "Standardizes observability across teams — shared instrumentation libraries, trace propagation, log schema, alert-quality reviews — so cross-team incidents are traceable end to end, with measured pager-load reductions."
+      E5: "Owns the org's observability strategy and SLO program, including its cost curve, making reliability legible to leadership."
+      E6: "Sets company reliability-measurement standards and the external commitments (SLAs) grounded in them, answering for the telemetry bill and its value."
+  - theme: "Incident response & postmortems"
     capability: OPS-06
-    key_area: Delivery & Operations
-    key_attribute: Production Operations
-    anchor: "Beyer et al., Site Reliability Engineering (Google, 2016); Allspaw, blameless postmortems (2012)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  # ---- Security ----
-  - theme: Secure coding & vulnerability prevention
+    key_area: "Delivery & Operations"
+    key_attribute: "Production Operations"
+    anchor: sre2016
+    anchor_why: "incident-management and blameless-postmortem practice, with Allspaw's Etsy formulation as the concrete method; incident behavior under pressure and honest learning afterward are where operational maturity is visible."
+    mappings:
+      E1: {p: P1, sources: [sre2016, allspaw2012, sfia9], why: "OPS-06 P1 ('Responds to alerts with support; follows runbooks; escalates appropriately.') is the guided bar — following the runbook, escalating early with a clear symptom report while shadowing on-call, is literally that text."}
+      E2: {p: P2, sources: [sre2016, allspaw2012, sfia9], why: "OPS-06 P2 ('Triages and resolves routine incidents; clear notes; takes on-call.') matches taking on-call for their component and mitigating common failures unaided, writing postmortems that name contributing causes."}
+      E3: {p: P3, sources: [sre2016, allspaw2012, sfia9], why: "OPS-06 P3 ('Leads response to complex failures; blameless postmortems; same failure never recurs.') is the capability-owning bar: running incident command for a capability's severe incidents and driving postmortem actions to completion is leading complex-failure response at domain scope."}
+      E4: {p: P4, sources: [sre2016, allspaw2012, larson2021-staffeng], why: "OPS-06 P4 ('Expert in incident-management design (rotations, severity, escalation).') is Staff-scope — commanding incidents that cross team boundaries and upgrading the practice itself (severity taxonomy, on-call health)."}
+      E5: {p: P5, sources: [sre2016, allspaw2012, larson2021-staffeng], why: "OPS-06 P5 ('Commands the highest-severity incidents; sets incident process org-wide.') matches owning the org's incident program and learning loop, reviewing severity trends with leadership."}
+      E6: {p: P6, sources: [sre2016, allspaw2012, larson2021-staffeng], why: "OPS-06 P6 ('Sets the company's incident philosophy; calm authority in the worst moments.') is company/industry scope — being accountable for company-level major-incident handling, including executive and customer communication."}
+    evidence:
+      E1: "Follows the runbook during incidents, escalates early with a clear symptom report, and narrates what they see in the incident channel rather than debugging silently; contributes accurate timelines to postmortems while shadowing on-call."
+      E2: "Takes on-call for their component and mitigates common failures unaided, prioritizing user impact over root cause in the moment, communicating status on the expected cadence, and writing postmortems that name contributing causes, not culprits."
+      E3: "Runs incident command for a capability's severe incidents — coordinates responders, makes the mitigate-vs-diagnose call under pressure, communicates to stakeholders in their language — and drives postmortem actions to actual completion, not just filed."
+      E4: "Commands incidents that cross team boundaries and fixes the systemic reliability problems recurring across teams' postmortems, coaching new incident commanders and upgrading the practice itself (severity taxonomy, review quality, on-call health)."
+      E5: "Owns the org's incident program and learning loop — readiness, postmortem culture, error-budget policy — reviewing severity trends with leadership and directing reliability investment."
+      E6: "Is accountable for company-level major-incident handling, including executive and customer communication and the credibility of the postmortem process after the worst days."
+  - theme: "Secure coding & vulnerability prevention"
     capability: OPS-08
-    key_area: Security
-    key_attribute: Application Security
-    anchor: "OWASP Top 10 (2021) and the OWASP Cheat Sheet Series"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Authentication, authorization & data protection
+    key_area: "Security"
+    key_attribute: "Application Security"
+    anchor: owasp-top10
+    anchor_why: "the consensus taxonomy of web application risk and its concrete countermeasures; a full stack engineer owns the two most attacked surfaces — the browser and the API — and every layer between."
+    mappings:
+      E1: {p: P1, sources: [owasp-top10, sfia9], why: "OPS-08 P1 ('Understands core appsec; follows practices and flags concerns.') is the guided bar — using the framework's safe defaults and naming the OWASP Top 10 risks their change touches is following practices and flagging concerns."}
+      E2: {p: P2, sources: [owasp-top10, sfia9], why: "OPS-08 P2 ('Applies least privilege; validates/sanitizes inputs; knows common attacks.') matches preventing common vulnerability classes by construction (XSS, injection, CSRF), independently."}
+      E3: {p: P3, sources: [owasp-top10, sfia9], why: "OPS-08 P3 ('Designs defense in depth; thinks in abuse cases; owns a domain's posture.') is the capability-owning bar: catching vulnerabilities scanners miss and owning a capability's browser-side posture is 'owns a domain's posture' verbatim."}
+      E4: {p: P4, sources: [owasp-top10, larson2021-staffeng], why: "OPS-08 P4 ('Expert in securing systems at scale; leads red-teaming and remediation.') is Staff-scope — building secure-by-default platform pieces multiple teams inherit and driving remediation campaigns across codebases."}
+      E5: {p: P5, sources: [owasp-top10, larson2021-staffeng], why: "OPS-08 P5 ('Defines security strategy for the org's surface area.') matches setting the org's secure-development standard with the security function, reporting risk posture to leadership."}
+      E6: {p: P6, sources: [owasp-top10, larson2021-staffeng], why: "OPS-08 P6 ('Company-level accountability; authority on the field.') is company/industry scope — owning company product-security strategy, accountable in audits and board-level risk conversations."}
+    evidence:
+      E1: "Uses the framework's safe defaults and never bypasses them — parameterized queries, escaping-by-default templates, no unreviewed `dangerouslySetInnerHTML`, no secrets in code, logs, or client bundles — and names the OWASP Top 10 risks their change touches."
+      E2: "Prevents the common vulnerability classes by construction — XSS, injection, CSRF, SSRF — validating input at trust boundaries with schemas, handling tokens and cookies correctly (HttpOnly/SameSite), and fixing scanner findings without being chased."
+      E3: "Catches vulnerabilities in review that scanners miss — authz gaps, unsafe deserialization, SSRF paths, XSS-shaped patterns — turning each finding into a guardrail (lint rule, safe wrapper, doc), and owns the capability's browser-side posture (CSP, third-party script trust, session architecture)."
+      E4: "Builds secure-by-default platform pieces multiple teams inherit (auth libraries, CSP baselines, input-validation layers, paved-path middleware) and drives remediation campaigns across codebases when pentests find systemic issues."
+      E5: "Sets the org's secure-development standard with the security function — standards, training, tooling, review gates — reporting measurable risk posture to leadership."
+      E6: "Owns company product-security strategy from the engineering side, accountable in audits, incidents, and board-level risk conversations."
+  - theme: "Authentication, authorization & data protection"
     capability: BE-15
-    key_area: Security
-    key_attribute: Application Security
-    anchor: "OWASP ASVS 4.0 and NIST SP 800-63"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Threat modeling & security review
+    key_area: "Security"
+    key_attribute: "Application Security"
+    anchor: owasp-asvs
+    anchor_why: "verifiable requirements for session, identity, and access control, paired with NIST's digital-identity guidelines; broken access control is OWASP's #1 category, designed in rather than patched in, and the authorization logic is written by product engineers."
+    mappings:
+      E1: {p: P1, sources: [owasp-asvs, nist80063, sfia9], why: "BE-15 P1 ('Applies existing auth mechanisms to simple endpoints under review.') is the guided bar — using the existing auth middleware correctly and never rolling their own crypto is applying existing mechanisms, under review."}
+      E2: {p: P2, sources: [owasp-asvs, nist80063, sfia9], why: "BE-15 P2 ('Implements standard authentication and authorization flows independently.') matches implementing authorization server-side on every path the UI hides, testing negative cases, independently."}
+      E3: {p: P3, sources: [owasp-asvs, nist80063, sfia9], why: "BE-15 P3 ('Designs auth models autonomously; resolves complex identity, token, and permission cases.') is the capability-owning bar: designing the access-control model for a capability (roles, tenant isolation, audit trails) is autonomous complex-permission design."}
+      E4: {p: P4, sources: [owasp-asvs, nist80063, larson2021-staffeng], why: "BE-15 P4 ('Defines auth approaches teams adopt; solves the hardest access-control and trust problems.') is Staff-scope — owning shared identity infrastructure multiple teams build on and leading migrations off legacy schemes."}
+      E5: {p: P5, sources: [owasp-asvs, nist80063, larson2021-staffeng], why: "BE-15 P5 ('Sets authentication and authorization strategy across systems; anticipates evolving threats.') matches setting the org's identity, access, and data-protection architecture."}
+      E6: {p: P6, sources: [owasp-asvs, nist80063, larson2021-staffeng], why: "BE-15 P6 ('Defines authoritative practice for auth; shapes industry standards and security understanding.') is company/industry scope — making company-level trust-architecture bets and standing behind them with regulators and enterprise customers."}
+    evidence:
+      E1: "Uses the existing auth middleware and permission checks correctly, never rolling their own crypto or token handling, and checks authorization on the server, never only in the UI."
+      E2: "Implements authorization server-side on every path the UI hides — object-level, not just route-level — tests the negative cases (wrong user, expired session, escalation attempts), and handles tokens, sessions, secrets, and PII per policy without reminders."
+      E3: "Designs the access-control model for a capability — roles, resource ownership, tenant isolation, audit trails — documents it, and probes designs for privilege-escalation and data-exposure paths before build; others bring their authorization edge cases to this person."
+      E4: "Owns shared identity and authorization infrastructure multiple teams build on (session services, permission frameworks, SSO integration) and leads migrations off legacy schemes without lockouts."
+      E5: "Sets the org's identity, access, and data-protection architecture, treating compliance regimes as engineering requirements and verifying enforcement holds in practice."
+      E6: "Makes company-level trust-architecture bets (identity platform, encryption posture, data-residency design) and stands behind them with regulators and enterprise customers."
+  - theme: "Threat modeling & security review"
     capability: SEC-05
-    key_area: Security
-    key_attribute: Application Security
-    anchor: "Shostack, Threat Modeling: Designing for Security (2014)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Dependency & supply-chain hygiene
+    key_area: "Security"
+    key_attribute: "Application Security"
+    anchor: shostack2014
+    anchor_why: "'what are we building, what can go wrong, what do we do about it' as a design-time discipline; the cheapest vulnerability to fix is the one caught in design."
+    mappings:
+      E1: {p: P1, sources: [shostack2014, sfia9], why: "SEC-05 P1 ('Documents assets, entry points, and obvious threats for a component using a guided method, reviewed by others.') is the guided bar — answering 'what could go wrong here?' when asked and flagging auth/money/PII-touching changes is a guided method, reviewed."}
+      E2: {p: P2, sources: [shostack2014, sfia9], why: "SEC-05 P2 ('Produces complete threat models for standard systems independently, identifying realistic threats and mitigations.') matches raising abuse cases in design discussions unprompted for features they own, independently."}
+      E3: {p: P3, sources: [shostack2014, sfia9], why: "SEC-05 P3 ('Models complex, ambiguous architectures and prioritizes subtle, chained threats others miss.') is the capability-owning bar: running lightweight threat models for a capability's significant designs and recording accepted risks is modeling at domain scope."}
+      E4: {p: P4, sources: [shostack2014, larson2021-staffeng], why: "SEC-05 P4 ('Defines the threat-modeling methodology and reusable patterns others adopt across teams.') is Staff-scope — facilitating threat modeling across teams and training engineers to run their own."}
+      E5: {p: P5, sources: [shostack2014, larson2021-staffeng], why: "SEC-05 P5 ('Sets threat-modeling strategy and anticipates classes of threats before they become prevalent.') matches owning the org's security-review program and risk register."}
+      E6: {p: P6, sources: [shostack2014, larson2021-staffeng], why: "SEC-05 P6 ('Defines authoritative threat-modeling practice that shapes how the discipline reasons about risk.') is company/industry scope — shaping company security posture with threat-informed strategy presented at the executive level."}
+    evidence:
+      E1: "Answers \"what could go wrong here?\" about their change when asked, and flags anything touching auth, money, or PII for extra review."
+      E2: "Raises abuse cases in design discussions unprompted — enumeration, replay, object-level access mistakes — for features they own."
+      E3: "Runs lightweight threat models for a capability's significant designs, records the accepted risks, and makes security review a standing part of its design process."
+      E4: "Facilitates threat modeling across teams and trains engineers to run their own, focusing effort on the highest-value targets."
+      E5: "Owns the org's security-review program and risk register, deciding where scrutiny concentrates."
+      E6: "Shapes company security posture with threat-informed strategy presented at the executive level."
+  - theme: "Dependency & supply-chain hygiene"
     capability: SEC-09
-    key_area: Security
-    key_attribute: Supply Chain & Data Protection
-    anchor: "OpenSSF SLSA framework; OWASP Top 10 A06"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Data protection & privacy
+    key_area: "Security"
+    key_attribute: "Supply Chain & Data Protection"
+    anchor: slsa
+    anchor_why: "dependency provenance and currency are first-class security properties; a TypeScript stack ships thousands of transitive npm dependencies to servers and browsers, and the supply chain is part of the codebase."
+    mappings:
+      E1: {p: P1, sources: [slsa, sfia9], why: "SEC-09 P1 ('Verifies artifact provenance and signatures following documented checks, escalating anomalies for review.') is the guided bar — adding dependencies only through the team's vetting process and acting on automated vulnerability alerts is following documented checks."}
+      E2: {p: P2, sources: [slsa, sfia9], why: "SEC-09 P2 ('Configures signing, dependency scanning, and provenance controls independently for standard pipelines.') matches evaluating a package before adopting it (maintenance health, license, transitive surface) independently."}
+      E3: {p: P3, sources: [slsa, sfia9], why: "SEC-09 P3 ('Designs artifact-integrity and dependency-trust controls for complex, ambiguous supply chains.') is the capability-owning bar: owning the dependency posture of a capability (upgrade cadence, CVE triage by exploitability) is designing trust controls at domain scope."}
+      E4: {p: P4, sources: [slsa, larson2021-staffeng], why: "SEC-09 P4 ('Defines the supply-chain security architecture and verification patterns others adopt.') is Staff-scope — building supply-chain tooling and policy multiple teams follow (allowlists, provenance checks)."}
+      E5: {p: P5, sources: [slsa, larson2021-staffeng], why: "SEC-09 P5 ('Sets supply-chain assurance strategy and anticipates emerging artifact and dependency threats.') matches setting org supply-chain security posture (SBOM practice, artifact signing) with compliance and security functions."}
+      E6: {p: P6, sources: [slsa, larson2021-staffeng], why: "SEC-09 P6 ('Defines authoritative supply-chain security practice that shapes industry expectations.') is company/industry scope — owning company software supply-chain strategy and representing it to customers and auditors."}
+    evidence:
+      E1: "Adds dependencies only through the team's vetting process, keeps lockfiles committed and clean, and acts on automated vulnerability alerts for their changes."
+      E2: "Evaluates a package before adopting it — maintenance health, size, license, transitive surface, alternatives including writing it themselves — and keeps the components they own patched without being chased."
+      E3: "Owns the dependency posture of a capability — upgrade cadence, pinning strategy, CVE triage by real exploitability, pruning abandoned packages before they bite — and leads its major framework and runtime upgrades."
+      E4: "Builds supply-chain tooling and policy multiple teams follow (allowlists, automated updates, provenance checks, internal registries) and coordinates response when a shared dependency is compromised."
+      E5: "Sets org supply-chain security posture — SBOM practice, artifact signing, build integrity, vendor risk — with compliance and security functions, reporting exposure to leadership."
+      E6: "Owns company software supply-chain strategy and represents it to customers and auditors."
+  - theme: "Data protection & privacy"
     capability: OPS-09
-    key_area: Security
-    key_attribute: Supply Chain & Data Protection
-    anchor: "GDPR Art. 25; Cavoukian, Privacy by Design (2009)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  # ---- Collaboration & Communication ----
-  - theme: Technical writing & documentation
+    key_area: "Security"
+    key_attribute: "Supply Chain & Data Protection"
+    anchor: gdpr
+    anchor_why: "data protection by design and by default; full stack engineers decide at design time what gets collected, logged, cached, and retained, and mishandling personal data is a company-level event."
+    mappings:
+      E1: {p: P1, sources: [gdpr, sfia9], why: "OPS-09 P1 ('Knows data handling has privacy implications; follows rules.') is the guided bar — handling personal data per the team's rules (no PII in logs/URLs) and asking before new data collection is following rules."}
+      E2: {p: P2, sources: [gdpr, sfia9], why: "OPS-09 P2 ('Applies PII handling, redaction, residency and retention correctly.') matches applying minimization by default in their features (collecting only what's needed, applying retention rules) without prompting."}
+      E3: {p: P3, sources: [gdpr, sfia9], why: "OPS-09 P3 ('Designs for compliance (consent, audit trails, regional rules); owns readiness for a domain.') is the capability-owning bar: owning the data-protection design of a capability (classification, deletion paths that actually delete) is owning readiness for a domain verbatim."}
+      E4: {p: P4, sources: [gdpr, larson2021-staffeng], why: "OPS-09 P4 ('Expert at translating regulation into controls; represents engineering in audits.') is Staff-scope — building privacy-preserving infrastructure multiple teams rely on (deletion pipelines, PII-safe logging)."}
+      E5: {p: P5, sources: [gdpr, larson2021-staffeng], why: "OPS-09 P5 ('Sets org compliance strategy; anticipates regulation.') matches owning the org's privacy engineering program with legal and security, translating regulation into platform defaults."}
+      E6: {p: P6, sources: [gdpr, larson2021-staffeng], why: "OPS-09 P6 ('Authoritative on the landscape; trusted interface to regulators.') is company/industry scope — shaping company data strategy where product value and privacy trade off, answering to regulators."}
+    evidence:
+      E1: "Handles personal data per the team's rules — no PII in logs, URLs, or analytics, no secrets in code or client bundles — and asks before adding any new data collection."
+      E2: "Applies minimization by default in their features — collects only what's needed, encrypts what the standard requires, keeps PII out of client caches and telemetry, applies retention rules without prompting."
+      E3: "Owns the data-protection design of a capability — classification, encryption expectations, retention, deletion paths that actually delete — and catches privacy problems in design review before legal has to."
+      E4: "Builds privacy-preserving infrastructure multiple teams rely on (deletion pipelines, consent propagation, PII-safe logging libraries) and remediates cross-team data-handling gaps."
+      E5: "Owns the org's privacy engineering program with legal and security, translating regulation into platform defaults teams can follow."
+      E6: "Shapes company data strategy where product value and privacy obligations trade off, and answers for it to regulators and customers."
+  - theme: "Technical writing & documentation"
     capability: CC-02
-    key_area: Collaboration & Communication
-    key_attribute: Communication
-    anchor: "Winters, Manshreck & Wright, Software Engineering at Google (2020); Procida, Diataxis"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Stakeholder communication
+    key_area: "Collaboration & Communication"
+    key_attribute: "Communication"
+    anchor: winters2020
+    anchor_why: "the design doc as the unit of technical decision-making at scale, with Procida's Diátaxis framework for doc types; past E1, writing is the primary tool of scale, and the written artifact is how design survives contact with other people."
+    mappings:
+      E1: {p: P1, sources: [winters2020, procida-diataxis, sfia9], why: "CC-02 P1 ('Shares what they learn; keeps their docs accurate.') is the guided bar — writing PR descriptions and status updates a reviewer can act on, updating docs their change makes stale, is keeping docs accurate."}
+      E2: {p: P2, sources: [winters2020, procida-diataxis, sfia9], why: "CC-02 P2 ('Documents their area well; proactively shares techniques with the team.') matches documenting their features so the next engineer needs no meeting (READMEs, ADR-style notes), proactively."}
+      E3: {p: P3, sources: [winters2020, procida-diataxis, sfia9], why: "CC-02 P3 ('Creates documentation and forums that raise a whole domain's understanding.') is the capability-owning bar: writing design docs that anchor a capability's decisions, cited months later, is raising a whole domain's understanding."}
+      E4: {p: P4, sources: [winters2020, procida-diataxis, larson2021-staffeng], why: "CC-02 P4 ('Builds knowledge-sharing systems adopted across teams.') is Staff-scope — writing the RFCs and strategy docs that align multiple teams on contested decisions."}
+      E5: {p: P5, sources: [winters2020, procida-diataxis, larson2021-staffeng], why: "CC-02 P5 ('Defines how the org captures and spreads knowledge.') matches writing the strategy and standards documents the organization executes against, raising the org's documentation bar by example."}
+      E6: {p: P6, sources: [winters2020, procida-diataxis, larson2021-staffeng], why: "CC-02 P6 ('Shapes industry-facing knowledge practice.') is company/industry scope — writing the company-defining technical narratives (public posts, board-level briefs) that survive external scrutiny."}
+    evidence:
+      E1: "Writes PR descriptions, bug reports, and status updates a reviewer can act on without asking questions, and updates the docs their change makes stale."
+      E2: "Documents their features so the next engineer needs no meeting — READMEs, runbooks, ADR-style decision notes stating problem, options, and choice — matched to the reader, not the writer."
+      E3: "Writes design docs that anchor a capability's decisions — conclusion first, alternatives named, trade-offs argued, open questions explicit — that get cited months later, and edits others' docs to sharpen the argument, not the grammar."
+      E4: "Writes the RFCs and strategy docs that align multiple teams on contested decisions, framing trade-offs so disagreement is about substance, not confusion, structured so busy readers reach the decision point fast."
+      E5: "Writes the strategy and standards documents the organization executes against, legible to both engineers and executives, and raises the org's documentation bar by example."
+      E6: "Writes the company-defining technical narratives — public engineering posts, architecture visions, board-level briefs — that survive scrutiny from the board, customers, and the industry."
+  - theme: "Stakeholder communication"
     capability: CC-01
-    key_area: Collaboration & Communication
-    key_attribute: Communication
-    anchor: "Larson, Staff Engineer (2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Technical discussion & decision-making
+    key_area: "Collaboration & Communication"
+    key_attribute: "Communication"
+    anchor: larson2021-staffeng
+    anchor_why: "communicating technical work in the audience's terms is a core staff-plus behavior, observable well before the title; full stack work touches every function, and untranslated technical detail is where trust leaks."
+    mappings:
+      E1: {p: P1, sources: [larson2021-staffeng, sfia9], why: "CC-01 P1 ('Communicates status clearly; documentation is accurate.') is the guided bar — giving accurate, honest status in standups and tickets, naming what's blocked, is literally that text."}
+      E2: {p: P2, sources: [larson2021-staffeng, sfia9], why: "CC-01 P2 ('Writes clear design notes, runbooks and PRs; explains trade-offs without overselling.') matches explaining their technical work to non-engineers in outcome terms and warning of slips with a revised plan."}
+      E3: {p: P3, sources: [larson2021-staffeng, sfia9], why: "CC-01 P3 ('Writes design docs that drive decisions; translates technical risk for non-technical stakeholders.') is the capability-owning bar: translating a capability's technical state for any audience and running the meetings where they decide is translating risk at domain scope."}
+      E4: {p: P4, sources: [larson2021-staffeng], why: "CC-01 P4 ('Expert at making complex capability/risk legible to executives without dumbing it down; RFCs align orgs.') is Staff-scope by its own text — keeping multiple teams' stakeholders aligned through change is the RFC-scale register."}
+      E5: {p: P5, sources: [larson2021-staffeng], why: "CC-01 P5 ('Strategy memos leadership acts on; org-wide and external reach.') matches representing engineering reality to org leadership in planning and crisis alike, trusted to do so unfiltered."}
+      E6: {p: P6, sources: [larson2021-staffeng], why: "CC-01 P6 ('A clarifying voice at company scale; externally recognized.') is company/industry scope — representing the company's technology externally (customers, partners, boards) without overclaiming."}
+    evidence:
+      E1: "Gives accurate, honest status in standups and tickets — says what's blocked and what's at risk instead of \"almost done.\""
+      E2: "Explains their technical work to non-engineers in outcome terms and warns stakeholders of slips as soon as they know, with a revised plan attached."
+      E3: "Translates a capability's technical state for any audience — risk for product, cost for finance-minded leaders, options for executives — and runs the meetings where those audiences decide."
+      E4: "Keeps multiple teams' stakeholders aligned through change — reorganizations, migrations, slipped bets — with communication others cite as the reason it went smoothly."
+      E5: "Represents engineering reality to org leadership in planning and crisis alike, and is trusted to do so unfiltered."
+      E6: "Represents the company's technology externally — customers, partners, boards — without overclaiming."
+  - theme: "Technical discussion & decision-making"
     capability: CC-05
-    key_area: Collaboration & Communication
-    key_attribute: Communication
-    anchor: "Nygard, Documenting Architecture Decisions (2011)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Feedback & candor
+    key_area: "Collaboration & Communication"
+    key_attribute: "Communication"
+    anchor: nygard2011-adr
+    anchor_why: "decisions argued openly, recorded with context, and then committed to; teams stall on relitigated or invisible decisions, and how disagreement is handled is an observable skill."
+    mappings:
+      E1: {p: P1, sources: [nygard2011-adr, sfia9], why: "CC-05 P1 ('Voices disagreement respectfully; disagrees-and-commits.') is the guided bar — asking clarifying questions in design discussions and stating their own view with reasoning when asked is respectful voicing."}
+      E2: {p: P2, sources: [nygard2011-adr, sfia9], why: "CC-05 P2 ('Works through disagreement to a decision without damaging relationships.') matches arguing positions from evidence and dropping them gracefully when out-argued, committing visibly."}
+      E3: {p: P3, sources: [nygard2011-adr, sfia9], why: "CC-05 P3 ('Mediates technical disputes in their domain; finds the path that holds up.') is the capability-owning bar: facilitating decisions rather than winning them, surfacing quiet dissent and recording the rationale, is mediating disputes at domain scope."}
+      E4: {p: P4, sources: [nygard2011-adr, larson2021-staffeng], why: "CC-05 P4 ('Resolves high-stakes disagreements between senior stakeholders across orgs.') is Staff-scope — brokering technical decisions between teams with conflicting interests, getting explicit commitment from each."}
+      E5: {p: P5, sources: [nygard2011-adr, larson2021-staffeng], why: "CC-05 P5 ('Designs the decision processes the org uses to resolve conflict.') matches designing the org's technical decision-making mechanisms (review boards, RFC processes)."}
+      E6: {p: P6, sources: [nygard2011-adr, larson2021-staffeng], why: "CC-05 P6 ('Sets the company norm for principled disagreement.') is company/industry scope — carrying the company's hardest technical calls to conclusion, aligning executives and engineering when they disagree."}
+    evidence:
+      E1: "Asks questions in design discussions that clarify rather than derail, and states their own view with its reasoning when asked."
+      E2: "Argues positions from evidence and drops them gracefully when out-argued, committing visibly to decisions they disagreed with."
+      E3: "Facilitates decisions rather than winning them — surfacing the quiet dissent, timeboxing the debate, recording the outcome and its rationale where the next person will find it."
+      E4: "Brokers technical decisions between teams with conflicting interests, finding the option that unblocks both and getting explicit commitment from each."
+      E5: "Designs the org's technical decision-making mechanisms (review boards, RFC processes) so decisions are fast, owned, and durable."
+      E6: "Carries the company's hardest technical calls to conclusion, aligning executives and engineering when they disagree."
+  - theme: "Feedback & candor"
     capability: CC-04
-    key_area: Collaboration & Communication
-    key_attribute: Teamwork
-    anchor: "Scott, Radical Candor (2017); Edmondson, The Fearless Organization (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Cross-functional collaboration
+    key_area: "Collaboration & Communication"
+    key_attribute: "Teamwork"
+    anchor: scott2017-radicalcandor
+    anchor_why: "direct, caring feedback in a psychologically safe climate is what makes teams learn; teams that cannot exchange honest feedback ship the disagreement into the codebase instead."
+    mappings:
+      E1: {p: P1, sources: [scott2017-radicalcandor, edmondson2018-fearless-org, sfia9], why: "CC-04 P1 ('Accepts feedback non-defensively; acts on it.') is the guided bar — thanking reviewers for hard comments and asking clarifying questions instead of relitigating is literally that text."}
+      E2: {p: P2, sources: [scott2017-radicalcandor, edmondson2018-fearless-org, sfia9], why: "CC-04 P2 ('Gives timely, specific, kind feedback to peers.') matches giving peers direct, specific feedback in review, retros, and one-on-ones, then following up on whether it landed."}
+      E3: {p: P3, sources: [scott2017-radicalcandor, edmondson2018-fearless-org, sfia9], why: "CC-04 P3 ('Gives growth-oriented feedback that changes behavior; coaches through feedback.') is the capability-owning bar: naming the uncomfortable thing in the room (a slipping standard, a struggling teammate) and modeling receiving hard feedback publicly is coaching at team scope."}
+      E4: {p: P4, sources: [scott2017-radicalcandor, edmondson2018-fearless-org, larson2021-staffeng], why: "CC-04 P4 ('Builds feedback norms that raise the bar across teams.') is Staff-scope — giving feedback across team and level boundaries, including upward, repairing cross-team frictions."}
+      E5: {p: P5, sources: [scott2017-radicalcandor, edmondson2018-fearless-org, larson2021-staffeng], why: "CC-04 P5 ('Sets the org's culture of candor and growth.') matches building feedback culture deliberately across the org, coaching senior engineers on candor, challenging org-level decisions on the record."}
+      E6: {p: P6, sources: [scott2017-radicalcandor, edmondson2018-fearless-org, larson2021-staffeng], why: "CC-04 P6 ('Models and defines feedback culture company-wide.') is company/industry scope — telling company leadership the truths no one else will, with the standing to change the outcome."}
+    evidence:
+      E1: "Receives feedback without defensiveness and acts on it visibly; thanks reviewers for hard comments, asks clarifying questions instead of relitigating, and says so when something seems wrong rather than staying silent."
+      E2: "Gives peers direct, kind, specific feedback near the moment — in review, retros, and one-on-ones — following up on whether it landed, and raises team-process problems with a proposed fix."
+      E3: "Names the uncomfortable thing in the room — a slipping standard, a struggling teammate, a design being talked around — early and in a way people can hear, and models receiving hard feedback publicly."
+      E4: "Gives feedback across team and level boundaries, including upward to leaders whose decisions are not working and to senior engineers nobody else will, repairing cross-team frictions before they become escalations."
+      E5: "Builds feedback culture deliberately across the org — coaching senior engineers on candor, intervening where silence has become the norm, and challenging org-level decisions on the record so others can too."
+      E6: "Tells company leadership the truths no one else will, with the evidence, standing, and framing to change the outcome."
+  - theme: "Cross-functional collaboration"
     capability: CC-03
-    key_area: Collaboration & Communication
-    key_attribute: Teamwork
-    anchor: "Cagan, Inspired, 2nd ed. (2018); Skelton & Pais, Team Topologies (2019)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  # ---- Leadership & Business Impact ----
-  - theme: Mentoring & growing engineers
+    key_area: "Collaboration & Communication"
+    key_attribute: "Teamwork"
+    anchor: cagan2017-inspired
+    anchor_why: "empowered product teams pair engineers with product and design from discovery, not just delivery, with Skelton & Pais's interaction modes for the org layer; full stack work sits at the junction of product, design, and platform, and the interfaces between people fail more often than the interfaces between services."
+    mappings:
+      E1: {p: P1, sources: [cagan2017-inspired, skelton-pais2019, sfia9], why: "CC-03 P1 ('Responsive to feedback; pairs willingly; asks for help appropriately.') is the guided bar — asking clarifying questions about acceptance criteria before building and raising blockers the day they appear is asking for help appropriately."}
+      E2: {p: P2, sources: [cagan2017-inspired, skelton-pais2019, sfia9], why: "CC-03 P2 ('Collaborates smoothly with adjacent functions; handles disagreement constructively.') matches engaging design and product early from problem statements, flagging constraints while alternatives are still cheap."}
+      E3: {p: P3, sources: [cagan2017-inspired, skelton-pais2019, sfia9], why: "CC-03 P3 ('Builds strong cross-team relationships; resolves friction directly.') is the capability-owning bar: operating as the engineering counterpart to product/design for a capability, negotiating scope with data, is a strong cross-functional relationship at domain scope."}
+      E4: {p: P4, sources: [cagan2017-inspired, skelton-pais2019, larson2021-staffeng], why: "CC-03 P4 ('Expert at aligning teams with competing priorities; mediates disputes between senior people.') is Staff-scope — untangling cross-team dependency knots, keeping decisions made in one room honored in others."}
+      E5: {p: P5, sources: [cagan2017-inspired, skelton-pais2019, larson2021-staffeng], why: "CC-03 P5 ('Creates the forums and processes through which collaboration happens.') matches designing the org's team boundaries and interaction patterns with leadership, applying cognitive-load reasoning."}
+      E6: {p: P6, sources: [cagan2017-inspired, skelton-pais2019, larson2021-staffeng], why: "CC-03 P6 ('Builds coalitions at company scale and externally.') is company/industry scope — aligning engineering with company strategy across functions, trusted as a co-owner of outcomes."}
+    evidence:
+      E1: "Asks clarifying questions about acceptance criteria before building, flags when a mock is ambiguous or technically awkward rather than guessing, and raises blockers the day they appear."
+      E2: "Engages design and product early, working from problem statements rather than just tickets — flags technical constraints while alternatives are still cheap and translates engineering trade-offs into terms partners can decide on."
+      E3: "Operates as the engineering counterpart to product and design for a capability — negotiates scope with data, shapes the roadmap with technical possibility rather than feasibility vetoes, and disagrees-and-commits visibly."
+      E4: "Untangles cross-team dependency knots, clarifying interaction modes and ownership so teams stop blocking each other, keeping decisions made in one room honored in the others."
+      E5: "Designs the org's team boundaries and interaction patterns with leadership, applying cognitive-load reasoning to reorganizations and partnering with product leadership on the roadmap."
+      E6: "Aligns engineering with company strategy across functions, trusted by product, design, and executive peers as a co-owner of outcomes."
+  - theme: "Mentoring & growing engineers"
     capability: LI-01
-    key_area: Leadership & Business Impact
-    key_attribute: Growing People & Direction
-    anchor: "Larson, StaffEng (2021); Fournier, The Manager's Path (2017)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Technical direction & influence
+    key_area: "Leadership & Business Impact"
+    key_attribute: "Growing People & Direction"
+    anchor: larson2021-staffeng
+    anchor_why: "sponsorship and deliberate mentorship as the core leverage mechanisms of senior ICs, alongside Fournier's tech-lead mentoring chapters; past E2, an engineer's ceiling is set by how many others they make better."
+    mappings:
+      E1: {p: P1, sources: [larson2021-staffeng, fournier2017, sfia9], why: "LI-01 P1 ('Receptive to mentoring; shares what they learn.') is the guided bar — asking questions in public channels so answers help others and improving onboarding docs as they onboard is sharing what they've just learned."}
+      E2: {p: P2, sources: [larson2021-staffeng, fournier2017, sfia9], why: "LI-01 P2 ('Helps onboard teammates; informally mentors juniors.') matches onboarding new teammates and unblocking juniors day to day, without doing the work for them."}
+      E3: {p: P3, sources: [larson2021-staffeng, fournier2017, sfia9], why: "LI-01 P3 ('Coaches engineers with growth-oriented feedback; measurably improves a team's skill.') is the capability-owning bar: mentoring engineers deliberately toward independence with mentees whose progression is visible is measurable team-skill improvement."}
+      E4: {p: P4, sources: [larson2021-staffeng, fournier2017], why: "LI-01 P4 ('Develops future leads across teams; shapes hiring and onboarding.') is Staff-scope — growing senior engineers into capability owners across multiple teams, creating structures where mentoring happens without them."}
+      E5: {p: P5, sources: [larson2021-staffeng, fournier2017], why: "LI-01 P5 ('Develops senior engineers and leaders; builds culture deliberately.') matches building the org's talent-growth machinery (mentoring programs, hiring bar) and sponsoring the next staff engineers."}
+      E6: {p: P6, sources: [larson2021-staffeng, fournier2017], why: "LI-01 P6 ('Develops the next generation of top talent; legacy outlasts tenure.') is company/industry scope — developing the company's senior technical bench and being the mentor its top engineers seek out."}
+    evidence:
+      E1: "Asks questions in public channels so the answers help others, improves the onboarding docs as they onboard, and helps the next new person with what they just learned."
+      E2: "Onboards new teammates and unblocks juniors day to day — pairing generously, explaining the why behind conventions rather than just the rules — without doing the work for them."
+      E3: "Mentors engineers deliberately toward independence — stretch tasks with a safety net, growth-oriented review comments, career conversations, questions rather than answers — with mentees whose progression is visible to others."
+      E4: "Grows senior engineers into capability owners — sponsoring them into visible problems, coaching their design judgment through rather than taking over — and creates the structures (guilds, review rotations, design shadowing) where mentoring happens without them."
+      E5: "Builds the org's talent-growth machinery — mentoring programs, promotion-calibration input, technical curricula, the hiring bar — and grows the next staff engineers, sponsoring rather than just advising."
+      E6: "Develops the company's senior technical bench — shaping who its next principals are and what excellence means here — and is the mentor its top engineers seek out."
+  - theme: "Technical direction & influence"
     capability: LI-03
-    key_area: Leadership & Business Impact
-    key_attribute: Growing People & Direction
-    anchor: "Larson, Staff Engineer: Leadership Beyond the Management Track (2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Product thinking
+    key_area: "Leadership & Business Impact"
+    key_attribute: "Growing People & Direction"
+    anchor: larson2021-staffeng
+    anchor_why: "staff-plus engineers operate through direction-setting, alignment, and organizational influence without authority; the E3-to-E4 jump is precisely the shift from owning work to multiplying others, and this competency is most of that difference."
+    mappings:
+      E1: {p: P1, sources: [larson2021-staffeng, sfia9], why: "LI-03 P1 ('Contributes informed opinions in technical discussions.') is the guided bar — driving their own tasks to done, chasing reviews and resolving ambiguity by asking, is self-leadership, not yet influencing others' work."}
+      E2: {p: P2, sources: [larson2021-staffeng, sfia9], why: "LI-03 P2 ('Influences component-level decisions through credibility.') matches leading small efforts they're part of and driving small technical decisions to conclusion, at component scope."}
+      E3: {p: P3, sources: [larson2021-staffeng, sfia9], why: "LI-03 P3 ('Sets technical direction for a domain; others align to their calls.') is this ladder's terminal-level bar by its own text: setting direction for a domain/capability that others follow voluntarily is 'others align to their calls' verbatim."}
+      E4: {p: P4, sources: [larson2021-staffeng], why: "LI-03 P4 ('Shapes how multiple teams approach problems; trusted tiebreaker.') is Staff-scope by its own text — aligning multiple teams on a direction none of them owns alone is exactly 'shapes how multiple teams approach problems.'"}
+      E5: {p: P5, sources: [larson2021-staffeng], why: "LI-03 P5 ('Influences org-wide technical strategy.') matches setting technical direction an organization executes against, choosing what not to do as visibly as what to do."}
+      E6: {p: P6, sources: [larson2021-staffeng], why: "LI-03 P6 ('Influences company strategic direction through insight.') is company/industry scope — setting company technical direction with the executive team, carried credibly to boards and the industry."}
+    evidence:
+      E1: "Drives their own tasks to done — chases reviews, resolves ambiguity by asking, raises risks early, and proposes next steps rather than waiting for assignment."
+      E2: "Leads small efforts they're part of and drives small technical decisions to conclusion — proposes, gathers input, decides or escalates — rather than letting them drift."
+      E3: "Sets technical direction for a capability others follow voluntarily — a vision people can repeat, work broken down and sequenced risk-first, the team unblocked, contested decisions landed by argument rather than seniority. This is the terminal-level bar: sustained excellence here is a complete career."
+      E4: "Aligns multiple teams on a technical direction none of them owns alone — builds the coalition, does the 1:1 persuasion and the written case, absorbs the disagreement, and stays accountable through delivery."
+      E5: "Sets technical direction an organization executes against — picks the few bets that matter, kills zombie projects, chooses what not to do as visibly as what to do — and gets it resourced."
+      E6: "Sets company technical direction with the executive team — the bets, the narrative, and the accountability for them — carried credibly to boards, customers, and the industry."
+  - theme: "Product thinking"
     capability: PD-06
-    key_area: Leadership & Business Impact
-    key_attribute: Product & Business Impact
-    anchor: "Cagan, Inspired, 2nd ed. (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Scoping, prioritization & estimation
+    key_area: "Leadership & Business Impact"
+    key_attribute: "Product & Business Impact"
+    anchor: cagan2017-inspired
+    anchor_why: "engineers closest to the technology are a primary source of product insight when they engage with users and value, not just tickets; full stack engineers sit closest to the whole user experience of anyone in engineering."
+    mappings:
+      E1: {p: P1, sources: [cagan2017-inspired, sfia9], why: "PD-06 P1 ('Understands the capability they're building and who uses it.') is the guided bar — explaining who uses the feature and why it matters in their own words, trying their own change as a user, is literally that text."}
+      E2: {p: P2, sources: [cagan2017-inspired, sfia9], why: "PD-06 P2 ('Frames own work in user/business outcomes, not just tasks.') matches using product analytics on features they ship and checking whether the thing worked, not just whether it deployed."}
+      E3: {p: P3, sources: [cagan2017-inspired, sfia9], why: "PD-06 P3 ('Treats their area as a product; uses metrics to decide what to build for a domain.') is the capability-owning bar: contributing to discovery (prototyping to de-risk, bringing usage data to planning) is using metrics to decide what to build for a domain verbatim."}
+      E4: {p: P4, sources: [cagan2017-inspired, larson2021-staffeng], why: "PD-06 P4 ('Expert at aligning technical bets with product strategy across teams.') is Staff-scope — spotting product opportunities that only cross-team technical vantage reveals, redirecting initiatives early."}
+      E5: {p: P5, sources: [cagan2017-inspired, larson2021-staffeng], why: "PD-06 P5 ('Sets product direction for an org's technical surface.') matches influencing org product strategy with technical possibility, as a peer to product leadership."}
+      E6: {p: P6, sources: [cagan2017-inspired, larson2021-staffeng], why: "PD-06 P6 ('Shapes how the company creates value through technical products.') is company/industry scope — shaping company product direction through technology bets, spotting platform shifts that change the business."}
+    evidence:
+      E1: "Explains who uses the feature they're building and why it matters in their own words, tries their own change as a user before calling it done, and flags when a spec seems to contradict the user's goal."
+      E2: "Uses product analytics and user feedback on features they ship — checks whether the thing worked, not just whether it deployed — and proposes simpler versions that deliver the same outcome."
+      E3: "Contributes to discovery, not just delivery — prototypes to de-risk, brings usage data and user pain to planning, challenges requirements with evidence, and kills their own pet solutions when the data says so."
+      E4: "Spots the product opportunities and risks that only cross-team technical vantage reveals, killing or redirecting initiatives early with evidence rather than late with delivery pain."
+      E5: "Influences org product strategy with technical possibility — opening options product didn't know were cheap and closing ones that look cheap but aren't — as a peer to product leadership."
+      E6: "Shapes company product direction through technology bets, spotting the platform shifts that change the business."
+  - theme: "Scoping, prioritization & estimation"
     capability: PD-02
-    key_area: Leadership & Business Impact
-    key_attribute: Product & Business Impact
-    anchor: "McConnell, Software Estimation (2006); Reinertsen, Product Development Flow (2009)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Strategic & commercial awareness
+    key_area: "Leadership & Business Impact"
+    key_attribute: "Product & Business Impact"
+    anchor: mcconnell2006-estimation
+    anchor_why: "decomposition-based estimates as probabilistic forecasts, paired with Reinertsen's cost-of-delay economics for sequencing; trustworthy delivery is the currency senior ICs spend on everything else."
+    mappings:
+      E1: {p: P1, sources: [mcconnell2006-estimation, reinertsen2009-flow, sfia9], why: "PD-02 P1 ('Works highest-priority-first when told the priorities.') is the guided bar — breaking tasks into day-sized pieces and working the agreed priority order rather than the interesting order is following told priorities."}
+      E2: {p: P2, sources: [mcconnell2006-estimation, reinertsen2009-flow, sfia9], why: "PD-02 P2 ('Makes sound priority calls within scope; time-boxes uncertain work.') matches slicing features into thin vertical increments with stated assumptions, distinguishing must-have from nice-to-have, within their own scope."}
+      E3: {p: P3, sources: [mcconnell2006-estimation, reinertsen2009-flow, sfia9], why: "PD-02 P3 ('Balances cost/value/risk across a domain; resists hype; decisions hold up over months.') is the capability-owning bar: sequencing a capability's work by impact, risk, and cost of delay, trusted without escalation, is balancing cost/value/risk across a domain verbatim."}
+      E4: {p: P4, sources: [mcconnell2006-estimation, reinertsen2009-flow, larson2021-staffeng], why: "PD-02 P4 ('Expert at portfolio-level trade-offs; surfaces hidden assumptions; trusted tiebreaker.') is Staff-scope — de-risking and rebalancing multi-team programs, finding the critical path across teams."}
+      E5: {p: P5, sources: [mcconnell2006-estimation, reinertsen2009-flow, larson2021-staffeng], why: "PD-02 P5 ('Sets decision frameworks for the org.') matches shaping org-level investment allocation (product vs. platform vs. paydown) with the economic case written down."}
+      E6: {p: P6, sources: [mcconnell2006-estimation, reinertsen2009-flow, larson2021-staffeng], why: "PD-02 P6 ('Influences company strategic direction through judgment.') is company/industry scope — answering for the company's biggest technical commitments to the board, re-planning publicly when reality changes."}
+    evidence:
+      E1: "Breaks their tasks into day-sized pieces, flags slips the day they're known, and finishes what they start — working the agreed priority order rather than the interesting order."
+      E2: "Slices features into thin vertical increments that ship value early — decomposing across frontend, backend, and migration work — estimates with stated assumptions, distinguishes must-have from nice-to-have, and says no to scope creep with a reason."
+      E3: "Sequences a capability's work by expected impact, risk, and cost of delay — hardest unknowns first, states what they're deliberately not doing — and is trusted to trade quality, scope, and time inside the capability without escalation; their estimates are the ones planning trusts."
+      E4: "De-risks and rebalances multi-team programs — finds the critical path across teams, keeps every team's slice independently shippable, and cancels or shrinks initiatives with sunk costs when the math says to."
+      E5: "Shapes org-level investment allocation — product vs. platform vs. paydown, honest capacity math, the mechanisms that keep commitments credible — with the economic case written down."
+      E6: "Answers for the company's biggest technical commitments — to the board, to customers — re-planning publicly when reality changes; their read on feasibility is treated as load-bearing."
+  - theme: "Strategic & commercial awareness"
     capability: PD-07
-    key_area: Leadership & Business Impact
-    key_attribute: Product & Business Impact
-    anchor: "Rumelt, Good Strategy Bad Strategy (2011)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
-  - theme: Ownership & follow-through
+    key_area: "Leadership & Business Impact"
+    key_attribute: "Product & Business Impact"
+    anchor: rumelt2011-good-strategy
+    anchor_why: "good strategy is diagnosis, guiding policy, and coherent action; engineering choices are strategy in code with a cost model attached, and the habit of connecting work to outcomes starts at E1."
+    mappings:
+      E1: {p: P1, sources: [rumelt2011-good-strategy, sfia9], why: "PD-07 P1 ('States what business outcome their current task serves — and asks when they can't — treating infrastructure and license costs as real money.') is the guided bar by its own text: stating and asking is the Associate register, not yet checking whether it worked."}
+      E2: {p: P2, sources: [rumelt2011-good-strategy, sfia9], why: "PD-07 P2 ('Checks whether shipped work actually moved its metric and says so plainly when it didn't; weighs cost and maintenance burden in the technical choices they own.') is the independent-component bar: checking their own shipped work's metric, unaided, is component-scope accountability, one step past merely stating intent."}
+      E3: {p: P3, sources: [rumelt2011-good-strategy, sfia9], why: "PD-07 P3 ('Frames a domain's technical decisions in business terms — cost of delay, revenue risk, support load — pushes back on work with weak business rationale, and redirects effort when the numbers say the plan is wrong.') is the capability-owning bar by its own text: framing 'a domain's' decisions and redirecting effort is domain-scope authority a component owner doesn't have."}
+      E4: {p: P4, sources: [rumelt2011-good-strategy, larson2021-staffeng], why: "PD-07 P4 ('Builds the business case for the cross-team technical investments with the largest return and is trusted by leadership to have done the math.') is Staff-scope by its own text — cross-team investment cases trusted by leadership are the multi-team register."}
+      E5: {p: P5, sources: [rumelt2011-good-strategy, larson2021-staffeng], why: "PD-07 P5 ('Aligns an organization's technical strategy with its economics — cost curves, velocity, risk — owning trade-offs measured in staff-years and reporting them in the business's own terms.') is the org-authority bar: aligning 'an organization's' strategy, reported in staff-years, is Senior Staff's org-wide economic accountability."}
+      E6: {p: P6, sources: [rumelt2011-good-strategy, larson2021-staffeng], why: "PD-07 P6 ('Advises company leadership on where technology changes the business model and is accountable for company-level technology bets paying off.') is company/industry scope — advising leadership on business-model-level bets is the P6 executive-peer register."}
+    evidence:
+      E1: "Can say, when their tech lead asks, that the ticket they're working means fewer support escalations for a specific customer complaint — and asks what the actual dollar impact is when they genuinely don't know."
+      E2: "Checks the analytics dashboard two weeks after their checkout-flow change ships, finds conversion unchanged, and says so in the team retro instead of letting the ticket quietly close as 'done'."
+      E3: "Tells the roadmap owner that a requested real-time-sync feature isn't worth the infra spend for the traffic it would see, backs it with the hosting-cost delta and the support-ticket volume it would actually resolve, and gets the plan changed to a cheaper polling approach."
+      E4: "Builds the cost-benefit case for consolidating three teams' duplicate notification services into one shared platform, with the infra-savings and engineering-hours numbers a director signs off on without re-deriving them."
+      E5: "Reports the org's infrastructure cost curve against velocity to leadership every quarter, and uses it to kill a popular but uneconomical microservices-per-team pattern that was inflating both cloud spend and cross-team coordination cost."
+      E6: "Tells the executive team which of three competing platform bets actually changes the unit economics of the core product, and is the person whose read on that question the CEO uses to decide."
+  - theme: "Ownership & follow-through"
     capability: PD-05
-    key_area: Leadership & Business Impact
-    key_attribute: Product & Business Impact
-    anchor: "Amazon Leadership Principles - Ownership"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    key_area: "Leadership & Business Impact"
+    key_attribute: "Product & Business Impact"
+    anchor: willink-babin2015-extremeownership
+    anchor_why: "act on behalf of the entire company; never say that's not my job — substituted for Amazon's Leadership Principles (no bibliography entry) since Extreme Ownership is the catalog's own PD-05 anchor at every level; ladders reward shipped outcomes users get, not activity."
+    mappings:
+      E1: {p: P1, sources: [willink-babin2015-extremeownership, sfia9], why: "PD-05 P1 ('Takes ownership of assigned tasks; honest about progress and blockers.') is the guided bar — seeing assigned tasks through to verified-in-production and reporting status honestly including the bad news is literally that text."}
+      E2: {p: P2, sources: [willink-babin2015-extremeownership, sfia9], why: "PD-05 P2 ('Owns components end-to-end; delivers committed work reliably.') matches owning features from ambiguity to adoption (chasing the dependency, fixing the post-launch bug), reliably."}
+      E3: {p: P3, sources: [willink-babin2015-extremeownership, sfia9], why: "PD-05 P3 ('Owns a domain; lands multi-week efforts without surprises; pushes back on unrealistic scope with reasons.') is the capability-owning bar by its own text: answering for a capability's outcomes and picking up ownerless critical work is owning a domain verbatim."}
+      E4: {p: P4, sources: [willink-babin2015-extremeownership, larson2021-staffeng], why: "PD-05 P4 ('Owns cross-team initiatives; unblocks teams; kills failing approaches early.') is Staff-scope by its own text: taking ownership of cross-team outcomes nobody else can carry, without formal authority, is exactly that register."}
+      E5: {p: P5, sources: [willink-babin2015-extremeownership, larson2021-staffeng], why: "PD-05 P5 ('Owns an org-level portfolio of bets; sets direction others follow.') is the org-authority bar: answering for org-level technical outcomes to leadership, including the failures, is portfolio-level accountability."}
+      E6: {p: P6, sources: [willink-babin2015-extremeownership, larson2021-staffeng], why: "PD-05 P6 ('The go-to when something company-critical must land.') is company/industry scope — being the name leadership puts on the hardest company-critical outcome, personally, is the P6 register."}
+    evidence:
+      E1: "Sees assigned tasks through to verified-in-production, not just merged, and reports status honestly including the bad news."
+      E2: "Owns features from ambiguity to adoption — chases the dependency, fixes the post-launch bug, closes the loop with the requester."
+      E3: "Answers for a capability's outcomes — quality, reliability, user impact — and picks up the critical work that has no owner rather than letting it drop."
+      E4: "Takes ownership of cross-team outcomes nobody else can carry, staying accountable through delivery even where they hold no authority."
+      E5: "Answers for org-level technical outcomes to leadership, including the failures."
+      E6: "Is the name leadership puts on the incident channel when a company-critical migration is failing hours before a contractual deadline, and stays personally accountable for the outcome until it lands."

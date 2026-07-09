@@ -7,7 +7,7 @@ Computer Science Foundations,Engineering & Technology,CS,3,9
 Mobile Engineering,Engineering & Technology,MOB,4,12
 Data Engineering & Analytics,Engineering & Technology,DATA,5,20
 AI & ML Engineering,Engineering & Technology,AI,6,21
-"Systems, Infrastructure & Operations",Engineering & Technology,OPS,8,32
+"Systems, Infrastructure & Operations",Engineering & Technology,OPS,8,33
 Security Engineering,Engineering & Technology,SEC,4,18
 Quality Engineering & Test,Engineering & Technology,QA,4,14
 Game Development,Engineering & Technology,GAME,4,12
@@ -35,3 +35,4 @@ Business & Revenue Operations,Business & Corporate Functions,BIZ,4,10
 Program & Portfolio Management,Business & Corporate Functions,PPM,3,8
 Operations & Supply Chain,Business & Corporate Functions,SCM,5,15
 Corporate IT & Workplace Technology,Business & Corporate Functions,CIT,5,10
+Food & Beverage Manufacturing,Business & Corporate Functions,FBM,11,25

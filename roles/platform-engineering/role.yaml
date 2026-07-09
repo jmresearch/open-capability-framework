@@ -8,8 +8,37 @@ scope_note: >
   level: sustained excellence at capability scope is a complete career; E4+ is a different
   job defined by multi-team leverage. Consolidated 2026-07 by union from five independent
   same-methodology sources (163 source competencies -> 37 canonical); proficiency targets
-  follow the IC guide E1:P1 ... E6:P6 - per-competency review found the source cells
-  consistently written to those bars, so no deviations were warranted.
+  follow the IC guide E1:P1 ... E6:P6. R3 sourced-derivation retrofit (2026-07-09): every
+  mapping now carries a bibliography source and a per-competency, per-level why grounded in
+  that capability's actual P1-P6 catalog text -- the earlier blanket scope_note claim ("per-
+  competency review found the source cells consistently written to those bars") is superseded
+  by this per-cell sourcing. The diagonal held for all 37 competencies on re-derivation: every
+  capability's own P1-P6 profile independently escalates task -> component -> domain/capability
+  -> multiple-teams -> organization -> company in step with E1-E6 (several -- OPS-31, OPS-32,
+  SEC-18, OPS-30, LI-03, PD-04, PD-02 -- use those exact scope nouns in their catalog text), so
+  no mapping deviates from Ek:Pk; see each competency's mappings[].why for the per-level catalog
+  citation. Role-leveling source convention (constant across the ladder, not per-competency):
+  E1-E3 pair the competency anchor with sfia9 (SFIA's guided/independent/proficient
+  responsibility tiers); E4-E6 pair it with larson2021-staffeng (StaffEng's senior-IC
+  archetypes for multi-team/org/company scope). OPS-06 (Incident response / Learning from
+  incidents) and OPS-27 (Golden paths & paved roads / Self-service provisioning) are
+  deliberate double-maps: the catalog capability's single description spans both readings, so
+  two competencies share one id with identical bars, differentiated in evidence/why by which
+  half of the capability's description each theme instantiates -- flagged as future
+  catalog-split candidates, not forced into a weaker single mapping. Four anchors resolve to a
+  close existing bibliography substitute rather than the original free-text citation verbatim
+  (no new entries needed): Code review's Sadowski et al. case study -> google-eng-practices
+  (Google's own published review standard); Container orchestration's Burns/Grant/Oppenheimer/
+  Brewer/Wilkes Borg/Omega/Kubernetes paper -> hightower2022 (Kubernetes: Up and Running,
+  co-authored by Burns); Compliance & audit readiness's NIST OSCAL -> nist-csf2 (NIST's
+  Cybersecurity Framework 2.0, the catalog's existing NIST compliance anchor); Mentorship &
+  knowledge sharing's Lave & Wenger 1991 Situated Learning -> wenger1998-communitiesofpractice
+  (Wenger's own solo continuation of the same legitimate-peripheral-participation theory).
+ladder_name: Platform Engineer (IC Technical, E1-E6) - Canonical
+ladder_description: >
+  Canonical six-level IC ladder for platform engineering, consolidated by union from five
+  independent same-methodology generations; E3 Senior is the terminal level.
+derived: true
 levels:
   - {code: E1, title: Associate Platform Engineer, scope: "task", focus: "Learns the platform and ships well-defined tasks with guidance"}
   - {code: E2, title: Platform Engineer, scope: "component", focus: "Owns platform components end to end and unblocks internal users independently"}
@@ -23,227 +52,745 @@ competencies:
     capability: PM-01
     key_area: Platform as a Product
     key_attribute: Product Discovery & Feedback
-    anchor: "Noda, Storey, Forsgren & Greiler, \"DevEx: What Actually Drives Productivity\" (ACM Queue, 2023)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: noda2023-devex
+    anchor_why: "grounds discovery in evidence about how developers actually experience the platform, not provider assumptions."
+    mappings:
+      E1: {p: P1, sources: [noda2023-devex, sfia9], why: "PM-01 P1 ('runs scripted customer interviews and notes findings under a senior researcher's guidance') is the guided-task bar an Associate operates at -- they sit in on interviews and write up friction, they do not yet run discovery."}
+      E2: {p: P2, sources: [noda2023-devex, sfia9], why: "P2 ('plans and conducts standard discovery for a feature, synthesizing themes with normal review') matches a Platform Engineer running structured interviews for the one component they own, with review as the independence check."}
+      E3: {p: P3, sources: [noda2023-devex, sfia9], why: "P3 ('independently frames ambiguous problems, selects fitting methods, and separates signal from noise') is what owning discovery for a whole capability requires -- no senior researcher frames the problem for them anymore. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [noda2023-devex, larson2021-staffeng], why: "P4 ('designs the team's discovery approach and untangles findings others find contradictory') is Staff-scope: the deliverable is a reusable discovery method other platform teams adopt, not one more interview round."}
+      E5: {p: P5, sources: [noda2023-devex, larson2021-staffeng], why: "P5 ('sets the org's research strategy and anticipates emerging customer needs before they surface') matches owning a standing, anticipatory research practice across engineering."}
+      E6: {p: P6, sources: [noda2023-devex, larson2021-staffeng], why: "P6 ('defines what rigorous product discovery means and shapes the discipline's practice externally') is the only DevEx-research bar with company-plus-external reach."}
+    evidence:
+      E1: "Shadows platform users and sits in on interviews and support rotations, writing up the friction they hit."
+      E2: "Runs structured interviews and support-channel reviews with the internal engineers using their component."
+      E3: "Designs and runs the discovery process for a capability."
+      E4: "Synthesizes research across several product teams into shared personas and friction maps other platform teams adopt."
+      E5: "Establishes the organization's standing platform research practice."
+      E6: "Represents the internal developer experience at company level."
   - theme: Adoption & success metrics
     capability: PM-10
     key_area: Platform as a Product
     key_attribute: Product Discovery & Feedback
-    anchor: "Forsgren, Humble & Kim, *Accelerate* (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: forsgren2018
+    anchor_why: "supplies the outcome metrics that make voluntary platform adoption measurable and defensible."
+    mappings:
+      E1: {p: P1, sources: [forsgren2018, sfia9], why: "PM-10 P1 ('pulls and reports defined product metrics under direction') is the guided-reporting bar -- an Associate charts numbers someone else defined, not yet picking them."}
+      E2: {p: P2, sources: [forsgren2018, sfia9], why: "P2 ('builds and interprets metric dashboards for a product with normal review') matches instrumenting one component's adoption/retention signals under normal review."}
+      E3: {p: P3, sources: [forsgren2018, sfia9], why: "P3 ('independently designs metric frameworks and draws sound conclusions from messy data') is what defining the success metrics for a whole capability requires. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [forsgren2018, larson2021-staffeng], why: "P4 ('defines the measurement model teams adopt and diagnoses misleading metrics others trust') matches standardizing how several platform teams measure adoption so the numbers compose."}
+      E5: {p: P5, sources: [forsgren2018, larson2021-staffeng], why: "P5 ('sets product-analytics strategy across the org and anticipates which signals will matter') matches owning the org's platform scorecard."}
+      E6: {p: P6, sources: [forsgren2018, larson2021-staffeng], why: "P6 ('defines rigorous product measurement for the discipline and is cited externally on it') matches framing platform value in company terms with external credibility."}
+    evidence:
+      E1: "Pulls and charts existing adoption and usage numbers accurately when asked."
+      E2: "Instruments their component with adoption, retention, and satisfaction signals."
+      E3: "Defines the success metrics for a capability."
+      E4: "Standardizes how several platform teams measure adoption so their numbers compose."
+      E5: "Owns the organization's platform scorecard."
+      E6: "Frames platform value in company terms."
   - theme: Thinnest viable platform
     capability: OPS-31
     key_area: Platform as a Product
     key_attribute: Platform Strategy & Scope
-    anchor: "Skelton & Pais, *Team Topologies* (2019)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: skelton-pais2019
+    anchor_why: "defines the Thinnest Viable Platform -- the sizing test every build-buy-adopt and retirement decision here is judged against."
+    mappings:
+      E1: {p: P1, sources: [skelton-pais2019, sfia9], why: "OPS-31 P1 ('checks for an existing tool, service, or open-source option before writing new code ... asks whether a proposed task serves a real user need') is written at task scope -- one build decision, not a portfolio of them."}
+      E2: {p: P2, sources: [skelton-pais2019, sfia9], why: "P2 ('proposes wrapping or configuring an existing service instead of building new when it meets the need ... defending removal of unused features in their own component') names 'their own component' verbatim -- the E2 band."}
+      E3: {p: P3, sources: [skelton-pais2019, sfia9], why: "P3 ('keeps a whole capability at its thinnest viable size -- makes explicit, documented build-buy-adopt decisions ... retires surface area whose maintenance cost exceeds its value') names 'a whole capability' verbatim, and the terminal register: sustained thinness discipline over one capability is a complete job. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [skelton-pais2019, larson2021-staffeng], why: "P4 ('arbitrates overlap and sprawl across teams -- merges duplicate offerings ... sets the bar for what deserves to be shared platform at all') names 'across teams' verbatim -- E4."}
+      E5: {p: P5, sources: [skelton-pais2019, larson2021-staffeng], why: "P5 ('shapes the organization's platform boundary -- what the platform owns versus product teams versus vendors -- and drives the organization to shed what it should not own') names 'the organization' verbatim -- E5."}
+      E6: {p: P6, sources: [skelton-pais2019, larson2021-staffeng], why: "P6 ('sets the build-buy-adopt principles an entire company references, keeping company-scale platform investment proportional to the delivery it unlocks') names company scale verbatim -- E6."}
+    evidence:
+      E1: "Finds that an existing internal CLI already covers most of a proposed new tool's use case and raises it in planning instead of starting a new build."
+      E2: "Recommends adopting the org's existing secrets-manager service instead of building a bespoke wrapper for their component, and writes up the build-vs-adopt comparison that settles it."
+      E3: "Retires half a capability's plugin surface after usage telemetry shows only two of eight plugins are load-bearing, documenting the build-buy-adopt call for what stays."
+      E4: "Merges two platform teams' overlapping feature-flag services into one and retires the duplicate."
+      E5: "Draws the line for what the platform organization owns versus what product teams should just buy, and gets teams to hand back components that crossed it."
+      E6: "Kills a company-wide platform initiative whose maintenance cost has outgrown the delivery it unlocks, over objections that the build already happened."
   - theme: Platform roadmap & prioritization
     capability: PM-05
     key_area: Platform as a Product
     key_attribute: Platform Strategy & Scope
-    anchor: "Perri, *Escaping the Build Trap* (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: perri2018-escapingbuildtrap
+    anchor_why: "holds the platform roadmap to outcome-over-output product discipline rather than an infrastructure ticket queue."
+    mappings:
+      E1: {p: P1, sources: [perri2018-escapingbuildtrap, sfia9], why: "PM-05 P1 ('maintains roadmap items and updates status under guidance') is the guided bar -- an Associate can explain why their task is on the roadmap without owning the roadmap."}
+      E2: {p: P2, sources: [perri2018-escapingbuildtrap, sfia9], why: "P2 ('builds and sequences a credible roadmap for one product with normal review') matches sequencing one component's backlog by user impact."}
+      E3: {p: P3, sources: [perri2018-escapingbuildtrap, sfia9], why: "P3 ('independently balances competing priorities and replans confidently under shifting constraints') is what owning a capability's roadmap requires without a product manager holding the pen. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [perri2018-escapingbuildtrap, larson2021-staffeng], why: "P4 ('designs the planning approach others use and resolves cross-team portfolio conflicts') matches aligning roadmaps across several platform teams."}
+      E5: {p: P5, sources: [perri2018-escapingbuildtrap, larson2021-staffeng], why: "P5 ('sets portfolio planning strategy and foresees where investment should shift next') matches driving the platform organization's investment strategy."}
+      E6: {p: P6, sources: [perri2018-escapingbuildtrap, larson2021-staffeng], why: "P6 ('defines portfolio-planning best practice for the field and is recognized for it') matches setting multi-year platform direction for the company."}
+    evidence:
+      E1: "Explains why their current task is on the roadmap."
+      E2: "Sequences their component's backlog by user impact."
+      E3: "Owns the roadmap for a platform capability."
+      E4: "Aligns roadmaps across platform teams."
+      E5: "Drives the platform organization's investment strategy."
+      E6: "Sets multi-year platform direction for the company."
   - theme: Golden paths & paved roads
     capability: OPS-27
     key_area: Platform as a Product
     key_attribute: Developer Experience
-    anchor: "Spotify Engineering, \"How We Use Golden Paths to Solve Fragmentation in Our Software Ecosystem\" (2020)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: spotify2020-goldenpaths
+    anchor_why: "the named industry pattern this competency's templates, defaults, and escape hatches implement."
+    mappings:
+      E1: {p: P1, sources: [spotify2020-goldenpaths, sfia9], why: "OPS-27 P1 ('maintains existing self-service platform components under review, addressing documented user requests') matches an Associate following the golden path as a real user would and reporting exactly where it breaks -- consuming the road before building it."}
+      E2: {p: P2, sources: [spotify2020-goldenpaths, sfia9], why: "P2 ('independently builds and supports standard platform capabilities and templates for routine developer needs with review') matches building and maintaining golden-path assets scoped to one component."}
+      E3: {p: P3, sources: [spotify2020-goldenpaths, sfia9], why: "P3 ('designs self-service workflows for ambiguous needs, reducing friction and resolving hard abstraction and adoption issues') matches designing a golden path for a whole use case end to end -- the ambiguous, cross-cutting judgment a template author needs. This reading of OPS-27 is the paved-road half of the capability's description; Self-service provisioning below carries the automation-interface half. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [spotify2020-goldenpaths, larson2021-staffeng], why: "P4 ('defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems') matches reconciling golden paths across teams into one coherent journey."}
+      E5: {p: P5, sources: [spotify2020-goldenpaths, larson2021-staffeng], why: "P5 ('sets organization-wide platform strategy, anticipating how developer-experience engineering should evolve') matches defining the organization's paved-road strategy."}
+      E6: {p: P6, sources: [spotify2020-goldenpaths, larson2021-staffeng], why: "P6 ('defines what excellent platform engineering means for the field, shaping industry developer-experience practice') matches making the paved road the company default through economics and quality rather than mandate."}
+    evidence:
+      E1: "Follows the golden path as a real user would and reports exactly where it breaks."
+      E2: "Builds and maintains golden-path assets for their component."
+      E3: "Designs a golden path for a whole use case end to end."
+      E4: "Reconciles golden paths across teams into coherent journeys."
+      E5: "Defines the organization's paved-road strategy."
+      E6: "Makes the paved road the company default by economics and quality, not policy."
   - theme: Cognitive load reduction
     capability: OPS-32
     key_area: Platform as a Product
     key_attribute: Developer Experience
-    anchor: "Skelton & Pais, *Team Topologies* (2019), applying Sweller's cognitive load theory (1988)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: sweller1988
+    anchor_why: "makes load reduction the platform's defining purpose rather than optional polish."
+    mappings:
+      E1: {p: P1, sources: [sweller1988, sfia9], why: "OPS-32 P1 ('names the exact docs, errors, and setup steps that forced them to understand internals a consumer should not need, and files concrete simplification issues') is task-scoped noticing, not yet fixing -- the Associate bar."}
+      E2: {p: P2, sources: [sweller1988, sfia9], why: "P2 ('reduces the concepts and steps a consumer must hold to use their component ... and shows the before/after') names 'their component' verbatim -- E2."}
+      E3: {p: P3, sources: [sweller1988, sfia9], why: "P3 ('designs a capability's abstractions around what consumers must not have to know ... measures load with time-to-first-success and support-ticket themes') names 'a capability's abstractions' verbatim, treating load as an owned, measured product property rather than a task-level fix. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [sweller1988, larson2021-staffeng], why: "P4 ('audits cognitive load across team boundaries ... drives the cross-boundary simplifications no single team could make') is explicitly cross-team-boundary work -- E4."}
+      E5: {p: P5, sources: [sweller1988, larson2021-staffeng], why: "P5 ('makes cognitive load a first-class organizational measure with explicit load budgets, vetoing designs that externalize complexity onto consuming teams') matches owning an org-wide load budget with veto authority."}
+      E6: {p: P6, sources: [sweller1988, larson2021-staffeng], why: "P6 ('shapes company-level technology and team-boundary choices explicitly around team cognitive load, arguing for fewer, deeper abstractions over sprawling optionality') is explicitly company-level."}
+    evidence:
+      E1: "Flags that provisioning a database requires reading the underlying Terraform module's internals just to fill in one required field, and files the doc fix."
+      E2: "Collapses a twelve-field service-creation form down to two required fields by defaulting the rest, and shows the before/after time-to-first-deploy."
+      E3: "Rewrites a capability's onboarding so a first-time consumer ships without reading the implementation, tracking time-to-first-success as the load metric."
+      E4: "Finds three teams independently solved the same secrets-rotation problem because none could see the others' internals, and drives the shared fix across all three."
+      E5: "Sets an explicit cognitive-load budget per platform surface and vetoes a design that would have pushed new required concepts onto every consuming team."
+      E6: "Argues successfully against a company-wide multi-cloud push on cognitive-load grounds -- fewer, deeper abstractions over optionality -- and the simpler single-cloud default ships instead."
   # ---- Platform Software Engineering ----
   - theme: Platform system design
     capability: SWE-05
     key_area: Platform Software Engineering
     key_attribute: Design & Architecture
-    anchor: "Conway, \"How Do Committees Invent?\" (Datamation, 1968)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: conway1968
+    anchor_why: "platform architecture and team boundaries must be designed together, or Conway's Law designs them for you."
+    mappings:
+      E1: {p: P1, sources: [conway1968, sfia9], why: "SWE-05 P1 ('implements designs specified by others; asks why, not just how') is the guided-implementation bar -- an Associate explains the architecture, they do not yet author it."}
+      E2: {p: P2, sources: [conway1968, sfia9], why: "P2 ('designs sound components; understands coupling, cohesion, interface design') matches designing a component within an established architecture."}
+      E3: {p: P3, sources: [conway1968, sfia9], why: "P3 ('designs systems for evolution: clean seams, versioned interfaces, replaceable parts') is the trade-off-driven design-doc judgment a capability owner needs -- naming alternatives, failure modes, and evolution paths themselves. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [conway1968, larson2021-staffeng], why: "P4 ('mastery of architecture for complex systems; sets patterns and prevents drift') matches driving designs that cut across several teams' systems."}
+      E5: {p: P5, sources: [conway1968, larson2021-staffeng], why: "P5 ('sets multi-year architecture direction across the org') matches setting the architectural direction the platform organization builds against."}
+      E6: {p: P6, sources: [conway1968, larson2021-staffeng], why: "P6 ('authoritative and externally credible; defines architectural approach others follow') matches making the company's foundational architecture bets."}
+    evidence:
+      E1: "Explains the platform's architecture in their own words."
+      E2: "Designs a component within an established architecture."
+      E3: "Selects patterns by trade-off in design docs that name alternatives, failure modes, and evolution paths."
+      E4: "Drives designs that cut across several teams' systems."
+      E5: "Sets the architectural direction the platform organization builds against."
+      E6: "Makes the company's foundational architecture bets."
   - theme: API & interface design
     capability: SWE-07
     key_area: Platform Software Engineering
     key_attribute: Design & Architecture
-    anchor: "Winters, Manshreck & Wright, *Software Engineering at Google* (2020) - Hyrum's Law"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: winters2020
+    anchor_why: "justifies treating interfaces as long-lived contracts and breaking changes as incidents."
+    mappings:
+      E1: {p: P1, sources: [winters2020, sfia9], why: "SWE-07 P1 ('understands HTTP/REST and the deploy pipeline; makes guided changes') is the guided bar -- an Associate uses the platform's APIs correctly from documentation alone, they do not yet design one."}
+      E2: {p: P2, sources: [winters2020, sfia9], why: "P2 ('designs clean APIs; understands rate limits, retries, timeouts, idempotency') matches extending a component's interface without breaking consumers."}
+      E3: {p: P3, sources: [winters2020, sfia9], why: "P3 ('designs services for scale and cost; understands distributed failure modes') is what treating a capability's interface as a long-lived product contract requires -- Hyrum's Law-aware design, not a one-off endpoint. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [winters2020, larson2021-staffeng], why: "P4 ('expert in platform/service design (multi-tenancy, capacity, shared services)') matches aligning interface conventions across several teams' APIs so the platform feels like one product."}
+      E5: {p: P5, sources: [winters2020, larson2021-staffeng], why: "P5 ('sets interface standards used across the org') matches owning the organization's interface standards."}
+      E6: {p: P6, sources: [winters2020, larson2021-staffeng], why: "P6 ('defines company-wide API approach; trusted with irreversible interface bets') matches setting the company's contract with its developers."}
+    evidence:
+      E1: "Uses the platform's APIs correctly from documentation alone."
+      E2: "Extends a component's interface without breaking consumers."
+      E3: "Designs a capability's interface as a long-lived product contract."
+      E4: "Aligns interface conventions across several teams' APIs so the platform feels like one product."
+      E5: "Owns the organization's interface standards."
+      E6: "Sets the company's contract with its developers."
   - theme: Coding & implementation
     capability: SWE-02
     key_area: Platform Software Engineering
     key_attribute: Code Craft & Quality
-    anchor: "Fowler, *Refactoring* (2nd ed., 2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: fowler2018
+    anchor_why: "sets the craft bar for platform code that many teams depend on."
+    mappings:
+      E1: {p: P1, sources: [fowler2018, sfia9], why: "SWE-02 P1 ('writes functional, readable code; uses version control correctly; responds well to review') is the entry bar -- small, convention-following changes that pass review with minor feedback."}
+      E2: {p: P2, sources: [fowler2018, sfia9], why: "P2 ('writes clean, documented, modular code; gives useful review feedback') matches shipping production-quality code independently."}
+      E3: {p: P3, sources: [fowler2018, sfia9], why: "P3 ('designs for maintainability; leads refactors of problem areas; review feedback teaches') matches writing the code other engineers study to learn how it's done on this platform. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [fowler2018, larson2021-staffeng], why: "P4 ('expert in code health at scale (shared libraries, deprecations, large migrations)') matches raising the code-health baseline across teams."}
+      E5: {p: P5, sources: [fowler2018, larson2021-staffeng], why: "P5 ('shapes org-wide engineering standards for long-lived codebases') matches defining what code quality means for the organization."}
+      E6: {p: P6, sources: [fowler2018, larson2021-staffeng], why: "P6 ('defines what good engineering looks like company-wide; externally recognized') matches holding the company's long-horizon code health against short-term pressure."}
+    evidence:
+      E1: "Ships small, working changes that follow the codebase's conventions and pass review with minor feedback."
+      E2: "Ships production-quality code independently."
+      E3: "Writes the code others study to learn how it is done here."
+      E4: "Raises the code-health baseline across teams."
+      E5: "Defines what code quality means for the organization."
+      E6: "Holds the company's long-horizon code health against short-term pressure."
   - theme: Code review
     capability: SWE-04
     key_area: Platform Software Engineering
     key_attribute: Code Craft & Quality
-    anchor: "Sadowski et al., \"Modern Code Review: A Case Study at Google\" (ICSE-SEIP, 2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: google-eng-practices
+    anchor_why: "grounds the progression from catching defects to calibrating review culture."
+    mappings:
+      E1: {p: P1, sources: [google-eng-practices, sfia9], why: "SWE-04 P1 ('navigates the codebase and understands code shown; reviews small changes') matches reviewing peers' changes for readability and test coverage and asking genuine questions."}
+      E2: {p: P2, sources: [google-eng-practices, sfia9], why: "P2 ('independently understands unfamiliar code; gives timely, specific review feedback') matches giving reviews that catch real defects without a second reviewer double-checking them."}
+      E3: {p: P3, sources: [google-eng-practices, sfia9], why: "P3 ('quickly grasps complex/legacy systems; reviews raise the bar across a domain') matches reviewing for systemic risk, not just correctness, at capability scope. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [google-eng-practices, larson2021-staffeng], why: "P4 ('expert at reviewing high-risk changes; review standards spread across teams') matches calibrating review culture across teams."}
+      E5: {p: P5, sources: [google-eng-practices, larson2021-staffeng], why: "P5 ('authority on review practice org-wide') matches designing the organization's quality gates."}
+      E6: {p: P6, sources: [google-eng-practices, larson2021-staffeng], why: "P6 ('defines what good review looks like; shapes industry-facing practice') matches reviewing the changes that change the company."}
+    evidence:
+      E1: "Reviews peers' changes for readability and test coverage and asks genuine questions."
+      E2: "Gives reviews that catch real defects."
+      E3: "Reviews for systemic risk, not just correctness."
+      E4: "Calibrates review culture across teams."
+      E5: "Designs the organization's quality gates."
+      E6: "Reviews the changes that change the company."
   - theme: Testing & verification
     capability: SWE-03
     key_area: Platform Software Engineering
     key_attribute: Code Craft & Quality
-    anchor: "Cohn (2009) as refined by Vocke, \"The Practical Test Pyramid\" (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: cohn2009
+    anchor_why: "gives the coverage-balance and contract-testing discipline platform release confidence rests on."
+    mappings:
+      E1: {p: P1, sources: [cohn2009, sfia9], why: "SWE-03 P1 ('writes unit tests with guidance; tests own changes before merging') matches writing unit tests that pin the behavior of a change, including the failure path."}
+      E2: {p: P2, sources: [cohn2009, sfia9], why: "P2 ('applies the testing pyramid; everything shipped arrives tested; mocks dependencies sensibly') matches balancing unit, integration, and end-to-end coverage for one component."}
+      E3: {p: P3, sources: [cohn2009, sfia9], why: "P3 ('designs testable systems (contract, property-based, replay from prod); owns a test strategy') matches designing the verification strategy for a whole capability. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [cohn2009, larson2021-staffeng], why: "P4 ('expert in test strategy at scale (test data, environments, deployment safety)') matches building test infrastructure several teams rely on."}
+      E5: {p: P5, sources: [cohn2009, larson2021-staffeng], why: "P5 ('sets testing/verification discipline across the org') matches setting the organization's testing standards."}
+      E6: {p: P6, sources: [cohn2009, larson2021-staffeng], why: "P6 ('shapes the company-wide quality culture; advances verification practice') matches framing verification as company risk management."}
+    evidence:
+      E1: "Writes unit tests that pin the behavior of their change, including the failure path."
+      E2: "Balances unit, integration, and end-to-end coverage for their component."
+      E3: "Designs the verification strategy for a capability."
+      E4: "Builds test infrastructure several teams rely on."
+      E5: "Sets the organization's testing standards."
+      E6: "Frames verification as company risk management."
   - theme: Delivery automation & CI/CD
     capability: OPS-02
     key_area: Platform Software Engineering
     key_attribute: Delivery Automation
-    anchor: "Humble & Farley, *Continuous Delivery* (2010)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: humble-farley2010
+    anchor_why: "defines the deployment pipeline behind pipeline-as-product and making the safe path the easy path."
+    mappings:
+      E1: {p: P1, sources: [humble-farley2010, sfia9], why: "OPS-02 P1 ('uses and makes guided fixes to existing pipelines') matches shipping through the pipeline correctly as an Associate."}
+      E2: {p: P2, sources: [humble-farley2010, sfia9], why: "P2 ('independently builds and improves pipelines for their area') names 'their area' -- component scope, E2."}
+      E3: {p: P3, sources: [humble-farley2010, sfia9], why: "P3 ('designs deployment safety (progressive delivery, rollback) for a domain') names 'a domain' verbatim -- treating CI/CD itself as a product for a capability's users. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [humble-farley2010, larson2021-staffeng], why: "P4 ('expert in delivery engineering at scale; sets standards across teams') matches building delivery infrastructure multiple teams ship through."}
+      E5: {p: P5, sources: [humble-farley2010, larson2021-staffeng], why: "P5 ('defines the org's delivery/release philosophy') matches owning the organization's delivery architecture."}
+      E6: {p: P6, sources: [humble-farley2010, larson2021-staffeng], why: "P6 ('advances release engineering practice company-wide') matches setting company delivery strategy."}
+    evidence:
+      E1: "Ships through the pipeline correctly."
+      E2: "Owns their component's pipeline."
+      E3: "Designs CI/CD as a product for a capability's users."
+      E4: "Builds delivery infrastructure multiple teams ship through."
+      E5: "Owns the organization's delivery architecture."
+      E6: "Sets company delivery strategy."
   - theme: Deprecation & migration management
     capability: OPS-30
     key_area: Platform Software Engineering
     key_attribute: Delivery Automation
-    anchor: "Winters, Manshreck & Wright, *Software Engineering at Google* (2020), deprecation chapter"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: winters2020
+    anchor_why: "treats deprecation as planned, resourced engineering work with migration paths, not neglect."
+    mappings:
+      E1: {p: P1, sources: [winters2020, sfia9], why: "OPS-30 P1 ('follows the release process exactly ... verifies their change in production, and rolls back with guidance') matches executing migration and release steps from a runbook accurately."}
+      E2: {p: P2, sources: [winters2020, sfia9], why: "P2 ('ships behind flags with a rollback plan by default, monitors rollouts and reverts on their own judgment ... writes changes that tolerate both versions running during rollout') matches migrating their component's consumers off an old interface on their own judgment."}
+      E3: {p: P3, sources: [winters2020, sfia9], why: "P3 ('designs the rollout for risky changes ... reviews others' rollout plans for blast radius; the person teams ask how to ship something safely') matches planning and running a capability-level deprecation as a managed migration. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [winters2020, larson2021-staffeng], why: "P4 ('builds progressive-delivery machinery multiple teams release through ... retiring deploy patterns that cause repeat incidents') names 'multiple teams' verbatim -- E4."}
+      E5: {p: P5, sources: [winters2020, larson2021-staffeng], why: "P5 ('owns release policy for an organization and its delivery metrics ... dismantling ceremony that adds no safety') matches setting the organization's deprecation policy."}
+      E6: {p: P6, sources: [winters2020, larson2021-staffeng], why: "P6 ('sets how an entire company's software reaches customers ... and defends it to executives, auditors, and regulators') matches setting the company's compatibility promise."}
+    evidence:
+      E1: "Executes migration and release steps from a runbook accurately."
+      E2: "Migrates their component's consumers off an old interface."
+      E3: "Plans and runs a capability-level deprecation as a managed migration."
+      E4: "Coordinates migrations that cross team boundaries."
+      E5: "Sets the organization's deprecation policy."
+      E6: "Sets the company's compatibility promise."
   # ---- Infrastructure & Cloud ----
   - theme: Cloud architecture
     capability: OPS-01
     key_area: Infrastructure & Cloud
     key_attribute: Cloud & Compute
-    anchor: "Amazon Web Services, *Well-Architected Framework* (2015-)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: aws-waf
+    anchor_why: "the industry-standard rubric for the cloud trade-offs this competency makes and reviews."
+    mappings:
+      E1: {p: P1, sources: [aws-waf, sfia9], why: "OPS-01 P1 ('makes guided changes to existing infra; understands core cloud services') matches provisioning and modifying cloud resources from documented patterns."}
+      E2: {p: P2, sources: [aws-waf, sfia9], why: "P2 ('independently builds and manages standard resources using IaC') matches designing the cloud footprint for one component."}
+      E3: {p: P3, sources: [aws-waf, sfia9], why: "P3 ('designs infra for scale, cost and resilience across a domain') names 'a domain' verbatim -- architecting a capability's infrastructure for the failure domains that matter. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [aws-waf, larson2021-staffeng], why: "P4 ('expert in infra platforms used by many teams; owns major cost strategy') names use by 'many teams' -- E4, designing shared infrastructure patterns."}
+      E5: {p: P5, sources: [aws-waf, larson2021-staffeng], why: "P5 ('sets org infrastructure direction') matches setting the organization's cloud strategy."}
+      E6: {p: P6, sources: [aws-waf, larson2021-staffeng], why: "P6 ('trusted with company-level platform bets; defines infra strategy') matches owning company-level infrastructure bets."}
+    evidence:
+      E1: "Provisions and modifies cloud resources from documented patterns."
+      E2: "Designs the cloud footprint for a component."
+      E3: "Architects a capability's infrastructure for the failure domains that matter."
+      E4: "Designs shared infrastructure patterns."
+      E5: "Sets the organization's cloud strategy."
+      E6: "Owns company-level infrastructure bets."
   - theme: Container orchestration & runtime
     capability: OPS-14
     key_area: Infrastructure & Cloud
     key_attribute: Cloud & Compute
-    anchor: "Burns, Grant, Oppenheimer, Brewer & Wilkes, \"Borg, Omega, and Kubernetes\" (ACM Queue, 2016)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: hightower2022
+    anchor_why: "explains why orchestration is platform machinery -- controllers and declarative desired state -- not just deployment tooling."
+    mappings:
+      E1: {p: P1, sources: [hightower2022, sfia9], why: "OPS-14 P1 ('deploys workloads to an existing orchestrator under review, adjusting basic scheduling settings from examples') matches deploying and debugging workloads on the orchestrator with guidance."}
+      E2: {p: P2, sources: [hightower2022, sfia9], why: "P2 ('independently operates orchestrated workloads, manages routine scaling, placement, and health checks with normal review') matches owning a component's runtime configuration."}
+      E3: {p: P3, sources: [hightower2022, sfia9], why: "P3 ('designs scheduling, affinity, and resource policies for ambiguous workloads and resolves hard orchestration failures') matches designing and operating cluster-level platform machinery for a capability. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [hightower2022, larson2021-staffeng], why: "P4 ('defines cluster topology and scheduling patterns others adopt, solving deep placement, contention, and lifecycle problems') matches setting workload standards multiple teams schedule against."}
+      E5: {p: P5, sources: [hightower2022, larson2021-staffeng], why: "P5 ('sets organization-wide orchestration strategy and standards, anticipating where workload scheduling is heading') matches owning the organization's runtime strategy."}
+      E6: {p: P6, sources: [hightower2022, larson2021-staffeng], why: "P6 ('defines what effective orchestration means for the discipline, externally credible in shaping scheduling practice') matches deciding company-level runtime direction."}
+    evidence:
+      E1: "Deploys and debugs workloads on the orchestrator with guidance."
+      E2: "Owns their component's runtime configuration."
+      E3: "Designs and operates cluster-level platform machinery."
+      E4: "Sets workload standards multiple teams schedule against."
+      E5: "Owns the organization's runtime strategy."
+      E6: "Decides company-level runtime direction."
   - theme: Networking & compute foundations
     capability: OPS-19
     key_area: Infrastructure & Cloud
     key_attribute: Cloud & Compute
-    anchor: "Kurose & Ross, *Computer Networking: A Top-Down Approach* (8th ed., 2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: kurose-ross2020
+    anchor_why: "the standard layered model behind tracing requests and designing topologies across abstraction layers."
+    mappings:
+      E1: {p: P1, sources: [kurose-ross2020, sfia9], why: "OPS-19 P1 ('configures basic network segments and routes from designs under review, verifying connectivity') matches tracing a request through DNS, load balancer, and service to locate a failure."}
+      E2: {p: P2, sources: [kurose-ross2020, sfia9], why: "P2 ('independently builds standard network topologies, manages routing and segmentation for routine needs with review') matches configuring the networking and compute for one component."}
+      E3: {p: P3, sources: [kurose-ross2020, sfia9], why: "P3 ('designs routing and addressing schemes for ambiguous topologies and diagnoses hard reachability and routing failures') matches designing network and compute topology for a whole capability. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [kurose-ross2020, larson2021-staffeng], why: "P4 ('defines network architecture and routing patterns others adopt, solving deep segmentation, scale, and convergence problems') matches owning shared foundations several teams depend on."}
+      E5: {p: P5, sources: [kurose-ross2020, larson2021-staffeng], why: "P5 ('sets organization-wide network strategy and standards, anticipating shifts in network design and routing') matches setting organization standards for network architecture and compute platforms."}
+      E6: {p: P6, sources: [kurose-ross2020, larson2021-staffeng], why: "P6 ('defines what good network design means for the field, externally credible in shaping routing practice') matches owning company-scale foundation decisions."}
+    evidence:
+      E1: "Traces a request through DNS, load balancer, and service to locate a failure."
+      E2: "Configures the networking and compute for their component."
+      E3: "Designs network and compute topology for a capability."
+      E4: "Owns shared foundations several teams depend on."
+      E5: "Sets organization standards for network architecture and compute platforms."
+      E6: "Owns company-scale foundation decisions."
   - theme: Infrastructure as code
     capability: OPS-10
     key_area: Infrastructure & Cloud
     key_attribute: Automation & Self-Service
-    anchor: "Morris, *Infrastructure as Code* (O'Reilly, 2016)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: morris2021
+    anchor_why: "the discipline behind every plan-review-apply and drift-detection behavior at each level."
+    mappings:
+      E1: {p: P1, sources: [morris2021, sfia9], why: "OPS-10 P1 ('writes simple declarative resource definitions from templates, applying them under review in non-production environments') matches making changes through the IaC workflow rather than the console."}
+      E2: {p: P2, sources: [morris2021, sfia9], why: "P2 ('independently provisions standard infrastructure stacks, manages state and variables, and handles routine drift with normal review') matches writing reusable, parameterized modules for one component."}
+      E3: {p: P3, sources: [morris2021, sfia9], why: "P3 ('designs reusable modules for ambiguous needs, structures state safely, and is the go-to for tricky provisioning failures') matches designing the IaC architecture for a whole capability. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [morris2021, larson2021-staffeng], why: "P4 ('defines the provisioning patterns and module conventions others adopt, solving thorny dependency and idempotency problems') matches publishing module libraries multiple teams build on."}
+      E5: {p: P5, sources: [morris2021, larson2021-staffeng], why: "P5 ('sets the organization-wide IaC strategy, governance, and standards, anticipating shifts in declarative provisioning practice') matches setting the organization's IaC standards."}
+      E6: {p: P6, sources: [morris2021, larson2021-staffeng], why: "P6 ('defines what good infrastructure-as-code means for the field, shaping provisioning practices recognized across the industry') matches treating the company's infrastructure definition as a strategic asset."}
+    evidence:
+      E1: "Makes changes through the IaC workflow rather than the console."
+      E2: "Writes reusable, parameterized modules for their component."
+      E3: "Designs the IaC architecture for a capability."
+      E4: "Publishes module libraries and IaC conventions multiple teams build on."
+      E5: "Sets the organization's IaC standards."
+      E6: "Treats the company's infrastructure definition as a strategic asset."
   - theme: Self-service provisioning
     capability: OPS-27
     key_area: Infrastructure & Cloud
     key_attribute: Automation & Self-Service
-    anchor: "Bottcher, \"What I Talk About When I Talk About Platforms\" (martinfowler.com, 2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: bottcher2018-platforms
+    anchor_why: "the definitional source for removing humans from the request path."
+    mappings:
+      E1: {p: P1, sources: [bottcher2018-platforms, sfia9], why: "OPS-27 P1 ('maintains existing self-service platform components under review, addressing documented user requests') matches using the self-service tooling as users do and documenting the gaps that forced manual steps."}
+      E2: {p: P2, sources: [bottcher2018-platforms, sfia9], why: "P2 ('independently builds and supports standard platform capabilities and templates for routine developer needs with review') matches automating a manual provisioning flow for one component into a self-service action."}
+      E3: {p: P3, sources: [bottcher2018-platforms, sfia9], why: "P3 ('designs self-service workflows for ambiguous needs, reducing friction and resolving hard abstraction and adoption issues') matches designing self-service for a whole capability end to end -- the automation-interface half of OPS-27's description; Golden paths above carries the paved-road half. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [bottcher2018-platforms, larson2021-staffeng], why: "P4 ('defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems') matches unifying self-service across teams behind one coherent interface."}
+      E5: {p: P5, sources: [bottcher2018-platforms, larson2021-staffeng], why: "P5 ('sets organization-wide platform strategy, anticipating how developer-experience engineering should evolve') matches driving the organization to a self-service operating model."}
+      E6: {p: P6, sources: [bottcher2018-platforms, larson2021-staffeng], why: "P6 ('defines what excellent platform engineering means for the field, shaping industry developer-experience practice') matches making self-service the company's default operating model for infrastructure."}
+    evidence:
+      E1: "Uses the self-service tooling as users do and documents the gaps that forced manual steps."
+      E2: "Automates a manual provisioning flow for their component into a self-service action."
+      E3: "Designs self-service for a capability end to end."
+      E4: "Unifies self-service across teams behind one coherent interface."
+      E5: "Drives the organization to a self-service operating model."
+      E6: "Makes self-service the company's default operating model for infrastructure."
   # ---- Reliability & Operations ----
   - theme: Observability & instrumentation
     capability: OPS-05
     key_area: Reliability & Operations
     key_attribute: Observability & Service Levels
-    anchor: "Majors, Fong-Jones & Miranda, *Observability Engineering* (O'Reilly, 2022)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: majors2022-observability
+    anchor_why: "sets the bar the telemetry offering at each level is measured against."
+    mappings:
+      E1: {p: P1, sources: [majors2022-observability, sfia9], why: "OPS-05 P1 ('understands logs/metrics/traces; reads existing dashboards') matches an Associate reading existing telemetry to locate a fault, not yet instrumenting anything."}
+      E2: {p: P2, sources: [majors2022-observability, sfia9], why: "P2 ('instruments their services; builds dashboards; tunes alerts to limit noise') names 'their services' -- component scope, E2."}
+      E3: {p: P3, sources: [majors2022-observability, sfia9], why: "P3 ('designs observability for complex systems (end-to-end traces, quality signals, cost attribution)') matches designing the observability offering for a whole capability. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [majors2022-observability, larson2021-staffeng], why: "P4 ('expert in instrumentation trade-offs at scale, incl. privacy-safe logging') matches building observability infrastructure multiple teams instrument against."}
+      E5: {p: P5, sources: [majors2022-observability, larson2021-staffeng], why: "P5 ('defines org observability strategy') matches setting the organization's observability strategy and standards."}
+      E6: {p: P6, sources: [majors2022-observability, larson2021-staffeng], why: "P6 ('shapes company-wide operational visibility; advances practice') matches framing observability as a company capability."}
+    evidence:
+      E1: "Traces a failing deploy to a specific pod's OOM-kill using the team's existing dashboard, without needing a teammate to point them to it."
+      E2: "Instruments their component so strangers can debug it."
+      E3: "Designs the observability offering for a capability."
+      E4: "Builds observability infrastructure multiple teams instrument against."
+      E5: "Sets the organization's observability strategy and standards."
+      E6: "Frames observability as company capability."
   - theme: SLOs & error budgets
     capability: OPS-04
     key_area: Reliability & Operations
     key_attribute: Observability & Service Levels
-    anchor: "Beyer, Jones, Petoff & Murphy (eds.), *Site Reliability Engineering* (O'Reilly, 2016)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: sre2016
+    anchor_why: "establishes SLOs, error budgets, and symptom-based alerting as the reliability contract."
+    mappings:
+      E1: {p: P1, sources: [sre2016, sfia9], why: "OPS-04 P1 ('understands SLOs and common failure modes; keeps components healthy with guidance') matches explaining a service's SLOs and reading burn-rate dashboards correctly, without owning the target."}
+      E2: {p: P2, sources: [sre2016, sfia9], why: "P2 ('builds retries, timeouts and fallbacks; understands blast radius') is resilience-engineering, not SLO-ownership, text -- OPS-04's own SLO language appears at P1 and P3, not P2, so E2's evidence is deliberately kept to defining SLIs that reflect user experience for one component rather than negotiating a target, matching the mechanics P2 actually describes."}
+      E3: {p: P3, sources: [sre2016, sfia9], why: "P3 ('designs for graceful degradation; defines SLOs; accountable for a domain's reliability') names 'a domain' and 'defines SLOs' verbatim -- negotiating SLOs for a capability with its internal customers. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [sre2016, larson2021-staffeng], why: "P4 ('expert in resilience and capacity planning at scale; drives down incidents systemically') matches aligning SLOs across dependent services so promises compose."}
+      E5: {p: P5, sources: [sre2016, larson2021-staffeng], why: "P5 ('owns org-level reliability; fixes risk in process and org design') matches owning the organization's SLO framework and review cadence."}
+      E6: {p: P6, sources: [sre2016, larson2021-staffeng], why: "P6 ('sets the company's reliability philosophy') matches setting company reliability targets against business risk and cost."}
+    evidence:
+      E1: "Explains their service's SLOs and reads burn-rate dashboards correctly."
+      E2: "Adds a retry-with-backoff and a fallback path to a flaky downstream call so that dependency's failure doesn't cascade into their own component."
+      E3: "Negotiates SLOs for a capability with its internal customers."
+      E4: "Aligns SLOs across dependent services so promises compose."
+      E5: "Owns the organization's SLO framework and review cadence."
+      E6: "Sets company reliability targets against business risk and cost."
   - theme: Incident response
     capability: OPS-06
     key_area: Reliability & Operations
     key_attribute: Incident Management
-    anchor: "PagerDuty, *Incident Response Guide* (2017)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: pagerduty-ir
+    anchor_why: "grounds the progression from executing runbooks to designing the response system itself."
+    mappings:
+      E1: {p: P1, sources: [pagerduty-ir, sfia9], why: "OPS-06 P1 ('responds to alerts with support; follows runbooks; escalates appropriately') matches executing runbook steps accurately during incidents under supervision."}
+      E2: {p: P2, sources: [pagerduty-ir, sfia9], why: "P2 ('triages and resolves routine incidents; clear notes; takes on-call') matches serving as primary on-call for one component."}
+      E3: {p: P3, sources: [pagerduty-ir, sfia9], why: "P3 ('leads response to complex failures; blameless postmortems; same failure never recurs') matches commanding complex multi-team incidents at capability scope -- the in-the-room response half of OPS-06's description; Learning from incidents below carries the post-incident-analysis half. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [pagerduty-ir, larson2021-staffeng], why: "P4 ('expert in incident-management design (rotations, severity, escalation)') matches designing the incident-management system itself, not just running it."}
+      E5: {p: P5, sources: [pagerduty-ir, larson2021-staffeng], why: "P5 ('commands the highest-severity incidents; sets incident process org-wide') matches owning the organization's major-incident readiness."}
+      E6: {p: P6, sources: [pagerduty-ir, larson2021-staffeng], why: "P6 ('sets the company's incident philosophy; calm authority in the worst moments') matches leading the company's existential incidents and the reforms after them."}
+    evidence:
+      E1: "Executes runbook steps accurately during incidents under supervision."
+      E2: "Serves as primary on-call for their component."
+      E3: "Commands complex multi-team incidents."
+      E4: "Designs the incident-management system itself."
+      E5: "Owns the organization's major-incident readiness."
+      E6: "Leads the company's existential incidents and the reforms after them."
   - theme: Learning from incidents
     capability: OPS-06
     key_area: Reliability & Operations
     key_attribute: Incident Management
-    anchor: "Allspaw, \"Blameless PostMortems and a Just Culture\" (Etsy Code as Craft, 2012)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: allspaw2012
+    anchor_why: "establishes blameless analysis focused on systemic contributors over human error."
+    mappings:
+      E1: {p: P1, sources: [allspaw2012, sfia9], why: "OPS-06 P1 ('responds to alerts with support; follows runbooks; escalates appropriately') matches contributing accurate timelines and observations to incident reviews -- the same guided-support register as Incident response's E1, read for the analysis side of the work."}
+      E2: {p: P2, sources: [allspaw2012, sfia9], why: "P2 ('triages and resolves routine incidents; clear notes; takes on-call') matches writing blameless postmortems for their own component's incidents -- 'clear notes' is the P2 mechanic this reads onto."}
+      E3: {p: P3, sources: [allspaw2012, sfia9], why: "P3's 'blameless postmortems; same failure never recurs' clause is the analysis half of the P3 bar -- facilitating incident reviews others attend voluntarily is what makes a postmortem actually prevent recurrence at capability scope. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [allspaw2012, larson2021-staffeng], why: "P4 ('expert in incident-management design (rotations, severity, escalation)') matches building the cross-team learning system, not just the response rotation."}
+      E5: {p: P5, sources: [allspaw2012, larson2021-staffeng], why: "P5 ('commands the highest-severity incidents; sets incident process org-wide') matches driving org-level resilience investment from incident evidence."}
+      E6: {p: P6, sources: [allspaw2012, larson2021-staffeng], why: "P6 ('sets the company's incident philosophy; calm authority in the worst moments') matches shaping the company's safety culture."}
+    evidence:
+      E1: "Contributes accurate timelines and observations to incident reviews."
+      E2: "Writes blameless postmortems for their component's incidents."
+      E3: "Facilitates incident reviews others attend voluntarily."
+      E4: "Builds the learning system across teams."
+      E5: "Drives org-level resilience investment from incident evidence."
+      E6: "Shapes the company's safety culture."
   - theme: Capacity, performance & cost
     capability: OPS-07
     key_area: Reliability & Operations
     key_attribute: Operational Excellence
-    anchor: "Gregg, *Systems Performance* (2nd ed., 2020)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: gregg2020-systems-performance
+    anchor_why: "grounds profiling-not-guessing and data-driven capacity planning at every level."
+    mappings:
+      E1: {p: P1, sources: [gregg2020-systems-performance, sfia9], why: "OPS-07 P1 ('understands cost/latency drivers of what they build') matches reading utilization and saturation dashboards correctly and flagging approaching limits with evidence."}
+      E2: {p: P2, sources: [gregg2020-systems-performance, sfia9], why: "P2 ('applies standard optimizations; stays within cost/latency budgets') matches load-testing one component and sizing it from measured headroom rather than guesswork."}
+      E3: {p: P3, sources: [gregg2020-systems-performance, sfia9], why: "P3 ('designs cost-aware architectures; defines and tracks unit economics for a domain') names 'a domain' verbatim -- owning capacity planning for a capability. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [gregg2020-systems-performance, larson2021-staffeng], why: "P4 ('expert in economics at scale (fleet optimization, build-vs-buy)') matches running capacity planning across shared pools that multiple teams draw from."}
+      E5: {p: P5, sources: [gregg2020-systems-performance, larson2021-staffeng], why: "P5 ('owns org-level spend strategy; cost decisions change margins') matches owning the organization's capacity and efficiency program."}
+      E6: {p: P6, sources: [gregg2020-systems-performance, larson2021-staffeng], why: "P6 ('shapes the company economics of the products') matches treating infrastructure economics as company strategy."}
+    evidence:
+      E1: "Reads utilization and saturation dashboards correctly and flags approaching limits with evidence."
+      E2: "Load-tests their component and sizes it from measured headroom rather than guesswork."
+      E3: "Owns capacity planning for a capability."
+      E4: "Runs capacity planning across shared pools that multiple teams draw from."
+      E5: "Owns the organization's capacity and efficiency program."
+      E6: "Treats infrastructure economics as company strategy."
   - theme: Toil reduction & automation
     capability: OPS-28
     key_area: Reliability & Operations
     key_attribute: Operational Excellence
-    anchor: "Beyer, Jones, Petoff & Murphy (eds.), *Site Reliability Engineering* (O'Reilly, 2016), toil chapter"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: sre2016
+    anchor_why: "provides the definition and budget ceiling this competency tracks against."
+    mappings:
+      E1: {p: P1, sources: [sre2016, sfia9], why: "OPS-28 P1 ('runs and lightly edits existing automation under review, flagging tasks that remain manual') matches executing operational runbooks accurately and improving the runbook when a step is wrong."}
+      E2: {p: P2, sources: [sre2016, sfia9], why: "P2 ('independently automates routine operational tasks and integrates them into standard workflows with normal review') matches automating the recurring manual work in one component."}
+      E3: {p: P3, sources: [sre2016, sfia9], why: "P3 ('designs automation for ambiguous, error-prone toil and resolves hard reliability and orchestration issues in pipelines') matches measuring toil for a capability and holding it under an explicit budget. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [sre2016, larson2021-staffeng], why: "P4 ('defines automation patterns and toil-elimination practices others adopt, solving deep workflow and safety problems') matches building automation multiple teams reuse."}
+      E5: {p: P5, sources: [sre2016, larson2021-staffeng], why: "P5 ('sets organization-wide automation strategy, anticipating where automation-first operations should head') matches setting the organization's toil policy."}
+      E6: {p: P6, sources: [sre2016, larson2021-staffeng], why: "P6 ('defines what automation-first operations means for the discipline, externally credible in shaping the practice') matches making operational leverage a company-level argument."}
+    evidence:
+      E1: "Executes operational runbooks accurately and improves the runbook when a step is wrong or missing."
+      E2: "Automates the recurring manual work in their component."
+      E3: "Measures toil for a capability and holds it under an explicit budget."
+      E4: "Builds automation multiple teams reuse for their operational work."
+      E5: "Sets the organization's toil policy."
+      E6: "Makes operational leverage a company-level argument."
   # ---- Security & Compliance ----
   - theme: Guardrails & policy as code
     capability: SEC-18
     key_area: Security & Compliance
     key_attribute: Secure by Default
-    anchor: "OWASP, *Application Security Verification Standard* (v4, 2019)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: owasp-asvs
+    anchor_why: "gives guardrail and policy rules an external, auditable bar instead of home-grown opinion."
+    mappings:
+      E1: {p: P1, sources: [owasp-asvs, sfia9], why: "SEC-18 P1 ('works within existing guardrails, reads a policy violation to its cause instead of requesting an exception, and explains what each guardrail protects against') is task-scoped compliance, not authorship -- the Associate bar."}
+      E2: {p: P2, sources: [owasp-asvs, sfia9], why: "P2 ('writes and tests policy rules for a component -- admission checks, pipeline gates -- with low false-positive rates') names 'a component' verbatim -- E2."}
+      E3: {p: P3, sources: [owasp-asvs, sfia9], why: "P3 ('designs the guardrail architecture for a capability -- what is blocked, warned, or audited, with documented threat reasoning ... runs an audited exception workflow without becoming the bottleneck') names 'a capability' verbatim. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [owasp-asvs, larson2021-staffeng], why: "P4 ('harmonizes policy across teams into a coherent, versioned policy library ... adjudicates escalated safety-versus-velocity disputes') names 'across teams' verbatim -- E4."}
+      E5: {p: P5, sources: [owasp-asvs, larson2021-staffeng], why: "P5 ('owns an organization's preventive-control strategy with security partners ... moving enforcement from review-time to platform-time') names 'an organization's' verbatim -- E5."}
+      E6: {p: P6, sources: [owasp-asvs, larson2021-staffeng], why: "P6 ('sets an organization-defining balance of enablement and control, accountable for guardrails that hold under audit and attack without throttling delivery') is company-defining -- E6."}
+    evidence:
+      E1: "Traces a blocked deploy to a missing resource-limit field in the manifest instead of filing an exception request, and fixes it."
+      E2: "Writes an admission-control rule for their component that catches unencrypted volumes with a message that tells the requester exactly which field to change."
+      E3: "Designs a capability's guardrail set -- what blocks, what warns, what only audits -- with the threat each rule defends against written down, and runs the exception process without becoming its bottleneck."
+      E4: "Merges three teams' near-duplicate policy libraries into one versioned set and adjudicates which team's stricter rule wins."
+      E5: "Owns the guardrail catalog with the security team, moving a manual pre-launch review into an automated pipeline gate."
+      E6: "Sets the company's default posture on where automation blocks versus warns, and defends it to auditors after an incident nearly reopens the debate."
   - theme: Identity, secrets & access
     capability: SEC-01
     key_area: Security & Compliance
     key_attribute: Secure by Default
-    anchor: "Ward & Beyer, \"BeyondCorp: A New Approach to Enterprise Security\" (;login:, 2014)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: beyondcorp2014
+    anchor_why: "the identity-centric model behind least privilege, workload identity, and short-lived credentials."
+    mappings:
+      E1: {p: P1, sources: [beyondcorp2014, sfia9], why: "SEC-01 P1 ('provisions and deprovisions accounts from documented procedures, with approvals and access reviewed before activation') matches requesting and using credentials through the sanctioned workflow."}
+      E2: {p: P2, sources: [beyondcorp2014, sfia9], why: "P2 ('configures roles, group membership, and authentication factors independently for standard joiners, movers, and leavers') matches configuring workload identity, scoped roles, and secret rotation for one component."}
+      E3: {p: P3, sources: [beyondcorp2014, sfia9], why: "P3 ('resolves complex entitlement conflicts and designs least-privilege role models for ambiguous, cross-system access needs') matches designing the identity model for a whole capability. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [beyondcorp2014, larson2021-staffeng], why: "P4 ('defines the identity lifecycle and authorization architecture that other engineers adopt across the organization') is architecture other engineers adopt -- Staff-scope authorship, distinct from P5's strategy-setting and anticipation."}
+      E5: {p: P5, sources: [beyondcorp2014, larson2021-staffeng], why: "P5 ('sets identity strategy, governs federation and privileged-access standards, and anticipates emerging access risks') matches owning the organization's identity architecture and zero-trust roadmap with anticipatory, strategy-setting authority P4 does not carry."}
+      E6: {p: P6, sources: [beyondcorp2014, larson2021-staffeng], why: "P6 ('defines what sound identity practice means for the field and shapes how others govern access') matches setting company identity strategy across employee, workload, and customer boundaries."}
+    evidence:
+      E1: "Requests and uses credentials through the sanctioned workflow."
+      E2: "Configures workload identity, scoped roles, and secret rotation for their component."
+      E3: "Designs the identity model for a capability."
+      E4: "Builds identity infrastructure multiple teams authenticate through."
+      E5: "Owns the organization's identity architecture and its zero-trust roadmap."
+      E6: "Sets company identity strategy across employee, workload, and customer boundaries."
   - theme: Software supply chain security
     capability: SEC-09
     key_area: Security & Compliance
     key_attribute: Supply Chain & Assurance
-    anchor: "OpenSSF, *SLSA: Supply-chain Levels for Software Artifacts* (2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: slsa
+    anchor_why: "the graded build-integrity standard the signing, provenance, and admission controls here implement."
+    mappings:
+      E1: {p: P1, sources: [slsa, sfia9], why: "SEC-09 P1 ('verifies artifact provenance and signatures following documented checks, escalating anomalies for review') matches keeping dependencies current on their tasks and acting on vulnerability-scanner findings with guidance."}
+      E2: {p: P2, sources: [slsa, sfia9], why: "P2 ('configures signing, dependency scanning, and provenance controls independently for standard pipelines') matches maintaining one component's supply-chain hygiene."}
+      E3: {p: P3, sources: [slsa, sfia9], why: "P3 ('designs artifact-integrity and dependency-trust controls for complex, ambiguous supply chains') matches designing a capability's pipeline to a stated supply-chain integrity level. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [slsa, larson2021-staffeng], why: "P4 ('defines the supply-chain security architecture and verification patterns others adopt') matches building supply-chain controls into the shared pipeline so every team inherits provenance and scanning by default."}
+      E5: {p: P5, sources: [slsa, larson2021-staffeng], why: "P5 ('sets supply-chain assurance strategy and anticipates emerging artifact and dependency threats') matches owning the organization's supply-chain security program."}
+      E6: {p: P6, sources: [slsa, larson2021-staffeng], why: "P6 ('defines authoritative supply-chain security practice that shapes industry expectations') matches setting company supply-chain policy including third-party and vendor software."}
+    evidence:
+      E1: "Keeps dependencies current on their tasks and acts on vulnerability-scanner findings with guidance."
+      E2: "Maintains their component's supply-chain hygiene."
+      E3: "Designs a capability's pipeline to a stated supply-chain integrity level."
+      E4: "Builds supply-chain controls into the shared pipeline so every team inherits provenance and scanning by default."
+      E5: "Owns the organization's supply-chain security program."
+      E6: "Sets company supply-chain policy including third-party and vendor software."
   - theme: Compliance & audit readiness
     capability: OPS-09
     key_area: Security & Compliance
     key_attribute: Supply Chain & Assurance
-    anchor: "NIST, *OSCAL - Open Security Controls Assessment Language* (1.0, 2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: nist-csf2
+    anchor_why: "makes compliance-by-default and continuous evidence collection a tooled practice rather than paperwork."
+    mappings:
+      E1: {p: P1, sources: [nist-csf2, sfia9], why: "OPS-09 P1 ('knows data handling has privacy implications; follows rules') matches following the platform's compliance procedures accurately."}
+      E2: {p: P2, sources: [nist-csf2, sfia9], why: "P2 ('applies PII handling, redaction, residency and retention correctly') matches automating evidence collection for one component's controls."}
+      E3: {p: P3, sources: [nist-csf2, sfia9], why: "P3 ('designs for compliance (consent, audit trails, regional rules); owns readiness for a domain') names 'a domain' and 'owns readiness' verbatim -- mapping a capability's controls to the frameworks the company answers to. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [nist-csf2, larson2021-staffeng], why: "P4 ('expert at translating regulation into controls; represents engineering in audits') matches rationalizing overlapping control implementations across teams into shared, platform-enforced controls."}
+      E5: {p: P5, sources: [nist-csf2, larson2021-staffeng], why: "P5 ('sets org compliance strategy; anticipates regulation') matches owning the organization's compliance-as-code strategy with legal and security partners."}
+      E6: {p: P6, sources: [nist-csf2, larson2021-staffeng], why: "P6 ('authoritative on the landscape; trusted interface to regulators') matches shaping company posture on regulatory strategy where infrastructure is implicated."}
+    evidence:
+      E1: "Follows the platform's compliance procedures accurately."
+      E2: "Automates evidence collection for their component's controls."
+      E3: "Maps a capability's controls to the frameworks the company answers to and designs them to be inherited."
+      E4: "Rationalizes overlapping control implementations across teams into shared, platform-enforced controls."
+      E5: "Owns the organization's compliance-as-code strategy with legal and security partners."
+      E6: "Shapes company posture on regulatory strategy where infrastructure is implicated."
   # ---- Communication & Collaboration ----
   - theme: Technical documentation
     capability: DR-05
     key_area: Communication & Collaboration
     key_attribute: Knowledge & Documentation
-    anchor: "Procida, *Diataxis* (2017-)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: procida-diataxis
+    anchor_why: "the framework behind docs organized by user need rather than system internals."
+    mappings:
+      E1: {p: P1, sources: [procida-diataxis, sfia9], why: "DR-05 P1 ('writes and updates doc pages within an existing structure under guidance') matches fixing documentation errors they hit instead of working around them."}
+      E2: {p: P2, sources: [procida-diataxis, sfia9], why: "P2 ('authors and organizes documentation for a product area with normal review') matches keeping one component's docs shippable."}
+      E3: {p: P3, sources: [procida-diataxis, sfia9], why: "P3 ('independently architects coherent doc structures for complex, evolving products') matches designing a capability's documentation as part of the product. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [procida-diataxis, larson2021-staffeng], why: "P4 ('defines information-architecture standards others adopt and restructures tangled doc sets') matches setting documentation conventions multiple teams follow."}
+      E5: {p: P5, sources: [procida-diataxis, larson2021-staffeng], why: "P5 ('sets the org's documentation strategy and anticipates structural scaling needs') matches owning the organization's developer-facing knowledge strategy."}
+      E6: {p: P6, sources: [procida-diataxis, larson2021-staffeng], why: "P6 ('defines great developer documentation and information architecture for the field') matches writing the canonical company documents."}
+    evidence:
+      E1: "Fixes documentation errors they hit instead of working around them."
+      E2: "Keeps their component's docs shippable."
+      E3: "Designs a capability's documentation as part of the product."
+      E4: "Sets documentation conventions multiple teams follow."
+      E5: "Owns the organization's developer-facing knowledge strategy."
+      E6: "Writes the canonical company documents."
   - theme: Design communication & decision records
     capability: CC-01
     key_area: Communication & Collaboration
     key_attribute: Knowledge & Documentation
-    anchor: "Winters, Manshreck & Wright, *Software Engineering at Google* (2020), design-docs chapters"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: winters2020
+    anchor_why: "grounds decision-oriented writing as the mechanism by which trade-offs get decided once and stick."
+    mappings:
+      E1: {p: P1, sources: [winters2020, sfia9], why: "CC-01 P1 ('communicates status clearly; documentation is accurate') matches writing clear tickets, PR descriptions, and status updates that need no follow-up questions."}
+      E2: {p: P2, sources: [winters2020, sfia9], why: "P2 ('writes clear design notes, runbooks and PRs; explains trade-offs without overselling') matches writing short design docs that state the problem, options, and recommendation."}
+      E3: {p: P3, sources: [winters2020, sfia9], why: "P3 ('writes design docs that drive decisions; translates technical risk for non-technical stakeholders') matches writing design docs that make complex trade-offs decidable by non-experts. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [winters2020, larson2021-staffeng], why: "P4 ('expert at making complex capability/risk legible to executives without dumbing it down; RFCs align orgs') matches writing the cross-team proposals that settle contested technical questions."}
+      E5: {p: P5, sources: [winters2020, larson2021-staffeng], why: "P5 ('strategy memos leadership acts on; org-wide and external reach') matches setting the organization's bar for decision writing."}
+      E6: {p: P6, sources: [winters2020, larson2021-staffeng], why: "P6 ('a clarifying voice at company scale; externally recognized') matches communicating deep technical trade-offs to executives in the language of business risk without losing correctness."}
+    evidence:
+      E1: "Writes clear tickets, PR descriptions, and status updates that need no follow-up questions."
+      E2: "Writes short design docs that state the problem, options, and recommendation."
+      E3: "Writes design docs that make complex trade-offs decidable by non-experts."
+      E4: "Writes the cross-team proposals that settle contested technical questions."
+      E5: "Sets the organization's bar for decision writing."
+      E6: "Communicates deep technical trade-offs to executives in the language of business risk without losing correctness."
   - theme: Platform advocacy & enablement
     capability: DR-01
     key_area: Communication & Collaboration
     key_attribute: Enablement & Stakeholders
-    anchor: "CNCF TAG App Delivery, *Platform Engineering Maturity Model* (2023)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: cncf-platform-maturity
+    anchor_why: "frames adoption-by-evangelism as a maturity outcome the platform earns, not a mandate."
+    mappings:
+      E1: {p: P1, sources: [cncf-platform-maturity, sfia9], why: "DR-01 P1 ('engages community channels and answers routine questions under guidance') matches answering user questions in support channels accurately or routing them fast."}
+      E2: {p: P2, sources: [cncf-platform-maturity, sfia9], why: "P2 ('grows and supports a developer community segment with normal review') matches running enablement for one component."}
+      E3: {p: P3, sources: [cncf-platform-maturity, sfia9], why: "P3 ('independently builds thriving communities and defuses tense community conflicts') matches driving adoption of a capability through evangelism rather than mandate. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [cncf-platform-maturity, larson2021-staffeng], why: "P4 ('defines community-building practices others adopt and revives flagging communities') matches building the enablement machinery platform teams share."}
+      E5: {p: P5, sources: [cncf-platform-maturity, larson2021-staffeng], why: "P5 ('sets the org's community strategy and anticipates where developer interest is shifting') matches owning the platform's internal brand and narrative."}
+      E6: {p: P6, sources: [cncf-platform-maturity, larson2021-staffeng], why: "P6 ('defines what great developer advocacy means and is externally recognized for it') matches representing the company's engineering platform externally."}
+    evidence:
+      E1: "Answers user questions in support channels accurately or routes them fast."
+      E2: "Runs enablement for their component."
+      E3: "Drives adoption of a capability through evangelism rather than mandate."
+      E4: "Builds the enablement machinery platform teams share."
+      E5: "Owns the platform's internal brand and narrative."
+      E6: "Represents the company's engineering platform externally."
   - theme: Stakeholder management
     capability: PM-13
     key_area: Communication & Collaboration
     key_attribute: Enablement & Stakeholders
-    anchor: "Larson, *Staff Engineer: Leadership Beyond the Management Track* (2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: larson2021-staffeng
+    anchor_why: "grounds the progression from reporting status to advising leadership as a peer."
+    mappings:
+      E1: {p: P1, sources: [larson2021-staffeng, sfia9], why: "PM-13 P1 ('prepares updates and gathers input for stakeholders under direction') matches communicating status honestly and early, especially bad news."}
+      E2: {p: P2, sources: [larson2021-staffeng, sfia9], why: "P2 ('manages routine stakeholder relationships and communications with normal review') matches managing expectations for one component with its consuming teams."}
+      E3: {p: P3, sources: [larson2021-staffeng, sfia9], why: "P3 ('independently aligns conflicting stakeholders and navigates tense executive conversations') matches running the stakeholder relationships for a whole capability. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [larson2021-staffeng], why: "P4 ('defines stakeholder-engagement approaches others adopt and brokers the hardest alignment') matches aligning competing demands from multiple teams into a roadmap each can live with."}
+      E5: {p: P5, sources: [larson2021-staffeng], why: "P5 ('sets executive-engagement strategy and anticipates leadership concerns before they arise') matches managing the platform's relationship with organization leadership."}
+      E6: {p: P6, sources: [larson2021-staffeng], why: "P6 ('defines exemplary stakeholder management for the discipline and is externally credible on it') matches operating at executive level as the technical counterpart on company decisions that touch the platform."}
+    evidence:
+      E1: "Communicates status honestly and early - especially bad news."
+      E2: "Manages expectations for their component with its consuming teams."
+      E3: "Runs the stakeholder relationships for a capability."
+      E4: "Aligns competing demands from multiple teams into a roadmap each can live with."
+      E5: "Manages the platform's relationship with organization leadership."
+      E6: "Operates at executive level as the technical counterpart on company decisions that touch the platform."
   - theme: Cross-team collaboration
     capability: CC-03
     key_area: Communication & Collaboration
     key_attribute: Enablement & Stakeholders
-    anchor: "Skelton & Pais, *Team Topologies* (2019) - team interaction modes"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: skelton-pais2019
+    anchor_why: "gives platform-to-team relationships a deliberate design vocabulary rather than ad-hoc liaison work."
+    mappings:
+      E1: {p: P1, sources: [skelton-pais2019, sfia9], why: "CC-03 P1 ('responsive to feedback; pairs willingly; asks for help appropriately') matches working in the open as an Associate."}
+      E2: {p: P2, sources: [skelton-pais2019, sfia9], why: "P2 ('collaborates smoothly with adjacent functions; handles disagreement constructively') matches partnering directly with the teams that consume their component."}
+      E3: {p: P3, sources: [skelton-pais2019, sfia9], why: "P3 ('builds strong cross-team relationships; resolves friction directly') matches building the working relationships a whole capability depends on. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [skelton-pais2019, larson2021-staffeng], why: "P4 ('expert at aligning teams with competing priorities; mediates disputes between senior people') matches creating the collaboration structures that let teams decide without escalation."}
+      E5: {p: P5, sources: [skelton-pais2019, larson2021-staffeng], why: "P5 ('creates the forums and processes through which collaboration happens') matches brokering alignment between organizations."}
+      E6: {p: P6, sources: [skelton-pais2019, larson2021-staffeng], why: "P6 ('builds coalitions at company scale and externally') matches aligning the company's technical factions."}
+    evidence:
+      E1: "Works in the open."
+      E2: "Partners directly with the teams that consume their component."
+      E3: "Builds the working relationships a capability depends on."
+      E4: "Creates the collaboration structures that let teams decide without escalation."
+      E5: "Brokers alignment between organizations."
+      E6: "Aligns the company's technical factions."
   # ---- Execution & Leadership ----
   - theme: Planning & estimation
     capability: PD-04
     key_area: Execution & Leadership
     key_attribute: Delivery & Planning
-    anchor: "McConnell, *Software Estimation: Demystifying the Black Art* (2006)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: mcconnell2006-estimation
+    anchor_why: "establishes estimates as probability ranges refined by decomposition and historical data."
+    mappings:
+      E1: {p: P1, sources: [mcconnell2006-estimation, sfia9], why: "PD-04 P1 ('learns to estimate; surfaces blockers; plans own tasks with guidance') matches breaking an assigned task into steps, estimating them honestly, and flagging slippage as soon as it is visible."}
+      E2: {p: P2, sources: [mcconnell2006-estimation, sfia9], why: "P2 ('estimates scoped work realistically; plans own 1-3 week projects') matches planning component-level work in increments that ship value early."}
+      E3: {p: P3, sources: [mcconnell2006-estimation, sfia9], why: "P3 ('plans quarter-scale, multi-workstream efforts including dependencies') names quarter-scale planning verbatim -- planning a capability across quarters with explicit risk buffers. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [mcconnell2006-estimation, larson2021-staffeng], why: "P4 ('expert at planning large programs; anticipates risk early') matches building plans that coordinate multiple teams' streams."}
+      E5: {p: P5, sources: [mcconnell2006-estimation, larson2021-staffeng], why: "P5 ('plans org-level programs across quarters/years') matches running the organization's platform planning cycle."}
+      E6: {p: P6, sources: [mcconnell2006-estimation, larson2021-staffeng], why: "P6 ('shapes how the company plans major technical change') matches planning in company horizons."}
+    evidence:
+      E1: "Breaks an assigned task into steps, estimates them honestly, and flags slippage as soon as it is visible."
+      E2: "Plans component-level work in increments that ship value early."
+      E3: "Plans a capability across quarters with explicit risk buffers."
+      E4: "Builds plans that coordinate multiple teams' streams."
+      E5: "Runs the organization's platform planning cycle."
+      E6: "Sets the multi-year planning cycle major technical bets are sequenced against, and defends the sequencing to the executives funding it."
   - theme: Prioritization & trade-off judgment
     capability: PD-02
     key_area: Execution & Leadership
     key_attribute: Delivery & Planning
-    anchor: "Reinertsen, *The Principles of Product Development Flow* (2009)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: reinertsen2009-flow
+    anchor_why: "gives trade-off and scope-cut decisions an economic footing instead of loudest-voice ordering."
+    mappings:
+      E1: {p: P1, sources: [reinertsen2009-flow, sfia9], why: "PD-02 P1 ('works highest-priority-first when told the priorities') matches working their queue in the agreed order and raising it explicitly when a new ask conflicts with committed work."}
+      E2: {p: P2, sources: [reinertsen2009-flow, sfia9], why: "P2 ('makes sound priority calls within scope; time-boxes uncertain work') matches ordering their component's backlog by user impact and cost of delay."}
+      E3: {p: P3, sources: [reinertsen2009-flow, sfia9], why: "P3 ('balances cost/value/risk across a domain; resists hype; decisions hold up over months') names 'a domain' verbatim -- sequencing a capability's investment across feature work, reliability, migrations, and toil paydown using explicit cost-of-delay reasoning. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [reinertsen2009-flow, larson2021-staffeng], why: "P4 ('expert at portfolio-level trade-offs; surfaces hidden assumptions; trusted tiebreaker') matches arbitrating priority across teams competing for shared platform capacity."}
+      E5: {p: P5, sources: [reinertsen2009-flow, larson2021-staffeng], why: "P5 ('sets decision frameworks for the org') matches setting the organization's platform investment allocation."}
+      E6: {p: P6, sources: [reinertsen2009-flow, larson2021-staffeng], why: "P6 ('influences company strategic direction through judgment') matches advising company leadership on technology sequencing."}
+    evidence:
+      E1: "Works their queue in the agreed order and raises it explicitly when a new ask conflicts with committed work."
+      E2: "Orders their component's backlog by user impact and cost of delay."
+      E3: "Sequences a capability's investment across feature work, reliability, migrations, and toil paydown using explicit cost-of-delay reasoning."
+      E4: "Arbitrates priority across teams competing for shared platform capacity."
+      E5: "Sets the organization's platform investment allocation."
+      E6: "Advises company leadership on technology sequencing."
   - theme: Mentorship & knowledge sharing
     capability: LI-01
     key_area: Execution & Leadership
     key_attribute: Growth & Direction
-    anchor: "Lave & Wenger, *Situated Learning: Legitimate Peripheral Participation* (1991)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: wenger1998-communitiesofpractice
+    anchor_why: "expertise spreads through communities of practice, from peripheral participation inward."
+    mappings:
+      E1: {p: P1, sources: [wenger1998-communitiesofpractice, sfia9], why: "LI-01 P1 ('receptive to mentoring; shares what they learn') matches asking for help effectively -- showing what they tried -- and passing on what they learn: legitimate peripheral participation from the newcomer's side."}
+      E2: {p: P2, sources: [wenger1998-communitiesofpractice, sfia9], why: "P2 ('helps onboard teammates; informally mentors juniors') matches onboarding new teammates with pairing and honest context."}
+      E3: {p: P3, sources: [wenger1998-communitiesofpractice, sfia9], why: "P3 ('coaches engineers with growth-oriented feedback; measurably improves a team's skill') matches mentoring engineers deliberately, not just informally. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [wenger1998-communitiesofpractice, larson2021-staffeng], why: "P4 ('develops future leads across teams; shapes hiring and onboarding') names 'across teams' verbatim -- growing senior engineers across teams toward staff scope."}
+      E5: {p: P5, sources: [wenger1998-communitiesofpractice, larson2021-staffeng], why: "P5 ('develops senior engineers and leaders; builds culture deliberately') matches building the organization's technical talent systems."}
+      E6: {p: P6, sources: [wenger1998-communitiesofpractice, larson2021-staffeng], why: "P6 ('develops the next generation of top talent; legacy outlasts tenure') matches developing the company's next generation of principal-level technical leaders."}
+    evidence:
+      E1: "Asks for help effectively - showing what they tried - and passes on what they learn."
+      E2: "Onboards new teammates with pairing and honest context."
+      E3: "Mentors engineers deliberately."
+      E4: "Grows senior engineers across teams toward staff scope."
+      E5: "Builds the organization's technical talent systems."
+      E6: "Develops the company's next generation of principal-level technical leaders."
   - theme: Technical direction & influence
     capability: LI-03
     key_area: Execution & Leadership
     key_attribute: Growth & Direction
-    anchor: "Nygard, \"Documenting Architecture Decisions\" (2011)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    anchor: nygard2011-adr
+    anchor_why: "the practice behind written, revisitable decisions from component decision records to company direction."
+    mappings:
+      E1: {p: P1, sources: [nygard2011-adr, sfia9], why: "LI-03 P1 ('contributes informed opinions in technical discussions') is the participate-only bar -- an opinion in the room, not yet a decision anyone defers to."}
+      E2: {p: P2, sources: [nygard2011-adr, sfia9], why: "P2 ('influences component-level decisions through credibility') names 'component-level' verbatim -- E2."}
+      E3: {p: P3, sources: [nygard2011-adr, sfia9], why: "P3 ('sets technical direction for a domain; others align to their calls') names 'a domain' verbatim, and the terminal register: a capability's technical direction is a complete, standing mandate, not a stepping stone. E3 is this ladder's terminal level (scope_note): sustained P3 mastery here is a complete career, not a waypoint -- consistent with how SFIA treats independent full-competency practice as a legitimate long-run professional register and with StaffEng's own point that not every strong senior engineer needs to become staff."}
+      E4: {p: P4, sources: [nygard2011-adr, larson2021-staffeng], why: "P4 ('shapes how multiple teams approach problems; trusted tiebreaker') names 'multiple teams' verbatim -- E4."}
+      E5: {p: P5, sources: [nygard2011-adr, larson2021-staffeng], why: "P5 ('influences org-wide technical strategy') names 'org-wide' verbatim -- E5."}
+      E6: {p: P6, sources: [nygard2011-adr, larson2021-staffeng], why: "P6 ('influences company strategic direction through insight') names 'company' verbatim -- E6."}
+    evidence:
+      E1: "Raises a concrete thundering-herd failure scenario against a proposed retry strategy in a design review, and the design changes because of it."
+      E2: "Proposes direction within their component."
+      E3: "Picks the message-queue technology a capability standardizes on for its next migration cycle, and engineers building on it align their designs to that call without relitigating it."
+      E4: "Aligns multiple teams behind a shared technical direction without authority over them."
+      E5: "Writes the organization's technical strategy and makes it operational."
+      E6: "Sets company-level technical direction."

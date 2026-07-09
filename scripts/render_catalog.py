@@ -32,6 +32,14 @@ def read_csv(name):
         return list(csv.DictReader(f))
 
 
+def load_sourcing():
+    """(bibliography by key, capability_levels by (capability_id, level))."""
+    bib = {r["key"].strip(): r for r in read_csv("bibliography.csv")}
+    levels = {(r["capability_id"].strip(), r["level"].strip()): r
+              for r in read_csv("capability_levels.csv")}
+    return bib, levels
+
+
 def write_text(name, text):
     with open(os.path.join(DATA, name), "w", encoding="utf-8", newline="\n") as f:
         f.write(text)
@@ -91,7 +99,7 @@ def render_scope_md(scopes):
     return "\n".join(out)
 
 
-def render_capabilities_md(caps, scale, domains):
+def render_capabilities_md(caps, scale, domains, bib, levels):
     p_cols = []  # [(csv_column, level, name)]
     for row in scale:
         lvl, name = row["level"].strip(), row["name"].strip()
@@ -102,7 +110,7 @@ def render_capabilities_md(caps, scale, domains):
         "# Capability Catalog",
         "",
         f"The full Open Capability Framework catalog — {len(caps)} capabilities "
-        "across 36 domains, grouped Segment → Domain → Focus Area. Each "
+        f"across {len(domains)} domains, grouped Segment → Domain → Focus Area. Each "
         "capability carries a six-point behavioral profile on the capability-side "
         "[P1–P6 proficiency scale](proficiency_scale.md). Note the two-axis "
         "split: proficiency (P1–P6) is intrinsic to the capability and "
@@ -137,10 +145,15 @@ def render_capabilities_md(caps, scale, domains):
             "",
         ]
         for col, lvl, name in p_cols:
-            out.append(
-                f"- **[{lvl} — {name}](proficiency_scale.md#{lvl.lower()}):** "
-                f"{row[col].strip()}"
-            )
+            line = (f"- **[{lvl} — {name}](proficiency_scale.md#{lvl.lower()}):** "
+                    f"{row[col].strip()}")
+            src = levels.get((cid, lvl))
+            if src:
+                cites = "; ".join(
+                    bib[k]["citation"] for k in src["source_keys"].split(";") if k.strip()
+                )
+                line += f"\n  — *Why this level:* {src['why'].strip()} *Sources:* {cites}."
+            out.append(line)
         out.append("")
     return "\n".join(out)
 
@@ -161,7 +174,7 @@ def style_sheet(ws, widths, wrap_cols=()):
     ws.freeze_panes = "A2"
 
 
-def render_xlsx(caps, scale, scopes, domains):
+def render_xlsx(caps, scale, scopes, domains, bib):
     wb = Workbook()
 
     ws = wb.active
@@ -196,6 +209,12 @@ def render_xlsx(caps, scale, scopes, domains):
                    int(r["focus_areas"]), int(r["capabilities"])])
     style_sheet(ws, [42, 32, 9, 12, 12])
 
+    ws = wb.create_sheet("Sources & Theory")
+    ws.append(["Key", "Type", "Citation", "Link", "Notes"])
+    for r in bib.values():
+        ws.append([r["key"], r["type"], r["citation"], r["link"], r["notes"]])
+    style_sheet(ws, [18, 14, 70, 40, 40], wrap_cols={3, 5})
+
     path = os.path.join(DATA, "capabilities.xlsx")
     wb.save(path)
     print("wrote data/capabilities.xlsx")
@@ -207,10 +226,12 @@ def main():
     scopes = read_csv("scope_levels.csv")
     domains = read_csv("domains.csv")
 
+    bib, levels = load_sourcing()
+
     write_text("proficiency_scale.md", render_proficiency_md(scale))
     write_text("scope_levels.md", render_scope_md(scopes))
-    write_text("capabilities.md", render_capabilities_md(caps, scale, domains))
-    render_xlsx(caps, scale, scopes, domains)
+    write_text("capabilities.md", render_capabilities_md(caps, scale, domains, bib, levels))
+    render_xlsx(caps, scale, scopes, domains, bib)
     print(f"rendered {len(caps)} capabilities")
 
 

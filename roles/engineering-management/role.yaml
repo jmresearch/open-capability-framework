@@ -8,7 +8,26 @@ scope_note: >
   Upper-level cells are written as indirect-leverage behaviors demonstrable before the seat
   is granted; some accountability (budget of record, board exposure) is only fully exercised
   in-seat. Consolidated from four independent sources by union (three ensemble runs plus a
-  hand-built engineering-leadership workbook, genericized).
+  hand-built engineering-leadership workbook, genericized). R3 sourced-derivation retrofit
+  (2026-07-09): every mapping now carries a bibliography source and a per-competency why;
+  legacy free-text anchors resolve to bibliography keys (reusing existing catalog sourcing
+  where the capability's own capability_levels.csv sourcing already anchors it, e.g. STRAT-02
+  to Doerr's OKR literature rather than the original Locke & Latham citation, which has no
+  bibliography entry); role flavor from the prior authored ladder survives only where it
+  passes the cell-derivation instance test, stored under evidence:. One deliberate mapping
+  change: STRAT-01 M4 moves from the pre-retrofit P5 to P4 -- Senior Director is a sub-org
+  scope, and STRAT-01 P5 ("sets the enterprise strategic direction") is an enterprise-register
+  bar P4 ("defines strategy-formulation approaches others adopt; resolves the hardest
+  strategic trade-offs") already covers at that scope; this repoints the miscalibration
+  platform-engineering-manager's own R3 retrofit already flagged for the same capability.
+  Rendered ladder.md/ladder.csv/ladder.xlsx are derived from this file plus the catalog and
+  must never be hand-edited.
+ladder_name: Engineering Management (M1-M6) - Canonical
+ladder_description: >
+  People-leadership ladder (M1-M6) for engineering management, from first-line manager
+  through SVP / org lead, spanning leadership & direction, execution & operations, people &
+  talent, technical stewardship, communication & influence, and self & personal effectiveness.
+derived: true
 levels:
   - {code: M1, title: Engineering Manager, scope: one team, focus: builds one healthy, delivering team and the management fundamentals}
   - {code: M2, title: Senior Engineering Manager, scope: a complex / critical team, focus: runs a high-stakes team and multiplies senior ICs}
@@ -22,262 +41,860 @@ competencies:
     capability: STRAT-01
     key_area: Leadership & Direction
     key_attribute: Strategy & Vision
-    anchor: "Rumelt, Good Strategy Bad Strategy (2011)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P5, M5: P5, M6: P6}
+    anchor: rumelt2011-good-strategy
+    anchor_why: "real strategy is a diagnosis plus a coherent guiding policy and actions, not goals restated as ambition"
+    mappings:
+      M1: {p: P2, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "STRAT-01 P2 ('develops components of strategy and standard analyses independently with normal review') is Rumelt's diagnosis-plus-guiding-policy kernel applied to one team's plan, not yet the unaided strategic framing P3 expects for ambiguous problems."}
+      M2: {p: P3, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "STRAT-01 P3 ('frames ambiguous strategic problems and shapes coherent strategy autonomously; the go-to strategist') is Rumelt's kernel test -- catching a 'strategy' that is really goals restated as ambition -- applied unaided on a complex/critical team, the harder judgment call P2's component-level analysis does not require."}
+      M3: {p: P4, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "STRAT-01 P4 ('defines strategy-formulation approaches others adopt; resolves the hardest strategic trade-offs') is a domain strategy several teams plan against, not one team's document -- Director-level per GitLab's cross-team scope."}
+      M4: {p: P4, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "M4 keeps P4; a sub-org strategy reconciling competing team strategies into one coherent investment thesis is still the pattern-setting behavior STRAT-01 P4 describes, not yet P5's enterprise-wide direction-setting -- sub-org scope does not reach the enterprise register P5 requires, so this competency stays on the ladder's usual M4:P4 plateau (this repoints the pre-retrofit M4:P5 curve; platform-engineering-manager's R3 retrofit already flagged the same P5-at-sub-org miscalibration for its own STRAT-01 mapping)."}
+      M5: {p: P5, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "STRAT-01 P5 ('sets the enterprise strategic direction; anticipates major shifts reshaping the competitive landscape') matches VP-level ownership of strategy that is genuinely enterprise-facing -- multi-year direction defended at the executive table with market and delivery evidence -- a real step up from M4's sub-org-scoped pattern-setting, not a repeated bar."}
+      M6: {p: P6, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "STRAT-01 P6 ('defines corporate-strategy practice recognized industry-wide; externally cited thought leader') is Rumelt's guiding-policy discipline applied at the org-wide, thesis-setting register."}
+    evidence:
+      M1: "Writes a team charter that names the problem the team exists to solve, not just its goals."
+      M2: "Reframes a team's stalled 'strategy' around its actual obstacle after spotting it was really just goals restated as ambition."
+      M3: "Publishes the domain strategy several teams plan against, naming the bets, non-goals, and rejected alternatives."
+      M4: "Reconciles competing team strategies into one coherent investment thesis, cutting real programs to fund the guiding policy."
+      M5: "Sets multi-year direction for a function and defends its trade-offs at the executive table with market and delivery evidence."
+      M6: "Frames the company-level bets the executive team commits to, and revises the diagnosis publicly when it changes."
   - theme: Vision & Goal Alignment
     capability: STRAT-02
     key_area: Leadership & Direction
     key_attribute: Strategy & Vision
-    anchor: "Locke & Latham, goal-setting theory (2002); Collins & Porras (1996)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P5, M5: P5, M6: P6}
+    anchor: doerr2018
+    anchor_why: "cascading objectives is how strategy becomes goals people can hit or miss, not just a slogan"
+    mappings:
+      M1: {p: P2, sources: [doerr2018, gitlab-em-jd], why: "STRAT-02 P2 ('runs standard planning cycles and cascades objectives independently with normal review') is Doerr's committed-OKR mechanics applied to one team, specific enough that anyone can say whether a goal was hit."}
+      M2: {p: P3, sources: [doerr2018, gitlab-em-jd], why: "STRAT-02 P3 ('designs planning for complex, interdependent units and resolves misalignment autonomously') is repairing vague or sandbagged goals and adding counter-metrics against gaming for a critical team -- unaided judgment P2's standard cycle does not require."}
+      M3: {p: P4, sources: [doerr2018, gitlab-em-jd], why: "STRAT-02 P4 ('defines the planning and goal-cascade methodology others adopt; fixes the hardest alignment failures') is the goal-cascade format a domain runs on, catching cross-team collisions before the quarter starts -- Director-level."}
+      M4: {p: P4, sources: [doerr2018, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is the goal architecture a sub-org runs on -- drafting, calibration, and scoring rituals that function without them in the room -- not a deeper cascading behavior."}
+      M5: {p: P5, sources: [doerr2018, gitlab-em-jd], why: "STRAT-02 P5 ('sets the enterprise planning operating model; anticipates shifts in how strategy translates to execution') matches VP-level ownership of function-level outcomes the business plans around."}
+      M6: {p: P6, sources: [doerr2018, gitlab-em-jd], why: "STRAT-02 P6 ('defines strategic-planning best practice recognized across the field; externally credible authority') is Doerr's cascading-objectives discipline applied at the org-wide, mission-to-goal-line register."}
+    evidence:
+      M1: "Translates org direction into team goals specific enough that anyone can say whether they were hit."
+      M2: "Repairs a vague or sandbagged goal during planning by adding leading indicators and a counter-metric against gaming."
+      M3: "Runs the goal cadence a domain uses so objectives interlock across teams, catching collisions before the quarter starts."
+      M4: "Builds the goal architecture a sub-org runs on, calibration and scoring rituals included, that functions without them in the room."
+      M5: "Sets function-level outcomes the business plans around, brokering trade-offs with product and finance."
+      M6: "Audits the line of sight from mission to every level's goals, and publicly retires goals that no longer serve it."
   - theme: Leading Change
     capability: EM-12
     key_area: Leadership & Direction
     key_attribute: Change & Organizational Design
-    anchor: "Kotter, Leading Change (1996)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: kotter1996
+    anchor_why: "durable change needs urgency, a guiding coalition, and follow-through, not a mandate"
+    mappings:
+      M1: {p: P2, sources: [kotter1996, gitlab-em-jd], why: "EM-12 P2 ('leads a contained team change with normal review') is Kotter's urgency-plus-follow-through discipline applied to one team's change, naming the why and piloting rather than decreeing it."}
+      M2: {p: P3, sources: [kotter1996, gitlab-em-jd], why: "EM-12 P3 ('independently drives significant change through resistance to durable adoption') is sequencing a disruptive change on a critical team with a stated case for urgency and staged wins, unaided -- and killing it publicly if it stalls."}
+      M3: {p: P4, sources: [kotter1996, gitlab-em-jd], why: "EM-12 P4 ('defines change approaches others adopt and rescues stalled transformations') is building the coalition for a cross-team change before announcing it -- adoption voluntary before it is mandatory -- Director-level."}
+      M4: {p: P4, sources: [kotter1996, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is running multiple concurrent changes across a sub-org without exceeding its absorption capacity, with explicit reversal criteria, not a deeper change behavior."}
+      M5: {p: P5, sources: [kotter1996, gitlab-em-jd], why: "EM-12 P5 ('sets the org's transformation strategy and anticipates where change is needed next') matches VP-level ownership of function-wide transformation with an honest cost narrative executives sign up for."}
+      M6: {p: P6, sources: [kotter1996, gitlab-em-jd], why: "EM-12 P6 ('defines effective engineering transformation for the discipline and shapes external practice') is Kotter's change model applied at the field-shaping, market-timed register."}
+    evidence:
+      M1: "Lands a team-level change by naming the why, piloting it, and following through past the initial dip."
+      M2: "Sequences a disruptive change on a critical team with a stated case for urgency and staged early wins, and kills it publicly if it is not working."
+      M3: "Builds the coalition for a cross-team change before announcing it, recruiting early adopters and converting skeptics on the record."
+      M4: "Runs multiple concurrent changes across a sub-org without exceeding its absorption capacity, with explicit reversal criteria."
+      M5: "Leads function-wide transformation with an honest cost narrative executives sign up for, anchored in reviews and incentives."
+      M6: "Times and frames org-wide change against market conditions, absorbing the political cost personally so teams can execute."
   - theme: Organizational & Team Design
     capability: EM-04
     key_area: Leadership & Direction
     key_attribute: Change & Organizational Design
-    anchor: "Skelton & Pais, Team Topologies (2019); Conway (1968)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: skelton-pais2019
+    anchor_why: "team boundaries, cognitive load, and interaction modes determine architecture and flow"
+    mappings:
+      M1: {p: P2, sources: [skelton-pais2019, gitlab-em-jd], why: "EM-04 P2 ('designs a sound structure for one team with normal review') is shaping roles, ownership boundaries, and on-call load inside one team deliberately -- Team Topologies at first-line scope."}
+      M2: {p: P3, sources: [skelton-pais2019, gitlab-em-jd], why: "EM-04 P3 ('independently restructures teams to fit changing work and resolves boundary conflicts') is redrawing a critical team's boundaries when the system outgrows them, with a written rationale and a shown load reduction -- unaided."}
+      M3: {p: P4, sources: [skelton-pais2019, gitlab-em-jd], why: "EM-04 P4 ('defines org-design approaches others adopt and reshapes the most tangled structures') is designing multi-team boundaries for a domain with the Conway's-law consequences named and neighboring leads co-signing -- Director-level."}
+      M4: {p: P4, sources: [skelton-pais2019, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is designing a sub-org's structure around the work -- platform versus stream teams, new leadership seats -- modeling transition costs before the announcement, not a deeper design behavior."}
+      M5: {p: P5, sources: [skelton-pais2019, gitlab-em-jd], why: "EM-04 P5 ('sets org-structuring strategy across the org and anticipates scaling inflection points') matches VP-level ownership of when a function's teams split, merge, or platformize."}
+      M6: {p: P6, sources: [skelton-pais2019, gitlab-em-jd], why: "EM-04 P6 ('defines effective engineering-org design for the discipline and is cited externally on it') is Skelton & Pais's team-shape thesis applied at the org-wide, externally cited register."}
+    evidence:
+      M1: "Shapes roles, ownership boundaries, and on-call load inside the team so work flows without waiting on one person."
+      M2: "Redraws a team's boundaries when the system outgrows them, showing the load reduction afterward -- fewer handoffs, fewer pages."
+      M3: "Designs multi-team boundaries for a domain with the Conway's-law consequences named; neighboring leads co-sign the design."
+      M4: "Designs a sub-org's structure around the work rather than around people, modeling transition costs before the announcement."
+      M5: "Sets the function's principles for when to split, merge, or platformize teams, evolving shape ahead of scale inflections."
+      M6: "Publishes the org-wide design principles other leaders use for their own restructures."
   - theme: Driving Alignment & Decision Clarity
     capability: LI-05
     key_area: Leadership & Direction
     key_attribute: Alignment & Adaptive Leadership
-    anchor: "Bungay, The Art of Action (2011)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: bungay2011-art-of-action
+    anchor_why: "mission command closes the knowledge, alignment, and effects gaps by briefing intent and freeing method"
+    mappings:
+      M1: {p: P2, sources: [bungay2011-art-of-action, gitlab-em-jd], why: "LI-05 P2 ('aligns direct partners on scoped decisions') is closing decisions in the room -- the call, the owner, the revisit date -- for one team, the smallest scale of Bungay's briefed-intent practice."}
+      M2: {p: P3, sources: [bungay2011-art-of-action, gitlab-em-jd], why: "LI-05 P3 ('drives alignment across a domain; turns disagreement into committed direction') is briefing intent so a critical team makes correct calls in the leader's absence -- Bungay's freed-method discipline exercised unaided."}
+      M3: {p: P4, sources: [bungay2011-art-of-action, gitlab-em-jd], why: "LI-05 P4 ('aligns multiple teams and leadership behind a direction') is aligning teams the leader does not run on shared intent, with real closure rules -- Director-level, beyond one domain's alignment."}
+      M4: {p: P4, sources: [bungay2011-art-of-action, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is building a sub-org's decision architecture -- what gets decided where, by whom, how fast -- not a deeper alignment behavior."}
+      M5: {p: P5, sources: [bungay2011-art-of-action, gitlab-em-jd], why: "LI-05 P5 ('creates forums/narratives through which the org aligns') matches VP-level ownership of the standing mechanisms that align a function with company strategy."}
+      M6: {p: P6, sources: [bungay2011-art-of-action, gitlab-em-jd], why: "LI-05 P6 ('aligns the company behind direction; externally persuasive') is Bungay's briefed-intent practice applied at the org-wide, noise-resistant register."}
+    evidence:
+      M1: "Closes decisions in the room and writes down the call, the owner, and the revisit date where the team works."
+      M2: "Briefs intent so well the team makes correct calls in their absence, catching drift at the weekly instead of the postmortem."
+      M3: "Aligns teams they do not run on shared intent through one-page briefs and decision forums with real closure rules."
+      M4: "Builds a sub-org's decision architecture and unblocks stuck decisions by fixing the process, not just the decision."
+      M5: "Aligns a function with company strategy through briefed intent that executives and engineers repeat verbatim."
+      M6: "Keeps an entire org pointed at the same intent through noise, repeating the direction until org-wide decisions visibly trace to it."
   - theme: Situational & Adaptive Leadership
     capability: LI-08
     key_area: Leadership & Direction
     key_attribute: Alignment & Adaptive Leadership
-    anchor: "Hersey & Blanchard (1969); Heifetz (1994)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: hersey-blanchard1969
+    anchor_why: "there is no single right style; the meta-skill is reading what the person, team, and moment need"
+    mappings:
+      M1: {p: P2, sources: [hersey-blanchard1969, gitlab-em-jd, heifetz2009-adaptive], why: "LI-08 P2 ('matches direction and support to each person's readiness per task ... and tells technical problems from adaptive ones') is Hersey & Blanchard's Situational Leadership model applied deliberately across one team, plus Heifetz's technical-versus-adaptive diagnosis at its most basic."}
+      M2: {p: P3, sources: [hersey-blanchard1969, gitlab-em-jd, heifetz2009-adaptive], why: "LI-08 P3 ('flexes skillfully across a wide range of people and hard situations ... refuses to force technical fixes onto adaptive challenges') is applying Heifetz's diagnosis under conflicting demands on a critical team without losing a grounded center -- the competent band's hallmark."}
+      M3: {p: P4, sources: [hersey-blanchard1969, gitlab-em-jd, heifetz2009-adaptive], why: "LI-08 P4 ('coaches other leaders to read what a person, team, or moment needs ... adapts across diverse teams while staying recognizably consistent in values') is teaching the diagnosis, not just practicing it -- Director-level per SFIA's higher responsibility band."}
+      M4: {p: P4, sources: [hersey-blanchard1969, gitlab-em-jd, heifetz2009-adaptive], why: "M4 keeps P4; Senior Director scope is developing adaptive leadership as a discipline across a sub-org -- teaching leaders to diagnose technical-versus-adaptive at scale -- not a deeper personal-flexing behavior."}
+      M5: {p: P5, sources: [hersey-blanchard1969, gitlab-em-jd, heifetz2009-adaptive], why: "LI-08 P5 ('develops adaptive leadership as an organizational discipline ... the leadership style changes when the situation does') matches VP-level ownership of the tone for adaptive, authentic leadership across a function."}
+      M6: {p: P6, sources: [hersey-blanchard1969, gitlab-em-jd, heifetz2009-adaptive], why: "LI-08 P6 ('shapes an adaptive, grounded leadership culture ... style stays plastic to conditions while values stay fixed') is Heifetz's institution-level prescription for sustained adaptive work applied org-wide."}
+    evidence:
+      M1: "Delegates a familiar task to a seasoned engineer and coaches a struggling new hire through the same kind of task step by step, in the same week."
+      M2: "Refuses to force a technical fix onto an adaptive challenge on a critical team, and names the difference in the room."
+      M3: "Coaches a peer lead who defaults to hands-on rescue to recognize when a team's problem is adaptive, not technical, and to back off instead of fixing it themselves."
+      M4: "Develops adaptive leadership as a discipline across a sub-org, teaching leaders to diagnose technical-versus-adaptive at scale."
+      M5: "Sets the tone for adaptive, authentic leadership across a function, adjusting their own approach to what the function needs now."
+      M6: "Keeps the org's leadership style recognizable through a merger that could have imported a completely different culture."
   # ---- Execution & Operations ----
   - theme: Planning & Estimation
     capability: PD-04
     key_area: Execution & Operations
     key_attribute: Planning & Prioritization
-    anchor: "McConnell, Software Estimation (2006)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: mcconnell2006-estimation
+    anchor_why: "estimates carry a cone of uncertainty that narrows with knowledge, and honest ranges beat confident points"
+    mappings:
+      M1: {p: P2, sources: [mcconnell2006-estimation, gitlab-em-jd], why: "PD-04 P2 ('estimates scoped work realistically; plans own 1-3 week projects') is McConnell's ranged-estimate discipline applied to one team's quarter, re-planning visibly when reality diverges instead of quietly slipping."}
+      M2: {p: P3, sources: [mcconnell2006-estimation, gitlab-em-jd], why: "PD-04 P3 ('plans quarter-scale, multi-workstream efforts including dependencies') is planning a critical team through dependency-heavy work, buffering the riskiest items first, so its dates are the ones stakeholders trust."}
+      M3: {p: P4, sources: [mcconnell2006-estimation, gitlab-em-jd], why: "PD-04 P4 ('expert at planning large programs; anticipates risk early') is running planning across a domain so team plans compose into one deliverable picture -- Director-level."}
+      M4: {p: P4, sources: [mcconnell2006-estimation, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is the planning system a sub-org runs on -- cadence, templates, dependency review -- not a deeper estimation behavior."}
+      M5: {p: P5, sources: [mcconnell2006-estimation, gitlab-em-jd], why: "PD-04 P5 ('plans org-level programs across quarters/years') matches VP-level ownership of converting portfolio uncertainty into ranged commitments the business plans around."}
+      M6: {p: P6, sources: [mcconnell2006-estimation, gitlab-em-jd], why: "PD-04 P6 ('shapes how the company plans major technical change') is McConnell's cone-of-uncertainty discipline applied at the company planning-philosophy register."}
+    evidence:
+      M1: "Publishes a team plan with ranged estimates and named assumptions, and re-plans visibly when reality diverges."
+      M2: "Plans a critical team through dependency-heavy work, sequencing around external teams and buffering the riskiest items first."
+      M3: "Runs planning across a domain so team plans compose into one deliverable picture, surfacing cross-team collisions weeks early."
+      M4: "Builds the planning system a sub-org runs on and coaches leaders until plan quality is uniform across it."
+      M5: "Converts portfolio uncertainty into ranged function-level commitments the business plans around."
+      M6: "Sets the org's planning philosophy -- horizon, cadence, commitment culture -- and arbitrates when annual bets collide."
   - theme: Prioritization & Trade-offs
     capability: PD-02
     key_area: Execution & Operations
     key_attribute: Planning & Prioritization
-    anchor: "Reinertsen, The Principles of Product Development Flow (2009)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: reinertsen2009-flow
+    anchor_why: "cost of delay and queue economics make prioritization quantitative instead of loudest-voice-wins"
+    mappings:
+      M1: {p: P2, sources: [reinertsen2009-flow, gitlab-em-jd], why: "PD-02 P2 ('makes sound priority calls within scope; time-boxes uncertain work') is ranking one team's backlog with explicit cost-of-delay reasoning and saying no with the reasons attached."}
+      M2: {p: P3, sources: [reinertsen2009-flow, gitlab-em-jd], why: "PD-02 P3 ('balances cost/value/risk across a domain; resists hype; decisions hold up over months') is trading scope, quality, and date on a critical deliverable with the reasoning written down, unaided."}
+      M3: {p: P4, sources: [reinertsen2009-flow, gitlab-em-jd], why: "PD-02 P4 ('expert at portfolio-level trade-offs; surfaces hidden assumptions; trusted tiebreaker') is arbitrating priority conflicts between teams using a shared economic frame -- Director-level."}
+      M4: {p: P4, sources: [reinertsen2009-flow, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is killing or deferring whole initiatives to keep a sub-org's portfolio inside real capacity, delivering the news to sponsors personally, not a deeper trade-off behavior."}
+      M5: {p: P5, sources: [reinertsen2009-flow, gitlab-em-jd], why: "PD-02 P5 ('sets decision frameworks for the org') matches VP-level ownership of the investment split across run, grow, and transform for a function."}
+      M6: {p: P6, sources: [reinertsen2009-flow, gitlab-em-jd], why: "PD-02 P6 ('influences company strategic direction through judgment') is Reinertsen's flow economics applied at the company-strategic, irreversible-bets register."}
+    evidence:
+      M1: "Ranks the backlog with explicit cost-of-delay reasoning and says no to a low-value request with the reasons attached."
+      M2: "Trades scope, quality, and date on a critical deliverable with the reasoning written down so it travels."
+      M3: "Arbitrates priority conflicts between teams using a shared economic frame they introduced, with the accepted trade-offs on record."
+      M4: "Kills or defers whole initiatives to keep a sub-org's portfolio inside real capacity, delivering the news to sponsors personally."
+      M5: "Sets the investment split across run, grow, and transform for a function with an economic case finance signs off on."
+      M6: "Makes the org's few irreversible bets explicitly and stages the reversible ones, saying no to good ideas in public."
   - theme: Predictable Delivery & Execution
     capability: EM-07
     key_area: Execution & Operations
     key_attribute: Delivery & Reliability
-    anchor: "Forsgren, Humble & Kim, Accelerate (2018)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: forsgren2018
+    anchor_why: "software delivery performance predicts organizational performance and is measurable"
+    mappings:
+      M1: {p: P2, sources: [forsgren2018, gitlab-em-jd], why: "EM-07 P2 ('drives delivery of a standard program with normal review') is running one team's delivery cadence so commitments are met or renegotiated early, never silently missed."}
+      M2: {p: P3, sources: [forsgren2018, gitlab-em-jd], why: "EM-07 P3 ('independently runs complex multi-team programs and recovers slipping delivery') is keeping delivery predictable on a system with heavy dependencies, recovering a slipping critical program unaided."}
+      M3: {p: P4, sources: [forsgren2018, gitlab-em-jd], why: "EM-07 P4 ('defines delivery practices others adopt and rescues the most troubled programs') is running cross-team delivery with dependencies mapped and interface contracts negotiated before integration -- Director-level."}
+      M4: {p: P4, sources: [forsgren2018, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is the program mechanisms -- dependency maps, integration checkpoints, single-threaded owners -- that let multi-quarter, multi-team programs land, not a deeper delivery behavior."}
+      M5: {p: P5, sources: [forsgren2018, gitlab-em-jd], why: "EM-07 P5 ('sets the org's delivery strategy and anticipates systemic delivery risks') matches VP-level ownership of delivery forecasts executives plan the business on."}
+      M6: {p: P6, sources: [forsgren2018, gitlab-em-jd], why: "EM-07 P6 ('defines what excellent program delivery means and shapes external practice') is Accelerate's engineered-delivery thesis applied at the org-defining register."}
+    evidence:
+      M1: "Runs a delivery cadence where commitments are met or renegotiated early, and flags slips with options, not apologies."
+      M2: "Recovers a slipping critical program by re-scoping and communicating the new plan before being asked."
+      M3: "Runs cross-team delivery with dependencies mapped, negotiating interface contracts between teams before integration, not after."
+      M4: "Builds the program mechanisms that let multi-quarter, multi-team programs land, and coaches other leads to run them."
+      M5: "Gives executives delivery forecasts they plan the business on, with early warning the moment a forecast breaks."
+      M6: "Sets the org's execution bar for what 'on time' and 'done' mean, and personally intervenes on the few existential programs."
   - theme: Incident & Reliability Leadership
     capability: EM-10
     key_area: Execution & Operations
     key_attribute: Delivery & Reliability
-    anchor: "Beyer, Jones, Petoff & Murphy, Site Reliability Engineering (2016)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: sre2016
+    anchor_why: "error budgets, blameless postmortems, and toil caps make reliability an engineering discipline"
+    mappings:
+      M1: {p: P2, sources: [sre2016, gitlab-em-jd], why: "EM-10 P2 ('manages standard incidents and routine operational risk with normal review') is running blameless postmortems that produce completed actions on one team, and keeping on-call humane."}
+      M2: {p: P3, sources: [sre2016, gitlab-em-jd], why: "EM-10 P3 ('independently leads severe incidents and drives durable remediation of risk') is commanding sev-1 incidents on a critical system calmly -- clear roles, decision log -- unaided."}
+      M3: {p: P4, sources: [sre2016, gitlab-em-jd], why: "EM-10 P4 ('defines incident and risk practices others adopt and commands the worst crises calmly') is raising the postmortem and readiness bar across a domain -- SLOs adopted by teams they do not run -- Director-level."}
+      M4: {p: P4, sources: [sre2016, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is a sub-org's reliability operating model -- SLO governance, severity taxonomy, an incident-commander bench -- not a deeper command behavior."}
+      M5: {p: P5, sources: [sre2016, gitlab-em-jd], why: "EM-10 P5 ('sets the org's operational-risk strategy and anticipates systemic failure modes') matches VP-level ownership of representing operational risk at the executive table in revenue terms."}
+      M6: {p: P6, sources: [sre2016, gitlab-em-jd], why: "EM-10 P6 ('defines what excellent operational risk management means and shapes external practice') is SRE's error-budget discipline applied at the customer-and-board-facing register."}
+    evidence:
+      M1: "Runs blameless postmortems that produce completed actions, not filed documents, and keeps on-call humane."
+      M2: "Commands sev-1 incidents on a critical system calmly, with clear roles and a decision log, and pushes reliability work onto the roadmap with error-budget evidence."
+      M3: "Raises the postmortem and readiness bar across a domain, so SLOs and error budgets are adopted by teams they do not run."
+      M4: "Builds a sub-org's reliability operating model -- SLO governance, severity taxonomy, an incident-commander bench -- and rehearses it."
+      M5: "Represents operational risk at the executive table in customer and revenue terms, setting risk tolerance with the business."
+      M6: "Represents the org's operational integrity to customers, regulators, and the board during the worst incidents."
   - theme: Risk Management & Governance
     capability: RISK-01
     key_area: Execution & Operations
     key_attribute: Delivery & Reliability
-    anchor: "NIST Cybersecurity Framework (2014); PMI PMBOK (2021)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: nist-csf2
+    anchor_why: "risk fails at the management layer -- unowned exposures, unfunded mitigations -- more often than the technical one"
+    mappings:
+      M1: {p: P2, sources: [nist-csf2, gitlab-em-jd, pmi-pmbok7], why: "RISK-01 P2 ('conducts standard risk assessments and updates registers independently with normal review') is keeping a team risk register with named owners and trigger conditions, per PMBOK's risk-register practice."}
+      M2: {p: P3, sources: [nist-csf2, gitlab-em-jd, pmi-pmbok7], why: "RISK-01 P3 ('assesses complex, interconnected enterprise risks and sets local methodology autonomously') is leading a critical system through a real risk event -- an audit, a coordinated disclosure -- hardening system and process afterward, unaided."}
+      M3: {p: P4, sources: [nist-csf2, gitlab-em-jd, pmi-pmbok7], why: "RISK-01 P4 ('designs the enterprise risk framework and appetite model others adopt; solves the hardest risk problems') is normalizing risk practice across a domain -- shared register format, paved-road controls teams adopt -- Director-level."}
+      M4: {p: P4, sources: [nist-csf2, gitlab-em-jd, pmi-pmbok7], why: "M4 keeps P4; Senior Director scope is a sub-org's risk governance -- risk-appetite statements, exception processes with expiry dates -- not a deeper risk behavior."}
+      M5: {p: P5, sources: [nist-csf2, gitlab-em-jd, pmi-pmbok7], why: "RISK-01 P5 ('sets enterprise risk strategy and appetite at board level; anticipates emerging systemic risks') matches VP-level trading of risk against delivery with explicit executive sign-off."}
+      M6: {p: P6, sources: [nist-csf2, gitlab-em-jd, pmi-pmbok7], why: "RISK-01 P6 ('defines enterprise-risk practice recognized industry-wide; externally cited authority') is the NIST CSF's risk discipline applied at the board-and-regulator-facing register."}
+    evidence:
+      M1: "Keeps a team risk register with named owners and trigger conditions, and escalates when a trigger fires rather than hoping."
+      M2: "Leads a critical system through a real risk event -- an audit or a failed dependency -- and hardens the system and process afterward."
+      M3: "Normalizes risk practice across a domain -- shared register format, review cadence, paved-road controls teams adopt because they are easier."
+      M4: "Builds a sub-org's risk governance -- risk-appetite statements, exception processes with expiry dates -- and funds the mitigations."
+      M5: "Trades risk against delivery at function scale with explicit executive sign-off on accepted risks -- no silent acceptance."
+      M6: "Sets the org's risk appetite and answers for its posture to the board, regulators, and customers."
   - theme: Engineering Metrics & Delivery Health
     capability: EM-09
     key_area: Execution & Operations
     key_attribute: Operational Excellence
-    anchor: "Forsgren, Humble & Kim, Accelerate (2018) - DORA four keys"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
-  - theme: Process Design & Continuous Improvement
+    anchor: forsgren2018
+    anchor_why: "the DORA four keys predict organizational performance, and instrumenting them beats arguing from anecdote"
+    mappings:
+      M1: {p: P2, sources: [forsgren2018, gitlab-em-jd, forsgren2021-space], why: "EM-09 P2 ('interprets productivity metrics for one team with normal review') is reading a team's core health signals on a cadence and acting on one bottleneck at a time."}
+      M2: {p: P3, sources: [forsgren2018, gitlab-em-jd, forsgren2021-space], why: "EM-09 P3 ('independently designs metric systems and distinguishes real signal from vanity numbers') is diagnosing a complex team's delivery drag to root cause -- flaky tests, review latency -- and showing the improvement in the numbers, unaided."}
+      M3: {p: P4, sources: [forsgren2018, gitlab-em-jd, forsgren2021-space], why: "EM-09 P4 ('defines the productivity-measurement model others adopt and debunks misleading metrics') is standardizing delivery measurement across a domain so teams are comparable without being gamed -- Director-level."}
+      M4: {p: P4, sources: [forsgren2018, gitlab-em-jd, forsgren2021-space], why: "M4 keeps P4; Senior Director scope is setting delivery-health standards and instrumentation for a sub-org, funding the platform work that moves them, not a deeper measurement behavior."}
+      M5: {p: P5, sources: [forsgren2018, gitlab-em-jd, forsgren2021-space], why: "EM-09 P5 ('sets the org's engineering-metrics strategy and anticipates which signals will matter') matches VP-level framing of engineering productivity for the executive suite in business terms."}
+      M6: {p: P6, sources: [forsgren2018, gitlab-em-jd, forsgren2021-space], why: "EM-09 P6 ('defines rigorous engineering productivity measurement and influences the field externally') is DORA/SPACE applied at the board-legible, field-influencing register."}
+    evidence:
+      M1: "Reads the team's core health signals on a cadence and acts on one bottleneck at a time, distinguishing the metric moving from the system improving."
+      M2: "Diagnoses a complex team's delivery drag to root cause and shows the improvement in the numbers, not just the narrative."
+      M3: "Standardizes delivery measurement across a domain so teams are comparable without being gamed."
+      M4: "Sets delivery-health standards and instrumentation for a sub-org and funds the platform work that moves them."
+      M5: "Frames engineering productivity for the executive suite in business terms, resisting vanity metrics."
+      M6: "Makes delivery capability a board-legible asset, benchmarking the org externally and retiring measures that stop informing decisions."
+  - theme: Process & Continuous Improvement
     capability: EM-08
     key_area: Execution & Operations
     key_attribute: Operational Excellence
-    anchor: "Deming, Out of the Crisis (1986)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: deming1986-out-of-crisis
+    anchor_why: "improvement comes from acting on the system, not exhorting individuals"
+    mappings:
+      M1: {p: P2, sources: [deming1986-out-of-crisis, gitlab-em-jd], why: "EM-08 P2 ('runs and tunes a team's operating cadence with normal review') is designing lightweight processes and running retros that produce changes which stick on one team."}
+      M2: {p: P3, sources: [deming1986-out-of-crisis, gitlab-em-jd], why: "EM-08 P3 ('independently designs processes that fit the work and removes friction others miss') is building robust process for a critical team -- reducing variation while right-sizing governance -- unaided."}
+      M3: {p: P4, sources: [deming1986-out-of-crisis, gitlab-em-jd], why: "EM-08 P4 ('defines operating-cadence patterns others adopt and fixes broken processes across teams') is setting consistent process and quality controls across a domain, moving improvements between teams with credit given -- Director-level."}
+      M4: {p: P4, sources: [deming1986-out-of-crisis, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is the operations-review rhythm a sub-org trusts -- leaders bring bad news to it because the response is problem-solving, not punishment -- not a deeper process behavior."}
+      M5: {p: P5, sources: [deming1986-out-of-crisis, gitlab-em-jd], why: "EM-08 P5 ('sets the org's operating model and anticipates where cadence must evolve') matches VP-level ownership of the function's continuous-improvement strategy."}
+      M6: {p: P6, sources: [deming1986-out-of-crisis, gitlab-em-jd], why: "EM-08 P6 ('defines effective engineering operating cadence for the discipline and is recognized for it') is Deming's system-improvement thesis applied at the culture-defining register."}
+    evidence:
+      M1: "Runs retrospectives that produce changes which stick, so the same complaint does not appear three retros running."
+      M2: "Builds robust process for a critical team, reducing variation in quality and delivery while right-sizing governance."
+      M3: "Sets consistent process and quality controls across a domain and moves an improvement from one team to another with credit given."
+      M4: "Builds the operations-review rhythm a sub-org trusts, so leaders bring their own bad news to it."
+      M5: "Sets the function's continuous-improvement strategy and operating-efficiency bar, justified with trend data that survives finance scrutiny."
+      M6: "Shapes an improvement culture org-wide -- process standards and learning loops that persist because they are cultural, not mandated."
   - theme: Developer Experience & Flow
     capability: OPS-27
     key_area: Execution & Operations
     key_attribute: Operational Excellence
-    anchor: "Forsgren et al., The SPACE of Developer Productivity (2021)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: forsgren2021-space
+    anchor_why: "developer productivity is multidimensional, never a single output count, and friction taxes everything"
+    mappings:
+      M1: {p: P2, sources: [forsgren2021-space, gitlab-em-jd], why: "OPS-27 P2 ('independently builds and supports standard platform capabilities and templates for routine developer needs with review') is removing one team's top friction -- flaky CI, slow reviews -- and measuring cycle time before and after."}
+      M2: {p: P3, sources: [forsgren2021-space, gitlab-em-jd], why: "OPS-27 P3 ('designs self-service workflows for ambiguous needs, reducing friction and resolving hard abstraction and adoption issues') is instrumenting developer experience on a critical team with surveys plus system metrics and fixing the top pain point each quarter, unaided."}
+      M3: {p: P4, sources: [forsgren2021-space, gitlab-em-jd], why: "OPS-27 P4 ('defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems') is prioritizing platform and tooling investment across teams by measured friction -- Director-level."}
+      M4: {p: P4, sources: [forsgren2021-space, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is a developer-experience feedback loop a sub-org acts on quarterly -- findings become funded work -- not a deeper instrumentation behavior."}
+      M5: {p: P5, sources: [forsgren2021-space, gitlab-em-jd], why: "OPS-27 P5 ('sets organization-wide platform strategy, anticipating how developer-experience engineering should evolve') matches VP-level ownership of the function-wide productivity investment case at the executive table."}
+      M6: {p: P6, sources: [forsgren2021-space, gitlab-em-jd], why: "OPS-27 P6 ('defines what excellent platform engineering means for the field, shaping industry developer-experience practice') is SPACE's multidimensional framing applied at the standing-priority, org-wide register."}
+    evidence:
+      M1: "Removes the team's top friction and measures cycle time before and after."
+      M2: "Instruments developer experience on a critical team with surveys plus system metrics and fixes the top pain point each quarter."
+      M3: "Prioritizes platform and tooling investment across teams by measured friction, resisting single-metric productivity theater on the record."
+      M4: "Builds a developer-experience feedback loop a sub-org acts on quarterly, so findings become funded, visible work."
+      M5: "Makes the function-wide productivity investment case at the executive table with multidimensional evidence, and reports back honestly on what worked."
+      M6: "Keeps engineering effectiveness a standing strategic priority rather than a slogan; the org budgets for it in bad years too."
   - theme: Capacity & Headcount Planning
     capability: EM-05
     key_area: Execution & Operations
     key_attribute: Resource Stewardship
-    anchor: "Brooks, The Mythical Man-Month (1975)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: brooks1975-mythical-man-month
+    anchor_why: "adding people to a late project makes it later; capacity is nonlinear in headcount"
+    mappings:
+      M1: {p: P2, sources: [brooks1975-mythical-man-month, gitlab-em-jd], why: "EM-05 P2 ('builds a credible headcount plan for one team with normal review') is planning one team's quarter against realistic capacity -- on-call, ramp time, keep-the-lights-on -- and showing the math when asked to take more."}
+      M2: {p: P3, sources: [brooks1975-mythical-man-month, gitlab-em-jd], why: "EM-05 P3 ('independently plans resourcing under uncertainty and defends staffing trade-offs') is forecasting capacity across attrition and ramp scenarios for a complex team, unaided, and declining headcount that would slow it down."}
+      M3: {p: P4, sources: [brooks1975-mythical-man-month, gitlab-em-jd], why: "EM-05 P4 ('defines resource-planning practices others adopt and resolves cross-team allocation conflicts') is modeling capacity across several teams and proposing moving work or people to where the constraint actually is -- Director-level."}
+      M4: {p: P4, sources: [brooks1975-mythical-man-month, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is the headcount plan a sub-org's budget is built on, defending it line by line, not a deeper allocation behavior."}
+      M5: {p: P5, sources: [brooks1975-mythical-man-month, gitlab-em-jd], why: "EM-05 P5 ('sets org-wide resourcing strategy and anticipates future capacity demand') matches VP-level ownership of a function's location, seniority-mix, and build/contract workforce shape."}
+      M6: {p: P6, sources: [brooks1975-mythical-man-month, gitlab-em-jd], why: "EM-05 P6 ('defines headcount-planning best practice for the discipline and is recognized for it') is Brooks's nonlinear-capacity insight applied at the org-wide workforce-strategy register."}
+    evidence:
+      M1: "Plans the team's quarter against realistic capacity and shows the math when asked to take more."
+      M2: "Forecasts capacity across attrition and ramp scenarios so the team never lurches between starving and drowning."
+      M3: "Models capacity across several teams and proposes moving work or people to where the constraint actually is, trade-offs written down."
+      M4: "Builds the headcount plan a sub-org's budget is built on, taking cuts strategically rather than spreading them evenly."
+      M5: "Sets the function's location, seniority-mix, and build/contract workforce shape, tying growth to unit economics executives accept."
+      M6: "Shapes org-wide workforce strategy across cycles -- growing, freezing, or reducing -- with the org's long-run capability protected."
   - theme: Budget & Vendor Stewardship
     capability: EM-06
     key_area: Execution & Operations
     key_attribute: Resource Stewardship
-    anchor: "Korn Ferry Leadership Architect (2014) - Financial Acumen"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: kornferry2014-leadership-architect
+    anchor_why: "engineering leaders are judged on cost lines as well as delivery, and cloud-era spend is an engineering decision"
+    mappings:
+      M1: {p: P2, sources: [kornferry2014-leadership-architect, gitlab-em-jd], why: "EM-06 P2 ('manages a team budget and standard vendor relationships with normal review') is tracking one team's spend and catching anomalies before finance does -- Korn Ferry's Financial Acumen competency at first-line scope."}
+      M2: {p: P3, sources: [kornferry2014-leadership-architect, gitlab-em-jd], why: "EM-06 P3 ('independently controls budgets under pressure and negotiates difficult vendor terms') is owning a critical team's budget with real variance -- forecasting it, finding savings that do not damage the roadmap -- unaided."}
+      M3: {p: P4, sources: [kornferry2014-leadership-architect, gitlab-em-jd], why: "EM-06 P4 ('defines budget and vendor practices others adopt and rescues failing vendor relationships') is finding structural savings across teams -- duplicate tooling, idle capacity -- and landing the consolidation -- Director-level."}
+      M4: {p: P4, sources: [kornferry2014-leadership-architect, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is running a full budget cycle for a sub-org, connecting each line to a strategic bet, not a deeper vendor behavior."}
+      M5: {p: P5, sources: [kornferry2014-leadership-architect, gitlab-em-jd], why: "EM-06 P5 ('sets org-wide budget and vendor strategy and anticipates cost and supplier risks') matches VP-level stewardship of a function's cost structure at the executive and finance table."}
+      M6: {p: P6, sources: [kornferry2014-leadership-architect, gitlab-em-jd], why: "EM-06 P6 ('defines exemplary budget and vendor management for the field and influences practice') is Korn Ferry's Financial Acumen competency applied at the org-wide, existential-diligence register."}
+    evidence:
+      M1: "Tracks the team's spend and catches anomalies before finance does, making cost visible on the team's own dashboards."
+      M2: "Owns a budget with real variance, forecasting it and finding savings that do not damage the roadmap."
+      M3: "Finds structural savings across teams -- duplicate tooling, idle capacity, overlapping contracts -- and lands the consolidation."
+      M4: "Runs a full budget cycle for a sub-org, connecting each line to a strategic bet and reallocating mid-year with a rationale that travels."
+      M5: "Stewards a function's cost structure -- unit economics, vendor strategy, location mix -- and defends it at the executive and finance table."
+      M6: "Aligns the org's investment envelope with company strategy and makes its largest financial commitments."
   # ---- People & Talent ----
   - theme: Hiring & Selection
     capability: LI-02
     key_area: People & Talent
     key_attribute: Hiring & Team Formation
-    anchor: "Schmidt & Hunter, selection-methods meta-analysis (1998)"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: schmidt-hunter1998
+    anchor_why: "structured interviews and work samples are among the strongest predictors of job performance"
+    mappings:
+      M1: {p: P3, sources: [schmidt-hunter1998, gitlab-em-jd], why: "LI-02 P3 ('shapes hiring for a team; designs loops; makes sound staffing calls') is the bar at first-line manager, not P2's participate-and-calibrate band -- GitLab's EM job family gives a first-line manager full loop ownership for their own team."}
+      M2: {p: P3, sources: [schmidt-hunter1998, gitlab-em-jd], why: "M2 holds the same P3 loop-design bar as M1; GitLab's Senior EM band differentiates by team stakes -- critical, hard-to-fill roles -- and interviewer calibration, not by a deeper selection behavior."}
+      M3: {p: P4, sources: [schmidt-hunter1998, gitlab-em-jd], why: "LI-02 P4 ('drives hiring strategy across teams; builds the interviewing bar') is GitLab's Director-level scope -- a rubric and bar-raiser bench several teams use, not one team's loop."}
+      M4: {p: P4, sources: [schmidt-hunter1998, gitlab-em-jd], why: "M4 keeps the P4 hiring-strategy bar; GitLab's Senior Director differentiates by sub-org reach -- the pipeline a sub-org hires through -- not a new selection behavior."}
+      M5: {p: P5, sources: [schmidt-hunter1998, gitlab-em-jd], why: "LI-02 P5 ('sets the org's talent strategy') matches GitLab's VP-level ownership of function-wide talent-acquisition strategy, holding the bar under growth pressure."}
+      M6: {p: P6, sources: [schmidt-hunter1998, gitlab-em-jd], why: "LI-02 P6 ('shapes company-wide talent philosophy') is Schmidt & Hunter's selection science applied at the company-defining, external-brand register."}
+    evidence:
+      M1: "Runs a structured hiring loop with defined signals per interview and evidence-based debriefs, and closes candidates personally."
+      M2: "Designs the loop itself for senior and hard-to-fill roles and defends bar decisions with evidence over gut feel."
+      M3: "Sets the hiring bar across a domain -- rubric library, debrief standards, a bar-raiser bench -- so teams they do not run make comparable decisions."
+      M4: "Builds the hiring machinery a sub-org hires through -- interviewer training, bar-raiser pools, leveling guides, sourcing strategy."
+      M5: "Sets the function's talent-acquisition strategy -- where to compete for people and on what basis -- holding the bar under growth pressure."
+      M6: "Makes the org a destination for the people it most needs, and personally recruits the leadership that changes its capability."
   - theme: Onboarding & Team Formation
     capability: EM-13
     key_area: People & Talent
     key_attribute: Hiring & Team Formation
-    anchor: "Tuckman, Developmental Sequence in Small Groups (1965)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: tuckman1965
+    anchor_why: "teams predictably move through forming, storming, norming, and performing, and leaders can shorten the trough"
+    mappings:
+      M1: {p: P2, sources: [tuckman1965, gitlab-em-jd], why: "EM-13 P2 ('runs a 30/60/90 onboarding with named buddies and early wins; new hires ship in their first weeks') is a first-line manager running one team's forming stage to performing -- the P3 diagnostic read is not yet expected."}
+      M2: {p: P3, sources: [tuckman1965, gitlab-em-jd], why: "EM-13 P3 ('reads a team's formation stage and intervenes on it') is the harder, judgment-heavy read Tuckman's model demands once a team faces real disruption -- resetting norms after a merge, naming storming in the room -- unaided."}
+      M3: {p: P4, sources: [tuckman1965, gitlab-em-jd], why: "EM-13 P4 ('builds the onboarding and team-launch playbook multiple teams use ... stands up whole new teams repeatedly') is Director-level: the playbook itself, reused across a domain, not one team's forming stage."}
+      M4: {p: P4, sources: [tuckman1965, gitlab-em-jd], why: "M4 holds the same P4 playbook-building bar; the Senior Director differentiator is standing up whole new teams -- mission, first hires, norms, interfaces -- repeatedly, and coaching leaders through their first formations."}
+      M5: {p: P5, sources: [tuckman1965, gitlab-em-jd], why: "EM-13 P5 ('designs how an organization absorbs step-change growth ... without culture dilution') matches VP-level ownership of function-wide growth events -- acquisitions, new sites -- beyond any one team's formation."}
+      M6: {p: P6, sources: [tuckman1965, gitlab-em-jd], why: "EM-13 P6 ('makes team formation an organization-wide capability ... audits that the machinery still works') is the SVP register: forming teams is now infrastructure, not a per-team event."}
+    evidence:
+      M3: "Cuts a domain's median time-to-first-contribution with a ramp template teams outside their own org start copying unprompted."
+      M4: "Stands up whole new teams -- mission, first hires, norms, interfaces -- repeatedly, and coaches leaders through their first team formations."
+      M5: "Runs an acquired team through its first 90 days without losing a person to the culture clash that sank the last integration."
+      M6: "Audits the org's team-formation machinery on a cadence and finds -- and fixes -- the playbook step that quietly stopped working two reorgs ago."
   - theme: Coaching & Development
     capability: LI-01
     key_area: People & Talent
     key_attribute: Coaching & Development
-    anchor: "Whitmore, Coaching for Performance (1992); Google Project Oxygen"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: whitmore1992-coaching
+    anchor_why: "regular coaching, not status-checking, is the top driver of manager effectiveness"
+    mappings:
+      M1: {p: P3, sources: [whitmore1992-coaching, gitlab-em-jd, google-rework-oxygen], why: "LI-01 P3 ('coaches engineers with growth-oriented feedback; measurably improves a team's skill') is the GROW-model coaching Project Oxygen found separates effective from ineffective first-line managers -- P2's informal peer mentoring is not the job-defining bar."}
+      M2: {p: P3, sources: [whitmore1992-coaching, gitlab-em-jd, google-rework-oxygen], why: "M2 holds the same P3 coaching bar as M1; the Senior EM differentiator is coaching senior engineers and first-time leads through ambiguity the manager cannot solve for them, not a deeper technique."}
+      M3: {p: P4, sources: [whitmore1992-coaching, gitlab-em-jd, google-rework-oxygen], why: "LI-01 P4 ('develops future leads across teams; shapes hiring and onboarding') is coaching applied to growing other coaches -- Project Oxygen's finding that manager-of-managers effectiveness compounds through the leaders they develop."}
+      M4: {p: P4, sources: [whitmore1992-coaching, gitlab-em-jd, google-rework-oxygen], why: "M4 keeps the P4 bar; Senior Director scope is coaching capability built at scale -- manager forums, feedback training -- that a sub-org adopts and keeps running without them."}
+      M5: {p: P5, sources: [whitmore1992-coaching, gitlab-em-jd, google-rework-oxygen], why: "LI-01 P5 ('develops senior engineers and leaders; builds culture deliberately') matches VP-level ownership of a function's talent-development strategy, including peers who seek their counsel."}
+      M6: {p: P6, sources: [whitmore1992-coaching, gitlab-em-jd, google-rework-oxygen], why: "LI-01 P6 ('develops the next generation of top talent; legacy outlasts tenure') is coaching's pioneer register -- Whitmore's own claim that coaching should outlast the coach."}
+    evidence:
+      M1: "Holds one-on-ones that are coaching conversations, not status reads -- each person has a live growth plan they co-wrote."
+      M2: "Coaches senior engineers and first-time leads through ambiguity they cannot solve for them, and is sought out as a coach beyond the team."
+      M3: "Coaches other people-leads on their coaching, sitting in on their reviews on request; leaders demonstrably improve after working with them."
+      M4: "Builds coaching capability at scale -- manager forums, calibration on what good coaching looks like -- that a sub-org adopts and keeps running."
+      M5: "Develops senior leaders across a function, including peers who seek their counsel, and sponsors development systems rather than only coaching personally."
+      M6: "Sets the org-wide philosophy and systems for talent growth; the org's leaders visibly coach because the top does."
   - theme: Listening & Feedback
     capability: CC-04
     key_area: People & Talent
     key_attribute: Coaching & Development
-    anchor: "Scott, Radical Candor (2017); SBI model (CCL)"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: scott2017-radicalcandor
+    anchor_why: "caring personally while challenging directly beats both ruinous empathy and obnoxious aggression"
+    mappings:
+      M1: {p: P3, sources: [scott2017-radicalcandor, gitlab-em-jd], why: "CC-04 P3 ('gives growth-oriented feedback that changes behavior; coaches through feedback') is Scott's harder discipline -- challenging directly enough that behavior actually changes -- landing at first-line manager, not P2's routine peer feedback."}
+      M2: {p: P3, sources: [scott2017-radicalcandor, gitlab-em-jd], why: "M2 holds the same P3 bar; the Senior EM differentiator is creating feedback-rich norms on a complex team and handling the hardest feedback conversations well, not a deeper technique."}
+      M3: {p: P4, sources: [scott2017-radicalcandor, gitlab-em-jd], why: "CC-04 P4 ('builds feedback norms that raise the bar across teams') is Radical Candor instituted as a team practice several leads adopt, not one person's habit -- Director-level."}
+      M4: {p: P4, sources: [scott2017-radicalcandor, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is institutionalizing feedback norms across a sub-org through mechanisms -- training, calibration on feedback quality -- that outlast their attention, not a deeper feedback behavior."}
+      M5: {p: P5, sources: [scott2017-radicalcandor, gitlab-em-jd], why: "CC-04 P5 ('sets the org's culture of candor and growth') matches VP-level coaching at the executive seam, where peers and senior leaders take their feedback on leadership behavior."}
+      M6: {p: P6, sources: [scott2017-radicalcandor, gitlab-em-jd], why: "CC-04 P6 ('models and defines feedback culture company-wide') is Scott's argument that candor must be modeled from the top, applied at the org-wide register."}
+    evidence:
+      M1: "Gives specific, behavior-anchored feedback within days, and listens to understand by soliciting dissent in one-on-ones."
+      M2: "Creates feedback-rich norms on a complex team and turns hard feedback into changed behavior within weeks."
+      M3: "Builds a candor culture across a domain, setting feedback norms teams they do not run follow."
+      M4: "Institutionalizes feedback norms across a sub-org through training and calibration mechanisms that outlast their attention."
+      M5: "Coaches at the executive seam -- peers and senior leaders take their feedback on leadership behavior, delivered candidly and in private."
+      M6: "Models candor at the top -- publicly requests, receives, and acts on hard feedback -- and the org's norms of directness trace to it."
   - theme: Performance Management
     capability: EM-01
     key_area: People & Talent
     key_attribute: Performance & Advancement
-    anchor: "Grove, High Output Management (1983)"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: grove1983-high-output-management
+    anchor_why: "a manager's output is the team's output, so managing performance is the core lever"
+    mappings:
+      M1: {p: P3, sources: [grove1983-high-output-management, gitlab-em-jd], why: "EM-01 P3 ('independently manages underperformance and difficult cases through to clear resolution') is Grove's core claim -- a manager's job IS managing output -- landing at the first management level, not P2's normal-review cycle."}
+      M2: {p: P3, sources: [grove1983-high-output-management, gitlab-em-jd], why: "M2 holds the same P3 bar; GitLab's Senior EM differentiator is the full performance range on a higher-stakes team -- top performers and defensible exits -- not a new behavior."}
+      M3: {p: P4, sources: [grove1983-high-output-management, gitlab-em-jd], why: "EM-01 P4 ('defines accountability practices other managers adopt and coaches them through hard cases') is Director-level: the calibration standard other managers apply, per GitLab's cross-team consistency expectation."}
+      M4: {p: P4, sources: [grove1983-high-output-management, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is designing a sub-org's performance system -- rubrics, promotion bars, appeal paths -- and auditing outcomes for drift and bias, not a deeper performance behavior."}
+      M5: {p: P5, sources: [grove1983-high-output-management, gitlab-em-jd], why: "EM-01 P5 ('sets the org's performance philosophy and anticipates systemic accountability gaps') matches VP-level ownership of holding senior leaders to the same standard as everyone else."}
+      M6: {p: P6, sources: [grove1983-high-output-management, gitlab-em-jd], why: "EM-01 P6 ('defines what fair, effective performance management means and influences the field externally') is Grove's output-management thesis applied at the industry-facing register."}
+    evidence:
+      M1: "Addresses an underperforming report directly with a documented, humane plan rather than letting it drift."
+      M2: "Handles the hard cases -- brilliant-but-corrosive, long-tenured-but-plateaued -- with documented processes that end in change or exit inside a quarter or two."
+      M3: "Runs calibration across teams so the same work earns the same rating regardless of manager, contesting both inflation and harshness."
+      M4: "Designs a sub-org's performance system and audits its outcomes for drift and bias, so hard calls happen earlier."
+      M5: "Holds senior leaders to the same standard as everyone else, visibly acting on underperformance at high levels."
+      M6: "Sets the org's performance philosophy -- what is rewarded, tolerated, and exited -- applying it to the most senior people first."
   - theme: Career Development & Sponsorship
     capability: EM-02
     key_area: People & Talent
     key_attribute: Performance & Advancement
-    anchor: "Hewlett, Forget a Mentor, Find a Sponsor (2013)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: hewlett2013
+    anchor_why: "sponsorship -- spending capital on stretch, visibility, advocacy -- moves careers where mentoring alone does not"
+    mappings:
+      M1: {p: P2, sources: [hewlett2013, gitlab-em-jd], why: "EM-02 P2 ('coaches direct reports on standard career growth with normal review') is mentoring, not yet Hewlett's sponsorship -- spending real capital -- which the catalog does not expect until P3."}
+      M2: {p: P3, sources: [hewlett2013, gitlab-em-jd], why: "EM-02 P3 ('independently sponsors people into stretch roles and navigates complex growth paths') is exactly Hewlett's sponsorship distinction: putting your name and capital behind someone, unaided."}
+      M3: {p: P4, sources: [hewlett2013, gitlab-em-jd], why: "EM-02 P4 ('defines career-development practices others adopt and unblocks the toughest growth cases') is sponsorship norms set for a domain, not one relationship -- Director-level per GitLab."}
+      M4: {p: P4, sources: [hewlett2013, gitlab-em-jd], why: "M4 holds the same P4 bar; Senior Director scope is career-path and recognition systems a sub-org adopts, auditing promotion rates by cohort for equity, not a deeper sponsorship behavior."}
+      M5: {p: P5, sources: [hewlett2013, gitlab-em-jd], why: "EM-02 P5 ('sets the org's talent-development strategy and anticipates future capability needs') matches VP-level talent strategy, sponsoring high-potential leaders into visibility before vacancies force it."}
+      M6: {p: P6, sources: [hewlett2013, gitlab-em-jd], why: "EM-02 P6 ('defines exemplary career sponsorship for the discipline and is externally recognized for it') is Hewlett's sponsorship concept applied at industry scale."}
+    evidence:
+      M1: "Knows each person's aspirations, creates stretch scope, and gives honest promotion guidance."
+      M2: "Sponsors people into senior and lead roles, writing compelling cases and spending real capital advocating beyond the team."
+      M3: "Owns fair, consistent advancement across a domain, sponsoring senior ICs and emerging leaders into scope they would not get alone."
+      M4: "Builds career-path and recognition systems a sub-org adopts, so growth does not require leaving, and audits promotion rates by cohort."
+      M5: "Shapes the function's leveling and advancement architecture, sponsoring high-potential leaders into visibility before vacancies force it."
+      M6: "Shapes advancement systems org-wide; the org's promotion decisions still mean something years later."
   - theme: Succession & Leadership Pipeline
     capability: HR-09
     key_area: People & Talent
     key_attribute: Performance & Advancement
-    anchor: "Charan, Drotter & Noel, The Leadership Pipeline (2001)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: charan2010
+    anchor_why: "each leadership passage requires new skills and values, so benches must be built deliberately"
+    mappings:
+      M1: {p: P2, sources: [charan2010, gitlab-em-jd], why: "HR-09 P2 ('runs standard talent-review and succession cycles independently for defined populations') is naming their own successor risk and growing a deputy on one team -- Charan, Drotter & Noel's first passage."}
+      M2: {p: P3, sources: [charan2010, gitlab-em-jd], why: "HR-09 P3 ('designs succession approaches for critical, ambiguous roles and resolves contested talent calls') is building bench depth on purpose for a critical team -- tech-lead rotations, stretch scopes with safety nets -- unaided."}
+      M3: {p: P4, sources: [charan2010, gitlab-em-jd], why: "HR-09 P4 ('defines talent-management and succession frameworks that other practitioners adopt') is maintaining a live succession slate for every key seat in a domain and exporting leaders elsewhere -- Director-level."}
+      M4: {p: P4, sources: [charan2010, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is running talent reviews that end in moves -- promotions, rotations, exits -- across a sub-org, not a deeper succession behavior."}
+      M5: {p: P5, sources: [charan2010, gitlab-em-jd], why: "HR-09 P5 ('sets enterprise succession strategy and anticipates future leadership and capability gaps') matches VP-level ownership of every critical role in the function having a named, developing successor."}
+      M6: {p: P6, sources: [charan2010, gitlab-em-jd], why: "HR-09 P6 ('defines leading practice for talent management and succession across the profession') is the Leadership Pipeline's passage model advanced into the field's shared reference."}
+    evidence:
+      M1: "Names their own successor risk and grows a deputy -- delegating real ownership as development, not offloading."
+      M2: "Builds bench depth on purpose -- tech-lead rotations, stretch scopes with safety nets -- so the team survives its strongest engineer's departure."
+      M3: "Maintains a live succession slate for every key seat in a domain and exports leaders to other parts of the org rather than hoarding them."
+      M4: "Runs talent reviews that end in moves, not just ratings, and builds acting-role development mechanisms a sub-org adopts."
+      M5: "Ensures every critical role in the function has a named, developing successor, reviewed with executives before vacancies force it."
+      M6: "Builds the pipeline the org promotes from, including the bench for the top jobs and their own."
   - theme: Psychological Safety
     capability: EM-03
     key_area: People & Talent
     key_attribute: Team Health & Culture
-    anchor: "Edmondson, The Fearless Organization (2018); Project Aristotle"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: edmondson2018-fearless-org
+    anchor_why: "psychological safety is the top predictor of team effectiveness, and every other team behavior depends on it"
+    mappings:
+      M1: {p: P3, sources: [edmondson2018-fearless-org, gitlab-em-jd, google-rework-aristotle], why: "EM-03 P3 ('sustains safety through pressure ... the team measurably speaks up') is Edmondson's harder claim -- safety survives incidents and deadlines, not just calm periods -- placed at first-line manager given the constant pressure of running a team."}
+      M2: {p: P3, sources: [edmondson2018-fearless-org, gitlab-em-jd, google-rework-aristotle], why: "M2 holds the same P3 bar; the Senior EM differentiator is rebuilding safety where it is measurably damaged -- post-incident, post-layoff, post-conflict -- not a deeper safety behavior."}
+      M3: {p: P4, sources: [edmondson2018-fearless-org, gitlab-em-jd, google-rework-aristotle], why: "EM-03 P4 ('diagnoses and fixes systemic safety failures across teams; other leaders seek their help') is Project Aristotle's finding generalized beyond one team -- Director-level per GitLab."}
+      M4: {p: P4, sources: [edmondson2018-fearless-org, gitlab-em-jd, google-rework-aristotle], why: "M4 keeps P4; Senior Director scope is building the channels through which bad news travels up fast across a sub-org, not a new safety behavior."}
+      M5: {p: P5, sources: [edmondson2018-fearless-org, gitlab-em-jd, google-rework-aristotle], why: "EM-03 P5 ('sets the org's team-health bar and mechanisms; safety practices they designed are adopted org-wide') matches VP-level ownership of making dissent safe in executive rooms."}
+      M6: {p: P6, sources: [edmondson2018-fearless-org, gitlab-em-jd, google-rework-aristotle], why: "EM-03 P6 ('shapes how the industry thinks about team health; published practices others implement') is Edmondson's research applied at the field-shaping register."}
+    evidence:
+      M1: "Responds to bad news by thanking the messenger and models fallibility, saying 'I was wrong' in front of the team under real pressure."
+      M2: "Rebuilds safety where it is damaged post-incident or post-conflict; dissenters are visibly protected from consequences."
+      M3: "Reads safety across teams from signals -- who speaks in reviews, what surfaces in retros versus hallways -- and coaches the leads whose teams have gone quiet."
+      M4: "Builds channels through which bad news travels up fast -- skip-levels, anonymous paths, incident amnesty -- and proves they are safe."
+      M5: "Makes dissent safe in executive rooms, inviting challenge to their own proposals and rewarding the challengers."
+      M6: "Makes it safe to tell the org's most powerful people they are wrong, including themselves, publicly."
   - theme: Motivation, Engagement & Retention
     capability: EM-17
     key_area: People & Talent
     key_attribute: Team Health & Culture
-    anchor: "Deci & Ryan, Self-Determination Theory (2000); Herzberg (1968)"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: deci-ryan2000-sdt
+    anchor_why: "autonomy, mastery, and purpose drive durable engagement more than extrinsic rewards"
+    mappings:
+      M1: {p: P3, sources: [deci-ryan2000-sdt, gitlab-em-jd, herzberg1968], why: "EM-17 P3 ('sustains engagement through hard stretches; diagnoses systemic motivation problems, not just individuals') is Deci & Ryan's autonomy/mastery/purpose work applied under real strain -- above P2's per-person matching, placed at first-line given management's constant pressure."}
+      M2: {p: P3, sources: [deci-ryan2000-sdt, gitlab-em-jd, herzberg1968], why: "M2 holds the same P3 bar; the Senior EM differentiator is sustaining engagement through grind on a critical team -- long migrations, incident sieges -- not a new motivation behavior."}
+      M3: {p: P4, sources: [deci-ryan2000-sdt, gitlab-em-jd, herzberg1968], why: "EM-17 P4 ('builds engagement mechanisms other teams adopt; reverses disengagement trends beyond their own span') is Herzberg's hygiene/motivator distinction turned into a reusable mechanism -- Director-level."}
+      M4: {p: P4, sources: [deci-ryan2000-sdt, gitlab-em-jd, herzberg1968], why: "M4 keeps P4; Senior Director scope is building the conditions of motivation into a sub-org's operating model -- autonomy, mastery paths, recognition systems -- not a deeper behavior."}
+      M5: {p: P5, sources: [deci-ryan2000-sdt, gitlab-em-jd, herzberg1968], why: "EM-17 P5 ('owns the engagement strategy for a function; conditions they designed show up in retention and survey trends') matches VP-level accountability for measured engagement outcomes."}
+      M6: {p: P6, sources: [deci-ryan2000-sdt, gitlab-em-jd, herzberg1968], why: "EM-17 P6 ('advances the practice of engagement in the field; frameworks others cite and use') is self-determination theory applied at the field-advancing register."}
+    evidence:
+      M1: "Catches disengagement across the whole team's morale during a demanding stretch, and fixes the driving condition rather than giving one-off pep talks."
+      M2: "Keeps a critical team engaged through grind by restoring autonomy and purpose where they have eroded, re-recruiting key people proactively."
+      M3: "Reads attrition and engagement patterns across teams and fixes the systemic causes; managers across the domain apply the playbook to their own teams."
+      M4: "Builds the conditions of motivation into a sub-org's operating model and measures their effect rather than their activity."
+      M5: "Acts publicly on function-level engagement results, and tells executives the truth when money is masking a meaning problem."
+      M6: "Builds an employee value proposition people join and stay for; regrettable attrition of critical people is treated as a serious incident."
   - theme: Inclusion & Belonging
     capability: HR-10
     key_area: People & Talent
     key_attribute: Team Health & Culture
-    anchor: "Ely & Thomas, Cultural Diversity at Work (2001)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: mckinsey-diversity2020
+    anchor_why: "diverse teams outperform only under an integration-and-learning climate where people belong and can contribute"
+    mappings:
+      M1: {p: P2, sources: [mckinsey-diversity2020, gitlab-em-jd], why: "HR-10 P2 ('runs standard DEI programs independently and tracks routine progress measures') is running inclusive meetings and mitigating bias in hiring and reviews on one team."}
+      M2: {p: P3, sources: [mckinsey-diversity2020, gitlab-em-jd], why: "HR-10 P3 ('designs interventions for complex, sensitive challenges under significant ambiguity') is closing equity gaps in scope and visibility for a critical team's senior ICs -- McKinsey's diversity-versus-inclusion distinction in practice."}
+      M3: {p: P4, sources: [mckinsey-diversity2020, gitlab-em-jd], why: "HR-10 P4 ('defines DEI program frameworks and measurement approaches other practitioners adopt') is owning inclusive practice and equitable outcomes across a domain, auditing promotion and pay patterns -- Director-level."}
+      M4: {p: P4, sources: [mckinsey-diversity2020, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is inclusion mechanisms -- meeting norms, promotion audits, pay-equity checks -- a sub-org adopts and reports on, not a deeper intervention."}
+      M5: {p: P5, sources: [mckinsey-diversity2020, gitlab-em-jd], why: "HR-10 P5 ('sets enterprise DEI strategy and anticipates shifts in equity expectations and regulation') matches VP-level accountability for a function's inclusion strategy, intervening on systemic patterns."}
+      M6: {p: P6, sources: [mckinsey-diversity2020, gitlab-em-jd], why: "HR-10 P6 ('pioneers DEI practice recognized externally as authoritative across the field') is McKinsey's business-case research applied at the field-recognized register."}
+    evidence:
+      M1: "Runs inclusive meetings and decisions -- every voice heard, bias mitigated in hiring and reviews -- with airtime and credit tracked, not assumed."
+      M2: "Builds inclusion into a critical team's norms and senior-IC growth, closing equity gaps in scope and visibility."
+      M3: "Owns inclusive practice and equitable outcomes across a domain, addressing systemic barriers and auditing promotion and pay patterns."
+      M4: "Builds inclusion mechanisms -- meeting norms, promotion audits, pay-equity checks -- that a sub-org adopts and reports on."
+      M5: "Sets inclusion strategy and accountability for a function, intervening on systemic patterns rather than the loudest case."
+      M6: "Champions an inclusive culture org-wide; the org's belonging outcomes are measured, published, and owned at the top."
   # ---- Technical Stewardship ----
   - theme: Technical Credibility
     capability: LI-06
     key_area: Technical Stewardship
     key_attribute: Technical Judgment & Direction
-    anchor: "Majors, The Engineer/Manager Pendulum (2017); Fournier (2017)"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P5}
+    anchor: fournier2017-managerspath
+    anchor_why: "a manager who cannot evaluate technical work loses the team's trust and cannot coach staff engineers"
+    mappings:
+      M1: {p: P3, sources: [fournier2017-managerspath, sfia9], why: "LI-06 P3 ('a credible thought-partner to the most senior engineers on the hardest problems') is Fournier's tech-lead-to-manager shift: a first-line manager is typically promoted from a senior IC role and is expected to retain that depth immediately, not grow into it -- above P2's still-building design-review-only band."}
+      M2: {p: P3, sources: [fournier2017-managerspath, sfia9], why: "M2 holds the same P3 bar; the Senior EM differentiator is maintaining depth across a critical system's stack and hardest problems, pairing staff engineers with business context, not a deeper technical behavior."}
+      M3: {p: P4, sources: [fournier2017-managerspath, sfia9], why: "LI-06 P4 ('credible on a multi-team domain's hardest cross-cutting technical questions, current enough to ask the question that changes a design') is Fournier's broadened-credibility register applied across a domain -- Director-level per SFIA's higher responsibility band."}
+      M4: {p: P4, sources: [fournier2017-managerspath, sfia9], why: "M4 keeps P4; Senior Director scope is sustaining strategic technical credibility with the principal engineers and architects who set a sub-org's bar, not a deeper credibility behavior."}
+      M5: {p: P5, sources: [fournier2017-managerspath, sfia9], why: "LI-06 P5 ('translates architectural risk into business terms without distortion, and senior technologists accept the judgment') matches VP-level ownership of guiding a function's technology direction."}
+      M6: {p: P5, sources: [fournier2017-managerspath, sfia9], why: "LI-06 tops out at P5 ('sustains credibility to guide an organization's technology direction') for this ladder; SVP-level credibility across the org's technology landscape is the same authority-band behavior at wider reach, not a new P6 register the catalog defines for this capability."}
+    evidence:
+      M1: "Asks the one design-review question that makes a senior engineer redo their approach, without being the one who could have written the code."
+      M2: "Is the person a staff engineer brings a genuinely hard call to before committing to it, on a system outside their own team."
+      M3: "Gets pulled into a cross-team design dispute specifically because both sides trust their read of the trade-off."
+      M4: "Sustains strategic technical credibility across a sub-org, credible with the principal engineers and architects who set the bar."
+      M5: "Talks a CFO out of a cost-cutting call by reframing the architectural risk in terms that survive the CFO's own scrutiny."
+      M6: "Sustains credibility across the org's technology landscape; engineers trust their judgment because it survives contact with detail."
   - theme: Technical Strategy & Investment
     capability: LI-03
     key_area: Technical Stewardship
     key_attribute: Technical Judgment & Direction
-    anchor: "Larson, An Elegant Puzzle (2019); Wardley Maps (2016)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: larson2019-elegant-puzzle
+    anchor_why: "the platform-versus-feature allocation is a strategy decision managers make whether or not they make it consciously"
+    mappings:
+      M1: {p: P2, sources: [larson2019-elegant-puzzle, sfia9, wardley2016-maps], why: "LI-03 P2 ('influences component-level decisions through credibility') is reserving and defending explicit capacity for technical investment on one team -- naming what debt costs -- not yet Larson's domain-wide direction-setting."}
+      M2: {p: P3, sources: [larson2019-elegant-puzzle, sfia9, wardley2016-maps], why: "LI-03 P3 ('sets technical direction for a domain; others align to their calls') is writing the technical investment case for a critical system -- sunset, rewrite, or double down -- with costed options, per Larson's sizing-teams framework."}
+      M3: {p: P4, sources: [larson2019-elegant-puzzle, sfia9, wardley2016-maps], why: "LI-03 P4 ('shapes how multiple teams approach problems; trusted tiebreaker') is publishing a domain strategy or Wardley map that redirects several teams' investment -- Director-level."}
+      M4: {p: P4, sources: [larson2019-elegant-puzzle, sfia9, wardley2016-maps], why: "M4 keeps P4; Senior Director scope is balancing a sub-org's build-buy-adopt portfolio and sequencing migrations across years, not a deeper strategy behavior."}
+      M5: {p: P5, sources: [larson2019-elegant-puzzle, sfia9, wardley2016-maps], why: "LI-03 P5 ('influences org-wide technical strategy') matches VP-level ownership of putting technical strategy on the executive agenda in business terms."}
+      M6: {p: P6, sources: [larson2019-elegant-puzzle, sfia9, wardley2016-maps], why: "LI-03 P6 ('influences company strategic direction through insight') is Larson's high-leverage-bets framing applied at the company-dependency register."}
+    evidence:
+      M1: "Reserves and defends explicit capacity for technical investment each quarter, naming what debt costs in incidents and velocity."
+      M2: "Writes the technical investment case for a critical system with costed options, and makes reversible choices fast, irreversible ones deliberately."
+      M3: "Aligns technical direction across a domain -- shared platform bets, deprecation calendars -- through cases teams they do not run choose to fund."
+      M4: "Balances a sub-org's build-buy-adopt portfolio and sequences platform migrations across years, running an investment review so choices compound."
+      M5: "Puts technical strategy on the executive agenda in business terms and wins multi-year funding for unglamorous foundations."
+      M6: "Makes the org's defining technical bets and communicates them so thousands of local decisions align."
   - theme: Domain & Business Fluency
     capability: PD-06
     key_area: Technical Stewardship
     key_attribute: Technical Judgment & Direction
-    anchor: "Cagan, Inspired (2008)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: cagan2017-inspired
+    anchor_why: "engineering decisions are only as good as their grasp of product, customer, economics, and regulatory context"
+    mappings:
+      M1: {p: P2, sources: [cagan2017-inspired, gitlab-em-jd], why: "PD-06 P2 ('frames own work in user/business outcomes, not just tasks') is explaining how one team's work serves customers and the business and the constraints it operates under."}
+      M2: {p: P3, sources: [cagan2017-inspired, gitlab-em-jd], why: "PD-06 P3 ('treats their area as a product; uses metrics to decide what to build for a domain') is connecting a critical system's work to business value and cost, making compliance-aware trade-offs stakeholders recognize as commercially literate."}
+      M3: {p: P4, sources: [cagan2017-inspired, gitlab-em-jd], why: "PD-06 P4 ('expert at aligning technical bets with product strategy across teams') is owning the business, customer, and regulatory case for a domain -- Director-level."}
+      M4: {p: P4, sources: [cagan2017-inspired, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is aligning multiple teams' work to business and regulatory strategy through the leaders running them, not a deeper fluency behavior."}
+      M5: {p: P5, sources: [cagan2017-inspired, gitlab-em-jd], why: "PD-06 P5 ('sets product direction for an org's technical surface') matches VP-level ownership of shaping how engineering serves company strategy."}
+      M6: {p: P6, sources: [cagan2017-inspired, gitlab-em-jd], why: "PD-06 P6 ('shapes how the company creates value through technical products') is Cagan's outcome-over-output thesis applied at the org-wide, market-thesis register."}
+    evidence:
+      M1: "Explains how the team's work serves customers and the business, and the key constraints it operates under."
+      M2: "Connects a critical system's work to business value and cost, making trade-offs stakeholders recognize as commercially literate."
+      M3: "Owns the business, customer, and regulatory case for a domain, aligning its technical work to outcomes and constraints."
+      M4: "Aligns multiple teams' work to business and regulatory strategy through the leaders running them; investment cases read in market terms first."
+      M5: "Shapes how engineering serves company strategy, owning the function's business fluency."
+      M6: "Connects org-wide engineering to company and market strategy; the org's technical direction reads as a business thesis."
   - theme: Architecture & Decision Oversight
     capability: ARC-10
     key_area: Technical Stewardship
     key_attribute: Architecture, Quality & Debt
-    anchor: "Conway (1968); Nygard, Documenting Architecture Decisions (2011)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: conway1968
+    anchor_why: "leaders shape architecture through decision processes and team boundaries even when they never write the design doc"
+    mappings:
+      M1: {p: P2, sources: [conway1968, sfia9, nygard2011-adr], why: "ARC-10 P2 ('evaluates standard trade-offs independently for routine architectural choices') is running design review as a real gate on one team while leaving the decision with the owning engineers, recording it as Nygard's ADR."}
+      M2: {p: P3, sources: [conway1968, sfia9, nygard2011-adr], why: "ARC-10 P3 ('structures and defends trade-off decisions for ambiguous, high-stakes designs autonomously') is spotting architecture risk in a critical system before it ships -- coupling, single points of failure -- unaided."}
+      M3: {p: P4, sources: [conway1968, sfia9, nygard2011-adr], why: "ARC-10 P4 ('defines trade-off analysis methods and decision frameworks others adopt') is installing the decision mechanisms a domain designs by -- decision records, RFC review -- Director-level."}
+      M4: {p: P4, sources: [conway1968, sfia9, nygard2011-adr], why: "M4 keeps P4; Senior Director scope is pairing org design with architecture direction deliberately, reshaping team boundaries so the target system is the path of least resistance, not a deeper trade-off behavior."}
+      M5: {p: P5, sources: [conway1968, sfia9, nygard2011-adr], why: "ARC-10 P5 ('sets how the organization makes architectural trade-offs, anticipating future tensions') matches VP-level ownership of function-wide architectural coherence without becoming the bottleneck."}
+      M6: {p: P6, sources: [conway1968, sfia9, nygard2011-adr], why: "ARC-10 P6 ('advances trade-off-analysis practice recognized across the industry') is Conway's coupling of architecture and org design applied at the org-wide, industry-recognized register."}
+    evidence:
+      M1: "Runs design review as a real gate -- asks the trade-off and failure-mode questions that change designs -- while leaving the decision with the engineers who own it."
+      M2: "Spots architecture risk in a critical system before it ships, and gets it addressed without designing it themselves."
+      M3: "Installs the decision mechanisms a domain designs by -- decision records, RFC review, architecture forums -- that teams they do not run use."
+      M4: "Pairs org design with architecture direction deliberately, reshaping team boundaries so the target system becomes the path of least resistance."
+      M5: "Holds the line on function-wide architectural coherence -- few platforms, deliberate exceptions with expiry dates -- without becoming the bottleneck."
+      M6: "Answers for the org's technical integrity to the board and customers, knowing where the liabilities are buried and funding the excavations."
   - theme: Engineering Standards & Quality
     capability: SWE-02
     key_area: Technical Stewardship
     key_attribute: Architecture, Quality & Debt
-    anchor: "Humble & Farley, Continuous Delivery (2010)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
-  - theme: Technical Debt & Risk Stewardship
+    anchor: humble-farley2010
+    anchor_why: "quality is a property of the system of work, and managers own the system of work"
+    mappings:
+      M1: {p: P2, sources: [humble-farley2010, sfia9], why: "SWE-02 P2 ('writes clean, documented, modular code; gives useful review feedback') is holding one team to its quality bar in practice -- tests, review discipline -- without waiving it under deadline pressure."}
+      M2: {p: P3, sources: [humble-farley2010, sfia9], why: "SWE-02 P3 ('designs for maintainability; leads refactors of problem areas; review feedback teaches') is raising the bar on a critical system where it has slipped -- testability, deploy safety -- while shipping continues, unaided."}
+      M3: {p: P4, sources: [humble-farley2010, sfia9], why: "SWE-02 P4 ('expert in code health at scale -- shared libraries, deprecations, large migrations') is harmonizing standards across teams by making the best team's practice everyone's default -- Director-level."}
+      M4: {p: P4, sources: [humble-farley2010, sfia9], why: "M4 keeps P4; Senior Director scope is building the paved road -- golden paths, shared tooling, quality gates -- that makes a sub-org's standard the path of least resistance, funded as a budget line, not a deeper quality behavior."}
+      M5: {p: P5, sources: [humble-farley2010, sfia9], why: "SWE-02 P5 ('shapes org-wide engineering standards for long-lived codebases') matches VP-level publication of a function's engineering bar, reported honestly to executives."}
+      M6: {p: P6, sources: [humble-farley2010, sfia9], why: "SWE-02 P6 ('defines what good engineering looks like company-wide; externally recognized') is Humble & Farley's built-in-quality thesis applied at the org-identity register."}
+    evidence:
+      M1: "Holds the quality bar in practice and does not waive it under deadline pressure without a written, expiring exception."
+      M2: "Raises the bar on a system where it has slipped, while shipping continues, and measures the change in escaped defects and change-fail rate."
+      M3: "Harmonizes standards across teams by making the best team's practice everyone's default -- documented, tooled, adopted because it is easier."
+      M4: "Builds the paved road -- golden paths, shared tooling, quality gates in the pipeline -- funded as a first-class budget line."
+      M5: "Publishes the function's engineering bar and reports honestly against it to executives, including where it is not met."
+      M6: "Makes engineering excellence part of the org's external identity, visible in the reliability customers experience."
+  - theme: Technical Debt & Modernization
     capability: EM-15
     key_area: Technical Stewardship
     key_attribute: Architecture, Quality & Debt
-    anchor: "Cunningham, The WyCash Portfolio Management System (1992)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: cunningham1992
+    anchor_why: "debt is a deliberate liability with interest, paid down on purpose, not neglected mess"
+    mappings:
+      M1: {p: P2, sources: [cunningham1992, sfia9], why: "EM-15 P2 ('keeps a visible debt register with the cost of carry noted and defends a steady paydown allocation in planning') is Cunningham's debt-as-deliberate-liability metaphor applied to one team's budgeted paydown."}
+      M2: {p: P3, sources: [cunningham1992, sfia9], why: "EM-15 P3 ('distinguishes debt worth carrying from debt that will detonate, sequences remediation by risk, and prices debt in incident and velocity terms') is the sequencing judgment a critical system's modernization needs, unaided."}
+      M3: {p: P4, sources: [cunningham1992, sfia9], why: "EM-15 P4 ('makes debt legible across multiple teams -- shared taxonomy, reporting rhythm -- and gets cross-team risk owned and funded') is the debt-accounting practice several teams now prioritize with -- Director-level."}
+      M4: {p: P4, sources: [cunningham1992, sfia9], why: "M4 keeps P4; Senior Director scope is setting a sub-org's quality strategy -- where to gold-plate, where to accept scrappy -- and landing multi-quarter remediation programs against feature pressure, not a deeper debt behavior."}
+      M5: {p: P5, sources: [cunningham1992, sfia9], why: "EM-15 P5 ('carries technical risk onto the executive risk register ... lands multi-quarter remediation programs against feature pressure') matches VP-level ownership of a function's technical-health commitments."}
+      M6: {p: P6, sources: [cunningham1992, sfia9], why: "EM-15 P6 ('sets an organization's speed-versus-soundness posture explicitly ... and holds it under growth pressure') is Cunningham's debt metaphor applied at the org-wide posture-setting register."}
+    evidence:
+      M1: "Trades a feature slot for a paydown item in planning by pointing to the register entry showing what the debt has already cost in incidents."
+      M2: "Lands a major consolidation that retires a chunk of debt without ever stopping the roadmap to do it."
+      M3: "Makes debt legible across a domain -- a shared taxonomy and reporting rhythm teams they do not run adopt -- and aggregates cross-team risk."
+      M4: "Sets a sub-org's quality strategy and lands multi-quarter remediation programs against feature pressure, debt stated in business terms."
+      M5: "Gets a multi-quarter remediation program funded against direct feature-roadmap competition by putting it on the executive risk register."
+      M6: "Publicly names the class of debt the org will always carry for speed, so no team wastes a quarter trying to fix what leadership already decided to accept."
   # ---- Communication & Influence ----
   - theme: Written & Verbal Communication
     capability: CC-01
     key_area: Communication & Influence
     key_attribute: Communication
-    anchor: "Minto, The Pyramid Principle (1987)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: minto1996-pyramid
+    anchor_why: "lead with the answer, group the supporting arguments, order them logically"
+    mappings:
+      M1: {p: P2, sources: [minto1996-pyramid, gitlab-em-jd], why: "CC-01 P2 ('writes clear design notes, runbooks and PRs; explains trade-offs without overselling') is Zinsser's clutter-free discipline applied to one team's routine technical writing."}
+      M2: {p: P3, sources: [minto1996-pyramid, gitlab-em-jd], why: "CC-01 P3 ('writes design docs that drive decisions; translates technical risk for non-technical stakeholders') requires Minto's answer-first, pyramid-structured argument for a critical team's external interface."}
+      M3: {p: P4, sources: [minto1996-pyramid, gitlab-em-jd], why: "CC-01 P4 ('making complex capability/risk legible to executives without dumbing it down; RFCs align orgs') is Minto's pyramid principle applied at the scale of documents that persuade rooms of stakeholders at once -- Director-level."}
+      M4: {p: P4, sources: [minto1996-pyramid, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is setting the writing norms -- templates, pre-read culture, decision-doc formats -- a sub-org adopts because they demonstrably work, not a deeper writing behavior."}
+      M5: {p: P5, sources: [minto1996-pyramid, gitlab-em-jd], why: "CC-01 P5 ('strategy memos leadership acts on; org-wide and external reach') is SFIA's strategic-influence band -- delivering one message coherently across audiences for a function."}
+      M6: {p: P6, sources: [minto1996-pyramid, gitlab-em-jd], why: "CC-01 P6 ('a clarifying voice at company scale; externally recognized') is Zinsser's decades-long teaching aim -- clarity that carries beyond one's own organization -- applied org-wide."}
+    evidence:
+      M1: "Writes updates and decision docs that lead with the answer and fit on a page, and runs meetings that end with owners and dates."
+      M2: "Makes complex technical situations legible to non-engineers without dumbing them down -- an incident narrative a customer team can use."
+      M3: "Writes the documents cross-team decisions get made from -- framing memos, options papers -- that people cite weeks later."
+      M4: "Sets the writing norms -- templates, pre-read culture, decision-doc formats -- a sub-org adopts because their versions demonstrably work."
+      M5: "Delivers one message coherently across audiences -- board slide, all-hands, engineering deep-dive -- without the versions contradicting each other."
+      M6: "Gives the org its language -- the phrases people use to explain the strategy to each other -- and lands hard messages with clarity and humanity."
   - theme: Executive & Upward Communication
     capability: CC-06
     key_area: Communication & Influence
     key_attribute: Communication
-    anchor: "Duarte, HBR Guide to Persuasive Presentations (2012)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P5, M5: P5, M6: P6}
+    anchor: duarte2012-hbr-guide
+    anchor_why: "decisions above a leader are made on how the case is communicated, not only on its merits"
+    mappings:
+      M1: {p: P2, sources: [duarte2012-hbr-guide, gitlab-em-jd], why: "CC-06 P2 ('reports upward answer-first with a specific ask; escalates early with options attached') is Duarte's audience-first framing applied to one team's status, so no surprise reaches leadership from someone else."}
+      M2: {p: P3, sources: [duarte2012-hbr-guide, gitlab-em-jd], why: "CC-06 P3 ('briefs senior leaders under pressure -- facts, impact, options, and a recommendation inside the first two minutes') is representing a critical program to senior stakeholders under scrutiny, unaided."}
+      M3: {p: P4, sources: [duarte2012-hbr-guide, gitlab-em-jd], why: "CC-06 P4 ('builds and lands investment cases with executive audiences ... coaches others for executive rooms') is the communication standard other leads adopt -- Director-level."}
+      M4: {p: P5, sources: [duarte2012-hbr-guide, gitlab-em-jd], why: "M4 steps up to P5 here, one level earlier than this ladder's usual M4:P4 plateau, because running the operating reviews a sub-org communicates through and managing a portfolio of executive stakeholders (CC-06 P5: 'operates the executive room as a peer -- advances positions, absorbs hostile questioning ... changes the room's decision') matches GitLab's Senior Director exec-facing scope, not P4's coaching-others register."}
+      M5: {p: P5, sources: [duarte2012-hbr-guide, gitlab-em-jd], why: "M5 holds the same P5 bar as M4; the VP differentiator is operating the executive room as a peer for a whole function, not a deeper communication behavior."}
+      M6: {p: P6, sources: [duarte2012-hbr-guide, gitlab-em-jd], why: "CC-06 P6 ('speaks for an organization's technical reality to boards, investors, and press ... credibility survives the appearances') is Duarte's persuasive-narrative discipline applied at the company-representing register."}
+    evidence:
+      M1: "Reports upward with the headline and the ask first, never burying the slip in paragraph four."
+      M2: "Turns a skeptical VP's contested launch review into a green light in one sitting, opening with the recommendation before the data."
+      M3: "Builds the case for a cross-team investment and lands it with an executive audience, pre-wired with the skeptics and honest about risk."
+      M4: "Runs the operating reviews a sub-org communicates through, managing a portfolio of executive stakeholders with different agendas."
+      M5: "Walks into a hostile budget review as the only voice defending the function's headcount ask, and leaves with it approved."
+      M6: "Fronts the org's response to a public outage for press and investors, and the org's credibility holds through it."
   - theme: Stakeholder Management & Partnership
     capability: PM-13
     key_area: Communication & Influence
     key_attribute: Influence & Partnership
-    anchor: "Freeman, Strategic Management: A Stakeholder Approach (1984)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: freeman1984-stakeholder
+    anchor_why: "engineering leaders sit in a web of product, design, sales, support, and operations whose trust is built deliberately"
+    mappings:
+      M1: {p: P2, sources: [freeman1984-stakeholder, gitlab-em-jd], why: "PM-13 P2 ('manages routine stakeholder relationships and communications with normal review') is running a genuine triad with product and design for one team, closing the loop when things change."}
+      M2: {p: P3, sources: [freeman1984-stakeholder, gitlab-em-jd], why: "PM-13 P3 ('independently aligns conflicting stakeholders and navigates tense executive conversations') is mapping and working a critical program's stakeholder web and repairing a damaged partnership, unaided."}
+      M3: {p: P4, sources: [freeman1984-stakeholder, gitlab-em-jd], why: "PM-13 P4 ('defines stakeholder-engagement approaches others adopt and brokers the hardest alignment') is treating their peer group as their first team across a domain's partner ecosystem -- Director-level."}
+      M4: {p: P4, sources: [freeman1984-stakeholder, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is designing how a sub-org interfaces with the rest of the business -- intake paths, escalation contracts -- so partnership survives personnel changes, not a deeper stakeholder behavior."}
+      M5: {p: P5, sources: [freeman1984-stakeholder, gitlab-em-jd], why: "PM-13 P5 ('sets executive-engagement strategy and anticipates leadership concerns before they arise') matches VP-level function-to-function alliances tested in a crisis."}
+      M6: {p: P6, sources: [freeman1984-stakeholder, gitlab-em-jd], why: "PM-13 P6 ('defines exemplary stakeholder management for the discipline and is externally credible on it') is Freeman's stakeholder theory applied at the org-wide, externally credible register."}
+    evidence:
+      M1: "Runs a genuine triad with product and design -- shared goals, early involvement, no surprise commitments -- and closes the loop when things change."
+      M2: "Maps and works a critical program's stakeholders, and repairs a damaged partnership by resetting expectations and rebuilding credibility."
+      M3: "Treats their peer group as their first team -- argues hard in the room, backs the decision outside it -- and builds durable cross-functional relationships."
+      M4: "Designs how a sub-org interfaces with the rest of the business -- intake paths, escalation contracts, joint planning -- so partnership survives personnel changes."
+      M5: "Forms function-to-function alliances with product, sales, finance, and legal -- reciprocal, durable, tested in a crisis."
+      M6: "Stewards the org's most consequential external relationships and models one-company leadership, resolving conflicts by company interest."
   - theme: Influence Without Authority
     capability: LI-07
     key_area: Communication & Influence
     key_attribute: Influence & Partnership
-    anchor: "Cohen & Bradford, Influence Without Authority (1989)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: cohen-bradford2005
+    anchor_why: "from Director up, nearly everything a leader needs done is done by people who do not answer to them"
+    mappings:
+      M1: {p: P2, sources: [cohen-bradford2005, gitlab-em-jd], why: "LI-07 P2 ('wins cooperation from adjacent teams by trading in their currencies ... rather than escalating') is Cohen & Bradford's reciprocity-based influence at first-line scope."}
+      M2: {p: P3, sources: [cohen-bradford2005, gitlab-em-jd], why: "LI-07 P3 ('secures priority from other teams for an initiative with no borrowed authority; builds the case in the other party's terms and repays visibly') is aligning multiple teams around a critical direction under real disagreement, unaided."}
+      M3: {p: P4, sources: [cohen-bradford2005, gitlab-em-jd], why: "LI-07 P4 ('moves a multi-team domain to a shared position with no mandate -- assembles the coalition, converts the best-argued skeptic') is Director-level alignment across a domain."}
+      M4: {p: P4, sources: [cohen-bradford2005, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is shifting sub-org-level outcomes through people two seams away -- standards groups, principal engineers -- who advocate the position as their own, not a deeper influence behavior."}
+      M5: {p: P5, sources: [cohen-bradford2005, gitlab-em-jd], why: "LI-07 P5 ('shifts organization-level outcomes through people several seams away ... holding a minority of the formal power in the room') matches VP-level alignment across a function's peer organizations."}
+      M6: {p: P6, sources: [cohen-bradford2005, gitlab-em-jd], why: "LI-07 P6 ('shapes industry and market context in the organization's favor -- standards bodies, open ecosystems, talent narratives') is Cohen & Bradford's currencies-of-influence framework applied at the industry-shaping register."}
+    evidence:
+      M2: "Gets a dependency bumped ahead of another team's roadmap item by making the case in that team's own success metrics, not theirs."
+      M3: "Turns the domain's most vocal skeptic of a shared direction into the person who pitches it to the next skeptic."
+      M4: "Shifts sub-org-level outcomes through people two seams away who advocate the position as their own."
+      M5: "Influences peer executives and their organizations, landing function-shaping decisions while holding a minority of the formal power in the room."
+      M6: "Gets an external standards body to adopt a pattern the org championed, so competitors now build to terms the org set."
   - theme: Conflict Resolution & Negotiation
     capability: CC-05
     key_area: Communication & Influence
     key_attribute: Influence & Partnership
-    anchor: "Fisher & Ury, Getting to Yes (1981); Lencioni (2002)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: fisher-ury1981-gettingtoyes
+    anchor_why: "healthy organizations fight about ideas in the open, and unresolved conflict is one of the most expensive latencies an org carries"
+    mappings:
+      M1: {p: P2, sources: [fisher-ury1981-gettingtoyes, gitlab-em-jd, lencioni2002-fivedysfunctions], why: "CC-05 P2 ('works through disagreement to a decision without damaging relationships') is applying Fisher & Ury's principled-negotiation moves within one team and its nearest neighbors, not yet mediating others' disputes."}
+      M2: {p: P3, sources: [fisher-ury1981-gettingtoyes, gitlab-em-jd, lencioni2002-fivedysfunctions], why: "CC-05 P3 ('mediates technical disputes in their domain; finds the path that holds up') is negotiating commitments under pressure on a critical team, reframing turf disputes as interface-design problems, unaided."}
+      M3: {p: P4, sources: [fisher-ury1981-gettingtoyes, gitlab-em-jd, lencioni2002-fivedysfunctions], why: "CC-05 P4 ('resolves high-stakes disagreements between senior stakeholders across orgs') is Lencioni's productive-conflict discipline applied as a trusted broker across a domain -- Director-level."}
+      M4: {p: P4, sources: [fisher-ury1981-gettingtoyes, gitlab-em-jd, lencioni2002-fivedysfunctions], why: "M4 keeps P4; Senior Director scope is redesigning the structures that generate recurring conflict -- misaligned incentives, ambiguous ownership -- across a sub-org, not re-mediating the same fight."}
+      M5: {p: P5, sources: [fisher-ury1981-gettingtoyes, gitlab-em-jd, lencioni2002-fivedysfunctions], why: "CC-05 P5 ('designs the decision processes the org uses to resolve conflict') matches VP-level negotiation of function-level conflicts with peer executives and external parties."}
+      M6: {p: P6, sources: [fisher-ury1981-gettingtoyes, gitlab-em-jd, lencioni2002-fivedysfunctions], why: "CC-05 P6 ('sets the company norm for principled disagreement') is Fisher & Ury's objective-criteria principle applied at the whole-company register."}
+    evidence:
+      M1: "Surfaces simmering disagreement early and mediates it to interests, separating people from positions and driving to an agreement both sides can state fairly."
+      M2: "Negotiates commitments under pressure -- scope, deadlines, contested interfaces -- reaching agreements both sides keep, with the trade documented."
+      M3: "Resolves lead-to-lead conflicts others route around as a trusted broker, and teaches the parties to resolve the next one themselves."
+      M4: "Redesigns the structures that generate recurring conflict, and designs escalation paths so conflicts resolve at the lowest capable level."
+      M5: "Negotiates function-level conflicts -- budget splits, shared-platform terms, charter boundaries -- keeping the relationships intact afterward."
+      M6: "Turns the org's biggest ideological fights into decision processes the losing side calls fair."
   # ---- Self & Personal Effectiveness ----
   - theme: Managerial Leverage & Focus
     capability: EM-16
     key_area: Self & Personal Effectiveness
     key_attribute: Leverage & Delegation
-    anchor: "Grove, High Output Management (1983); Drucker (1967)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: grove1983-high-output-management
+    anchor_why: "a manager's output is the leveraged output of everyone they touch, and time is the one non-renewable resource"
+    mappings:
+      M1: {p: P2, sources: [grove1983-high-output-management, gitlab-em-jd, drucker1967-effective-executive], why: "EM-16 P2 ('runs a deliberate calendar that matches stated priorities ... declines low-leverage meetings') is Drucker's self-management discipline -- knowing where time goes -- at first-line scope."}
+      M2: {p: P3, sources: [grove1983-high-output-management, gitlab-em-jd, drucker1967-effective-executive], why: "EM-16 P3 ('prunes their own involvement ruthlessly as complexity grows -- automates, delegates, or kills recurring work every quarter') is Grove's leverage principle applied under a complex team's real complexity."}
+      M3: {p: P4, sources: [grove1983-high-output-management, gitlab-em-jd, drucker1967-effective-executive], why: "EM-16 P4 ('chooses interventions by multiplier across many teams ... audits their time and publishes the changes') is the leverage practice other leads pick up -- Director-level."}
+      M4: {p: P4, sources: [grove1983-high-output-management, gitlab-em-jd, drucker1967-effective-executive], why: "M4 keeps P4; Senior Director scope is designing their own role top-down from a sub-org's constraints, spending time only where they are the unique unlock, not a deeper leverage behavior."}
+      M5: {p: P5, sources: [grove1983-high-output-management, gitlab-em-jd, drucker1967-effective-executive], why: "EM-16 P5 ('allocates attention like a portfolio at organizational scale ... says which is which out loud') matches VP-level ownership of how a function protects its leaders' focus."}
+      M6: {p: P6, sources: [grove1983-high-output-management, gitlab-em-jd, drucker1967-effective-executive], why: "EM-16 P6 ('spends presence deliberately as an organizational signal ... guards the organization's focus') is Grove's leverage principle applied at the org-signal register."}
+    evidence:
+      M1: "Runs a deliberate calendar that matches stated priorities, and ends each week with the highest-leverage actions done."
+      M2: "Kills a recurring review meeting that only they found valuable, once they notice no one else has opened the notes in a month."
+      M3: "Chooses interventions by multiplier across a domain -- the review that shapes ten decisions -- and declines the rest by policy, not mood."
+      M4: "Designs their own role top-down from the sub-org's constraints, spending time only where they are the unique unlock."
+      M5: "Tells the function plainly which two initiatives get their personal attention this half and which twenty do not."
+      M6: "Skips a well-attended launch review on principle, and the org reads the absence correctly as 'this isn't actually a top priority.'"
   - theme: Delegation & Empowerment
     capability: EM-14
     key_area: Self & Personal Effectiveness
     key_attribute: Leverage & Delegation
-    anchor: "Marquet, Turn the Ship Around! (2012)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: marquet2012-turn-the-ship
+    anchor_why: "leadership scales by pushing authority to where the information is, creating leaders rather than followers"
+    mappings:
+      M1: {p: P2, sources: [marquet2012-turn-the-ship, gitlab-em-jd], why: "EM-14 P2 ('delegates whole outcomes with context and check-in contracts matched to each person's readiness ... resists snatching work back') is Marquet's leader-leader delegation at first-line scope."}
+      M2: {p: P3, sources: [marquet2012-turn-the-ship, gitlab-em-jd], why: "EM-14 P3 ('hands ownership of critical, visible work to someone not yet proven and scaffolds them to success, letting them keep the credit') is empowering senior engineers and leads to own hard, ambiguous work on a critical team."}
+      M3: {p: P4, sources: [marquet2012-turn-the-ship, gitlab-em-jd], why: "EM-14 P4 ('pushes decisions down across multiple teams -- publishes decision rights so teams stop escalating what they can decide themselves') is the delegation standard other leads adopt -- Director-level."}
+      M4: {p: P4, sources: [marquet2012-turn-the-ship, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is building a sub-org that runs on mechanisms rather than their presence -- delegated authorities with audit trails -- not a deeper delegation behavior."}
+      M5: {p: P5, sources: [marquet2012-turn-the-ship, gitlab-em-jd], why: "EM-14 P5 ('builds organizations that run on mechanisms rather than presence ... grants leaders consequential authority held to outcomes, not methods') matches VP-level ownership of how a function distributes authority."}
+      M6: {p: P6, sources: [marquet2012-turn-the-ship, gitlab-em-jd], why: "EM-14 P6 ('runs an organization on intent ... treats every upward escalation as a design flaw to fix') is Marquet's leader-leader model applied at the org-wide register."}
+    evidence:
+      M2: "Goes on a two-week vacation from a critical workstream they handed off, and it ships on schedule without them."
+      M3: "Publishes a one-page decision-rights map that stops three different teams escalating the same class of call to them every week."
+      M4: "Builds a sub-org that runs on mechanisms rather than their presence, with pre-declared tripwires for taking back control."
+      M5: "Grants senior leaders genuinely consequential authority and holds them to outcomes, not methods; the function's decisions get faster as it grows."
+      M6: "Treats a director's request to escalate a call the director was empowered to make as a bug in the org design, not a normal Tuesday."
   - theme: Self-Awareness & Learning Agility
     capability: LI-09
     key_area: Self & Personal Effectiveness
     key_attribute: Growth & Resilience
-    anchor: "Eurich, Insight (2017); Lombardo & Eichinger (2000)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: eurich2018-selfawareness
+    anchor_why: "accurate self-knowledge and the ability to learn from new experience predict leadership growth"
+    mappings:
+      M1: {p: P2, sources: [eurich2018-selfawareness, gitlab-em-jd, lombardo-eichinger2000-70-20-10], why: "LI-09 P2 ('asks for feedback on their own practice and changes visibly in response ... keeping a running list of their own failure patterns') is Eurich's internal-plus-external self-awareness loop at first-line scope."}
+      M2: {p: P3, sources: [eurich2018-selfawareness, gitlab-em-jd, lombardo-eichinger2000-70-20-10], why: "LI-09 P3 ('knows their failure modes under pressure and manages them in the moment; staffs deliberately against known weaknesses') is the learning-agility Lombardo & Eichinger's model expects once new, high-stakes situations recur on a critical team."}
+      M3: {p: P4, sources: [eurich2018-selfawareness, gitlab-em-jd, lombardo-eichinger2000-70-20-10], why: "LI-09 P4 ('runs structured input on themselves -- 360s, skip-level themes -- and closes the loop publicly on what changed') is the feedback mechanism several leads adopt to see their own effect on others -- Director-level."}
+      M4: {p: P4, sources: [eurich2018-selfawareness, gitlab-em-jd, lombardo-eichinger2000-70-20-10], why: "M4 keeps P4; Senior Director scope is compensating deliberately for the seniority feedback vacuum across a sub-org -- cultivating truth-tellers -- not a deeper self-awareness behavior."}
+      M5: {p: P5, sources: [eurich2018-selfawareness, gitlab-em-jd, lombardo-eichinger2000-70-20-10], why: "LI-09 P5 ('compensates deliberately for the seniority feedback vacuum ... rewards bearers of unwelcome news about themselves') matches VP-level reinvention of leadership at function scale."}
+      M6: {p: P6, sources: [eurich2018-selfawareness, gitlab-em-jd, lombardo-eichinger2000-70-20-10], why: "LI-09 P6 ('institutionalizes challenge to their own judgment -- red teams, protected dissent') is Eurich's self-awareness research applied at the org-wide, judgment-checking register."}
+    evidence:
+      M1: "Asks for feedback on their own management and changes visibly in response, and approaches first-time situations as learnable."
+      M2: "Pre-stages a co-lead for a call they know they tend to rush, because they have watched themselves rush it before."
+      M3: "Runs a 360 and tells the org, in writing, the one thing it revealed that surprised them and what they are doing about it."
+      M4: "Compensates deliberately for the seniority feedback vacuum, cultivating truth-tellers and rewarding the bearer of unwelcome news."
+      M5: "Reinvents their leadership at function scale, letting go of the operator identity and saying 'I don't know' in rooms where pretending is the norm."
+      M6: "Stands up a red-team review of their own biggest strategic bet and changes the bet when it finds a real hole."
   - theme: Resilience & Sustainable Pace
     capability: LI-10
     key_area: Self & Personal Effectiveness
     key_attribute: Growth & Resilience
-    anchor: "Loehr & Schwartz, The Power of Full Engagement (2003)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: loehr-schwartz2003-full-engagement
+    anchor_why: "performance is a function of managed energy, not time, and sustainable pace beats heroics"
+    mappings:
+      M1: {p: P2, sources: [loehr-schwartz2003-full-engagement, gitlab-em-jd], why: "LI-10 P2 ('stays effective and steady under pressure -- recovers from setbacks, manages their own energy, and models a sustainable pace others learn from watching') is Loehr & Schwartz's managed-energy discipline at first-line scope."}
+      M2: {p: P3, sources: [loehr-schwartz2003-full-engagement, gitlab-em-jd], why: "LI-10 P3 ('holds up through prolonged pressure -- incident sieges, crunch, organizational turbulence -- helping the team stay resilient and refusing burnout-driven decisions') is sustained composure through a complex team's real operational pressure."}
+      M3: {p: P4, sources: [loehr-schwartz2003-full-engagement, gitlab-em-jd], why: "LI-10 P4 ('builds resilience into how multiple teams operate -- on-call health, recovery after pushes, load balancing -- and repairs burnout risk at scale') is the sustainable-pace norm other leads adopt -- Director-level."}
+      M4: {p: P4, sources: [loehr-schwartz2003-full-engagement, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is modeling and protecting sustainable pace across a sub-org, designed into the operating rhythm rather than left to heroics, not a deeper resilience behavior."}
+      M5: {p: P5, sources: [loehr-schwartz2003-full-engagement, gitlab-em-jd], why: "LI-10 P5 ('stewards organizational resilience -- capacity buffers, crisis rotation, energy management for senior leaders -- and holds the line when business pressure argues for permanent crunch') matches VP-level ownership."}
+      M6: {p: P6, sources: [loehr-schwartz2003-full-engagement, gitlab-em-jd], why: "LI-10 P6 ('shapes a resilient, sustainable culture across an organization; the organization absorbs shocks without breaking people') is Loehr & Schwartz's energy-management thesis applied at the org-wide register."}
+    evidence:
+      M1: "Stays effective and steady under pressure, and models a sustainable pace the team learns from watching, not from posters."
+      M2: "Cancels a planned launch rather than run the team through a second consecutive crunch month, and says why out loud."
+      M3: "Notices two teams in a domain are both quietly running hot and rebalances on-call across them before either loses someone to burnout."
+      M4: "Models and protects sustainable pace across a sub-org, including through the leaders they develop; pace is designed in, not left to heroics."
+      M5: "Pushes back when the business asks for a permanent on-call surge, and gets a capacity buffer funded instead."
+      M6: "Shapes a resilient, sustainable culture org-wide; the story of the org's hardest year is told without casualties as the moral."
   - theme: Decision-Making Under Uncertainty
     capability: LI-04
     key_area: Self & Personal Effectiveness
     key_attribute: Judgment & Integrity
-    anchor: "Kahneman, Thinking, Fast and Slow (2011)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: kahneman2011-thinking-fast-slow
+    anchor_why: "judgment is systematically biased, and decision quality improves through process, not willpower"
+    mappings:
+      M1: {p: P2, sources: [kahneman2011-thinking-fast-slow, gitlab-em-jd], why: "LI-04 P2 ('decides independently within their components; evaluates alternatives honestly') is sizing the decision process to reversibility on one team -- quick calls on two-way doors, written analysis on one-way doors."}
+      M2: {p: P3, sources: [kahneman2011-thinking-fast-slow, gitlab-em-jd], why: "LI-04 P3 ('makes architectural choices for a domain that hold up over months') is structuring high-stakes calls on incomplete data for a critical team -- options written, dissent solicited before their own view is stated."}
+      M3: {p: P4, sources: [kahneman2011-thinking-fast-slow, gitlab-em-jd], why: "LI-04 P4 ('foresees second-order consequences; sets decision frameworks for teams') is installing debiasing mechanics across a domain -- pre-mortems, decision journals reviewed against outcomes -- Director-level."}
+      M4: {p: P4, sources: [kahneman2011-thinking-fast-slow, gitlab-em-jd], why: "M4 keeps P4; Senior Director scope is calibrating a sub-org's risk appetite decision by decision, separating decision quality from outcome luck in reviews, not a deeper decision behavior."}
+      M5: {p: P5, sources: [kahneman2011-thinking-fast-slow, gitlab-em-jd], why: "LI-04 P5 ('sets decision-making frameworks for the org') matches VP-level ownership of function-level bets under genuine ambiguity, sized so being wrong is survivable."}
+      M6: {p: P6, sources: [kahneman2011-thinking-fast-slow, gitlab-em-jd], why: "LI-04 P6 ('visionary judgment; sees structural causes others miss') is Kahneman's bias-guarded reasoning applied at the org-wide, structural-insight register."}
+    evidence:
+      M1: "Sizes the decision process to reversibility, stating assumptions and confidence levels and setting a revisit date."
+      M2: "Structures high-stakes calls on incomplete data, naming tripwires that trigger revisits and killing their own sunk-cost projects."
+      M3: "Installs debiasing mechanics across a domain -- pre-mortems, decision journals reviewed against outcomes -- and clarifies who decides what."
+      M4: "Calibrates a sub-org's risk appetite decision by decision, using a scored decision record and separating decision quality from outcome luck."
+      M5: "Makes function-level bets under genuine ambiguity, sized so being wrong is survivable, showing the reasoning even when the bet loses."
+      M6: "Carries the org's irreversible decisions -- the ones with no consensus and no precedent -- with a process others trust even when they disagree."
   - theme: Ethics, Integrity & Trust
     capability: LI-11
     key_area: Self & Personal Effectiveness
     key_attribute: Judgment & Integrity
-    anchor: "Mayer, Davis & Schoorman (1995); ACM Code of Ethics (2018)"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    anchor: mayer1995-trust
+    anchor_why: "trust is granted on perceived ability, benevolence, and integrity, and a leader's word is the currency every other competency spends"
+    mappings:
+      M1: {p: P3, sources: [mayer1995-trust, gitlab-em-jd, acm-code-of-ethics2018], why: "LI-11 P3 ('makes the unpopular-but-right call under pressure and absorbs the cost personally; protects the person who raised the flag') is Mayer, Davis & Schoorman's integrity dimension under real stakes -- placed at the first management level given the trust a manager holds over people's careers."}
+      M2: {p: P3, sources: [mayer1995-trust, gitlab-em-jd, acm-code-of-ethics2018], why: "M2 holds the same P3 bar; the Senior EM differentiator is holding the quality or safety line on a critical system under senior pressure, protecting the engineer who raised the flag, not a deeper integrity behavior."}
+      M3: {p: P4, sources: [mayer1995-trust, gitlab-em-jd, acm-code-of-ethics2018], why: "LI-11 P4 ('serves as the honest broker across teams ... carries uncomfortable systemic truths to the room that can fix them') is the ethical norm other leads adopt around access, data, and honest disclosure -- Director-level."}
+      M4: {p: P4, sources: [mayer1995-trust, gitlab-em-jd, acm-code-of-ethics2018], why: "M4 keeps P4; Senior Director scope is building the mechanisms that make integrity cheap in a sub-org -- ethics review in design, safe escalation with follow-through -- not a deeper integrity behavior."}
+      M5: {p: P5, sources: [mayer1995-trust, gitlab-em-jd, acm-code-of-ethics2018], why: "LI-11 P5 ('builds mechanisms that make integrity cheap at scale ... stops launches on ethical grounds with the business case for trust') matches VP-level ownership of a function's public impact."}
+      M6: {p: P6, sources: [mayer1995-trust, gitlab-em-jd, acm-code-of-ethics2018], why: "LI-11 P6 ('holds an organization's line when the profitable path and the right path diverge -- the hard disclosure, the walked-away revenue') is the ACM Code of Ethics's public-good primacy applied at the org-defining register."}
+    evidence:
+      M1: "Keeps commitments or renegotiates them before the deadline, never after, and owns mistakes unprompted."
+      M2: "Holds the quality or safety line on a critical system under senior pressure, and protects the engineer who raised the flag."
+      M3: "Serves as the honest broker across a domain -- parties in a dispute accept their account of the facts."
+      M4: "Builds the mechanisms that make integrity cheap in a sub-org, and applies them to their own decisions first."
+      M5: "Stops function-level launches on ethical or safety grounds and defends the call upward with the business case for trust."
+      M6: "Holds the org's line with the board and market when the profitable path and the right path diverge, and walks away from revenue."

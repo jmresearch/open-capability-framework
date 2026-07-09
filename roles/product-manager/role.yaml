@@ -14,7 +14,70 @@ scope_note: >
   different lineage; 152 source rows -> 40 canonical). Proficiency targets follow the IC
   guide P1:P1 ... P6:P6 except Technical & design fluency (LI-06), capped at P4 from level
   P4 up: a PM's upper-level leverage flows through product craft rather than deeper
-  technical authority, and the source cells plateau accordingly.
+  technical authority, and the source cells plateau accordingly. R3 sourced-derivation
+  retrofit (2026-07-09): every mapping now carries a bibliography source and a
+  per-competency, per-level why grounded in that capability's actual P1-P6 catalog text. The
+  diagonal held for all 40 competencies on re-derivation -- every mapped capability's own
+  P1-P6 profile independently escalates guided/assisted -> independent -> proficient/
+  autonomous -> expert/multi-area -> authority/org -> pioneer/company in step with this
+  ladder's P1-P6, so no mapping deviates from Pk:Pk beyond the pre-existing LI-06 plateau
+  (P4:P3, P5:P4, P6:P4, unchanged) -- see each competency's mappings[].why for the per-level
+  catalog citation. Role-leveling source convention (constant across the ladder, not
+  per-competency): P1-P3 pair the competency anchor with sfia9 (SFIA's guided/independent/
+  proficient responsibility tiers); P4-P6 pair it with larson2021-staffeng (StaffEng's
+  senior-IC archetypes for multi-area/org/company scope), except Raising the craft bar
+  (LI-03) whose anchor already is larson2021-staffeng, where the level's sources are not
+  duplicated. Thirteen competencies carry a second, always-on anchor source because the
+  original citation named two real, distinct works both genuine bibliography entries,
+  carried at every level: Customer interviewing (torres2021-continuous-discovery +
+  fitzpatrick2013-momtest), Discovery cadence & habits (torres2021-continuous-discovery +
+  cagan2017-inspired), Customer segmentation & personas (cooper2014-aboutface +
+  moore1991-crossing-chasm), Assumption mapping & risk framing
+  (osterwalder2019-testing-business-ideas + cagan2017-inspired), Assumption testing &
+  experiments (ries2011-leanstartup + torres2021-continuous-discovery), Positioning &
+  differentiation (dunford2019-obviously-awesome + moore1991-crossing-chasm), Outcome-based
+  roadmapping (perri2018-escapingbuildtrap + lombardo2017-roadmaps-relaunched), Requirements/
+  specs & acceptance criteria (babok3 + iso29148), Backlog & delivery flow
+  (patton2014-storymapping + reinertsen2009-flow), Launch management & readiness
+  (cagan2017-inspired + kohavi2020-trustworthy), Product narratives & written communication
+  (zinsser2006-onwritingwell + minto1996-pyramid), Executive communication
+  (minto1996-pyramid + grove1983-high-output-management), Raising the craft bar
+  (cagan2020-empowered + larson2021-staffeng). Ten competency anchors resolve via a close
+  existing bibliography substitute rather than the original free-text citation (a book never
+  added to the bibliography), always a source already used for that exact capability id or
+  the other named author in the original two-author anchor line: Customer interviewing's
+  Portigal, Interviewing Users -> fitzpatrick2013-momtest (PM-01's own P1 anchor -- same
+  leading-question-avoidance territory); Research synthesis & insight's and Post-launch
+  iteration & lifecycle's and Prototype & solution testing's Olsen, The Lean Product
+  Playbook -> torres2021-continuous-discovery / croll-yoskovitz2013-leananalytics /
+  osterwalder2019-testing-business-ideas respectively (each PM-01/PM-10/PM-18's own
+  dominant anchor); Customer segmentation & personas's Cooper, The Inmates Are Running the
+  Asylum -> cooper2014-aboutface (same author's canonical goal-directed-design text that
+  originated the persona method); Funnel & behavioral analysis's McClure, Startup Metrics
+  for Pirates -> dropped, kept solely on the already-in-bibliography Croll & Yoskovitz half
+  of the original two-author anchor (Lean Analytics covers AARRR directly); Decision quality
+  under uncertainty's Duke, Thinking in Bets -> kahneman2011-thinking-fast-slow (the other
+  author in the ladder.md's own original two-author anchor line); Requirements/specs &
+  acceptance criteria's and Product narratives & written communication's Bryar & Carr,
+  Working Backwards -> babok3+iso29148 / zinsser2006-onwritingwell+minto1996-pyramid
+  respectively (PM-07's and CC-01's own catalog-level anchors); Pricing & packaging's
+  Ramanujam & Tacke, Monetizing Innovation -> nagle2023-pricing (PM-12's own P3/P4/P6
+  catalog anchor). Self-sourcing circularity check (systemic bug hunted per the task brief):
+  five capabilities in this ladder -- PM-15 (Opportunity mapping & framing), PM-16 (Problem
+  framing & outcome definition), PM-17 (Jobs-to-be-done analysis), PM-18 (Assumption mapping
+  & discovery testing), and PM-19 (Domain & industry fluency) -- were minted in 2026-07
+  directly from this exact role's own prior consolidation prose (see contrib/2026-07-
+  opportunity-mapping-framing.md and siblings, folded into the catalog by commit f00124e).
+  Comparing each mapped capability's full catalog bar against the old ladder.md's bold
+  "most distinctive observable" evidence clause for the same cell showed the catalog text is
+  frequently a close paraphrase of the old ladder's own prose (e.g. PM-16 P1's catalog bar
+  and the old ladder's P1 evidence differ by a handful of words). Reusing that old prose as
+  this retrofit's "evidenced by" text would therefore just restate the bar under a different
+  label rather than add a genuine instance, so all 7 affected competencies (the PM-15/16/17
+  rows, all three PM-18 rows -- Assumption mapping & risk framing, Assumption testing &
+  experiments, Prototype & solution testing -- and PM-19) x 6 levels = 42 evidence cells were
+  written fresh against the bar's behavior and autonomy, using different concrete artifacts
+  and scenarios than the old ladder.md, not carried over or lightly reworded from it.
 levels:
   - {code: P1, title: Associate Product Manager, scope: "one feature/epic", focus: "Learns the craft; ships well-defined slices with guidance"}
   - {code: P2, title: Product Manager, scope: "a product area", focus: "Runs discovery-to-delivery independently for an area"}
@@ -22,251 +85,810 @@ levels:
   - {code: P4, title: Staff/Group Product Manager, scope: "multiple product areas", focus: "Aligns strategy and craft across several product teams"}
   - {code: P5, title: Principal Product Manager, scope: "product organization", focus: "Sets product direction and practice the org builds against"}
   - {code: P6, title: Distinguished PM / Head of Product Craft, scope: "company portfolio", focus: "Shapes portfolio bets and the company's product craft"}
+ladder_name: Product Manager (IC Technical, P1-P6) - Canonical
+ladder_description: >
+  Canonical six-level IC ladder for product managers who own discovery-to-delivery outcomes
+  for a product area or capability, consolidated by union from five independent sources; P3
+  Senior Product Manager is the terminal level.
+derived: true
 competencies:
-  # ---- Product Discovery & User Research ----
-  - theme: Customer interviewing
+  - theme: "Customer interviewing"
     capability: PM-01
-    key_area: Product Discovery & User Research
-    key_attribute: Continuous Discovery
-    anchor: "Torres, *Continuous Discovery Habits* (2021); Portigal, *Interviewing Users* (2013)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Discovery cadence & habits
+    key_area: "Product Discovery & User Research"
+    key_attribute: "Continuous Discovery"
+    anchor: torres2021-continuous-discovery
+    anchor_why: "weekly customer touchpoints with story-based, non-leading questions are the foundational discovery habit; substituted for Portigal's Interviewing Users (no bibliography entry) with fitzpatrick2013-momtest, which names the exact leading-question failure mode a script and review exist to catch."
+    mappings:
+      P1: {p: P1, sources: [torres2021-continuous-discovery, fitzpatrick2013-momtest, sfia9], why: "PM-01 P1 ('Runs scripted customer interviews and notes findings under a senior researcher's guidance.') is the guided bar: running a prepared story-based interview and debriefing with a lead is Fitzpatrick's script-and-review discipline for a novice who has not yet earned unsupervised interview judgment."}
+      P2: {p: P2, sources: [torres2021-continuous-discovery, fitzpatrick2013-momtest, sfia9], why: "PM-01 P2 ('Plans and conducts standard discovery for a feature, synthesizing themes with normal review.') matches an Associate PM's promotion to running discovery independently — Torres's weekly-cadence habit performed without redesigning the method each time, with normal review rather than a senior researcher's guidance."}
+      P3: {p: P3, sources: [torres2021-continuous-discovery, fitzpatrick2013-momtest, sfia9], why: "PM-01 P3 ('Independently frames ambiguous problems, selects fitting methods, and separates signal from noise.') is the capability-owning, terminal-level bar: owning the interviewing practice for a whole product — building the pipeline, pulling engineers into sessions, and redirecting drift — is Torres's continuous-discovery habit exercised with full autonomy, not just performed on schedule."}
+      P4: {p: P4, sources: [torres2021-continuous-discovery, fitzpatrick2013-momtest, larson2021-staffeng], why: "PM-01 P4 ('Designs the team's discovery approach and untangles findings others find contradictory.') is Staff-scope: interviewing technique that spreads to other teams' guides and snapshot formats is exactly Torres's discipline codified beyond one practitioner into something other PMs adopt."}
+      P5: {p: P5, sources: [torres2021-continuous-discovery, fitzpatrick2013-momtest, larson2021-staffeng], why: "PM-01 P5 ('Sets the org's research strategy and anticipates emerging customer needs before they surface.') matches Principal-level authority: installing the org's interviewing infrastructure (recruiting panels, consent norms, snapshot repositories) is org-wide standard-setting beyond any one product's cadence."}
+      P6: {p: P6, sources: [torres2021-continuous-discovery, fitzpatrick2013-momtest, larson2021-staffeng], why: "PM-01 P6 ('Defines what rigorous product discovery means and shapes the discipline's practice externally.') is the company/external-authority register: setting the company's standard for customer contact and arguing it externally is the same register Torres's own book occupies as an externally cited discovery doctrine."}
+    evidence:
+      P1: "Runs a scripted interview from a lead's guide, avoids the leading-question traps the Mom Test warns about, and writes up verbatim notes for the lead to review."
+      P2: "Keeps a weekly interview cadence going without being reminded, writes their own discussion guides, and turns each session into a snapshot teammates actually read."
+      P3: "Builds the recruiting pipeline for their product, brings engineers and designers into sessions, and redirects an interview that drifts into feature-request collection back to behavior."
+      P4: "Reviews other PMs' discussion guides and sits in on their sessions, and the snapshot format spreading across teams traces back to their template."
+      P5: "Stands up the org's recruiting panel, consent process, and interview-snapshot repository, and audits whether a team's customer contact is real or theater."
+      P6: "Sets the company's public standard for what counts as real customer contact and defends it in talks or writing that other practitioners cite."
+  - theme: "Discovery cadence & habits"
     capability: PM-01
-    key_area: Product Discovery & User Research
-    key_attribute: Continuous Discovery
-    anchor: "Torres, *Continuous Discovery Habits* (2021); Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Opportunity mapping
+    key_area: "Product Discovery & User Research"
+    key_attribute: "Continuous Discovery"
+    anchor: torres2021-continuous-discovery
+    anchor_why: "discovery is a weekly habit run in parallel with delivery, not a phase before it, paired with cagan2017-inspired's empowered-team framing of continuous discovery as a team default rather than a research-team hand-off."
+    mappings:
+      P1: {p: P1, sources: [torres2021-continuous-discovery, cagan2017-inspired, sfia9], why: "PM-01 P1 ('Runs scripted customer interviews and notes findings under a senior researcher's guidance.') is the guided bar: following a cadence the team already set (scheduled interviews, listed assumptions, logged findings) is supervised participation in someone else's discovery rhythm, not yet owning the habit."}
+      P2: {p: P2, sources: [torres2021-continuous-discovery, cagan2017-inspired, sfia9], why: "PM-01 P2 ('Plans and conducts standard discovery for a feature, synthesizing themes with normal review.') matches independent operation of the habit — running discovery and delivery in parallel without stalling either, the baseline weekly touchpoint Torres and Cagan both describe as the default, not the exception."}
+      P3: {p: P3, sources: [torres2021-continuous-discovery, cagan2017-inspired, sfia9], why: "PM-01 P3 ('Independently frames ambiguous problems, selects fitting methods, and separates signal from noise.') is the terminal, capability-owning bar: sustaining the habit through deadline and re-org pressure, and renegotiating scope in the open rather than quietly dropping customer contact, is autonomous stewardship of a product's discovery culture."}
+      P4: {p: P4, sources: [torres2021-continuous-discovery, cagan2017-inspired, larson2021-staffeng], why: "PM-01 P4 ('Designs the team's discovery approach and untangles findings others find contradictory.') is Staff-scope: auditing discovery health across teams from artifacts and calendars, and restarting a stalled habit, is exactly the cross-team codification Staff-level influence requires."}
+      P5: {p: P5, sources: [torres2021-continuous-discovery, cagan2017-inspired, larson2021-staffeng], why: "PM-01 P5 ('Sets the org's research strategy and anticipates emerging customer needs before they surface.') matches Principal authority: designing the operating rhythm (planning rituals, review gates, funding rules) that makes continuous discovery the org's default is org-wide practice design, not one team's habit."}
+      P6: {p: P6, sources: [torres2021-continuous-discovery, cagan2017-inspired, larson2021-staffeng], why: "PM-01 P6 ('Defines what rigorous product discovery means and shapes the discipline's practice externally.') is company/portfolio scope: holding the company accountable to discovery at portfolio level, challenging investments that lack recent customer evidence in front of executives, is the discipline-shaping register both anchors argue for."}
+    evidence:
+      P1: "Keeps their epic's discovery tasks visible on the team board — interviews scheduled, assumptions listed, findings logged — following the cadence the team already set."
+      P2: "Runs discovery and delivery in parallel without stalling either, so standups show both a weekly ship and a weekly customer conversation moving."
+      P3: "Keeps the discovery habit alive through a deadline crunch by visibly renegotiating scope instead of quietly skipping customer contact, and new teams are pointed at their cadence as the example."
+      P4: "Audits discovery health across several teams from calendars and artifacts, names which team has quietly stopped learning, and gets the habit restarted."
+      P5: "Designs the planning rituals and funding rules that make continuous discovery the org's default rather than a practice some teams opt out of under pressure."
+      P6: "Challenges a major company investment in an executive review for lacking recent customer evidence, and that challenge becomes the norm other reviews are held to."
+  - theme: "Opportunity mapping"
     capability: PM-15
-    key_area: Product Discovery & User Research
-    key_attribute: Synthesis & Customer Modeling
-    anchor: "Torres, *Continuous Discovery Habits* (2021)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Research synthesis & insight
+    key_area: "Product Discovery & User Research"
+    key_attribute: "Synthesis & Customer Modeling"
+    anchor: torres2021-continuous-discovery
+    anchor_why: "the opportunity solution tree keeps teams solving customer needs rather than shipping their first idea; self-sourced capability (PM-15 was minted in 2026-07 directly from this ladder's own prior consolidation prose — see scope_note) so the evidence below is written fresh, not carried over from the old ladder.md."
+    mappings:
+      P1: {p: P1, sources: [torres2021-continuous-discovery, sfia9], why: "PM-15 P1 ('Places research findings onto an existing opportunity map correctly, distinguishing opportunities from solutions with coaching.') is the guided bar: placing findings on a map someone else owns, with coaching to tell an opportunity from a solution, is Torres's foundational distinction taught before it is practiced independently."}
+      P2: {p: P2, sources: [torres2021-continuous-discovery, sfia9], why: "PM-15 P2 ('Builds and maintains the opportunity map for their area, sizing and pruning branches against evidence without prompting.') matches independent operation: building and pruning the tree for one's own area without prompting is Torres's opportunity-solution-tree maintenance run as a standard, repeatable habit rather than a coached exercise."}
+      P3: {p: P3, sources: [torres2021-continuous-discovery, sfia9], why: "PM-15 P3 ('Structures messy, contested problem spaces into maps that make trade-offs explicit, and defends why one opportunity is pursued over its siblings.') is the terminal, capability-owning bar: structuring a contested problem space and defending why one branch is pursued over its siblings is Torres's own description of tree-pruning as a judgment call, not a mechanical sizing exercise."}
+      P4: {p: P4, sources: [torres2021-continuous-discovery, larson2021-staffeng], why: "PM-15 P4 ('Reconciles overlapping opportunity maps across teams, exposing duplicate bets and orphaned opportunities no single team could see.') is Staff-scope: reconciling overlapping trees across teams and exposing duplicate or orphaned opportunities is one person's mapping method applied across multiple teams' trees — the cross-team synthesis Torres reserves for senior practice."}
+      P5: {p: P5, sources: [torres2021-continuous-discovery, larson2021-staffeng], why: "PM-15 P5 ('Makes opportunity mapping an organization's default synthesis method; investment reviews open from the mapped opportunity space.') matches Principal authority: making opportunity mapping the org's default synthesis method, so investment reviews open from the mapped space, is organization-wide adoption of the method, not one team's artifact."}
+      P6: {p: P6, sources: [torres2021-continuous-discovery, larson2021-staffeng], why: "PM-15 P6 ('Shapes how organizations represent customer opportunity at portfolio level; their framing methods are cited and reused beyond their own organization.') is company/portfolio, external-authority scope: shaping how organizations represent customer opportunity at portfolio level, with methods reused beyond one's own organization, is the register Torres's own tree occupies externally."}
+    evidence:
+      P1: "Adds a newly-interviewed customer's pain point to their lead's opportunity tree in the right branch, asking when unsure whether it names a need or a disguised feature request."
+      P2: "Keeps their product area's opportunity tree current between planning cycles, retiring branches no interview has touched in months and adding new ones as evidence accumulates."
+      P3: "Walks a skeptical stakeholder through why the team is pursuing one opportunity over three plausible siblings, pointing at the specific interview evidence behind the call."
+      P4: "Merges two teams' opportunity trees ahead of a joint planning cycle and surfaces a customer need both teams were separately half-solving without knowing about the other's work."
+      P5: "Gets a quarterly investment review to open with the mapped opportunity space instead of a list of proposed features, and rejects a funding request that skips the map."
+      P6: "Publishes the opportunity-mapping method used across the company's product lines and fields questions about it from PMs at other companies trying to adopt it."
+  - theme: "Research synthesis & insight"
     capability: PM-01
-    key_area: Product Discovery & User Research
-    key_attribute: Synthesis & Customer Modeling
-    anchor: "Olsen, *The Lean Product Playbook* (2015)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Customer segmentation & personas
+    key_area: "Product Discovery & User Research"
+    key_attribute: "Synthesis & Customer Modeling"
+    anchor: torres2021-continuous-discovery
+    anchor_why: "substituted for Olsen's The Lean Product Playbook (no bibliography entry) with Torres's own continuous-discovery synthesis practice — PM-01's dominant anchor — since turning raw interview notes into durable themes is the same synthesis discipline the interviewing and cadence rows above already anchor to."
+    mappings:
+      P1: {p: P1, sources: [torres2021-continuous-discovery, sfia9], why: "PM-01 P1 ('Runs scripted customer interviews and notes findings under a senior researcher's guidance.') is the guided bar: tagging and clustering notes with the team's existing method, and being able to point to the source quote behind a theme, is supervised execution against someone else's synthesis framework."}
+      P2: {p: P2, sources: [torres2021-continuous-discovery, sfia9], why: "PM-01 P2 ('Plans and conducts standard discovery for a feature, synthesizing themes with normal review.') matches independent operation: turning a batch of interviews into a ranked, evidenced set of needs with normal review is planning and running standard synthesis for one area without redesigning the method."}
+      P3: {p: P3, sources: [torres2021-continuous-discovery, sfia9], why: "PM-01 P3 ('Independently frames ambiguous problems, selects fitting methods, and separates signal from noise.') is the terminal, capability-owning bar: integrating qualitative and quantitative evidence into insight documents that change what a team builds, traceable from quote to claim, is autonomous framing of an ambiguous evidence base."}
+      P4: {p: P4, sources: [torres2021-continuous-discovery, larson2021-staffeng], why: "PM-01 P4 ('Designs the team's discovery approach and untangles findings others find contradictory.') is Staff-scope: forcing reconciliation when two teams' research conclusions about the same customers conflict, until one coherent picture survives, is designing a shared synthesis approach other teams inherit."}
+      P5: {p: P5, sources: [torres2021-continuous-discovery, larson2021-staffeng], why: "PM-01 P5 ('Sets the org's research strategy and anticipates emerging customer needs before they surface.') matches Principal authority: building the org's insight infrastructure — repositories, tagging conventions, synthesis reviews — is org-wide research strategy that anticipates which findings will compound."}
+      P6: {p: P6, sources: [torres2021-continuous-discovery, larson2021-staffeng], why: "PM-01 P6 ('Defines what rigorous product discovery means and shapes the discipline's practice externally.') is company/portfolio scope: distilling company-wide customer understanding into the few durable insights executives reason from, and retiring stale folklore, is discipline-defining synthesis at Torres's own externally cited register."}
+    evidence:
+      P1: "Tags a batch of interview transcripts into the team's existing theme categories and can point to the exact quote behind each tag when a lead asks."
+      P2: "Turns three weeks of interviews and support tickets into a ranked list of underserved needs, with the evidence attached, and presents it without overclaiming."
+      P3: "Writes an insight document that changes the team's next quarter's plan, and a skeptical peer checking the chain from quote to claim finds it intact."
+      P4: "Notices two teams' research write-ups draw opposite conclusions about the same customer segment and runs the joint review that reconciles them into one shared picture."
+      P5: "Stands up the org's tagging conventions and insight repository so a finding from one team's research is discoverable and reusable by another team a year later."
+      P6: "Distills a year of company-wide customer research into the handful of insights the executive team actually reasons from, and retires a piece of long-standing but unsupported folklore."
+  - theme: "Customer segmentation & personas"
     capability: PM-02
-    key_area: Product Discovery & User Research
-    key_attribute: Synthesis & Customer Modeling
-    anchor: "Cooper, *The Inmates Are Running the Asylum* (1999)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  # ---- Problem Definition & Validation ----
-  - theme: Problem statements & outcome framing
+    key_area: "Product Discovery & User Research"
+    key_attribute: "Synthesis & Customer Modeling"
+    anchor: cooper2014-aboutface
+    anchor_why: "substituted for Cooper's The Inmates Are Running the Asylum (no bibliography entry) with Cooper, Reimann, Cronin & Noessel's About Face, the same author's canonical goal-directed-design text that originated the persona method Inmates popularized; adoption is won segment by segment, per Moore's chasm model."
+    mappings:
+      P1: {p: P1, sources: [cooper2014-aboutface, moore1991-crossing-chasm, sfia9], why: "PM-02 P1 ('Documents personas and journey steps from supplied data under direction.') is the guided bar: using the team's existing personas and segments correctly in specs, and flagging work that serves no one in particular, is supervised application of a persona set someone else designed."}
+      P2: {p: P2, sources: [cooper2014-aboutface, moore1991-crossing-chasm, sfia9], why: "PM-02 P2 ('Builds usable personas and maps journeys for a product area with normal review.') matches independent operation: keeping an area's personas evidence-based — refreshing them from data, splitting or retiring as behavior diverges — is Cooper's goal-directed method run as ongoing upkeep, with normal review."}
+      P3: {p: P3, sources: [cooper2014-aboutface, moore1991-crossing-chasm, sfia9], why: "PM-02 P3 ('Independently models complex multi-actor journeys and resolves conflicting user signals.') is the terminal, capability-owning bar: choosing and defending a target segment, naming who the product is deliberately not for, and mapping the end-to-end journey per segment is autonomous application of Cooper's design-target discipline combined with Moore's segment-by-segment adoption logic."}
+      P4: {p: P4, sources: [cooper2014-aboutface, moore1991-crossing-chasm, larson2021-staffeng], why: "PM-02 P4 ('Defines modeling standards others adopt and reconciles personas across overlapping segments.') is Staff-scope: reconciling segment and persona models across teams so a portfolio addresses one coherent map of users, rather than overlapping caricatures, is a shared standard other teams adopt."}
+      P5: {p: P5, sources: [cooper2014-aboutface, moore1991-crossing-chasm, larson2021-staffeng], why: "PM-02 P5 ('Sets persona and journey strategy across the portfolio and predicts shifting behavior patterns.') matches Principal authority: owning the org's customer model — the shared segmentation the org plans, staffs, and measures against — and auditing for drift is organization-wide ownership of the model itself."}
+      P6: {p: P6, sources: [cooper2014-aboutface, moore1991-crossing-chasm, larson2021-staffeng], why: "PM-02 P6 ('Establishes industry-recognized methods for journey modeling and teaches them widely.') is company/portfolio scope: defining how the company sees its market's customers, in the segment map used in board strategy, and updating it ahead of market shifts is the register both Cooper's and Moore's own frameworks occupy as references."}
+    evidence:
+      P1: "Names which persona a new user story serves when writing it, and flags a proposed feature in review as serving no defined segment."
+      P2: "Refreshes their product area's personas from a quarter of new interview and usage data, splitting one persona into two once their behavior clearly diverges."
+      P3: "Names, in a strategy review, exactly who the product is not building for this year, and backs the target-segment choice with sizing data the team can defend."
+      P4: "Reconciles two product areas' persona sets that had quietly drifted into describing the same underlying user two different ways, and gets both teams onto one shared map."
+      P5: "Owns the org's customer segmentation model and flags a product whose recent roadmap has drifted from the segment it was originally built for."
+      P6: "Updates the company's customer segment map ahead of a market shift that board materials and company strategy then get built around."
+  - theme: "Problem statements & outcome framing"
     capability: PM-16
-    key_area: Problem Definition & Validation
-    key_attribute: Problem Framing
-    anchor: "Perri, *Escaping the Build Trap* (2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Jobs-to-be-done framing
+    key_area: "Problem Definition & Validation"
+    key_attribute: "Problem Framing"
+    anchor: perri2018-escapingbuildtrap
+    anchor_why: "teams stuck shipping outputs need problems framed as customer/business outcomes; self-sourced capability (PM-16 minted 2026-07 from this ladder's own prior consolidation prose — see scope_note), so evidence is written fresh below."
+    mappings:
+      P1: {p: P1, sources: [perri2018-escapingbuildtrap, sfia9], why: "PM-16 P1 ('Writes a one-page problem statement naming the user, the struggle, and the evidence, with review; separates problem from requested feature when prompted.') is the guided bar: writing a one-page problem statement with review, and separating problem from feature only when prompted, is the coached, basic problem/solution separation Perri argues is missing in build-trap teams."}
+      P2: {p: P2, sources: [perri2018-escapingbuildtrap, sfia9], why: "PM-16 P2 ('Frames work as outcomes the team can move rather than outputs to ship, and rewrites incoming feature requests into the underlying problem before triage.') matches independent operation: framing work as outcomes the team can move, and rewriting incoming feature requests into the underlying problem before triage, is Perri's reframing habit performed unprompted for one's own area."}
+      P3: {p: P3, sources: [perri2018-escapingbuildtrap, sfia9], why: "PM-16 P3 ('Sets the outcome a product is accountable for and keeps the team pointed at it, publicly re-framing efforts that drift into output-counting.') is the terminal, capability-owning bar: setting the outcome a product is accountable for and publicly re-framing drift into output-counting is autonomous ownership of the framing discipline Perri argues most teams never reach."}
+      P4: {p: P4, sources: [perri2018-escapingbuildtrap, larson2021-staffeng], why: "PM-16 P4 ('Arbitrates problem framing across teams — spotting duplicated or conflicting framings — and re-cuts problem boundaries drawn along org lines instead of customer lines.') is Staff-scope: arbitrating problem framing across teams — spotting duplicated or conflicting framings, re-cutting boundaries drawn along org lines instead of customer lines — is the framing discipline applied across teams, not one product."}
+      P5: {p: P5, sources: [perri2018-escapingbuildtrap, larson2021-staffeng], why: "PM-16 P5 ('Defines an organization's outcome architecture — how team-level outcomes ladder to organizational results — and retires vanity outcomes.') matches Principal authority: defining an organization's outcome architecture — how team outcomes ladder to organizational results — and retiring vanity outcomes is org-wide structural ownership beyond any single product's framing."}
+      P6: {p: P6, sources: [perri2018-escapingbuildtrap, larson2021-staffeng], why: "PM-16 P6 ('Frames an organization's hardest, ownerless problems into tractable outcome statements executives fund; their framing practice shapes the discipline externally.') is company/portfolio scope: framing the company's hardest, ownerless problems into outcome statements executives fund, with practice that shapes the discipline externally, is the register Perri's own book argues separates real strategy work."}
+    evidence:
+      P1: "Writes a one-page problem statement naming the user, the struggle, and the evidence for their epic, and a reviewer catches where it still smuggles in a feature."
+      P2: "Rewrites an incoming stakeholder feature request into the underlying problem before it reaches triage, framing the goal as a movable number rather than a shipped artifact."
+      P3: "Names, in a planning review, that the team has drifted into counting shipped tickets instead of moving the outcome it owns, and resets the conversation to the number that matters."
+      P4: "Notices two product areas have quietly defined the same customer problem two incompatible ways and gets both teams working from one reconciled framing."
+      P5: "Publishes how team-level outcomes ladder up to the product org's results, and retires a long-tracked metric that turned out to be a vanity number nobody could act on."
+      P6: "Takes a company-level problem with no clear owner — churn nobody's roadmap addresses — and frames it into an outcome statement executives fund and a team is staffed against."
+  - theme: "Jobs-to-be-done framing"
     capability: PM-17
-    key_area: Problem Definition & Validation
-    key_attribute: Problem Framing
-    anchor: "Christensen, Hall, Dillon & Duncan, *Competing Against Luck* (2016)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Assumption mapping & risk framing
+    key_area: "Problem Definition & Validation"
+    key_attribute: "Problem Framing"
+    anchor: christensen2016-jtbd
+    anchor_why: "customers hire products to make progress in a circumstance; self-sourced capability (PM-17 minted 2026-07 from this ladder's own prior consolidation prose — see scope_note), so evidence is written fresh below."
+    mappings:
+      P1: {p: P1, sources: [christensen2016-jtbd, sfia9], why: "PM-17 P1 ('Restates a feature request as the job the customer is hiring it for — circumstance and progress sought — with coaching.') is the guided bar: restating a feature request as the job it is hired for, with coaching, is applying Christensen et al.'s vocabulary under supervision before it becomes an independent lens."}
+      P2: {p: P2, sources: [christensen2016-jtbd, sfia9], why: "PM-17 P2 ('Maps the main jobs in their area from interview evidence, identifying what customers currently hire and where those hires fail.') matches independent operation: mapping the main jobs in an area from interview evidence, including where current hires fail, applies the hiring/firing metaphor unsupervised to standard, well-bounded cases."}
+      P3: {p: P3, sources: [christensen2016-jtbd, sfia9], why: "PM-17 P3 ('Anchors a product's definition and boundaries in its core job, using the job to rule scope in or out and to identify non-obvious competitors.') is the terminal, capability-owning bar: anchoring a product's definition and boundaries in its core job and using it to identify non-obvious competitors is Christensen et al.'s own milkshake-study move — spotting a job's true competing alternatives when they are not obviously products at all."}
+      P4: {p: P4, sources: [christensen2016-jtbd, larson2021-staffeng], why: "PM-17 P4 ('Aligns job maps across teams into one view of customer progress, exposing where customers must stitch products together to finish one job.') is Staff-scope: aligning job maps across teams into one view of customer progress, exposing where customers must stitch products together, is a single-product JTBD lens turned into a portfolio-spanning map others build on."}
+      P5: {p: P5, sources: [christensen2016-jtbd, larson2021-staffeng], why: "PM-17 P5 ('Uses jobs analysis to shape organization-level portfolio choices — which jobs are served end-to-end, which are exited.') matches Principal authority: using jobs analysis to shape organization-level portfolio choices — which jobs are served end-to-end, which are exited — is portfolio reach beyond any single product's job."}
+      P6: {p: P6, sources: [christensen2016-jtbd, larson2021-staffeng], why: "PM-17 P6 ('Frames markets and strategy in jobs terms that reveal disruption threats early; their jobs analyses influence practice beyond their organization.') is company/portfolio scope: framing markets and strategy in jobs terms that reveal disruption threats early, with analyses that influence practice beyond one's own organization, is the register Christensen's own disruption theory occupies."}
+    evidence:
+      P1: "Restates a stakeholder's feature request as the job the customer is hiring it for — the circumstance and the progress sought — after a lead points out the request was solution-shaped."
+      P2: "Maps the three or four jobs customers hire their product area for from a batch of interviews, and names where a current job is being served badly enough that customers work around it."
+      P3: "Rules a proposed feature out of scope because it does not advance the product's core job, and names a competitor outside the product's category that serves the same job better."
+      P4: "Aligns two teams' separate job maps into one view and shows where customers currently stitch both teams' products together to finish a single job neither owns end to end."
+      P5: "Uses a jobs-based view of the portfolio to recommend exiting a product line that serves a job the company can no longer serve better than the alternatives customers already use."
+      P6: "Frames an emerging market shift in jobs terms that flags a disruption threat before competitors name it, and the analysis gets cited by other companies watching the same market."
+  - theme: "Assumption mapping & risk framing"
     capability: PM-18
-    key_area: Problem Definition & Validation
-    key_attribute: Assumption Testing & Validation
-    anchor: "Bland & Osterwalder, *Testing Business Ideas* (2019); Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Assumption testing & experiments
+    key_area: "Problem Definition & Validation"
+    key_attribute: "Assumption Testing & Validation"
+    anchor: osterwalder2019-testing-business-ideas
+    anchor_why: "desirability, viability, feasibility, and usability risks must be named and ranked before building, paired with Cagan's four discovery risks; self-sourced capability (PM-18 minted 2026-07 from this ladder's own prior consolidation prose — see scope_note), so evidence is written fresh below."
+    mappings:
+      P1: {p: P1, sources: [osterwalder2019-testing-business-ideas, cagan2017-inspired, sfia9], why: "PM-18 P1 ('Lists the assumptions behind a proposed feature, sorts them by risk with coaching, and runs a prescribed simple test, logging what was learned.') is the guided bar: listing assumptions and sorting them by risk with coaching, then running one prescribed test, applies Bland & Osterwalder's four-risks lens as a supervised checklist, not yet an independent ranking judgment."}
+      P2: {p: P2, sources: [osterwalder2019-testing-business-ideas, cagan2017-inspired, sfia9], why: "PM-18 P2 ('Identifies the riskiest assumption before build and matches the test type to it — prototype, painted door, concierge — with pass/fail defined in advance.') matches independent operation: identifying the riskiest assumption before build and matching it to a test type with pass/fail defined in advance applies the experiment library as a standard lookup, unsupervised."}
+      P3: {p: P3, sources: [osterwalder2019-testing-business-ideas, cagan2017-inspired, sfia9], why: "PM-18 P3 ('Surfaces assumptions others treat as facts, designs test sequences that retire the most risk per unit effort, and kills initiatives whose load-bearing assumptions fail.') is the terminal, capability-owning bar: surfacing assumptions others treat as facts and sequencing tests to retire the most risk per unit effort is Bland & Osterwalder's assumptions-mapping ranking applied with judgment, not a checklist."}
+      P4: {p: P4, sources: [osterwalder2019-testing-business-ideas, cagan2017-inspired, larson2021-staffeng], why: "PM-18 P4 ('Standardizes how multiple teams express and rank risk, and rejects validation theater — tests that can only confirm, never falsify — before major commitments.') is Staff-scope: standardizing how multiple teams express and rank risk, and rejecting validation theater — tests that can only confirm, never falsify — is the explicit warning against non-falsifiable tests turned into an enforced standard."}
+      P5: {p: P5, sources: [osterwalder2019-testing-business-ideas, cagan2017-inspired, larson2021-staffeng], why: "PM-18 P5 ('Builds discovery-testing capability into an organization's investment process — funding follows tested assumptions, and the cost of a first test drops to hours.') matches Principal authority: building discovery-testing capability into an organization's investment process, so funding follows tested assumptions, is capability built into the org's process, not one team's habit."}
+      P6: {p: P6, sources: [osterwalder2019-testing-business-ideas, cagan2017-inspired, larson2021-staffeng], why: "PM-18 P6 ('Structures bets too big to A/B as staged, falsifiable commitments; their validation doctrine is cited and adopted beyond their organization.') is company/portfolio scope: structuring bets too big to A/B as staged, falsifiable commitments, with a validation doctrine cited beyond one's own organization, is the register both anchors' own books occupy as external references."}
+    evidence:
+      P1: "Lists the desirability, viability, feasibility, and usability assumptions behind a proposed feature with a lead's coaching, and runs the one prescribed prototype test the lead assigned."
+      P2: "Names the riskiest assumption in a proposed bet before any build starts, picks a painted-door test to match it, and writes down the pass/fail bar before launching it."
+      P3: "Kills an initiative in flight after a pre-mortem surfaces a load-bearing assumption the team had been quietly treating as a fact, naming the evidence and the trade-off in the write-up."
+      P4: "Standardizes how three teams express and compare risk on their bets and rejects a test design that could only ever confirm the team's existing plan."
+      P5: "Gets the org's investment process to require a tested-assumption map before funding a major bet, dropping the cost of a first test from weeks to hours."
+      P6: "Structures a bet too large to A/B — a new pricing model — as a sequence of staged, falsifiable commitments, and other companies cite the approach when facing similar bets."
+  - theme: "Assumption testing & experiments"
     capability: PM-18
-    key_area: Problem Definition & Validation
-    key_attribute: Assumption Testing & Validation
-    anchor: "Ries, *The Lean Startup* (2011); Torres, *Continuous Discovery Habits* (2021)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Prototype & solution testing
+    key_area: "Problem Definition & Validation"
+    key_attribute: "Assumption Testing & Validation"
+    anchor: ries2011-leanstartup
+    anchor_why: "the smallest test that produces validated learning beats the most polished untested build, paired with Torres's continuous-testing habit; self-sourced capability (PM-18 minted 2026-07 from this ladder's own prior consolidation prose — see scope_note), so evidence is written fresh below."
+    mappings:
+      P1: {p: P1, sources: [ries2011-leanstartup, torres2021-continuous-discovery, sfia9], why: "PM-18 P1 ('Lists the assumptions behind a proposed feature, sorts them by risk with coaching, and runs a prescribed simple test, logging what was learned.') is the guided bar: listing assumptions and running a prescribed simple test with coaching is a supervised first pass through Ries's build-measure-learn loop, guided rather than self-directed."}
+      P2: {p: P2, sources: [ries2011-leanstartup, torres2021-continuous-discovery, sfia9], why: "PM-18 P2 ('Identifies the riskiest assumption before build and matches the test type to it — prototype, painted door, concierge — with pass/fail defined in advance.') matches independent operation: identifying the riskiest assumption and choosing the matching test type with a pass/fail bar set in advance is picking the smallest decisive test for a given assumption, unsupervised."}
+      P3: {p: P3, sources: [ries2011-leanstartup, torres2021-continuous-discovery, sfia9], why: "PM-18 P3 ('Surfaces assumptions others treat as facts, designs test sequences that retire the most risk per unit effort, and kills initiatives whose load-bearing assumptions fail.') is the terminal, capability-owning bar: designing test sequences that retire the most risk per unit of effort, and rejecting tests whose result couldn't change the decision, is validated learning applied with autonomous judgment about sequencing."}
+      P4: {p: P4, sources: [ries2011-leanstartup, torres2021-continuous-discovery, larson2021-staffeng], why: "PM-18 P4 ('Standardizes how multiple teams express and rank risk, and rejects validation theater — tests that can only confirm, never falsify — before major commitments.') is Staff-scope: unblocking teams whose experiments keep returning inconclusive by redesigning rather than re-running the test is Ries's build-measure-learn discipline diagnosed and fixed across multiple teams' practice."}
+      P5: {p: P5, sources: [ries2011-leanstartup, torres2021-continuous-discovery, larson2021-staffeng], why: "PM-18 P5 ('Builds discovery-testing capability into an organization's investment process — funding follows tested assumptions, and the cost of a first test drops to hours.') matches Principal authority: building the org's reusable testing toolkit — painted-door infrastructure, prototype panels, templates — that drops the cost of a first test to hours is org-wide infrastructure investment."}
+      P6: {p: P6, sources: [ries2011-leanstartup, torres2021-continuous-discovery, larson2021-staffeng], why: "PM-18 P6 ('Structures bets too big to A/B as staged, falsifiable commitments; their validation doctrine is cited and adopted beyond their organization.') is company/portfolio scope: designing validation for bets too big to A/B using staged commitments and falsifiable milestones is the register Ries's own validated learning doctrine occupies as an externally cited reference."}
+    evidence:
+      P1: "Builds a fake-door test from a design a senior PM already specified, launches it exactly as instructed, and logs what the click-through data showed."
+      P2: "Picks a painted-door test to check demand for a proposed feature, defines the click-through rate that counts as a pass before launching it, and reports the result honestly when it fails."
+      P3: "Designs a sequence of three cheap tests that retires the two riskiest assumptions behind a bet in a week, and cancels a fourth test whose result couldn't have changed the team's decision either way."
+      P4: "Redesigns another team's third inconclusive prototype test — the problem was the test, not the users — instead of letting them rerun the same test at larger scale."
+      P5: "Builds a shared prototype-testing panel and painted-door toolkit that drops the org's cost of a first test from a two-week build to an afternoon."
+      P6: "Designs a staged, falsifiable validation plan for a bet on an entirely new pricing model too large to A/B, with milestones the company can kill the bet against."
+  - theme: "Prototype & solution testing"
     capability: PM-18
-    key_area: Problem Definition & Validation
-    key_attribute: Assumption Testing & Validation
-    anchor: "Olsen, *The Lean Product Playbook* (2015)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  # ---- Product Strategy & Vision ----
-  - theme: Product strategy formulation
+    key_area: "Problem Definition & Validation"
+    key_attribute: "Assumption Testing & Validation"
+    anchor: osterwalder2019-testing-business-ideas
+    anchor_why: "substituted for Olsen's The Lean Product Playbook (no bibliography entry) with Bland & Osterwalder's experiment library, which explicitly includes prototype and solution tests; self-sourced capability (PM-18 minted 2026-07 from this ladder's own prior consolidation prose — see scope_note), so evidence is fresh below."
+    mappings:
+      P1: {p: P1, sources: [osterwalder2019-testing-business-ideas, sfia9], why: "PM-18 P1 ('Lists the assumptions behind a proposed feature, sorts them by risk with coaching, and runs a prescribed simple test, logging what was learned.') is the guided bar: running a moderated test of an existing prototype from a task script, without explaining the design to the participant, is executing someone else's test design under supervision."}
+      P2: {p: P2, sources: [osterwalder2019-testing-business-ideas, sfia9], why: "PM-18 P2 ('Identifies the riskiest assumption before build and matches the test type to it — prototype, painted door, concierge — with pass/fail defined in advance.') matches independent operation: identifying the riskiest assumption and matching a prototype-fidelity test to it, with pass/fail defined in advance, applies the experiment library independently for one's own area's bets."}
+      P3: {p: P3, sources: [osterwalder2019-testing-business-ideas, sfia9], why: "PM-18 P3 ('Surfaces assumptions others treat as facts, designs test sequences that retire the most risk per unit effort, and kills initiatives whose load-bearing assumptions fail.') is the terminal, capability-owning bar: surfacing which assumptions are treated as facts and sequencing prototype/live-data tests to retire the most risk per unit effort is autonomous test-sequencing judgment, not a fixed checklist."}
+      P4: {p: P4, sources: [osterwalder2019-testing-business-ideas, larson2021-staffeng], why: "PM-18 P4 ('Standardizes how multiple teams express and rank risk, and rejects validation theater — tests that can only confirm, never falsify — before major commitments.') is Staff-scope: standardizing how teams rank and test risk, and rejecting tests that can only confirm and never falsify, is a codified standard enforced across multiple teams rather than one practitioner's discipline."}
+      P5: {p: P5, sources: [osterwalder2019-testing-business-ideas, larson2021-staffeng], why: "PM-18 P5 ('Builds discovery-testing capability into an organization's investment process — funding follows tested assumptions, and the cost of a first test drops to hours.') matches Principal authority: building the org's prototyping-and-testing capability — tooling, research-ops support, fidelity norms — into its investment process is org-wide infrastructure, not one product's test."}
+      P6: {p: P6, sources: [osterwalder2019-testing-business-ideas, larson2021-staffeng], why: "PM-18 P6 ('Structures bets too big to A/B as staged, falsifiable commitments; their validation doctrine is cited and adopted beyond their organization.') is company/portfolio scope: structuring the biggest, hardest-to-A/B bets as staged falsifiable prototypes, with the doctrine cited beyond one's own company, is the external-authority register the anchor's own book occupies."}
+    evidence:
+      P1: "Runs a moderated usability test of an existing clickable prototype from a task script a designer wrote, noting where the participant stalls without explaining the design to them."
+      P2: "Pairs with design to build a low-fidelity prototype that matches the question at hand, tests it with five users, and reports what changed between rounds and why."
+      P3: "Chooses live-data testing over a prototype for a bet where the real signal only shows up under real usage, and the team commits to build once the evidence is sufficient by a bar set in advance."
+      P4: "Reviews another team's solution test ahead of a major commitment and catches that the test, as designed, could only ever confirm the team already wanted to build it."
+      P5: "Builds the org's shared prototyping panel and fidelity norms so every team's default is to test a solution cheaply before committing engineering time to it."
+      P6: "Represents test-before-build as company doctrine in front of executives pushing for a committed roadmap without evidence, and the practice holds."
+  - theme: "Product strategy formulation"
     capability: PM-04
-    key_area: Product Strategy & Vision
-    key_attribute: Strategy & Positioning
-    anchor: "Rumelt, *Good Strategy Bad Strategy* (2011)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Positioning & differentiation
+    key_area: "Product Strategy & Vision"
+    key_attribute: "Strategy & Positioning"
+    anchor: rumelt2011-good-strategy
+    anchor_why: "real strategy is diagnosis, guiding policy, and coherent action; most \"strategies\" are goals, and the craft is the diagnosis that names the real obstacle before choosing what to do about it."
+    mappings:
+      P1: {p: P1, sources: [rumelt2011-good-strategy, sfia9], why: "PM-04 P1 ('Drafts positioning statements from a given strategy under direction.') is the guided bar: drafting positioning statements from a given strategy under direction is executing someone else's diagnosis, not yet forming one."}
+      P2: {p: P2, sources: [rumelt2011-good-strategy, sfia9], why: "PM-04 P2 ('Articulates strategy and positioning for one product with normal review.') matches independent operation: articulating strategy and positioning for one product with normal review is applying Rumelt's kernel to a scoped, bounded area without yet defending it against real pushback."}
+      P3: {p: P3, sources: [rumelt2011-good-strategy, sfia9], why: "PM-04 P3 ('Independently sets coherent strategy amid ambiguity and defends hard trade-offs.') is the terminal, capability-owning bar: independently setting coherent strategy amid ambiguity and defending the hard trade-offs it implies is Rumelt's kernel — diagnosis, guiding policy, coherent action — exercised with full autonomy."}
+      P4: {p: P4, sources: [rumelt2011-good-strategy, larson2021-staffeng], why: "PM-04 P4 ('Defines the strategy framework teams adopt and resolves conflicting strategic bets.') is Staff-scope: defining the strategy framework teams adopt and resolving conflicting strategic bets is Rumelt's kernel moving from one person's private discipline to the team's shared framework for arbitrating trade-offs."}
+      P5: {p: P5, sources: [rumelt2011-good-strategy, larson2021-staffeng], why: "PM-04 P5 ('Owns portfolio-level strategy and anticipates where the market is heading.') matches Principal authority: owning portfolio-level strategy and anticipating where the market is heading is strategic reach beyond any single product."}
+      P6: {p: P6, sources: [rumelt2011-good-strategy, larson2021-staffeng], why: "PM-04 P6 ('Defines what good product strategy means for the discipline and influences practice externally.') is company/portfolio scope: defining what good product strategy means for the discipline and influencing practice externally is the register Rumelt's own book occupies as a canonical, externally cited definition of good strategy."}
+    evidence:
+      P1: "Drafts the positioning statement for their epic from the strategy their lead already set, and revises it twice on review before it holds up."
+      P2: "Writes down their product area's priorities as explicit choices — what they are doing and what they are deliberately not — and flags a request that doesn't serve the stated strategy."
+      P3: "Writes the diagnosis, guiding policy, and coherent bets for their product's strategy, and defends the resulting kill-list to the stakeholders who proposed the killed work."
+      P4: "Writes a strategy framework that two other product teams adopt as the frame for their own areas, and reviews a peer's area strategy for a diagnosis that doesn't match its stated bets."
+      P5: "Shapes where the product org concentrates investment and where it deliberately starves a line, in a document leadership funds against."
+      P6: "Co-authors the company's strategy from the product side, and the shape of the portfolio a year later reflects arguments made in that document."
+  - theme: "Positioning & differentiation"
     capability: PM-04
-    key_area: Product Strategy & Vision
-    key_attribute: Strategy & Positioning
-    anchor: "Dunford, *Obviously Awesome* (2019); Moore, *Crossing the Chasm* (3rd ed., 2014)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Product vision narrative
+    key_area: "Product Strategy & Vision"
+    key_attribute: "Strategy & Positioning"
+    anchor: dunford2019-obviously-awesome
+    anchor_why: "deliberate positioning against the right competitive alternatives determines whether strengths read as value, paired with Moore's chasm-crossing model of adoption won segment by segment."
+    mappings:
+      P1: {p: P1, sources: [dunford2019-obviously-awesome, moore1991-crossing-chasm, sfia9], why: "PM-04 P1 ('Drafts positioning statements from a given strategy under direction.') is the guided bar: stating who the product is for, what it replaces, and why it wins, consistent with the team's existing positioning canvas, is filling in Dunford's canvas as a standard template rather than building one."}
+      P2: {p: P2, sources: [dunford2019-obviously-awesome, moore1991-crossing-chasm, sfia9], why: "PM-04 P2 ('Articulates strategy and positioning for one product with normal review.') matches independent operation: maintaining an area's positioning — segment, alternatives, differentiated value — and flagging when a proposed feature blurs it applies the canvas as ongoing upkeep, with normal review."}
+      P3: {p: P3, sources: [dunford2019-obviously-awesome, moore1991-crossing-chasm, sfia9], why: "PM-04 P3 ('Independently sets coherent strategy amid ambiguity and defends hard trade-offs.') is the terminal, capability-owning bar: repositioning a product deliberately when the market shifts, running the alternatives-and-trade-offs analysis in writing, is autonomous application of both Dunford's canvas and Moore's chasm logic."}
+      P4: {p: P4, sources: [dunford2019-obviously-awesome, moore1991-crossing-chasm, larson2021-staffeng], why: "PM-04 P4 ('Defines the strategy framework teams adopt and resolves conflicting strategic bets.') is Staff-scope: keeping positioning coherent across a product family, resolving where products overlap or contradict each other in-market, is a shared positioning standard applied across multiple areas."}
+      P5: {p: P5, sources: [dunford2019-obviously-awesome, moore1991-crossing-chasm, larson2021-staffeng], why: "PM-04 P5 ('Owns portfolio-level strategy and anticipates where the market is heading.') matches Principal authority: setting the org's differentiation strategy — which capabilities the org will be known for, which it concedes — and holding roadmaps to it is organization-wide ownership of the differentiation bet."}
+      P6: {p: P6, sources: [dunford2019-obviously-awesome, moore1991-crossing-chasm, larson2021-staffeng], why: "PM-04 P6 ('Defines what good product strategy means for the discipline and influences practice externally.') is company/portfolio scope: positioning the company itself, with category-creation or category-redefinition arguments analysts and competitors respond to, is the register both Dunford's and Moore's own frameworks occupy as canonical references."}
+    evidence:
+      P1: "States who a new feature is for, what it replaces, and why it wins in two sentences that match the team's existing positioning canvas."
+      P2: "Flags in review that a proposed feature would blur their area's positioning against a named competitive alternative, and gets the scope adjusted before it ships."
+      P3: "Repositions a product after a competitor's launch shifts the market, running the alternatives analysis in writing, and marketing builds the next campaign from that document."
+      P4: "Resolves a case where two products in the same family were quietly undercutting each other's positioning in sales conversations, and issues one coherent family positioning doc."
+      P5: "Sets which capabilities the org will be known for this year and which it will deliberately not compete on, and holds two roadmaps to that line when they drift."
+      P6: "Makes the category-redefinition argument that gets picked up by industry analysts covering the company's market."
+  - theme: "Product vision narrative"
     capability: PM-06
-    key_area: Product Strategy & Vision
-    key_attribute: Vision, Roadmaps & Goals
-    anchor: "Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Outcome-based roadmapping
+    key_area: "Product Strategy & Vision"
+    key_attribute: "Vision, Roadmaps & Goals"
+    anchor: cagan2017-inspired
+    anchor_why: "a compelling product vision recruits, aligns, and outlasts individual roadmaps; teams need a destination that survives quarterly churn."
+    mappings:
+      P1: {p: P1, sources: [cagan2017-inspired, sfia9], why: "PM-06 P1 ('Translates a stated vision into concrete goals under direction.') is the guided bar: retelling the vision accurately and using it to answer why an epic exists is consuming someone else's vision correctly, not authoring one."}
+      P2: {p: P2, sources: [cagan2017-inspired, sfia9], why: "PM-06 P2 ('Sets clear, measurable goals for a product area with normal review.') matches independent operation: connecting an area's roadmap to the vision in planning docs, and noticing when proposed work drifts from it, is applying the vision to align a team without yet writing the narrative itself."}
+      P3: {p: P3, sources: [cagan2017-inspired, sfia9], why: "PM-06 P3 ('Independently crafts a compelling vision and cascades aligned goals through ambiguity.') is the terminal, capability-owning bar: writing a vision narrative teams reference months later when making local decisions is Cagan's case for a vision that recruits and aligns, authored and owned with full autonomy."}
+      P4: {p: P4, sources: [cagan2017-inspired, larson2021-staffeng], why: "PM-06 P4 ('Defines goal-setting frameworks others adopt and aligns competing visions.') is Staff-scope: crafting vision artifacts that align several products toward one future, and resolving contradictions between area visions before they ship as contradictions, is one person's narrative discipline applied across areas."}
+      P5: {p: P5, sources: [cagan2017-inspired, larson2021-staffeng], why: "PM-06 P5 ('Sets enduring vision across the portfolio and anticipates long-horizon shifts.') matches Principal authority: owning the product org's north-star narrative and visibly retiring it when the diagnosis changes is organization-wide narrative ownership, not one product's story."}
+      P6: {p: P6, sources: [cagan2017-inspired, larson2021-staffeng], why: "PM-06 P6 ('Shapes how the discipline frames product vision and is externally credible on it.') is company/portfolio scope: articulating the company's product future in narratives used for recruiting, fundraising, and board alignment is the register Cagan's own book argues a vision must ultimately serve."}
+    evidence:
+      P1: "Explains to a new teammate why their epic matters by retelling the product vision accurately, without needing the lead to translate it."
+      P2: "Points out in a planning review that a proposed feature leads the roadmap away from the stated vision, and gets the team realigned before committing the sprint."
+      P3: "Writes a press-release-style vision doc that an engineer cites unprompted three months later to justify a local design decision."
+      P4: "Writes a vision artifact that resolves a contradiction between two product areas' separate visions before either team ships something the other would have to walk back."
+      P5: "Owns the product org's north-star narrative and visibly retires it in favor of a new one once the underlying diagnosis has changed."
+      P6: "Writes the product future narrative used in the company's fundraising deck and cited in board discussions of where the company is headed."
+  - theme: "Outcome-based roadmapping"
     capability: PM-05
-    key_area: Product Strategy & Vision
-    key_attribute: Vision, Roadmaps & Goals
-    anchor: "Perri, *Escaping the Build Trap* (2018); Lombardo, McCarthy, Ryan & Connors, *Product Roadmaps Relaunched* (2017)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Goal setting & OKRs
+    key_area: "Product Strategy & Vision"
+    key_attribute: "Vision, Roadmaps & Goals"
+    anchor: perri2018-escapingbuildtrap
+    anchor_why: "roadmaps as strategic communication of outcomes and confidence, not feature release calendars, paired with Lombardo et al.'s theme-based, now/next/later roadmap format that operationalizes the same idea."
+    mappings:
+      P1: {p: P1, sources: [perri2018-escapingbuildtrap, lombardo2017-roadmaps-relaunched, sfia9], why: "PM-05 P1 ('Maintains roadmap items and updates status under guidance.') is the guided bar: keeping an epic's roadmap entry current and explaining why items are time-horizoned rather than dated is following the format someone else designed, not yet building one."}
+      P2: {p: P2, sources: [perri2018-escapingbuildtrap, lombardo2017-roadmaps-relaunched, sfia9], why: "PM-05 P2 ('Builds and sequences a credible roadmap for one product with normal review.') matches independent operation: building an area's roadmap around outcomes with now/next/later horizons and explicit confidence, resisting pressure to convert it into a promise list, reproduces Lombardo et al.'s format as a standard artifact."}
+      P3: {p: P3, sources: [perri2018-escapingbuildtrap, lombardo2017-roadmaps-relaunched, sfia9], why: "PM-05 P3 ('Independently balances competing priorities and replans confidently under shifting constraints.') is the terminal, capability-owning bar: running the roadmap as a strategic negotiation — trading scope against outcomes with leadership, tracing changes to discovery evidence — is Perri's outcome-roadmap discipline exercised autonomously."}
+      P4: {p: P4, sources: [perri2018-escapingbuildtrap, lombardo2017-roadmaps-relaunched, larson2021-staffeng], why: "PM-05 P4 ('Designs the planning approach others use and resolves cross-team portfolio conflicts.') is Staff-scope: aligning roadmaps across areas into a coherent sequence, surfacing cross-team dependencies and outcome conflicts before they collide, is one person's roadmap format become the coordinating artifact for several teams."}
+      P5: {p: P5, sources: [perri2018-escapingbuildtrap, lombardo2017-roadmaps-relaunched, larson2021-staffeng], why: "PM-05 P5 ('Sets portfolio planning strategy and foresees where investment should shift next.') matches Principal authority: owning the org's roadmap process — cadence, format, confidence language — and defending outcome framing against date-certainty pressure is organization-wide process ownership."}
+      P6: {p: P6, sources: [perri2018-escapingbuildtrap, lombardo2017-roadmaps-relaunched, larson2021-staffeng], why: "PM-05 P6 ('Defines portfolio-planning best practice for the field and is recognized for it.') is company/portfolio scope: presenting the portfolio roadmap to boards and top customers as a strategy narrative, and setting the company norm for what roadmaps commit to, is the register both anchors' own books argue roadmaps should reach."}
+    evidence:
+      P1: "Keeps their epic's roadmap entry current — status, confidence, what was learned — and explains to a stakeholder why it shows a quarter, not a date."
+      P2: "Builds their product area's now/next/later roadmap around outcomes and holds the line when a stakeholder pushes to convert 'later' into a committed date."
+      P3: "Trades scope for outcome with a VP in a roadmap review and shows, in the same meeting, exactly which discovery evidence justifies the change from last quarter's plan."
+      P4: "Surfaces a dependency between two areas' roadmaps that would have collided mid-quarter and re-sequences both before either team commits the conflicting work."
+      P5: "Owns the cadence and confidence-language format every product team's roadmap uses, and defends the now/next/later structure when an executive asks for firm dates the evidence can't support."
+      P6: "Presents the company's portfolio roadmap to the board as a strategy narrative, and sets the company-wide norm for what a roadmap does and doesn't promise."
+  - theme: "Goal setting & OKRs"
     capability: PM-06
-    key_area: Product Strategy & Vision
-    key_attribute: Vision, Roadmaps & Goals
-    anchor: "Doerr, *Measure What Matters* (2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  # ---- Data & Analytics ----
-  - theme: Success metrics & KPI design
+    key_area: "Product Strategy & Vision"
+    key_attribute: "Vision, Roadmaps & Goals"
+    anchor: doerr2018-measure-what-matters
+    anchor_why: "objectives with measurable key results align effort and expose sandbagging; goals are the interface between strategy and weekly work."
+    mappings:
+      P1: {p: P1, sources: [doerr2018-measure-what-matters, sfia9], why: "PM-06 P1 ('Translates a stated vision into concrete goals under direction.') is the guided bar: translating a stated vision into concrete goals under direction is decomposing someone else's vision, not yet setting the goals oneself."}
+      P2: {p: P2, sources: [doerr2018-measure-what-matters, sfia9], why: "PM-06 P2 ('Sets clear, measurable goals for a product area with normal review.') matches independent operation: setting clear, measurable goals for one product area with normal review applies Doerr's OKR format — an objective with a handful of measurable key results — as a standard structure, not an invented one."}
+      P3: {p: P3, sources: [doerr2018-measure-what-matters, sfia9], why: "PM-06 P3 ('Independently crafts a compelling vision and cascades aligned goals through ambiguity.') is the terminal, capability-owning bar: negotiating a product's goals up and down the ladder — pushing back on unsupported cascaded targets, re-scoping mid-quarter when a key result is learned to be wrong — is autonomous goal ownership."}
+      P4: {p: P4, sources: [doerr2018-measure-what-matters, larson2021-staffeng], why: "PM-06 P4 ('Defines goal-setting frameworks others adopt and aligns competing visions.') is Staff-scope: reviewing goal quality across teams, catching output dressed as outcome and metrics teams can't actually influence, and coaching the rewrite is Doerr's OKR discipline codified into a cross-team practice."}
+      P5: {p: P5, sources: [doerr2018-measure-what-matters, larson2021-staffeng], why: "PM-06 P5 ('Sets enduring vision across the portfolio and anticipates long-horizon shifts.') matches Principal authority: designing the org's goal architecture — how product OKRs ladder to company results without becoming a cascade of fiction — and running the calibration where conflicts get resolved is org-wide."}
+      P6: {p: P6, sources: [doerr2018-measure-what-matters, larson2021-staffeng], why: "PM-06 P6 ('Shapes how the discipline frames product vision and is externally credible on it.') is company/portfolio scope: shaping company-level objectives and holding the line on measurable outcomes at the executive table is the register Doerr's own book occupies, tracing OKRs from Grove's original practice to a company doctrine."}
+    evidence:
+      P1: "Writes a measurable key result for their epic that names a user or business change rather than a shipped artifact, with a lead's review catching the first draft's vanity metric."
+      P2: "Sets their product area's quarterly OKRs, and at quarter end grades honestly that a key result was hit but the underlying goal wasn't actually moved."
+      P3: "Pushes back on a cascaded target the team's own evidence doesn't support, and re-scopes a key result mid-quarter once new data shows the original one was set wrong."
+      P4: "Reviews a peer's team's OKRs, catches a key result that's really an output count in disguise, and coaches the rewrite into something the team can actually be judged against."
+      P5: "Designs how product-team OKRs ladder to company-level results without becoming a chain of restated numbers, and runs the calibration session where two teams' conflicting goals get resolved."
+      P6: "Holds the line on measurable, outcome-based objectives at the executive table when a leader proposes a vague, unmeasurable company goal for the year."
+  - theme: "Success metrics & KPI design"
     capability: PM-10
-    key_area: Data & Analytics
-    key_attribute: Metrics & Behavioral Analysis
-    anchor: "Croll & Yoskovitz, *Lean Analytics* (2013)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Funnel & behavioral analysis
+    key_area: "Data & Analytics"
+    key_attribute: "Metrics & Behavioral Analysis"
+    anchor: croll-yoskovitz2013-leananalytics
+    anchor_why: "the One Metric That Matters and the vanity-metric critique; a product optimizes whatever its metrics reward, so metric design is behavior design."
+    mappings:
+      P1: {p: P1, sources: [croll-yoskovitz2013-leananalytics, sfia9], why: "PM-10 P1 ('Pulls and reports defined product metrics under direction.') is the guided bar: pulling and reporting defined product metrics under direction is executing against someone else's metric definitions, not designing one's own."}
+      P2: {p: P2, sources: [croll-yoskovitz2013-leananalytics, sfia9], why: "PM-10 P2 ('Builds and interprets metric dashboards for a product with normal review.') matches independent operation: building and interpreting metric dashboards for one product with normal review applies the One Metric That Matters framework as given, to a scoped area."}
+      P3: {p: P3, sources: [croll-yoskovitz2013-leananalytics, sfia9], why: "PM-10 P3 ('Independently designs metric frameworks and draws sound conclusions from messy data.') is the terminal, capability-owning bar: designing the metric a product is judged by and defending its trade-offs — gameability, lag, proxy distance from value — is Croll & Yoskovitz's stage-based metrics judgment exercised autonomously."}
+      P4: {p: P4, sources: [croll-yoskovitz2013-leananalytics, larson2021-staffeng], why: "PM-10 P4 ('Defines the measurement model teams adopt and diagnoses misleading metrics others trust.') is Staff-scope: reconciling metric definitions across teams so a term means one thing everywhere, and reviewing new metrics for perverse incentives before they ship, is the vanity-metric diagnosis codified into a cross-team standard."}
+      P5: {p: P5, sources: [croll-yoskovitz2013-leananalytics, larson2021-staffeng], why: "PM-10 P5 ('Sets product-analytics strategy across the org and anticipates which signals will matter.') matches Principal authority: setting the org's measurement standards — north-star framework, guardrail policy, instrumentation quality bar — and auditing whether dashboards reflect reality is organization-wide measurement ownership."}
+      P6: {p: P6, sources: [croll-yoskovitz2013-leananalytics, larson2021-staffeng], why: "PM-10 P6 ('Defines rigorous product measurement for the discipline and is cited externally on it.') is company/portfolio scope: defining how the company measures product success at portfolio level, connecting metrics to financial outcomes models the CFO's team uses, is the register the anchor's own book occupies as an external reference."}
+    evidence:
+      P1: "Pulls and reports the metrics their lead already defined for a launched feature, distinguishing a vanity count from an actionable rate with guidance when asked."
+      P2: "Builds and owns the dashboard for their product area's metrics tree, retiring a metric that had been moving without anyone able to say why it mattered."
+      P3: "Designs the single metric their product is judged by and defends, to a leadership team wanting a friendlier number, why the current one is the honest one despite the bad quarter it's showing."
+      P4: "Reconciles three teams' different definitions of 'activation' into one shared definition, and catches a proposed new metric that would reward a perverse shortcut before it ships."
+      P5: "Sets the org's north-star metric framework and guardrail policy, and audits a team's dashboard that turns out not to reflect what's actually happening with users."
+      P6: "Defines how the company connects product metrics to financial outcomes in a model the finance team uses directly in board reporting."
+  - theme: "Funnel & behavioral analysis"
     capability: PM-10
-    key_area: Data & Analytics
-    key_attribute: Metrics & Behavioral Analysis
-    anchor: "McClure, \"Startup Metrics for Pirates\" (AARRR, 2007); Croll & Yoskovitz, *Lean Analytics* (2013)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: A/B test design & analysis
+    key_area: "Data & Analytics"
+    key_attribute: "Metrics & Behavioral Analysis"
+    anchor: croll-yoskovitz2013-leananalytics
+    anchor_why: "substituted (McClure's 'Startup Metrics for Pirates' has no bibliography entry) with the anchor already carried above: Croll & Yoskovitz's stage-based funnel and cohort model incorporates AARRR directly and is already in the bibliography."
+    mappings:
+      P1: {p: P1, sources: [croll-yoskovitz2013-leananalytics, sfia9], why: "PM-10 P1 ('Pulls and reports defined product metrics under direction.') is the guided bar: pulling one's own funnel and retention numbers from the analytics stack, and describing what the data shows without inferring cause from correlation, is supervised reading of a defined dataset."}
+      P2: {p: P2, sources: [croll-yoskovitz2013-leananalytics, sfia9], why: "PM-10 P2 ('Builds and interprets metric dashboards for a product with normal review.') matches independent operation: running cohort and segmentation analyses that locate where an area leaks value, and pairing the quantitative 'where' with qualitative 'why,' applies the stage-based model to one's own area."}
+      P3: {p: P3, sources: [croll-yoskovitz2013-leananalytics, sfia9], why: "PM-10 P3 ('Independently designs metric frameworks and draws sound conclusions from messy data.') is the terminal, capability-owning bar: catching analytical traps — survivorship, seasonality, mix shifts, Simpson's paradox — in one's own and others' analyses is exactly the judgment Croll & Yoskovitz's stage-based model requires to select the right metric for a noisy, ambiguous business stage."}
+      P4: {p: P4, sources: [croll-yoskovitz2013-leananalytics, larson2021-staffeng], why: "PM-10 P4 ('Defines the measurement model teams adopt and diagnoses misleading metrics others trust.') is Staff-scope: tracing customer journeys across product boundaries and quantifying cross-product friction no single dashboard shows is the funnel discipline extended across teams' data, not one team's dashboard."}
+      P5: {p: P5, sources: [croll-yoskovitz2013-leananalytics, larson2021-staffeng], why: "PM-10 P5 ('Sets product-analytics strategy across the org and anticipates which signals will matter.') matches Principal authority: setting the org's analytical standards and self-serve tooling priorities so teams answer their own questions correctly is org-wide capability-building beyond any one product's funnel."}
+      P6: {p: P6, sources: [croll-yoskovitz2013-leananalytics, larson2021-staffeng], why: "PM-10 P6 ('Defines rigorous product measurement for the discipline and is cited externally on it.') is company/portfolio scope: reading portfolio-level behavioral shifts early — usage patterns presaging churn, expansion, or disruption — and getting the company to act is the register the anchor's own book occupies as an external reference."}
+    evidence:
+      P1: "Pulls their feature's funnel numbers from the analytics stack and reports the drop-off honestly without guessing at a cause the data doesn't show."
+      P2: "Runs a cohort analysis that locates exactly which step of their area's funnel is leaking value, then pairs it with a handful of interviews to explain why before proposing a fix."
+      P3: "Catches that a colleague's promising-looking retention chart is a seasonality artifact, not a real improvement, before it gets presented as a win."
+      P4: "Traces a customer journey that crosses two products' boundaries and quantifies friction — a re-login, a re-entered form — that neither team's own dashboard was built to show."
+      P5: "Builds the org's self-serve analytics tooling so teams can answer their own funnel questions correctly without waiting on a data-science queue."
+      P6: "Spots an early portfolio-level usage shift that presages churn in a major segment months before it shows up in revenue, and gets the company to act on it."
+  - theme: "A/B test design & analysis"
     capability: PM-11
-    key_area: Data & Analytics
-    key_attribute: Experimentation & Decision Quality
-    anchor: "Kohavi, Tang & Xu, *Trustworthy Online Controlled Experiments* (2020)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Decision quality under uncertainty
+    key_area: "Data & Analytics"
+    key_attribute: "Experimentation & Decision Quality"
+    anchor: kohavi2020-trustworthy
+    anchor_why: "controlled experiments as the gold standard for causal claims, and the catalog of ways they silently lie (SRM, peeking, novelty effects)."
+    mappings:
+      P1: {p: P1, sources: [kohavi2020-trustworthy, sfia9], why: "PM-11 P1 ('Runs predefined experiments and records results under supervision.') is the guided bar: running predefined experiments and recording results under supervision is executing someone else's test design, not designing one."}
+      P2: {p: P2, sources: [kohavi2020-trustworthy, sfia9], why: "PM-11 P2 ('Designs and analyzes a standard A/B test with normal review.') matches independent operation: designing and analyzing a standard A/B test with normal review applies Kohavi, Tang & Xu's core randomization and overall-evaluation-criterion design as given."}
+      P3: {p: P3, sources: [kohavi2020-trustworthy, sfia9], why: "PM-11 P3 ('Independently designs valid experiments and interprets ambiguous or conflicting results.') is the terminal, capability-owning bar: catching invalid experiments before decisions get made on them — SRM, novelty effects, interaction between concurrent tests — is exactly the class of judgment Kohavi et al. document as separating a trustworthy read from a routine one."}
+      P4: {p: P4, sources: [kohavi2020-trustworthy, larson2021-staffeng], why: "PM-11 P4 ('Defines experimentation standards others adopt and rescues flawed test designs.') is Staff-scope: auditing experiment practice across teams, catching cherry-picked segments and rerun-until-significant patterns, and standardizing the readout format others adopt is the guardrail-metric discipline codified for a group."}
+      P5: {p: P5, sources: [kohavi2020-trustworthy, larson2021-staffeng], why: "PM-11 P5 ('Sets the org's experimentation strategy and anticipates where testing should expand.') matches Principal authority: building the org's experimentation culture and platform requirements — institutional memory, meta-analysis of what interventions work — so learning compounds is org-wide capability, not one test."}
+      P6: {p: P6, sources: [kohavi2020-trustworthy, larson2021-staffeng], why: "PM-11 P6 ('Defines experimentation rigor for the discipline and influences external practice.') is company/portfolio scope: setting company policy on evidence standards for product decisions, including where experimentation is mandatory, is the register Kohavi et al.'s own book occupies as the canonical external reference."}
+    evidence:
+      P1: "Runs an A/B test exactly as an analyst designed it, records the results without touching the analysis method, and waits for the pre-agreed end date."
+      P2: "Designs and ships an A/B test for their own feature — power calculation, guardrail metrics, no peeking — and writes up a null result honestly instead of quietly shelving it."
+      P3: "Catches a sample-ratio mismatch in a colleague's experiment before its result gets used to justify a launch, and is the person their own product's other PMs ask to sanity-check a test design before it ships."
+      P4: "Audits experiment practice across three teams, catches a pattern of rerunning tests until they hit significance, and gets one shared readout format adopted everywhere."
+      P5: "Builds the org's experimentation platform requirements and a repository of past results so a new test doesn't reinvent an intervention that's already been tried and failed."
+      P6: "Sets company policy on where A/B testing is mandatory before a launch and where judgment rightly overrides it, and the policy holds under executive pressure to skip it."
+  - theme: "Decision quality under uncertainty"
     capability: LI-04
-    key_area: Data & Analytics
-    key_attribute: Experimentation & Decision Quality
-    anchor: "Duke, *Thinking in Bets* (2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  # ---- Execution & Delivery ----
-  - theme: Prioritization & sequencing
+    key_area: "Data & Analytics"
+    key_attribute: "Experimentation & Decision Quality"
+    anchor: kahneman2011-thinking-fast-slow
+    anchor_why: "substituted for Duke's Thinking in Bets (no bibliography entry) with Kahneman's Thinking, Fast and Slow, the other named source in the original two-author anchor line — the named biases that predictably distort product bets made under time pressure and incomplete information."
+    mappings:
+      P1: {p: P1, sources: [kahneman2011-thinking-fast-slow, sfia9], why: "LI-04 P1 ('Makes well-defined decisions; asks good questions when blocked.') is the guided bar: making well-defined decisions and asking good questions when blocked is Kahneman's careful, effortful System 2 mode used inside a narrow, supervised decision space, not yet a self-directed process."}
+      P2: {p: P2, sources: [kahneman2011-thinking-fast-slow, sfia9], why: "LI-04 P2 ('Decides independently within their components; evaluates alternatives honestly.') matches independent operation: deciding independently within one's own components and evaluating alternatives honestly is applying deliberate, bias-aware reasoning unsupervised to scoped, familiar decisions."}
+      P3: {p: P3, sources: [kahneman2011-thinking-fast-slow, sfia9], why: "LI-04 P3 ('Makes architectural choices for a domain that hold up over months.') is the terminal, capability-owning bar: making architectural choices for a domain that hold up over months is the disciplined, bias-checked judgment Kahneman argues requires deliberately overriding System 1's fast, plausible-looking shortcuts."}
+      P4: {p: P4, sources: [kahneman2011-thinking-fast-slow, larson2021-staffeng], why: "LI-04 P4 ('Foresees second-order consequences; sets decision frameworks for teams.') is Staff-scope: foreseeing second-order consequences and setting decision frameworks for teams is one person's bias-aware process becoming a framework other decision-makers are taught to use."}
+      P5: {p: P5, sources: [kahneman2011-thinking-fast-slow, larson2021-staffeng], why: "LI-04 P5 ('Sets decision-making frameworks for the org.') matches Principal authority: setting decision-making frameworks for the org is organization-wide standard-setting for how decisions under uncertainty get made, not one person's individually disciplined process."}
+      P6: {p: P6, sources: [kahneman2011-thinking-fast-slow, larson2021-staffeng], why: "LI-04 P6 ('Visionary judgment; sees structural causes others miss.') is company/portfolio scope: visionary judgment that sees structural causes others miss is the register Kahneman describes as rare — pattern recognition so refined it looks like intuition but survives scrutiny."}
+    evidence:
+      P1: "Writes down the options considered and the reasoning before a decision on their epic, and separates a bad outcome from a bad decision in the retro when a lead prompts them to."
+      P2: "States their confidence level and whether a call is reversible before deciding, moving fast on the two-way doors and slowing down on the one-way ones, and keeps a decision log the team consults."
+      P3: "Names the strongest disconfirming evidence against their own plan before a stakeholder can raise it, and changes course publicly once new data proves the original call wrong."
+      P4: "Reviews another PM's high-stakes decision before it's committed, catches a sunk-cost pattern in the reasoning, and the decision-record format spreads to two other teams."
+      P5: "Designs the org's decision mechanism — who decides what, at what evidence bar, with what escalation path — and runs a pre-mortem on the year's biggest bet."
+      P6: "Gets pulled into a company-level decision precisely because their reasoning record is public and audited, and their judgment settles a call nobody else could resolve."
+  - theme: "Prioritization & sequencing"
     capability: PD-02
-    key_area: Execution & Delivery
-    key_attribute: Prioritization & Trade-offs
-    anchor: "Reinertsen, *The Principles of Product Development Flow* (2009)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Scope-cutting & trade-offs
+    key_area: "Execution & Delivery"
+    key_attribute: "Prioritization & Trade-offs"
+    anchor: reinertsen2009-flow
+    anchor_why: "cost of delay divided by duration (WSJF) is the economically correct sequencing logic; intuition systematically misprices queues."
+    mappings:
+      P1: {p: P1, sources: [reinertsen2009-flow, sfia9], why: "PD-02 P1 ('Works highest-priority-first when told the priorities.') is the guided bar: working highest-priority-first when told the priorities is executing someone else's ranking, not producing one."}
+      P2: {p: P2, sources: [reinertsen2009-flow, sfia9], why: "PD-02 P2 ('Makes sound priority calls within scope; time-boxes uncertain work.') matches independent operation: making sound priority calls within scope and time-boxing uncertain work applies basic cost/value trade-offs inside a bounded area, without yet quantifying cost of delay explicitly."}
+      P3: {p: P3, sources: [reinertsen2009-flow, sfia9], why: "PD-02 P3 ('Balances cost/value/risk across a domain; resists hype; decisions hold up over months.') is the terminal, capability-owning bar: balancing cost/value/risk across a domain so decisions hold up over months is exactly what Reinertsen's cost-of-delay economics is built to make explicit — quantifying trade-offs instead of arguing them by instinct."}
+      P4: {p: P4, sources: [reinertsen2009-flow, larson2021-staffeng], why: "PD-02 P4 ('Expert at portfolio-level trade-offs; surfaces hidden assumptions; trusted tiebreaker.') is Staff-scope: expert-level portfolio trade-offs and surfacing hidden assumptions is Reinertsen's queueing-and-batch-size economics applied across a portfolio, where prioritization requires modeling flow, not just ranking a backlog."}
+      P5: {p: P5, sources: [reinertsen2009-flow, larson2021-staffeng], why: "PD-02 P5 ('Sets decision frameworks for the org.') matches Principal authority: shaping the org's resource allocation logic — the explicit framework by which the org funds run/grow/transform work — is organization-wide framework ownership, not one backlog's order."}
+      P6: {p: P6, sources: [reinertsen2009-flow, larson2021-staffeng], why: "PD-02 P6 ('Influences company strategic direction through judgment.') is company/portfolio scope: influencing portfolio-level capital allocation, making the economic case for which products get funded, harvested, or killed, is the level Reinertsen argues most organizations never reach."}
+    evidence:
+      P1: "Orders their epic's backlog with stated reasoning — value, urgency, dependency — and re-orders it without protest when a lead points out a fact has changed."
+      P2: "Prioritizes their product area's backlog using an explicit cost-of-delay estimate and shows the math when a stakeholder challenges the order."
+      P3: "Sequences a quarter's work across debt, features, and a compliance deadline with written trade-off reasoning stakeholders accept even when their request loses."
+      P4: "Moves a chunk of scope from one team to another when the portfolio-level cost-of-delay math demands it, with the displaced team's agreement documented."
+      P5: "Builds the explicit framework the org uses to split investment across run, grow, and transform work, and defends it through a planning cycle that tries to override it."
+      P6: "Makes the economic case that gets a product line harvested rather than continuing to be funded, using cost-of-delay reasoning the leadership team accepts."
+  - theme: "Scope-cutting & trade-offs"
     capability: PD-01
-    key_area: Execution & Delivery
-    key_attribute: Prioritization & Trade-offs
-    anchor: "Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Product trio partnership
+    key_area: "Execution & Delivery"
+    key_attribute: "Prioritization & Trade-offs"
+    anchor: cagan2017-inspired
+    anchor_why: "deliver the smallest thing that achieves the outcome; the ability to cut scope without cutting the outcome is what separates shipping-on-time from shipping-late-and-bloated."
+    mappings:
+      P1: {p: P1, sources: [cagan2017-inspired, sfia9], why: "PD-01 P1 ('Breaks own tasks into reviewable pieces with guidance.') is the guided bar: breaking own tasks into reviewable pieces with guidance is slicing at the individual-task level with someone else checking each slice, not yet cutting scope under a real deadline."}
+      P2: {p: P2, sources: [cagan2017-inspired, sfia9], why: "PD-01 P2 ('Independently decomposes a feature into shippable slices.') matches independent operation: independently decomposing a feature into shippable slices is cutting scope decisively when timelines slip, protecting the outcome-critical path and telling affected stakeholders before they find out."}
+      P3: {p: P3, sources: [cagan2017-inspired, sfia9], why: "PD-01 P3 ('Plans complex multi-phase work (prototype-then-commit under uncertainty); sequences safely.') is the terminal, capability-owning bar: planning complex multi-phase work under uncertainty and sequencing it safely is Cagan's three-way scope/time/quality trade-off negotiated as a peer with engineering, autonomously."}
+      P4: {p: P4, sources: [cagan2017-inspired, larson2021-staffeng], why: "PD-01 P4 ('Expert at structuring large initiatives to de-risk early; anticipates bottlenecks.') is Staff-scope: structuring large initiatives to de-risk early and anticipating bottlenecks is untangling trade-offs that span teams and setting the shared definition of 'minimum' for a cross-area release."}
+      P5: {p: P5, sources: [cagan2017-inspired, larson2021-staffeng], why: "PD-01 P5 ('Shapes how the org plans and sequences major change.') matches Principal authority: shaping how the org plans and sequences major change is setting the org's norms for scope discipline — MVP standards, quality floors, cut-decision authority — and intervening in a flagship effort heading toward a death march."}
+      P6: {p: P6, sources: [cagan2017-inspired, larson2021-staffeng], why: "PD-01 P6 ('Defines the company-wide approach to delivering value incrementally.') is company/portfolio scope: defining the company-wide approach to delivering value incrementally is making the company-level call on ambition — narrow wedge versus platform play — that the whole portfolio then sequences around."}
+    evidence:
+      P1: "Breaks their feature into reviewable pieces with a lead's guidance, and writes down what's lost if the last piece has to be cut."
+      P2: "Cuts a feature's scope decisively when the sprint slips, protects the outcome-critical path, and tells the affected stakeholder before they notice on their own."
+      P3: "Negotiates a scope-versus-quality trade-off with engineering as a peer, distinguishing an MVP that genuinely tests the hypothesis from a demo that only fakes it."
+      P4: "Sets the shared definition of 'minimum' for a launch that spans three teams, untangling a scope disagreement that would otherwise have broken one team's release."
+      P5: "Sets the org's quality floor and cut-decision authority, and personally intervenes when a flagship initiative is bloating toward a death march."
+      P6: "Makes the company-level call to ship the narrow wedge instead of the full platform play, and the rest of the portfolio sequences its bets around that decision."
+  - theme: "Product trio partnership"
     capability: CC-03
-    key_area: Execution & Delivery
-    key_attribute: Building with the Team
-    anchor: "Cagan, *Empowered* (2020)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Requirements, specs & acceptance criteria
+    key_area: "Execution & Delivery"
+    key_attribute: "Building with the Team"
+    anchor: cagan2020-empowered
+    anchor_why: "empowered product teams of PM, design, and engineering solving problems together, versus feature teams served requirements; the PM-engineering-design relationship is the production function."
+    mappings:
+      P1: {p: P1, sources: [cagan2020-empowered, sfia9], why: "CC-03 P1 ('Responsive to feedback; pairs willingly; asks for help appropriately.') is the guided bar: being responsive to feedback, pairing willingly, and asking for help appropriately is the trust-building start of a trio relationship, not yet running one."}
+      P2: {p: P2, sources: [cagan2020-empowered, sfia9], why: "CC-03 P2 ('Collaborates smoothly with adjacent functions; handles disagreement constructively.') matches independent operation: collaborating smoothly with adjacent functions and handling disagreement constructively is running a working trio — engineers in discovery calls, designers seeing strategy context — for one's own team."}
+      P3: {p: P3, sources: [cagan2020-empowered, sfia9], why: "CC-03 P3 ('Builds strong cross-team relationships; resolves friction directly.') is the terminal, capability-owning bar: building strong cross-team relationships and resolving friction directly is Cagan's empowered-team standard — a trio engineers and designers actively ask to join — sustained with full autonomy."}
+      P4: {p: P4, sources: [cagan2020-empowered, larson2021-staffeng], why: "CC-03 P4 ('Expert at aligning teams with competing priorities; mediates disputes between senior people.') is Staff-scope: aligning teams with competing priorities and mediating disputes between senior people is repairing a dysfunctional PM-engineering-design relationship on someone else's team, diagnosing the failure mode and coaching it."}
+      P5: {p: P5, sources: [cagan2020-empowered, larson2021-staffeng], why: "CC-03 P5 ('Creates the forums and processes through which collaboration happens.') matches Principal authority: creating the forums and processes through which collaboration happens is shaping the org's team model — how trios form, what empowerment means operationally — in norms leadership co-signs."}
+      P6: {p: P6, sources: [cagan2020-empowered, larson2021-staffeng], why: "CC-03 P6 ('Builds coalitions at company scale and externally.') is company/portfolio scope: building coalitions at company scale and externally is setting the company's bar for how product, engineering, and design work together, argued at the executive level when delivery pressure pushes toward feature factories."}
+    evidence:
+      P1: "Takes feedback from an engineer's pushback on a spec without defensiveness, and asks the designer for help scoping a problem instead of guessing alone."
+      P2: "Runs a working trio where the engineer joins discovery calls and the designer sees the strategy context, so a technical constraint reshapes the plan in the room instead of becoming a later escalation."
+      P3: "Builds a team that engineers ask to be assigned to, sharing full business context and visibly deferring to the best idea in a decision record regardless of whose it was."
+      P4: "Diagnoses that a struggling team's dysfunction is context-starvation rather than a trust problem, and coaches the PM through fixing it."
+      P5: "Shapes the org's team model — how trios form, how tech-debt time gets protected — in norms engineering and design leadership both sign off on."
+      P6: "Argues the empowered-team model at the executive level when delivery pressure is pushing the org toward feature factories, and the model holds."
+  - theme: "Requirements, specs & acceptance criteria"
     capability: PM-07
-    key_area: Execution & Delivery
-    key_attribute: Building with the Team
-    anchor: "Bryar & Carr, *Working Backwards* (2021)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Backlog & delivery flow
+    key_area: "Execution & Delivery"
+    key_attribute: "Building with the Team"
+    anchor: babok3
+    anchor_why: "substituted for Bryar & Carr's Working Backwards (no bibliography entry) with BABOK, the requirements body of knowledge PM-07's own P2 catalog level already cites, paired with ISO/IEC/IEEE 29148's requirement-quality characteristics at P3 (unambiguous, verifiable, necessary)."
+    mappings:
+      P1: {p: P1, sources: [babok3, iso29148, sfia9], why: "PM-07 P1 ('Writes requirements from supplied input and refines them under review.') is the guided bar: writing requirements from supplied input and refining them under review is supervised drafting against someone else's problem framing."}
+      P2: {p: P2, sources: [babok3, iso29148, sfia9], why: "PM-07 P2 ('Authors complete, testable specs for standard features with normal review.') matches independent operation: authoring complete, testable specs for standard features with normal review applies BABOK's elicitation and life-cycle-management practices as given, to a scoped and familiar feature."}
+      P3: {p: P3, sources: [babok3, iso29148, sfia9], why: "PM-07 P3 ('Independently specifies ambiguous, cross-cutting features and resolves edge cases cleanly.') is the terminal, capability-owning bar: independently specifying ambiguous, cross-cutting features and resolving edge cases cleanly requires ISO 29148's requirement-quality criteria — unambiguous, verifiable, necessary — applied as judgment to genuinely hard cases, not a checklist for routine ones."}
+      P4: {p: P4, sources: [babok3, iso29148, larson2021-staffeng], why: "PM-07 P4 ('Defines specification standards others adopt and untangles the hardest requirement conflicts.') is Staff-scope: defining specification standards others adopt and untangling the hardest requirement conflicts is BABOK's competency areas moving from individual application to one person's codified standard for a team."}
+      P5: {p: P5, sources: [babok3, iso29148, larson2021-staffeng], why: "PM-07 P5 ('Sets specification strategy across teams and anticipates downstream definition needs.') matches Principal authority: setting specification strategy across teams and anticipating downstream definition needs is organization-wide ownership of the definition bar, not one feature's requirements."}
+      P6: {p: P6, sources: [babok3, iso29148, larson2021-staffeng], why: "PM-07 P6 ('Defines what excellent product specification means and influences the practice externally.') is company/portfolio scope: defining what excellent product specification means and influencing practice externally is the register a body-of-knowledge standard like ISO/IEC/IEEE 29148 itself occupies as an externally adopted reference."}
+    evidence:
+      P1: "Writes user stories with acceptance criteria from a lead's outline, and updates the spec twice as review catches gaps in the edge cases."
+      P2: "Writes a one-pager that leads with the customer problem and success measure for a standard feature, and the build raises design questions rather than intent questions."
+      P3: "Specifies a cross-cutting feature touching three systems, resolving edge cases the initial ask never anticipated, and a reviewer's comments on the spec prevent a rework two weeks later."
+      P4: "Sets the definition-of-ready standard two other teams adopt, and catches an interface gap between two teams' specs that would have silently conflicted at integration."
+      P5: "Owns what 'ready to build' means across the product org, and their document review is the quality gate a major initiative has to pass before engineering starts."
+      P6: "Writes the founding narrative document for a new portfolio bet, with a hit rate on greenlit narratives the company has come to trust."
+  - theme: "Backlog & delivery flow"
     capability: PM-08
-    key_area: Execution & Delivery
-    key_attribute: Building with the Team
-    anchor: "Patton, *User Story Mapping* (2014); Reinertsen, *The Principles of Product Development Flow* (2009)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Technical & design fluency
+    key_area: "Execution & Delivery"
+    key_attribute: "Building with the Team"
+    anchor: patton2014-storymapping
+    anchor_why: "story maps preserve the big picture a flat backlog destroys, paired with Reinertsen's small-batches and limited-WIP flow principles."
+    mappings:
+      P1: {p: P1, sources: [patton2014-storymapping, reinertsen2009-flow, sfia9], why: "PM-08 P1 ('Updates and grooms backlog items under direction.') is the guided bar: updating and grooming backlog items under direction is supervised maintenance of an existing artifact, not yet running the flow oneself."}
+      P2: {p: P2, sources: [patton2014-storymapping, reinertsen2009-flow, sfia9], why: "PM-08 P2 ('Prioritizes and maintains a healthy backlog for one team with normal review.') matches independent operation: prioritizing and maintaining a healthy backlog for one team with normal review is running Patton's story-mapping and Reinertsen's WIP-watching disciplines for a scoped, familiar area."}
+      P3: {p: P3, sources: [patton2014-storymapping, reinertsen2009-flow, sfia9], why: "PM-08 P3 ('Independently sequences contested work and keeps the backlog coherent under churn.') is the terminal, capability-owning bar: independently sequencing contested work and keeping the backlog coherent under churn requires diagnosing delivery problems from flow data — batch size, queue buildup, aging WIP — and fixing the system rather than pushing the team, which both anchors argue is the real skill."}
+      P4: {p: P4, sources: [patton2014-storymapping, reinertsen2009-flow, larson2021-staffeng], why: "PM-08 P4 ('Defines backlog practices others follow and resolves cross-team prioritization disputes.') is Staff-scope: defining backlog practices others follow and resolving cross-team prioritization disputes is one person's story map and flow discipline becoming a shared standard other teams adopt."}
+      P5: {p: P5, sources: [patton2014-storymapping, reinertsen2009-flow, larson2021-staffeng], why: "PM-08 P5 ('Sets backlog-management strategy across products and anticipates capacity tensions.') matches Principal authority: setting backlog-management strategy across products and anticipating capacity tensions is org-wide flow ownership — the idea-to-live lead time — not one team's backlog."}
+      P6: {p: P6, sources: [patton2014-storymapping, reinertsen2009-flow, larson2021-staffeng], why: "PM-08 P6 ('Defines backlog-management best practice for the discipline and is recognized for it.') is company/portfolio scope: defining backlog-management best practice for the discipline and being recognized for it is the register Patton's own story-mapping technique reached after publication — a company-wide default beyond one team."}
+    evidence:
+      P1: "Keeps their epic's stories small, ordered, and ready two sprints ahead, and can answer 'what's next and why' without opening the tracking tool."
+      P2: "Maintains a story map that shows their area's release strategy at a glance, and watches WIP and cycle time with the team without waiting for someone else to flag a problem."
+      P3: "Diagnoses that a team's slipping deadlines are a queue-buildup problem, not a motivation problem, and fixes the batch size rather than pushing the team to work harder."
+      P4: "Resolves a cross-team prioritization dispute using a shared backlog-sequencing standard other PMs have adopted from their earlier work."
+      P5: "Improves the org's idea-to-live lead time by changing planning and handoff mechanics, with before-and-after numbers to show it."
+      P6: "Removes a company-scale delivery bottleneck — a shared review gate every team was queuing behind — with executive backing they built the case for."
+  - theme: "Technical & design fluency"
     capability: LI-06
-    key_area: Execution & Delivery
-    key_attribute: Building with the Team
-    anchor: "Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P3, P5: P4, P6: P4}
-  - theme: Launch management & readiness
+    key_area: "Execution & Delivery"
+    key_attribute: "Building with the Team"
+    anchor: cagan2017-inspired
+    anchor_why: "deep knowledge of the technology and of good design is part of the PM's non-delegable preparation; a PM who can't follow the architecture or judge a design hands the feasibility and usability risks to whoever speaks last."
+    mappings:
+      P1: {p: P1, sources: [cagan2017-inspired, sfia9], why: "LI-06 P1 ('Follows the team's technical discussions and asks clarifying questions; relies on others to evaluate design quality.') is the guided bar: following the team's technical discussions and asking clarifying questions is LI-06's novice band — relying on others to evaluate design quality — which Cagan names as where a PM's technical preparation starts."}
+      P2: {p: P2, sources: [cagan2017-inspired, sfia9], why: "LI-06 P2 ('Understands the systems in scope well enough to review designs, probe trade-offs, and triage incidents — earns technical respect without taking the keyboard.') matches independent operation: understanding the systems in scope well enough to review designs, probe trade-offs, and triage incidents earns technical respect without taking the keyboard — the PM version of LI-06's independent bar."}
+      P3: {p: P3, sources: [cagan2017-inspired, sfia9], why: "LI-06 P3 ('Maintains depth across a complex system's stack and hardest problems; a credible thought-partner to the most senior engineers, pairing them with the context they need.') is the capability-owning bar: maintaining depth across a complex system's stack and hardest problems, a credible thought-partner to the most senior engineers, is the P3 register Cagan's non-delegable-preparation argument describes."}
+      P4: {p: P3, sources: [cagan2017-inspired, larson2021-staffeng], why: "LI-06 P3 ('Maintains depth across a complex system's stack and hardest problems; a credible thought-partner to the most senior engineers, pairing them with the context they need.') stays at LI-06 P3, not P4: the scope_note's stated plateau means a PM's Staff-level leverage flows through product craft, not deeper technical authority — the P3 'credible thought-partner' bar is the ceiling this role tests for, even at multi-area scope."}
+      P5: {p: P4, sources: [cagan2017-inspired, larson2021-staffeng], why: "LI-06 P4 ('Retains broad credibility across a multi-team domain — credible on its hardest cross-cutting technical questions, current enough to ask the question that changes a design.') is LI-06 P4, one below the raw P5-diagonal position: a Principal PM sustains credibility to keep the org's product decisions technically honest and translates platform trade-offs into product terms, which matches P4's 'broad credibility across a multi-team domain,' not P5's technology-direction authority — Cagan is explicit that deep technical authority stays with engineering leaders."}
+      P6: {p: P4, sources: [cagan2017-inspired, larson2021-staffeng], why: "LI-06 P4 ('Retains broad credibility across a multi-team domain — credible on its hardest cross-cutting technical questions, current enough to ask the question that changes a design.') holds at LI-06 P4 for the same reason as P5: framing company-level technology inflections in product terms reliably enough that executives act on the translation is P4's cross-cutting credibility exercised at the largest scope this role reaches, deliberately short of P5/P6's technical-authority register."}
+    evidence:
+      P1: "Follows the team's architecture discussion and asks a clarifying question that shows they did the reading, deferring to the engineers on which design is better."
+      P2: "Reviews a proposed design well enough to raise a scalability question before an engineer has to, and triages a live incident credibly without touching the code."
+      P3: "Holds their own in an architecture trade-off discussion, spotting that a proposed solution fights the existing system before the team commits to it, and engineers bring them options early because the conversation is worth it."
+      P4: "Bridges a technical constraint between two teams' roadmaps that neither team's own engineers had connected, translating the platform trade-off into terms the other PM can act on."
+      P5: "Keeps the product org's planning technically honest by representing platform realities in a strategy review, deferring the deepest technical call to the engineering leader in the room."
+      P6: "Frames a company-level build-versus-buy technology inflection in product terms clearly enough that executives act on the translation, while the technical authority for the decision itself stays with engineering leadership."
+  - theme: "Launch management & readiness"
     capability: PM-09
-    key_area: Execution & Delivery
-    key_attribute: Launch & Iteration
-    anchor: "Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Post-launch iteration & lifecycle
+    key_area: "Execution & Delivery"
+    key_attribute: "Launch & Iteration"
+    anchor: cagan2017-inspired
+    anchor_why: "high-integrity commitments and launch readiness across the whole company, not just the code, paired with Kohavi et al.'s ramped-rollout-and-holdback pattern as the safe launch mechanism."
+    mappings:
+      P1: {p: P1, sources: [cagan2017-inspired, kohavi2020-trustworthy, sfia9], why: "PM-09 P1 ('Executes assigned launch tasks and tracks checklist items under guidance.') is the guided bar: executing assigned launch tasks and tracking checklist items under guidance is supervised execution of someone else's launch plan."}
+      P2: {p: P2, sources: [cagan2017-inspired, kohavi2020-trustworthy, sfia9], why: "PM-09 P2 ('Coordinates a standard product launch across functions with normal review.') matches independent operation: coordinating a standard product launch across functions with normal review is running Kohavi et al.'s ramped-rollout pattern — stages, success/rollback criteria decided in advance — for a familiar launch."}
+      P3: {p: P3, sources: [cagan2017-inspired, kohavi2020-trustworthy, sfia9], why: "PM-09 P3 ('Independently orchestrates complex launches and recovers when plans go sideways.') is the terminal, capability-owning bar: owning launch calls under pressure — go/no-go, ramp pace, rollback — with criteria set before emotions run, and running the post-launch review, is Cagan's high-integrity-commitment standard exercised autonomously."}
+      P4: {p: P4, sources: [cagan2017-inspired, kohavi2020-trustworthy, larson2021-staffeng], why: "PM-09 P4 ('Defines the go-to-market playbook others adopt and rescues high-stakes launches.') is Staff-scope: coordinating launches that span teams and products, sequencing dependencies and owning the integrated go/no-go, is the launch-readiness discipline applied where no single team can own the call."}
+      P5: {p: P5, sources: [cagan2017-inspired, kohavi2020-trustworthy, larson2021-staffeng], why: "PM-09 P5 ('Sets go-to-market strategy across the portfolio and anticipates market-timing risks.') matches Principal authority: setting the org's launch discipline — readiness standards, ramp policy, review practice — and being the escalation point for company-level-blast-radius launches is org-wide ownership."}
+      P6: {p: P6, sources: [cagan2017-inspired, kohavi2020-trustworthy, larson2021-staffeng], why: "PM-09 P6 ('Defines what great go-to-market means for the field and shapes external practice.') is company/portfolio scope: launches with company-wide stakes are owned at this level as high-integrity, whole-company commitments — the register Cagan argues launch readiness must reach when the blast radius is the whole company."}
+    evidence:
+      P1: "Runs the launch checklist for their feature — flags, docs, support notes — and staffs first-day triage, escalating what they can't resolve to their lead."
+      P2: "Plans a standard launch end to end: rollout stages and rollback criteria decided in advance, every dependent function briefed before go-live."
+      P3: "Makes the go/no-go call on a ramping launch under pressure using criteria set the week before, not in the moment, and runs the post-launch review that feeds the next iteration."
+      P4: "Owns the integrated go/no-go for a launch spanning three teams' products, sequencing each team's dependency so no single team's slip silently blocks the others."
+      P5: "Sets the org's ramp-policy and readiness standards, and is the escalation point when a launch with company-level blast radius needs a call above any one team."
+      P6: "Owns the go/no-go for a launch with company-wide stakes as a high-integrity commitment the whole company is briefed on, not just engineering."
+  - theme: "Post-launch iteration & lifecycle"
     capability: PM-10
-    key_area: Execution & Delivery
-    key_attribute: Launch & Iteration
-    anchor: "Olsen, *The Lean Product Playbook* (2015)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  # ---- Business, Market & Go-to-Market ----
-  - theme: Business model & unit economics
+    key_area: "Execution & Delivery"
+    key_attribute: "Launch & Iteration"
+    anchor: croll-yoskovitz2013-leananalytics
+    anchor_why: "substituted for Olsen's The Lean Product Playbook (no bibliography entry) with Croll & Yoskovitz's stage-based Lean Analytics Cycle — empathy, stickiness, virality, revenue, scale — which is the same anchor family PM-10's other rows above use and covers persevere/pivot/kill judgment directly."
+    mappings:
+      P1: {p: P1, sources: [croll-yoskovitz2013-leananalytics, sfia9], why: "PM-10 P1 ('Pulls and reports defined product metrics under direction.') is the guided bar: pulling and reporting defined product metrics under direction is watching a launched feature's numbers as told, not yet deciding what to do about them."}
+      P2: {p: P2, sources: [croll-yoskovitz2013-leananalytics, sfia9], why: "PM-10 P2 ('Builds and interprets metric dashboards for a product with normal review.') matches independent operation: building and interpreting metric dashboards for one product with normal review is reading a feature's post-launch stage against the Lean Analytics Cycle and proposing the next iteration."}
+      P3: {p: P3, sources: [croll-yoskovitz2013-leananalytics, sfia9], why: "PM-10 P3 ('Independently designs metric frameworks and draws sound conclusions from messy data.') is the terminal, capability-owning bar: independently designing metric frameworks and drawing sound conclusions from messy data is the persevere/pivot/kill judgment call the stage-based model exists to inform, made with full autonomy."}
+      P4: {p: P4, sources: [croll-yoskovitz2013-leananalytics, larson2021-staffeng], why: "PM-10 P4 ('Defines the measurement model teams adopt and diagnoses misleading metrics others trust.') is Staff-scope: defining the measurement model teams adopt and diagnosing misleading metrics others trust is the stage-based cycle turned into a codified practice enforced across a group of products."}
+      P5: {p: P5, sources: [croll-yoskovitz2013-leananalytics, larson2021-staffeng], why: "PM-10 P5 ('Sets product-analytics strategy across the org and anticipates which signals will matter.') matches Principal authority: setting product-analytics strategy across the org and anticipating which signals will matter is organization-wide ownership of what 'iterating well' means, not one product's post-launch loop."}
+      P6: {p: P6, sources: [croll-yoskovitz2013-leananalytics, larson2021-staffeng], why: "PM-10 P6 ('Defines rigorous product measurement for the discipline and is cited externally on it.') is company/portfolio scope: defining rigorous product measurement for the discipline and being cited externally is the register the anchor's own book occupies as an externally cited measurement reference."}
+    evidence:
+      P1: "Reports their feature's week-one usage numbers exactly as their lead asked, without yet proposing what the team should do differently."
+      P2: "Reads a newly-launched feature's numbers against the product's current lifecycle stage and proposes the next iteration to try before the next planning cycle."
+      P3: "Makes the persevere-pivot-kill call on a six-month-old feature using its own metric framework, and the recommendation holds up under a skeptical leadership review."
+      P4: "Diagnoses that a metric two other teams trust as a success signal is actually misleading at this lifecycle stage, and gets both teams onto a corrected measurement model."
+      P5: "Sets the analytics strategy for what 'iterating well post-launch' means across the whole product org, anticipating which signals will matter before a product reaches that stage."
+      P6: "Defines a measurement discipline for post-launch iteration that gets cited by other companies as a rigorous approach to persevere/pivot/kill decisions."
+  - theme: "Business model & unit economics"
     capability: PD-07
-    key_area: Business, Market & Go-to-Market
-    key_attribute: Business Fluency
-    anchor: "Osterwalder & Pigneur, *Business Model Generation* (2010)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Pricing & packaging
+    key_area: "Business, Market & Go-to-Market"
+    key_attribute: "Business Fluency"
+    anchor: osterwalder2010-bmg
+    anchor_why: "the Business Model Canvas's nine building blocks are the standard template for reasoning about how a product actually sustains itself economically."
+    mappings:
+      P1: {p: P1, sources: [osterwalder2010-bmg, sfia9], why: "PD-07 P1 ('States what business outcome their current task serves — and asks when they can't — treating infrastructure and license costs as real money.') is the guided bar: stating what business outcome a current task serves, and treating infrastructure and license costs as real money, is the informing-only cost-awareness PD-07's own P1 profile describes — seeing the numbers, not yet acting on them."}
+      P2: {p: P2, sources: [osterwalder2010-bmg, sfia9], why: "PD-07 P2 ('Checks whether shipped work actually moved its metric and says so plainly when it didn't; weighs cost and maintenance burden in the technical choices they own.') matches independent operation: checking whether shipped work actually moved its metric and weighing cost/maintenance burden in the choices one owns applies the canvas's cost-and-revenue-streams blocks to work directly owned, unsupervised."}
+      P3: {p: P3, sources: [osterwalder2010-bmg, sfia9], why: "PD-07 P3 ('Frames a domain's technical decisions in business terms — cost of delay, revenue risk, support load — pushes back on work with weak business rationale, and redirects effort when the numbers say the plan is wrong.') is the terminal, capability-owning bar: framing a domain's technical decisions in business terms — cost of delay, revenue risk, support load — and redirecting effort when the numbers say the plan is wrong is the canvas applied with judgment to genuinely contested trade-offs."}
+      P4: {p: P4, sources: [osterwalder2010-bmg, larson2021-staffeng], why: "PD-07 P4 ('Builds the business case for the cross-team technical investments with the largest return and is trusted by leadership to have done the math.') is Staff-scope: building the business case for the cross-team investments with the largest return, trusted by leadership to have done the math, is business-model reasoning applied at a scale beyond one product's canvas."}
+      P5: {p: P5, sources: [osterwalder2010-bmg, larson2021-staffeng], why: "PD-07 P5 ('Aligns an organization's technical strategy with its economics — cost curves, velocity, risk — owning trade-offs measured in staff-years and reporting them in the business's own terms.') matches Principal authority: aligning an organization's technical strategy with its economics — cost curves, velocity, risk — owning trade-offs measured in staff-years is organization-wide economic ownership."}
+      P6: {p: P6, sources: [osterwalder2010-bmg, larson2021-staffeng], why: "PD-07 P6 ('Advises company leadership on where technology changes the business model and is accountable for company-level technology bets paying off.') is company/portfolio scope: advising company leadership on where technology changes the business model and being accountable for company-level technology bets is the register the anchor's own canvas occupies as a company-strategy tool."}
+    evidence:
+      P1: "States which business outcome their current task serves when a lead asks, and flags that a chosen third-party tool carries a real per-seat license cost, not just an engineering cost."
+      P2: "Checks whether a feature shipped last quarter actually moved its target metric, and says plainly in the retro that it didn't, rather than letting the shipped-it framing stand."
+      P3: "Redirects a team's roadmap away from a planned initiative once cost-of-delay and support-load numbers show a cheaper, faster path serves the same outcome."
+      P4: "Builds the business case for a cross-team platform investment with the largest expected return, and leadership funds it on the strength of the math."
+      P5: "Aligns the org's technical investment strategy with its cost curve and velocity trends, owning a trade-off measured in staff-years that leadership signs off on."
+      P6: "Advises company leadership on where a technology shift changes the business model itself, and is held accountable for whether the resulting company-level bet pays off."
+  - theme: "Pricing & packaging"
     capability: PM-12
-    key_area: Business, Market & Go-to-Market
-    key_attribute: Business Fluency
-    anchor: "Ramanujam & Tacke, *Monetizing Innovation* (2016)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Competitive & market analysis
+    key_area: "Business, Market & Go-to-Market"
+    key_attribute: "Business Fluency"
+    anchor: nagle2023-pricing
+    anchor_why: "substituted for Ramanujam & Tacke's Monetizing Innovation (no bibliography entry) with Nagle, Muller & Gruyaert's value-based pricing text, PM-12's own catalog anchor for the P3/P4/P6 levels — the value cascade against cost-plus defaults."
+    mappings:
+      P1: {p: P1, sources: [nagle2023-pricing, sfia9], why: "PM-12 P1 ('Populates pricing models with supplied assumptions under direction.') is the guided bar: populating pricing models with supplied assumptions under direction is executing someone else's assumptions, not forming an independent pricing judgment."}
+      P2: {p: P2, sources: [nagle2023-pricing, sfia9], why: "PM-12 P2 ('Builds a sound business model for one product with normal review.') matches independent operation: building a sound business model for one product with normal review fills in the Business Model Canvas's revenue-stream block as a standard template, not an invented structure."}
+      P3: {p: P3, sources: [nagle2023-pricing, sfia9], why: "PM-12 P3 ('Independently structures pricing under uncertainty and defends margin trade-offs.') is the terminal, capability-owning bar: independently structuring pricing under uncertainty and defending margin trade-offs requires exactly Nagle et al.'s value-based judgment to defend a trade-off rather than defaulting to cost-plus math."}
+      P4: {p: P4, sources: [nagle2023-pricing, larson2021-staffeng], why: "PM-12 P4 ('Defines the modeling approach others adopt and untangles complex monetization questions.') is Staff-scope: defining the modeling approach others adopt and untangling complex monetization questions is Nagle et al.'s value cascade moving from one pricing decision to a codified approach a team reuses."}
+      P5: {p: P5, sources: [nagle2023-pricing, larson2021-staffeng], why: "PM-12 P5 ('Sets pricing strategy across the portfolio and anticipates market and cost shifts.') matches Principal authority: setting pricing strategy across the portfolio and anticipating market and cost shifts is organization-wide pricing ownership beyond any single product's price."}
+      P6: {p: P6, sources: [nagle2023-pricing, larson2021-staffeng], why: "PM-12 P6 ('Defines pricing and business-modeling best practice for the field and is recognized for it.') is company/portfolio scope: defining pricing and business-modeling best practice for the field is the register the anchor's own book occupies as a canonical, externally cited reference."}
+    evidence:
+      P1: "Fills in a pricing model with the cost and margin assumptions a lead supplied, and asks when an input looks wrong rather than silently accepting it."
+      P2: "Builds the revenue-stream section of a new feature's business model using the team's standard canvas, and it holds up under normal review."
+      P3: "Defends a value-based price increase to a skeptical sales leader with a margin trade-off argument, instead of defaulting to a cost-plus number that's easier to justify."
+      P4: "Defines the pricing-modeling approach two other product teams adopt, and untangles a monetization question — a bundling decision with conflicting margin implications — no single team's model could resolve."
+      P5: "Sets the portfolio's pricing strategy for the year, anticipating a cost shift in a key input before it forces a reactive repricing."
+      P6: "Defines a pricing and business-modeling practice recognized in the field, with other companies' pricing teams citing the approach."
+  - theme: "Competitive & market analysis"
     capability: PM-03
-    key_area: Business, Market & Go-to-Market
-    key_attribute: Market & Domain Insight
-    anchor: "Moore, *Crossing the Chasm* (3rd ed., 2014)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Domain & industry fluency
+    key_area: "Business, Market & Go-to-Market"
+    key_attribute: "Market & Domain Insight"
+    anchor: moore1991-crossing-chasm
+    anchor_why: "the technology-adoption-lifecycle model and the chasm between early adopters and the mainstream market require reading ambiguous markets, not just cataloging named competitors."
+    mappings:
+      P1: {p: P1, sources: [moore1991-crossing-chasm, sfia9], why: "PM-03 P1 ('Gathers competitor facts and populates comparison grids under guidance.') is the guided bar: gathering competitor facts and populating comparison grids under guidance is supervised execution of a defined template, not yet reading market ambiguity."}
+      P2: {p: P2, sources: [moore1991-crossing-chasm, sfia9], why: "PM-03 P2 ('Produces a sound competitive analysis for a product with normal review.') matches independent operation: producing a sound competitive analysis for one product with normal review applies a Five-Forces-style structured comparison as given, without adapting it to an unusual market structure."}
+      P3: {p: P3, sources: [moore1991-crossing-chasm, sfia9], why: "PM-03 P3 ('Independently reads ambiguous markets and frames defensible positioning implications.') is the terminal, capability-owning bar: independently reading ambiguous markets and framing defensible positioning implications is exactly the judgment Moore's chasm model requires — placing a market correctly relative to the chasm when the evidence is not clear-cut."}
+      P4: {p: P4, sources: [moore1991-crossing-chasm, larson2021-staffeng], why: "PM-03 P4 ('Defines the analytical approach others follow and decodes confusing competitive dynamics.') is Staff-scope: defining the analytical approach others follow and decoding confusing competitive dynamics is one person's market-reading framework becoming codified for a team."}
+      P5: {p: P5, sources: [moore1991-crossing-chasm, larson2021-staffeng], why: "PM-03 P5 ('Sets market-analysis strategy and anticipates structural shifts before competitors react.') matches Principal authority: setting market-analysis strategy and anticipating structural shifts before competitors react is organization-wide foresight beyond any single product's competitive set."}
+      P6: {p: P6, sources: [moore1991-crossing-chasm, larson2021-staffeng], why: "PM-03 P6 ('Shapes how the field interprets product-market fit and is cited externally on it.') is company/portfolio scope: shaping how the field interprets product-market fit and being cited externally is the register the anchor's own chasm-crossing model occupies as a canonical, externally cited reference."}
+    evidence:
+      P1: "Populates a competitive comparison grid with facts a lead asked them to gather, and gets it corrected twice on review before it's accurate."
+      P2: "Produces a competitive analysis for their product using the team's standard framework, and it holds up without a rewrite in the next planning cycle."
+      P3: "Reads an ambiguous, fragmenting market correctly enough to argue the product hasn't crossed the chasm yet, and rewrites their product's positioning to match before the next release."
+      P4: "Defines the competitive-analysis method two other product teams adopt, and decodes a confusing competitive move — a rival's pricing change that looked irrational — that had stumped both teams."
+      P5: "Anticipates a structural market shift a full product cycle before competitors react to it, and repositions the portfolio's investment ahead of the shift."
+      P6: "Shapes how the field talks about product-market fit in this category, cited by analysts and competitors alike."
+  - theme: "Domain & industry fluency"
     capability: PM-19
-    key_area: Business, Market & Go-to-Market
-    key_attribute: Market & Domain Insight
-    anchor: "Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: GTM planning & partnership
+    key_area: "Business, Market & Go-to-Market"
+    key_attribute: "Market & Domain Insight"
+    anchor: cagan2017-inspired
+    anchor_why: "deep, non-delegable knowledge of the customer, business, and industry domain; self-sourced capability (PM-19 minted 2026-07 from this ladder's own prior consolidation prose — see scope_note), so evidence is written fresh below."
+    mappings:
+      P1: {p: P1, sources: [cagan2017-inspired, sfia9], why: "PM-19 P1 ('Learns the domain deliberately — shadows customers, reads industry sources, asks how the system actually works — and uses domain vocabulary correctly.') is the guided bar: learning the domain deliberately — shadowing customers, reading industry sources, asking how the system actually works — and using domain vocabulary correctly is the supervised acquisition phase before independent fluency."}
+      P2: {p: P2, sources: [cagan2017-inspired, sfia9], why: "PM-19 P2 ('Answers most domain questions without deferring and corrects domain errors in specs and designs.') matches independent operation: answering most domain questions without deferring and correcting domain errors in specs and designs applies Cagan's day-to-day domain-knowledge bar unsupervised, without yet catching risks others miss."}
+      P3: {p: P3, sources: [cagan2017-inspired, sfia9], why: "PM-19 P3 ('Is the recognized domain reference for a product — customers, field teams, and engineers check facts with them — and spots domain-driven risks others miss.') is the terminal, capability-owning bar: being the recognized domain reference for a product — customers, field teams, and engineers check facts with them — and spotting domain-driven risks others miss is Cagan's value-risk judgment exercised with full autonomy."}
+      P4: {p: P4, sources: [cagan2017-inspired, larson2021-staffeng], why: "PM-19 P4 ('Connects domain knowledge across teams, catching where one roadmap violates another domain's constraints (regulatory, workflow, ecosystem).') is Staff-scope: connecting domain knowledge across teams, catching where one roadmap violates another domain's constraints (regulatory, workflow, ecosystem), is individual domain expertise scaled into cross-team risk-catching."}
+      P5: {p: P5, sources: [cagan2017-inspired, larson2021-staffeng], why: "PM-19 P5 ('Represents an organization's domain understanding externally — industry forums, advisory boards, analyst briefings.') matches Principal authority: representing an organization's domain understanding externally — industry forums, advisory boards, analyst briefings — is external representation on the org's behalf, beyond internal reference status."}
+      P6: {p: P6, sources: [cagan2017-inspired, larson2021-staffeng], why: "PM-19 P6 ('Anticipates domain evolution — where the industry's workflows and rules are heading — and positions portfolios for it before consensus forms.') is company/portfolio scope: anticipating domain evolution and positioning portfolios for it before consensus forms is foresight that shapes the discipline's direction, not just fluency with its current state."}
+    evidence:
+      P1: "Shadows a customer support call and reads the industry's standard reference material, and uses the domain's own vocabulary correctly in their first spec review."
+      P2: "Answers a stakeholder's domain question about a regulatory constraint without deferring to a subject-matter expert, and corrects a domain error in an engineer's design before it ships."
+      P3: "Becomes the person the field team calls to fact-check a claim about how the industry's workflow actually works, and spots a domain-driven risk in a proposed feature nobody else caught."
+      P4: "Catches that one team's roadmap assumes a regulatory workflow another team's domain constraints actually forbid, before either team ships something that has to be walked back."
+      P5: "Represents the org's domain understanding on an industry advisory board, bringing back a signal the org's roadmap hadn't accounted for."
+      P6: "Positions the portfolio ahead of a domain shift — a regulatory change on the horizon — before industry consensus has formed that it's coming."
+  - theme: "GTM planning & partnership"
     capability: PM-09
-    key_area: Business, Market & Go-to-Market
-    key_attribute: Go-to-Market Partnership
-    anchor: "Moore, *Crossing the Chasm* (3rd ed., 2014)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Field feedback & enablement
+    key_area: "Business, Market & Go-to-Market"
+    key_attribute: "Go-to-Market Partnership"
+    anchor: moore1991-crossing-chasm
+    anchor_why: "adoption is won segment by segment; a launch that doesn't land in its intended beachhead segment needs Moore's chasm-crossing recovery logic, not a bigger push."
+    mappings:
+      P1: {p: P1, sources: [moore1991-crossing-chasm, sfia9], why: "PM-09 P1 ('Executes assigned launch tasks and tracks checklist items under guidance.') is the guided bar: executing assigned launch tasks and tracking checklist items under guidance is supervised execution of a go-to-market plan someone else set."}
+      P2: {p: P2, sources: [moore1991-crossing-chasm, sfia9], why: "PM-09 P2 ('Coordinates a standard product launch across functions with normal review.') matches independent operation: coordinating a standard product launch across functions with normal review runs a go-to-market motion as a given playbook for a familiar segment."}
+      P3: {p: P3, sources: [moore1991-crossing-chasm, sfia9], why: "PM-09 P3 ('Independently orchestrates complex launches and recovers when plans go sideways.') is the terminal, capability-owning bar: independently orchestrating complex launches and recovering when plans go sideways is exactly Moore's guidance on adapting a launch when it doesn't land in the intended beachhead segment."}
+      P4: {p: P4, sources: [moore1991-crossing-chasm, larson2021-staffeng], why: "PM-09 P4 ('Defines the go-to-market playbook others adopt and rescues high-stakes launches.') is Staff-scope: defining the go-to-market playbook others adopt and rescuing high-stakes launches is one launch's execution becoming a codified playbook a team reuses."}
+      P5: {p: P5, sources: [moore1991-crossing-chasm, larson2021-staffeng], why: "PM-09 P5 ('Sets go-to-market strategy across the portfolio and anticipates market-timing risks.') matches Principal authority: setting go-to-market strategy across the portfolio and anticipating market-timing risks is organization-wide GTM ownership beyond any single launch."}
+      P6: {p: P6, sources: [moore1991-crossing-chasm, larson2021-staffeng], why: "PM-09 P6 ('Defines what great go-to-market means for the field and shapes external practice.') is company/portfolio scope: defining what great go-to-market means for the field and shaping external practice is the register the anchor's own chasm-crossing model occupies as an externally cited go-to-market reference."}
+    evidence:
+      P1: "Executes their assigned launch-day tasks from the GTM checklist and escalates a customer-support question they can't answer to the person who can."
+      P2: "Coordinates a standard launch across sales, marketing, and support using the team's established playbook, with every function briefed before go-live."
+      P3: "Recovers a launch that isn't landing in its intended beachhead segment by re-targeting mid-rollout instead of pushing harder on a segment that isn't buying."
+      P4: "Defines the go-to-market playbook two other product teams now use, and personally rescues a launch that had gone sideways days before its public date."
+      P5: "Sets go-to-market strategy across the portfolio, timing two products' launches to avoid cannibalizing each other's market attention."
+      P6: "Shapes what great go-to-market means for the field, with the launch approach cited by practitioners outside the company."
+  - theme: "Field feedback & enablement"
     capability: PM-14
-    key_area: Business, Market & Go-to-Market
-    key_attribute: Go-to-Market Partnership
-    anchor: "Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  # ---- Communication, Influence & Craft Leadership ----
-  - theme: Product narratives & written communication
+    key_area: "Business, Market & Go-to-Market"
+    key_attribute: "Go-to-Market Partnership"
+    anchor: cagan2017-inspired
+    anchor_why: "field and customer-facing teams are a product's highest-bandwidth feedback channel and the most direct enablement surface — closing that loop is part of the PM's non-delegable work, not a hand-off to enablement."
+    mappings:
+      P1: {p: P1, sources: [cagan2017-inspired, sfia9], why: "PM-14 P1 ('Logs interactions and handles routine customer requests under guidance.') is the guided bar: logging interactions and handling routine customer requests under guidance is supervised execution of a defined support process, not yet closing a feedback loop independently."}
+      P2: {p: P2, sources: [cagan2017-inspired, sfia9], why: "PM-14 P2 ('Manages standard customer and partner relationships with normal review.') matches independent operation: managing standard customer and partner relationships with normal review is running the field-feedback and enablement loop for one's own area, unsupervised for routine cases."}
+      P3: {p: P3, sources: [cagan2017-inspired, sfia9], why: "PM-14 P3 ('Independently nurtures key accounts and resolves difficult relationship conflicts.') is the terminal, capability-owning bar: independently nurturing key accounts and resolving difficult relationship conflicts is Cagan's non-delegable field-partnership work exercised with full autonomy."}
+      P4: {p: P4, sources: [cagan2017-inspired, larson2021-staffeng], why: "PM-14 P4 ('Defines relationship-management practices others adopt and salvages strained partnerships.') is Staff-scope: defining relationship-management practices others adopt and salvaging strained partnerships is one person's enablement practice becoming a codified standard for how a whole team runs field partnership."}
+      P5: {p: P5, sources: [cagan2017-inspired, larson2021-staffeng], why: "PM-14 P5 ('Sets relationship strategy across the portfolio and anticipates partner-ecosystem shifts.') matches Principal authority: setting relationship strategy across the portfolio and anticipating partner-ecosystem shifts is organization-wide ownership beyond any single account."}
+      P6: {p: P6, sources: [cagan2017-inspired, larson2021-staffeng], why: "PM-14 P6 ('Defines what excellent partner relationship management means and shapes external practice.') is company/portfolio scope: defining what excellent partner relationship management means and shaping external practice is the register Cagan's own argument for non-delegable customer closeness reaches at company scale."}
+    evidence:
+      P1: "Logs a field team's escalated customer request in the team's tracker and hands off routine ones using the process a lead set up."
+      P2: "Runs the monthly loop that turns field-team feedback into a prioritized list their product area actually acts on, with normal review from a lead."
+      P3: "Personally rescues a strained relationship with a key account after a rocky launch, and the account renews where the field team had expected a churn."
+      P4: "Defines the field-enablement practice two other teams now use to close their own feedback loops, and salvages a partnership another team's process had let go stale."
+      P5: "Sets partner-ecosystem strategy across the portfolio, anticipating a shift in a key partner's priorities before it disrupts a live integration."
+      P6: "Defines what excellent partner relationship management looks like for the discipline, in practice other companies' product teams point to."
+  - theme: "Product narratives & written communication"
     capability: CC-01
-    key_area: Communication, Influence & Craft Leadership
-    key_attribute: Communication
-    anchor: "Bryar & Carr, *Working Backwards* (2021)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Executive communication
+    key_area: "Communication, Influence & Craft Leadership"
+    key_attribute: "Communication"
+    anchor: zinsser2006-onwritingwell
+    anchor_why: "substituted for Bryar & Carr's Working Backwards (no bibliography entry) with Zinsser's classic clarity-in-writing reference for the baseline register, paired with Minto's pyramid principle for the decision-driving register — the same two-source pairing CC-01's own catalog levels already use."
+    mappings:
+      P1: {p: P1, sources: [zinsser2006-onwritingwell, minto1996-pyramid, sfia9], why: "CC-01 P1 ('Communicates status clearly; documentation is accurate.') is the guided bar: communicating status clearly with accurate documentation is Zinsser's baseline clarity discipline — say what happened, plainly."}
+      P2: {p: P2, sources: [zinsser2006-onwritingwell, minto1996-pyramid, sfia9], why: "CC-01 P2 ('Writes clear design notes, runbooks and PRs; explains trade-offs without overselling.') matches independent operation: writing clear design notes, runbooks, and PRs, and explaining trade-offs without overselling, is Zinsser's 'clutter is the disease' discipline applied to routine technical writing, unsupervised."}
+      P3: {p: P3, sources: [zinsser2006-onwritingwell, minto1996-pyramid, sfia9], why: "CC-01 P3 ('Writes design docs that drive decisions; translates technical risk for non-technical stakeholders.') is the terminal, capability-owning bar: writing docs that drive decisions and translating technical risk for non-technical stakeholders requires Minto's answer-first, pyramid-structured argument — leading with the conclusion a decision-maker needs."}
+      P4: {p: P4, sources: [zinsser2006-onwritingwell, minto1996-pyramid, larson2021-staffeng], why: "CC-01 P4 ('Expert at making complex capability/risk legible to executives without dumbing it down; RFCs align orgs.') is Staff-scope: making complex capability/risk legible to executives without dumbing it down, with RFCs that align orgs, is Minto's pyramid principle applied at the scale of documents that must persuade rooms full of stakeholders at once."}
+      P5: {p: P5, sources: [zinsser2006-onwritingwell, minto1996-pyramid, larson2021-staffeng], why: "CC-01 P5 ('Strategy memos leadership acts on; org-wide and external reach.') matches Principal authority: strategy memos leadership acts on, with org-wide and external reach, is writing that changes org direction, not just informs it."}
+      P6: {p: P6, sources: [zinsser2006-onwritingwell, minto1996-pyramid, larson2021-staffeng], why: "CC-01 P6 ('A clarifying voice at company scale; externally recognized.') is company/portfolio scope: being a clarifying voice at company scale, externally recognized, is the level Zinsser's decades of teaching writers aimed to reach — clarity that carries beyond one's own organization."}
+    evidence:
+      P1: "Writes a status update for their epic that says plainly what happened and what's next, without burying the headline in caveats."
+      P2: "Writes a PRD for a standard feature that explains a trade-off honestly rather than overselling it, and engineers don't need to re-ask the intent."
+      P3: "Writes a design doc that leads with the decision it's asking for and translates a technical risk into terms a non-technical stakeholder acts on correctly."
+      P4: "Writes an RFC that aligns three teams' engineering leads on a shared approach, pre-wired against the objections a skeptic would raise."
+      P5: "Writes a strategy memo that leadership funds a quarter's roadmap against, with reach beyond their own product organization."
+      P6: "Is the clarifying voice the company turns to for its hardest external communications, recognized outside the company for writing that cuts through noise."
+  - theme: "Executive communication"
     capability: CC-06
-    key_area: Communication, Influence & Craft Leadership
-    key_attribute: Communication
-    anchor: "Minto, *The Pyramid Principle* (1987)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Stakeholder alignment & expectations
+    key_area: "Communication, Influence & Craft Leadership"
+    key_attribute: "Communication"
+    anchor: minto1996-pyramid
+    anchor_why: "answer-first, decision-ready framing and composure under hostile questioning; paired with Grove's account of high-leverage management communication."
+    mappings:
+      P1: {p: P1, sources: [minto1996-pyramid, grove1983-high-output-management, sfia9], why: "CC-06 P1 ('Prepares status updates for leadership with guidance; leads with the headline when coached to.') is the guided bar: preparing status updates for leadership with guidance, and leading with the headline when coached to, is following Minto's answer-first structure because someone reminds them to, not yet by habit."}
+      P2: {p: P2, sources: [minto1996-pyramid, grove1983-high-output-management, sfia9], why: "CC-06 P2 ('Reports upward answer-first with a specific ask; escalates early with options attached, so no surprise reaches leadership from someone else.') matches independent operation: reporting upward answer-first with a specific ask, escalating early with options attached, is Minto's pyramid principle applied as a self-sufficient habit."}
+      P3: {p: P3, sources: [minto1996-pyramid, grove1983-high-output-management, sfia9], why: "CC-06 P3 ('Briefs senior leaders under pressure — facts, impact, options, and a recommendation inside the first two minutes; one-pagers get forwarded unedited.') is the terminal, capability-owning bar: briefing senior leaders under pressure with facts, impact, options, and a recommendation inside two minutes is Grove's case for a manager's output being measured by the output of the people they influence — communication precise enough to drive that output."}
+      P4: {p: P4, sources: [minto1996-pyramid, grove1983-high-output-management, larson2021-staffeng], why: "CC-06 P4 ('Builds and lands investment cases with executive audiences — pre-wired with skeptics, sized in business terms, honest about risk; coaches others for executive rooms and runs the operating reviews an organization communicates through.') is Staff-scope: building and landing investment cases with executive audiences, pre-wired with skeptics and sized in business terms, plus coaching others for executive rooms, is Minto's pyramid principle deployed at the scale of a decision that must survive hostile scrutiny."}
+      P5: {p: P5, sources: [minto1996-pyramid, grove1983-high-output-management, larson2021-staffeng], why: "CC-06 P5 ('Operates the executive room as a peer — advances positions, absorbs hostile questioning without defensiveness, and changes the room's decision more often than not.') matches Principal authority: operating the executive room as a peer, absorbing hostile questioning and changing the room's decision, is SFIA's highest strategic-influence band combined with Grove's account of the high-leverage activities that define senior management work."}
+      P6: {p: P6, sources: [minto1996-pyramid, grove1983-high-output-management, larson2021-staffeng], why: "CC-06 P6 ('Speaks for an organization's technical reality to boards, investors, and press; trusted with the messages that cannot be delegated, and organizational credibility survives the appearances.') is company/portfolio scope: speaking for an organization's technical reality to boards, investors, and press, with organizational credibility on the line, is Grove's output-of-a-manager principle extended to speaking for the organization's credibility itself."}
+    evidence:
+      P1: "Prepares a status update for a leadership review with a lead's coaching to lead with the headline instead of the chronology."
+      P2: "Reports upward with the ask stated first and two options attached, so no surprise reaches their VP from someone else first."
+      P3: "Briefs a room of senior leaders under time pressure with facts, impact, options, and a recommendation inside the first two minutes, and the one-pager gets forwarded unedited."
+      P4: "Builds an investment case pre-wired against a known skeptic's objections, sized in business terms, and coaches a junior PM through their first executive review."
+      P5: "Operates an executive review as a peer, absorbs hostile questioning without getting defensive, and changes the room's decision."
+      P6: "Speaks for the company's technical reality to the board and press on a message that can't be delegated, and the company's credibility survives the appearance."
+  - theme: "Stakeholder alignment & expectations"
     capability: PM-13
-    key_area: Communication, Influence & Craft Leadership
-    key_attribute: Stakeholder Influence
-    anchor: "Cagan, *Empowered* (2020)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Saying no & negotiation
+    key_area: "Communication, Influence & Craft Leadership"
+    key_attribute: "Stakeholder Influence"
+    anchor: cagan2020-empowered
+    anchor_why: "building executive trust and aligning cross-functional stakeholders around product direction is the empowered product leader's codified practice for building the trust an empowered team depends on."
+    mappings:
+      P1: {p: P1, sources: [cagan2020-empowered, sfia9], why: "PM-13 P1 ('Prepares updates and gathers input for stakeholders under direction.') is the guided bar: preparing updates and gathering input for stakeholders under direction is supervised support of someone else's stakeholder relationship."}
+      P2: {p: P2, sources: [cagan2020-empowered, sfia9], why: "PM-13 P2 ('Manages routine stakeholder relationships and communications with normal review.') matches independent operation: managing routine stakeholder relationships and communications with normal review is applying a basic principled posture to low-stakes, routine interactions, unsupervised."}
+      P3: {p: P3, sources: [cagan2020-empowered, sfia9], why: "PM-13 P3 ('Independently aligns conflicting stakeholders and navigates tense executive conversations.') is the terminal, capability-owning bar: independently aligning conflicting stakeholders and navigating tense executive conversations is the interests-versus-positions judgment real, high-stakes conflict requires, exercised with full autonomy."}
+      P4: {p: P4, sources: [cagan2020-empowered, larson2021-staffeng], why: "PM-13 P4 ('Defines stakeholder-engagement approaches others adopt and brokers the hardest alignment.') is Staff-scope: defining stakeholder-engagement approaches others adopt and brokering the hardest alignment is Cagan & Jones's description of the product leader's codified practice for building executive trust that other PMs are taught to follow."}
+      P5: {p: P5, sources: [cagan2020-empowered, larson2021-staffeng], why: "PM-13 P5 ('Sets executive-engagement strategy and anticipates leadership concerns before they arise.') matches Principal authority: setting executive-engagement strategy and anticipating leadership concerns before they arise is organization-wide stakeholder ownership beyond any single relationship."}
+      P6: {p: P6, sources: [cagan2020-empowered, larson2021-staffeng], why: "PM-13 P6 ('Defines exemplary stakeholder management for the discipline and is externally credible on it.') is company/portfolio scope: defining exemplary stakeholder management for the discipline and being externally credible on it is externally referenced practice, not one org's internal habit."}
+    evidence:
+      P1: "Gathers input from three stakeholders ahead of a review and drafts the update summary a lead then finalizes."
+      P2: "Manages a routine monthly stakeholder update on their own, fielding questions without needing a lead to step in."
+      P3: "Navigates a tense conversation between two stakeholders with conflicting asks to a decision both accept, without damaging either relationship."
+      P4: "Defines the stakeholder-engagement approach two other PMs now follow, and brokers an alignment between two VPs that had stalled for a quarter."
+      P5: "Sets executive-engagement strategy for the product org and raises a leadership concern in a briefing before the leader had to ask about it."
+      P6: "Is the reference other product leaders point to for exemplary stakeholder management, credible on it outside the company."
+  - theme: "Saying no & negotiation"
     capability: CC-05
-    key_area: Communication, Influence & Craft Leadership
-    key_attribute: Stakeholder Influence
-    anchor: "Perri, *Escaping the Build Trap* (2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Mentoring & coaching PMs
+    key_area: "Communication, Influence & Craft Leadership"
+    key_attribute: "Stakeholder Influence"
+    anchor: perri2018-escapingbuildtrap
+    anchor_why: "saying no to weak requests and negotiating trade-offs in the open is what protects the team's outcome focus from becoming a feature-request queue."
+    mappings:
+      P1: {p: P1, sources: [perri2018-escapingbuildtrap, sfia9], why: "CC-05 P1 ('Voices disagreement respectfully; disagrees-and-commits.') is the guided bar: voicing disagreement respectfully and disagreeing-and-committing is the baseline posture of separating people from the problem, practiced individually."}
+      P2: {p: P2, sources: [perri2018-escapingbuildtrap, sfia9], why: "CC-05 P2 ('Works through disagreement to a decision without damaging relationships.') matches independent operation: working through disagreement to a decision without damaging relationships is applying principled-negotiation moves to reach a decision, not just state a position, unsupervised."}
+      P3: {p: P3, sources: [perri2018-escapingbuildtrap, sfia9], why: "CC-05 P3 ('Mediates technical disputes in their domain; finds the path that holds up.') is the terminal, capability-owning bar: mediating technical disputes in their domain and finding the path that holds up is stepping into dialogue when stakes, opinions, and emotions are all high — mediating, not just negotiating one's own position."}
+      P4: {p: P4, sources: [perri2018-escapingbuildtrap, larson2021-staffeng], why: "CC-05 P4 ('Resolves high-stakes disagreements between senior stakeholders across orgs.') is Staff-scope: resolving high-stakes disagreements between senior stakeholders across orgs applies the same toolkit where the stakes and organizational distance are both highest."}
+      P5: {p: P5, sources: [perri2018-escapingbuildtrap, larson2021-staffeng], why: "CC-05 P5 ('Designs the decision processes the org uses to resolve conflict.') matches Principal authority: designing the decision processes the org uses to resolve conflict is building the structure for disagreement to resolve well, not resolving each instance personally."}
+      P6: {p: P6, sources: [perri2018-escapingbuildtrap, larson2021-staffeng], why: "CC-05 P6 ('Sets the company norm for principled disagreement.') is company/portfolio scope: setting the company norm for principled disagreement is the level at which 'insist on objective criteria' becomes how a whole company disagrees, not one negotiator's technique."}
+    evidence:
+      P1: "Disagrees with a stakeholder's proposed scope respectfully in a planning meeting, and commits fully to the team's final call once it's made."
+      P2: "Works a disagreement over priority with a peer PM through to a decision both can live with, without either relationship taking damage."
+      P3: "Mediates a technical dispute between two senior engineers over an approach, and the path the team ends up on holds up three months later."
+      P4: "Resolves a high-stakes disagreement between two VPs from different orgs over a shared roadmap, where the stakes and organizational distance had stalled prior attempts."
+      P5: "Designs the decision process the org now uses to resolve cross-team prioritization conflicts, replacing a pattern of escalations that used to land on one exec's desk."
+      P6: "Sets the company norm for how principled disagreement gets resolved, cited when new leaders are onboarded into how the company makes contested calls."
+  - theme: "Mentoring & coaching PMs"
     capability: LI-01
-    key_area: Communication, Influence & Craft Leadership
-    key_attribute: Product Craft Leadership
-    anchor: "Cagan, *Empowered* (2020)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Raising the craft bar
+    key_area: "Communication, Influence & Craft Leadership"
+    key_attribute: "Product Craft Leadership"
+    anchor: cagan2020-empowered
+    anchor_why: "growing other PMs' capability compounds a product organization's craft beyond any one person's individual output."
+    mappings:
+      P1: {p: P1, sources: [cagan2020-empowered, sfia9], why: "LI-01 P1 ('Receptive to mentoring; shares what they learn.') is the guided bar: being receptive to mentoring and sharing what one learns is the receiving end of a developmental relationship, before a person provides it to others."}
+      P2: {p: P2, sources: [cagan2020-empowered, sfia9], why: "LI-01 P2 ('Helps onboard teammates; informally mentors juniors.') matches independent operation: helping onboard teammates and informally mentoring juniors is offering psychosocial and career-support functions without yet being asked to own someone's development, in bounded, low-stakes situations."}
+      P3: {p: P3, sources: [cagan2020-empowered, sfia9], why: "LI-01 P3 ('Coaches engineers with growth-oriented feedback; measurably improves a team's skill.') is the terminal, capability-owning bar: coaching PMs with growth-oriented feedback that measurably improves a team's skill is deliberately using coaching and challenging functions to produce a measurable change, with full autonomy."}
+      P4: {p: P4, sources: [cagan2020-empowered, larson2021-staffeng], why: "LI-01 P4 ('Develops future leads across teams; shapes hiring and onboarding.') is Staff-scope: developing future leads across teams and shaping hiring and onboarding is extending mentoring's career-development function to produce future leads across multiple teams, codified into how the org hires."}
+      P5: {p: P5, sources: [cagan2020-empowered, larson2021-staffeng], why: "LI-01 P5 ('Develops senior engineers and leaders; builds culture deliberately.') matches Principal authority: developing senior engineers and leaders and building culture deliberately is organization-wide authority — setting the standard other leaders' development practice is measured against, not running one relationship."}
+      P6: {p: P6, sources: [cagan2020-empowered, larson2021-staffeng], why: "LI-01 P6 ('Develops the next generation of top talent; legacy outlasts tenure.') is company/portfolio scope: developing the next generation of top talent so the legacy outlasts tenure is a development practice whose output persists after the practitioner has left."}
+    evidence:
+      P1: "Takes a senior PM's feedback on a spec without defensiveness and passes the lesson along to a newer teammate a week later."
+      P2: "Helps a new PM get their first feature shipped by walking them through the team's discovery cadence, without being formally assigned as their mentor."
+      P3: "Coaches a struggling PM through three consecutive cycles of feedback that visibly improves their spec-writing, measured in fewer clarifying questions from engineering."
+      P4: "Develops two ICs into leads across different teams and shapes the interview loop new PM hires now go through."
+      P5: "Builds a coaching culture across the product org that other leads' own coaching practice gets measured against."
+      P6: "Develops PMs who go on to lead product organizations elsewhere, and the practice they carry with them traces back to this person's coaching."
+  - theme: "Raising the craft bar"
     capability: LI-03
-    key_area: Communication, Influence & Craft Leadership
-    key_attribute: Product Craft Leadership
-    anchor: "Cagan, *Empowered* (2020); Larson, *Staff Engineer* (2021)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
-  - theme: Hiring & interviewing PMs
+    key_area: "Communication, Influence & Craft Leadership"
+    key_attribute: "Product Craft Leadership"
+    anchor: cagan2020-empowered
+    anchor_why: "shaping product craft beyond one's own work — what good discovery, specs, and trade-offs look like for other PMs — paired with Larson's Staff-archetype ladder for how that influence scales from one domain to company strategy."
+    mappings:
+      P1: {p: P1, sources: [cagan2020-empowered, larson2021-staffeng, sfia9], why: "LI-03 P1 ('Contributes informed opinions in technical discussions.') is the guided bar: contributing informed opinions in technical and craft discussions is participation under the umbrella of others' judgment, not yet independent influence."}
+      P2: {p: P2, sources: [cagan2020-empowered, larson2021-staffeng, sfia9], why: "LI-03 P2 ('Influences component-level decisions through credibility.') matches independent operation: influencing component-level decisions through credibility is earning influence over one's own product area's craft through demonstrated competence rather than title."}
+      P3: {p: P3, sources: [cagan2020-empowered, larson2021-staffeng, sfia9], why: "LI-03 P3 ('Sets technical direction for a domain; others align to their calls.') is the terminal, capability-owning bar: setting the craft direction for a domain that others align to is Larson's 'Solver' archetype operating with full autonomy over ambiguous problems — the local go-to, handling hard cases unsupervised."}
+      P4: {p: P4, sources: [cagan2020-empowered, larson2021-staffeng], why: "LI-03 P4 ('Shapes how multiple teams approach problems; trusted tiebreaker.') is Staff-scope: shaping how multiple teams approach problems, trusted tiebreaker, is Larson's 'Architect' scope crossing team boundaries — Cagan's craft-leadership practice extended past one product."}
+      P5: {p: P5, sources: [cagan2020-empowered, larson2021-staffeng], why: "LI-03 P5 ('Influences org-wide technical strategy.') matches Principal authority: influencing org-wide craft strategy is Larson's 'Right Hand'/distinguished-engineer altitude, advising leadership at organizational scale rather than one cross-team problem."}
+      P6: {p: P6, sources: [cagan2020-empowered, larson2021-staffeng], why: "LI-03 P6 ('Influences company strategic direction through insight.') is company/portfolio scope: influencing company strategic direction through craft insight is judgment operating at the altitude Larson reserves for company-shaping IC influence."}
+    evidence:
+      P1: "Offers an informed opinion in a spec review that a more senior PM ultimately weighs alongside their own, without yet being the person others default to."
+      P2: "Earns their product area's default trust on discovery-method calls through consistently sound judgment, not because of a title."
+      P3: "Sets the discovery and spec-writing bar their product's team aligns to without being told, handling the hardest ambiguous calls unsupervised."
+      P4: "Becomes the trusted tiebreaker on a craft question that spans three teams' approaches, and the resolution shapes how all three now work."
+      P5: "Advises the product org's leadership on craft strategy at organizational scale, influencing standards no single cross-team problem could reach."
+      P6: "Shapes the company's strategic direction through craft insight that gets adopted well beyond the product organization."
+  - theme: "Hiring & interviewing PMs"
     capability: LI-02
-    key_area: Communication, Influence & Craft Leadership
-    key_attribute: Product Craft Leadership
-    anchor: "Cagan, *Empowered* (2020)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    key_area: "Communication, Influence & Craft Leadership"
+    key_attribute: "Product Craft Leadership"
+    anchor: cagan2020-empowered
+    anchor_why: "building the team through hiring and placement is the product leader's compounding lever — a strong PM organization is built one calibrated hire at a time, not backfilled after the fact."
+    mappings:
+      P1: {p: P1, sources: [cagan2020-empowered, sfia9], why: "LI-02 P1 ('Participates in interviews; gives clear, evidence-based feedback.') is the guided bar: participating in interviews and giving clear, evidence-based feedback is applying a supplied structured-evaluation method rather than designing one."}
+      P2: {p: P2, sources: [cagan2020-empowered, sfia9], why: "LI-02 P2 ('Runs interviews well; calibrates against a consistent bar.') matches independent operation: running interviews well and calibrating against a consistent bar is operationalizing structured interviewing unsupervised, for routine hires."}
+      P3: {p: P3, sources: [cagan2020-empowered, sfia9], why: "LI-02 P3 ('Shapes hiring for a team; designs loops; makes sound staffing calls.') is the terminal, capability-owning bar: shaping hiring for a team, designing loops, and making sound staffing calls is designing an interview loop — choosing which structured signals to collect and how to combine them — rather than following one."}
+      P4: {p: P4, sources: [cagan2020-empowered, larson2021-staffeng], why: "LI-02 P4 ('Drives hiring strategy across teams; builds the interviewing bar.') is Staff-scope: driving hiring strategy across teams and building the interviewing bar is the org-wide analog of one team's structured-interviewing guide, scaled to multiple teams."}
+      P5: {p: P5, sources: [cagan2020-empowered, larson2021-staffeng], why: "LI-02 P5 ('Sets the org's talent strategy.') matches Principal authority: setting the org's talent strategy — workforce planning, leveling, sourcing priorities — is anticipating direction and setting standards rather than executing within them."}
+      P6: {p: P6, sources: [cagan2020-empowered, larson2021-staffeng], why: "LI-02 P6 ('Shapes company-wide talent philosophy.') is company/portfolio scope: shaping company-wide talent philosophy is a talent philosophy that shapes how an entire company thinks about hiring PMs, outlasting any one leader's tenure."}
+    evidence:
+      P1: "Gives evidence-based interview feedback using the team's existing scorecard, citing the specific answer that drove their rating."
+      P2: "Runs a PM candidate interview independently and calibrates their rating against the team's existing bar without a debrief coach in the room."
+      P3: "Designs a new interview loop stage that catches a judgment gap the old loop was missing, and makes the staffing call on a contested hire."
+      P4: "Builds the PM interviewing bar three other teams now hire against, driving hiring strategy across the group."
+      P5: "Sets the product org's talent strategy — leveling, sourcing priorities, workforce plan — for the year."
+      P6: "Shapes the company's talent philosophy for product roles in a way that outlasts their own tenure in the org."

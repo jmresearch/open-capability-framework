@@ -77,6 +77,13 @@ demonstrability rule. Structure:
   a one-clause "why" (`references/calibration.md`). Anchors ground the competency; the cell prose
   stays observable-behavior register. Anchors appear in the markdown only, never in the CSV.
 
+**Cells are assembled, never authored.** Depth text is the catalog capability's profile at the
+mapped proficiency, verbatim; role flavor goes in a separate `Evidenced by` line; scope comes from
+the level's scope band. Every P-mapping and every catalog P-level carries a bibliography citation +
+a written why. Full rule: `references/capability-framework.md` § Cell derivation and mapping. Order
+of operations is a hard gate: bibliography sources first, competencies second, mappings third —
+cell prose never.
+
 ### 5. Write the per-level job descriptions
 
 Read `references/job-descriptions.md` and produce one JD per level. Every requirement in a JD must

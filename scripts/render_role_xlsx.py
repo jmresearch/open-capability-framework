@@ -2,7 +2,8 @@
 """Render roles/<slug>/ladder.xlsx from a role record (role.yaml + ladder.md + ladder.csv).
 
 Sheets: Overview, Competency Matrix (OCF ids hyperlinked to the GitHub catalog),
-Rating Template (self/peer/manager inputs with IFERROR-guarded formulas), Sources.
+Rating Template (self/peer/manager inputs with IFERROR-guarded formulas),
+Sources & Theory.
 
 Re-runnable. Run with:
     uv run --with openpyxl --with pyyaml python scripts/render_role_xlsx.py [slug ...]
@@ -40,6 +41,15 @@ TOP = Alignment(vertical="top")
 def set_widths(ws, widths):
     for j, w in enumerate(widths, start=1):
         ws.column_dimensions[get_column_letter(j)].width = w
+
+
+def load_sourcing():
+    def rd(name):
+        with open(os.path.join(ROOT, "data", name), encoding="utf-8-sig", newline="") as f:
+            return list(csv.DictReader(f))
+    caps = {r["id"].strip(): r for r in rd("capabilities.csv")}
+    bib = {r["key"].strip(): r for r in rd("bibliography.csv")}
+    return caps, bib
 
 
 def load_role(slug):
@@ -130,10 +140,11 @@ def sheet_overview(wb, role):
     set_widths(ws, [22, 36, 34, 60])
 
 
-def sheet_matrix(wb, role, cells_by_triple):
+def sheet_matrix(wb, role, cells_by_triple, caps, bib):
     ws = wb.create_sheet("Competency Matrix")
     codes = [lv["code"] for lv in role["levels"]]
-    ws.append(["Key Area", "Focus Area", "Competency", "OCF ID", "Theory Anchor"] + codes)
+    ws.append(["Key Area", "Focus Area", "Competency", "OCF ID",
+               "What it covers", "Theory anchor & why"] + codes)
     for c in ws[1]:
         c.font = BOLD
     for comp in role["competencies"]:
@@ -142,8 +153,14 @@ def sheet_matrix(wb, role, cells_by_triple):
         if cells is None:
             raise SystemExit(f"no ladder.csv skill row for {triple}")
         text, url = ocf_link(comp)
+        cap_row = caps.get(str(comp.get("capability", "")).strip())
+        covers = cap_row["description"] if cap_row else ""
+        anchor_key = str(comp.get("anchor", "")).strip()
+        anchor = bib[anchor_key]["citation"] if anchor_key in bib else anchor_key
+        if comp.get("anchor_why"):
+            anchor += f" — {comp['anchor_why']}"
         ws.append([comp["key_area"], comp["key_attribute"], comp["theme"], text,
-                   comp.get("anchor", "")] + cells)
+                   covers, anchor] + cells)
         r = ws.max_row
         for c in ws[r]:
             c.font = BODY
@@ -151,7 +168,7 @@ def sheet_matrix(wb, role, cells_by_triple):
         idc = ws.cell(row=r, column=4)
         idc.hyperlink = url
         idc.font = LINK
-    set_widths(ws, [18, 18, 24, 12, 40] + [55] * len(codes))
+    set_widths(ws, [18, 18, 24, 12, 45, 45] + [55] * len(codes))
     ws.freeze_panes = "A2"
 
 
@@ -202,7 +219,7 @@ def sheet_rating(wb, role):
         gap.value = f'=IFERROR(G{r}-C{r},"")'
         gap.font = BODY
         for j, code in enumerate(codes):
-            p = comp["proficiency"][code]
+            p = comp["mappings"][code]["p"]
             ws.cell(row=r, column=first_hidden + j, value=int(p.lstrip("P"))).font = BODY
 
     for j in range(first_hidden, first_hidden + len(codes)):
@@ -211,26 +228,43 @@ def sheet_rating(wb, role):
     ws.freeze_panes = f"A{hdr_row + 1}"
 
 
-def sheet_sources(wb, ladder_md):
-    ws = wb.create_sheet("Sources")
-    ws.append(["Sources"])
-    ws["A1"].font = BOLD
-    for src in sources_list(ladder_md):
-        ws.append([src])
-        c = ws.cell(row=ws.max_row, column=1)
-        c.font = BODY
-        c.alignment = WRAP
-    set_widths(ws, [110])
+def sheet_sources(wb, role, bib, ladder_md):
+    ws = wb.create_sheet("Sources & Theory")
+    ws.append(["Framework", "Source", "Grounds", "Link"])
+    for c in ws[1]:
+        c.font = BOLD
+    seen = set()
+    for comp in role["competencies"]:
+        key = str(comp.get("anchor", "")).strip()
+        row = bib.get(key)
+        grounds = comp["theme"]
+        if row:
+            if key in seen:
+                continue
+            seen.add(key)
+            ws.append([row["notes"] or comp["theme"], row["citation"], grounds, row["link"]])
+        else:
+            ws.append([comp["theme"], key or "(unsourced)", grounds, ""])
+        for c in ws[ws.max_row]:
+            c.font = BODY
+            c.alignment = WRAP
+    for src in sources_list(ladder_md):          # legacy free-text Sources section, if any
+        ws.append(["", src, "", ""])
+        for c in ws[ws.max_row]:
+            c.font = BODY
+            c.alignment = WRAP
+    set_widths(ws, [30, 70, 40, 45])
     ws.freeze_panes = "A2"
 
 
 def render(slug):
     role, ladder_md, rows = load_role(slug)
+    caps, bib = load_sourcing()
     wb = Workbook()
     sheet_overview(wb, role)
-    sheet_matrix(wb, role, skill_cells(rows))
+    sheet_matrix(wb, role, skill_cells(rows), caps, bib)
     sheet_rating(wb, role)
-    sheet_sources(wb, ladder_md)
+    sheet_sources(wb, role, bib, ladder_md)
     out = os.path.join(ROOT, "roles", slug, "ladder.xlsx")
     wb.save(out)
     print(f"wrote roles/{slug}/ladder.xlsx "

@@ -1,0 +1,861 @@
+role: Dairy Plant Operations
+slug: dairy-plant-operations
+variant: general
+minted: 2026-07-07
+scope_note: >
+  A single, unified IC->manager progression for a Grade A / cultured / cheese / powder dairy processing plant - the atypical pathway where operator craft and operational leadership advance in ONE ladder rather than splitting into separate IC and manager tracks. L1-L4 are individual-contributor operator craft (L4 Lead Operator is the IC-terminal master operator who leads without the title); L5-L7 are operational leadership (Shift Supervisor -> Area / Production Manager -> Plant Operations Manager). Scope widens by breadth of responsibility: one machine / task -> a process area -> a line across a shift -> a shift crew -> a department across shifts -> the whole plant. Leadership competencies appear at the IC levels as informal, demonstrable-now behaviors (trains a peer, runs the pre-shift huddle, calls the safety stand-down, owns changeover discipline) and formalize at L5-L7; conversely food-safety, process, and equipment craft keep advancing through L7 (a plant manager still owns the HACCP plan and the PSM program). Consolidated 2026-07-07 by union from five independent same-methodology blind runs (163 source competencies -> 38 canonical); every focus area spans 2+ competencies. 13 competencies map to existing OCF capabilities (generic operations, maintenance, EHS, leadership, finance); 25 dairy/food-plant craft competencies had no catalog match and were accepted into a new "Food & Beverage Manufacturing" (FBM) capability set (FBM-01..FBM-25, data/capabilities.csv). Proficiency follows an operational curve, re-verified per competency against the accepted catalog text rather than applied as a template: craft competencies climb L1:P1 -> L7:P6 with an L4-L5 depth plateau at the IC-terminal master-operator bar (scope widens line->crew, depth does not); leadership competencies (operator training, coaching, shift leadership, cost/budget) start as informal proxies (L1:P1, L2:P1) and only formalize to P4 at L5 when the title (Shift Supervisor) does; the huddle/escalation/scheduling trio plateaus at P2 across L2-L3 before the same L4->P3, L5->P4 formalization step. R3 sourced-derivation retrofit (2026-07-09): every mapping now carries a bibliography source and a per-competency why; anchors resolve to bibliography keys; role flavor from the prior authored ladder survives only where it passes the cell-derivation instance test, stored under evidence:. Rendered ladder.md/ladder.csv/ladder.xlsx are derived from this file plus the catalog and must never be hand-edited.
+ladder_name: Dairy Plant Operations (L1-L7) - Canonical
+ladder_description: >
+  Unified individual-contributor-to-manager career ladder (L1-L7) for a Grade A dairy processing plant, where food-safety, process, and equipment craft and operational leadership advance together from Operator I to Plant Operations Manager.
+derived: true
+levels:
+  - {code: L1, title: Operator I, scope: "one machine / task under direction", focus: "learns the plant and runs a single process area under direction"}
+  - {code: L2, title: Operator II, scope: "a process area across a shift", focus: "runs a process area independently across a full shift"}
+  - {code: L3, title: Senior Operator, scope: "multiple process areas", focus: "operates multiple areas, troubleshoots, and coaches peers"}
+  - {code: L4, title: Lead Operator, scope: "a line / process end to end (IC terminal)", focus: "owns a line end to end and leads the floor without the title - IC terminal"}
+  - {code: L5, title: Shift Supervisor, scope: "a shift crew", focus: "leads a shift crew and its safety, quality, and output"}
+  - {code: L6, title: Area / Production Manager, scope: "a department across shifts", focus: "owns a department across shifts - its people, cost, and performance"}
+  - {code: L7, title: Plant Operations Manager, scope: "the whole plant", focus: "owns whole-plant operations, safety, quality, and cost"}
+competencies:
+  # ---- Food Safety & Regulatory Compliance ----
+  - theme: Pasteurization & flow-diversion control
+    capability: FBM-01
+    key_area: Food Safety & Regulatory Compliance
+    key_attribute: Thermal Process Control
+    anchor: fda-pmo
+    anchor_why: "the flow-diversion device and its legal setpoints are the plant's public-health guarantee"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, fda-pmo], why: "FBM-01 P1 ('confirms the FDD holds forward flow only above cut-in...escalates any anomaly to a lead') is Dreyfus's novice band exactly matched to L1's scope (one machine, work checked): the PMO's cut-in/cut-out set points are given, not judged."}
+      L2: {p: P2, sources: [dreyfus1980, fda-pmo], why: "FBM-01 P2 ('independently controls the flow-diversion function...handles routine nuisance diversions') is Dreyfus's advanced-beginner band at L2's process-area-across-a-shift scope: the legal set points are applied unsupervised for the routine case."}
+      L3: {p: P3, sources: [dreyfus1980, fda-pmo], why: "FBM-01 P3 ('troubleshoots...sensor drift, low product level, restart transients...coaches operators') is the Dreyfus competent band at L3's multiple-areas scope: diagnosing why the kill step misbehaves, not just running it."}
+      L4: {p: P4, sources: [sfia9, fda-pmo], why: "FBM-01 P4 ('sets the local diversion-control standard...is the person called when a diversion won't clear') is SFIA's Ensure/advise band -- the Lead Operator (IC-terminal, a line end to end) authors the line's divert-response procedure."}
+      L5: {p: P4, sources: [sfia9, fda-pmo], why: "L5 holds the same P4 depth as L4 -- FBM-01's P4 bar is already the master-operator standard; Shift Supervisor's step is scope (a shift crew), auditing every operator's chart against the standard L4 already sets, not a deeper technical bar."}
+      L6: {p: P5, sources: [sfia9, fda-pmo], why: "FBM-01 P5 ('governs flow-diversion control across the plant's thermal lines...sets the competency bar for who is cleared to hold the kill step') is SFIA's Initiate/influence band at L6's department-across-shifts scope."}
+      L7: {p: P6, sources: [sfia9, fda-pmo], why: "FBM-01 P6 ('defines flow-diversion-control practice adopted beyond the plant') is SFIA's Set-strategy/inspire band -- the Plant Operations Manager signs the PMO compliance the whole plant is inspected against."}
+    evidence:
+      L1: "States the legal cut-in temperature for the product running."
+      L2: "Clears a routine divert and records its cause unprompted."
+      L3: "Cracks a nuisance-divert pattern others cannot explain."
+      L4: "Writes the divert-response procedure the line follows and teaches the chart to new operators."
+      L5: "Surfaces crew-wide pasteurization compliance in the shift review."
+      L6: "Drives divert rate down department-wide with a targeted FDD test-and-seal standard."
+      L7: "Signs the PMO compliance the plant is inspected against."
+  - theme: Thermal-process legal limits & records
+    capability: FBM-02
+    key_area: Food Safety & Regulatory Compliance
+    key_attribute: Thermal Process Control
+    anchor: fda-pmo
+    anchor_why: "the legally defensible thermal process and its records are what an inspector audits"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, fda-pmo], why: "FBM-02 P1 ('records the required time and temperature...flags a record that does not show the process was met') is Dreyfus's novice band at L1's one-unit, checked scope: transcription against a legal minimum someone else set."}
+      L2: {p: P2, sources: [dreyfus1980, fda-pmo], why: "FBM-02 P2 ('independently confirms the running process against the correct legal minimum...knows which reading proves the process') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, fda-pmo], why: "FBM-02 P3 ('owns the thermal-process records for a line or area...resolves gaps and discrepancies before they age') is the Dreyfus competent band at L3's multiple-areas scope -- autonomous judgment on what makes a record legally defensible."}
+      L4: {p: P4, sources: [sfia9, fda-pmo], why: "FBM-02 P4 ('establishes the documented scheduled thermal process...is the person who signs that a lot's process is proven') is SFIA's Ensure/advise band -- the Lead Operator authors the line's record standard, IC terminal."}
+      L5: {p: P4, sources: [sfia9, fda-pmo], why: "L5 keeps L4's P4 depth -- the Shift Supervisor audits the crew's records against the standard the Lead Operator already authored; scope widens to a crew, the record-authority bar does not deepen."}
+      L6: {p: P5, sources: [sfia9, fda-pmo], why: "FBM-02 P5 ('governs the thermal-process-authority program across the plant...defends the minima and records to a regulator or auditor without gaps') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, fda-pmo], why: "FBM-02 P6 ('sets thermal-process-legality practice others adopt') is SFIA's Set-strategy/inspire band -- the plant's authority on thermal-process legality."}
+    evidence:
+      L1: "Reads the required minimum hold temperature off the process record."
+      L2: "Catches and reports an out-of-limit hold time without prompting."
+      L3: "Defends a borderline record with the supporting evidence."
+      L4: "Sets the recordkeeping standard an inspector can follow end to end."
+      L5: "Signs off the crew's thermal records as inspection-ready."
+      L6: "Closes record gaps before an audit finds them."
+      L7: "Is the plant's authority on thermal-process legality."
+  - theme: HACCP plan & CCP monitoring
+    capability: FBM-03
+    key_area: Food Safety & Regulatory Compliance
+    key_attribute: Food Safety Systems
+    anchor: codex-haccp
+    anchor_why: "CCP monitoring is the systematic guard against food-safety hazards"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, codex-haccp], why: "FBM-03 P1 ('monitors an assigned CCP on schedule...immediately notifies a lead and holds product') is Dreyfus's novice band at L1's one-CCP, checked scope -- executing Codex's monitoring principle exactly."}
+      L2: {p: P2, sources: [dreyfus1980, codex-haccp], why: "FBM-03 P2 ('independently monitors the CCPs for a line...initiates the documented corrective action') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, nacmcf1998], why: "FBM-03 P3 ('verifies monitoring is happening as written...handles the non-routine deviation without a supervisor') is the Dreyfus competent band at L3's multiple-areas scope -- NACMCF's corrective-action principle exercised on the ambiguous case."}
+      L4: {p: P4, sources: [sfia9, nacmcf1998], why: "FBM-03 P4 ('builds the HACCP plan...writes the monitoring and corrective-action procedures others follow') is SFIA's Ensure/advise band -- the Lead Operator authors the line's HACCP plan, IC terminal."}
+      L5: {p: P4, sources: [sfia9, nacmcf1998], why: "L5 keeps L4's P4 plan-authorship depth -- the Shift Supervisor verifies the crew's monitoring and owns corrective-action closure against the plan L4 already built; scope, not depth, widens to a crew."}
+      L6: {p: P5, sources: [sfia9, nacmcf1998], why: "FBM-03 P5 ('governs the HACCP program across the plant...leads the HACCP team, owns validation...and reassessment') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, codex-haccp], why: "FBM-03 P6 ('advances HACCP practice beyond the plant') is SFIA's Set-strategy/inspire band -- accountable for the plant's HACCP validity at audit."}
+    evidence:
+      L1: "Knows which step on the line is a CCP."
+      L2: "Takes the first corrective action on a CCP deviation without waiting."
+      L3: "Judges a borderline CCP reading correctly under pressure."
+      L4: "Writes the CCP-monitoring procedure the line runs to and teaches it to the crew."
+      L5: "Signs the crew's CCP verification records."
+      L6: "Catches a hazard the current plan misses before it reaches product."
+      L7: "Is accountable for the plant's HACCP validity at audit."
+  - theme: Preventive controls & PCQI oversight
+    capability: FBM-04
+    key_area: Food Safety & Regulatory Compliance
+    key_attribute: Food Safety Systems
+    anchor: fsma-pc-117c
+    anchor_why: "preventive controls and a qualified individual own the food-safety plan above HACCP"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, fsma-pc-117c], why: "FBM-04 P1 ('carries out an assigned preventive-control monitoring or verification task...reports the finding to the qualified individual') is Dreyfus's novice band at L1's one-control, checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, fsma-pc-117c], why: "FBM-04 P2 ('independently performs the monitoring and verification activities the food-safety plan assigns...recognizes when a preventive control is out of control') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, fsma-pc-117c], why: "FBM-04 P3 ('owns execution of the preventive controls for an area...coaches others on what each control is protecting against') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, fsma-pc-117c], why: "FBM-04 P4 ('serves as a preventive-controls qualified individual...writes and owns the food-safety plan, validates the preventive controls') is SFIA's Ensure/advise band -- the exact PCQI authorship 21 CFR 117 Subpart C requires, at Lead Operator's line scope."}
+      L5: {p: P4, sources: [sfia9, fsma-pc-117c], why: "L5 keeps L4's P4 PCQI-authorship depth -- the Shift Supervisor holds the crew's food-safety plan current against the plan L4 wrote, not a deeper qualified-individual bar."}
+      L6: {p: P5, sources: [sfia9, fsma-pc-117c], why: "FBM-04 P5 ('governs the preventive-controls program plant-wide...leads reanalysis on the required cadence') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, fsma-pc-117c], why: "FBM-04 P6 ('advances preventive-controls practice beyond the plant') is SFIA's Set-strategy/inspire band -- the plant's qualified authority on the food-safety plan."}
+    evidence:
+      L1: "Follows a preventive-control monitoring procedure as written."
+      L2: "Reports a preventive-control lapse before it recurs."
+      L3: "Decides correctly whether a preventive control held."
+      L4: "Writes and validates the line's preventive-control monitoring procedure as its PCQI."
+      L5: "Holds the crew's food-safety plan current for the shift."
+      L6: "Defines a preventive control other areas adopt."
+      L7: "Is the plant's qualified authority on the food-safety plan."
+  - theme: Environmental monitoring & pathogen control
+    capability: FBM-05
+    key_area: Food Safety & Regulatory Compliance
+    key_attribute: Contamination Control
+    anchor: fda-listeria2017
+    anchor_why: "environmental monitoring finds and eliminates pathogens before they reach product"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, fda-listeria2017], why: "FBM-05 P1 ('collects environmental swabs at the assigned sites and zones using correct technique...records the sampling') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, fda-listeria2017], why: "FBM-05 P2 ('independently executes the environmental sampling plan...maintains zone separation...flags a presumptive positive') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, fda-listeria2017], why: "FBM-05 P3 ('interprets results and trends, drives the vectoring and seek-and-destroy response') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, fda-listeria2017], why: "FBM-05 P4 ('designs the environmental monitoring program for a process...defines the corrective-sanitation and investigation procedure others follow') is SFIA's Ensure/advise band -- the Lead Operator authors the line's zoned program."}
+      L5: {p: P4, sources: [sfia9, fda-listeria2017], why: "L5 keeps L4's P4 program-design depth -- the Shift Supervisor closes the crew's positive findings against the program L4 designed; scope, not depth, widens to a crew."}
+      L6: {p: P5, sources: [sfia9, fda-listeria2017], why: "FBM-05 P5 ('governs environmental pathogen control plant-wide...owns the zoning scheme...and drives harborage elimination from trend data') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, fda-listeria2017], why: "FBM-05 P6 ('advances environmental-pathogen-control practice beyond the plant') is SFIA's Set-strategy/inspire band -- accountable for the plant's Listeria-control posture."}
+    evidence:
+      L1: "Swabs a Zone 1 site correctly on the sampling map."
+      L2: "Executes the presumptive-positive response steps unprompted."
+      L3: "Traces a recurring positive to its harborage site."
+      L4: "Designs the line's environmental-monitoring program: sites, zones, frequencies."
+      L5: "Closes out the crew's positive findings to negative."
+      L6: "Redesigns zoning to eliminate a recurring pathogen niche."
+      L7: "Is accountable for the plant's Listeria-control posture."
+  - theme: Allergen control & changeover
+    capability: FBM-06
+    key_area: Food Safety & Regulatory Compliance
+    key_attribute: Contamination Control
+    anchor: falcpa2004
+    anchor_why: "undeclared allergens are a leading recall cause, so segregation and changeover must be controlled"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, falcpa2004], why: "FBM-06 P1 ('follows the allergen-changeover checklist...verifies the correct label and packaging are staged') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, falcpa2004], why: "FBM-06 P2 ('independently executes allergen changeovers across a shift...checks labels against the product') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, falcpa2004], why: "FBM-06 P3 ('owns allergen control for a line or area...investigates a suspected cross-contact') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, falcpa2004], why: "FBM-06 P4 ('sets the allergen-control standard for a process...validates changeover cleaning') is SFIA's Ensure/advise band -- the Lead Operator authors the line's segregation and validation procedure."}
+      L5: {p: P4, sources: [sfia9, falcpa2004], why: "L5 keeps L4's P4 validation depth -- the Shift Supervisor verifies every crew changeover against the matrix L4 already set; scope widens to a crew, not the technical bar."}
+      L6: {p: P5, sources: [sfia9, falcpa2004], why: "FBM-06 P5 ('governs the allergen program plant-wide...owns the allergen matrix, production sequencing, the changeover-validation regime') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, falcpa2004], why: "FBM-06 P6 ('advances allergen-control practice beyond the plant') is SFIA's Set-strategy/inspire band -- accountable for zero undeclared-allergen escapes plant-wide."}
+    evidence:
+      L1: "Confirms the correct label is loaded for the product."
+      L2: "Completes a validated allergen changeover across the shift alone."
+      L3: "Resequences a run to avoid an allergen conflict."
+      L4: "Sets and validates the line's allergen changeover-cleaning procedure."
+      L5: "Verifies every crew changeover against the allergen matrix."
+      L6: "Eliminates a cross-contact risk by redesigning the production sequence."
+      L7: "Is accountable for zero undeclared-allergen escapes plant-wide."
+  - theme: PMO & Grade A regulatory recordkeeping
+    capability: FBM-07
+    key_area: Food Safety & Regulatory Compliance
+    key_attribute: Regulatory & Audit Readiness
+    anchor: fda-pmo
+    anchor_why: "Grade A shipment depends on complete, defensible regulatory records"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, fda-pmo], why: "FBM-07 P1 ('completes and files the ordinance-required permit and inspection records...flags a missing or non-conforming record') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, fda-pmo], why: "FBM-07 P2 ('independently maintains the PMO records for a shift or area...recognizes a record that would not stand up to inspection') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, fda-pmo], why: "FBM-07 P3 ('owns PMO recordkeeping for an area...prepares for and walks a routine inspection') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, fda-pmo], why: "FBM-07 P4 ('sets the PMO-compliance standard for the plant's records...interprets the ordinance requirements for the floor') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, fda-pmo], why: "L5 keeps L4's P4 interpretation depth -- the Shift Supervisor holds the crew's records audit-ready against the standard L4 set; the scope, not the bar, widens."}
+      L6: {p: P5, sources: [sfia9, fda-pmo], why: "FBM-07 P5 ('governs Grade A regulatory standing plant-wide...owns the relationship with the regulatory authority, the permit and rating') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, fda-pmo], why: "FBM-07 P6 ('advances PMO / Grade A compliance practice beyond the plant') is SFIA's Set-strategy/inspire band -- the plant's signatory for Grade A regulatory standing."}
+    evidence:
+      L1: "Fills a PMO record legibly and completely."
+      L2: "Keeps the area's regulatory log current unprompted."
+      L3: "Reconciles a record discrepancy before the inspector arrives."
+      L4: "Sets and interprets the line's Grade A recordkeeping standard for the floor."
+      L5: "Holds the crew's Grade A records audit-ready every shift."
+      L6: "Closes a systemic record gap an NCIMS audit would flag."
+      L7: "Is the plant's signatory for Grade A regulatory standing."
+  - theme: GFSI audit & certification readiness
+    capability: FBM-08
+    key_area: Food Safety & Regulatory Compliance
+    key_attribute: Regulatory & Audit Readiness
+    anchor: gfsi-benchmarking
+    anchor_why: "third-party certification is the market license to sell"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, gfsi-benchmarking], why: "FBM-08 P1 ('gathers the records and evidence requested for an audit element...reports a gap to the program owner') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, gfsi-benchmarking], why: "FBM-08 P2 ('independently keeps an area audit-ready...answers auditor questions about own work accurately') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, gfsi-benchmarking], why: "FBM-08 P3 ('self-assesses against the standard...closes routine findings with documented corrective action') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, gfsi-benchmarking], why: "FBM-08 P4 ('sets the audit-readiness standard for a process...leads the internal-audit and mock-audit routine') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, gfsi-benchmarking], why: "L5 keeps L4's P4 readiness-standard depth -- the Shift Supervisor fronts the crew's portion of the certification audit against the standard L4 set."}
+      L6: {p: P5, sources: [sfia9, gfsi-benchmarking], why: "FBM-08 P5 ('governs the certification program plant-wide...owns the scheme certification, management review, internal-audit system') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, gfsi-benchmarking], why: "FBM-08 P6 ('advances food-safety-certification practice beyond the plant') is SFIA's Set-strategy/inspire band -- accountable for the plant keeping its certificate."}
+    evidence:
+      L1: "Presents a clean workstation and its records at audit."
+      L2: "Fields a standard SQF auditor question about their area."
+      L3: "Handles a non-conformance question others defer."
+      L4: "Sets the line's continuous-readiness standard and leads its mock-audit routine."
+      L5: "Fronts the crew's portion of the certification audit."
+      L6: "Drives closure of audit findings into permanent system changes."
+      L7: "Is accountable for the plant keeping its certificate."
+  - theme: GMP & personnel hygiene
+    capability: FBM-09
+    key_area: Food Safety & Regulatory Compliance
+    key_attribute: Regulatory & Audit Readiness
+    anchor: cgmp-117b
+    anchor_why: "personnel hygiene and GMPs are the foundation every other control sits on"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, cgmp-117b], why: "FBM-09 P1 ('follows the GMP and personnel-hygiene rules...reports own or others' lapses') is Dreyfus's novice band at L1's checked scope -- Subpart B's baseline hygiene rules applied without discretion."}
+      L2: {p: P2, sources: [dreyfus1980, cgmp-117b], why: "FBM-09 P2 ('independently practices and models GMPs...recognizes a hygiene or GMP lapse...corrects it') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, cgmp-117b], why: "FBM-09 P3 ('owns GMP conformance for an area...investigates recurring lapses, and holds visitors and contractors to the standard') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, cgmp-117b], why: "FBM-09 P4 ('sets the GMP and hygiene standard for a process...leads the GMP self-inspection routine') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, cgmp-117b], why: "L5 keeps L4's P4 standard-setting depth -- the Shift Supervisor holds the crew to the GMP standard L4 already set visibly, not a deeper hygiene bar."}
+      L6: {p: P5, sources: [sfia9, cgmp-117b], why: "FBM-09 P5 ('governs the GMP and personnel-hygiene program plant-wide...drives a hygiene culture from inspection and incident trends') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, cgmp-117b], why: "FBM-09 P6 ('advances GMP and hygiene practice beyond the plant') is SFIA's Set-strategy/inspire band -- accountable for the plant's GMP foundation at audit."}
+    evidence:
+      L1: "Enters the process area with correct hygiene and gowning."
+      L2: "Reminds a peer of a GMP rule without being asked."
+      L3: "Rules on an ambiguous hygiene situation correctly."
+      L4: "Sets the line's hygiene standard and leads its GMP self-inspection."
+      L5: "Holds the crew to the GMP standard visibly."
+      L6: "Closes a recurring hygiene gap through a system change."
+      L7: "Is accountable for the plant's GMP foundation at audit."
+  # ---- Process Operations & Control ----
+  - theme: Raw milk receiving & grading
+    capability: FBM-10
+    key_area: Process Operations & Control
+    key_attribute: Receiving & Standardization
+    anchor: fda-pmo
+    anchor_why: "accepting or rejecting raw milk is the plant's first quality gate"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, fda-pmo], why: "FBM-10 P1 ('follows the receiving checklist under a lead's direction...flags anything out of range instead of unloading') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, fda-pmo], why: "FBM-10 P2 ('runs receiving independently across a shift...accepts conforming loads, and rejects or holds off-spec milk') is Dreyfus's advanced-beginner band at L2's shift scope, applying standing acceptance criteria."}
+      L3: {p: P3, sources: [dreyfus1980, fda-pmo], why: "FBM-10 P3 ('resolves ambiguous drug-residue screens with a confirmatory test, judges borderline sensory and temperature calls') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, fda-pmo], why: "FBM-10 P4 ('sets the receiving and grading procedure the bay follows...calibrates testing so grading calls are consistent') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, fda-pmo], why: "L5 keeps L4's P4 procedure-authorship depth -- the Shift Supervisor backs the crew's accept/reject calls against the criteria L4 wrote, not a deeper grading bar."}
+      L6: {p: P5, sources: [sfia9, fda-pmo], why: "FBM-10 P5 ('governs the raw-milk quality program for the department...sets acceptance policy, drives quality feedback to producers') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, fda-pmo], why: "FBM-10 P6 ('sets raw-milk acceptance and grading practice beyond the plant') is SFIA's Set-strategy/inspire band -- sets the plant's incoming-milk acceptance policy."}
+    evidence:
+      L1: "Draws a receiving sample by the correct method."
+      L2: "Rejects an out-of-spec load on the antibiotic or temperature screen alone."
+      L3: "Calls a marginal load correctly on limited evidence."
+      L4: "Writes the accept/reject criteria and sampling plan the floor uses."
+      L5: "Backs the crew's accept/reject calls to suppliers."
+      L6: "Drives supplier quality up through receiving data."
+      L7: "Sets the plant's incoming-milk acceptance policy."
+  - theme: Separation & standardization
+    capability: FBM-11
+    key_area: Process Operations & Control
+    key_attribute: Receiving & Standardization
+    anchor: bylund2015-dairyprocessing
+    anchor_why: "separation and standardization set the fat and solids the product must legally hit"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, bylund2015-dairyprocessing], why: "FBM-11 P1 ('starts, feeds, and shuts down the separator on the checklist...calls for help when a reading drifts off target') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, bylund2015-dairyprocessing], why: "FBM-11 P2 ('runs separation and standardization independently...sets and holds the fat/solids target...verifies the finished stream to spec') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, bylund2015-dairyprocessing], why: "FBM-11 P3 ('corrects poor separation efficiency, off-target fat, and desludge/backpressure problems, reconciles component mass balance') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, bylund2015-dairyprocessing], why: "FBM-11 P4 ('sets the standardization procedure and targets the line follows...dials in separator setup') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, bylund2015-dairyprocessing], why: "L5 keeps L4's P4 procedure-authorship depth -- the Shift Supervisor holds crew standardization within the target and cost L4 already set."}
+      L6: {p: P5, sources: [sfia9, bylund2015-dairyprocessing], why: "FBM-11 P5 ('governs standardization and component recovery for the department...sets the fat/solids specifications and yield/loss targets') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, bylund2015-dairyprocessing], why: "FBM-11 P6 ('defines separation and standardization practice beyond the plant') is SFIA's Set-strategy/inspire band -- accountable for legal composition plant-wide."}
+    evidence:
+      L1: "Runs the separator to a given cream/skim setpoint."
+      L2: "Hits the standardization target across the shift alone."
+      L3: "Corrects a persistent fat-target miss others cannot."
+      L4: "Sets the standardization blend calculations and control limits the line runs to."
+      L5: "Holds crew standardization within target and cost."
+      L6: "Cuts fat giveaway through a tightened method."
+      L7: "Is accountable for legal composition plant-wide."
+  - theme: Thermal processing operation (HTST/HHST/UHT)
+    capability: FBM-12
+    key_area: Process Operations & Control
+    key_attribute: Thermal Processing & Homogenization
+    anchor: bylund2015-dairyprocessing
+    anchor_why: "continuous heat-treatment is the core dairy processing operation"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, bylund2015-dairyprocessing], why: "FBM-12 P1 ('follows the startup, run, and shutdown checklist...reports a temperature or flow deviation to the lead') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, bylund2015-dairyprocessing], why: "FBM-12 P2 ('operates the HTST/HHST/UHT system independently...brings it through water-to-product startup...manages regeneration') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, bylund2015-dairyprocessing], why: "FBM-12 P3 ('clears fouling and burn-on and regeneration/pressure-balance faults...recovers the system to production after an upset') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, bylund2015-dairyprocessing], why: "FBM-12 P4 ('sets the operating procedure the line runs to...defines the startup/shutdown sequence, run parameters') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, bylund2015-dairyprocessing], why: "L5 keeps L4's P4 procedure-authorship depth -- the Shift Supervisor keeps the crew's heat-treatment running legal and stable against the standard L4 set."}
+      L6: {p: P5, sources: [sfia9, bylund2015-dairyprocessing], why: "FBM-12 P5 ('governs continuous thermal processing for the department...owns the operating standards and run-length/fouling economics') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, bylund2015-dairyprocessing], why: "FBM-12 P6 ('defines continuous thermal-processing practice beyond the plant') is SFIA's Set-strategy/inspire band -- sets how the plant operates its heat-treatment fleet."}
+    evidence:
+      L1: "Performs a water-to-product startup under a lead."
+      L2: "Holds pressure balance correct through a full run alone."
+      L3: "Extends run length by managing fouling others could not."
+      L4: "Sets the startup, run, and CIP-out standard for the system."
+      L5: "Keeps the crew's heat-treatment running legal and stable."
+      L6: "Redesigns a run strategy to raise uptime."
+      L7: "Sets how the plant operates its heat-treatment fleet."
+  - theme: Homogenization & product finishing
+    capability: FBM-13
+    key_area: Process Operations & Control
+    key_attribute: Thermal Processing & Homogenization
+    anchor: bylund2015-dairyprocessing
+    anchor_why: "homogenization and fat standardization define product stability and legal composition"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, bylund2015-dairyprocessing], why: "FBM-13 P1 ('runs the homogenizer on the checklist...reports abnormal pressure or noise instead of continuing') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, bylund2015-dairyprocessing], why: "FBM-13 P2 ('operates homogenization and finishing independently...sets and holds stage pressures for the product...verifies the finished result') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, bylund2015-dairyprocessing], why: "FBM-13 P3 ('diagnoses pressure loss, valve/seat wear, cavitation, and off-target texture or separation') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, bylund2015-dairyprocessing], why: "FBM-13 P4 ('sets the homogenization and finishing procedure the line follows...standardizes the setup across operators') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, bylund2015-dairyprocessing], why: "L5 keeps L4's P4 procedure-authorship depth -- the Shift Supervisor holds product finish consistent across the crew against the setpoints L4 set."}
+      L6: {p: P5, sources: [sfia9, bylund2015-dairyprocessing], why: "FBM-13 P5 ('governs product structure and finishing for the department...owns the finishing specifications and stability targets') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, bylund2015-dairyprocessing], why: "FBM-13 P6 ('defines homogenization and product-finishing practice beyond the plant') is SFIA's Set-strategy/inspire band -- sets the plant's homogenization and composition standard."}
+    evidence:
+      L1: "Sets homogenizer pressures to the recipe."
+      L2: "Confirms homogenization efficiency on the shift's product alone."
+      L3: "Diagnoses a poor-finish batch to the homogenization stage."
+      L4: "Sets the pressure/temperature setpoints and verification tests the line runs to."
+      L5: "Holds product finish consistent across the crew."
+      L6: "Improves stability through a revised homogenization standard."
+      L7: "Sets the plant's homogenization and composition standard."
+  - theme: Filling & packaging operation
+    capability: FBM-14
+    key_area: Process Operations & Control
+    key_attribute: Filling, Packaging & Cold Chain
+    anchor: bylund2015-dairyprocessing
+    anchor_why: "filling is the last point contamination or fill-weight error enters product"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, bylund2015-dairyprocessing], why: "FBM-14 P1 ('runs the filling/packaging line on the checklist...stops the line and calls the lead on a seal, code, or fill fault') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, bylund2015-dairyprocessing], why: "FBM-14 P2 ('operates the filling and packaging line independently...holds fill weight, seal integrity, and date/lot coding to spec') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, bylund2015-dairyprocessing], why: "FBM-14 P3 ('corrects seal-integrity, fill-weight-variation, coding, and hygienic-fault problems, recovers the line after a jam') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, bylund2015-dairyprocessing], why: "FBM-14 P4 ('sets the filling and packaging procedure the line follows...dials in the line so quality holds across formats') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, bylund2015-dairyprocessing], why: "L5 keeps L4's P4 procedure-authorship depth -- the Shift Supervisor holds crew fill giveaway and seal quality in target against the limits L4 set."}
+      L6: {p: P5, sources: [sfia9, bylund2015-dairyprocessing], why: "FBM-14 P5 ('governs filling and packaging for the department...drives OEE and giveaway/rejection improvement') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, bylund2015-dairyprocessing], why: "FBM-14 P6 ('defines hygienic filling and packaging practice beyond the plant') is SFIA's Set-strategy/inspire band -- sets the plant's hygienic-filling standard."}
+    evidence:
+      L1: "Checks fill weight and seal against target."
+      L2: "Holds fill weight and seal integrity across the shift alone."
+      L3: "Recovers a filler from a recurring seal defect others could not."
+      L4: "Sets the fill-accuracy and seal-integrity control limits for the line."
+      L5: "Holds crew fill giveaway and seal quality in target."
+      L6: "Cuts giveaway and rejects through a filling standard."
+      L7: "Sets the plant's hygienic-filling standard."
+  - theme: Cold chain & finished-goods integrity
+    capability: FBM-15
+    key_area: Process Operations & Control
+    key_attribute: Filling, Packaging & Cold Chain
+    anchor: fda-pmo
+    anchor_why: "cold-chain integrity protects safety and shelf life after processing"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, fda-pmo], why: "FBM-15 P1 ('follows the cold-chain checklist...reports an out-of-range temperature or damaged pallet instead of shipping it') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, fda-pmo], why: "FBM-15 P2 ('manages finished-goods cold chain independently...enforces stock rotation and hold/release...holds product that breaks temperature') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, fda-pmo], why: "FBM-15 P3 ('resolves temperature-excursion, rotation, and load-integrity problems, dispositions affected product, traces the cause') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, fda-pmo], why: "FBM-15 P4 ('sets the cold-chain and finished-goods procedure the area follows...defines the temperature limits, monitoring points, rotation/FEFO rules') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, fda-pmo], why: "L5 keeps L4's P4 procedure-authorship depth -- the Shift Supervisor keeps the crew's finished goods within temperature to dispatch against the limits L4 set."}
+      L6: {p: P5, sources: [sfia9, fda-pmo], why: "FBM-15 P5 ('governs finished-goods cold-chain integrity for the department...drives shelf-life and shrink/excursion improvement') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, fda-pmo], why: "FBM-15 P6 ('defines finished-goods cold-chain practice beyond the plant') is SFIA's Set-strategy/inspire band -- accountable for finished-goods safety plant-wide."}
+    evidence:
+      L1: "Logs a finished-product temperature against the PMO limit."
+      L2: "Acts on a cold-chain excursion before product is at risk."
+      L3: "Judges product disposition on a temperature excursion correctly."
+      L4: "Sets the finished-goods temperature limits and rotation/FEFO rules the line holds."
+      L5: "Keeps the crew's finished goods within temperature to dispatch."
+      L6: "Closes a recurring excursion point in the flow."
+      L7: "Is accountable for finished-goods safety plant-wide."
+  # ---- Sanitation & Hygiene ----
+  - theme: CIP cycle execution & verification
+    capability: FBM-16
+    key_area: Sanitation & Hygiene
+    key_attribute: Clean-in-Place
+    anchor: 3a-sanitary-standards
+    anchor_why: "verified CIP is how closed equipment is proven clean"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, 3a-sanitary-standards], why: "FBM-16 P1 ('selects the correct circuit/recipe, confirms the cycle steps run...reports a short cycle or missed parameter') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, 3a-sanitary-standards], why: "FBM-16 P2 ('executes and verifies CIP independently...confirms wash time, temperature, chemical concentration, and return flow/coverage met the recipe') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, 3a-sanitary-standards], why: "FBM-16 P3 ('diagnoses low flow/coverage, temperature or concentration shortfalls...proves cleaning by the verification standard, recovers a failed circuit') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, 3a-sanitary-standards], why: "FBM-16 P4 ('sets the CIP procedure and acceptance criteria the area follows...validates that the cycle actually removes the soil') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, 3a-sanitary-standards], why: "L5 keeps L4's P4 acceptance-criteria depth -- the Shift Supervisor signs off the crew's CIP as verified clean against the criteria L4 set."}
+      L6: {p: P5, sources: [sfia9, 3a-sanitary-standards], why: "FBM-16 P5 ('governs the CIP program for the department...owns the cleaning validation and verification standards across circuits') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, 3a-sanitary-standards], why: "FBM-16 P6 ('defines CIP execution and verification practice beyond the plant') is SFIA's Set-strategy/inspire band -- sets how the plant proves closed equipment clean."}
+    evidence:
+      L1: "Confirms a CIP circuit is connected to the right target."
+      L2: "Verifies a completed CIP against its parameters alone."
+      L3: "Traces a CIP failure to a spray path others missed."
+      L4: "Sets the CIP cycle parameters and verification method the line accepts."
+      L5: "Signs off the crew's CIP as verified clean."
+      L6: "Re-engineers a circuit to close a cleaning-failure pattern."
+      L7: "Sets how the plant proves closed equipment clean."
+  - theme: Cleaning chemistry & titration control
+    capability: FBM-17
+    key_area: Sanitation & Hygiene
+    key_attribute: Clean-in-Place
+    anchor: 3a-sanitary-standards
+    anchor_why: "correct chemistry and titration make CIP effective and safe"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, 3a-sanitary-standards], why: "FBM-17 P1 ('performs the titration on the checklist...reports an out-of-range result rather than releasing the solution') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, 3a-sanitary-standards], why: "FBM-17 P2 ('controls cleaning-chemical concentration independently...matches chemistry, temperature, and contact time to the standard cleaning task') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, 3a-sanitary-standards], why: "FBM-17 P3 ('diagnoses why a soil isn't clearing, adjusts chemistry, temperature, and contact time...corrects drifting titrations and dosing faults') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, 3a-sanitary-standards], why: "FBM-17 P4 ('sets the cleaning-chemistry procedure and concentration limits the area follows...qualifies changes to chemistry') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, 3a-sanitary-standards], why: "L5 keeps L4's P4 procedure-authorship depth -- the Shift Supervisor holds crew CIP chemistry in range and handled safely against the limits L4 set."}
+      L6: {p: P5, sources: [sfia9, 3a-sanitary-standards], why: "FBM-17 P5 ('governs cleaning chemistry for the department...owns the chemical program and concentration/titration standards') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, 3a-sanitary-standards], why: "FBM-17 P6 ('defines cleaning-chemistry and titration-control practice beyond the plant') is SFIA's Set-strategy/inspire band -- sets the plant's chemical-supplier and chemistry standard."}
+    evidence:
+      L1: "Runs a titration and reads the concentration correctly."
+      L2: "Corrects an out-of-range CIP concentration alone."
+      L3: "Diagnoses a cleaning failure to a chemistry cause others missed."
+      L4: "Sets the concentration and titration limits matched to each soil for the line."
+      L5: "Holds crew CIP chemistry in range and handled safely."
+      L6: "Cuts chemical cost while holding efficacy."
+      L7: "Sets the plant's chemical-supplier and chemistry standard."
+  - theme: COP & manual sanitation
+    capability: FBM-18
+    key_area: Sanitation & Hygiene
+    key_attribute: Hygienic Operations
+    anchor: cgmp-117b
+    anchor_why: "COP and manual cleaning reach what CIP cannot"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, cgmp-117b], why: "FBM-18 P1 ('cleans parts and open surfaces on the checklist...reports a part that won't come clean rather than reassembling it') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, cgmp-117b], why: "FBM-18 P2 ('performs COP and manual sanitation independently...cleans disassembled parts and open equipment to the standard, verifies the result') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, cgmp-117b], why: "FBM-18 P3 ('resolves parts that won't clean, COP-tank time/temperature/concentration problems, and reassembly or re-contamination issues') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, cgmp-117b], why: "FBM-18 P4 ('sets the COP and manual-sanitation procedure the area follows...verification acceptance criteria') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, cgmp-117b], why: "L5 keeps L4's P4 acceptance-criteria depth -- the Shift Supervisor confirms the crew's manual sanitation to the hygienic result L4 already defined."}
+      L6: {p: P5, sources: [sfia9, cgmp-117b], why: "FBM-18 P5 ('governs the COP and manual-sanitation program for the department...drives improvement in cleaning reliability and labor') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, cgmp-117b], why: "FBM-18 P6 ('defines COP and manual-sanitation practice beyond the plant') is SFIA's Set-strategy/inspire band -- sets the plant's non-CIP sanitation standard."}
+    evidence:
+      L1: "Disassembles, washes, and sanitizes a part as instructed."
+      L2: "Verifies a manually cleaned surface is hygienic alone."
+      L3: "Cleans a fouled part to spec that defeated others."
+      L4: "Sets the manual-clean procedure and verification acceptance criteria the line accepts."
+      L5: "Confirms the crew's manual sanitation to a hygienic result."
+      L6: "Closes a recurring manual-clean miss through a schedule change."
+      L7: "Sets the plant's non-CIP sanitation standard."
+  - theme: Hygienic design & 3-A conformance
+    capability: FBM-19
+    key_area: Sanitation & Hygiene
+    key_attribute: Hygienic Operations
+    anchor: 3a-sanitary-standards
+    anchor_why: "hygienic design determines whether equipment can be cleaned at all"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, 3a-sanitary-standards], why: "FBM-19 P1 ('checks equipment against a hygienic-design checklist...identifies obvious cleanability problems...and flags them rather than signing off') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, 3a-sanitary-standards], why: "FBM-19 P2 ('applies hygienic-design principles independently...installs and reassembles equipment to drain and self-clean, selects food-contact-legal materials') is Dreyfus's advanced-beginner band at L2's routine-work scope."}
+      L3: {p: P3, sources: [dreyfus1980, 3a-sanitary-standards], why: "FBM-19 P3 ('finds why a spot won't clean or a niche harbors organisms, corrects dead legs, cross-contamination points, and poor drainage') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, 3a-sanitary-standards], why: "FBM-19 P4 ('sets the hygienic-design and installation standard the area follows...reviews installations against them before start-up') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, 3a-sanitary-standards], why: "L5 keeps L4's P4 review-authority depth -- the Shift Supervisor blocks a non-hygienic install before it runs, applying the standard L4 already set."}
+      L6: {p: P5, sources: [sfia9, 3a-sanitary-standards], why: "FBM-19 P5 ('governs hygienic design for the department...drives out harborage and cleanability defects across the process') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, 3a-sanitary-standards], why: "FBM-19 P6 ('defines hygienic-design practice beyond the plant') is SFIA's Set-strategy/inspire band -- sets what the plant will and will not install."}
+    evidence:
+      L1: "Points out a cleanability concern on equipment."
+      L2: "Flags a non-hygienic connection before it causes a failure."
+      L3: "Traces a chronic cleaning miss to a design defect."
+      L4: "Sets the 3-A conformance requirements new and modified equipment must meet."
+      L5: "Blocks a non-hygienic install before it runs."
+      L6: "Specifies 3-A and EHEDG requirements into capital projects."
+      L7: "Sets what the plant will and will not install."
+  # ---- Equipment, Utilities & Reliability ----
+  - theme: Ammonia / CO2 refrigeration operation
+    capability: FBM-20
+    key_area: Equipment, Utilities & Reliability
+    key_attribute: Refrigeration & Steam
+    anchor: iiar2-ammonia
+    anchor_why: "ammonia refrigeration is the plant's cold backbone and a life-safety system"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, iiar2-ammonia], why: "FBM-20 P1 ('reads suction/discharge pressures, temperatures, and oil levels...logs them on the operator round...calls a qualified operator on any alarm') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, iiar2-ammonia], why: "FBM-20 P2 ('runs the refrigeration plant across a shift on their own...responds to routine...alarms without escalation') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, iiar2-ammonia], why: "FBM-20 P3 ('diagnoses a fouled condenser, flooded evaporator, non-condensable buildup, or failing compressor from the readings') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, iiar2-ammonia], why: "FBM-20 P4 ('sets the operating procedures and setpoints others run to...tunes the system for energy against a target') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, iiar2-ammonia], why: "L5 keeps L4's P4 procedure-authorship depth -- the Shift Supervisor holds the crew's refrigeration within the safe, efficient limits L4 set."}
+      L6: {p: P5, sources: [sfia9, iiar2-ammonia], why: "FBM-20 P5 ('governs refrigeration operation across the plant...the operating envelope, operator qualification, and the reliability and efficiency program') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, iiar2-ammonia], why: "FBM-20 P6 ('sets refrigeration operating practice beyond the plant') is SFIA's Set-strategy/inspire band -- accountable for the ammonia system's safe operation plant-wide."}
+    evidence:
+      L1: "Logs suction and discharge readings and flags an anomaly."
+      L2: "Adjusts the system to hold temperature safely alone."
+      L3: "Recovers a refrigeration fault others could not, safely."
+      L4: "Sets the compressor-sequencing, defrost, and purge operating procedure for the system."
+      L5: "Holds the crew's refrigeration within safe, efficient limits."
+      L6: "Improves efficiency through an operating-standard change."
+      L7: "Is accountable for the ammonia system's safe operation plant-wide."
+  - theme: Boiler & steam system operation
+    capability: FBM-21
+    key_area: Equipment, Utilities & Reliability
+    key_attribute: Refrigeration & Steam
+    anchor: asme-bpvc
+    anchor_why: "steam is the plant's thermal utility and a regulated pressure hazard"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, asme-bpvc], why: "FBM-21 P1 ('records boiler pressure, water level, stack, and feedwater readings...reports low-water, flame-failure, or pressure alarms to a qualified operator') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, asme-bpvc], why: "FBM-21 P2 ('runs the boiler and steam system across a shift independently...holds header pressure to demand...clears routine burner and level trips safely') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, asme-bpvc], why: "FBM-21 P3 ('diagnoses carryover, failing traps, water-hammer, poor combustion, or feedwater-chemistry excursions') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, asme-bpvc], why: "FBM-21 P4 ('sets the boiler operating procedures, water-treatment limits, and steam-quality practice others follow') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, asme-bpvc], why: "L5 keeps L4's P4 procedure-authorship depth -- the Shift Supervisor holds the steam plant safe and to code across the crew, against the standard L4 set."}
+      L6: {p: P5, sources: [sfia9, asme-bpvc], why: "FBM-21 P5 ('governs boiler and steam operation plant-wide...operating envelope, water-treatment program, operator qualification, jurisdictional-inspection readiness') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, asme-bpvc], why: "FBM-21 P6 ('sets steam-plant operating and efficiency practice beyond the site') is SFIA's Set-strategy/inspire band -- accountable for the plant's boiler compliance."}
+    evidence:
+      L1: "Records boiler pressure and water level correctly."
+      L2: "Manages steam demand safely across the shift alone."
+      L3: "Corrects a steam-supply problem others could not, safely."
+      L4: "Sets the water-treatment limits and blowdown procedure for the system."
+      L5: "Holds the steam plant safe and to code across the crew."
+      L6: "Cuts fuel cost through an operating-standard change."
+      L7: "Is accountable for the plant's boiler compliance."
+  - theme: Autonomous & preventive maintenance
+    capability: SCM-09
+    key_area: Equipment, Utilities & Reliability
+    key_attribute: Maintenance & Reliability
+    anchor: nakajima1988-tpm
+    anchor_why: "autonomous and preventive maintenance sustain asset reliability"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, nakajima1988-tpm], why: "SCM-09 P1 ('records asset data and completes scheduled maintenance tasks under supervision') is Dreyfus's novice band at L1's checked scope -- a fixed clean-inspect-lubricate checklist, no diagnosis."}
+      L2: {p: P2, sources: [dreyfus1980, nakajima1988-tpm], why: "SCM-09 P2 ('independently runs routine preventive maintenance and work orders with review') is Dreyfus's advanced-beginner band at L2's shift scope -- Nakajima's scheduled-PM cycle run as designed."}
+      L3: {p: P3, sources: [dreyfus1980, nakajima1988-tpm], why: "SCM-09 P3 ('autonomously diagnoses ambiguous failures and optimizes maintenance strategy for critical assets') is the Dreyfus competent band at L3's multiple-areas scope -- calling fix-now-versus-defer correctly."}
+      L4: {p: P4, sources: [sfia9, nakajima1988-tpm], why: "SCM-09 P4 ('defines maintenance and reliability methods others adopt and solves failures others can't') is SFIA's Ensure/advise band -- Lead Operator, IC terminal, sets the line's PM and clean-inspect-lubricate standard."}
+      L5: {p: P4, sources: [sfia9, nakajima1988-tpm], why: "L5 keeps L4's P4 authorship depth -- the Shift Supervisor holds the crew's PM completion and machine ownership up against the standard L4 already set."}
+      L6: {p: P5, sources: [sfia9, nakajima1988-tpm], why: "SCM-09 P5 ('sets asset-management strategy and anticipates lifecycle and reliability needs ahead') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, nakajima1988-tpm], why: "SCM-09 P6 ('defines best-practice asset and reliability management and is externally recognized for it') is SFIA's Set-strategy/inspire band -- the plant's asset-reliability standard."}
+    evidence:
+      L1: "Completes a clean-inspect-lubricate task and reports an abnormality."
+      L2: "Completes preventive work orders on time alone."
+      L3: "Calls the fix-now-versus-defer maintenance decision correctly."
+      L4: "Sets the PM and clean-inspect-lubricate standard the line runs to."
+      L5: "Holds the crew's PM completion and machine ownership up."
+      L6: "Raises uptime through a revised maintenance strategy."
+      L7: "Sets the plant's asset-reliability standard."
+  - theme: Equipment troubleshooting & breakdown recovery
+    capability: FBM-22
+    key_area: Equipment, Utilities & Reliability
+    key_attribute: Maintenance & Reliability
+    anchor: nakajima1988-tpm
+    anchor_why: "fast, correct breakdown recovery protects uptime and food safety together"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, nakajima1988-tpm], why: "FBM-22 P1 ('recognizes when a machine is running abnormally and isolates and locks it out under direction...holds the affected in-process product') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, nakajima1988-tpm], why: "FBM-22 P2 ('recovers the common breakdowns on their line within the food-safety window...decides when the fault has put in-process product at risk') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, nakajima1988-tpm], why: "FBM-22 P3 ('runs the breakdown recovery on the hard faults against the production and food-safety clock...makes the product-disposition call') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, nakajima1988-tpm], why: "FBM-22 P4 ('sets the breakdown-recovery-under-food-safety practice others follow...is the person called when a critical machine is down') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, nakajima1988-tpm], why: "L5 keeps L4's P4 recovery-standard depth -- the Shift Supervisor turns a crew breakdown into a countermeasure that holds, against the standard L4 already set."}
+      L6: {p: P5, sources: [sfia9, nakajima1988-tpm], why: "FBM-22 P5 ('governs breakdown-recovery practice across the plant where it couples to food safety...drives mean-time-to-restore across areas') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, nakajima1988-tpm], why: "FBM-22 P6 ('sets food-plant rapid-recovery practice beyond the site') is SFIA's Set-strategy/inspire band -- sets how the plant eliminates recurring failure."}
+    evidence:
+      L1: "Reports a breakdown with the observable symptoms."
+      L2: "Restores a common fault to running alone."
+      L3: "Cracks an intermittent fault others could not find."
+      L4: "Sets the hygienic-restart and product-disposition rules the line follows on a breakdown."
+      L5: "Turns a crew breakdown into a countermeasure that holds."
+      L6: "Removes a chronic loss through focused improvement."
+      L7: "Sets how the plant eliminates recurring failure."
+  - theme: Utilities stewardship (water/air/energy)
+    capability: WPL-02
+    key_area: Equipment, Utilities & Reliability
+    key_attribute: Utilities & Environmental
+    anchor: iso50001
+    anchor_why: "stewarding water, air, and energy controls cost and reliability"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, iso50001], why: "WPL-02 P1 ('logs maintenance requests and tracks routine tasks following defined procedures') is Dreyfus's novice band at L1's checked scope -- recording utility readings without independent judgment."}
+      L2: {p: P2, sources: [dreyfus1980, iso50001], why: "WPL-02 P2 ('manages standard building operations and planned maintenance independently') is Dreyfus's advanced-beginner band at L2's shift scope -- reporting waste (a leak, water waste) as it's found."}
+      L3: {p: P3, sources: [dreyfus1980, iso50001], why: "WPL-02 P3 ('resolves complex building failures and optimizes maintenance under operational ambiguity') is the Dreyfus competent band at L3's multiple-areas scope -- resolving a utility shortfall others could not."}
+      L4: {p: P4, sources: [sfia9, iso50001], why: "WPL-02 P4 ('defines maintenance and building-operations standards that other managers adopt') is SFIA's Ensure/advise band -- Lead Operator, IC terminal, sets the line's usage and conservation standard."}
+      L5: {p: P4, sources: [sfia9, iso50001], why: "L5 keeps L4's P4 standard-setting depth -- the Shift Supervisor holds crew utility consumption to the target L4 already set."}
+      L6: {p: P5, sources: [sfia9, iso50001], why: "WPL-02 P5 ('sets building-operations strategy and anticipates asset-lifecycle and reliability needs') is SFIA's Initiate/influence band at L6's department scope, aligned to ISO 50001's energy-management-system discipline."}
+      L7: {p: P6, sources: [sfia9, iso50001], why: "WPL-02 P6 ('establishes building-operations practice recognized as the benchmark across the profession') is SFIA's Set-strategy/inspire band -- sets the plant's energy and utility strategy."}
+    evidence:
+      L1: "Records water, air, and energy readings accurately."
+      L2: "Reports a compressed-air leak or water waste unprompted."
+      L3: "Resolves a utility shortfall others could not."
+      L4: "Sets the usage and conservation standard the line follows."
+      L5: "Holds crew utility consumption to target."
+      L6: "Cuts energy cost through an ISO 50001-aligned standard."
+      L7: "Sets the plant's energy and utility strategy."
+  - theme: Wastewater & effluent compliance
+    capability: FBM-23
+    key_area: Equipment, Utilities & Reliability
+    key_attribute: Utilities & Environmental
+    anchor: cwa-npdes
+    anchor_why: "effluent compliance is a legal permit condition"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, cwa-npdes], why: "FBM-23 P1 ('reads and logs pH, flow, and level...pulls the routine composite or grab sample as directed...reports an out-of-range pH or an upset') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, cwa-npdes], why: "FBM-23 P2 ('runs the pretreatment system across a shift independently...takes, preserves, and records the self-monitoring samples correctly') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, cwa-npdes], why: "FBM-23 P3 ('traces a BOD, FOG, TSS, or pH excursion back to a plant-side source...and corrects it') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, cwa-npdes], why: "FBM-23 P4 ('sets the operating procedures, dosing, and sampling practice for the effluent system...owns the accuracy and completeness of the discharge-monitoring records') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, cwa-npdes], why: "L5 keeps L4's P4 procedure-authorship depth -- the Shift Supervisor keeps the crew's discharge within the NPDES limits L4 already set."}
+      L6: {p: P5, sources: [sfia9, cwa-npdes], why: "FBM-23 P5 ('governs wastewater compliance plant-wide...the permit relationship, source-reduction and load-management program') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, cwa-npdes], why: "FBM-23 P6 ('sets effluent-management practice beyond the site') is SFIA's Set-strategy/inspire band -- accountable for the plant's discharge permit."}
+    evidence:
+      L1: "Pulls an effluent sample by the correct method."
+      L2: "Corrects a routine pH or loading excursion alone."
+      L3: "Holds discharge legal through an upset others could not."
+      L4: "Sets the dosing and sampling procedure the line meets to hold permit."
+      L5: "Keeps the crew's discharge within NPDES limits."
+      L6: "Cuts loading to protect the permit through a process change."
+      L7: "Is accountable for the plant's discharge permit."
+  # ---- Safety & Process Safety Management ----
+  - theme: Lockout/tagout & hazardous energy control
+    capability: WPL-08
+    key_area: Safety & Process Safety Management
+    key_attribute: Personal Safety & Energy Control
+    anchor: osha1910-147-loto
+    anchor_why: "hazardous-energy control prevents the plant's highest-consequence injuries"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, osha1910-147-loto], why: "WPL-08 P1 ('conducts routine safety checks and logs incidents following defined procedures') is Dreyfus's novice band at L1's checked scope, instantiated here as locking out one energy source and verifying zero energy exactly per 1910.147's procedure."}
+      L2: {p: P2, sources: [dreyfus1980, osha1910-147-loto], why: "WPL-08 P2 ('manages standard EHS programs and investigations independently within policy') is Dreyfus's advanced-beginner band at L2's shift scope -- completing a multi-point lockout by the written procedure alone."}
+      L3: {p: P3, sources: [dreyfus1980, osha1910-147-loto], why: "WPL-08 P3 ('resolves complex safety hazards and ambiguous compliance situations under risk') is the Dreyfus competent band at L3's multiple-areas scope -- planning a group lockout for a job with no ready-made procedure."}
+      L4: {p: P4, sources: [sfia9, osha1910-147-loto], why: "WPL-08 P4 ('defines EHS standards and risk-assessment methods that others adopt') is SFIA's Ensure/advise band -- Lead Operator, IC terminal, sets the line's energy-control standard."}
+      L5: {p: P4, sources: [sfia9, osha1910-147-loto], why: "L5 keeps L4's P4 standard-setting depth -- the Shift Supervisor stops a task with incomplete lockout before it starts, enforcing the standard L4 already set, not writing a new one."}
+      L6: {p: P5, sources: [sfia9, osha1910-147-loto], why: "WPL-08 P5 ('sets EHS strategy and anticipates emerging hazards and regulatory change') is SFIA's Initiate/influence band at L6's department scope, applied to closing systemic lockout gaps."}
+      L7: {p: P6, sources: [sfia9, osha1910-147-loto], why: "WPL-08 P6 ('establishes environmental-health-and-safety practice recognized as authoritative across the field') is SFIA's Set-strategy/inspire band -- accountable for zero hazardous-energy incidents plant-wide."}
+    evidence:
+      L1: "Locks out one energy source correctly and verifies zero energy."
+      L2: "Completes a multi-point lockout by the procedure alone."
+      L3: "Plans a group lockout for a job others found ambiguous."
+      L4: "Sets the energy-control standard the line follows."
+      L5: "Stops a task with incomplete lockout before it starts."
+      L6: "Closes a lockout gap through a procedure change."
+      L7: "Is accountable for zero hazardous-energy incidents plant-wide."
+  - theme: Hazard recognition, PPE & permits
+    capability: WPL-08
+    key_area: Safety & Process Safety Management
+    key_attribute: Personal Safety & Energy Control
+    anchor: osha-1910
+    anchor_why: "hazard recognition and permits keep routine work safe"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, osha-1910], why: "WPL-08 P1 ('conducts routine safety checks and logs incidents following defined procedures') is Dreyfus's novice band at L1's checked scope, instantiated as selecting and wearing the correct PPE for the task per 1910 Subpart I."}
+      L2: {p: P2, sources: [dreyfus1980, osha-1910], why: "WPL-08 P2 ('manages standard EHS programs and investigations independently within policy') is Dreyfus's advanced-beginner band at L2's shift scope -- filling a hot-work or confined-space (1910.146) permit correctly alone."}
+      L3: {p: P3, sources: [dreyfus1980, osha-1910], why: "WPL-08 P3 ('resolves complex safety hazards and ambiguous compliance situations under risk') is the Dreyfus competent band at L3's multiple-areas scope -- calling a confined-space entry decision correctly."}
+      L4: {p: P4, sources: [sfia9, osha-1910], why: "WPL-08 P4 ('defines EHS standards and risk-assessment methods that others adopt') is SFIA's Ensure/advise band -- Lead Operator, IC terminal, sets the line's permit-to-work standard."}
+      L5: {p: P4, sources: [sfia9, osha-1910], why: "L5 keeps L4's P4 standard-setting depth -- the Shift Supervisor refuses a permit until the hazard is controlled, enforcing the standard L4 already set."}
+      L6: {p: P5, sources: [sfia9, osha-1910], why: "WPL-08 P5 ('sets EHS strategy and anticipates emerging hazards and regulatory change') is SFIA's Initiate/influence band at L6's department scope, applied to closing recurring-hazard gaps through control changes."}
+      L7: {p: P6, sources: [sfia9, osha-1910], why: "WPL-08 P6 ('establishes environmental-health-and-safety practice recognized as authoritative across the field') is SFIA's Set-strategy/inspire band -- sets the plant's permit-to-work and PPE standard."}
+    evidence:
+      L1: "Selects and wears the correct PPE for the task."
+      L2: "Fills a hot-work or confined-space permit correctly alone."
+      L3: "Calls a confined-space entry decision correctly."
+      L4: "Sets the permit-to-work standard the line uses."
+      L5: "Refuses a permit until the hazard is controlled."
+      L6: "Closes a recurring hazard through a control change."
+      L7: "Sets the plant's permit-to-work and PPE standard."
+  - theme: Process safety management (PSM/RMP)
+    capability: FBM-24
+    key_area: Safety & Process Safety Management
+    key_attribute: Process Safety & Emergency Response
+    anchor: osha-psm-1910119
+    anchor_why: "the ammonia covered process must be managed to prevent catastrophic release"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, osha-psm-1910119], why: "FBM-24 P1 ('follows the covered-process operating procedures as written, completes their part of PSM tasks under direction') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, osha-psm-1910119], why: "FBM-24 P2 ('executes their PSM responsibilities independently...completes mechanical-integrity inspections and tests on schedule, raises a management-of-change') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, osha-psm-1910119], why: "FBM-24 P3 ('owns PSM elements for the process...leads or drives closure of PHA and incident-investigation action items, administers MOC') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, osha-psm-1910119], why: "FBM-24 P4 ('sets the plant's PSM practice for the covered process...is the reference who makes the program defensible in a compliance audit') is SFIA's Ensure/advise band -- Lead Operator, IC terminal."}
+      L5: {p: P4, sources: [sfia9, osha-psm-1910119], why: "L5 keeps L4's P4 program-authorship depth -- the Shift Supervisor blocks a change until MOC is complete, enforcing the standard L4 already set."}
+      L6: {p: P5, sources: [sfia9, epa-rmp-40cfr68], why: "FBM-24 P5 ('governs the PSM/RMP program plant-wide...element ownership, compliance-audit and RMP-resubmission cycle') is SFIA's Initiate/influence band at L6's department scope, spanning both the OSHA PSM and EPA RMP obligations."}
+      L7: {p: P6, sources: [sfia9, osha-psm-1910119], why: "FBM-24 P6 ('sets process-safety practice beyond the site') is SFIA's Set-strategy/inspire band -- accountable for the covered process's integrity plant-wide."}
+    evidence:
+      L1: "Follows a covered-process operating procedure as written."
+      L2: "Completes a mechanical-integrity check and logs it alone."
+      L3: "Contributes a real hazard to a process-hazard analysis."
+      L4: "Sets the operating-procedure and management-of-change standard the line follows."
+      L5: "Blocks a change until management-of-change is complete."
+      L6: "Closes a hazard-analysis finding into a permanent safeguard."
+      L7: "Is accountable for the covered process's integrity plant-wide."
+  - theme: Ammonia emergency response & readiness
+    capability: FBM-25
+    key_area: Safety & Process Safety Management
+    key_attribute: Process Safety & Emergency Response
+    anchor: osha-hazwoper-1910120
+    anchor_why: "a rehearsed response is what limits harm when ammonia releases"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, osha-hazwoper-1910120], why: "FBM-25 P1 ('knows the ammonia alarm, the evacuation and assembly points...on a release recognizes it, evacuates or shelters as trained') is Dreyfus's novice band at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, osha-hazwoper-1910120], why: "FBM-25 P2 ('acts correctly and independently in a release...takes the trained initial actions...knows the boundary of what they may and may not do') is Dreyfus's advanced-beginner band at L2's shift scope."}
+      L3: {p: P3, sources: [dreyfus1980, osha-hazwoper-1910120], why: "FBM-25 P3 ('leads the response at the scene for the shift...directs evacuation and accountability, isolates the process, briefs arriving responders') is the Dreyfus competent band at L3's multiple-areas scope."}
+      L4: {p: P4, sources: [sfia9, osha-hazwoper-1910120], why: "FBM-25 P4 ('runs incident command for an ammonia emergency at the plant...sets the response procedures and drill standard others follow') is SFIA's Ensure/advise band -- Lead Operator, IC terminal, formalizing incident command."}
+      L5: {p: P4, sources: [sfia9, osha-hazwoper-1910120], why: "L5 keeps L4's P4 incident-command depth -- the Shift Supervisor runs the crew's response and agency notification in a drill against the standard L4 set."}
+      L6: {p: P5, sources: [sfia9, osha-hazwoper-1910120], why: "FBM-25 P5 ('governs emergency-response readiness plant-wide...the emergency-response plan, drill and exercise program, mutual-aid and agency relationships') is SFIA's Initiate/influence band at L6's department scope."}
+      L7: {p: P6, sources: [sfia9, osha-hazwoper-1910120], why: "FBM-25 P6 ('sets ammonia-emergency-response practice beyond the site') is SFIA's Set-strategy/inspire band -- accountable for the plant's ammonia-release preparedness."}
+    evidence:
+      L1: "Responds correctly to an ammonia alarm and evacuates."
+      L2: "Executes their emergency-response duty in a drill alone."
+      L3: "Isolates a minor leak safely under pressure."
+      L4: "Sets the release-response and drill standard the line rehearses, running incident command."
+      L5: "Runs the crew's response and agency notification in a drill."
+      L6: "Hardens readiness through drill-driven changes."
+      L7: "Is accountable for the plant's ammonia-release preparedness."
+  # ---- Leadership, People & Continuous Improvement ----
+  - theme: Operator training & development
+    capability: LI-01
+    key_area: Leadership, People & Continuous Improvement
+    key_attribute: People Leadership & Development
+    anchor: twi-job-instruction
+    anchor_why: "structured job instruction is how operator craft is reliably transferred"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, twi-job-instruction], why: "LI-01 P1 ('receptive to mentoring; shares what they learn') is Dreyfus's novice band -- Operator I (one task, under direction) is still primarily a mentee, passing along a task step the TWI 'show, tell, do, check' way without yet owning anyone's development."}
+      L2: {p: P1, sources: [dreyfus1980, twi-job-instruction], why: "L2 holds LI-01's P1 depth -- Operator II is independent on their own station (craft competencies step to P2 here), but teaching another person is still done with a lead's support, not yet the unaided 'helps onboard teammates' of P2; technical independence and teaching independence are different maturities."}
+      L3: {p: P2, sources: [dreyfus1980, twi-job-instruction], why: "LI-01 P2 ('helps onboard teammates; informally mentors juniors') is Dreyfus's advanced-beginner band at L3's multiple-areas scope -- qualifying a new operator unaided is informal onboarding, not yet the deliberate, growth-oriented coaching P3 requires."}
+      L4: {p: P3, sources: [dreyfus1980, twi-job-instruction], why: "LI-01 P3 ('coaches engineers with growth-oriented feedback; measurably improves a team's skill') is the Dreyfus competent band -- Lead Operator (IC terminal) turns a specific operator's skill gap around through deliberate coaching with a measurable result, still an individual coaching act, not a training program."}
+      L5: {p: P4, sources: [sfia9, twi-job-instruction], why: "LI-01 P4 ('develops future leads across teams; shapes hiring and onboarding') is SFIA's Ensure/advise band -- Shift Supervisor formalizes into the title and now owns developing the crew's own future leads and its qualification records, the step this ladder's scope_note calls out as leadership 'formalizing at L5.'"}
+      L6: {p: P5, sources: [sfia9, twi-job-instruction], why: "LI-01 P5 ('develops senior engineers and leaders; builds culture deliberately') is SFIA's Initiate/influence band at L6's department scope -- building a capability pipeline other areas adopt."}
+      L7: {p: P6, sources: [sfia9, twi-job-instruction], why: "LI-01 P6 ('develops the next generation of top talent; legacy outlasts tenure') is SFIA's Set-strategy/inspire band -- sets how the plant grows operator talent, an operator-development system that outlasts any one manager."}
+    evidence:
+      L1: "Walks a peer through a single task step by step."
+      L2: "Onboards a peer to their area with a lead's support."
+      L3: "Qualifies a new operator on their area unaided."
+      L4: "Coaches a struggling operator's specific skill gap until the change is measurable in their output."
+      L5: "Grooms a crew member into the next Lead Operator and owns the crew's qualification records."
+      L6: "Builds a capability pipeline other areas adopt."
+      L7: "Builds an operator-development system that keeps producing leads after they've moved on."
+  - theme: Coaching & performance feedback
+    capability: EM-01
+    key_area: Leadership, People & Continuous Improvement
+    key_attribute: People Leadership & Development
+    anchor: grove1983-high-output-management
+    anchor_why: "feedback and coaching are how output is driven through people"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, grove1983-high-output-management], why: "EM-01 P1 ('gathers performance inputs and drafts feedback under a manager's guidance') is Dreyfus's novice band -- Operator I offers a peer specific, in-the-moment feedback, still following someone else's judgment on what to say."}
+      L2: {p: P1, sources: [dreyfus1980, grove1983-high-output-management], why: "L2 holds EM-01's P1 depth -- Operator II is independent on their own station, but giving feedback that actually changes a peer's performance is still occasional and unstructured, short of P2's standard review cadence."}
+      L3: {p: P2, sources: [dreyfus1980, grove1983-high-output-management], why: "EM-01 P2 ('runs standard performance cycles and holds direct reports accountable with normal review') is Dreyfus's advanced-beginner band at L3's multiple-areas scope -- turning a peer's recurring miss around through repeatable, not one-off, coaching."}
+      L4: {p: P3, sources: [dreyfus1980, grove1983-high-output-management], why: "EM-01 P3 ('independently manages underperformance and difficult cases through to clear resolution') is the Dreyfus competent band -- Lead Operator holds a peer accountable constructively before it escalates, without a supervisor's backstop."}
+      L5: {p: P4, sources: [sfia9, grove1983-high-output-management], why: "EM-01 P4 ('defines accountability practices other managers adopt and coaches them through hard cases') is SFIA's Ensure/advise band -- Shift Supervisor formally owns fair performance feedback for the whole crew, Grove's one-on-one/appraisal cadence now run as the job, not a peer favor."}
+      L6: {p: P5, sources: [sfia9, grove1983-high-output-management], why: "EM-01 P5 ('sets the org's performance philosophy and anticipates systemic accountability gaps') is SFIA's Initiate/influence band at L6's department scope -- defining the feedback practice other supervisors adopt."}
+      L7: {p: P6, sources: [sfia9, grove1983-high-output-management], why: "EM-01 P6 ('defines what fair, effective performance management means and influences the field externally') is SFIA's Set-strategy/inspire band -- sets how the plant develops and holds people accountable."}
+    evidence:
+      L1: "Offers a peer specific, in-the-moment feedback."
+      L2: "Helps a struggling peer improve on a specific task."
+      L3: "Turns a peer's recurring miss around through repeatable coaching."
+      L4: "Holds a peer accountable constructively before it escalates."
+      L5: "Owns fair performance feedback for the crew."
+      L6: "Defines the feedback practice other supervisors adopt."
+      L7: "Sets how the plant develops and holds people accountable."
+  - theme: Shift leadership & crew coordination
+    capability: LI-08
+    key_area: Leadership, People & Continuous Improvement
+    key_attribute: People Leadership & Development
+    anchor: hersey-blanchard1969
+    anchor_why: "leading a shift means adapting direction to the crew and the moment, and modeling the safety behaviors others follow"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, hersey-blanchard1969], why: "LI-08 P1 ('recognizes that different people need different support; adjusts approach when prompted by feedback') is Dreyfus's novice band -- Operator I models the crew's norms and calls out an unsafe act in the moment, without yet reading readiness unaided."}
+      L2: {p: P1, sources: [dreyfus1980, hersey-blanchard1969], why: "L2 holds LI-08's P1 depth -- Operator II reinforces a rule with peers informally, still reactive rather than the deliberate directing/coaching/supporting/delegating match to readiness P2 requires."}
+      L3: {p: P2, sources: [dreyfus1980, hersey-blanchard1969], why: "LI-08 P2 ('matches direction and support to each person's readiness per task...tells technical problems from adaptive ones') is Dreyfus's advanced-beginner band at L3's multiple-areas scope -- rallying the crew through a single upset and calling a stand-down on a real hazard is a deliberate, situational style match for one hard moment, not yet sustained across a wide range of people and situations."}
+      L4: {p: P3, sources: [dreyfus1980, hersey-blanchard1969], why: "LI-08 P3 ('flexes skillfully across a wide range of people and hard situations without losing a grounded center; refuses to force technical fixes onto adaptive challenges') is the Dreyfus competent band -- Lead Operator sustains that style-flexing across the whole line's varied people and problems, IC terminal, not yet coaching other leaders to do it (P4)."}
+      L5: {p: P4, sources: [sfia9, hersey-blanchard1969], why: "LI-08 P4 ('coaches other leaders to read what a person, team, or moment needs; adapts across diverse teams while staying recognizably consistent in values') is SFIA's Ensure/advise band -- Shift Supervisor now formally runs the crew day to day and owns its safety and delivery outcomes, the leadership formalization this ladder's L5 step is built for."}
+      L6: {p: P5, sources: [sfia9, hersey-blanchard1969], why: "LI-08 P5 ('develops adaptive leadership as an organizational discipline...leaders diagnose technical-versus-adaptive at scale') is SFIA's Initiate/influence band at L6's department scope -- setting the crew-leadership and behavior-based-safety practice other shifts adopt."}
+      L7: {p: P6, sources: [sfia9, hersey-blanchard1969], why: "LI-08 P6 ('shapes an adaptive, grounded leadership culture across an organization...emulated beyond the organization') is SFIA's Set-strategy/inspire band -- accountable for how the whole plant is led and how safely it runs."}
+    evidence:
+      L1: "Models the crew's norms and calls out an unsafe act in the moment."
+      L2: "Keeps the area's work moving and reinforces a rule with peers informally."
+      L3: "Rallies the crew through an upset and calls a stand-down on a real hazard."
+      L4: "Flexes between directing, coaching, and delegating across the line's operators and situations without losing the safety center."
+      L5: "Runs the crew day to day and owns its safety and delivery outcomes."
+      L6: "Sets the crew-leadership and behavior-based-safety practice other shifts adopt."
+      L7: "Is accountable for how the whole plant is led and how safely it runs."
+  - theme: Pre-shift huddles & shift handover
+    capability: CC-01
+    key_area: Leadership, People & Continuous Improvement
+    key_attribute: Communication & Coordination
+    anchor: ohno1988-tps
+    anchor_why: "a disciplined huddle and handover prevent information loss between shifts"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, ohno1988-tps], why: "CC-01 P1 ('communicates status clearly; documentation is accurate') is Dreyfus's novice band -- Operator I hands over their own machine's status accurately, the baseline clarity discipline at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, ohno1988-tps], why: "CC-01 P2 ('writes clear design notes, runbooks and PRs; explains trade-offs without overselling') is Dreyfus's advanced-beginner band -- Operator II runs a clean area-to-area handover unprompted across a full shift."}
+      L3: {p: P2, sources: [dreyfus1980, ohno1988-tps], why: "L3 holds CC-01's P2 depth -- Senior Operator flags the one handover item that prevents a downstream miss across multiple areas; the judgment sharpens with scope, but it is still routine handover communication, not yet the decision-driving documents P3 requires."}
+      L4: {p: P3, sources: [dreyfus1980, ohno1988-tps], why: "CC-01 P3 ('writes design docs that drive decisions; translates technical risk for non-technical stakeholders') is the Dreyfus competent band -- Lead Operator runs the huddle that sets and decides the line's priorities for the shift, IC terminal."}
+      L5: {p: P4, sources: [sfia9, ohno1988-tps], why: "CC-01 P4 ('expert at making complex capability/risk legible to executives...RFCs align orgs') is SFIA's Ensure/advise band -- Shift Supervisor formally runs the crew huddle and the shift-to-shift handover, aligning the whole crew, not just a line."}
+      L6: {p: P5, sources: [sfia9, ohno1988-tps], why: "CC-01 P5 ('strategy memos leadership acts on; org-wide and external reach') is SFIA's Initiate/influence band at L6's department scope -- standardizing the handover other shifts adopt."}
+      L7: {p: P6, sources: [sfia9, ohno1988-tps], why: "CC-01 P6 ('a clarifying voice at company scale; externally recognized') is SFIA's Set-strategy/inspire band -- sets how information flows across the plant's shifts."}
+    evidence:
+      L1: "Hands over their machine's status accurately."
+      L2: "Runs a clean area-to-area handover unprompted."
+      L3: "Flags the one handover item that prevents a downstream miss."
+      L4: "Leads a huddle that sets and decides the line's priorities for the shift."
+      L5: "Runs the crew huddle and shift-to-shift handover."
+      L6: "Standardizes a handover format other shifts adopt."
+      L7: "Sets how information flows across the plant's shifts."
+  - theme: Escalation & cross-functional coordination
+    capability: CC-03
+    key_area: Leadership, People & Continuous Improvement
+    key_attribute: Communication & Coordination
+    anchor: lencioni2002-fivedysfunctions
+    anchor_why: "knowing when to escalate and how to pull in the right function contains problems early"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, lencioni2002-fivedysfunctions], why: "CC-03 P1 ('responsive to feedback; pairs willingly; asks for help appropriately') is Dreyfus's novice band -- Operator I raises an issue to the right person promptly, at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, lencioni2002-fivedysfunctions], why: "CC-03 P2 ('collaborates smoothly with adjacent functions; handles disagreement constructively') is Dreyfus's advanced-beginner band -- Operator II coordinates with maintenance or QA to clear a routine issue alone."}
+      L3: {p: P2, sources: [dreyfus1980, lencioni2002-fivedysfunctions], why: "L3 holds CC-03's P2 depth -- Senior Operator pulls the right functions together to solve a cross-area problem across multiple areas; still collaborating within an established relationship, not yet resolving contested accountability (P3)."}
+      L4: {p: P3, sources: [dreyfus1980, lencioni2002-fivedysfunctions], why: "CC-03 P3 ('builds strong cross-team relationships; resolves friction directly') is the Dreyfus competent band -- Lead Operator decides, case by case, when and how the line escalates and resolves the friction that comes with it, IC terminal."}
+      L5: {p: P4, sources: [sfia9, lencioni2002-fivedysfunctions], why: "CC-03 P4 ('expert at aligning teams with competing priorities; mediates disputes between senior people') is SFIA's Ensure/advise band -- Shift Supervisor formally runs the crew's response when a line goes down or a quality hold hits, pulling in maintenance and QA and mediating their competing priorities."}
+      L6: {p: P5, sources: [sfia9, lencioni2002-fivedysfunctions], why: "CC-03 P5 ('creates the forums and processes through which collaboration happens') is SFIA's Initiate/influence band at L6's department scope -- defining the escalation protocol other shifts adopt."}
+      L7: {p: P6, sources: [sfia9, lencioni2002-fivedysfunctions], why: "CC-03 P6 ('builds coalitions at company scale and externally') is SFIA's Set-strategy/inspire band -- sets how the plant coordinates in a major event."}
+    evidence:
+      L1: "Raises an issue to the right person promptly."
+      L2: "Coordinates with maintenance or QA to clear a routine issue alone."
+      L3: "Pulls the right functions together to solve a cross-area problem."
+      L4: "Decides when and how the line escalates, and resolves the friction that follows."
+      L5: "Runs the crew's response when a line goes down or a quality hold hits, pulling in maintenance and QA."
+      L6: "Defines the escalation protocol other shifts adopt."
+      L7: "Sets how the plant coordinates in a major event."
+  - theme: OEE & loss elimination
+    capability: SCM-07
+    key_area: Leadership, People & Continuous Improvement
+    key_attribute: Continuous Improvement & Cost
+    anchor: nakajima1988-tpm
+    anchor_why: "OEE makes production loss visible so it can be eliminated"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, nakajima1988-tpm], why: "SCM-07 P1 ('performs defined production tasks and records output under supervision') is Dreyfus's novice band at L1's checked scope, instantiated as logging a downtime reason accurately against the run."}
+      L2: {p: P2, sources: [dreyfus1980, nakajima1988-tpm], why: "SCM-07 P2 ('independently runs standard production lines, handling routine variation with review') is Dreyfus's advanced-beginner band -- naming the shift's biggest loss from the OEE data alone."}
+      L3: {p: P3, sources: [dreyfus1980, nakajima1988-tpm], why: "SCM-07 P3 ('autonomously manages complex production with ambiguous disruptions, holding output and quality') is the Dreyfus competent band -- recovering measurable OEE by eliminating a specific loss across multiple areas."}
+      L4: {p: P4, sources: [sfia9, nakajima1988-tpm], why: "SCM-07 P4 ('defines production-operations methods others adopt and resolves problems others can't') is SFIA's Ensure/advise band -- Lead Operator sets the OEE and loss-tracking standard the line runs to, IC terminal."}
+      L5: {p: P4, sources: [sfia9, nakajima1988-tpm], why: "L5 keeps L4's P4 standard-setting depth -- the Shift Supervisor drives the crew's OEE up against a target using the tracking standard L4 already set."}
+      L6: {p: P5, sources: [sfia9, nakajima1988-tpm], why: "SCM-07 P5 ('sets manufacturing-operations strategy and anticipates how production capability must evolve') is SFIA's Initiate/influence band at L6's department scope -- removing a systemic loss other areas adopt the fix for."}
+      L7: {p: P6, sources: [sfia9, nakajima1988-tpm], why: "SCM-07 P6 ('defines best-in-class manufacturing operations and is externally recognized for it') is SFIA's Set-strategy/inspire band -- sets the plant's OEE and improvement agenda."}
+    evidence:
+      L1: "Logs a downtime reason accurately against the run."
+      L2: "Names the shift's biggest loss from the OEE data alone."
+      L3: "Recovers measurable OEE by eliminating a specific loss."
+      L4: "Sets the OEE and loss-tracking standard the line runs to."
+      L5: "Drives the crew's OEE up against a target."
+      L6: "Removes a systemic loss other areas adopt the fix for."
+      L7: "Sets the plant's OEE and improvement agenda."
+  - theme: Root-cause problem solving
+    capability: SUP-05
+    key_area: Leadership, People & Continuous Improvement
+    key_attribute: Continuous Improvement & Cost
+    anchor: ohno1988-tps
+    anchor_why: "structured root-cause analysis permanently removes recurring problems"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, ohno1988-tps], why: "SUP-05 P1 ('gathers incident details and documents findings for a reviewer to analyze') is Dreyfus's novice band at L1's checked scope -- documenting a problem's details for someone else's analysis."}
+      L2: {p: P2, sources: [dreyfus1980, ohno1988-tps], why: "SUP-05 P2 ('independently runs root-cause analysis on standard recurring problems with normal review') is Dreyfus's advanced-beginner band -- completing a basic 5-Why to a plausible root cause alone."}
+      L3: {p: P3, sources: [dreyfus1980, ohno1988-tps], why: "SUP-05 P3 ('untangles ambiguous, systemic root causes and is the go-to for elusive recurring issues') is the Dreyfus competent band -- cracking a systemic root cause others could not find, across multiple areas."}
+      L4: {p: P4, sources: [sfia9, ohno1988-tps], why: "SUP-05 P4 ('defines the problem-management methodology others adopt and cracks the hardest root causes') is SFIA's Ensure/advise band -- Lead Operator sets the root-cause standard the line uses, IC terminal."}
+      L5: {p: P4, sources: [sfia9, ohno1988-tps], why: "L5 keeps L4's P4 methodology-authorship depth -- the Shift Supervisor confirms a crew countermeasure actually held against the standard L4 already set."}
+      L6: {p: P5, sources: [sfia9, ohno1988-tps], why: "SUP-05 P5 ('sets problem-management strategy and anticipates systemic failures before they recur') is SFIA's Initiate/influence band at L6's department scope -- preventing a class of failure before it recurs."}
+      L7: {p: P6, sources: [sfia9, ohno1988-tps], why: "SUP-05 P6 ('defines how the discipline practices root-cause management and shapes industry approaches') is SFIA's Set-strategy/inspire band -- sets how the plant permanently removes problems."}
+    evidence:
+      L1: "Documents a problem's details for analysis."
+      L2: "Completes a basic 5-Why to a plausible root cause alone."
+      L3: "Cracks a systemic root cause others could not find."
+      L4: "Sets the root-cause standard the line uses."
+      L5: "Confirms a crew countermeasure actually held."
+      L6: "Prevents a class of failure before it recurs."
+      L7: "Sets how the plant permanently removes problems."
+  - theme: Production scheduling & changeover
+    capability: SCM-08
+    key_area: Leadership, People & Continuous Improvement
+    key_attribute: Continuous Improvement & Cost
+    anchor: ascm-scor
+    anchor_why: "scheduling and fast changeover convert the plan into on-time output"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, ascm-scor], why: "SCM-08 P1 ('updates schedules and logs shop-floor status from given inputs under guidance') is Dreyfus's novice band -- Operator I executes a changeover step by the SMED sheet, at L1's checked scope."}
+      L2: {p: P2, sources: [dreyfus1980, ascm-scor], why: "SCM-08 P2 ('independently builds routine production schedules and manages standard sequencing with review') is Dreyfus's advanced-beginner band -- Operator II completes a routine changeover to time alone across a shift."}
+      L3: {p: P2, sources: [dreyfus1980, ascm-scor], why: "L3 holds SCM-08's P2 depth -- Senior Operator rebalances the run to protect on-time output across multiple areas; still executing the plan under given constraints, not yet the volatile-constraint scheduling authorship P3 requires."}
+      L4: {p: P3, sources: [dreyfus1980, shingo1985-smed], why: "SCM-08 P3 ('autonomously schedules under volatile constraints, rebalancing the floor to hold commitments') is the Dreyfus competent band -- Lead Operator sets the changeover sequencing the line uses, applying Shingo's SMED discipline to hold commitments, IC terminal."}
+      L5: {p: P4, sources: [sfia9, shingo1985-smed], why: "SCM-08 P4 ('defines scheduling and control methods others adopt and resolves the hardest sequencing problems') is SFIA's Ensure/advise band -- Shift Supervisor holds crew changeover times and schedule to the target the standard already sets, formally owning the crew's throughput."}
+      L6: {p: P5, sources: [sfia9, ascm-scor], why: "SCM-08 P5 ('sets shop-floor scheduling strategy and anticipates how control systems must evolve') is SFIA's Initiate/influence band at L6's department scope -- cutting changeover loss through an SMED standard other shifts adopt."}
+      L7: {p: P6, sources: [sfia9, ascm-scor], why: "SCM-08 P6 ('defines leading production-scheduling practice for the field and is sought externally for it') is SFIA's Set-strategy/inspire band -- sets how the plant schedules and changes over."}
+    evidence:
+      L1: "Executes a changeover step by the SMED sheet."
+      L2: "Completes a routine changeover to time alone."
+      L3: "Rebalances the run to protect on-time output."
+      L4: "Sets the changeover and sequencing standard the line uses."
+      L5: "Holds crew changeover times and schedule to target."
+      L6: "Cuts changeover loss through an SMED standard other shifts adopt."
+      L7: "Sets how the plant schedules and changes over."
+  - theme: Cost, labor & budget ownership
+    capability: EM-06
+    key_area: Leadership, People & Continuous Improvement
+    key_attribute: Continuous Improvement & Cost
+    anchor: horngren-costaccounting
+    anchor_why: "cost and labor ownership is how operations are held to budget"
+    mappings:
+      L1: {p: P1, sources: [dreyfus1980, horngren-costaccounting], why: "EM-06 P1 ('tracks spend and processes vendor invoices under guidance') is Dreyfus's novice band -- Operator I logs yield and labor data accurately for the shift, at L1's checked scope."}
+      L2: {p: P1, sources: [dreyfus1980, horngren-costaccounting], why: "L2 holds EM-06's P1 depth -- Operator II is independent on their own station, but pointing out a waste or overtime driver is still tracking/reporting, short of P2's managing a budget with normal review."}
+      L3: {p: P2, sources: [dreyfus1980, horngren-costaccounting], why: "EM-06 P2 ('manages a team budget and standard vendor relationships with normal review') is Dreyfus's advanced-beginner band at L3's multiple-areas scope -- cutting a controllable cost on the floor unprompted, still within a set budget someone else owns."}
+      L4: {p: P3, sources: [dreyfus1980, horngren-costaccounting], why: "EM-06 P3 ('independently controls budgets under pressure and negotiates difficult vendor terms') is the Dreyfus competent band -- Lead Operator sets the yield and labor-efficiency standard the line runs to, IC terminal."}
+      L5: {p: P4, sources: [sfia9, horngren-costaccounting], why: "EM-06 P4 ('defines budget and vendor practices others adopt and rescues failing vendor relationships') is SFIA's Ensure/advise band -- Shift Supervisor formally manages the crew to its labor and cost targets, owning a real budget line for the first time."}
+      L6: {p: P5, sources: [sfia9, horngren-costaccounting], why: "EM-06 P5 ('sets org-wide budget and vendor strategy and anticipates cost and supplier risks') is SFIA's Initiate/influence band at L6's department scope -- driving a labor-variance improvement other areas adopt."}
+      L7: {p: P6, sources: [sfia9, horngren-costaccounting], why: "EM-06 P6 ('defines exemplary budget and vendor management for the field and influences practice') is SFIA's Set-strategy/inspire band -- accountable for the plant's operations P&L."}
+    evidence:
+      L1: "Logs yield and labor data accurately for the shift."
+      L2: "Points out a waste or overtime driver on their area."
+      L3: "Cuts a controllable cost on the floor unprompted."
+      L4: "Sets the yield and labor-efficiency standard the line runs to."
+      L5: "Manages the crew to its labor and cost targets."
+      L6: "Drives a labor-variance improvement other areas adopt."
+      L7: "Is accountable for the plant's operations P&L."

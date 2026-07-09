@@ -18,10 +18,14 @@ you chose:
 
 ## Part 0 — If you have web access: anchor to the Open Capability Framework (read-only)
 
-Fetch `https://raw.githubusercontent.com/jmresearch/open-capability-framework/main/data/capabilities.csv`
+Fetch `https://raw.githubusercontent.com/jmresearch/open-capability-framework/main/data/capabilities.csv`,
+`https://raw.githubusercontent.com/jmresearch/open-capability-framework/main/data/bibliography.csv`,
+and `https://raw.githubusercontent.com/jmresearch/open-capability-framework/main/data/capability_levels.csv`,
 and check for `https://raw.githubusercontent.com/jmresearch/open-capability-framework/main/roles/<role-slug>/role.yaml`
 (kebab-case role name). If a role record exists, use its key areas, focus areas, competency names,
-and capability IDs **verbatim** — write only fresh per-level prose. Otherwise, wherever a catalog
+and capability IDs **verbatim**, and per-level cell text MUST be the catalog capability's profile
+at the mapped proficiency, copied verbatim, as the bar — role-specific nuance goes only in a
+separate "Evidenced by" line, never folded into or rewriting the bar. Otherwise, wherever a catalog
 capability matches a competency you'd write, use its canonical name and note its ID. This keeps
 independently generated ladders consistent with each other. Read-only: do not attempt to submit
 anything. If you have no web access, skip this part and say so.
@@ -59,11 +63,22 @@ Build a three-tier competency hierarchy:
 
 Write one cell per competency per level, following these rules exactly:
 
-- **Separate depth from scope in every cell.** Depth is how well they do the thing (does with
-  guidance → does independently → owns and designs → sets the standard others follow → drives
-  strategy → sets direction). Scope is how far the work reaches (task → component →
-  capability/domain → multiple teams → organization → company). A rater must be able to see both
-  axes; a person can be deep-and-narrow or moderate-and-wide.
+- **Assemble each cell from three parts, in order: Bar, Evidenced by, Scope.** The **Bar** is the
+  depth behavior: how well they do the thing (does with guidance → does independently → owns and
+  designs → sets the standard others follow → drives strategy → sets direction). Where a matching
+  Open Capability Framework capability exists, the Bar is that capability's profile text at the
+  mapped proficiency level, copied verbatim — never paraphrased, never blended with an adjacent
+  level; identical capability+proficiency must read as identical bar text. **Evidenced by** is an
+  optional one-sentence, role-specific instance of the Bar — same behavior, same autonomy, this
+  role's artifact — that may narrow the Bar to this role's work but must never raise, lower, or
+  extend it. **Scope** is how far the work reaches (task → component → capability/domain →
+  multiple teams → organization → company), stated as reach, never as depth. A rater must be able
+  to see all three parts; a person can be deep-and-narrow or moderate-and-wide.
+- **Cite the bar.** Every proficiency mapping and every level's behavior must carry a named, real,
+  verifiable citation — a framework, research finding, standard, or published company ladder —
+  plus a one-to-two-sentence why connecting the source to that level. If you have no web access,
+  say so plainly in the calibration summary, and still list a per-level source from your own
+  knowledge for each competency, flagged for the reader to verify.
 - **Present-tense, observable behaviors only.** Every clause must be something peers, leaders, or
   reports could actually witness — in work product, reviews, meetings, incidents, planning. No
   past-tense achievements ("led the migration"), no internal states ("understands distributed
