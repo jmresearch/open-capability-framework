@@ -65,9 +65,9 @@ def test_renders_bar_verbatim_plus_evidence_and_scope(fixture_role):
     assert "Tuckman, Developmental Sequence in Small Groups" in md  # anchor + sources resolved
     rows = list(csv.reader(open(os.path.join(ROOT, "roles", fixture_role, "ladder.csv"))))
     skill = [r for r in rows if r and r[0] == "skill" and r[3] == "Onboarding & team formation"][0]
-    assert skill[5] == f"Depth: {bar} Evidenced by: New hire ships a real change in their first sprint. Scope: one team."
+    assert skill[5] == f"Depth: {bar}\n\nEvidenced by: New hire ships a real change in their first sprint.\n\nScope: one team."
     em14 = [r for r in rows if r and r[0] == "skill" and r[3] == "Delegation & empowerment"][0]
-    assert em14[5] == f"Depth: {catalog_bar('EM-14', 'P2')} Scope: one team."  # no evidence clause
+    assert em14[5] == f"Depth: {catalog_bar('EM-14', 'P2')}\n\nScope: one team."  # no evidence clause
 
 
 def test_generated_csv_passes_ladder_validator(fixture_role):
@@ -104,7 +104,7 @@ def test_renders_none_evidence_as_bar_and_scope_only(fixture_role):
     rows = list(csv.reader(open(os.path.join(ROOT, "roles", fixture_role, "ladder.csv"))))
     skill = [r for r in rows if r and r[0] == "skill" and r[3] == "Onboarding & team formation"][0]
     bar = catalog_bar("EM-13", "P2")
-    assert skill[5] == f"Depth: {bar} Scope: one team."
+    assert skill[5] == f"Depth: {bar}\n\nScope: one team."
 
 
 def test_xlsx_has_theory_columns_and_sources_tab(fixture_role, tmp_path):
