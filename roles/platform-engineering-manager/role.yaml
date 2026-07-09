@@ -21,7 +21,11 @@ scope_note: >
   under-produced but which is not platform-contingent. Every focus area spans 2+ competencies.
   Proficiency targets follow the manager curve, calibrated per competency against the Engineering
   Management and Platform Engineering canonical records for cross-ladder consistency (every shared
-  capability id carries the same M1-M6 curve as the Engineering Management record). One competency,
+  capability id carries the same M1-M6 curve as the Engineering Management record), with one sourced
+  exception: STRAT-01 maps M4 -> P4 here (not the EM record's pre-retrofit M4 -> P5) because a
+  sub-org-scoped strategy is the pattern-setting behavior STRAT-01 P4 describes, not P5's enterprise
+  register; EM's own STRAT-01 curve is still unsourced and due the same check when EM goes through
+  its own R3 retrofit. One competency,
   "Adoption & migration strategy," maps to OPS-33 (Platform adoption & deprecation management),
   accepted into the catalog from a proposal because no existing capability covered internal-platform
   adoption / migration / deprecation. R3 sourced-derivation retrofit (2026-07-09): every mapping now
@@ -158,7 +162,7 @@ competencies:
       M5: {p: P5, sources: [edmondson2018-fearless-org, google-rework-aristotle], why: "EM-03 P5 ('sets the org's team-health bar and mechanisms; safety practices they designed are adopted org-wide') matches VP-level ownership of the function's culture."}
       M6: {p: P6, sources: [edmondson2018-fearless-org, google-rework-aristotle], why: "EM-03 P6 ('shapes how the industry thinks about team health; published practices others implement') is Edmondson's research applied at the field-shaping register."}
     evidence:
-      M1: "Models admitting their own mistakes so engineers surface problems early instead of hiding them."
+      M1: "Keeps a tense incident retro blameless under real pressure so the team names the actual contributing cause instead of a scapegoat."
       M2: "Keeps a severe-outage review blameless so the real contributing causes come out."
       M3: "Instruments team-health signals across the domain and acts on a declining one before it becomes attrition."
       M4: "Turns around an unhealthy team's culture through the leader running it."
@@ -178,7 +182,7 @@ competencies:
       M5: {p: P5, sources: [deci-ryan2000-sdt, herzberg1968], why: "EM-17 P5 ('owns the engagement strategy for a function; conditions they designed show up in retention and survey trends') matches VP-level accountability for measured engagement outcomes."}
       M6: {p: P6, sources: [deci-ryan2000-sdt, herzberg1968], why: "EM-17 P6 ('advances the practice of engagement in the field; frameworks others cite and use') is self-determination theory applied at the field-advancing register."}
     evidence:
-      M1: "Spots a disengaging report early and re-engages them before they start looking."
+      M1: "Reads a dip across the whole platform team's morale during a demanding on-call stretch -- not just one person's -- and fixes the driving condition (load, visibility, toil) instead of one-off pep talks."
       M2: "Keeps regrettable attrition low on a critical platform team through a demanding period."
       M3: "Reads engagement signals across the domain and fixes a systemic driver of attrition, not just symptoms."
       M4: "Shifts a sub-org's engagement trend through the leaders who own each team."
@@ -276,8 +280,8 @@ competencies:
       M2: {p: P3, sources: [bottcher2018-platforms, sfia9], why: "OPS-27 P3 ('designs self-service workflows for ambiguous needs, reducing friction and resolving hard abstraction and adoption issues') is choosing the right abstraction level and guardrails for a high-stakes capability -- SFIA9 Level 4 Enable."}
       M3: {p: P4, sources: [bottcher2018-platforms, sfia9], why: "OPS-27 P4 ('defines platform architecture and golden paths others adopt, solving deep developer-experience and leverage problems') is the interface-contract pattern several platform teams now expose -- Director-level."}
       M4: {p: P4, sources: [bottcher2018-platforms, sfia9], why: "M4 keeps P4; Senior Director scope is the coherent self-service platform model a sub-org runs on, not a deeper interface behavior."}
-      M5: {p: P5, sources: [bottcher2018-platforms, sfia9], why: "OPS-27 P5 matches VP-level ownership of the self-service strategy and internal-developer-platform vision for the function."}
-      M6: {p: P6, sources: [bottcher2018-platforms, sfia9], why: "OPS-27 P6 is Bottcher's cognitive-load framing applied at the industry-referenced register for developer self-service."}
+      M5: {p: P5, sources: [bottcher2018-platforms, sfia9], why: "OPS-27 P5 ('sets organization-wide platform strategy, anticipating how developer-experience engineering should evolve') matches VP-level ownership of the self-service strategy and internal-developer-platform vision for the function -- the target that platform work is consumed without human intervention, distinct from Golden paths' standardization-versus-autonomy framing of the same P5 bar."}
+      M6: {p: P6, sources: [bottcher2018-platforms, sfia9], why: "OPS-27 P6 ('defines what excellent platform engineering means for the field') is Bottcher's cognitive-load framing applied at the industry-referenced register for developer self-service -- the interface/abstraction half of platform excellence, distinct from Golden paths' opinionated-path half of the same P6 bar."}
     evidence:
       M1: "Eliminates a manual request path by making it self-serve."
       M2: "Removes the team as a human bottleneck from a high-volume workflow."
@@ -333,14 +337,14 @@ competencies:
     anchor: sre2016
     anchor_why: "SLOs and error budgets turn reliability from opinion into an explicit, negotiable target"
     mappings:
-      M1: {p: P2, sources: [sre2016, sfia9], why: "OPS-04 P2 ('builds retries, timeouts and fallbacks; understands blast radius') is running one team's services on defined SLOs and reviewing budget burn, SFIA9 Level 3 -- the P3 accountability for setting SLOs across a domain is not yet expected."}
+      M1: {p: P2, sources: [sre2016, sfia9], why: "OPS-04 P2 ('builds retries, timeouts and fallbacks; understands blast radius') is the resilience-engineering half of this competency at first-line scope -- containing failure so one dependency's outage doesn't cascade, SFIA9 Level 3. The catalog's OPS-04 profile names SLOs explicitly at P1 and P3 but not at P2; error-budget policy work is the P3+ behavior, not this level's bar."}
       M2: {p: P3, sources: [sre2016, sfia9], why: "OPS-04 P3 ('designs for graceful degradation; defines SLOs; accountable for a domain's reliability') is designing the SLO and error-budget model with meaningful SLIs for a critical area -- exactly the SRE book's negotiated-target practice."}
       M3: {p: P4, sources: [sre2016, sfia9], why: "OPS-04 P4 ('expert in resilience and capacity planning at scale; drives down incidents systemically') is a reliability-target framework several teams run their services against -- Director-level."}
       M4: {p: P4, sources: [sre2016, sfia9], why: "M4 keeps P4; Senior Director scope is the reliability operating model a sub-org runs on, not a deeper SLO behavior."}
       M5: {p: P5, sources: [sre2016, sfia9], why: "OPS-04 P5 ('owns org-level reliability; fixes risk in process and org design') matches VP-level ownership of the function's explicit reliability-versus-velocity trade-off."}
       M6: {p: P6, sources: [sre2016, sfia9], why: "OPS-04 P6 ('sets the company's reliability philosophy') is the SRE book's error-budget discipline applied at the company-commitment register."}
     evidence:
-      M1: "Uses an error-budget breach to hold a release-versus-reliability trade-off honestly."
+      M1: "Adds a retry-with-backoff and a fallback path to a flaky downstream call so that dependency's failure doesn't cascade into the team's own service."
       M2: "Negotiates and enforces an error-budget policy that pauses feature work when reliability slips."
       M3: "Defines the reliability-target framework several teams now run their services against."
       M4: "Makes error-budget policy the mechanism the sub-org's prioritization respects."
@@ -699,8 +703,8 @@ competencies:
       M1: {p: P2, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "STRAT-01 P2 ('develops components of strategy and standard analyses independently with normal review') is framing one team's direction as Rumelt's diagnosis-plus-guiding-policy, not a goals list."}
       M2: {p: P3, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "STRAT-01 P3 ('frames ambiguous strategic problems and shapes coherent strategy autonomously; the go-to strategist') is formulating strategy for a critical area with a sharp diagnosis and honest trade-offs, unaided."}
       M3: {p: P4, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "STRAT-01 P4 ('defines strategy-formulation approaches others adopt; resolves the hardest strategic trade-offs') is a cross-team platform strategy others align to -- Director-level."}
-      M4: {p: P5, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "M4 steps up to P5 here, one level earlier than this ladder's usual M4:P4 plateau, because integrating multiple domains into one guiding policy that survives exec scrutiny (STRAT-01 P5: 'sets the enterprise strategic direction; anticipates major shifts') is a sub-org-wide strategy-setting act, not the pattern-adoption behavior P4 describes -- matching GitLab's Senior Director scope for platform strategy."}
-      M5: {p: P5, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "M5 holds the same P5 bar as M4; the VP differentiator is coupling the function's strategy to company strategy, not a deeper diagnosis behavior."}
+      M4: {p: P4, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "M4 keeps P4; a sub-org strategy integrating multiple domains into one guiding policy is still the pattern-setting behavior STRAT-01 P4 describes ('defines strategy-formulation approaches others adopt; resolves the hardest strategic trade-offs'), not yet P5's enterprise-wide direction-setting -- sub-org scope does not reach the enterprise register P5 requires, so this competency stays on the ladder's usual M4:P4 plateau."}
+      M5: {p: P5, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "STRAT-01 P5 ('sets the enterprise strategic direction; anticipates major shifts reshaping the competitive landscape') matches VP-level ownership of strategy that is genuinely enterprise-facing -- coupling the function's strategy to company strategy and defending it at the top table, a real step up from M4's sub-org-scoped pattern-setting, not a repeated bar."}
       M6: {p: P6, sources: [rumelt2011-good-strategy, gitlab-em-jd], why: "STRAT-01 P6 ('defines corporate-strategy practice recognized industry-wide; externally cited thought leader') is Rumelt's guiding-policy discipline applied at the org-wide, thesis-setting register."}
     evidence:
       M1: "Names the core problem the team's strategy actually addresses rather than listing goals."
@@ -888,7 +892,7 @@ competencies:
       M5: {p: P5, sources: [loehr-schwartz2003-full-engagement, gitlab-em-jd], why: "LI-10 P5 ('stewards organizational resilience -- capacity buffers, crisis rotation, energy management for senior leaders -- and holds the line when business pressure argues for permanent crunch') matches VP-level ownership."}
       M6: {p: P6, sources: [loehr-schwartz2003-full-engagement, gitlab-em-jd], why: "LI-10 P6 ('shapes a resilient, sustainable culture across an organization; the organization absorbs shocks without breaking people') is Loehr & Schwartz's energy-management thesis applied at the org-wide register."}
     evidence:
-      M1: "Protects the team's sustainable pace during an on-call-heavy stretch instead of normalizing heroics."
+      M1: "Logs off after a brutal on-call week and says so openly instead of powering through, and the team notices and starts doing the same."
       M2: "Absorbs the stress of a severe outage period and keeps the team functioning rather than fraying."
       M3: "Acts on a burnout signal across the domain before it becomes attrition, changing the load rather than the people."
       M4: "Reshapes on-call and workload across the sub-org so resilience does not depend on individual heroics."
