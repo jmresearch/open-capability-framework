@@ -3102,11 +3102,17 @@ Each capability has a stable anchor equal to its lowercased id (e.g. `#em-03`) s
 *Type:* Behavioral — Ramps new people to productivity fast and leads teams through formation stages — launches, merges, and resets — deliberately rather than enduring them.
 
 - **[P1 — Assisted](proficiency_scale.md#p1):** Follows an existing onboarding checklist for new hires; escalates ramp problems.
+  — *Why this level:* Executing someone else's onboarding checklist and escalating problems is Bauer's passive/compliance onboarding level — rule-following without adaptation, the Dreyfus novice band. *Sources:* Bauer, Onboarding New Employees: Maximizing Success, SHRM Foundation Effective Practice Guidelines (2010).
 - **[P2 — Independent](proficiency_scale.md#p2):** Runs a 30/60/90 onboarding with named buddies and early wins; new hires ship in their first weeks and say so in check-ins.
+  — *Why this level:* Independently running a structured 30/60/90 with buddies and early wins is Bauer's proactive-onboarding practice and Watkins' standard line-manager transition toolkit, applied to one team without needing design authority. *Sources:* Bauer, Onboarding New Employees: Maximizing Success, SHRM Foundation Effective Practice Guidelines (2010); Watkins, The First 90 Days (Harvard Business Review Press, 2003).
 - **[P3 — Proficient](proficiency_scale.md#p3):** Reads a team's formation stage and intervenes on it — resets norms after a merge, names storming in the room instead of managing it by email.
+  — *Why this level:* Reading a team's formation stage and intervening live (resetting norms post-merge, naming storming) is applying Tuckman's stage model to real group dynamics — situational judgment beyond procedure. *Sources:* Tuckman, Developmental Sequence in Small Groups, Psychological Bulletin 63(6), 384-399 (1965).
 - **[P4 — Expert](proficiency_scale.md#p4):** Builds the onboarding and team-launch playbook multiple teams use; teams start faster because of materials and rituals they created, and stands up whole new teams repeatedly.
+  — *Why this level:* Building the onboarding/team-launch playbook other teams adopt and repeatedly standing up new teams is codified, transferable expertise — the shift from doing to defining the approach. *Sources:* Tuckman, Developmental Sequence in Small Groups, Psychological Bulletin 63(6), 384-399 (1965); Skelton & Pais, Team Topologies (IT Revolution, 2019).
 - **[P5 — Authority](proficiency_scale.md#p5):** Designs how an organization absorbs step-change growth — acquisitions, new sites, doubled headcount — without culture dilution; integration plans carry named cultural mechanisms.
+  — *Why this level:* Designing how an organization absorbs step-change growth without culture dilution is acquisition-integration design per Haspeslagh & Jemison — organization-level authority over formation. *Sources:* Haspeslagh & Jemison, Managing Acquisitions: Creating Value Through Corporate Renewal (Free Press, 1991).
 - **[P6 — Pioneer](proficiency_scale.md#p6):** Makes team formation an organization-wide capability — new groups spin up predictably without heroics — and audits that the machinery still works.
+  — *Why this level:* Making team formation a predictable org-wide capability with audited machinery is defining the discipline's operating model across a company — pioneer-level practice shaping. *Sources:* Skelton & Pais, Team Topologies (IT Revolution, 2019).
 
 <a id="em-14"></a>
 ##### EM-14 — Delegation & empowerment
