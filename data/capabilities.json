@@ -7750,5 +7750,430 @@
       "P5": "Sets infrastructure-operations strategy, anticipating capacity, resilience, and platform shifts.",
       "P6": "Defines authoritative infrastructure-operations practice and shapes the discipline beyond the organization."
     }
+  },
+  {
+    "id": "FBM-01",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Thermal Process Control",
+    "capability": "Pasteurization & flow-diversion control",
+    "type": "Technical",
+    "description": "Operating and verifying the pasteurizer's flow-diversion and legal time/temperature control so only properly treated product advances.",
+    "levels": {
+      "P1": "Under direction, confirms the flow-diversion device holds forward flow only when temperature is above the cut-in set point and diverts below it; reads the diversion behavior off the recorder; and escalates any diversion that will not clear or any FDD anomaly to a lead.",
+      "P2": "Independently controls the flow-diversion function \u2014 confirms cut-in and cut-out act at the legal set points, verifies forward flow only above cut-in, and handles routine nuisance diversions and short stops so that only properly treated product advances.",
+      "P3": "Troubleshoots the common causes of nuisance diversion and failure-to-divert (sensor drift, low product level, restart transients), restores correct divert/forward behavior without compromising the treatment, and coaches operators on FDD behavior and the legal cut-in/cut-out set points.",
+      "P4": "Sets the local diversion-control standard \u2014 writes the diversion-response procedure others follow, defines the cut-in/cut-out set points and the FDD seal-and-wiring integrity checks at the machine \u2014 and is the person called when a diversion won't clear.",
+      "P5": "Governs flow-diversion control across the plant's thermal lines \u2014 owns the FDD test-and-seal regime, the cut-in/cut-out control standard, and the trending that drives out chronic diversions \u2014 and sets the competency bar for who is cleared to hold the kill step.",
+      "P6": "Defines flow-diversion-control practice adopted beyond the plant \u2014 advances how the divert/forward decision and legal cut-in/cut-out are controlled and safeguarded \u2014 and is a reference others in the industry adopt."
+    }
+  },
+  {
+    "id": "FBM-02",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Thermal Process Control",
+    "capability": "Thermal-process legal limits & records",
+    "type": "Behavioral",
+    "description": "Establishing and defending the legal thermal-process minima and the records that prove every batch met them.",
+    "levels": {
+      "P1": "Under direction, records the required time and temperature for the product being run against the posted legal minimum, files the charts and logs completely and legibly, and flags a record that does not show the process was met.",
+      "P2": "Independently confirms the running process against the correct legal minimum for each product, completes and reconciles the thermal-process records for a shift, and knows which reading proves the process and which does not.",
+      "P3": "Owns the thermal-process records for a line or area \u2014 verifies every batch's record shows the legal minimum was met, resolves gaps and discrepancies before they age, and coaches operators on why a specific time/temperature is the legal floor.",
+      "P4": "Establishes the documented scheduled thermal process and legal minima others run to \u2014 sets the record requirements, the review-of-records routine, and what constitutes a defensible batch record \u2014 and is the person who signs that a lot's process is proven.",
+      "P5": "Governs the thermal-process-authority program across the plant \u2014 owns the process filings and validations, the record-retention and review standard, and the escalation for a shorted process \u2014 and defends the minima and records to a regulator or auditor without gaps.",
+      "P6": "Sets thermal-process-legality practice others adopt \u2014 advances how legal minima are established, validated, and documented \u2014 and is a recognized authority whose recordkeeping standard is emulated."
+    }
+  },
+  {
+    "id": "FBM-03",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Food Safety Systems",
+    "capability": "HACCP plan & CCP monitoring",
+    "type": "Behavioral",
+    "description": "Building and running a HACCP plan \u2014 monitoring critical control points and executing corrective actions when limits are breached.",
+    "levels": {
+      "P1": "Under direction, monitors an assigned critical control point on schedule, records the reading against its critical limit, and immediately notifies a lead and holds product when a limit is exceeded.",
+      "P2": "Independently monitors the critical control points for a line across a shift, recognizes a deviation as it happens, initiates the documented corrective action, and completes the monitoring and corrective-action records.",
+      "P3": "Owns CCP monitoring for an area \u2014 verifies monitoring is happening as written, investigates the cause of a deviation, coaches operators on critical limits and corrective actions, and handles the non-routine deviation without a supervisor.",
+      "P4": "Builds the HACCP plan for a process \u2014 conducts the hazard analysis, determines the CCPs and critical limits, writes the monitoring and corrective-action procedures others follow, and leads reassessment when the process changes.",
+      "P5": "Governs the HACCP program across the plant \u2014 leads the HACCP team, owns validation of critical limits, the verification and reassessment schedule, and the record-review discipline \u2014 and drives systemic corrective action from deviation trends.",
+      "P6": "Advances HACCP practice beyond the plant \u2014 shapes how hazard analysis and CCP determination are done \u2014 and is a recognized authority whose plans and methods others adopt."
+    }
+  },
+  {
+    "id": "FBM-04",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Food Safety Systems",
+    "capability": "Preventive controls & PCQI oversight",
+    "type": "Behavioral",
+    "description": "Owning the food-safety plan's preventive controls and the PCQI-level validation, verification, and reanalysis it requires.",
+    "levels": {
+      "P1": "Under direction, carries out an assigned preventive-control monitoring or verification task (a records review, a sanitation verification), records it, and reports the finding to the qualified individual.",
+      "P2": "Independently performs the monitoring and verification activities the food-safety plan assigns for a shift or area, completes the records, and recognizes when a preventive control is out of control.",
+      "P3": "Owns execution of the preventive controls for an area \u2014 verifies monitoring and corrective actions are done and documented, runs the routine verification activities, and coaches others on what each preventive control is protecting against.",
+      "P4": "Serves as a preventive-controls qualified individual for a process \u2014 writes and owns the food-safety plan, validates the preventive controls, and defines the verification and corrective-action procedures others follow.",
+      "P5": "Governs the preventive-controls program plant-wide \u2014 owns the food-safety plan suite, the validation and verification schedule, and the supplier and supply-chain controls \u2014 and leads reanalysis on the required cadence and after any change or failure.",
+      "P6": "Advances preventive-controls practice beyond the plant \u2014 shapes how food-safety plans are built, validated, and reanalyzed \u2014 and is a recognized qualified authority whose approach others adopt."
+    }
+  },
+  {
+    "id": "FBM-05",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Contamination Control",
+    "capability": "Environmental monitoring & pathogen control",
+    "type": "Technical",
+    "description": "Running an environmental monitoring program with hygienic zoning to find and control Listeria and other pathogens before they reach product.",
+    "levels": {
+      "P1": "Under direction, collects environmental swabs at the assigned sites and zones using correct technique, labels and handles samples to preserve integrity, and records the sampling.",
+      "P2": "Independently executes the environmental sampling plan for an area across a shift \u2014 samples the right zones and sites, maintains zone separation and aseptic technique, and flags a presumptive positive up the chain.",
+      "P3": "Owns environmental monitoring for an area \u2014 interprets results and trends, drives the vectoring and seek-and-destroy response and intensified sampling on a positive, and coaches operators on hygienic zoning and traffic control.",
+      "P4": "Designs the environmental monitoring program for a process \u2014 sets the sites, zones, frequencies, and target organisms, defines the corrective-sanitation and investigation procedure others follow, and leads root-cause on a persistent finding.",
+      "P5": "Governs environmental pathogen control plant-wide \u2014 owns the zoning scheme, the program design and its statistical basis, and the escalation and hold criteria \u2014 and drives harborage elimination from trend data.",
+      "P6": "Advances environmental-pathogen-control practice beyond the plant \u2014 shapes how zoning, monitoring, and seek-and-destroy are done \u2014 and is a recognized authority whose program design others adopt."
+    }
+  },
+  {
+    "id": "FBM-06",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Contamination Control",
+    "capability": "Allergen control & changeover",
+    "type": "Behavioral",
+    "description": "Preventing allergen cross-contact through segregation, validated changeover cleaning, and labeling control.",
+    "levels": {
+      "P1": "Under direction, follows the allergen-changeover checklist, performs the segregation and cleaning steps, verifies the correct label and packaging are staged for the product, and records the changeover.",
+      "P2": "Independently executes allergen changeovers across a shift \u2014 sequences production correctly, performs and confirms the changeover cleaning, checks labels against the product, and recognizes a cross-contact or mislabel risk.",
+      "P3": "Owns allergen control for a line or area \u2014 verifies changeover effectiveness with the required visual or analytical checks, investigates a suspected cross-contact, and coaches operators on segregation, sequencing, and label control.",
+      "P4": "Sets the allergen-control standard for a process \u2014 defines the segregation, changeover, and validation procedures others follow, validates changeover cleaning, and owns label and packaging control for that area.",
+      "P5": "Governs the allergen program plant-wide \u2014 owns the allergen matrix, production sequencing, the changeover-validation regime, supplier allergen controls, and label-approval discipline \u2014 and drives improvement from incidents and near-misses.",
+      "P6": "Advances allergen-control practice beyond the plant \u2014 shapes how segregation, changeover validation, and labeling control are done \u2014 and is a recognized authority whose program others adopt."
+    }
+  },
+  {
+    "id": "FBM-07",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Regulatory & Audit Readiness",
+    "capability": "PMO & Grade A regulatory recordkeeping",
+    "type": "Behavioral",
+    "description": "Maintaining Grade A permit standing and the PMO records, charts, and inspections that keep the plant legal to ship.",
+    "levels": {
+      "P1": "Under direction, completes and files the ordinance-required permit and inspection records for the task (CIP records, seal logs, self-inspection checklists) legibly and completely, and flags a missing or non-conforming record.",
+      "P2": "Independently maintains the PMO records for a shift or area \u2014 reconciles charts and logs, ensures the required entries are complete and retained, and recognizes a record that would not stand up to inspection.",
+      "P3": "Owns PMO recordkeeping for an area \u2014 verifies records against the ordinance requirements, prepares for and walks a routine inspection, resolves record gaps, and coaches others on what the ordinance requires and why.",
+      "P4": "Sets the PMO-compliance standard for the plant's records \u2014 defines the recordkeeping, charting, and self-inspection procedures others follow \u2014 and interprets the ordinance requirements for the floor.",
+      "P5": "Governs Grade A regulatory standing plant-wide \u2014 owns the relationship with the regulatory authority, the permit and rating, and the record and inspection system \u2014 and drives corrective action to hold the debit score and shipping status.",
+      "P6": "Advances PMO / Grade A compliance practice beyond the plant \u2014 shapes how ordinance compliance and records are maintained \u2014 and is a recognized authority in ordinance interpretation and rating whose approach others adopt."
+    }
+  },
+  {
+    "id": "FBM-08",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Regulatory & Audit Readiness",
+    "capability": "GFSI audit & certification readiness",
+    "type": "Behavioral",
+    "description": "Keeping the plant continuously ready for GFSI-scheme (SQF/BRCGS/FSSC 22000) and regulatory audits and closing findings.",
+    "levels": {
+      "P1": "Under direction, gathers the records and evidence requested for an audit element, keeps assigned documents current and retrievable, and reports a gap to the program owner.",
+      "P2": "Independently keeps an area audit-ready \u2014 maintains the required documentation and evidence for a shift or area, participates in a walkthrough, and answers auditor questions about own work accurately.",
+      "P3": "Owns audit readiness for an area against the certification scheme \u2014 self-assesses against the standard, prepares the area and its people for audit, closes routine findings with documented corrective action, and coaches on the requirements.",
+      "P4": "Sets the audit-readiness standard for a process or site element \u2014 interprets the GFSI-scheme requirements into procedures others follow, leads the internal-audit and mock-audit routine, and owns root-cause and closure of findings.",
+      "P5": "Governs the certification program plant-wide \u2014 owns the scheme certification, the management-review and internal-audit system, and hosts the certification-body audit \u2014 and drives continuous readiness and systemic closure of findings.",
+      "P6": "Advances food-safety-certification practice beyond the plant \u2014 shapes how GFSI-scheme readiness and auditing are done \u2014 and is a recognized authority, as auditor or trainer, whose approach others adopt."
+    }
+  },
+  {
+    "id": "FBM-09",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Regulatory & Audit Readiness",
+    "capability": "GMP & personnel hygiene",
+    "type": "Behavioral",
+    "description": "Enforcing current good manufacturing practices and personnel-hygiene behaviors that keep the production environment sanitary.",
+    "levels": {
+      "P1": "Under direction, follows the GMP and personnel-hygiene rules \u2014 handwashing, garment and hairnet, jewelry, glove, and traffic rules \u2014 and reports own or others' lapses.",
+      "P2": "Independently practices and models GMPs across a shift, recognizes a hygiene or GMP lapse on the floor as it happens, corrects it, and completes any required hygiene checks and records.",
+      "P3": "Owns GMP conformance for an area \u2014 conducts GMP checks, corrects and coaches on hygiene behaviors, investigates recurring lapses, and holds visitors and contractors to the standard.",
+      "P4": "Sets the GMP and hygiene standard for a process \u2014 defines the practices, checks, and training others follow \u2014 and leads the GMP self-inspection routine for the area.",
+      "P5": "Governs the GMP and personnel-hygiene program plant-wide \u2014 owns the standards, training, and audit of GMP conformance \u2014 and drives a hygiene culture from inspection and incident trends.",
+      "P6": "Advances GMP and hygiene practice beyond the plant \u2014 shapes how good manufacturing practice and hygiene culture are built and enforced \u2014 and is a recognized authority whose approach others adopt."
+    }
+  },
+  {
+    "id": "FBM-10",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Raw Material Handling",
+    "capability": "Raw milk receiving & grading",
+    "type": "Technical",
+    "description": "Screens, samples, grades, and accepts or rejects incoming raw milk against temperature, drug-residue, sensory, and load-integrity criteria so only conforming raw material enters the process.",
+    "levels": {
+      "P1": "Follows the receiving checklist under a lead's direction \u2014 takes the load temperature, pulls the required sample, records the tanker seal and hauler paperwork, and flags anything out of range instead of unloading.",
+      "P2": "Runs receiving independently across a shift \u2014 reads temperature, sensory (odor/appearance), and antibiotic-screen results, accepts conforming loads, and rejects or holds off-spec milk against the standing acceptance criteria.",
+      "P3": "Troubleshoots disputed loads for the bay \u2014 resolves ambiguous drug-residue screens with a confirmatory test, judges borderline sensory and temperature calls, traces a rejected load back to source, and coaches new receivers on sampling technique.",
+      "P4": "Sets the receiving and grading procedure the bay follows \u2014 writes the acceptance criteria, sampling plan, and reject/hold decision rules, and calibrates the drug-residue and temperature testing so grading calls are consistent across every operator and shift.",
+      "P5": "Governs the raw-milk quality program for the department \u2014 owns supplier/hauler quality standards and drug-residue monitoring, sets acceptance policy, drives quality feedback to producers, and defends the receiving records in a PMO/Grade A inspection.",
+      "P6": "Sets raw-milk acceptance and grading practice beyond the plant \u2014 defines grading and residue-screening methods other sites adopt and represents the practice in industry and regulatory forums."
+    }
+  },
+  {
+    "id": "FBM-11",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Raw Material Handling",
+    "capability": "Separation & standardization",
+    "type": "Technical",
+    "description": "Operates separators and standardizes fat and solids to target through separation and blending control so every stream meets its compositional specification.",
+    "levels": {
+      "P1": "Starts, feeds, and shuts down the separator on the checklist under direction; records cream and skim readings and the standardization target, and calls for help when a reading drifts off target.",
+      "P2": "Runs separation and standardization independently across a shift \u2014 sets and holds the fat/solids target by adjusting separation and blend ratios, and verifies the finished stream to spec by test.",
+      "P3": "Troubleshoots the separator and standardization loop for the line \u2014 corrects poor separation efficiency, off-target fat, and desludge/backpressure problems, reconciles component mass balance, and coaches operators on holding target through feed swings.",
+      "P4": "Sets the standardization procedure and targets the line follows \u2014 defines the blend calculations, control limits, and verification testing, and dials in separator setup so fat/solids and yield hold consistently across products and operators.",
+      "P5": "Governs standardization and component recovery for the department \u2014 sets the fat/solids specifications and yield/loss targets, drives improvement in separation efficiency and giveaway, and owns the mass-balance accountability.",
+      "P6": "Defines separation and standardization practice beyond the plant \u2014 sets component-control and yield methods other sites adopt and advances the practice in industry forums."
+    }
+  },
+  {
+    "id": "FBM-12",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Processing",
+    "capability": "Thermal processing operation (HTST/HHST/UHT)",
+    "type": "Technical",
+    "description": "Runs continuous thermal-processing systems (HTST/HHST/UHT) through startup, run, and changeover to hit product quality and legal treatment targets at production rate.",
+    "levels": {
+      "P1": "Follows the startup, run, and shutdown checklist on the thermal system under direction \u2014 verifies the unit reaches temperature, watches the recording chart and flow, and reports a temperature or flow deviation to the lead rather than continuing to run.",
+      "P2": "Operates the HTST/HHST/UHT system independently across a shift \u2014 brings it through water-to-product startup and product-to-water shutdown, holds temperature and flow at target through the run, and manages regeneration and normal changeovers to spec.",
+      "P3": "Troubleshoots the thermal system for the line \u2014 clears fouling and burn-on and regeneration and pressure-balance faults \u2014 recovers the system to production after an upset or stop, and coaches operators through startup and aseptic/sterile handling.",
+      "P4": "Sets the operating procedure the line runs to \u2014 defines the startup/shutdown sequence, run parameters, changeover and run-length limits, and (for UHT/aseptic) the sterility-hold and integrity requirements \u2014 so the system runs to product-quality spec at production rate.",
+      "P5": "Governs continuous thermal processing for the department \u2014 owns the operating standards and run-length/fouling economics across products and systems, and drives throughput and first-pass-yield improvement across the thermal lines.",
+      "P6": "Defines continuous thermal-processing practice beyond the plant \u2014 sets operating and aseptic-integrity methods other sites adopt and advances them in industry and technical forums."
+    }
+  },
+  {
+    "id": "FBM-13",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Processing",
+    "capability": "Homogenization & product finishing",
+    "type": "Technical",
+    "description": "Operates homogenizers and finishing steps to achieve product structure, texture, and stability targets.",
+    "levels": {
+      "P1": "Runs the homogenizer on the checklist under direction \u2014 sets the stage pressures to the sheet, monitors pressure and temperature, and reports abnormal pressure or noise instead of continuing.",
+      "P2": "Operates homogenization and finishing independently across a shift \u2014 sets and holds stage pressures for the product, verifies the finished result (fat dispersion/particle target, texture, stability) by the standard check, and manages normal product changes.",
+      "P3": "Troubleshoots the homogenizer and finishing steps for the line \u2014 diagnoses pressure loss, valve/seat wear, cavitation, and off-target texture or separation, restores product structure to spec, and coaches operators on holding the finish through variation.",
+      "P4": "Sets the homogenization and finishing procedure the line follows \u2014 defines the pressure/temperature setpoints and verification tests per product that deliver the structure, texture, and stability targets, and standardizes the setup across operators and shifts.",
+      "P5": "Governs product structure and finishing for the department \u2014 owns the finishing specifications and stability targets, drives improvement in consistency, energy, and rework, and qualifies changes to homogenization for new or reformulated products.",
+      "P6": "Defines homogenization and product-finishing practice beyond the plant \u2014 sets structure/stability methods other sites adopt and advances the practice in industry forums."
+    }
+  },
+  {
+    "id": "FBM-14",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Packaging & Cold Chain",
+    "capability": "Filling & packaging operation",
+    "type": "Technical",
+    "description": "Runs hygienic filling and packaging lines to seal-integrity, fill-weight, date-code, and sanitation targets.",
+    "levels": {
+      "P1": "Runs the filling/packaging line on the checklist under direction \u2014 loads material, monitors fill and date-code, pulls the routine seal and fill-weight checks, and stops the line and calls the lead on a seal, code, or fill fault.",
+      "P2": "Operates the filling and packaging line independently across a shift \u2014 holds fill weight, seal integrity, and date/lot coding to spec, performs and records the in-process seal and weight checks, and manages normal size/format changeovers and the associated sanitation.",
+      "P3": "Troubleshoots the filling and packaging line for the area \u2014 corrects seal-integrity, fill-weight-variation, coding, and hygienic-fault problems, recovers the line after a jam or contamination event, and coaches operators through changeover and check discipline.",
+      "P4": "Sets the filling and packaging procedure the line follows \u2014 defines the fill-weight and seal-integrity control limits, check frequencies, changeover/sanitation steps, and date-code verification others run to, and dials in the line so quality holds across formats and operators.",
+      "P5": "Governs filling and packaging for the department \u2014 owns seal-integrity, fill-weight (net-content compliance), coding accuracy, and line-sanitation standards, drives OEE and giveaway/rejection improvement, and defends packaging records in audits.",
+      "P6": "Defines hygienic filling and packaging practice beyond the plant \u2014 sets seal-integrity and net-content methods other sites adopt and advances the practice in industry forums."
+    }
+  },
+  {
+    "id": "FBM-15",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Packaging & Cold Chain",
+    "capability": "Cold chain & finished-goods integrity",
+    "type": "Technical",
+    "description": "Protects finished-product temperature and integrity from fill through cold storage and dispatch so product ships within its cold-chain and shelf-life requirements.",
+    "levels": {
+      "P1": "Follows the cold-chain checklist under direction \u2014 records cooler and product temperatures, checks that finished goods move promptly into refrigerated storage, and reports an out-of-range temperature or damaged pallet instead of shipping it.",
+      "P2": "Manages finished-goods cold chain independently across a shift \u2014 monitors storage and load-out temperatures, enforces stock rotation and hold/release, verifies trailer pre-cool and load integrity at dispatch, and holds product that breaks temperature.",
+      "P3": "Troubleshoots cold-chain and finished-goods integrity for the area \u2014 resolves temperature-excursion, rotation, and load-integrity problems, dispositions affected product, traces the cause of a cold-chain break, and coaches on load-out and hold/release discipline.",
+      "P4": "Sets the cold-chain and finished-goods procedure the area follows \u2014 defines the temperature limits, monitoring points, rotation/FEFO rules, and excursion-disposition criteria from fill through dispatch that others run to.",
+      "P5": "Governs finished-goods cold-chain integrity for the department \u2014 owns the temperature-control and traceability standards from production to shipping, drives shelf-life and shrink/excursion improvement, and defends cold-chain records in audits and customer/regulatory review.",
+      "P6": "Defines finished-goods cold-chain practice beyond the plant \u2014 sets temperature-integrity and traceability methods other sites adopt and advances the practice in industry forums."
+    }
+  },
+  {
+    "id": "FBM-16",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Sanitation",
+    "capability": "CIP cycle execution & verification",
+    "type": "Technical",
+    "description": "Executes and verifies clean-in-place cycles against time, temperature, concentration, and flow so process equipment is provably clean before it holds product again.",
+    "levels": {
+      "P1": "Runs the CIP cycle on the checklist under direction \u2014 selects the correct circuit/recipe, confirms the cycle steps run, records the time/temperature/concentration readings, and reports a short cycle or missed parameter to the lead.",
+      "P2": "Executes and verifies CIP independently across a shift \u2014 runs the right circuit, confirms wash time, temperature, chemical concentration, and return flow/coverage met the recipe, and re-cleans or holds equipment when a parameter fails.",
+      "P3": "Troubleshoots CIP for the area \u2014 diagnoses low flow/coverage, temperature or concentration shortfalls, air pockets, and burst-sequence faults, proves cleaning by the verification standard (ATP/visual/rinse), recovers a failed circuit, and coaches operators on CIP verification.",
+      "P4": "Sets the CIP procedure and acceptance criteria the area follows \u2014 defines the circuit recipes, the cycle time, temperature, and flow/coverage parameters, and the verification method and limits that prove each circuit clean; takes the chemical-concentration target from the cleaning-chemistry standard (owned by titration control) rather than setting it, and validates that the cycle actually removes the soil.",
+      "P5": "Governs the CIP program for the department \u2014 owns the cleaning validation and verification standards across circuits, drives improvement in cleaning reliability, water/chemical/energy use, and cycle time, and defends CIP validation and records in audits.",
+      "P6": "Defines CIP execution and verification practice beyond the plant \u2014 sets cleaning-validation and verification methods other sites adopt and advances the practice in industry forums."
+    }
+  },
+  {
+    "id": "FBM-17",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Sanitation",
+    "capability": "Cleaning chemistry & titration control",
+    "type": "Technical",
+    "description": "Controls cleaning-chemical concentration by titration and matches chemistry, temperature, and contact time to the soil so cleaning is effective and repeatable.",
+    "levels": {
+      "P1": "Performs the titration on the checklist under direction \u2014 draws the sample, runs the titration to endpoint, records the concentration, and reports an out-of-range result rather than releasing the solution.",
+      "P2": "Controls cleaning-chemical concentration independently across a shift \u2014 titrates wash and sanitizer solutions, adjusts to the target concentration, and matches chemistry, temperature, and contact time to the standard cleaning task.",
+      "P3": "Troubleshoots cleaning chemistry for the area \u2014 diagnoses why a soil isn't clearing, adjusts chemistry, temperature, and contact time to the soil (protein, mineral, fat, biofilm), corrects drifting titrations and dosing faults, and coaches operators on titration technique.",
+      "P4": "Sets the cleaning-chemistry procedure and concentration limits the area follows \u2014 defines the chemical selection, target concentrations, titration methods, and time/temperature parameters matched to each soil that others run to, and qualifies changes to chemistry.",
+      "P5": "Governs cleaning chemistry for the department \u2014 owns the chemical program and concentration/titration standards, drives improvement in cleaning effectiveness, chemical cost, and safety, and defends chemical-control and handling records in audits.",
+      "P6": "Defines cleaning-chemistry and titration-control practice beyond the plant \u2014 sets soil-matched chemistry and concentration-verification methods other sites adopt and advances the practice in industry forums."
+    }
+  },
+  {
+    "id": "FBM-18",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Sanitation",
+    "capability": "COP & manual sanitation",
+    "type": "Technical",
+    "description": "Cleans parts and open surfaces by clean-out-of-place and manual sanitation to a verified hygienic standard.",
+    "levels": {
+      "P1": "Cleans parts and open surfaces on the checklist under direction \u2014 disassembles, runs the COP wash/sanitize steps or manual clean, and reports a part that won't come clean rather than reassembling it.",
+      "P2": "Performs COP and manual sanitation independently across a shift \u2014 cleans disassembled parts and open equipment to the standard, verifies the result (visual/ATP), and reassembles and sanitizes for use.",
+      "P3": "Troubleshoots manual and COP sanitation for the area \u2014 resolves parts that won't clean, COP-tank time/temperature/concentration problems, and reassembly or re-contamination issues, proves the hygienic result, and coaches operators on disassembly and sanitation technique.",
+      "P4": "Sets the COP and manual-sanitation procedure the area follows \u2014 defines the disassembly, wash/sanitize steps, contact times, and verification acceptance criteria for parts and open surfaces that others run to.",
+      "P5": "Governs the COP and manual-sanitation program for the department \u2014 owns the sanitation standards and verification for non-CIP equipment, drives improvement in cleaning reliability and labor, and defends manual-sanitation records in audits.",
+      "P6": "Defines COP and manual-sanitation practice beyond the plant \u2014 sets manual-cleaning and verification methods other sites adopt and advances the practice in industry forums."
+    }
+  },
+  {
+    "id": "FBM-19",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Sanitation",
+    "capability": "Hygienic design & 3-A conformance",
+    "type": "Technical",
+    "description": "Applies hygienic (3-A/EHEDG) design and installation principles so equipment is cleanable, drainable, and does not harbor pathogens.",
+    "levels": {
+      "P1": "Checks equipment against a hygienic-design checklist under direction \u2014 identifies obvious cleanability problems (dead legs, rough welds, non-drainable low points, unsealed threads) and flags them rather than signing off.",
+      "P2": "Applies hygienic-design principles independently on routine work \u2014 installs and reassembles equipment to drain and self-clean, selects food-contact-legal materials and gaskets, and checks fittings and welds against the hygienic standard before returning to service.",
+      "P3": "Troubleshoots cleanability and harborage for the area \u2014 finds why a spot won't clean or a niche harbors organisms, corrects dead legs, cross-contamination points, and poor drainage, and coaches on hygienic installation and reassembly.",
+      "P4": "Sets the hygienic-design and installation standard the area follows \u2014 specifies the 3-A/EHEDG conformance, material, finish, drainage, and cleanability requirements new and modified equipment must meet, and reviews installations against them before start-up.",
+      "P5": "Governs hygienic design for the department \u2014 owns the equipment-design and acceptance standards, drives out harborage and cleanability defects across the process, and defends hygienic-design conformance in audits and equipment procurement.",
+      "P6": "Defines hygienic-design practice beyond the plant \u2014 sets cleanability and 3-A/EHEDG conformance methods other sites adopt and advances the practice in standards and industry forums."
+    }
+  },
+  {
+    "id": "FBM-20",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Plant Utilities",
+    "capability": "Ammonia / CO2 refrigeration operation",
+    "type": "Technical",
+    "description": "Operating industrial ammonia (or CO2) refrigeration safely and efficiently to hold process and storage temperatures within the limits the product and food-safety plan require.",
+    "levels": {
+      "P1": "Reads suction/discharge pressures, temperatures, and oil levels off the machine and logs them on the operator round; starts and stops a compressor and switches defrost under direction, and calls a qualified operator on any alarm or unusual reading.",
+      "P2": "Runs the refrigeration plant across a shift on their own \u2014 sequences compressors to load, manages defrost and condenser water, watches suction pressure against the setpoint that protects product temperature, and responds to routine high-discharge, low-suction, and oil-level alarms without escalation.",
+      "P3": "Troubleshoots the system when temperatures drift \u2014 diagnoses a fouled condenser, flooded evaporator, non-condensable buildup, or failing compressor from the readings \u2014 trims charge, oil, and purge to hold setpoint efficiently, and coaches shift operators through the plant's normal and abnormal operating states.",
+      "P4": "Sets the operating procedures and setpoints others run to \u2014 the compressor-sequencing, defrost, purge, and oil-management practice for the plant's areas \u2014 tunes the system for energy against a cold-storage and process temperature target, and is the operator called when the plant will not hold temperature.",
+      "P5": "Governs refrigeration operation across the plant \u2014 the operating envelope, operator qualification, and the reliability and efficiency program for the system \u2014 and drives capacity, energy, and charge-reduction improvements defensible against the IIAR standard and the plant's process-safety obligations.",
+      "P6": "Sets refrigeration operating practice beyond the plant \u2014 the design-to-operate standards, charge-minimization or CO2/low-charge approaches, and operator-competency models other sites and the industry adopt."
+    }
+  },
+  {
+    "id": "FBM-21",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Plant Utilities",
+    "capability": "Boiler & steam system operation",
+    "type": "Technical",
+    "description": "Operating boilers and the steam/condensate system safely and efficiently to supply the plant's thermal demand \u2014 process heat, culinary steam, hot water, and CIP \u2014 at pressure and quality.",
+    "levels": {
+      "P1": "Records boiler pressure, water level, stack, and feedwater readings on the operator round, performs the directed blowdown and water test, and reports low-water, flame-failure, or pressure alarms to a qualified operator rather than acting alone.",
+      "P2": "Runs the boiler and steam system across a shift independently \u2014 brings a boiler up and off line, holds header pressure to demand, manages feedwater, blowdown, and chemical dosing to the treatment targets, and clears routine burner and level trips safely.",
+      "P3": "Troubleshoots the steam system \u2014 diagnoses carryover, failing traps, water-hammer, poor combustion, or feedwater-chemistry excursions \u2014 restores steam quality and pressure, and coaches operators on safe firing, low-water response, and where culinary-steam requirements apply.",
+      "P4": "Sets the boiler operating procedures, water-treatment limits, and steam-quality practice others follow, tunes combustion and condensate return for efficiency against the plant's thermal load, and is the operator called when steam supply or quality is at risk.",
+      "P5": "Governs boiler and steam operation plant-wide \u2014 the operating envelope, water-treatment program, operator qualification, and jurisdictional-inspection readiness \u2014 and drives fuel-efficiency, condensate-recovery, and reliability improvements across the utility.",
+      "P6": "Sets steam-plant operating and efficiency practice beyond the site \u2014 heat-recovery, decarbonization, and operator-competency standards other plants and the industry adopt."
+    }
+  },
+  {
+    "id": "FBM-22",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Reliability",
+    "capability": "Equipment troubleshooting & breakdown recovery",
+    "type": "Technical",
+    "description": "Diagnosing faults and recovering process equipment from breakdown to restore production quickly and hygienically, and preventing the fault from recurring.",
+    "levels": {
+      "P1": "Recognizes when a machine is running abnormally and isolates and locks it out under direction; when it fails mid-run, holds the affected in-process product and confirms the opened food-contact surfaces are re-sanitized before the line is restarted.",
+      "P2": "Recovers the common breakdowns on their line within the food-safety window \u2014 sequences the repair, re-sanitizes the food-contact path the repair opened, and returns the line to production hygienically \u2014 and decides when the fault has put in-process product at risk and it must be held rather than run on.",
+      "P3": "Runs the breakdown recovery on the hard faults against the production and food-safety clock \u2014 sets the re-sanitation and hygienic-restart path once a food-contact system has been opened, makes the product-disposition call on the batch the failure exposed, and coaches operators on recovering a line without compromising the food safety of what restarts.",
+      "P4": "Sets the breakdown-recovery-under-food-safety practice others follow \u2014 the hygienic-restart and re-sanitation-after-repair steps, the product-disposition rules for a breakdown, and the recovery targets against the production clock \u2014 and is the person called when a critical machine is down and product is at risk.",
+      "P5": "Governs breakdown-recovery practice across the plant where it couples to food safety \u2014 the standard for hygienic restart, re-sanitation-after-repair, and product disposition on a breakdown \u2014 and drives mean-time-to-restore against the food-safety and production clock across areas.",
+      "P6": "Sets food-plant rapid-recovery practice beyond the site \u2014 the hygienic-restart, re-sanitation, and breakdown-disposition standards, and the design-for-hygienic-recoverability methods other food plants and the industry adopt."
+    }
+  },
+  {
+    "id": "FBM-23",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Plant Utilities",
+    "capability": "Wastewater & effluent compliance",
+    "type": "Technical",
+    "description": "Operating pretreatment and effluent systems so plant discharge stays within permit limits (Clean Water Act / NPDES or the local pretreatment authority), including the sampling and reporting that prove it.",
+    "levels": {
+      "P1": "Reads and logs pH, flow, and level on the effluent system, pulls the routine composite or grab sample as directed, doses chemical to setpoint, and reports an out-of-range pH or an upset to a qualified operator.",
+      "P2": "Runs the pretreatment system across a shift independently \u2014 manages equalization, pH correction, fat/solids removal (e.g. DAF), and chemical dosing to hold effluent within permit \u2014 and takes, preserves, and records the self-monitoring samples correctly.",
+      "P3": "Troubleshoots the effluent train when a parameter drifts toward the limit \u2014 traces a BOD, FOG, TSS, or pH excursion back to a plant-side source such as a product dump or CIP slug, corrects it, and coaches operators on load-smoothing and sampling discipline.",
+      "P4": "Sets the operating procedures, dosing, and sampling practice for the effluent system, manages the plant to stay inside its permit envelope, and owns the accuracy and completeness of the discharge-monitoring records an inspector will read.",
+      "P5": "Governs wastewater compliance plant-wide \u2014 the permit relationship, source-reduction and load-management program, and the monitoring-and-reporting system \u2014 and drives the improvements that cut discharge strength, surcharge cost, and permit risk.",
+      "P6": "Sets effluent-management practice beyond the site \u2014 source-reduction, water-reuse, and resource-recovery approaches and the compliance-operations standards other plants and the industry adopt."
+    }
+  },
+  {
+    "id": "FBM-24",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Process Safety",
+    "capability": "Process safety management (PSM/RMP)",
+    "type": "Behavioral",
+    "description": "Running the OSHA Process Safety Management and EPA Risk Management Program elements for a highly hazardous process (anhydrous ammonia) \u2014 process hazard analyses, mechanical integrity, management of change, operating procedures, and the rest of the covered-process program.",
+    "levels": {
+      "P1": "Follows the covered-process operating procedures as written, completes their part of PSM tasks under direction \u2014 operator training sign-off, a mechanical-integrity check, reporting a change rather than making it silently \u2014 and knows the process is PSM-covered and why.",
+      "P2": "Executes their PSM responsibilities independently \u2014 runs to the operating procedures, completes mechanical-integrity inspections and tests on schedule, raises a management-of-change when conditions change, and contributes operating knowledge to a process hazard analysis.",
+      "P3": "Owns PSM elements for the process \u2014 keeps operating procedures current and validated, leads or drives closure of PHA and incident-investigation action items, administers MOC so changes are reviewed before they happen, and coaches operators on why the program exists.",
+      "P4": "Sets the plant's PSM practice for the covered process \u2014 the PHA schedule and methodology, mechanical-integrity program, MOC and pre-startup-safety-review discipline \u2014 and is the reference who makes the program defensible in a compliance audit or after an incident.",
+      "P5": "Governs the PSM/RMP program plant-wide \u2014 element ownership, compliance-audit and RMP-resubmission cycle, contractor and training requirements, and the metrics that show the program is working \u2014 and drives its continuous improvement.",
+      "P6": "Sets process-safety practice beyond the site \u2014 program models, leading-indicator and process-safety-culture standards, and covered-process approaches other plants and the industry adopt."
+    }
+  },
+  {
+    "id": "FBM-25",
+    "segment": "Business & Corporate Functions",
+    "domain": "Food & Beverage Manufacturing",
+    "focus_area": "Process Safety",
+    "capability": "Ammonia emergency response & readiness",
+    "type": "Behavioral",
+    "description": "Preparing for and leading the response to an ammonia release or process-safety emergency \u2014 detection, evacuation and shelter, notification, and incident command \u2014 so people are protected and the release is controlled.",
+    "levels": {
+      "P1": "Knows the ammonia alarm, the evacuation and assembly points, and their own role in the emergency plan; on a release recognizes it, evacuates or shelters as trained, and reports to the muster point and accounts for themselves.",
+      "P2": "Acts correctly and independently in a release \u2014 takes the trained initial actions (alarm, isolate if safe, evacuate the area, don assigned PPE), gives clear information to the responders, and knows the boundary of what they may and may not do without the response team.",
+      "P3": "Leads the response at the scene for the shift \u2014 directs evacuation and accountability, isolates the process, briefs arriving responders, and runs their part of the plan calmly, and coaches the crew through drills so they perform under real conditions.",
+      "P4": "Runs incident command for an ammonia emergency at the plant \u2014 sizes up the release, decides shelter-versus-evacuate and isolation, initiates the required agency notifications, and directs the response \u2014 and sets the response procedures and drill standard others follow.",
+      "P5": "Governs emergency-response readiness plant-wide \u2014 the emergency-response plan, drill and exercise program, mutual-aid and agency relationships, detection and notification systems, and the after-action process that closes gaps \u2014 for the covered process.",
+      "P6": "Sets ammonia-emergency-response practice beyond the site \u2014 command models, community-coordination and drill standards, and readiness approaches other plants, mutual-aid partners, and the industry adopt."
+    }
   }
 ]

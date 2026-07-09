@@ -110,7 +110,7 @@ def render_capabilities_md(caps, scale, domains, bib, levels):
         "# Capability Catalog",
         "",
         f"The full Open Capability Framework catalog — {len(caps)} capabilities "
-        "across 36 domains, grouped Segment → Domain → Focus Area. Each "
+        f"across {len(domains)} domains, grouped Segment → Domain → Focus Area. Each "
         "capability carries a six-point behavioral profile on the capability-side "
         "[P1–P6 proficiency scale](proficiency_scale.md). Note the two-axis "
         "split: proficiency (P1–P6) is intrinsic to the capability and "

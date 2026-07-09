@@ -33,8 +33,7 @@ levels:
 competencies:
   # ---- Food Safety & Regulatory Compliance ----
   - theme: Pasteurization & flow-diversion control
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-pasteurization-control.md
+    capability: FBM-01
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Thermal Process Control
     anchor: "FDA Grade \"A\" Pasteurized Milk Ordinance (PMO), current revision"
@@ -47,8 +46,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Thermal-process legal limits & records
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-thermal-process-legal-limits.md
+    capability: FBM-02
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Thermal Process Control
     anchor: "PMO time/temperature legal minima; IDFA thermal-processing guidance"
@@ -61,8 +59,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: HACCP plan & CCP monitoring
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-haccp-ccp-monitoring.md
+    capability: FBM-03
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Food Safety Systems
     anchor: "Codex Alimentarius HACCP (CXC 1-1969); NACMCF HACCP Principles (1998)"
@@ -75,8 +72,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Preventive controls & PCQI oversight
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-preventive-controls-pcqi.md
+    capability: FBM-04
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Food Safety Systems
     anchor: "FSMA Preventive Controls for Human Food (21 CFR 117 Subpart C); FSPCA"
@@ -89,8 +85,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Environmental monitoring & pathogen control
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-environmental-pathogen-control.md
+    capability: FBM-05
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Contamination Control
     anchor: "FDA Control of Listeria monocytogenes guidance (2017); zoning (Zone 1-4)"
@@ -103,8 +98,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Allergen control & changeover
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-allergen-control.md
+    capability: FBM-06
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Contamination Control
     anchor: "FALCPA (2004); FDA allergen preventive-control expectations (21 CFR 117)"
@@ -117,8 +111,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: PMO & Grade A regulatory recordkeeping
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-pmo-grade-a-compliance.md
+    capability: FBM-07
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Regulatory & Audit Readiness
     anchor: "PMO; NCIMS (National Conference on Interstate Milk Shipments)"
@@ -131,8 +124,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: GFSI audit & certification readiness
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-gfsi-audit-readiness.md
+    capability: FBM-08
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Regulatory & Audit Readiness
     anchor: "GFSI Benchmarking Requirements; SQF / BRCGS / FSSC 22000"
@@ -145,8 +137,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: GMP & personnel hygiene
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-gmp-personnel-hygiene.md
+    capability: FBM-09
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Regulatory & Audit Readiness
     anchor: "Current Good Manufacturing Practice (21 CFR 117 Subpart B)"
@@ -160,8 +151,7 @@ competencies:
       L7: {p: P6, sources: [], why: ""}
   # ---- Process Operations & Control ----
   - theme: Raw milk receiving & grading
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-raw-milk-receiving.md
+    capability: FBM-10
     key_area: Process Operations & Control
     key_attribute: Receiving & Standardization
     anchor: "PMO raw-milk standards; Standard Methods for the Examination of Dairy Products (APHA)"
@@ -174,8 +164,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Separation & standardization
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-separation-standardization.md
+    capability: FBM-11
     key_area: Process Operations & Control
     key_attribute: Receiving & Standardization
     anchor: "Bylund, Dairy Processing Handbook (Tetra Pak)"
@@ -188,8 +177,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Thermal processing operation (HTST/HHST/UHT)
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-thermal-processing-operation.md
+    capability: FBM-12
     key_area: Process Operations & Control
     key_attribute: Thermal Processing & Homogenization
     anchor: "Bylund, Dairy Processing Handbook; PMO pasteurization equipment specs"
@@ -202,8 +190,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Homogenization & product finishing
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-homogenization.md
+    capability: FBM-13
     key_area: Process Operations & Control
     key_attribute: Thermal Processing & Homogenization
     anchor: "Bylund, Dairy Processing Handbook"
@@ -216,8 +203,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Filling & packaging operation
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-filling-packaging.md
+    capability: FBM-14
     key_area: Process Operations & Control
     key_attribute: Filling, Packaging & Cold Chain
     anchor: "Hygienic filling practice; Bylund, Dairy Processing Handbook"
@@ -230,8 +216,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Cold chain & finished-goods integrity
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-cold-chain-integrity.md
+    capability: FBM-15
     key_area: Process Operations & Control
     key_attribute: Filling, Packaging & Cold Chain
     anchor: "PMO finished-product temperature limits; cold-chain best practice"
@@ -245,8 +230,7 @@ competencies:
       L7: {p: P6, sources: [], why: ""}
   # ---- Sanitation & Hygiene ----
   - theme: CIP cycle execution & verification
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-cip-verification.md
+    capability: FBM-16
     key_area: Sanitation & Hygiene
     key_attribute: Clean-in-Place
     anchor: "Bylund, Dairy Processing Handbook (CIP); 3-A Sanitary Standards"
@@ -259,8 +243,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Cleaning chemistry & titration control
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-cleaning-chemistry-titration.md
+    capability: FBM-17
     key_area: Sanitation & Hygiene
     key_attribute: Clean-in-Place
     anchor: "Cleaning-chemical supplier standards; 3-A; alkaline/acid CIP chemistry"
@@ -273,8 +256,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: COP & manual sanitation
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-cop-manual-sanitation.md
+    capability: FBM-18
     key_area: Sanitation & Hygiene
     key_attribute: Hygienic Operations
     anchor: "cGMP sanitation (21 CFR 117 Subpart B); Master Sanitation Schedule practice"
@@ -287,8 +269,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Hygienic design & 3-A conformance
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-hygienic-design-3a.md
+    capability: FBM-19
     key_area: Sanitation & Hygiene
     key_attribute: Hygienic Operations
     anchor: "3-A Sanitary Standards; EHEDG hygienic-design principles"
@@ -302,8 +283,7 @@ competencies:
       L7: {p: P6, sources: [], why: ""}
   # ---- Equipment, Utilities & Reliability ----
   - theme: Ammonia / CO2 refrigeration operation
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-ammonia-refrigeration.md
+    capability: FBM-20
     key_area: Equipment, Utilities & Reliability
     key_attribute: Refrigeration & Steam
     anchor: "IIAR standards (ANSI/IIAR 2, 6, 7) for closed-circuit ammonia refrigeration"
@@ -316,8 +296,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Boiler & steam system operation
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-boiler-steam-systems.md
+    capability: FBM-21
     key_area: Equipment, Utilities & Reliability
     key_attribute: Refrigeration & Steam
     anchor: "ASME Boiler & Pressure Vessel Code; state boiler-operation regulations"
@@ -343,8 +322,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Equipment troubleshooting & breakdown recovery
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-equipment-troubleshooting.md
+    capability: FBM-22
     key_area: Equipment, Utilities & Reliability
     key_attribute: Maintenance & Reliability
     anchor: "TPM focused-improvement pillar (Nakajima, 1988); structured breakdown analysis"
@@ -370,8 +348,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Wastewater & effluent compliance
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-wastewater-effluent.md
+    capability: FBM-23
     key_area: Equipment, Utilities & Reliability
     key_attribute: Utilities & Environmental
     anchor: "Clean Water Act; EPA NPDES permitting; pretreatment standards"
@@ -411,8 +388,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Process safety management (PSM/RMP)
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-psm-rmp-ammonia.md
+    capability: FBM-24
     key_area: Safety & Process Safety Management
     key_attribute: Process Safety & Emergency Response
     anchor: "OSHA PSM (29 CFR 1910.119); EPA Risk Management Program (40 CFR 68)"
@@ -425,8 +401,7 @@ competencies:
       L6: {p: P5, sources: [], why: ""}
       L7: {p: P6, sources: [], why: ""}
   - theme: Ammonia emergency response & readiness
-    capability: proposed
-    proposal_ref: contrib/2026-07-fbm-ammonia-emergency-response.md
+    capability: FBM-25
     key_area: Safety & Process Safety Management
     key_attribute: Process Safety & Emergency Response
     anchor: "OSHA HAZWOPER (29 CFR 1910.120); IIAR emergency-response guidance"
