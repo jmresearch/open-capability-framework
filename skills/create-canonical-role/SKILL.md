@@ -87,6 +87,12 @@ old matrix; genericize org-specific content) — into one canonical ladder:
   unique triples).
 - Map every canonical competency to a framework capability id; draft a `contrib/` proposal (with
   P1–P6 profile) for each one the catalog lacks.
+- **Sourcing gate (hard):** a canonical competency cannot be minted unless its catalog capability
+  has a fully sourced P1–P6 profile — one bibliography citation + why per level
+  (`data/capability_levels.csv`). If the capability is new or unsourced, supplying those six
+  sourced rows is part of the same change. Consolidation operates on capability IDs and per-level
+  mappings, never on freshly written cell prose; ladder cells are rendered by
+  `scripts/render_role_ladder.py`, not authored.
 - Build `roles/<slug>/role.yaml` (levels, competency references, per-level proficiency targets)
   plus canonical `ladder.md`/`ladder.csv`, per `roles/README.md`.
 - Write a consolidation report: the merge map, and the agreement histogram (how many competencies
