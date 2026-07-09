@@ -225,3 +225,14 @@ Per-competency entry gains `mappings` (replacing the flat `proficiency` map) and
 - Changing the P1–P6 scale definitions or level counts of existing ladders.
 - The Korn Ferry crosswalk (explicitly excluded from the xlsx structure).
 - Automated semantic verification of evidence lines (warning heuristics + human review only).
+
+## Amendments
+
+- **2026-07-09 — cell format changed from three parts to two.** A ladder cell is now `Depth: <bar,
+  verbatim>` + optional `Evidenced by: <role instance>`, separated by a blank line. Scope is no
+  longer written into the cell at all — it lives on the level (`role.yaml` `levels[].scope`, and
+  the CSV `level_scope` row/column), stated once per level rather than once per cell.
+  `ladder.md`'s per-level bullets still display scope next to the cell prose; that's an unchanged
+  reading-time rendering, not a change to what the cell stores. Normative text updated in
+  `skills/career-ladder/references/capability-framework.md` § Cell derivation and mapping,
+  `skills/career-ladder/SKILL.md`, and `PROMPT.md` Part 2.

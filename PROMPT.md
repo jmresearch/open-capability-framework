@@ -63,17 +63,19 @@ Build a three-tier competency hierarchy:
 
 Write one cell per competency per level, following these rules exactly:
 
-- **Assemble each cell from three parts, in order: Bar, Evidenced by, Scope.** The **Bar** is the
-  depth behavior: how well they do the thing (does with guidance → does independently → owns and
-  designs → sets the standard others follow → drives strategy → sets direction). Where a matching
-  Open Capability Framework capability exists, the Bar is that capability's profile text at the
-  mapped proficiency level, copied verbatim — never paraphrased, never blended with an adjacent
-  level; identical capability+proficiency must read as identical bar text. **Evidenced by** is an
-  optional one-sentence, role-specific instance of the Bar — same behavior, same autonomy, this
-  role's artifact — that may narrow the Bar to this role's work but must never raise, lower, or
-  extend it. **Scope** is how far the work reaches (task → component → capability/domain →
-  multiple teams → organization → company), stated as reach, never as depth. A rater must be able
-  to see all three parts; a person can be deep-and-narrow or moderate-and-wide.
+- **Assemble each cell from two parts, in order and separated by a blank line: Bar, then
+  Evidenced by.** The **Bar** is the depth behavior: how well they do the thing (does with
+  guidance → does independently → owns and designs → sets the standard others follow → drives
+  strategy → sets direction). Where a matching Open Capability Framework capability exists, the
+  Bar is that capability's profile text at the mapped proficiency level, copied verbatim — never
+  paraphrased, never blended with an adjacent level; identical capability+proficiency must read as
+  identical bar text. **Evidenced by** is an optional one-sentence, role-specific instance of the
+  Bar — same behavior, same autonomy, this role's artifact — that may narrow the Bar to this
+  role's work but must never raise, lower, or extend it. **Scope is not part of the cell**: it's
+  how far the work reaches (task → component → capability/domain → multiple teams → organization →
+  company), stated as reach, never as depth, and it lives on the level (one scope band per level,
+  carried by the ladder record), not repeated inside each cell. A rater must be able to see both
+  cell parts plus the level's scope; a person can be deep-and-narrow or moderate-and-wide.
 - **Cite the bar.** Every proficiency mapping and every level's behavior must carry a named, real,
   verifiable citation — a framework, research finding, standard, or published company ladder —
   plus a one-to-two-sentence why connecting the source to that level. If you have no web access,

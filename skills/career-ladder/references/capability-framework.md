@@ -49,7 +49,8 @@ calibration summary that the ladder was generated unanchored to the framework.
 
 ### Cell derivation rule
 
-A ladder cell is **assembled, never authored**. Every cell has exactly three parts, in order:
+A ladder cell is **assembled, never authored**. Every cell has exactly two parts, in order,
+separated by a blank line:
 
 1. **Bar — canonical, verbatim.** The catalog capability's profile text at the mapped proficiency
    level, copied byte-for-byte from the catalog. Never paraphrase, never re-flavor, never blend
@@ -63,8 +64,13 @@ A ladder cell is **assembled, never authored**. Every cell has exactly three par
    remains must restate the bar's behavior at the bar's autonomy. If your evidence sentence
    describes designing systems others adopt while the bar says "runs independently," you haven't
    written evidence, you've discovered a wrong mapping. Fix the mapping.
-3. **Scope.** The role level's scope band from `role.yaml`, stated as reach ("one platform
-   team"), never as depth.
+
+**Scope is not part of the cell.** It lives on the level, not the cell: `role.yaml`
+`levels[].scope`, and in the CSV the `level_scope` row/column — stated as reach ("one platform
+team"), never as depth. Every cell in a level's column shares that level's scope; repeating it
+inside each cell would just be the same string N times. (`ladder.md`'s per-level bullets still
+display scope alongside the cell prose — that's a reading-time rendering choice, not a change to
+what the cell itself stores.)
 
 ### Mapping rule
 
