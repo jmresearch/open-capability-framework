@@ -13,14 +13,15 @@ def run(*flags):
 def test_default_mode_reports_gaps_but_passes():
     res = run()
     assert res.returncode == 0, res.stdout
-    assert "REPORT" in res.stdout            # ~2,724 unsourced catalog levels exist
-    assert "unsourced capability levels" in res.stdout
+    assert "REPORT" in res.stdout            # role-mapping gaps remain until R3
+    # R2 complete: the catalog itself must have zero unsourced levels
+    assert "unsourced capability levels" not in res.stdout
 
 
 def test_strict_mode_fails_on_gaps():
     res = run("--strict")
-    assert res.returncode == 1
-    assert "unsourced capability levels" in res.stdout
+    assert res.returncode == 1               # role mappings still unsourced until R3
+    assert "sourcing issue" in res.stdout or "FAIL" in res.stdout
 
 
 def test_em13_is_not_reported_unsourced():
