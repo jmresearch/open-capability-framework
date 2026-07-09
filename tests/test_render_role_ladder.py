@@ -92,3 +92,23 @@ def test_skips_non_derived_and_rejects_proposed(fixture_role):
     yaml.safe_dump(role, open(path, "w"), sort_keys=False)
     with pytest.raises(SystemExit):
         render_role(fixture_role)
+
+
+def test_xlsx_has_theory_columns_and_sources_tab(fixture_role, tmp_path):
+    from render_role_ladder import render_role
+    render_role(fixture_role)
+    subprocess.run(
+        [sys.executable, os.path.join(ROOT, "scripts", "render_role_xlsx.py"), fixture_role],
+        check=True, capture_output=True, text=True)
+    import openpyxl
+    wb = openpyxl.load_workbook(os.path.join(ROOT, "roles", fixture_role, "ladder.xlsx"))
+    assert "Sources & Theory" in wb.sheetnames
+    assert "Korn Ferry Crosswalk" not in wb.sheetnames
+    matrix = wb["Competency Matrix"]
+    headers = [c.value for c in matrix[1]]
+    assert "What it covers" in headers and "Theory anchor & why" in headers
+    src = wb["Sources & Theory"]
+    assert [c.value for c in src[1]] == ["Framework", "Source", "Grounds", "Link"]
+    cells = [str(c.value) for row in src.iter_rows() for c in row if c.value]
+    assert any("Tuckman" in v for v in cells)
+    os.remove(os.path.join(ROOT, "roles", fixture_role, "ladder.xlsx"))
