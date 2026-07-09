@@ -51,7 +51,7 @@ jobs:
           python-version: '3.12'
       - run: pip install openpyxl pyyaml
       - name: Consistency guards + ladder validation
-        run: python scripts/check_consistency.py
+        run: python scripts/check_consistency.py --strict
       - name: Text renders must not be stale
         run: |
           python scripts/render_catalog.py
@@ -72,7 +72,7 @@ jobs:
           python-version: '3.12'
       - run: pip install openpyxl pyyaml
       - name: Guard before regenerating
-        run: python scripts/check_consistency.py
+        run: python scripts/check_consistency.py --strict
       - name: Regenerate all derived renders
         run: |
           python scripts/render_catalog.py
