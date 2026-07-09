@@ -94,6 +94,19 @@ def test_skips_non_derived_and_rejects_proposed(fixture_role):
         render_role(fixture_role)
 
 
+def test_renders_none_evidence_as_bar_and_scope_only(fixture_role):
+    from render_role_ladder import render_role
+    path = os.path.join(ROOT, "roles", fixture_role, "role.yaml")
+    role = yaml.safe_load(open(path))
+    role["competencies"][0]["evidence"] = {"M1": None}  # `M1:` with no value in yaml
+    yaml.safe_dump(role, open(path, "w"), sort_keys=False)
+    assert render_role(fixture_role) is True
+    rows = list(csv.reader(open(os.path.join(ROOT, "roles", fixture_role, "ladder.csv"))))
+    skill = [r for r in rows if r and r[0] == "skill" and r[3] == "Onboarding & team formation"][0]
+    bar = catalog_bar("EM-13", "P2")
+    assert skill[5] == f"Depth: {bar} Scope: one team."
+
+
 def test_xlsx_has_theory_columns_and_sources_tab(fixture_role, tmp_path):
     from render_role_ladder import render_role
     render_role(fixture_role)

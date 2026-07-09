@@ -10,6 +10,7 @@ Pure stdlib. Contract: see references/skillmatrix-csv.md.
 
 import argparse
 import csv
+import re
 import sys
 
 THEME_CAP = 60
@@ -100,8 +101,24 @@ def validate(path: str, manager: bool = False, allow_single_theme: bool = False)
         if "anchor:" in joined:
             errors.append(f"row {i} ('{theme}'): theory-anchor text in a level cell — anchors are markdown-only")
         if manager:
+            # Contract: assembled cells (scripts/render_role_ladder.py assemble_cell) look like
+            # "Depth: {verbatim catalog bar} Evidenced by: {role evidence} Scope: {scope}." The
+            # bar segment is role-agnostic catalog canon and may legitimately contain
+            # position-locked substrings (e.g. BIZ-02 P1_assisted has "reporting lines") — it is
+            # not role-authored, so it is exempt. Only the "Evidenced by:" clause is role-authored
+            # and must stay demonstrable pre-seat, so for assembled cells we scan just that clause.
+            # Non-assembled (legacy, fully-authored) cells are scanned in full, unchanged.
+            manager_texts = []
+            for cell in cells:
+                stripped = cell.strip()
+                if stripped.startswith("Depth: "):
+                    m = re.search(r"Evidenced by: (.*?)(?: Scope: |$)", stripped)
+                    manager_texts.append(m.group(1) if m else "")
+                else:
+                    manager_texts.append(cell)
+            manager_joined = " ".join(manager_texts).lower()
             for phrase in POSITION_LOCKED:
-                if phrase in joined:
+                if phrase in manager_joined:
                     errors.append(f"row {i} ('{theme}'): position-locked phrase '{phrase}' — write demonstrable influence behaviors")
 
     singles = [f"{a} > {f}" for (a, f), themes in foci.items() if len(themes) == 1]

@@ -102,6 +102,7 @@ def evidence_warnings():
             role = yaml.safe_load(f)
         for c in role.get("competencies", []):
             for code, ev in (c.get("evidence") or {}).items():
+                ev = ev or ""  # `M1:` with no value in yaml parses as None
                 p = (c.get("mappings") or {}).get(code, {}).get("p", "")
                 if p in ("P1", "P2", "P3") and any(m in ev.lower() for m in ABOVE_BAR):
                     warns.append(f"{slug}: '{c.get('theme')}' {code} evidence exceeds {p} bar: '{ev[:60]}'")

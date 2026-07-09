@@ -126,7 +126,7 @@ def render_role(slug, force=False, out_dir=None):
         for code in codes:
             mp = c["mappings"][code]
             bar = cap_row[p_col[mp["p"]]].strip()
-            evidence = (c.get("evidence") or {}).get(code, "").strip()
+            evidence = str((c.get("evidence") or {}).get(code) or "").strip()
             scope = scope_by_code[code]
             cells.append(assemble_cell(bar, evidence, scope))
             for k in mp.get("sources", []):
