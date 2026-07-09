@@ -102,10 +102,11 @@ def validate(path: str, manager: bool = False, allow_single_theme: bool = False)
             errors.append(f"row {i} ('{theme}'): theory-anchor text in a level cell — anchors are markdown-only")
         if manager:
             # Contract: assembled cells (scripts/render_role_ladder.py assemble_cell) look like
-            # "Depth: {verbatim catalog bar}\n\nEvidenced by: {role evidence}\n\nScope: {scope}."
-            # (older renders joined the parts with a single space instead of a blank line; both
-            # separators are accepted below). The bar segment is role-agnostic catalog canon and
-            # may legitimately contain
+            # "Depth: {verbatim catalog bar}\n\nEvidenced by: {role evidence}" — no trailing Scope
+            # clause (level_scope carries that; see the module docstring). Older renders appended
+            # "\n\nScope: {scope}." or " Scope: {scope}." (single-space join); the regex below still
+            # stops at either legacy separator as well as end-of-string, so old cells keep parsing.
+            # The bar segment is role-agnostic catalog canon and may legitimately contain
             # position-locked substrings (e.g. BIZ-02 P1_assisted has "reporting lines") — it is
             # not role-authored, so it is exempt. Only the "Evidenced by:" clause is role-authored
             # and must stay demonstrable pre-seat, so for assembled cells we scan just that clause.

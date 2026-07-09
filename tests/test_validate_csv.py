@@ -31,7 +31,7 @@ def test_assembled_cell_bar_only_passes_manager(tmp_path):
     csv_path = tmp_path / "ladder.csv"
     _write_ladder(
         str(csv_path),
-        "Depth: Documents current roles, handoffs, and reporting lines under direction.\n\nScope: one team.")
+        "Depth: Documents current roles, handoffs, and reporting lines under direction.")
     res = _validate(str(csv_path), "--manager")
     assert res.returncode == 0, res.stdout
 
@@ -41,15 +41,17 @@ def test_assembled_cell_position_locked_evidence_fails_manager(tmp_path):
     _write_ladder(
         str(csv_path),
         "Depth: Documents current roles, handoffs, and reporting lines under direction.\n\n"
-        "Evidenced by: owns the reporting line for the team.\n\nScope: one team.")
+        "Evidenced by: owns the reporting line for the team.")
     res = _validate(str(csv_path), "--manager")
     assert res.returncode == 1
     assert "reporting line" in res.stdout
 
 
-@pytest.mark.parametrize("sep", [" ", "\n\n"], ids=["legacy-inline-sep", "current-blank-line-sep"])
-def test_assembled_cell_bar_only_passes_manager_both_separators(tmp_path, sep):
-    """Both the legacy inline-space join and the current blank-line join must validate."""
+@pytest.mark.parametrize("sep", [" ", "\n\n"], ids=["legacy-inline-sep", "legacy-blank-line-sep"])
+def test_legacy_assembled_cell_with_scope_bar_only_passes_manager(tmp_path, sep):
+    """Old renders appended a trailing Scope clause, joined with either an inline
+    space or a blank line. Both legacy separator styles must still validate even
+    though current renders never emit a Scope clause at all."""
     csv_path = tmp_path / "ladder.csv"
     _write_ladder(
         str(csv_path),
@@ -61,10 +63,10 @@ def test_assembled_cell_bar_only_passes_manager_both_separators(tmp_path, sep):
     assert res.returncode == 0, res.stdout
 
 
-@pytest.mark.parametrize("sep", [" ", "\n\n"], ids=["legacy-inline-sep", "current-blank-line-sep"])
-def test_assembled_cell_position_locked_evidence_fails_manager_both_separators(tmp_path, sep):
+@pytest.mark.parametrize("sep", [" ", "\n\n"], ids=["legacy-inline-sep", "legacy-blank-line-sep"])
+def test_legacy_assembled_cell_with_scope_position_locked_evidence_fails_manager(tmp_path, sep):
     """Position-locked phrase in the Evidenced-by clause fails regardless of which
-    assemble_cell separator produced the cell."""
+    legacy assemble_cell separator produced the trailing Scope clause."""
     csv_path = tmp_path / "ladder.csv"
     _write_ladder(
         str(csv_path),

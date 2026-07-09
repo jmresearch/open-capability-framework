@@ -5,7 +5,8 @@ Cells are ASSEMBLED, never authored (see docs/superpowers/specs/
 2026-07-09-sourced-derivation-methodology-design.md):
   Depth  = the catalog capability's profile text at the mapped proficiency, verbatim.
   Evidenced by = optional role-specific instance of the bar (role.yaml `evidence`).
-  Scope  = the role level's scope band.
+(Scope is carried by the level_scope row/column, not the per-cell text — see the
+ladder.md bullet, which still shows *Scope:* per level.)
 
 Only roles with `derived: true` in role.yaml are rendered (--force overrides,
 used by tests and the staleness check). Roles with `proposed` capabilities are
@@ -41,11 +42,10 @@ def load_catalog():
     return caps, p_col, bib
 
 
-def assemble_cell(bar, evidence, scope):
+def assemble_cell(bar, evidence):
     parts = [f"Depth: {bar}"]
     if evidence:
         parts.append(f"Evidenced by: {evidence}")
-    parts.append(f"Scope: {scope}.")
     return "\n\n".join(parts)
 
 
@@ -128,7 +128,7 @@ def render_role(slug, force=False, out_dir=None):
             bar = cap_row[p_col[mp["p"]]].strip()
             evidence = str((c.get("evidence") or {}).get(code) or "").strip()
             scope = scope_by_code[code]
-            cells.append(assemble_cell(bar, evidence, scope))
+            cells.append(assemble_cell(bar, evidence))
             for k in mp.get("sources", []):
                 use(k)
             srcs = "; ".join(_cite(bib, k) for k in mp.get("sources", []))
