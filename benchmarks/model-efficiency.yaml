@@ -27,6 +27,11 @@ reference_canons:
     stable: 43
     core: 19
     source: skills/create-canonical-role/references/saturation-study.md
+  platform-engineering-manager:
+    concepts: 47          # hand-clustered distinct concepts across the 5 blind runs
+    stable: 37            # concepts seen in >=2/5 runs
+    core: 25             # concepts seen in >=4/5 runs (80%, the 5-run analogue of the 6/8 baseline core)
+    source: roles/platform-engineering-manager (5-run consolidation report, 2026-07-07)
 
 configs:
   - model: claude-fable-5
@@ -203,3 +208,34 @@ configs:
     recommended_runs: 4
     date: 2026-07-02
     source: benchmarks PR [product-manager] mint telemetry
+
+  - model: claude-opus-4-8
+    effort: xhigh
+    runs_observed: 5
+    role_tested: platform-engineering-manager
+    validator_pass_rate: 1.0
+    mean_competencies_per_run: 29.2
+    mean_canon_coverage_per_run: 0.62
+    core_recall_2runs: 0.94
+    systematic_gaps: [Self & Personal Effectiveness tier - managerial leverage & focus,
+      delegation & empowerment, self-awareness & learning agility, resilience & sustainable pace,
+      decision-making under uncertainty, ethics & integrity]
+    register_notes: >-
+      First opus-4-8 @ xhigh entry and first manager-variant mint outside engineering-management.
+      Strong on every intrinsic measure - 5/5 validator-clean on the first pass (zero fix
+      iterations), full Depth/Scope register with real anchors, and 29.2 competencies/run (above
+      opus/high's 25.0; xhigh trades ~2x tokens for breadth). Counts are hand-clustered estimates.
+      One caution: a whole-key-area omission - all five runs under-produced the Self & Personal
+      Effectiveness tier (delegation, decision-making, ethics, resilience) that the EM manager
+      baseline hits reliably. Read as role-framing amplification (a platform-manager prompt pulls
+      toward platform-product/reliability/delivery), not a register failure; it was caught at
+      consolidation and remediated by borrowing the EM area verbatim (38 -> 44). Recommendation:
+      on a manager-variant mint with this config, explicitly seed the personal-effectiveness tier
+      or plan to borrow it. Marked canon_capable because the union + review process caught and
+      fixed the gap, which is the system working as designed - but a single run here would be
+      blind to that tier.
+    tokens_per_run_median: 64000
+    canon_capable: true
+    recommended_runs: 5
+    date: 2026-07-07
+    source: roles/platform-engineering-manager mint telemetry (PR [platform-engineering-manager])
