@@ -38,63 +38,126 @@ competencies:
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Thermal Process Control
     anchor: "FDA Grade \"A\" Pasteurized Milk Ordinance (PMO), current revision"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Thermal-process legal limits & records
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-thermal-process-legal-limits.md
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Thermal Process Control
     anchor: "PMO time/temperature legal minima; IDFA thermal-processing guidance"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: HACCP plan & CCP monitoring
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-haccp-ccp-monitoring.md
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Food Safety Systems
     anchor: "Codex Alimentarius HACCP (CXC 1-1969); NACMCF HACCP Principles (1998)"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Preventive controls & PCQI oversight
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-preventive-controls-pcqi.md
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Food Safety Systems
     anchor: "FSMA Preventive Controls for Human Food (21 CFR 117 Subpart C); FSPCA"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Environmental monitoring & pathogen control
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-environmental-pathogen-control.md
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Contamination Control
     anchor: "FDA Control of Listeria monocytogenes guidance (2017); zoning (Zone 1-4)"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Allergen control & changeover
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-allergen-control.md
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Contamination Control
     anchor: "FALCPA (2004); FDA allergen preventive-control expectations (21 CFR 117)"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: PMO & Grade A regulatory recordkeeping
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-pmo-grade-a-compliance.md
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Regulatory & Audit Readiness
     anchor: "PMO; NCIMS (National Conference on Interstate Milk Shipments)"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: GFSI audit & certification readiness
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-gfsi-audit-readiness.md
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Regulatory & Audit Readiness
     anchor: "GFSI Benchmarking Requirements; SQF / BRCGS / FSSC 22000"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: GMP & personnel hygiene
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-gmp-personnel-hygiene.md
     key_area: Food Safety & Regulatory Compliance
     key_attribute: Regulatory & Audit Readiness
     anchor: "Current Good Manufacturing Practice (21 CFR 117 Subpart B)"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   # ---- Process Operations & Control ----
   - theme: Raw milk receiving & grading
     capability: proposed
@@ -102,42 +165,84 @@ competencies:
     key_area: Process Operations & Control
     key_attribute: Receiving & Standardization
     anchor: "PMO raw-milk standards; Standard Methods for the Examination of Dairy Products (APHA)"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Separation & standardization
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-separation-standardization.md
     key_area: Process Operations & Control
     key_attribute: Receiving & Standardization
     anchor: "Bylund, Dairy Processing Handbook (Tetra Pak)"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Thermal processing operation (HTST/HHST/UHT)
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-thermal-processing-operation.md
     key_area: Process Operations & Control
     key_attribute: Thermal Processing & Homogenization
     anchor: "Bylund, Dairy Processing Handbook; PMO pasteurization equipment specs"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Homogenization & product finishing
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-homogenization.md
     key_area: Process Operations & Control
     key_attribute: Thermal Processing & Homogenization
     anchor: "Bylund, Dairy Processing Handbook"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Filling & packaging operation
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-filling-packaging.md
     key_area: Process Operations & Control
     key_attribute: Filling, Packaging & Cold Chain
     anchor: "Hygienic filling practice; Bylund, Dairy Processing Handbook"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Cold chain & finished-goods integrity
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-cold-chain-integrity.md
     key_area: Process Operations & Control
     key_attribute: Filling, Packaging & Cold Chain
     anchor: "PMO finished-product temperature limits; cold-chain best practice"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   # ---- Sanitation & Hygiene ----
   - theme: CIP cycle execution & verification
     capability: proposed
@@ -145,28 +250,56 @@ competencies:
     key_area: Sanitation & Hygiene
     key_attribute: Clean-in-Place
     anchor: "Bylund, Dairy Processing Handbook (CIP); 3-A Sanitary Standards"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Cleaning chemistry & titration control
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-cleaning-chemistry-titration.md
     key_area: Sanitation & Hygiene
     key_attribute: Clean-in-Place
     anchor: "Cleaning-chemical supplier standards; 3-A; alkaline/acid CIP chemistry"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: COP & manual sanitation
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-cop-manual-sanitation.md
     key_area: Sanitation & Hygiene
     key_attribute: Hygienic Operations
     anchor: "cGMP sanitation (21 CFR 117 Subpart B); Master Sanitation Schedule practice"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Hygienic design & 3-A conformance
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-hygienic-design-3a.md
     key_area: Sanitation & Hygiene
     key_attribute: Hygienic Operations
     anchor: "3-A Sanitary Standards; EHEDG hygienic-design principles"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   # ---- Equipment, Utilities & Reliability ----
   - theme: Ammonia / CO2 refrigeration operation
     capability: proposed
@@ -174,119 +307,252 @@ competencies:
     key_area: Equipment, Utilities & Reliability
     key_attribute: Refrigeration & Steam
     anchor: "IIAR standards (ANSI/IIAR 2, 6, 7) for closed-circuit ammonia refrigeration"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Boiler & steam system operation
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-boiler-steam-systems.md
     key_area: Equipment, Utilities & Reliability
     key_attribute: Refrigeration & Steam
     anchor: "ASME Boiler & Pressure Vessel Code; state boiler-operation regulations"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Autonomous & preventive maintenance
     capability: SCM-09
     key_area: Equipment, Utilities & Reliability
     key_attribute: Maintenance & Reliability
     anchor: "Nakajima, Introduction to TPM (1988); Reliability-Centered Maintenance"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Equipment troubleshooting & breakdown recovery
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-equipment-troubleshooting.md
     key_area: Equipment, Utilities & Reliability
     key_attribute: Maintenance & Reliability
     anchor: "TPM focused-improvement pillar (Nakajima, 1988); structured breakdown analysis"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Utilities stewardship (water/air/energy)
     capability: WPL-02
     key_area: Equipment, Utilities & Reliability
     key_attribute: Utilities & Environmental
     anchor: "Facilities utility-operations practice; ISO 50001 energy management"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Wastewater & effluent compliance
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-wastewater-effluent.md
     key_area: Equipment, Utilities & Reliability
     key_attribute: Utilities & Environmental
     anchor: "Clean Water Act; EPA NPDES permitting; pretreatment standards"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   # ---- Safety & Process Safety Management ----
   - theme: Lockout/tagout & hazardous energy control
     capability: WPL-08
     key_area: Safety & Process Safety Management
     key_attribute: Personal Safety & Energy Control
     anchor: "OSHA Control of Hazardous Energy, Lockout/Tagout (29 CFR 1910.147)"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Hazard recognition, PPE & permits
     capability: WPL-08
     key_area: Safety & Process Safety Management
     key_attribute: Personal Safety & Energy Control
     anchor: "OSHA PPE (1910 Subpart I), confined space (1910.146), hot work permits"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Process safety management (PSM/RMP)
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-psm-rmp-ammonia.md
     key_area: Safety & Process Safety Management
     key_attribute: Process Safety & Emergency Response
     anchor: "OSHA PSM (29 CFR 1910.119); EPA Risk Management Program (40 CFR 68)"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Ammonia emergency response & readiness
     capability: proposed
     proposal_ref: contrib/2026-07-fbm-ammonia-emergency-response.md
     key_area: Safety & Process Safety Management
     key_attribute: Process Safety & Emergency Response
     anchor: "OSHA HAZWOPER (29 CFR 1910.120); IIAR emergency-response guidance"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   # ---- Leadership, People & Continuous Improvement ----
   - theme: Operator training & development
     capability: LI-01
     key_area: Leadership, People & Continuous Improvement
     key_attribute: People Leadership & Development
     anchor: "Training Within Industry (TWI) Job Instruction; Dreyfus skill acquisition"
-    proficiency: {L1: P1, L2: P1, L3: P2, L4: P3, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P1, sources: [], why: ""}
+      L3: {p: P2, sources: [], why: ""}
+      L4: {p: P3, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Coaching & performance feedback
     capability: EM-01
     key_area: Leadership, People & Continuous Improvement
     key_attribute: People Leadership & Development
     anchor: "Grove, High Output Management (1983)"
-    proficiency: {L1: P1, L2: P1, L3: P2, L4: P3, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P1, sources: [], why: ""}
+      L3: {p: P2, sources: [], why: ""}
+      L4: {p: P3, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Shift leadership & crew coordination
     capability: LI-08
     key_area: Leadership, People & Continuous Improvement
     key_attribute: People Leadership & Development
     anchor: "Hersey & Blanchard, situational leadership (1969); Geller, behavior-based safety leadership"
-    proficiency: {L1: P1, L2: P1, L3: P2, L4: P3, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P1, sources: [], why: ""}
+      L3: {p: P2, sources: [], why: ""}
+      L4: {p: P3, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Pre-shift huddles & shift handover
     capability: CC-01
     key_area: Leadership, People & Continuous Improvement
     key_attribute: Communication & Coordination
     anchor: "Lean daily management; structured shift-handover practice (HSE guidance)"
-    proficiency: {L1: P1, L2: P2, L3: P2, L4: P3, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P2, sources: [], why: ""}
+      L4: {p: P3, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Escalation & cross-functional coordination
     capability: CC-03
     key_area: Leadership, People & Continuous Improvement
     key_attribute: Communication & Coordination
     anchor: "Cross-functional teamwork & partnership; structured shop-floor escalation practice"
-    proficiency: {L1: P1, L2: P2, L3: P2, L4: P3, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P2, sources: [], why: ""}
+      L4: {p: P3, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: OEE & loss elimination
     capability: SCM-07
     key_area: Leadership, People & Continuous Improvement
     key_attribute: Continuous Improvement & Cost
     anchor: "Nakajima, TPM & Overall Equipment Effectiveness (1988)"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Root-cause problem solving
     capability: SUP-05
     key_area: Leadership, People & Continuous Improvement
     key_attribute: Continuous Improvement & Cost
     anchor: "Ohno / Toyota Production System (5 Whys); Ishikawa cause-and-effect; Deming"
-    proficiency: {L1: P1, L2: P2, L3: P3, L4: P4, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P3, sources: [], why: ""}
+      L4: {p: P4, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Production scheduling & changeover
     capability: SCM-08
     key_area: Leadership, People & Continuous Improvement
     key_attribute: Continuous Improvement & Cost
     anchor: "APICS/ASCM planning body of knowledge; SMED changeover (Shingo)"
-    proficiency: {L1: P1, L2: P2, L3: P2, L4: P3, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P2, sources: [], why: ""}
+      L3: {p: P2, sources: [], why: ""}
+      L4: {p: P3, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}
   - theme: Cost, labor & budget ownership
     capability: EM-06
     key_area: Leadership, People & Continuous Improvement
     key_attribute: Continuous Improvement & Cost
     anchor: "Managerial cost accounting; plant P&L, labor-variance, and budget ownership practice"
-    proficiency: {L1: P1, L2: P1, L3: P2, L4: P3, L5: P4, L6: P5, L7: P6}
+    mappings:
+      L1: {p: P1, sources: [], why: ""}
+      L2: {p: P1, sources: [], why: ""}
+      L3: {p: P2, sources: [], why: ""}
+      L4: {p: P3, sources: [], why: ""}
+      L5: {p: P4, sources: [], why: ""}
+      L6: {p: P5, sources: [], why: ""}
+      L7: {p: P6, sources: [], why: ""}

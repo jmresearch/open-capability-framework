@@ -70,7 +70,7 @@ def table_block(comp, level_codes, name, candidate):
             cell += f" — {name}"
     plinks = []
     for code in level_codes:
-        p = comp["proficiency"][code]
+        p = comp["mappings"][code]["p"]
         plinks.append(f"[{p}](../../data/proficiency_scale.md#{p.lower()})")
     return [
         "| OCF | " + " | ".join(level_codes) + " |",

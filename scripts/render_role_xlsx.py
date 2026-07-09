@@ -202,7 +202,7 @@ def sheet_rating(wb, role):
         gap.value = f'=IFERROR(G{r}-C{r},"")'
         gap.font = BODY
         for j, code in enumerate(codes):
-            p = comp["proficiency"][code]
+            p = comp["mappings"][code]["p"]
             ws.cell(row=r, column=first_hidden + j, value=int(p.lstrip("P"))).font = BODY
 
     for j in range(first_hidden, first_hidden + len(codes)):

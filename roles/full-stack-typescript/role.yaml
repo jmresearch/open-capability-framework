@@ -24,287 +24,569 @@ competencies:
     key_area: Frontend Engineering
     key_attribute: UI Implementation
     anchor: "React documentation, Thinking in React (react.dev)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Styling & responsive layout
     capability: FE-09
     key_area: Frontend Engineering
     key_attribute: UI Implementation
     anchor: "MDN Web Docs, CSS layout guides (Mozilla)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Client state management & data flow
     capability: FE-05
     key_area: Frontend Engineering
     key_attribute: State & Data Flow
     anchor: "Redux documentation, Three Principles (redux.js.org)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Data fetching & caching
     capability: FE-06
     key_area: Frontend Engineering
     key_attribute: State & Data Flow
     anchor: "TanStack Query documentation (Tanner Linsley and maintainers)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Accessibility
     capability: FE-12
     key_area: Frontend Engineering
     key_attribute: Frontend Quality
     anchor: "W3C WCAG 2.2 and WAI-ARIA Authoring Practices"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Web performance
     capability: FE-13
     key_area: Frontend Engineering
     key_attribute: Frontend Quality
     anchor: "Google web.dev Core Web Vitals (LCP, INP, CLS)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- Backend & API Engineering ----
   - theme: Service design & boundaries
     capability: ARC-02
     key_area: Backend & API Engineering
     key_attribute: Services & Runtime
     anchor: "Newman, Building Microservices, 2nd ed. (2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Runtime & async correctness
     capability: CS-04
     key_area: Backend & API Engineering
     key_attribute: Services & Runtime
     anchor: "Node.js official guide, Don't Block the Event Loop"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: API contract design
     capability: SWE-07
     key_area: Backend & API Engineering
     key_attribute: API Contracts
     anchor: "Fielding (2000) and the OpenAPI Specification"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Compatibility & versioning
     capability: BE-13
     key_area: Backend & API Engineering
     key_attribute: API Contracts
     anchor: "Hyrum's Law (Winters et al., 2020); Preston-Werner, Semantic Versioning"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Data modeling
     capability: BE-01
     key_area: Backend & API Engineering
     key_attribute: Data & Persistence
     anchor: "Kleppmann, Designing Data-Intensive Applications (2017)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Query performance & safe migrations
     capability: BE-04
     key_area: Backend & API Engineering
     key_attribute: Data & Persistence
     anchor: "Winand, SQL Performance Explained; Sadalage & Fowler, Evolutionary Database Design"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Asynchronous processing & messaging
     capability: BE-09
     key_area: Backend & API Engineering
     key_attribute: Integration & Resilience
     anchor: "Hohpe & Woolf, Enterprise Integration Patterns (2003)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Third-party & cross-service resilience
     capability: BE-18
     key_area: Backend & API Engineering
     key_attribute: Integration & Resilience
     anchor: "Nygard, Release It!, 2nd ed. (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- TypeScript & Software Design ----
   - theme: Type-driven domain modeling
     capability: SWE-08
     key_area: TypeScript & Software Design
     key_attribute: Type System as a Design Tool
     anchor: "Vanderkam, Effective TypeScript, 2nd ed. (2024); Wlaschin, Domain Modeling Made Functional (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Type safety at boundaries
     capability: SWE-09
     key_area: TypeScript & Software Design
     key_attribute: Type System as a Design Tool
     anchor: "King, Parse, Don't Validate (2019)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Advanced types & inference
     capability: SWE-01
     key_area: TypeScript & Software Design
     key_attribute: Type System as a Design Tool
     anchor: "The TypeScript Handbook (Microsoft TypeScript team)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Software design & architecture
     capability: SWE-05
     key_area: TypeScript & Software Design
     key_attribute: Architecture & Code Health
     anchor: "Ousterhout, A Philosophy of Software Design (2018); Parnas (1972)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Readable, maintainable code
     capability: SWE-02
     key_area: TypeScript & Software Design
     key_attribute: Architecture & Code Health
     anchor: "Fowler, Refactoring, 2nd ed. (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Refactoring & technical debt
     capability: EM-15
     key_area: TypeScript & Software Design
     key_attribute: Architecture & Code Health
     anchor: "Fowler, Refactoring, 2nd ed. (2018); Cunningham's debt metaphor (OOPSLA 1992)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Code review practice
     capability: SWE-04
     key_area: TypeScript & Software Design
     key_attribute: Architecture & Code Health
     anchor: "Winters, Manshreck & Wright, Software Engineering at Google (2020), code-review chapters"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- Quality & Testing ----
   - theme: Test strategy & the pyramid
     capability: QA-01
     key_area: Quality & Testing
     key_attribute: Testing Across the Stack
     anchor: "Cohn (2009) as refined by Vocke, The Practical Test Pyramid (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Test authoring & implementation quality
     capability: SWE-03
     key_area: Quality & Testing
     key_attribute: Testing Across the Stack
     anchor: "Dodds, Testing Library guiding principles; Meszaros, xUnit Test Patterns (2007)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Integration & end-to-end confidence
     capability: QA-06
     key_area: Quality & Testing
     key_attribute: Testing Across the Stack
     anchor: "Fowler, ContractTest / consumer-driven contracts (Pact)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Debugging & root-cause analysis
     capability: SWE-06
     key_area: Quality & Testing
     key_attribute: Defect Response & Prevention
     anchor: "Zeller, Why Programs Fail (2009)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Quality ownership & prevention
     capability: QA-14
     key_area: Quality & Testing
     key_attribute: Defect Response & Prevention
     anchor: "Forsgren, Humble & Kim, Accelerate (2018) / DORA"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- Delivery & Operations ----
   - theme: Build & CI pipelines
     capability: OPS-02
     key_area: Delivery & Operations
     key_attribute: Delivery Pipeline
     anchor: "Forsgren, Humble & Kim, Accelerate (2018) / DORA"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Release & deployment practices
     capability: OPS-30
     key_area: Delivery & Operations
     key_attribute: Delivery Pipeline
     anchor: "Humble & Farley, Continuous Delivery (2010)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Developer tooling & environment
     capability: OPS-27
     key_area: Delivery & Operations
     key_attribute: Delivery Pipeline
     anchor: "Winters, Manshreck & Wright, Software Engineering at Google (2020)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Observability & monitoring
     capability: OPS-05
     key_area: Delivery & Operations
     key_attribute: Production Operations
     anchor: "Beyer et al., Site Reliability Engineering (Google, 2016); Majors et al., Observability Engineering (2022)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Incident response & postmortems
     capability: OPS-06
     key_area: Delivery & Operations
     key_attribute: Production Operations
     anchor: "Beyer et al., Site Reliability Engineering (Google, 2016); Allspaw, blameless postmortems (2012)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- Security ----
   - theme: Secure coding & vulnerability prevention
     capability: OPS-08
     key_area: Security
     key_attribute: Application Security
     anchor: "OWASP Top 10 (2021) and the OWASP Cheat Sheet Series"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Authentication, authorization & data protection
     capability: BE-15
     key_area: Security
     key_attribute: Application Security
     anchor: "OWASP ASVS 4.0 and NIST SP 800-63"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Threat modeling & security review
     capability: SEC-05
     key_area: Security
     key_attribute: Application Security
     anchor: "Shostack, Threat Modeling: Designing for Security (2014)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Dependency & supply-chain hygiene
     capability: SEC-09
     key_area: Security
     key_attribute: Supply Chain & Data Protection
     anchor: "OpenSSF SLSA framework; OWASP Top 10 A06"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Data protection & privacy
     capability: OPS-09
     key_area: Security
     key_attribute: Supply Chain & Data Protection
     anchor: "GDPR Art. 25; Cavoukian, Privacy by Design (2009)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- Collaboration & Communication ----
   - theme: Technical writing & documentation
     capability: CC-02
     key_area: Collaboration & Communication
     key_attribute: Communication
     anchor: "Winters, Manshreck & Wright, Software Engineering at Google (2020); Procida, Diataxis"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Stakeholder communication
     capability: CC-01
     key_area: Collaboration & Communication
     key_attribute: Communication
     anchor: "Larson, Staff Engineer (2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Technical discussion & decision-making
     capability: CC-05
     key_area: Collaboration & Communication
     key_attribute: Communication
     anchor: "Nygard, Documenting Architecture Decisions (2011)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Feedback & candor
     capability: CC-04
     key_area: Collaboration & Communication
     key_attribute: Teamwork
     anchor: "Scott, Radical Candor (2017); Edmondson, The Fearless Organization (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Cross-functional collaboration
     capability: CC-03
     key_area: Collaboration & Communication
     key_attribute: Teamwork
     anchor: "Cagan, Inspired, 2nd ed. (2018); Skelton & Pais, Team Topologies (2019)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- Leadership & Business Impact ----
   - theme: Mentoring & growing engineers
     capability: LI-01
     key_area: Leadership & Business Impact
     key_attribute: Growing People & Direction
     anchor: "Larson, StaffEng (2021); Fournier, The Manager's Path (2017)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Technical direction & influence
     capability: LI-03
     key_area: Leadership & Business Impact
     key_attribute: Growing People & Direction
     anchor: "Larson, Staff Engineer: Leadership Beyond the Management Track (2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Product thinking
     capability: PD-06
     key_area: Leadership & Business Impact
     key_attribute: Product & Business Impact
     anchor: "Cagan, Inspired, 2nd ed. (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Scoping, prioritization & estimation
     capability: PD-02
     key_area: Leadership & Business Impact
     key_attribute: Product & Business Impact
     anchor: "McConnell, Software Estimation (2006); Reinertsen, Product Development Flow (2009)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Strategic & commercial awareness
     capability: PD-07
     key_area: Leadership & Business Impact
     key_attribute: Product & Business Impact
     anchor: "Rumelt, Good Strategy Bad Strategy (2011)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Ownership & follow-through
     capability: PD-05
     key_area: Leadership & Business Impact
     key_attribute: Product & Business Impact
     anchor: "Amazon Leadership Principles - Ownership"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}

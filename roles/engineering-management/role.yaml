@@ -23,261 +23,519 @@ competencies:
     key_area: Leadership & Direction
     key_attribute: Strategy & Vision
     anchor: "Rumelt, Good Strategy Bad Strategy (2011)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P5, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P5, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Vision & Goal Alignment
     capability: STRAT-02
     key_area: Leadership & Direction
     key_attribute: Strategy & Vision
     anchor: "Locke & Latham, goal-setting theory (2002); Collins & Porras (1996)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P5, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P5, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Leading Change
     capability: EM-12
     key_area: Leadership & Direction
     key_attribute: Change & Organizational Design
     anchor: "Kotter, Leading Change (1996)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Organizational & Team Design
     capability: EM-04
     key_area: Leadership & Direction
     key_attribute: Change & Organizational Design
     anchor: "Skelton & Pais, Team Topologies (2019); Conway (1968)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Driving Alignment & Decision Clarity
     capability: LI-05
     key_area: Leadership & Direction
     key_attribute: Alignment & Adaptive Leadership
     anchor: "Bungay, The Art of Action (2011)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Situational & Adaptive Leadership
     capability: LI-08
     key_area: Leadership & Direction
     key_attribute: Alignment & Adaptive Leadership
     anchor: "Hersey & Blanchard (1969); Heifetz (1994)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   # ---- Execution & Operations ----
   - theme: Planning & Estimation
     capability: PD-04
     key_area: Execution & Operations
     key_attribute: Planning & Prioritization
     anchor: "McConnell, Software Estimation (2006)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Prioritization & Trade-offs
     capability: PD-02
     key_area: Execution & Operations
     key_attribute: Planning & Prioritization
     anchor: "Reinertsen, The Principles of Product Development Flow (2009)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Predictable Delivery & Execution
     capability: EM-07
     key_area: Execution & Operations
     key_attribute: Delivery & Reliability
     anchor: "Forsgren, Humble & Kim, Accelerate (2018)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Incident & Reliability Leadership
     capability: EM-10
     key_area: Execution & Operations
     key_attribute: Delivery & Reliability
     anchor: "Beyer, Jones, Petoff & Murphy, Site Reliability Engineering (2016)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Risk Management & Governance
     capability: RISK-01
     key_area: Execution & Operations
     key_attribute: Delivery & Reliability
     anchor: "NIST Cybersecurity Framework (2014); PMI PMBOK (2021)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Engineering Metrics & Delivery Health
     capability: EM-09
     key_area: Execution & Operations
     key_attribute: Operational Excellence
     anchor: "Forsgren, Humble & Kim, Accelerate (2018) - DORA four keys"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Process Design & Continuous Improvement
     capability: EM-08
     key_area: Execution & Operations
     key_attribute: Operational Excellence
     anchor: "Deming, Out of the Crisis (1986)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Developer Experience & Flow
     capability: OPS-27
     key_area: Execution & Operations
     key_attribute: Operational Excellence
     anchor: "Forsgren et al., The SPACE of Developer Productivity (2021)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Capacity & Headcount Planning
     capability: EM-05
     key_area: Execution & Operations
     key_attribute: Resource Stewardship
     anchor: "Brooks, The Mythical Man-Month (1975)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Budget & Vendor Stewardship
     capability: EM-06
     key_area: Execution & Operations
     key_attribute: Resource Stewardship
     anchor: "Korn Ferry Leadership Architect (2014) - Financial Acumen"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   # ---- People & Talent ----
   - theme: Hiring & Selection
     capability: LI-02
     key_area: People & Talent
     key_attribute: Hiring & Team Formation
     anchor: "Schmidt & Hunter, selection-methods meta-analysis (1998)"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Onboarding & Team Formation
     capability: EM-13
     key_area: People & Talent
     key_attribute: Hiring & Team Formation
     anchor: "Tuckman, Developmental Sequence in Small Groups (1965)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Coaching & Development
     capability: LI-01
     key_area: People & Talent
     key_attribute: Coaching & Development
     anchor: "Whitmore, Coaching for Performance (1992); Google Project Oxygen"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Listening & Feedback
     capability: CC-04
     key_area: People & Talent
     key_attribute: Coaching & Development
     anchor: "Scott, Radical Candor (2017); SBI model (CCL)"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Performance Management
     capability: EM-01
     key_area: People & Talent
     key_attribute: Performance & Advancement
     anchor: "Grove, High Output Management (1983)"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Career Development & Sponsorship
     capability: EM-02
     key_area: People & Talent
     key_attribute: Performance & Advancement
     anchor: "Hewlett, Forget a Mentor, Find a Sponsor (2013)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Succession & Leadership Pipeline
     capability: HR-09
     key_area: People & Talent
     key_attribute: Performance & Advancement
     anchor: "Charan, Drotter & Noel, The Leadership Pipeline (2001)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Psychological Safety
     capability: EM-03
     key_area: People & Talent
     key_attribute: Team Health & Culture
     anchor: "Edmondson, The Fearless Organization (2018); Project Aristotle"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Motivation, Engagement & Retention
     capability: EM-17
     key_area: People & Talent
     key_attribute: Team Health & Culture
     anchor: "Deci & Ryan, Self-Determination Theory (2000); Herzberg (1968)"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Inclusion & Belonging
     capability: HR-10
     key_area: People & Talent
     key_attribute: Team Health & Culture
     anchor: "Ely & Thomas, Cultural Diversity at Work (2001)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   # ---- Technical Stewardship ----
   - theme: Technical Credibility
     capability: LI-06
     key_area: Technical Stewardship
     key_attribute: Technical Judgment & Direction
     anchor: "Majors, The Engineer/Manager Pendulum (2017); Fournier (2017)"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P5}
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P5, sources: [], why: ""}
   - theme: Technical Strategy & Investment
     capability: LI-03
     key_area: Technical Stewardship
     key_attribute: Technical Judgment & Direction
     anchor: "Larson, An Elegant Puzzle (2019); Wardley Maps (2016)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Domain & Business Fluency
     capability: PD-06
     key_area: Technical Stewardship
     key_attribute: Technical Judgment & Direction
     anchor: "Cagan, Inspired (2008)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Architecture & Decision Oversight
     capability: ARC-10
     key_area: Technical Stewardship
     key_attribute: Architecture, Quality & Debt
     anchor: "Conway (1968); Nygard, Documenting Architecture Decisions (2011)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Engineering Standards & Quality
     capability: SWE-02
     key_area: Technical Stewardship
     key_attribute: Architecture, Quality & Debt
     anchor: "Humble & Farley, Continuous Delivery (2010)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Technical Debt & Risk Stewardship
     capability: EM-15
     key_area: Technical Stewardship
     key_attribute: Architecture, Quality & Debt
     anchor: "Cunningham, The WyCash Portfolio Management System (1992)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   # ---- Communication & Influence ----
   - theme: Written & Verbal Communication
     capability: CC-01
     key_area: Communication & Influence
     key_attribute: Communication
     anchor: "Minto, The Pyramid Principle (1987)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Executive & Upward Communication
     capability: CC-06
     key_area: Communication & Influence
     key_attribute: Communication
     anchor: "Duarte, HBR Guide to Persuasive Presentations (2012)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P5, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P5, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Stakeholder Management & Partnership
     capability: PM-13
     key_area: Communication & Influence
     key_attribute: Influence & Partnership
     anchor: "Freeman, Strategic Management: A Stakeholder Approach (1984)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Influence Without Authority
     capability: LI-07
     key_area: Communication & Influence
     key_attribute: Influence & Partnership
     anchor: "Cohen & Bradford, Influence Without Authority (1989)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Conflict Resolution & Negotiation
     capability: CC-05
     key_area: Communication & Influence
     key_attribute: Influence & Partnership
     anchor: "Fisher & Ury, Getting to Yes (1981); Lencioni (2002)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   # ---- Self & Personal Effectiveness ----
   - theme: Managerial Leverage & Focus
     capability: EM-16
     key_area: Self & Personal Effectiveness
     key_attribute: Leverage & Delegation
     anchor: "Grove, High Output Management (1983); Drucker (1967)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Delegation & Empowerment
     capability: EM-14
     key_area: Self & Personal Effectiveness
     key_attribute: Leverage & Delegation
     anchor: "Marquet, Turn the Ship Around! (2012)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Self-Awareness & Learning Agility
     capability: LI-09
     key_area: Self & Personal Effectiveness
     key_attribute: Growth & Resilience
     anchor: "Eurich, Insight (2017); Lombardo & Eichinger (2000)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Resilience & Sustainable Pace
     capability: LI-10
     key_area: Self & Personal Effectiveness
     key_attribute: Growth & Resilience
     anchor: "Loehr & Schwartz, The Power of Full Engagement (2003)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Decision-Making Under Uncertainty
     capability: LI-04
     key_area: Self & Personal Effectiveness
     key_attribute: Judgment & Integrity
     anchor: "Kahneman, Thinking, Fast and Slow (2011)"
-    proficiency: {M1: P2, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P2, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}
   - theme: Ethics, Integrity & Trust
     capability: LI-11
     key_area: Self & Personal Effectiveness
     key_attribute: Judgment & Integrity
     anchor: "Mayer, Davis & Schoorman (1995); ACM Code of Ethics (2018)"
-    proficiency: {M1: P3, M2: P3, M3: P4, M4: P4, M5: P5, M6: P6}
+    mappings:
+      M1: {p: P3, sources: [], why: ""}
+      M2: {p: P3, sources: [], why: ""}
+      M3: {p: P4, sources: [], why: ""}
+      M4: {p: P4, sources: [], why: ""}
+      M5: {p: P5, sources: [], why: ""}
+      M6: {p: P6, sources: [], why: ""}

@@ -29,244 +29,484 @@ competencies:
     key_area: Product Discovery & User Research
     key_attribute: Continuous Discovery
     anchor: "Torres, *Continuous Discovery Habits* (2021); Portigal, *Interviewing Users* (2013)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Discovery cadence & habits
     capability: PM-01
     key_area: Product Discovery & User Research
     key_attribute: Continuous Discovery
     anchor: "Torres, *Continuous Discovery Habits* (2021); Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Opportunity mapping
     capability: PM-15
     key_area: Product Discovery & User Research
     key_attribute: Synthesis & Customer Modeling
     anchor: "Torres, *Continuous Discovery Habits* (2021)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Research synthesis & insight
     capability: PM-01
     key_area: Product Discovery & User Research
     key_attribute: Synthesis & Customer Modeling
     anchor: "Olsen, *The Lean Product Playbook* (2015)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Customer segmentation & personas
     capability: PM-02
     key_area: Product Discovery & User Research
     key_attribute: Synthesis & Customer Modeling
     anchor: "Cooper, *The Inmates Are Running the Asylum* (1999)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   # ---- Problem Definition & Validation ----
   - theme: Problem statements & outcome framing
     capability: PM-16
     key_area: Problem Definition & Validation
     key_attribute: Problem Framing
     anchor: "Perri, *Escaping the Build Trap* (2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Jobs-to-be-done framing
     capability: PM-17
     key_area: Problem Definition & Validation
     key_attribute: Problem Framing
     anchor: "Christensen, Hall, Dillon & Duncan, *Competing Against Luck* (2016)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Assumption mapping & risk framing
     capability: PM-18
     key_area: Problem Definition & Validation
     key_attribute: Assumption Testing & Validation
     anchor: "Bland & Osterwalder, *Testing Business Ideas* (2019); Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Assumption testing & experiments
     capability: PM-18
     key_area: Problem Definition & Validation
     key_attribute: Assumption Testing & Validation
     anchor: "Ries, *The Lean Startup* (2011); Torres, *Continuous Discovery Habits* (2021)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Prototype & solution testing
     capability: PM-18
     key_area: Problem Definition & Validation
     key_attribute: Assumption Testing & Validation
     anchor: "Olsen, *The Lean Product Playbook* (2015)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   # ---- Product Strategy & Vision ----
   - theme: Product strategy formulation
     capability: PM-04
     key_area: Product Strategy & Vision
     key_attribute: Strategy & Positioning
     anchor: "Rumelt, *Good Strategy Bad Strategy* (2011)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Positioning & differentiation
     capability: PM-04
     key_area: Product Strategy & Vision
     key_attribute: Strategy & Positioning
     anchor: "Dunford, *Obviously Awesome* (2019); Moore, *Crossing the Chasm* (3rd ed., 2014)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Product vision narrative
     capability: PM-06
     key_area: Product Strategy & Vision
     key_attribute: Vision, Roadmaps & Goals
     anchor: "Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Outcome-based roadmapping
     capability: PM-05
     key_area: Product Strategy & Vision
     key_attribute: Vision, Roadmaps & Goals
     anchor: "Perri, *Escaping the Build Trap* (2018); Lombardo, McCarthy, Ryan & Connors, *Product Roadmaps Relaunched* (2017)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Goal setting & OKRs
     capability: PM-06
     key_area: Product Strategy & Vision
     key_attribute: Vision, Roadmaps & Goals
     anchor: "Doerr, *Measure What Matters* (2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   # ---- Data & Analytics ----
   - theme: Success metrics & KPI design
     capability: PM-10
     key_area: Data & Analytics
     key_attribute: Metrics & Behavioral Analysis
     anchor: "Croll & Yoskovitz, *Lean Analytics* (2013)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Funnel & behavioral analysis
     capability: PM-10
     key_area: Data & Analytics
     key_attribute: Metrics & Behavioral Analysis
     anchor: "McClure, \"Startup Metrics for Pirates\" (AARRR, 2007); Croll & Yoskovitz, *Lean Analytics* (2013)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: A/B test design & analysis
     capability: PM-11
     key_area: Data & Analytics
     key_attribute: Experimentation & Decision Quality
     anchor: "Kohavi, Tang & Xu, *Trustworthy Online Controlled Experiments* (2020)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Decision quality under uncertainty
     capability: LI-04
     key_area: Data & Analytics
     key_attribute: Experimentation & Decision Quality
     anchor: "Duke, *Thinking in Bets* (2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   # ---- Execution & Delivery ----
   - theme: Prioritization & sequencing
     capability: PD-02
     key_area: Execution & Delivery
     key_attribute: Prioritization & Trade-offs
     anchor: "Reinertsen, *The Principles of Product Development Flow* (2009)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Scope-cutting & trade-offs
     capability: PD-01
     key_area: Execution & Delivery
     key_attribute: Prioritization & Trade-offs
     anchor: "Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Product trio partnership
     capability: CC-03
     key_area: Execution & Delivery
     key_attribute: Building with the Team
     anchor: "Cagan, *Empowered* (2020)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Requirements, specs & acceptance criteria
     capability: PM-07
     key_area: Execution & Delivery
     key_attribute: Building with the Team
     anchor: "Bryar & Carr, *Working Backwards* (2021)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Backlog & delivery flow
     capability: PM-08
     key_area: Execution & Delivery
     key_attribute: Building with the Team
     anchor: "Patton, *User Story Mapping* (2014); Reinertsen, *The Principles of Product Development Flow* (2009)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Technical & design fluency
     capability: LI-06
     key_area: Execution & Delivery
     key_attribute: Building with the Team
     anchor: "Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P3, P5: P4, P6: P4}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P3, sources: [], why: ""}
+      P5: {p: P4, sources: [], why: ""}
+      P6: {p: P4, sources: [], why: ""}
   - theme: Launch management & readiness
     capability: PM-09
     key_area: Execution & Delivery
     key_attribute: Launch & Iteration
     anchor: "Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Post-launch iteration & lifecycle
     capability: PM-10
     key_area: Execution & Delivery
     key_attribute: Launch & Iteration
     anchor: "Olsen, *The Lean Product Playbook* (2015)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   # ---- Business, Market & Go-to-Market ----
   - theme: Business model & unit economics
     capability: PD-07
     key_area: Business, Market & Go-to-Market
     key_attribute: Business Fluency
     anchor: "Osterwalder & Pigneur, *Business Model Generation* (2010)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Pricing & packaging
     capability: PM-12
     key_area: Business, Market & Go-to-Market
     key_attribute: Business Fluency
     anchor: "Ramanujam & Tacke, *Monetizing Innovation* (2016)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Competitive & market analysis
     capability: PM-03
     key_area: Business, Market & Go-to-Market
     key_attribute: Market & Domain Insight
     anchor: "Moore, *Crossing the Chasm* (3rd ed., 2014)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Domain & industry fluency
     capability: PM-19
     key_area: Business, Market & Go-to-Market
     key_attribute: Market & Domain Insight
     anchor: "Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: GTM planning & partnership
     capability: PM-09
     key_area: Business, Market & Go-to-Market
     key_attribute: Go-to-Market Partnership
     anchor: "Moore, *Crossing the Chasm* (3rd ed., 2014)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Field feedback & enablement
     capability: PM-14
     key_area: Business, Market & Go-to-Market
     key_attribute: Go-to-Market Partnership
     anchor: "Cagan, *Inspired* (2nd ed., 2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   # ---- Communication, Influence & Craft Leadership ----
   - theme: Product narratives & written communication
     capability: CC-01
     key_area: Communication, Influence & Craft Leadership
     key_attribute: Communication
     anchor: "Bryar & Carr, *Working Backwards* (2021)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Executive communication
     capability: CC-06
     key_area: Communication, Influence & Craft Leadership
     key_attribute: Communication
     anchor: "Minto, *The Pyramid Principle* (1987)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Stakeholder alignment & expectations
     capability: PM-13
     key_area: Communication, Influence & Craft Leadership
     key_attribute: Stakeholder Influence
     anchor: "Cagan, *Empowered* (2020)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Saying no & negotiation
     capability: CC-05
     key_area: Communication, Influence & Craft Leadership
     key_attribute: Stakeholder Influence
     anchor: "Perri, *Escaping the Build Trap* (2018)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Mentoring & coaching PMs
     capability: LI-01
     key_area: Communication, Influence & Craft Leadership
     key_attribute: Product Craft Leadership
     anchor: "Cagan, *Empowered* (2020)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Raising the craft bar
     capability: LI-03
     key_area: Communication, Influence & Craft Leadership
     key_attribute: Product Craft Leadership
     anchor: "Cagan, *Empowered* (2020); Larson, *Staff Engineer* (2021)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}
   - theme: Hiring & interviewing PMs
     capability: LI-02
     key_area: Communication, Influence & Craft Leadership
     key_attribute: Product Craft Leadership
     anchor: "Cagan, *Empowered* (2020)"
-    proficiency: {P1: P1, P2: P2, P3: P3, P4: P4, P5: P5, P6: P6}
+    mappings:
+      P1: {p: P1, sources: [], why: ""}
+      P2: {p: P2, sources: [], why: ""}
+      P3: {p: P3, sources: [], why: ""}
+      P4: {p: P4, sources: [], why: ""}
+      P5: {p: P5, sources: [], why: ""}
+      P6: {p: P6, sources: [], why: ""}

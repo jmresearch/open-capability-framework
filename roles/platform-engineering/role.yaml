@@ -24,226 +24,448 @@ competencies:
     key_area: Platform as a Product
     key_attribute: Product Discovery & Feedback
     anchor: "Noda, Storey, Forsgren & Greiler, \"DevEx: What Actually Drives Productivity\" (ACM Queue, 2023)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Adoption & success metrics
     capability: PM-10
     key_area: Platform as a Product
     key_attribute: Product Discovery & Feedback
     anchor: "Forsgren, Humble & Kim, *Accelerate* (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Thinnest viable platform
     capability: OPS-31
     key_area: Platform as a Product
     key_attribute: Platform Strategy & Scope
     anchor: "Skelton & Pais, *Team Topologies* (2019)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Platform roadmap & prioritization
     capability: PM-05
     key_area: Platform as a Product
     key_attribute: Platform Strategy & Scope
     anchor: "Perri, *Escaping the Build Trap* (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Golden paths & paved roads
     capability: OPS-27
     key_area: Platform as a Product
     key_attribute: Developer Experience
     anchor: "Spotify Engineering, \"How We Use Golden Paths to Solve Fragmentation in Our Software Ecosystem\" (2020)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Cognitive load reduction
     capability: OPS-32
     key_area: Platform as a Product
     key_attribute: Developer Experience
     anchor: "Skelton & Pais, *Team Topologies* (2019), applying Sweller's cognitive load theory (1988)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- Platform Software Engineering ----
   - theme: Platform system design
     capability: SWE-05
     key_area: Platform Software Engineering
     key_attribute: Design & Architecture
     anchor: "Conway, \"How Do Committees Invent?\" (Datamation, 1968)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: API & interface design
     capability: SWE-07
     key_area: Platform Software Engineering
     key_attribute: Design & Architecture
     anchor: "Winters, Manshreck & Wright, *Software Engineering at Google* (2020) - Hyrum's Law"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Coding & implementation
     capability: SWE-02
     key_area: Platform Software Engineering
     key_attribute: Code Craft & Quality
     anchor: "Fowler, *Refactoring* (2nd ed., 2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Code review
     capability: SWE-04
     key_area: Platform Software Engineering
     key_attribute: Code Craft & Quality
     anchor: "Sadowski et al., \"Modern Code Review: A Case Study at Google\" (ICSE-SEIP, 2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Testing & verification
     capability: SWE-03
     key_area: Platform Software Engineering
     key_attribute: Code Craft & Quality
     anchor: "Cohn (2009) as refined by Vocke, \"The Practical Test Pyramid\" (2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Delivery automation & CI/CD
     capability: OPS-02
     key_area: Platform Software Engineering
     key_attribute: Delivery Automation
     anchor: "Humble & Farley, *Continuous Delivery* (2010)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Deprecation & migration management
     capability: OPS-30
     key_area: Platform Software Engineering
     key_attribute: Delivery Automation
     anchor: "Winters, Manshreck & Wright, *Software Engineering at Google* (2020), deprecation chapter"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- Infrastructure & Cloud ----
   - theme: Cloud architecture
     capability: OPS-01
     key_area: Infrastructure & Cloud
     key_attribute: Cloud & Compute
     anchor: "Amazon Web Services, *Well-Architected Framework* (2015-)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Container orchestration & runtime
     capability: OPS-14
     key_area: Infrastructure & Cloud
     key_attribute: Cloud & Compute
     anchor: "Burns, Grant, Oppenheimer, Brewer & Wilkes, \"Borg, Omega, and Kubernetes\" (ACM Queue, 2016)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Networking & compute foundations
     capability: OPS-19
     key_area: Infrastructure & Cloud
     key_attribute: Cloud & Compute
     anchor: "Kurose & Ross, *Computer Networking: A Top-Down Approach* (8th ed., 2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Infrastructure as code
     capability: OPS-10
     key_area: Infrastructure & Cloud
     key_attribute: Automation & Self-Service
     anchor: "Morris, *Infrastructure as Code* (O'Reilly, 2016)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Self-service provisioning
     capability: OPS-27
     key_area: Infrastructure & Cloud
     key_attribute: Automation & Self-Service
     anchor: "Bottcher, \"What I Talk About When I Talk About Platforms\" (martinfowler.com, 2018)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- Reliability & Operations ----
   - theme: Observability & instrumentation
     capability: OPS-05
     key_area: Reliability & Operations
     key_attribute: Observability & Service Levels
     anchor: "Majors, Fong-Jones & Miranda, *Observability Engineering* (O'Reilly, 2022)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: SLOs & error budgets
     capability: OPS-04
     key_area: Reliability & Operations
     key_attribute: Observability & Service Levels
     anchor: "Beyer, Jones, Petoff & Murphy (eds.), *Site Reliability Engineering* (O'Reilly, 2016)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Incident response
     capability: OPS-06
     key_area: Reliability & Operations
     key_attribute: Incident Management
     anchor: "PagerDuty, *Incident Response Guide* (2017)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Learning from incidents
     capability: OPS-06
     key_area: Reliability & Operations
     key_attribute: Incident Management
     anchor: "Allspaw, \"Blameless PostMortems and a Just Culture\" (Etsy Code as Craft, 2012)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Capacity, performance & cost
     capability: OPS-07
     key_area: Reliability & Operations
     key_attribute: Operational Excellence
     anchor: "Gregg, *Systems Performance* (2nd ed., 2020)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Toil reduction & automation
     capability: OPS-28
     key_area: Reliability & Operations
     key_attribute: Operational Excellence
     anchor: "Beyer, Jones, Petoff & Murphy (eds.), *Site Reliability Engineering* (O'Reilly, 2016), toil chapter"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- Security & Compliance ----
   - theme: Guardrails & policy as code
     capability: SEC-18
     key_area: Security & Compliance
     key_attribute: Secure by Default
     anchor: "OWASP, *Application Security Verification Standard* (v4, 2019)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Identity, secrets & access
     capability: SEC-01
     key_area: Security & Compliance
     key_attribute: Secure by Default
     anchor: "Ward & Beyer, \"BeyondCorp: A New Approach to Enterprise Security\" (;login:, 2014)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Software supply chain security
     capability: SEC-09
     key_area: Security & Compliance
     key_attribute: Supply Chain & Assurance
     anchor: "OpenSSF, *SLSA: Supply-chain Levels for Software Artifacts* (2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Compliance & audit readiness
     capability: OPS-09
     key_area: Security & Compliance
     key_attribute: Supply Chain & Assurance
     anchor: "NIST, *OSCAL - Open Security Controls Assessment Language* (1.0, 2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- Communication & Collaboration ----
   - theme: Technical documentation
     capability: DR-05
     key_area: Communication & Collaboration
     key_attribute: Knowledge & Documentation
     anchor: "Procida, *Diataxis* (2017-)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Design communication & decision records
     capability: CC-01
     key_area: Communication & Collaboration
     key_attribute: Knowledge & Documentation
     anchor: "Winters, Manshreck & Wright, *Software Engineering at Google* (2020), design-docs chapters"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Platform advocacy & enablement
     capability: DR-01
     key_area: Communication & Collaboration
     key_attribute: Enablement & Stakeholders
     anchor: "CNCF TAG App Delivery, *Platform Engineering Maturity Model* (2023)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Stakeholder management
     capability: PM-13
     key_area: Communication & Collaboration
     key_attribute: Enablement & Stakeholders
     anchor: "Larson, *Staff Engineer: Leadership Beyond the Management Track* (2021)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Cross-team collaboration
     capability: CC-03
     key_area: Communication & Collaboration
     key_attribute: Enablement & Stakeholders
     anchor: "Skelton & Pais, *Team Topologies* (2019) - team interaction modes"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   # ---- Execution & Leadership ----
   - theme: Planning & estimation
     capability: PD-04
     key_area: Execution & Leadership
     key_attribute: Delivery & Planning
     anchor: "McConnell, *Software Estimation: Demystifying the Black Art* (2006)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Prioritization & trade-off judgment
     capability: PD-02
     key_area: Execution & Leadership
     key_attribute: Delivery & Planning
     anchor: "Reinertsen, *The Principles of Product Development Flow* (2009)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Mentorship & knowledge sharing
     capability: LI-01
     key_area: Execution & Leadership
     key_attribute: Growth & Direction
     anchor: "Lave & Wenger, *Situated Learning: Legitimate Peripheral Participation* (1991)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
   - theme: Technical direction & influence
     capability: LI-03
     key_area: Execution & Leadership
     key_attribute: Growth & Direction
     anchor: "Nygard, \"Documenting Architecture Decisions\" (2011)"
-    proficiency: {E1: P1, E2: P2, E3: P3, E4: P4, E5: P5, E6: P6}
+    mappings:
+      E1: {p: P1, sources: [], why: ""}
+      E2: {p: P2, sources: [], why: ""}
+      E3: {p: P3, sources: [], why: ""}
+      E4: {p: P4, sources: [], why: ""}
+      E5: {p: P5, sources: [], why: ""}
+      E6: {p: P6, sources: [], why: ""}
