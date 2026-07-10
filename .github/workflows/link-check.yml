@@ -1,0 +1,54 @@
+# Weekly reachability check for bibliography links. No LLM involved:
+# scripts/check_links.py probes every URL in data/bibliography.csv and
+# maintains docs/link-check-report.md (written when links are broken,
+# removed when everything is healthy again). Suspect links (401/403/429,
+# almost always bot-blocking, not dead) are only counted in the report;
+# their full list lives in the run log to keep the PR noise-free.
+#
+# When the report changes, a PR is opened (or an existing one updated) so
+# maintainers see exactly which citations need new links. A follow-up run
+# after all links are fixed produces a PR that deletes the stale report.
+
+name: link-check
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check bibliography links
+        # Nonzero exit just means problem links were found; the PR step
+        # below reports them. Real failures surface as an empty diff.
+        run: python scripts/check_links.py || true
+      - name: Open PR with report
+        uses: peter-evans/create-pull-request@v7
+        with:
+          add-paths: docs/link-check-report.md
+          branch: ci/link-check-report
+          delete-branch: true
+          commit-message: 'ci: update bibliography link-check report'
+          title: 'ci: unreachable bibliography links'
+          body: |
+            Automated weekly link check found broken links in
+            `data/bibliography.csv`. See `docs/link-check-report.md` in this
+            PR for the list (with status codes).
+
+            Broken = DNS failure, timeout, SSL error, or 404/410/5xx after
+            retries: the link likely needs replacing. Suspect links
+            (401/403/429 — usually bot-blocking, not dead) are only counted
+            in the report; the full suspect list is in the workflow run log.
+
+            If this PR only deletes the report, all previously reported
+            links are healthy again — merge to clear it.
